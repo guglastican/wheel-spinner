@@ -71,7 +71,8 @@ function degreesToRadians(degrees) {
 }
 
 function getSlices() {
-  return props.slices;
+  // Filter out slices that have been marked as not included
+  return props.slices.filter(slice => slice.included !== false);
 }
 
 function getContrastingColor(bgColor) {

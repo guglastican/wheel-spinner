@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue Wheel Spinner Demo</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue-loader@17.3.1/dist/vue-loader.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script type="module">
+        import { createApp, ref } from 'vue'
+        import VueWheelSpinner from './src/components/VueWheelSpinner.vue'
+
+        createApp({
+            components: {
+                VueWheelSpinner
+            },
+            setup() {
+                const spinner = ref(null)
+                
+                return {
+                    spinner
+                }
+            },
+            data() {
+                return {
+                    winnerResult: null,
+                    slices: [
+                        {color: '#eb4d4b', text: 'Prize 1'},
+                        {color: '#f0932b', text: 'Prize 2'},
+                        {color: '#f9ca24', text: 'Prize 3'},
+                        {color: '#badc58', text: 'Prize 4'},
+                        {color: '#7ed6df', text: 'Prize 5'},
+                        {color: '#e056fd', text: 'Prize 6'}
+                    ],
+                    isSpinning: false,
+                    defaultWinner: 0
+                }
+            },
+            methods: {
+                handleSpinButtonClick() {
+                    // Randomly select a winner
+                    this.defaultWinner = Math.floor(Math.random() * this.slices.length)
+                    this.$refs.spinner.spinWheel(this.defaultWinner)
+                },
+                onSpinStart() {
+                    this.winnerResult = null
+                    this.isSpinning = true
+                },
+                onSpinEnd(winnerIndex) {
+                    this.isSpinning = false
+                    this.winnerResult = this.slices[winnerIndex]
+                }
+            },
+            template: `
+                <div style="text-align: center; padding: 20px; font-family: Arial, sans-serif;">
+                    <h1>Vue Wheel Spinner Demo</h1>
+                    <VueWheelSpinner 
+                        ref="spinner"
+                        :slices="slices"
+                        :winner-index="defaultWinner"
+                        @spin-start="onSpinStart"
+                        @spin-end="onSpinEnd">
+                        
+                        <template #default>
+                            <button 
+                                @click="handleSpinButtonClick"
+                                :disabled="isSpinning"
+                                style="
+                                    width: 100px; 
+                                    height: 100px; 
+                                    border-radius: 50%; 
+                                    background-color: #eb4d4b;
+                                    color: white;
+                                    border: none;
+                                    font-size: 18px;
+                                    cursor: pointer;
+                                ">
+                                Spin
+                            </button>
+                        </template>
+                    </VueWheelSpinner>
+                    
+                    <div v-if="winnerResult" style="margin-top: 20px;">
+                        <h2>Winner:</h2>
+                        <p style="
+                            background-color: ${winnerResult.color};
+                            color: white;
+                            padding: 10px;
+                            display: inline-block;
+                            border-radius: 5px;
+                        ">
+                            {{ winnerResult.text }}
+                        </p>
+                    </div>
+                </div>
+            `
+        }).mount('#app')
+    </script>
+</body>
+</html>
