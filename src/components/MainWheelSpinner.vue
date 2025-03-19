@@ -81,12 +81,12 @@
               placeholder="Input text here..." 
               class="form-control"
               @keyup.enter="addNewItem" />
-            <button class="add-btn" @click="addNewItem">
+            <button class="add-btn" @click="addNewItem" title="Add item">
               <svg viewBox="0 0 24 24" width="16" height="16">
                 <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" fill="#333" />
               </svg>
             </button>
-            <button class="image-btn">
+            <button class="image-btn" title="Add image">
               <svg viewBox="0 0 24 24" width="16" height="16">
                 <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z" fill="#333" />
               </svg>
@@ -106,29 +106,29 @@
                 +{{ slice.winCount }}
               </div>
               <div class="item-actions">
-                <button class="icon-btn small" title="Move Up" @click="moveItemUp(index)" :disabled="index === 0">
-                  <svg viewBox="0 0 24 24" width="16" height="16">
-                    <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" fill="#777" />
+                <button class="action-btn move-up" title="Move Up" @click="moveItemUp(index)" :disabled="index === 0">
+                  <svg viewBox="0 0 24 24" width="18" height="18">
+                    <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" fill="currentColor" />
                   </svg>
                 </button>
-                <button class="icon-btn small" title="Move Down" @click="moveItemDown(index)" :disabled="index === slices.length - 1">
-                  <svg viewBox="0 0 24 24" width="16" height="16">
-                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" fill="#777" />
+                <button class="action-btn move-down" title="Move Down" @click="moveItemDown(index)" :disabled="index === slices.length - 1">
+                  <svg viewBox="0 0 24 24" width="18" height="18">
+                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" fill="currentColor" />
                   </svg>
                 </button>
-                <button class="icon-btn small" title="Copy" @click="copyItem(index)">
-                  <svg viewBox="0 0 24 24" width="16" height="16">
-                    <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" fill="#777" />
+                <button class="action-btn copy" title="Copy" @click="copyItem(index)">
+                  <svg viewBox="0 0 24 24" width="18" height="18">
+                    <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" fill="currentColor" />
                   </svg>
                 </button>
-                <button class="icon-btn small" :class="{ active: slice.included !== false }" title="Include in Wheel" @click="toggleItemInclusion(index)">
-                  <svg viewBox="0 0 24 24" width="16" height="16">
-                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="#27ae60" />
+                <button class="action-btn include" :class="{ active: slice.included !== false }" title="Include in Wheel" @click="toggleItemInclusion(index)">
+                  <svg viewBox="0 0 24 24" width="18" height="18">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="currentColor" />
                   </svg>
                 </button>
-                <button class="icon-btn small" title="Remove" @click="removeSlice(index)">
-                  <svg viewBox="0 0 24 24" width="16" height="16">
-                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" fill="#e74c3c" />
+                <button class="action-btn remove" title="Remove" @click="removeSlice(index)">
+                  <svg viewBox="0 0 24 24" width="18" height="18">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" fill="currentColor" />
                   </svg>
                 </button>
               </div>
@@ -262,6 +262,7 @@ export default {
   data() {
     return {
       winnerResult: null,
+      defaultWinner: 0,
       slices: [
         {color: '#ffffff', text: 'sanja', winCount: 2},
         {color: '#e74c3c', text: 'tanja', winCount: 1},
@@ -480,223 +481,54 @@ export default {
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 15px;
-}
-
-.control-section h2 {
-  margin-top: 0;
-  font-size: 20px;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.control-group {
-  margin-bottom: 15px;
-}
-
-.control-group label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #555;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
 }
 
 .form-control {
   width: 100%;
-  padding: 8px 12px;
+  padding: 10px 12px;
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 14px;
-}
-
-.input-group {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.input-group.multi {
-  flex-wrap: wrap;
-}
-
-.input-group .form-control {
-  flex: 1;
-}
-
-.btn {
-  padding: 8px 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.2s;
-}
-
-.btn-sm {
-  padding: 4px 8px;
-  font-size: 12px;
 }
 
 .btn-primary {
   background-color: #3498db;
   color: white;
-}
-
-.btn-primary:hover {
-  background-color: #2980b9;
-}
-
-.btn-danger {
-  background-color: #e74c3c;
-  color: white;
-}
-
-.btn-danger:hover {
-  background-color: #c0392b;
-}
-
-.color-box {
-  width: 30px;
-  height: 30px;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-  cursor: pointer;
-}
-
-.info-box {
-  background-color: #d1ecf1;
-  color: #0c5460;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 15px;
-  font-size: 14px;
-}
-
-.winner-text {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.spin-center-button {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: #e74c3c;
-  color: white;
   border: none;
-  font-size: 18px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.spin-center-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
-.angle-presets {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  margin-top: 10px;
-}
-
-.angle-preset-btn {
-  padding: 5px 8px;
-  background-color: #f1f1f1;
-  border: 1px solid #ddd;
   border-radius: 4px;
+  padding: 8px 16px;
   cursor: pointer;
-  font-size: 12px;
-  transition: all 0.2s;
-}
-
-.angle-preset-btn:hover {
-  background-color: #e0e0e0;
-}
-
-.angle-preset-btn.active {
-  background-color: #3498db;
-  color: white;
-  border-color: #2980b9;
-}
-
-/* Custom wheel styling */
-.wheel-wrapper :deep(.wheel-wrapper) {
-  position: relative;
-  overflow: hidden;
-}
-
-.wheel-wrapper :deep(.wheel-wrapper)::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 50%;
-  background: radial-gradient(circle at center, transparent 60%, rgba(0, 0, 0, 0.1) 60.5%);
-  z-index: 10;
-  pointer-events: none;
-}
-
-.wheel-wrapper :deep(.wheel-wrapper)::after {
-  content: '';
-  position: absolute;
-  top: calc(-1 * var(--border-width));
-  left: calc(-1 * var(--border-width));
-  right: calc(-1 * var(--border-width));
-  bottom: calc(-1 * var(--border-width));
-  border-radius: 50%;
-  background-image: 
-    radial-gradient(circle at center, transparent 62%, var(--border-color) 62.5%),
-    repeating-conic-gradient(
-      from 0deg,
-      var(--dot-color) 0deg calc(var(--dot-size-ratio) * 1deg),
-      var(--shine-color) calc(var(--dot-size-ratio) * 1deg) calc(var(--dot-size-ratio) * 2deg),
-      transparent calc(var(--dot-size-ratio) * 2deg) calc(var(--dot-spacing) * 1deg)
-    );
-  z-index: -1;
-  pointer-events: none;
-}
-
-/* Item list styling */
-.items-list {
-  max-height: 300px;
-  overflow-y: auto;
-  margin-bottom: 15px;
-  border: 1px solid #eee;
-  border-radius: 6px;
 }
 
 .item-row {
   display: flex;
   align-items: center;
-  padding: 10px 15px;
+  padding: 12px 15px;
   border-bottom: 1px solid #eee;
   transition: all 0.2s ease;
   position: relative;
-}
-
-.item-row:last-child {
-  border-bottom: none;
+  border-left: 3px solid transparent;
 }
 
 .item-row:hover {
-  background-color: #f9f9f9;
+  background-color: #f5f8ff;
+  border-left-color: #3498db;
 }
 
 .item-row.excluded {
-  opacity: 0.6;
+  opacity: 0.7;
   background-color: #f8f8f8;
   text-decoration: line-through;
+  border-left-color: #e74c3c;
 }
 
 .item-color-indicator {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 12px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -712,7 +544,7 @@ export default {
   background-color: #27ae60;
   color: white;
   border-radius: 12px;
-  padding: 2px 8px;
+  padding: 3px 10px;
   font-size: 12px;
   margin-left: 10px;
   font-weight: bold;
@@ -720,34 +552,57 @@ export default {
 
 .item-actions {
   display: flex;
-  gap: 5px;
-  margin-left: 10px;
+  gap: 8px;
+  margin-left: 15px;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
 }
 
-.icon-btn {
+.item-row:hover .item-actions {
+  opacity: 1;
+}
+
+.action-btn {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 5px;
+  padding: 6px;
   border-radius: 4px;
   transition: all 0.2s;
+  position: relative;
+  color: #555;
 }
 
-.icon-btn:hover {
+.action-btn:hover {
   background-color: #f1f1f1;
+  transform: translateY(-2px);
+  color: #333;
 }
 
-.icon-btn.small {
-  padding: 3px;
+.action-btn.move-up:hover, .action-btn.move-down:hover {
+  color: #3498db;
 }
 
-.icon-btn.active {
+.action-btn.copy:hover {
+  color: #f39c12;
+}
+
+.action-btn.include {
+  color: #27ae60;
+}
+
+.action-btn.include.active {
   background-color: #e8f7f0;
 }
 
-.icon-btn:disabled {
+.action-btn.remove:hover {
+  color: #e74c3c;
+}
+
+.action-btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+  transform: none;
 }
 
 .input-container {
@@ -764,51 +619,11 @@ export default {
   cursor: pointer;
 }
 
-.add-btn:hover, .image-btn:hover {
-  background-color: #e0e0e0;
-}
-
-.section-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.section-header h2 {
-  margin: 0;
-  flex: 1;
-}
-
-.item-count {
-  background-color: #3498db;
-  color: white;
-  border-radius: 12px;
-  padding: 2px 8px;
-  font-size: 12px;
-  margin-left: 10px;
-}
-
-.header-actions {
-  display: flex;
-  gap: 5px;
-  margin-left: 10px;
-}
-
 .spin-btn {
   width: 100%;
   margin-top: 15px;
   font-weight: bold;
   font-size: 16px;
   padding: 12px;
-}
-
-@media (max-width: 768px) {
-  .main-content {
-    flex-direction: column;
-  }
-  
-  .wheel-container, .controls {
-    width: 100%;
-  }
 }
 </style>
