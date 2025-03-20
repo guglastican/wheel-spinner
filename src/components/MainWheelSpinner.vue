@@ -47,30 +47,32 @@
         <!-- Inputs Section -->
         <section class="control-section">
           <div class="section-header">
-            <h2>INPUTS</h2>
-            <span class="item-count">{{ slices.length }}</span>
-            <div class="header-actions">
-              <button class="icon-btn" title="View options">
-                <svg viewBox="0 0 24 24" width="20" height="20">
-                  <circle cx="12" cy="12" r="4" fill="#333" />
-                </svg>
-              </button>
-              <button class="icon-btn" title="Refresh">
-                <svg viewBox="0 0 24 24" width="20" height="20">
-                  <path d="M17.65 6.35A7.958 7.958 0 0 0 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z" fill="#333" />
-                </svg>
-              </button>
-              <button class="icon-btn active" title="List view">
-                <svg viewBox="0 0 24 24" width="20" height="20">
-                  <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z" fill="#f39c12" />
-                </svg>
-              </button>
-              <button class="icon-btn" title="More options">
-                <svg viewBox="0 0 24 24" width="20" height="20">
-                  <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="#333" />
-                </svg>
-              </button>
+            <div class="header-content">
+              <h2 class="section-title">
+                <span class="title-icon">🎯</span>
+                Inputs
+                <span class="item-count-badge">{{ slices.length }}</span>
+              </h2>
+              <div class="header-actions">
+                <button class="icon-btn action-btn" title="Reset" @click="resetInputs">
+                  <div class="btn-content">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                      <path d="M17.65 6.35A7.958 7.958 0 0 0 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z" />
+                    </svg>
+                    <span class="btn-label">Reset</span>
+                  </div>
+                </button>
+                <button class="icon-btn action-btn shuffle-btn" title="Shuffle" @click="shuffleItems">
+                  <div class="btn-content">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                      <path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z" />
+                    </svg>
+                    <span class="btn-label">Shuffle</span>
+                  </div>
+                </button>
+              </div>
             </div>
+            <div class="header-divider"></div>
           </div>
           
           <!-- Input field -->
@@ -193,60 +195,6 @@
           </div>
         </section>
 
-        <!-- Shining Dots Section -->
-        <section class="control-section">
-          <h2>Shining Dots</h2>
-          <div class="info-box">
-            Shining dots is not a part of the vue-wheel-spinner component. It's a
-            separate component which built in this demo. You can create
-            different external ornaments like this.
-          </div>
-
-          <div class="control-group">
-            <label>Border Color / Width</label>
-            <div class="input-group">
-              <div 
-                class="color-box" 
-                :style="{ backgroundColor: borderColor }"
-                @click="selectBorderColor">
-              </div>
-              <input 
-                type="number" 
-                v-model.number="borderWidth" 
-                class="form-control" 
-                min="0" 
-                max="50" />
-            </div>
-          </div>
-
-          <div class="control-group">
-            <label>Dot Color / Size / Count / Shine Color</label>
-            <div class="input-group multi">
-              <div 
-                class="color-box" 
-                :style="{ backgroundColor: dotColor }"
-                @click="selectDotColor">
-              </div>
-              <input 
-                type="number" 
-                v-model.number="dotSize" 
-                class="form-control" 
-                min="1" 
-                max="20" />
-              <input 
-                type="number" 
-                v-model.number="dotCount" 
-                class="form-control" 
-                min="10" 
-                max="100" />
-              <div 
-                class="color-box" 
-                :style="{ backgroundColor: shineColor }"
-                @click="selectShineColor">
-              </div>
-            </div>
-          </div>
-        </section>
       </div>
     </div>
   </div>
@@ -264,13 +212,13 @@ export default {
       winnerResult: null,
       defaultWinner: 0,
       slices: [
-        {color: '#ffffff', text: 'sanja', winCount: 2},
-        {color: '#e74c3c', text: 'tanja', winCount: 1},
-        {color: '#ffffff', text: 'maja', winCount: 1},
-        {color: '#e74c3c', text: 'nina', winCount: 1},
-        {color: '#ffffff', text: 'mina', winCount: 0},
-        {color: '#e74c3c', text: 'amina', winCount: 1},
-        {color: '#ffffff', text: 'azra', winCount: 0}
+        {color: 'rgb(108, 92, 231)', text: 'sanja', winCount: 2},
+        {color: 'rgb(122, 108, 237)', text: 'tanja', winCount: 1},
+        {color: 'rgb(136, 124, 243)', text: 'maja', winCount: 1},
+        {color: 'rgb(150, 140, 249)', text: 'nina', winCount: 1},
+        {color: 'rgb(164, 156, 255)', text: 'mina', winCount: 0},
+        {color: 'rgb(178, 165, 255)', text: 'amina', winCount: 1},
+        {color: 'rgb(150, 140, 249)', text: 'azra', winCount: 0}
       ],
       isSpinning: false,
       newItemText: '',
@@ -280,38 +228,9 @@ export default {
       cursorDistance: 0,
       cursorPosition: 'edge',
       
-      // Border settings
-      borderColor: '#1e3a8a',
-      borderWidth: 30,
-      
-      // Dot settings
-      dotColor: '#ffffff',
-      dotSize: 8,
-      dotCount: 60,
-      shineColor: '#ffff00'
     }
   },
   computed: {
-    wheelWrapperStyle() {
-      const dotSizeRatio = this.dotSize / 10;
-      const dotSpacing = 360 / this.dotCount;
-      
-      return {
-        border: `${this.borderWidth}px solid ${this.borderColor}`,
-        position: 'relative',
-        borderRadius: '50%',
-        boxShadow: '0 0 0 5px rgba(255, 255, 255, 0.2), inset 0 0 20px rgba(0, 0, 0, 0.2)',
-        overflow: 'hidden',
-        '--border-width': `${this.borderWidth}px`,
-        '--border-color': this.borderColor,
-        '--dot-color': this.dotColor,
-        '--dot-size': this.dotSize,
-        '--dot-count': this.dotCount,
-        '--shine-color': this.shineColor,
-        '--dot-size-ratio': dotSizeRatio,
-        '--dot-spacing': dotSpacing
-      }
-    }
   },
   methods: {
     handleSpinButtonClick() {
@@ -353,9 +272,21 @@ export default {
     addNewItem() {
       if (!this.newItemText.trim()) return;
       
-      const newColor = this.slices.length % 2 === 0 ? '#ffffff' : '#e74c3c';
+      // Generate a color based on position in the array
+      const baseColor1 = [108, 92, 231]; // #6c5ce7
+      const baseColor2 = [178, 165, 255]; // #b2a5ff
+      const steps = Math.max(1, this.slices.length);
+      
+      // Calculate interpolated color
+      const ratio = (this.slices.length % 10) / 10;
+      const newColor = [
+        Math.round(baseColor1[0] + (baseColor2[0] - baseColor1[0]) * ratio),
+        Math.round(baseColor1[1] + (baseColor2[1] - baseColor1[1]) * ratio),
+        Math.round(baseColor1[2] + (baseColor2[2] - baseColor1[2]) * ratio)
+      ];
+      
       this.slices.push({
-        color: newColor,
+        color: `rgb(${newColor.join(',')})`,
         text: this.newItemText.trim(),
         winCount: 0
       });
@@ -385,21 +316,6 @@ export default {
       const nextIndex = (currentIndex + 1) % colors.length
       this.slices[index].color = colors[nextIndex]
       this.updateWheel()
-    },
-    selectBorderColor() {
-      const colors = ['#1e3a8a', '#2c3e50', '#000000', '#3498db', '#e74c3c']
-      const currentIndex = colors.indexOf(this.borderColor)
-      this.borderColor = colors[(currentIndex + 1) % colors.length]
-    },
-    selectDotColor() {
-      const colors = ['#ffffff', '#f1c40f', '#e74c3c', '#3498db', '#2ecc71']
-      const currentIndex = colors.indexOf(this.dotColor)
-      this.dotColor = colors[(currentIndex + 1) % colors.length]
-    },
-    selectShineColor() {
-      const colors = ['#ffff00', '#ffffff', '#ff9900', '#00ffff', '#ff00ff']
-      const currentIndex = colors.indexOf(this.shineColor)
-      this.shineColor = colors[(currentIndex + 1) % colors.length]
     },
     moveItemUp(index) {
       if (index > 0) {
@@ -437,6 +353,36 @@ export default {
       // Toggle the 'included' property
       this.slices[index].included = this.slices[index].included === false ? true : false;
       this.updateWheel();
+    },
+    
+    resetInputs() {
+      // Reset all inputs and clear the slices array
+      this.slices = [];
+      this.newItemText = '';
+      this.updateWheel();
+    },
+    
+    shuffleItems() {
+      // Fisher-Yates shuffle algorithm
+      for (let i = this.slices.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [this.slices[i], this.slices[j]] = [this.slices[j], this.slices[i]];
+      }
+      this.updateWheel();
+    },
+
+
+    hexToRgb(hex) {
+      const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+      return result ? {
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16)
+      } : null;
+    },
+
+    rgbToHex(r, g, b) {
+      return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
     }
   }
 }
@@ -619,11 +565,57 @@ export default {
   cursor: pointer;
 }
 
-.spin-btn {
+        .spin-btn {
   width: 100%;
   margin-top: 15px;
   font-weight: bold;
   font-size: 16px;
   padding: 12px;
 }
+.item-count {
+    display: inline-block;
+    padding: 8px 16px;
+    background: linear-gradient(145deg, #6c5ce7, #5b4dc7);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    min-width: 50px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.spin-center-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #3498db, #2980b9);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.spin-center-button:hover:not(:disabled) {
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.spin-center-button:active:not(:disabled) {
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
+.spin-center-button:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
 </style>

@@ -106,7 +106,7 @@ export default {
 }
 
 .main-content {
-  display: flex;
+  display: center;
   flex-direction: column;
   gap: 40px;
 }
