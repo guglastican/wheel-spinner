@@ -178,7 +178,7 @@ export default {
 
 <style scoped>
 .yes-no-wheel-container {
-  display: center;
+  display: flex;
   flex-direction: column;
   gap: 30px;
   max-width: 800px;
