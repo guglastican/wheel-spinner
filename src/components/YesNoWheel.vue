@@ -71,7 +71,7 @@
         <label>Number of Input Sets</label>
         <div class="input-sets">
           <button 
-            v-for="n in 8" 
+            v-for="n in 7" 
             :key="n" 
             class="input-set-btn" 
             :class="{ active: inputSets === n }"

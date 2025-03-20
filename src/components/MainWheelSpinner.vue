@@ -20,7 +20,7 @@
               <div style="width: 30px; height: 40px;">
                 <svg viewBox="0 0 24 32" style="width: 100%; height: 100%; filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));">
                   <!-- Teardrop/droplet shape -->
-                  <path d="M12 2 C12 2, 2 16, 2 22 C2 28, 22 28, 22 22 C22 16, 12 2, 12 2 Z" fill="#e74c3c" />
+                  <path d="M12 2 C12 2, 2 16, 2 22 C2 28, 22 28, 22 22 C22 16, 12 2, 12 2 Z" fill="#d1cae0" />
                   
                   <!-- Highlight/shine effect -->
                   <path d="M12 4 C12 4, 4 16, 4 21 C4 24, 10 26, 16 24 C10 26, 6 22, 6 19 C6 14, 12 4, 12 4 Z" fill="#f8c9c5" opacity="0.6" />
@@ -212,13 +212,13 @@ export default {
       winnerResult: null,
       defaultWinner: 0,
       slices: [
-        {color: 'rgb(108, 92, 231)', text: 'sanja', winCount: 2},
-        {color: 'rgb(122, 108, 237)', text: 'tanja', winCount: 1},
-        {color: 'rgb(136, 124, 243)', text: 'maja', winCount: 1},
-        {color: 'rgb(150, 140, 249)', text: 'nina', winCount: 1},
-        {color: 'rgb(164, 156, 255)', text: 'mina', winCount: 0},
-        {color: 'rgb(178, 165, 255)', text: 'amina', winCount: 1},
-        {color: 'rgb(150, 140, 249)', text: 'azra', winCount: 0}
+        {color: 'rgb(108, 92, 231)', text: 'James', winCount: 0},
+        {color: 'rgb(122, 108, 237)', text: 'Curry', winCount: 0},
+        {color: 'rgb(136, 124, 243)', text: 'Durant', winCount: 0},
+        {color: 'rgb(150, 140, 249)', text: 'Tatum', winCount: 0},
+        {color: 'rgb(164, 156, 255)', text: 'Irving', winCount: 0},
+        {color: 'rgb(178, 165, 255)', text: 'Lillard', winCount: 0},
+        {color: 'rgb(150, 140, 249)', text: 'Harden', winCount: 0}
       ],
       isSpinning: false,
       newItemText: '',
@@ -440,7 +440,7 @@ export default {
 }
 
 .btn-primary {
-  background-color: #3498db;
+  background-color: #6a29e3;
   color: white;
   border: none;
   border-radius: 4px;
@@ -467,7 +467,7 @@ export default {
   opacity: 0.7;
   background-color: #f8f8f8;
   text-decoration: line-through;
-  border-left-color: #e74c3c;
+  border-left-color: #c9948e;
 }
 
 .item-color-indicator {
@@ -542,7 +542,7 @@ export default {
 }
 
 .action-btn.remove:hover {
-  color: #e74c3c;
+  color: #b0736c;
 }
 
 .action-btn:disabled {
