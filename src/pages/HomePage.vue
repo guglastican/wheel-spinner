@@ -57,7 +57,6 @@ export default {
 <style scoped>
 .home-page {
   font-family: Arial, sans-serif;
-  display: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
