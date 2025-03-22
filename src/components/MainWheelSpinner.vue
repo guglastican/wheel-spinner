@@ -419,8 +419,7 @@ export default {
 
 .controls {
   flex: 1;
-  
-  min-width: 400px;
+  min-width: 300px;
 }
 
 .control-section {
