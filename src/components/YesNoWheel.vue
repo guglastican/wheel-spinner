@@ -90,6 +90,15 @@
 import VueWheelSpinner from './VueWheelSpinner.vue'
 
 export default {
+  name: "YesNoWheel",
+  metaInfo() {
+    return {
+      title: "Yes No Wheel - Make Decisions with Fun",
+      meta: [
+        { name: 'description', content: 'Spin the Yes No Wheel to make decisions or settle debates. Fun and easy to use decision-making tool with customizable options.' }
+      ]
+    }
+  },
   components: {
     VueWheelSpinner
   },
@@ -324,13 +333,24 @@ export default {
 
 @media (max-width: 768px) {
   .result-display {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
   
   .result-box {
-    width: 100%;
-    max-width: 200px;
+    width: 45%;
+    max-width: none;
+    height: 120px;
+  }
+
+  .result-count {
+    font-size: 48px;
+  }
+
+  .result-label {
+    font-size: 18px;
   }
 }
 </style>
