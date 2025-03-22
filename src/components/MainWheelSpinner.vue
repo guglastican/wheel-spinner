@@ -419,14 +419,15 @@ export default {
 
 .controls {
   flex: 1;
-  min-width: 300px;
+  
+  min-width: 400px;
 }
 
 .control-section {
   margin-bottom: 30px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 15px;
+  padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   background-color: #fff;
 }
@@ -451,7 +452,7 @@ export default {
 .item-row {
   display: flex;
   align-items: center;
-  padding: 12px 15px;
+  padding: 12px 10px;
   border-bottom: 1px solid #eee;
   transition: all 0.2s ease;
   position: relative;
