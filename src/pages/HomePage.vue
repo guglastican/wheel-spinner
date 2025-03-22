@@ -27,7 +27,7 @@
         <p>A Random Wheel operates by spinning a digital wheel divided into multiple sections, each containing a unique option. When the wheel is spun, it randomly lands on one of these sections, providing an unbiased selection.</p>
         <h3>Steps to Use a Random Wheel:</h3>
         <div class="wheel-illustration">
-          <img src="C:\Users\Maglic\OneDrive\Documents\GitHub\wheel-spinner\src\wheel_inputs.png" alt="Wheel illustration" class="wheel-image">
+          <img src="/wheel_inputs.png" alt="Wheel illustration" class="wheel-image">
         </div>
         <ol class="steps-list">
           <li><strong>Enter Your Options</strong> – Add names, numbers, colors, or choices to the wheel.</li>
