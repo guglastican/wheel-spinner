@@ -147,8 +147,15 @@ function drawLabel(context, centerX, centerY, radius, startAngle, endAngle, fill
   context.textAlign = 'right';
   context.textBaseline = 'middle';
   context.fillStyle = getContrastingColor(fillColor);
-  context.font = 'bold 16px Arial';
-  context.fillText(sliceLabel, radius - 10, 0);
+  
+  // Responsive font size based on container width
+  const container = getContainer();
+  const baseSize = Math.max(12, Math.min(16, container.clientWidth * 0.04)); // Min 12px, max 16px, scales with container
+  context.font = `bold ${baseSize}px Arial`;
+  
+  // Adjust text position based on container size
+  const textOffset = Math.max(5, radius * 0.1); // Minimum 5px offset
+  context.fillText(sliceLabel, radius - textOffset, 0);
   context.restore();
 }
 
@@ -412,6 +419,20 @@ defineExpose({
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .wheel-wrapper {
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+  
+  canvas {
+    max-width: 100%;
+    max-height: 80vh;
+  }
 }
 
 .cursor {
