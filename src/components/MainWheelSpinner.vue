@@ -424,11 +424,22 @@ export default {
 
 .control-section {
   margin-bottom: 30px;
-  border: 1px solid #ddd;
+  border: 1px solid #e0e0e0; /* Lighter border */
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06); /* Slightly softer shadow */
   background-color: #fff;
+}
+
+/* Style section headings */
+.control-section h2 {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 20px; /* Increased bottom margin */
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
 }
 
 .form-control {
@@ -618,4 +629,90 @@ export default {
   opacity: 0.7;
 }
 
+/* Cursor Section Specific Styles */
+.control-group {
+  margin-bottom: 20px; /* Increased spacing between groups */
+}
+
+.control-group label {
+  display: block;
+  font-weight: 600; /* Bolder labels */
+  margin-bottom: 8px; /* Space below label */
+  font-size: 0.9em;
+  color: #555;
+}
+
+.input-group {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  gap: 5px;
+}
+
+.input-group .form-control {
+  flex-grow: 1; /* Allow input to take available space */
+}
+
+.input-group .btn-sm {
+  padding: 5px 10px; /* Adjust padding for smaller buttons */
+  font-size: 1em;
+  line-height: 1;
+  min-width: 30px; /* Ensure minimum width */
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+}
+.input-group .btn-sm:hover {
+    background-color: #e0e0e0;
+}
+
+.angle-presets {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.angle-preset-btn {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 0.85em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #495057;
+}
+
+.angle-preset-btn:hover {
+  background-color: #e9ecef;
+  border-color: #ced4da;
+}
+
+.angle-preset-btn.active {
+  background-color: #6c5ce7; /* Use a primary color */
+  color: white;
+  border-color: #6c5ce7;
+  font-weight: 600;
+}
+
+/* Ensure select dropdown also has consistent styling */
+.control-group select.form-control {
+  appearance: none; /* Custom arrow styling might be needed */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+  padding-right: 2.5rem; /* Space for arrow */
+}
+
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column; /* Ensure stacking */
+  }
+  .wheel-container,
+  .controls {
+    flex-basis: 100%; /* Make each take full width */
+    min-width: unset; /* Remove min-width constraint */
+  }
+}
 </style>
