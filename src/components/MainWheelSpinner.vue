@@ -6,7 +6,7 @@
           Winner: {{ winnerResult.text }} 🎉
         </h2>
         <div class="wheel-wrapper" :style="wheelWrapperStyle">
-          <VueWheelSpinner 
+          <VueWheelSpinner
             ref="spinner"
             :slices="slices"
             :winner-index="defaultWinner"
@@ -15,24 +15,24 @@
             :cursor-distance="cursorDistance"
             @spin-start="onSpinStart"
             @spin-end="onSpinEnd">
-            
+
             <template #cursor>
               <div style="width: 30px; height: 40px;">
                 <svg viewBox="0 0 24 32" style="width: 100%; height: 100%; filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));">
                   <!-- Teardrop/droplet shape -->
                   <path d="M12 2 C12 2, 2 16, 2 22 C2 28, 22 28, 22 22 C22 16, 12 2, 12 2 Z" fill="#d1cae0" />
-                  
+
                   <!-- Highlight/shine effect -->
                   <path d="M12 4 C12 4, 4 16, 4 21 C4 24, 10 26, 16 24 C10 26, 6 22, 6 19 C6 14, 12 4, 12 4 Z" fill="#f8c9c5" opacity="0.6" />
-                  
+
                   <!-- Inner circle/hole -->
                   <circle cx="12" cy="20" r="4" fill="white" />
                 </svg>
               </div>
             </template>
-            
+
             <template #default>
-              <button 
+              <button
                 @click="handleSpinButtonClick"
                 :disabled="isSpinning"
                 class="spin-center-button">
@@ -74,13 +74,13 @@
             </div>
             <div class="header-divider"></div>
           </div>
-          
+
           <!-- Input field -->
           <div class="input-container">
-            <input 
-              type="text" 
-              v-model="newItemText" 
-              placeholder="Input text here..." 
+            <input
+              type="text"
+              v-model="newItemText"
+              placeholder="Input text here..."
               class="form-control"
               @keyup.enter="addNewItem" />
             <button class="add-btn" @click="addNewItem" title="Add item">
@@ -94,15 +94,16 @@
               </svg>
             </button>
           </div>
-          
+
           <!-- Items list -->
           <div class="items-list">
-            <div 
-              v-for="(slice, index) in slices" 
-              :key="index" 
+            <div
+              v-for="(slice, index) in slices"
+              :key="index"
               class="item-row"
               :class="{ 'excluded': slice.included === false }">
-              <div class="item-color-indicator" :style="{ backgroundColor: slice.color }"></div>
+              <!-- MODIFIED: Replaced div with input type="color" -->
+              <input type="color" v-model="slice.color" class="item-color-input" @input="updateWheel">
               <div class="item-text">{{ slice.text }}</div>
               <div class="win-counter" v-if="slice.winCount > 0">
                 +{{ slice.winCount }}
@@ -136,7 +137,7 @@
               </div>
             </div>
           </div>
-          
+
           <button @click="spinWheel" class="btn btn-primary spin-btn" :disabled="isSpinning">
             Spin the Wheel
           </button>
@@ -148,26 +149,26 @@
           <div class="control-group">
             <label>Cursor Angle</label>
             <div class="input-group">
-              <input 
-                type="number" 
-                v-model.number="cursorAngle" 
-                class="form-control" 
-                min="0" 
+              <input
+                type="number"
+                v-model.number="cursorAngle"
+                class="form-control"
+                min="0"
                 max="360" />
-              <button 
-                @click="cursorAngle = Math.max(0, cursorAngle - 10)" 
+              <button
+                @click="cursorAngle = Math.max(0, cursorAngle - 10)"
                 class="btn btn-sm">
                 -
               </button>
-              <button 
-                @click="cursorAngle = Math.min(360, cursorAngle + 10)" 
+              <button
+                @click="cursorAngle = Math.min(360, cursorAngle + 10)"
                 class="btn btn-sm">
                 +
               </button>
             </div>
             <div class="angle-presets">
-              <button 
-                v-for="angle in [0, 45, 90, 135, 180, 225, 270, 315, 360]" 
+              <button
+                v-for="angle in [0, 45, 90, 135, 180, 225, 270, 315, 360]"
                 :key="angle"
                 @click="cursorAngle = angle"
                 class="angle-preset-btn"
@@ -179,10 +180,10 @@
 
           <div class="control-group">
             <label>Cursor Distance</label>
-            <input 
-              type="number" 
-              v-model.number="cursorDistance" 
-              class="form-control" 
+            <input
+              type="number"
+              v-model.number="cursorDistance"
+              class="form-control"
               min="0" />
           </div>
 
@@ -211,26 +212,33 @@ export default {
     return {
       winnerResult: null,
       defaultWinner: 0,
+      // MODIFIED: Changed colors to hex
       slices: [
-        {color: 'rgb(108, 92, 231)', text: 'James', winCount: 0},
-        {color: 'rgb(122, 108, 237)', text: 'Curry', winCount: 0},
-        {color: 'rgb(136, 124, 243)', text: 'Durant', winCount: 0},
-        {color: 'rgb(150, 140, 249)', text: 'Tatum', winCount: 0},
-        {color: 'rgb(164, 156, 255)', text: 'Irving', winCount: 0},
-        {color: 'rgb(178, 165, 255)', text: 'Lillard', winCount: 0},
-        {color: 'rgb(150, 140, 249)', text: 'Harden', winCount: 0}
+        {color: '#6c5ce7', text: 'James', winCount: 0}, // Purple
+        {color: '#fd79a8', text: 'Curry', winCount: 0}, // Pink
+        {color: '#00cec9', text: 'Durant', winCount: 0}, // Teal
+        {color: '#fdcb6e', text: 'Tatum', winCount: 0}, // Yellow
+        {color: '#e17055', text: 'Irving', winCount: 0}, // Orange
+        {color: '#0984e3', text: 'Lillard', winCount: 0}, // Blue
+        {color: '#d63031', text: 'Harden', winCount: 0} // Red
       ],
       isSpinning: false,
       newItemText: '',
-      
+
       // Cursor settings
       cursorAngle: 90,
       cursorDistance: 0,
       cursorPosition: 'edge',
-      
+
     }
   },
   computed: {
+    // Added computed property for wheel wrapper style if needed later
+    wheelWrapperStyle() {
+      return {
+        // Example: could add dynamic styles here based on state
+      };
+    }
   },
   methods: {
     handleSpinButtonClick() {
@@ -238,25 +246,27 @@ export default {
     },
     spinWheel() {
       if (this.isSpinning) return;
-      
+
       // Filter out slices that are not included
       const includedSlices = this.slices.filter(slice => slice.included !== false);
-      
+
       // Check if there are any included slices
       if (includedSlices.length === 0) {
         alert("Please include at least one item in the wheel");
         return;
       }
-      
+
       // Randomly select a winner from included slices
       const randomIndex = Math.floor(Math.random() * includedSlices.length);
-      
+
       // Find the corresponding index in the original slices array
-      const originalIndex = this.slices.findIndex(slice => 
+      // This logic might need adjustment if VueWheelSpinner expects index based on filtered list
+      const originalIndex = this.slices.findIndex(slice =>
         slice === includedSlices[randomIndex]
       );
-      
-      this.$refs.spinner.spinWheel(randomIndex);
+
+      // Pass the index relative to the *currently displayed* slices to VueWheelSpinner
+      this.$refs.spinner.spinWheel(originalIndex); // Assuming VueWheelSpinner handles indices based on its current `slices` prop
     },
     onSpinStart() {
       this.winnerResult = null;
@@ -264,33 +274,26 @@ export default {
     },
     onSpinEnd(winnerIndex) {
       this.isSpinning = false;
+      // Ensure winnerIndex corresponds to the correct item in the *original* slices array
       this.winnerResult = this.slices[winnerIndex];
-      
+
       // Increment the win counter for the winning item
-      this.slices[winnerIndex].winCount = (this.slices[winnerIndex].winCount || 0) + 1;
+      if (this.slices[winnerIndex]) {
+         this.slices[winnerIndex].winCount = (this.slices[winnerIndex].winCount || 0) + 1;
+      }
     },
     addNewItem() {
       if (!this.newItemText.trim()) return;
-      
-      // Generate a color based on position in the array
-      const baseColor1 = [108, 92, 231]; // #6c5ce7
-      const baseColor2 = [178, 165, 255]; // #b2a5ff
-      const steps = Math.max(1, this.slices.length);
-      
-      // Calculate interpolated color
-      const ratio = (this.slices.length % 10) / 10;
-      const newColor = [
-        Math.round(baseColor1[0] + (baseColor2[0] - baseColor1[0]) * ratio),
-        Math.round(baseColor1[1] + (baseColor2[1] - baseColor1[1]) * ratio),
-        Math.round(baseColor1[2] + (baseColor2[2] - baseColor1[2]) * ratio)
-      ];
-      
+
+      // MODIFIED: Generate a random hex color
+      const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
+
       this.slices.push({
-        color: `rgb(${newColor.join(',')})`,
+        color: randomColor,
         text: this.newItemText.trim(),
         winCount: 0
       });
-      
+
       this.newItemText = '';
       this.updateWheel();
     },
@@ -308,15 +311,7 @@ export default {
         })
       }
     },
-    openColorPicker(index) {
-      // In a real app, you would open a color picker here
-      // For this demo, we'll just cycle through some predefined colors
-      const colors = ['#e74c3c', '#ffffff', '#3498db', '#2ecc71', '#f1c40f', '#9b59b6']
-      const currentIndex = colors.indexOf(this.slices[index].color)
-      const nextIndex = (currentIndex + 1) % colors.length
-      this.slices[index].color = colors[nextIndex]
-      this.updateWheel()
-    },
+    // REMOVED: openColorPicker method
     moveItemUp(index) {
       if (index > 0) {
         // Swap the current item with the one above it
@@ -344,7 +339,7 @@ export default {
         winCount: 0,
         included: originalItem.included !== false
       };
-      
+
       // Insert the copy after the original
       this.slices.splice(index + 1, 0, newItem);
       this.updateWheel();
@@ -354,14 +349,14 @@ export default {
       this.slices[index].included = this.slices[index].included === false ? true : false;
       this.updateWheel();
     },
-    
+
     resetInputs() {
       // Reset all inputs and clear the slices array
       this.slices = [];
       this.newItemText = '';
       this.updateWheel();
     },
-    
+
     shuffleItems() {
       // Fisher-Yates shuffle algorithm
       for (let i = this.slices.length - 1; i > 0; i--) {
@@ -394,6 +389,7 @@ export default {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .main-content {
@@ -481,13 +477,33 @@ export default {
   border-left-color: #c9948e;
 }
 
-.item-color-indicator {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
+/* REMOVED: .item-color-indicator */
+
+/* ADDED: Styling for color input */
+.item-color-input {
+  width: 24px; /* Slightly larger */
+  height: 24px;
+  border: none; /* Remove default border */
+  padding: 0; /* Remove default padding */
+  border-radius: 4px; /* Slightly rounded */
   margin-right: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: transparent; /* Allow native color preview */
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1); /* Subtle shadow */
 }
+/* Hide the browser's default color picker preview text/button if possible */
+.item-color-input::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+.item-color-input::-webkit-color-swatch {
+  border: none;
+  border-radius: 4px;
+}
+.item-color-input::-moz-color-swatch {
+  border: none;
+  border-radius: 4px;
+}
+
 
 .item-text {
   flex: 1;
@@ -706,13 +722,29 @@ export default {
 
 
 @media (max-width: 768px) {
+  .container {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
   .main-content {
     flex-direction: column; /* Ensure stacking */
+    gap: 15px; /* Reduce gap when stacked */
   }
   .wheel-container,
   .controls {
     flex-basis: 100%; /* Make each take full width */
     min-width: unset; /* Remove min-width constraint */
+  }
+  .wheel-wrapper {
+     max-width: 95vw; /* Ensure wheel fits viewport width */
+  }
+  .item-actions {
+    flex-wrap: wrap; /* Allow action buttons to wrap */
+    justify-content: flex-end; /* Align wrapped buttons to the right */
+    gap: 4px; /* Reduce gap slightly */
+  }
+  .item-text {
+     /* Allow text to wrap if needed, though ellipsis is currently active */
+     white-space: normal; 
   }
 }
 </style>

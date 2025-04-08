@@ -1,18 +1,6 @@
 <template>
   <div class="yes-no-wheel-page">
-    <header class="header">
-      <div class="logo">
-        <svg viewBox="0 0 24 24" width="30" height="30">
-          <circle cx="12" cy="12" r="10" fill="#6c5ce7" />
-          <path d="M12 2L14 6L18 7L15 10L16 14L12 12L8 14L9 10L6 7L10 6L12 2Z" fill="#ffeaa7" />
-        </svg>
-        <h1>Yes/No Wheel Picker</h1>
-      </div>
-      <nav class="navigation">
-        <a href="/" class="nav-link">Home</a>
-        <a href="/yes-no-wheel" class="nav-link active">Yes/No Wheel</a>
-      </nav>
-    </header>
+    <AppHeader title="Yes/No Wheel Picker" /> <!-- Use shared header -->
 
     <main class="main-content">
       <section class="intro-section">
@@ -43,14 +31,9 @@
   </div>
 </template>
 
-<script>
-import YesNoWheel from '../components/YesNoWheel.vue'
-
-export default {
-  components: {
-    YesNoWheel
-  }
-}
+<script setup> // Changed to script setup
+import YesNoWheel from '../components/YesNoWheel.vue';
+import AppHeader from '../components/AppHeader.vue'; // Import shared header
 </script>
 
 <style scoped>
@@ -61,49 +44,7 @@ export default {
   padding: 20px;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #eee;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo h1 {
-  font-size: 24px;
-  margin: 0;
-  color: #333;
-}
-
-.navigation {
-  display: flex;
-  gap: 20px;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: #555;
-  font-weight: 500;
-  padding: 5px 10px;
-  border-radius: 4px;
-  transition: all 0.2s;
-}
-
-.nav-link:hover {
-  background-color: #f5f5f5;
-}
-
-.nav-link.active {
-  color: #6c5ce7;
-  font-weight: bold;
-}
+/* REMOVED Header, Logo, Navigation styles - now in AppHeader.vue */
 
 .main-content {
   display: center;
@@ -161,16 +102,5 @@ export default {
   color: #777;
 }
 
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-  }
-  
-  .navigation {
-    width: 100%;
-    justify-content: space-between;
-  }
-}
+/* REMOVED Header media query styles */
 </style>
