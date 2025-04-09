@@ -23,6 +23,7 @@
           :winner-index="winnerIndex"
           :cursor-position="cursorPosition"
           :cursor-angle="cursorAngle"
+          :cursor-distance="cursorDistance"  
           @spin-start="onSpinStart"
           @spin-end="onSpinEnd">
           
@@ -115,7 +116,8 @@ export default {
       lastResult: null,
       winnerIndex: 0,
       cursorPosition: 'edge',
-      cursorAngle: 90
+      cursorAngle: 90, // Changed default angle to bottom
+      cursorDistance: 10 // Added cursor distance
     }
   },
   computed: {
@@ -135,21 +137,17 @@ export default {
 
       if (this.mode === 'binary') {
         const slices = [];
-        const totalSlices = this.inputSets * 2; // Need YES and NO for each set
-        const useMultiColor = this.inputSets >= 3;
+        const totalSlices = this.inputSets; // Total slices is directly the selected number
+        const useMultiColor = totalSlices >= 3;
         const colors = useMultiColor ? binaryColorsMulti : binaryColorsTwo;
         
         for (let i = 0; i < totalSlices; i++) {
-          const colorIndex = useMultiColor ? (i % colors.length) : (i % 2);
           slices.push({
-            color: colors[colorIndex], 
-            text: i % 2 === 0 ? 'YES' : 'NO' // Text still alternates YES/NO
+            color: colors[i % colors.length], // Cycle through the chosen palette
+            text: i % 2 === 0 ? 'YES' : 'NO'  // Alternate text YES/NO
           });
         }
-        // Optional: Shuffle slices for better visual distribution when using multi-color
-        if (useMultiColor) {
-             slices.sort(() => Math.random() - 0.5);
-        }
+        // No shuffle needed here, color cycling handles distinction for >= 3
         return slices;
       } else { // Ternary mode
         const slices = [];
