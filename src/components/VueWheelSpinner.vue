@@ -150,11 +150,11 @@ function drawLabel(context, centerX, centerY, radius, startAngle, endAngle, fill
   
   // Responsive font size based on container width
   const container = getContainer();
-  const baseSize = Math.max(12, Math.min(16, container.clientWidth * 0.04)); // Min 12px, max 16px, scales with container
+  const baseSize = Math.max(16, Math.min(24, container.clientWidth * 0.06)); // Min 16px, max 24px, scales with container
   context.font = `bold ${baseSize}px Arial`;
   
   // Adjust text position based on container size
-  const textOffset = Math.max(5, radius * 0.1); // Minimum 5px offset
+  const textOffset = Math.max(10, radius * 0.15); // Minimum 10px offset, increased from 5px
   context.fillText(sliceLabel, radius - textOffset, 0);
   context.restore();
 }

@@ -29,7 +29,7 @@
           <template #cursor>
             <div style="width: 30px; height: 40px;">
               <svg viewBox="0 0 24 32" style="width: 100%; height: 100%; filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));">
-                <path d="M12 2 C12 2, 2 16, 2 22 C2 28, 22 28, 22 22 C22 16, 12 2, 12 2 Z" fill="#e74c3c" />
+                <path d="M12 2 C12 2, 2 16, 2 22 C2 28, 22 28, 22 22 C22 16, 12 2, 12 2 Z" fill="#8d99ae" />
                 <path d="M12 4 C12 4, 4 16, 4 21 C4 24, 10 26, 16 24 C10 26, 6 22, 6 19 C6 14, 12 4, 12 4 Z" fill="#f8c9c5" opacity="0.6" />
                 <circle cx="12" cy="20" r="4" fill="white" />
               </svg>
@@ -120,31 +120,57 @@ export default {
   },
   computed: {
     wheelSlices() {
+      // Define color palettes
+      const binaryColorsTwo = ['#5E35B1', '#03A9F4']; // Purple, Light Blue
+      const binaryColorsMulti = [
+          '#e6194B', // Red
+          '#3cb44b', // Green
+          '#ffe119', // Yellow
+          '#4363d8', // Blue
+          '#f58231', // Orange
+          '#911eb4', // Purple
+          '#42d4f4', // Cyan 
+      ];
+      const ternaryColors = ['#5E35B1', '#03A9F4', '#0288d1']; // Purple, Light Blue, Darker Blue
+
       if (this.mode === 'binary') {
-        // Create alternating yes/no slices based on inputSets
         const slices = [];
-        for (let i = 0; i < this.inputSets; i++) {
-          slices.push({
-            color: i % 2 === 0 ? '#5E35B1' : '#03A9F4', // Green for YES, Yellow for NO
-            text: i % 2 === 0 ? 'YES' : 'NO'
-          });
-        }
-        return slices;
-      } else {
-        // Create yes/no/maybe slices based on inputSets
-        const slices = [];
-        const totalSlices = this.inputSets * 3; // Multiply by 3 for yes/no/maybe
+        const totalSlices = this.inputSets * 2; // Need YES and NO for each set
+        const useMultiColor = this.inputSets >= 3;
+        const colors = useMultiColor ? binaryColorsMulti : binaryColorsTwo;
         
         for (let i = 0; i < totalSlices; i++) {
-          const type = i % 3;
-          if (type === 0) {
-            slices.push({ color: '#5E35B1', text: 'YES' }); // Green
-          } else if (type === 1) {
-            slices.push({ color: '#03A9F4', text: 'NO' }); // Yellow
-          } else {
-            slices.push({ color: '#0288d1', text: 'MAYBE' }); // Blue
-          }
+          const colorIndex = useMultiColor ? (i % colors.length) : (i % 2);
+          slices.push({
+            color: colors[colorIndex], 
+            text: i % 2 === 0 ? 'YES' : 'NO' // Text still alternates YES/NO
+          });
         }
+        // Optional: Shuffle slices for better visual distribution when using multi-color
+        if (useMultiColor) {
+             slices.sort(() => Math.random() - 0.5);
+        }
+        return slices;
+      } else { // Ternary mode
+        const slices = [];
+        // Ensure enough slices for the input sets * 3 options
+        const totalSlicesNeeded = this.inputSets * 3; 
+        
+        for (let i = 0; i < totalSlicesNeeded; i++) {
+          const typeIndex = i % 3; // 0 for YES, 1 for NO, 2 for MAYBE
+          let text = '';
+          if (typeIndex === 0) text = 'YES';
+          else if (typeIndex === 1) text = 'NO';
+          else text = 'MAYBE';
+          
+          slices.push({ 
+              color: ternaryColors[typeIndex], 
+              text: text 
+          });
+        }
+        // Shuffle the ternary slices for better distribution if desired, 
+        // but current logic ensures balanced YES/NO/MAYBE counts per set.
+        // Example shuffle (optional): slices.sort(() => Math.random() - 0.5);
         return slices;
       }
     }

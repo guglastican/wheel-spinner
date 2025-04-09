@@ -10,7 +10,7 @@
             ref="spinner"
             :slices="slices"
             :winner-index="defaultWinner"
-            :cursor-position="cursorPosition"
+            :cursor-position="cursorPosition" 
             :cursor-angle="cursorAngle"
             :cursor-distance="cursorDistance"
             @spin-start="onSpinStart"
@@ -18,7 +18,7 @@
 
             <template #cursor>
               <div style="width: 30px; height: 40px;">
-                <svg viewBox="0 0 24 32" style="width: 100%; height: 100%; filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));">
+                <svg viewBox="0 0 24 20" style="width: 100%; height: 100%; filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));">
                   <!-- Teardrop/droplet shape -->
                   <path d="M12 2 C12 2, 2 16, 2 22 C2 28, 22 28, 22 22 C22 16, 12 2, 12 2 Z" fill="#d1cae0" />
 
@@ -187,13 +187,8 @@
               min="0" />
           </div>
 
-          <div class="control-group">
-            <label>Cursor Position</label>
-            <select v-model="cursorPosition" class="form-control">
-              <option value="edge">Edge</option>
-              <option value="center">Center</option>
-            </select>
-          </div>
+          <!-- REMOVED Cursor Position Control Group -->
+          
         </section>
 
       </div>
@@ -212,15 +207,15 @@ export default {
     return {
       winnerResult: null,
       defaultWinner: 0,
-      // MODIFIED: Changed colors to hex
+      // Updated with new color scheme
       slices: [
-        {color: '#6c5ce7', text: 'James', winCount: 0}, // Purple
-        {color: '#fd79a8', text: 'Curry', winCount: 0}, // Pink
-        {color: '#00cec9', text: 'Durant', winCount: 0}, // Teal
-        {color: '#fdcb6e', text: 'Tatum', winCount: 0}, // Yellow
-        {color: '#e17055', text: 'Irving', winCount: 0}, // Orange
-        {color: '#0984e3', text: 'Lillard', winCount: 0}, // Blue
-        {color: '#d63031', text: 'Harden', winCount: 0} // Red
+        {color: '#ffbe0b', text: 'James', winCount: 0}, // Dark green
+        {color: '#fb5607', text: 'Curry', winCount: 0}, // Light green
+        {color: '#ff006e', text: 'Durant', winCount: 0}, // Very dark green
+        {color: '#90a955', text: 'Tatum', winCount: 0}, // Light green (repeated)
+        {color: '#8338ec', text: 'Irving', winCount: 0}, // Pale yellow-green
+        {color: '#3a86ff', text: 'Lillard', winCount: 0}, // Dark green (repeated)
+        {color: '#8d99ae', text: 'Harden', winCount: 0} // Very dark green (repeated)
       ],
       isSpinning: false,
       newItemText: '',
@@ -228,7 +223,7 @@ export default {
       // Cursor settings
       cursorAngle: 90,
       cursorDistance: 0,
-      cursorPosition: 'edge',
+      // REMOVED cursorPosition: 'edge',
 
     }
   },
