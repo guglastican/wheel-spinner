@@ -123,13 +123,13 @@ export default {
       // Define color palettes
       const binaryColorsTwo = ['#5E35B1', '#03A9F4']; // Purple, Light Blue
       const binaryColorsMulti = [
-          '#e6194B', // Red
-          '#3cb44b', // Green
-          '#ffe119', // Yellow
-          '#4363d8', // Blue
-          '#f58231', // Orange
-          '#911eb4', // Purple
-          '#42d4f4', // Cyan 
+          '#9d4edd', // Red
+          '#0582ca', // Green
+          '#7b2cbf', // Yellow
+          '#5a189a', // Blue
+          '#5465ff', // Orange
+          '#e0aaff', // Purple
+          '#1e96fc', // Cyan 
       ];
       const ternaryColors = ['#5E35B1', '#03A9F4', '#0288d1']; // Purple, Light Blue, Darker Blue
 
