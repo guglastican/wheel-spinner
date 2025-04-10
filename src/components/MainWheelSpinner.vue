@@ -209,21 +209,21 @@ export default {
       defaultWinner: 0,
       // Updated with new color scheme
       slices: [
-        {color: '#ffbe0b', text: 'James', winCount: 0}, // Dark green
-        {color: '#fb5607', text: 'Curry', winCount: 0}, // Light green
-        {color: '#ff006e', text: 'Durant', winCount: 0}, // Very dark green
-        {color: '#90a955', text: 'Tatum', winCount: 0}, // Light green (repeated)
-        {color: '#8338ec', text: 'Irving', winCount: 0}, // Pale yellow-green
-        {color: '#3a86ff', text: 'Lillard', winCount: 0}, // Dark green (repeated)
-        {color: '#8d99ae', text: 'Harden', winCount: 0} // Very dark green (repeated)
+        {color: '#4361ee', text: 'James', winCount: 0}, // Dark green
+        {color: '#ffc8dd', text: 'Curry', winCount: 0}, // Light green
+        {color: '#7161ef', text: 'Durant', winCount: 0}, // Very dark green
+        {color: '#00a6fb', text: 'Tatum', winCount: 0}, // Light green (repeated)
+        {color: '#a2d2ff', text: 'Irving', winCount: 0}, // Pale yellow-green
+        {color: '#b79ced', text: 'Lillard', winCount: 0}, // Dark green (repeated)
+        {color: '#f7e1d7', text: 'Harden', winCount: 0} // Very dark green (repeated)
       ],
       isSpinning: false,
       newItemText: '',
 
       // Cursor settings
       cursorAngle: 90,
-      cursorDistance: 260, // Set default distance to 260
-      // REMOVED cursorPosition: 'edge',
+      cursorDistance: 0, // Set default distance to 260
+      cursorPosition: 'edge',
 
     }
   },

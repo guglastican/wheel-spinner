@@ -12,6 +12,7 @@
       <router-link to="/" class="nav-link">Random Wheel </router-link>
       <router-link to="/yes-no-wheel" class="nav-link">Yes/No Wheel</router-link>
       <router-link to="/configure-embed" class="nav-link">Embed</router-link>
+      <router-link to="/terms" class="nav-link">Terms</router-link>
     </nav>
   </header>
 </template>

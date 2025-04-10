@@ -131,7 +131,7 @@ export default {
           '#5a189a', // Blue
           '#5465ff', // Orange
           '#e0aaff', // Purple
-          '#1e96fc', // Cyan 
+          '#00a6fb', // Cyan 
       ];
       const ternaryColors = ['#5E35B1', '#03A9F4', '#0288d1']; // Purple, Light Blue, Darker Blue
 

@@ -24,11 +24,16 @@ const routes = [
     component: EmbedWheelPage, 
     meta: { title: 'Embedded Wheel' } // Simple title for embed
   }, 
-  { 
-    path: '/configure-embed', 
-    component: EmbedConfigPage, 
-    meta: { title: 'Configure Embeddable Wheel - Rando Wheel' } 
-  } 
+  {
+    path: '/configure-embed',
+    component: EmbedConfigPage,
+    meta: { title: 'Configure Embeddable Wheel - Rando Wheel' }
+  },
+  {
+    path: '/terms',
+    component: () => import('./pages/TermsAndConditionsPage.vue'),
+    meta: { title: 'Terms and Conditions - Rando Wheel' }
+  }
 ]
 
 // Create router instance
