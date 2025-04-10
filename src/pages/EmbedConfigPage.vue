@@ -104,7 +104,8 @@ const generateEmbedCode = () => {
 /* Import or reuse styles from HomePage or App.vue if applicable */
 .embed-config-page {
   font-family: Arial, sans-serif;
-  max-width: 1200px;
+  max-width: 100%; /* Use 100% instead of fixed max-width */
+  overflow-x: hidden; /* Prevent horizontal scroll */
   margin: 0 auto;
   padding: 20px;
 }

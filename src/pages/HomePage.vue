@@ -72,7 +72,8 @@ import AppHeader from '../components/AppHeader.vue'; // Import shared header
 <style scoped>
 .home-page {
   font-family: Arial, sans-serif;
-  max-width: 1200px;
+  max-width: 100%; /* Use 100% instead of fixed max-width */
+  overflow-x: hidden; /* Prevent horizontal scroll */
   margin: 0 auto;
   padding: 20px;
 }
@@ -129,6 +130,18 @@ import AppHeader from '../components/AppHeader.vue'; // Import shared header
   margin-bottom: 10px;
   color: #555;
   line-height: 1.6;
+}
+
+.wheel-illustration {
+  text-align: center; /* Center the image */
+  margin: 20px 0;
+}
+
+.wheel-image {
+  max-width: 100%; /* Ensure image scales down */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below image */
+  margin: 0 auto; /* Center block image */
 }
 
 

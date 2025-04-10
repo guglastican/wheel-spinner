@@ -402,19 +402,25 @@ export default {
 }
 
 .wheel-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 500px; /* Adjust if needed based on border/padding */
-  margin: 20px auto; /* Added some vertical margin */
-  /* Added border styles */
-  border: 5px solid #e0e0e0; /* Example border color, adjust as needed */
-  border-radius: 50%; /* Make it circular */
-  /* Removed padding */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
-  aspect-ratio: 1 / 1; /* Maintain circular aspect ratio */
-  display: flex; /* Center the inner spinner */
-  justify-content: center;
-  align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    border: 5px solid #e0e0e0;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /*Example of overflow hidden added*/
+}
+
+.wheel-spinner {
+    /* Styles for the inner spinner element */
+    width: 80%; /* Adjust size as needed */
+    height: 80%;
+    /* Add animation styles here */
 }
 
 .controls {
@@ -512,9 +518,11 @@ export default {
 .item-text {
   flex: 1;
   font-weight: 500;
-  overflow: hidden;
+  overflow: hidden; /* Keep ellipsis for normal view */
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: nowrap; /* Keep nowrap for normal view */
+  min-width: 0; /* Allow shrinking in flex layout */
+  overflow-wrap: break-word; /* Allow breaking long words if needed */
 }
 
 .win-counter {
@@ -533,6 +541,7 @@ export default {
   margin-left: 15px;
   opacity: 0.7;
   transition: opacity 0.2s ease;
+  flex-shrink: 0; /* Prevent action buttons from shrinking excessively */
 }
 
 .item-row:hover .item-actions {
@@ -739,16 +748,30 @@ export default {
     min-width: unset; /* Remove min-width constraint */
   }
   .wheel-wrapper {
-     max-width: 95vw; /* Ensure wheel fits viewport width */
+     max-width: 95vw; /* Ensure wheel fits viewport width */ 
+     /* Ensure padding doesn't cause overflow with border */
+     box-sizing: border-box; 
+  }
+  .controls {
+      overflow: hidden; /* Prevent internal content overflow */
+  }
+  .control-section {
+      padding: 15px; /* Reduce padding slightly */
+  }
+  .input-container {
+      flex-wrap: wrap; /* Allow input/buttons to wrap */
   }
   .item-actions {
     flex-wrap: wrap; /* Allow action buttons to wrap */
     justify-content: flex-end; /* Align wrapped buttons to the right */
     gap: 4px; /* Reduce gap slightly */
+    margin-left: 8px; /* Reduce margin on mobile */
   }
   .item-text {
-     /* Allow text to wrap if needed, though ellipsis is currently active */
+     /* Allow text to wrap on mobile */
      white-space: normal; 
+     overflow: visible; /* Remove hidden overflow on mobile */
+     text-overflow: clip; /* Remove ellipsis on mobile */
   }
 }
 </style>

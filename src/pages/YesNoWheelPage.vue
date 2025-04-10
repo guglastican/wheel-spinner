@@ -80,7 +80,8 @@ import AppHeader from '../components/AppHeader.vue';
 <style scoped>
 .yes-no-wheel-page {
   font-family: Arial, sans-serif;
-  max-width: 1200px;
+  max-width: 100%; /* Use 100% instead of fixed max-width */
+  overflow-x: hidden; /* Prevent horizontal scroll */
   margin: 0 auto;
   padding: 20px;
 }

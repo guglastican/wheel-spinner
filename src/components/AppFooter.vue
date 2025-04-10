@@ -47,6 +47,7 @@
   .footer-content {
     flex-direction: column;
     gap: 10px;
+    text-align: center; /* Center text when stacked */
   }
 }
 </style>
