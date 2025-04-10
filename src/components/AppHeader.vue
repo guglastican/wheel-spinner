@@ -1,10 +1,7 @@
 <template>
   <header class="app-header">
     <div class="logo">
-      <svg viewBox="0 0 24 24" width="30" height="30">
-        <circle cx="12" cy="12" r="10" fill="#6c5ce7" />
-        <path d="M12 2L14 6L18 7L15 10L16 14L12 12L8 14L9 10L6 7L10 6L12 2Z" fill="#ffeaa7" />
-      </svg>
+      <img src="/logo_random_wheel.svg" alt="Random Wheel Logo" width="30" height="30">
       <h1>{{ title }}</h1>
     </div>
     <nav class="navigation">
