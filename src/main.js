@@ -28,12 +28,8 @@ const routes = [
     path: '/configure-embed',
     component: EmbedConfigPage,
     meta: { title: 'Configure Embeddable Wheel - Rando Wheel' }
-  },
-  {
-    path: '/terms',
-    component: () => import('./pages/TermsAndConditionsPage.vue'),
-    meta: { title: 'Terms and Conditions - Rando Wheel' }
   }
+  // Removed route for non-existent TermsAndConditionsPage.vue
 ]
 
 // Create router instance

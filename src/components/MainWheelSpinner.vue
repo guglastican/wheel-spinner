@@ -18,7 +18,7 @@
 
             <template #cursor>
               <div style="width: 30px; height: 40px;">
-                <svg viewBox="0 0 24 20" style="width: 100%; height: 100%; filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));">
+                <svg viewBox="0 0 24 24" style="width: 100%; height: 100%; filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));">
                   <!-- Teardrop/droplet shape -->
                   <path d="M12 2 C12 2, 2 16, 2 22 C2 28, 22 28, 22 22 C22 16, 12 2, 12 2 Z" fill="#8250df" /> <!-- Changed main color -->
 
@@ -404,8 +404,17 @@ export default {
 .wheel-wrapper {
   position: relative;
   width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 500px; /* Adjust if needed based on border/padding */
+  margin: 20px auto; /* Added some vertical margin */
+  /* Added border styles */
+  border: 5px solid #e0e0e0; /* Example border color, adjust as needed */
+  border-radius: 50%; /* Make it circular */
+  /* Removed padding */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  aspect-ratio: 1 / 1; /* Maintain circular aspect ratio */
+  display: flex; /* Center the inner spinner */
+  justify-content: center;
+  align-items: center;
 }
 
 .controls {
