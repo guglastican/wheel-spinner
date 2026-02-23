@@ -4,5 +4,8 @@ export default {
     plugins: [
         vue()
     ],
-    base: '/'
+    base: '/',
+    server: {
+        port: 5174
+    }
 }

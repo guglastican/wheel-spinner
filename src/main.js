@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage.vue';
 import YesNoWheelPage from './pages/YesNoWheelPage.vue';
 import EmbedWheelPage from './pages/EmbedWheelPage.vue'
 import EmbedConfigPage from './pages/EmbedConfigPage.vue' // Import the config page
+import WheelOfNamesPage from './pages/WheelOfNamesPage.vue'
 import App from './App.vue'
 
 // Define routes with meta titles
@@ -28,6 +29,11 @@ const routes = [
     path: '/configure-embed',
     component: EmbedConfigPage,
     meta: { title: 'Configure Embeddable Wheel - Rando Wheel' }
+  },
+  {
+    path: '/wheel-of-names',
+    component: WheelOfNamesPage,
+    meta: { title: 'Wheel of Names - Free Random Name Picker | Rando Wheel' }
   }
   // Removed route for non-existent TermsAndConditionsPage.vue
 ]

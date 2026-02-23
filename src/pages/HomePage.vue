@@ -51,7 +51,7 @@
         <h2>Other Wheel Tool</h2>
         <p>Other than the main random Wheel, there are several specialized tools of random Wheel created as well.</p>
         <ul>
-        <li><strong><router-link to="/">Name Pickers / Student Selectors</router-link>:</strong> Commonly used by educators to randomly select individuals, sometimes called "Wheel of Names" or "Random Name Picker". </li>
+        <li><strong><router-link to="/wheel-of-names">Name Pickers / Student Selectors</router-link>:</strong> Commonly used by educators to randomly select individuals, sometimes called "Wheel of Names" or "Random Name Picker". </li>
         <li><strong><router-link to="/yes-no-wheel">Yes/No Wheels</router-link>:</strong> For simple binary decisions.</li>
         </ul>
         <p>Each specialized version takes the core concept of random selection and tailors it to meet distinct needs, making them handy for everything from organizing activities to settling debates with a fun, impartial twist.</p>

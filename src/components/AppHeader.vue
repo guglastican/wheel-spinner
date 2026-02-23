@@ -6,7 +6,8 @@
     </div>
     <nav class="navigation">
       <!-- Use router-link for SPA navigation and active class handling -->
-      <router-link to="/" class="nav-link">Random Wheel </router-link>
+      <router-link to="/" class="nav-link">Random Wheel</router-link>
+      <router-link to="/wheel-of-names" class="nav-link">Wheel of Names</router-link>
       <router-link to="/yes-no-wheel" class="nav-link">Yes/No Wheel</router-link>
       <router-link to="/configure-embed" class="nav-link">Embed</router-link>
       
