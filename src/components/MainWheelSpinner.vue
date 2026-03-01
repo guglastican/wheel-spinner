@@ -203,12 +203,10 @@ export default {
   components: {
     VueWheelSpinner
   },
-  data() {
-    return {
-      winnerResult: null,
-      defaultWinner: 0,
-      // Updated with new color scheme
-      slices: [
+  props: {
+    initialSlices: {
+      type: Array,
+      default: () => [
         {color: '#4361ee', text: 'James', winCount: 0}, // Dark green
         {color: '#ffc8dd', text: 'Curry', winCount: 0}, // Light green
         {color: '#7161ef', text: 'Durant', winCount: 0}, // Very dark green
@@ -216,7 +214,15 @@ export default {
         {color: '#a2d2ff', text: 'Irving', winCount: 0}, // Pale yellow-green
         {color: '#b79ced', text: 'Lillard', winCount: 0}, // Dark green (repeated)
         {color: '#f7e1d7', text: 'Harden', winCount: 0} // Very dark green (repeated)
-      ],
+      ]
+    }
+  },
+  data() {
+    return {
+      winnerResult: null,
+      defaultWinner: 0,
+      // Initialize with props to allow custom default lists
+      slices: [...this.initialSlices],
       isSpinning: false,
       newItemText: '',
 

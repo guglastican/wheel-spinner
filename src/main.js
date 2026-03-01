@@ -6,6 +6,7 @@ import YesNoWheelPage from './pages/YesNoWheelPage.vue';
 import EmbedWheelPage from './pages/EmbedWheelPage.vue'
 import EmbedConfigPage from './pages/EmbedConfigPage.vue' // Import the config page
 import WheelOfNamesPage from './pages/WheelOfNamesPage.vue'
+import FoodWheelPage from './pages/FoodWheelPage.vue'
 import App from './App.vue'
 
 // Define routes with meta titles and SEO tags
@@ -53,6 +54,16 @@ const routes = [
       title: 'Wheel of Names - Free Random Name Picker | Rando Wheel',
       description: 'A free, browser-based random name picker. Add names to a spinning wheel and click spin to choose a random winner. Used for classrooms, giveaways, team selections, and more.',
       canonical: 'https://randowheel.com/wheel-of-names',
+      robots: 'index, follow'
+    }
+  },
+  {
+    path: '/food-wheel',
+    component: FoodWheelPage,
+    meta: {
+      title: 'Food Wheel - Random Food and Restaurant Picker | Rando Wheel',
+      description: 'Can\'t decide what to eat? Spin the Food Wheel to pick a random food, restaurant, or cuisine. A purely random decider for your meals.',
+      canonical: 'https://randowheel.com/food-wheel',
       robots: 'index, follow'
     }
   }
