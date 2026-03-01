@@ -41,6 +41,16 @@
             </template>
           </VueWheelSpinner>
         </div>
+        
+        <!-- rando recommend -->
+        <div class="ad-container" style="margin: 20px auto 0; width: 100%; max-width: 500px; text-align: center; min-height: 90px; overflow: hidden;">
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-2684466850314935"
+               data-ad-slot="8436548004"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+        </div>
       </div>
 
       <div class="controls">
@@ -239,6 +249,14 @@ export default {
       return {
         // Example: could add dynamic styles here based on state
       };
+    }
+  },
+  mounted() {
+    // Initialize Google AdSense when the component mounts
+    try {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (e) {
+      console.error('AdSense initialization error:', e);
     }
   },
   methods: {
