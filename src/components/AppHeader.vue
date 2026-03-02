@@ -1,18 +1,19 @@
 <template>
   <header class="app-header">
-    <div class="logo">
-      <img src="/logo_random_wheel.svg" alt="Random Wheel Logo" width="30" height="30">
-      <h1>{{ title }}</h1>
+    <div class="header-left">
+      <div class="logo">
+        <img src="/logo_random_wheel.svg" alt="Random Wheel Logo" width="30" height="30">
+        <h1>{{ title }}</h1>
+      </div>
+      <select v-model="$i18n.locale" @change="changeLocale" class="lang-switcher">
+        <option v-for="loc in supportedLocales" :key="loc" :value="loc">{{ loc.toUpperCase() }}</option>
+      </select>
     </div>
     <nav class="navigation">
       <router-link :to="localePath('/')" class="nav-link">{{ $t('header.randomWheel') }}</router-link>
       <router-link :to="localePath('/wheel-of-names')" class="nav-link">{{ $t('header.wheelOfNames') }}</router-link>
       <router-link :to="localePath('/yes-no-wheel')" class="nav-link">{{ $t('header.yesNoWheel') }}</router-link>
       <router-link :to="localePath('/configure-embed')" class="nav-link">{{ $t('header.embed') }}</router-link>
-
-      <select v-model="$i18n.locale" @change="changeLocale" class="lang-switcher">
-        <option v-for="loc in supportedLocales" :key="loc" :value="loc">{{ loc.toUpperCase() }}</option>
-      </select>
     </nav>
   </header>
 </template>
@@ -69,6 +70,12 @@ const changeLocale = (event) => {
   border-bottom: 1px solid #eee;
 }
 
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -79,6 +86,20 @@ const changeLocale = (event) => {
   font-size: 24px;
   margin: 0;
   color: #333;
+}
+
+.lang-switcher {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  cursor: pointer;
+  color: #333;
+  outline: none;
+}
+.lang-switcher:focus {
+  border-color: #6c5ce7;
 }
 
 .navigation {
@@ -109,12 +130,18 @@ const changeLocale = (event) => {
 @media (max-width: 768px) {
   .app-header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 15px;
+  }
+  .header-left {
+    justify-content: space-between;
+    width: 100%;
   }
   .navigation {
     width: 100%;
-    justify-content: space-around; /* Use space-around for better mobile spacing */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
   }
    .logo h1 {
     font-size: 20px; /* Adjust title size */
