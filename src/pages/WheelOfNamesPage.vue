@@ -1,275 +1,134 @@
 <template>
   <div class="wheel-of-names-page">
-    <AppHeader title="Wheel of Names" />
+    <AppHeader :title="$t('namesPage.title')" />
 
     <main class="main-content">
-
-      <!-- The Wheel -->
       <MainWheelSpinner />
 
-      <!-- Hero Intro -->
       <section class="hero-section">
-        <h1 class="hero-title">Wheel of Names — Free Random Name Picker</h1>
-        <p class="hero-description">
-          Type in any names, give the wheel a spin, and let fate pick a winner in seconds.
-          Whether you need a <strong>random name picker</strong> for your classroom, a fair draw
-          for a giveaway, or a quick way to assign tasks to your team — this free Wheel of Names
-          has you covered. No sign-up, no download, works on any device.
-        </p>
+        <h1 class="hero-title">{{ $t('namesPage.heroTitle') }}</h1>
+        <p class="hero-description" v-html="$t('namesPage.heroDesc')"></p>
       </section>
 
-      <!-- How To Use -->S
       <section class="info-section">
-        <h2>How to Use the Wheel of Names</h2>
+        <h2>{{ $t('namesPage.howToTitle') }}</h2>
         <ol class="steps-list">
-          <li>
-            <strong>Add Names</strong> — Type each name in the input box and press <em>Enter</em>
-            or click the <em>+</em> button to add it to the wheel.
-          </li>
-          <li>
-            <strong>Customise Colours</strong> — Click the colour swatch next to any name to
-            change the slice colour.
-          </li>
-          <li>
-            <strong>Spin the Wheel</strong> — Click <em>Spin the Wheel</em> or the centre button
-            on the wheel. It will spin and land on a random name.
-          </li>
-          <li>
-            <strong>See the Winner</strong> — The chosen name appears above the wheel with a 🎉
-            celebration. The win count tracks how many times each name has been picked.
-          </li>
-          <li>
-            <strong>Spin Again</strong> — Keep spinning for multiple rounds. Use
-            <em>Exclude</em> to remove winners from future spins, or <em>Reset</em> to start
-            fresh.
-          </li>
+          <li v-html="$t('namesPage.steps.1')"></li>
+          <li v-html="$t('namesPage.steps.2')"></li>
+          <li v-html="$t('namesPage.steps.3')"></li>
+          <li v-html="$t('namesPage.steps.4')"></li>
+          <li v-html="$t('namesPage.steps.5')"></li>
         </ol>
       </section>
 
-      <!-- SEO Section 1 -->
       <section class="seo-section">
-        <h2>What Is a Wheel of Names?</h2>
-        <p>
-          A <strong>Wheel of Names</strong> is a digital spinning wheel pre-designed for picking
-          random names from a list. It works the same way as a classic prize wheel — you add any
-          names you like, click spin, and the wheel lands on a winner at random. The concept is
-          simple, but the applications are endless. It can also be used alongside our
-          <router-link to="/" class="inline-link">random wheel spinner</router-link> for
-          more general decisions, or the
-          <router-link to="/yes-no-wheel" class="inline-link">Yes/No Wheel</router-link>
-          for quick binary choices:
-        </p>
+        <h2>{{ $t('namesPage.seoTitle') }}</h2>
+        <p v-html="$t('namesPage.seoDesc')"></p>
         <ul>
-          <li>
-            <strong>Classroom random name picker</strong> — Teachers use a wheel of names to call
-            on students without bias. Every student has an equal chance, keeping the class engaged
-            and participation fair.
-          </li>
-          <li>
-            <strong>Giveaways &amp; contests</strong> — Running a social-media giveaway? Add all
-            participant names and spin to choose a winner your audience can trust.
-          </li>
-          <li>
-            <strong>Team selection</strong> — Randomly split players into teams, pick a team
-            captain, or assign roles in a group project.
-          </li>
-          <li>
-            <strong>Office games &amp; icebreakers</strong> — Who presents first? Who brings
-            coffee tomorrow? Let the wheel decide and keep things fun.
-          </li>
-          <li>
-            <strong>Family decisions</strong> — Pick who chooses movie night, who does the dishes,
-            or whose turn it is to walk the dog. For binary choices like this, try our
-            <router-link to="/yes-no-wheel" class="inline-link">Yes/No Wheel</router-link> too.
-          </li>
+          <li v-html="$t('namesPage.seoList.1')"></li>
+          <li v-html="$t('namesPage.seoList.2')"></li>
+          <li v-html="$t('namesPage.seoList.3')"></li>
+          <li v-html="$t('namesPage.seoList.4')"></li>
         </ul>
       </section>
 
-      <!-- SEO Section 2 -->
       <section class="seo-section seo-section--alt">
-        <h2>Why Use Our Wheel of Names?</h2>
-        <p>
-          There are many name-picker tools online, but our <strong>Rando Wheel of Names</strong>
-          stands out for a handful of key reasons:
-        </p>
+        <h2>{{ $t('namesPage.whyTitle') }}</h2>
+        <p>{{ $t('namesPage.whyDesc') }}</p>
         <div class="feature-grid">
           <div class="feature-card">
             <div class="feature-icon">🎯</div>
-            <h3>Truly Random</h3>
-            <p>
-              We use a cryptographically seeded pseudo-random number generator to ensure every
-              spin is completely unpredictable. No patterns, no favourites.
-            </p>
+            <h3>{{ $t('namesPage.features.1Title') }}</h3>
+            <p>{{ $t('namesPage.features.1Desc') }}</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">⚡</div>
-            <h3>Instant Setup</h3>
-            <p>
-              No account needed. Open the page, type your names, and spin. The entire process
-              takes under 30 seconds.
-            </p>
+            <h3>{{ $t('namesPage.features.2Title') }}</h3>
+            <p>{{ $t('namesPage.features.2Desc') }}</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🎨</div>
-            <h3>Fully Customisable</h3>
-            <p>
-              Change slice colours, reorder names, duplicate entries for weighted results, or
-              exclude certain names from the draw.
-            </p>
+            <h3>{{ $t('namesPage.features.3Title') }}</h3>
+            <p>{{ $t('namesPage.features.3Desc') }}</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">📊</div>
-            <h3>Win Tracking</h3>
-            <p>
-              The wheel tracks how many times each name has been picked across multiple rounds,
-              so you always know who has won.
-            </p>
+            <h3>{{ $t('namesPage.features.4Title') }}</h3>
+            <p>{{ $t('namesPage.features.4Desc') }}</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">📱</div>
-            <h3>Works on Any Device</h3>
-            <p>
-              Fully responsive design means the wheel looks and works great on phones, tablets,
-              and desktops alike.
-            </p>
+            <h3>{{ $t('namesPage.features.5Title') }}</h3>
+            <p>{{ $t('namesPage.features.5Desc') }}</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🆓</div>
-            <h3>Always Free</h3>
-            <p>
-              No ads interrupting your spin, no premium tiers, and no subscription. The Wheel
-              of Names is 100% free, forever.
-            </p>
+            <h3>{{ $t('namesPage.features.6Title') }}</h3>
+            <p>{{ $t('namesPage.features.6Desc') }}</p>
           </div>
         </div>
       </section>
 
-      <!-- SEO Section 3 — Tips & tricks -->
       <section class="seo-section">
-        <h2>Tips for Getting the Most Out of Your Name Wheel</h2>
-        <h3>Weighted Name Picking</h3>
-        <p>
-          Want to increase the chances of a particular name being chosen? Simply add that name
-          multiple times using the <em>Copy</em> button. Each duplicate entry gets its own slice,
-          effectively doubling (or tripling) that person's probability of being picked — a great
-          way to create VIP tiers in contests.
-        </p>
+        <h2>{{ $t('namesPage.tipsTitle') }}</h2>
+        <h3>{{ $t('namesPage.tips.1Title') }}</h3>
+        <p v-html="$t('namesPage.tips.1Desc')"></p>
 
-        <h3>Elimination Mode</h3>
-        <p>
-          Running a tournament, quiz show, or raffle? Use the <em>Exclude</em> button (the tick
-          icon) to remove each winner from subsequent spins. This ensures every participant can
-          only win once, turning the wheel into a perfect bracket-free elimination tool. You can
-          also try the <router-link to="/" class="inline-link">custom random wheel</router-link>
-          if you want to spin prizes instead of names.
-        </p>
+        <h3>{{ $t('namesPage.tips.2Title') }}</h3>
+        <p v-html="$t('namesPage.tips.2Desc')"></p>
 
-        <h3>Shuffle for Fairness</h3>
-        <p>
-          If you re-use the same list of names regularly, hit the <em>Shuffle</em> button before
-          spinning. Shuffling randomises the starting order of slices, adding another layer of
-          unpredictability to the draw.
-        </p>
+        <h3>{{ $t('namesPage.tips.3Title') }}</h3>
+        <p v-html="$t('namesPage.tips.3Desc')"></p>
 
-        <h3>Save Your Name List</h3>
-        <p>
-          Need the same names every lesson or meeting? Simply keep the browser tab open — the
-          names stay on the wheel until you reset or close the page. For persistent lists, paste
-          names from a spreadsheet or notes app in seconds when you return.
-        </p>
+        <h3>{{ $t('namesPage.tips.4Title') }}</h3>
+        <p v-html="$t('namesPage.tips.4Desc')"></p>
       </section>
 
-      <!-- FAQ Section -->
       <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-
+        <h2>{{ $t('namesPage.faqTitle') }}</h2>
         <div class="faq-item">
-          <h3>Is the Wheel of Names completely random?</h3>
-          <p>
-            Yes. Each spin uses JavaScript's <code>Math.random()</code> function, which generates
-            a pseudo-random number to determine the winning slice. All names have an equal chance
-            of being selected (unless you have duplicates for weighted draws).
-          </p>
+          <h3>{{ $t('namesPage.faqs.1Title') }}</h3>
+          <p v-html="$t('namesPage.faqs.1Desc')"></p>
         </div>
-
         <div class="faq-item">
-          <h3>How many names can I add to the wheel?</h3>
-          <p>
-            There is no hard limit — you can add as many names as you need. The wheel automatically
-            resizes each slice to fit all entries. For best readability, we recommend keeping it
-            under 50 names.
-          </p>
+          <h3>{{ $t('namesPage.faqs.2Title') }}</h3>
+          <p>{{ $t('namesPage.faqs.2Desc') }}</p>
         </div>
-
         <div class="faq-item">
-          <h3>Can I save my wheel of names?</h3>
-          <p>
-            Your names are stored as long as the page is open. Bookmark the page after adding
-            your names — reopening the same tab in most browsers will restore the state. We are
-            working on shareable links so you can save and share custom wheels in the future.
-          </p>
+          <h3>{{ $t('namesPage.faqs.3Title') }}</h3>
+          <p>{{ $t('namesPage.faqs.3Desc') }}</p>
         </div>
-
         <div class="faq-item">
-          <h3>Does the Wheel of Names work on mobile?</h3>
-          <p>
-            Absolutely. The wheel is fully responsive and works on iOS, Android, and any modern
-            mobile browser. Tap the centre button or the "Spin the Wheel" button at the bottom
-            of the input panel to spin.
-          </p>
+          <h3>{{ $t('namesPage.faqs.4Title') }}</h3>
+          <p>{{ $t('namesPage.faqs.4Desc') }}</p>
         </div>
-
         <div class="faq-item">
-          <h3>What is the difference between the Wheel of Names and a random name generator?</h3>
-          <p>
-            A <em>random name generator</em> typically creates fictional names from a database.
-            Our <router-link to="/wheel-of-names" class="inline-link">Wheel of Names</router-link>
-            picks from the specific names <em>you</em> provide,
-            making it ideal for real-world decisions where you need to choose from an existing
-            list of people. For non-name decisions, check out our
-            <router-link to="/" class="inline-link">random wheel spinner</router-link>.
-          </p>
+          <h3>{{ $t('namesPage.faqs.5Title') }}</h3>
+          <p v-html="$t('namesPage.faqs.5Desc')"></p>
         </div>
-
         <div class="faq-item">
-          <h3>Can I use this as a random student picker?</h3>
-          <p>
-            Yes — it is one of the most popular uses. Teachers add their class roster, then spin
-            the wheel to call on a student. The win counter helps track participation so the same
-            students are not asked repeatedly. For yes/no classroom votes, try the
-            <router-link to="/yes-no-wheel" class="inline-link">Yes/No Wheel</router-link>.
-          </p>
+          <h3>{{ $t('namesPage.faqs.6Title') }}</h3>
+          <p v-html="$t('namesPage.faqs.6Desc')"></p>
         </div>
       </section>
 
-      <!-- Internal Linking Section -->
       <section class="related-tools-section">
-        <h2>Explore More Free Spinning Wheels</h2>
-        <p>
-          Looking for a different kind of random picker? Check out our other free wheel tools:
-        </p>
+        <h2>{{ $t('exploreMore.title') }}</h2>
+        <p>{{ $t('exploreMore.descDefault') }}</p>
         <div class="tool-cards">
-          <router-link to="/" class="tool-card">
+          <router-link :to="localePath('/')" class="tool-card">
             <div class="tool-card-icon">🎡</div>
-            <h3>Random Wheel Spinner</h3>
-            <p>
-              Add any items — words, numbers, prizes — and spin for a random result. The ultimate
-              custom decision-making wheel.
-            </p>
+            <h3>{{ $t('exploreMore.rwTitle') }}</h3>
+            <p>{{ $t('exploreMore.rwDesc') }}</p>
           </router-link>
-          <router-link to="/yes-no-wheel" class="tool-card">
+          <router-link :to="localePath('/yes-no-wheel')" class="tool-card">
             <div class="tool-card-icon">✅</div>
-            <h3>Yes / No Wheel</h3>
-            <p>
-              Can't decide? Spin a simple Yes or No wheel — or add Maybe for a three-way outcome.
-              Perfect for quick binary decisions.
-            </p>
+            <h3>{{ $t('exploreMore.ynwTitle') }}</h3>
+            <p>{{ $t('exploreMore.ynwDesc') }}</p>
           </router-link>
         </div>
       </section>
-
     </main>
-
   </div>
 </template>
 
@@ -277,6 +136,15 @@
 import { onMounted } from 'vue';
 import MainWheelSpinner from '../components/MainWheelSpinner.vue';
 import AppHeader from '../components/AppHeader.vue';
+import { useI18n } from 'vue-i18n';
+
+const { locale } = useI18n();
+const localePath = (path) => {
+  const currentLang = locale.value;
+  if (currentLang === 'en') return path;
+  if (path === '/') return `/${currentLang}`;
+  return `/${currentLang}${path}`;
+};
 
 // Update meta tags for SEO when the component mounts
 onMounted(() => {

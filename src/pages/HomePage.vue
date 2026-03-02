@@ -1,73 +1,78 @@
 <template>
   <div class="home-page">
-    <AppHeader title="Random Wheel Spinner" /> <!-- Use shared header -->
+    <AppHeader :title="$t('home.mainTitle')" />
 
     <main class="main-content">
-
-      <MainWheelSpinner /> <!-- Removed ref -->
-
-      <!-- REMOVED Embed Section -->
-
+      <MainWheelSpinner />
       <div class="wheel-description">
-        <h2>What is a Random Wheel?</h2>
-        <p>A Random Wheel is an interactive tool that spins to make a random selection from a set of choices. Whether you're picking names, colors, numbers, or yes/no answers, a random spinner adds fun and fairness to decision-making. Ideal for games, raffles, classroom activities, or just making everyday choices easier, random wheels are simple, engaging, and widely used. Try a random wheel spinner to add excitement to your next decision!</p>
+        <h2>{{ $t('home.whatIsTitle') }}</h2>
+        <p>{{ $t('home.whatIsDesc') }}</p>
       </div>
 
       <div class="wheel-description">
-        <h2>How a Random Wheel Works?</h2>
-        <p>A Random Wheel operates by spinning a digital wheel divided into multiple sections, each containing a unique option. When the wheel is spun, it randomly lands on one of these sections, providing an unbiased selection.</p>
-        <h3>Steps to Use a Random Wheel:</h3>
+        <h2>{{ $t('home.howWorksTitle') }}</h2>
+        <p>{{ $t('home.howWorksDesc') }}</p>
+        <h3>{{ $t('home.stepsTitle') }}</h3>
+        
         <div class="wheel-illustration">
           <img src="/wheel_inputs.png" alt="Wheel illustration" class="wheel-image">
         </div>
-        <h3>Insert text:</h3>
+        
+        <h3>{{ $t('home.step1Title') }}</h3>
         <div class="wheel-illustration">
           <img src="/inputs_text.png" alt="Wheel illustration" class="wheel-image">
-          <p>You can typically add items (like names, tasks, or decisions) one by one or paste a whole list.</p>
+          <p>{{ $t('home.step1Desc') }}</p>
         </div>
-        <h3>Spin:</h3>
+        
+        <h3>{{ $t('home.step2Title') }}</h3>
         <div class="wheel-illustration">
           <img src="/spin_wheel.png" alt="Wheel illustration" class="wheel-image">
-          <p>Once your choices are in and you're happy with the look, just initiate the spin. There's usually a clear button like "Click to Spin!</p>
+          <p>{{ $t('home.step2Desc') }}</p>
         </div>
+        
         <ol class="steps-list">
-          <li><strong>Enter Your Options</strong> – Add names, numbers, colors, or choices to the wheel.</li>
-          <li><strong>Spin the Wheel</strong> – Click or tap the spin button to start the random selection process.</li>
-          <li><strong>Get Instant Results</strong> – The wheel stops on a random choice, providing your answer.</li>
-          <li><strong>Repeat as Needed</strong> – You can spin again for new results or customize the wheel for different decisions.</li>
+          <li v-html="$t('home.stepsList.1')"></li>
+          <li v-html="$t('home.stepsList.2')"></li>
+          <li v-html="$t('home.stepsList.3')"></li>
+          <li v-html="$t('home.stepsList.4')"></li>
         </ol>
       </div>
 
-      <!-- Added Management & Results Section -->
       <div class="wheel-description">
-        <h2>Manage Your Wheel & Results</h2>
-        <p>Depending on the specific tool, you might find features like:</p>
+        <h2>{{ $t('home.manageTitle') }}</h2>
+        <p>{{ $t('home.manageDesc') }}</p>
         <ul>
-          <li><strong>Modes:</strong> You might be able to choose different ways for the wheel to work, like 'Elimination' mode where the chosen option is removed for the next spin.</li>
-          <li><strong>Editing:</strong> Most tools let you edit, duplicate, hide, or delete the entries you've added. You can also usually clear the whole list easily.</li>
-          <li><strong>Saving/Sharing:</strong> You can often save your wheel setup (sometimes requires an account) and share it with others using a link or maybe even get code to embed it on a website.</li>
-          <li><strong>Results:</strong> Some wheels might keep track of past results.</li>
+          <li v-html="$t('home.manageList.modes')"></li>
+          <li v-html="$t('home.manageList.editing')"></li>
+          <li v-html="$t('home.manageList.sharing')"></li>
+          <li v-html="$t('home.manageList.results')"></li>
         </ul>
-        <h2>Other Wheel Tool</h2>
-        <p>Other than the main random Wheel, there are several specialized tools of random Wheel created as well.</p>
+        
+        <h2>{{ $t('home.otherToolsTitle') }}</h2>
+        <p>{{ $t('home.otherToolsDesc') }}</p>
         <ul>
-        <li><strong><router-link to="/wheel-of-names">Name Pickers / Student Selectors</router-link>:</strong> Commonly used by educators to randomly select individuals, sometimes called "Wheel of Names" or "Random Name Picker". </li>
-        <li><strong><router-link to="/yes-no-wheel">Yes/No Wheels</router-link>:</strong> For simple binary decisions.</li>
-        <li><strong><router-link to="/food-wheel">Food Wheel</router-link>:</strong> Unsure what to eat? Spin the food wheel for quick random meal decisions.</li>
+          <li><strong><router-link :to="localePath('/wheel-of-names')">{{ $t('header.wheelOfNames') }}</router-link>:</strong> <span v-html="$t('home.otherToolsList.names') && $t('home.otherToolsList.names').split('</strong>') ? $t('home.otherToolsList.names').split('</strong>')[1] : ''"></span></li>
+          <li><strong><router-link :to="localePath('/yes-no-wheel')">{{ $t('header.yesNoWheel') }}</router-link>:</strong> <span v-html="$t('home.otherToolsList.yesno') && $t('home.otherToolsList.yesno').split('</strong>') ? $t('home.otherToolsList.yesno').split('</strong>')[1] : ''"></span></li>
+          <li><strong><router-link :to="localePath('/food-wheel')">{{ $t('header.foodWheel') }}</router-link>:</strong> <span v-html="$t('home.otherToolsList.food') && $t('home.otherToolsList.food').split('</strong>') ? $t('home.otherToolsList.food').split('</strong>')[1] : ''"></span></li>
         </ul>
-        <p>Each specialized version takes the core concept of random selection and tailors it to meet distinct needs, making them handy for everything from organizing activities to settling debates with a fun, impartial twist.</p>
+        <p>{{ $t('home.otherToolsOutro') }}</p>
       </div>
-        <!-- End Added Section -->
-    
     </main>
-
   </div>
 </template>
 
 <script setup>
 import MainWheelSpinner from '../components/MainWheelSpinner.vue';
-import AppHeader from '../components/AppHeader.vue'; // Import shared header
+import AppHeader from '../components/AppHeader.vue';
+import { useI18n } from 'vue-i18n';
 
+const { locale } = useI18n();
+const localePath = (path) => {
+  const currentLang = locale.value;
+  if (currentLang === 'en') return path;
+  if (path === '/') return `/${currentLang}`;
+  return `/${currentLang}${path}`;
+};
 </script>
 
 <style scoped>

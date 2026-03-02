@@ -1,0 +1,240 @@
+{
+  "header": {
+    "randomWheel": "Bánh xe ngẫu nhiên",
+    "wheelOfNames": "Bánh xe tên",
+    "yesNoWheel": "Có/Không",
+    "embed": "Nhúng",
+    "foodWheel": "Bánh xe thức ăn",
+    "configureEmbed": "Định cấu hình bánh xe có thể nhúng"
+  },
+  "footer": {
+    "randoWheel": "Bánh xe Rando",
+    "copyright": "© {năm} Máy quay bánh xe. Mọi quyền được bảo lưu.",
+    "privacyPolicy": "Chính sách bảo mật",
+    "termsConditions": "Điều khoản & Điều kiện",
+    "otherWheels": "Bánh xe khác"
+  },
+  "mainWheel": {
+    "winner": "Người chiến thắng: {text} 🎉",
+    "spin": "Quay",
+    "inputs": "Đầu vào",
+    "reset": "Cài lại",
+    "shuffle": "Trộn bài",
+    "placeholder": "Nhập văn bản vào đây...",
+    "spinTheWheel": "Quay bánh xe",
+    "cursor": "Con trỏ",
+    "cursorAngle": "Góc con trỏ",
+    "cursorDistance": "Khoảng cách con trỏ",
+    "pleaseInclude": "Vui lòng bao gồm ít nhất một mục trong bánh xe",
+    "copySuffix": "(bản sao)"
+  },
+  "yesNoWheel": {
+    "yes": "ĐÚNG",
+    "no": "KHÔNG",
+    "maybe": "CÓ LẼ",
+    "mode": "Cách thức",
+    "binaryMode": "CÓ hoặc KHÔNG",
+    "ternaryMode": "CÓ KHÔNG hoặc CÓ THỂ",
+    "numInputSets": "Số lượng bộ đầu vào",
+    "resetResults": "Đặt lại kết quả"
+  },
+  "exploreMore": {
+    "title": "Khám phá thêm bánh xe quay miễn phí",
+    "descDefault": "Bạn đang tìm kiếm một loại công cụ chọn ngẫu nhiên khác? Kiểm tra các công cụ bánh xe miễn phí khác của chúng tôi:",
+    "descFood": "Cần đưa ra các loại quyết định khác? Hãy thử các công cụ khác của chúng tôi:",
+    "rwTitle": "Máy quay bánh xe ngẫu nhiên",
+    "rwDesc": "Bánh xe có thể tùy chỉnh tối ưu cho hầu hết mọi lựa chọn.",
+    "wonTitle": "Bánh xe tên",
+    "wonDesc": "Một người bạn đồng hành hoàn hảo để tặng quà, tham gia lớp học hoặc giao nhiệm vụ.",
+    "ynwTitle": "Có / Không",
+    "ynwDesc": "Một công cụ quay vòng có hoặc không đơn giản để xử lý các lựa chọn nhị phân nhanh chóng ngay lập tức."
+  },
+  "home": {
+    "mainTitle": "Máy quay bánh xe ngẫu nhiên",
+    "whatIsTitle": "Bánh xe ngẫu nhiên là gì?",
+    "whatIsDesc": "Bánh xe ngẫu nhiên là một công cụ tương tác quay để thực hiện lựa chọn ngẫu nhiên từ một tập hợp các lựa chọn. Cho dù bạn đang chọn tên, màu sắc, số hay câu trả lời có/không, một vòng quay ngẫu nhiên sẽ mang lại sự thú vị và công bằng cho việc ra quyết định. Lý tưởng cho các trò chơi, xổ số, hoạt động trong lớp hoặc chỉ giúp các lựa chọn hàng ngày trở nên dễ dàng hơn, bánh xe ngẫu nhiên rất đơn giản, hấp dẫn và được sử dụng rộng rãi. Hãy thử một vòng quay bánh xe ngẫu nhiên để tăng thêm hứng thú cho quyết định tiếp theo của bạn!",
+    "howWorksTitle": "Bánh xe ngẫu nhiên hoạt động như thế nào?",
+    "howWorksDesc": "Bánh xe ngẫu nhiên hoạt động bằng cách quay một bánh xe kỹ thuật số được chia thành nhiều phần, mỗi phần chứa một tùy chọn duy nhất. Khi bánh xe quay, nó sẽ ngẫu nhiên rơi vào một trong những phần này, mang lại lựa chọn không thiên vị.",
+    "stepsTitle": "Các bước để sử dụng Bánh xe ngẫu nhiên:",
+    "step1Title": "Chèn văn bản:",
+    "step1Desc": "Thông thường, bạn có thể thêm từng mục (như tên, nhiệm vụ hoặc quyết định) hoặc dán toàn bộ danh sách.",
+    "step2Title": "Quay:",
+    "step2Desc": "Sau khi đã có các lựa chọn và bạn hài lòng với giao diện, bạn chỉ cần bắt đầu quay. Thường có một nút rõ ràng như \"Quay bánh xe!\".",
+    "stepsList": {
+      "1": "<strong>Nhập tùy chọn của bạn</strong> – Thêm tên, số, màu sắc hoặc lựa chọn vào bánh xe.",
+      "2": "<strong>Quay bánh xe</strong> – Nhấp hoặc nhấn vào nút quay để bắt đầu quá trình lựa chọn ngẫu nhiên.",
+      "3": "<strong>Nhận kết quả tức thì</strong> – Bánh xe dừng lại ở một lựa chọn ngẫu nhiên, cung cấp câu trả lời cho bạn.",
+      "4": "<strong>Lặp lại nếu cần</strong> – Bạn có thể quay lại để có kết quả mới hoặc tùy chỉnh bánh xe cho các quyết định khác nhau."
+    },
+    "manageTitle": "Quản lý bánh xe và kết quả của bạn",
+    "manageDesc": "Tùy thuộc vào công cụ cụ thể, bạn có thể tìm thấy các tính năng như:",
+    "manageList": {
+      "modes": "<strong>Chế độ:</strong> Bạn có thể chọn các cách khác nhau để bánh xe hoạt động, chẳng hạn như chế độ 'Loại bỏ' trong đó tùy chọn đã chọn sẽ bị xóa cho lần quay tiếp theo.",
+      "editing": "<strong>Chỉnh sửa:</strong> Hầu hết các công cụ cho phép bạn chỉnh sửa, sao chép, ẩn hoặc xóa các mục bạn đã thêm. Bạn cũng có thể xóa toàn bộ danh sách một cách dễ dàng.",
+      "sharing": "<strong>Lưu/Chia sẻ:</strong> Bạn có thể thường xuyên lưu thiết lập bánh xe của mình (đôi khi cần có tài khoản) và chia sẻ nó với những người khác bằng liên kết hoặc thậm chí có thể lấy mã để nhúng nó.",
+      "results": "<strong>Kết quả:</strong> Một số bánh xe có thể theo dõi các kết quả trong quá khứ."
+    },
+    "otherToolsTitle": "Công cụ bánh xe khác",
+    "otherToolsDesc": "Ngoài Bánh xe ngẫu nhiên chính, còn có một số công cụ chuyên dụng của Bánh xe ngẫu nhiên cũng được tạo ra.",
+    "otherToolsList": {
+      "names": "<strong>Bộ chọn tên / Bộ chọn học sinh:</strong> Thường được các nhà giáo dục sử dụng để chọn ngẫu nhiên các cá nhân, đôi khi được gọi là \"Bánh xe tên\" hoặc \"Bộ chọn tên ngẫu nhiên\".",
+      "yesno": "<strong>Bánh xe Có/Không:</strong> Dành cho các quyết định nhị phân đơn giản.",
+      "food": "<strong>Bánh xe ăn uống:</strong> Bạn không biết nên ăn gì? Xoay bánh xe thức ăn để đưa ra quyết định bữa ăn ngẫu nhiên nhanh chóng."
+    },
+    "otherToolsOutro": "Mỗi phiên bản chuyên biệt lấy khái niệm cốt lõi về lựa chọn ngẫu nhiên và điều chỉnh nó để đáp ứng các nhu cầu riêng biệt, giúp chúng thuận tiện cho mọi việc, từ tổ chức hoạt động đến giải quyết các cuộc tranh luận một cách vui vẻ, khách quan."
+  },
+  "yesNoPage": {
+    "title": "Có/Không Bộ chọn bánh xe",
+    "heroTitle": "Đưa ra quyết định Có/Không nhanh chóng",
+    "heroDesc": "Không thể quyết định giữa có và không? Hãy để bánh xe của chúng tôi quyết định cho bạn! Tùy chỉnh bánh xe với các chế độ và bộ đầu vào khác nhau để có được câu trả lời bạn cần.",
+    "howToTitle": "Cách sử dụng",
+    "steps": {
+      "1": "Chọn giữa chế độ \"CÓ hoặc KHÔNG\" hoặc chế độ \"CÓ KHÔNG hoặc CÓ THỂ\"",
+      "2": "Chọn số lượng bộ đầu vào (1-5) để điều chỉnh phân bố xác suất",
+      "3": "Nhấp vào nút \"Quay\" để nhận câu trả lời của bạn",
+      "4": "Kết quả sẽ được bôi đen và tính vào các ô bên trên",
+      "5": "Sử dụng nút \"Đặt lại kết quả\" để xóa tất cả các bộ đếm"
+    },
+    "seoTitle": "Tại sao nên sử dụng bánh xe Có/Không?",
+    "seoDesc1": "Cuộc sống có rất nhiều sự lựa chọn, và đôi khi những điều đơn giản nhất lại là những điều khó khăn nhất. Công cụ quay vòng Có/Không của chúng tôi là công cụ đưa ra quyết định hoàn hảo khi bạn gặp khó khăn. Đó là một cách thú vị và nhanh chóng để có được sự lựa chọn ngẫu nhiên, hoạt động như một công cụ tạo nhanh có hoặc không.",
+    "seoList": {
+      "1": "<strong>Giải quyết các cuộc tranh luận:</strong> Giải quyết nhanh chóng các cuộc tranh luận thân thiện.",
+      "2": "<strong>Đưa ra quyết định nhanh chóng:</strong> Quyết định bữa tối, đêm xem phim hoặc các lựa chọn đơn giản hàng ngày một cách dễ dàng.",
+      "3": "<strong>Thêm niềm vui:</strong> Đưa tính ngẫu nhiên và hứng thú vào các hoạt động nhóm.",
+      "4": "<strong>Vượt qua sự thiếu quyết đoán:</strong> Hãy để bánh xe phá vỡ thế bế tắc khi bạn thực sự chưa quyết định."
+    },
+    "seoDesc2": "Cho dù bạn cần một câu trả lời đơn giản là có hay không hay muốn thêm 'có thể' để có thêm sắc thái, công cụ quyết định thú vị này sẽ cung cấp câu trả lời khách quan ngay lập tức. Quay bánh xe và để số phận quyết định!",
+    "moreTitle": "Ngoài những lựa chọn đơn giản: Nhiều công dụng hơn",
+    "moreDesc": "Mặc dù rất hữu ích cho những câu hỏi có/không đơn giản, công cụ này có thể linh hoạt một cách đáng ngạc nhiên:",
+    "moreList": {
+      "1": "<strong>Hỗ trợ học tập & học tập:</strong> Hãy tự kiểm tra! Đóng khung các câu hỏi với câu trả lời có/không và quay vòng.",
+      "2": "<strong>Lời nhắc sáng tạo:</strong> Bạn bị mắc kẹt trong một câu chuyện hoặc dự án? Sử dụng bánh xe cho các quyết định sáng tạo nhị phân.",
+      "3": "<strong>Phá vỡ thói quen:</strong> Bạn đang cố gắng quyết định xem có nên sa vào một cám dỗ nhỏ không? Hãy để bánh xe thêm một lớp cơ hội.",
+      "4": "<strong>Tuân theo lượt hợp lý:</strong> Sử dụng nó trong trò chơi để quyết định ai sẽ đi tiếp theo."
+    },
+    "powerTitle": "Sức mạnh của sự ngẫu nhiên",
+    "powerDesc": "Bánh xe của chúng tôi sử dụng bộ tạo số giả ngẫu nhiên đáng tin cậy để đảm bảo mỗi vòng quay đều công bằng và không thể đoán trước. Điều này loại bỏ sự thiên vị cá nhân khỏi các quyết định đơn giản, khiến nó trở thành người đưa ra quyết định thực sự vô tư. Đôi khi, để những lựa chọn nhỏ cho cơ hội có thể giải phóng năng lượng tinh thần cho những vấn đề quan trọng hơn! Tùy chọn 'Có thể' sẽ tăng thêm tính linh hoạt cho những lúc mà chỉ nói có hoặc không đơn giản là chưa đủ."
+  },
+  "foodPage": {
+    "title": "Bánh xe thức ăn",
+    "heroTitle": "Bánh xe thực phẩm - Tôi nên ăn gì?",
+    "heroDesc": "Không thể quyết định ăn gì cho bữa trưa hoặc bữa tối? Hãy quay <strong>Bánh Xe Thức Ăn</strong> và để số phận quyết định! Cho dù bạn đang thèm pizza, sushi hay đang tìm kiếm một món salad tốt cho sức khỏe, chỉ cần thêm các lựa chọn của mình, quay bánh xe và bữa ăn của bạn đã sẵn sàng.",
+    "howToTitle": "Cách sử dụng Bánh xe thực phẩm",
+    "steps": {
+      "1": "<strong>Thêm cảm giác thèm ăn và lựa chọn</strong> — Nhập từng tên món ăn hoặc nhà hàng và nhấp vào nút <em>+</em>.",
+      "2": "<strong>Tùy chỉnh màu sắc</strong> — Nhấp vào mẫu màu bên cạnh bất kỳ thực phẩm nào để thay đổi màu lát cắt.",
+      "3": "<strong>Quay bánh xe</strong> — Nhấp vào <em>Quay bánh xe</em> hoặc nút giữa trên bánh xe.",
+      "4": "<strong>Xem Người chiến thắng</strong> — Món ăn được chọn sẽ xuất hiện phía trên bánh xe với lễ kỷ niệm 🎉. Cuối cùng bạn có thể ngừng tranh luận và bắt đầu ăn!",
+      "5": "<strong>Quay lại</strong> — Vẫn chưa bị thuyết phục? Tiếp tục quay hoặc xóa các tùy chọn bạn không thích bằng tính năng <em>Xóa</em>."
+    },
+    "seoTitle": "Bánh xe thực phẩm là gì?",
+    "seoDesc": "<strong>Food Wheel</strong> là một bánh xe quay kỹ thuật số được sử dụng đặc biệt để chọn các bữa ăn, nhà hàng hoặc món ăn ngẫu nhiên từ danh sách. Nó giải quyết câu hỏi kinh điển \"Bạn muốn ăn gì?\" vấn đề.",
+    "seoList": {
+      "1": "<strong>Người quyết định nhà hàng</strong> — Bạn không thể đồng ý về một nhà hàng? Thêm 5 lựa chọn hàng đầu và để bánh xe chọn.",
+      "2": "<strong>Còng quay chuẩn bị bữa ăn</strong> — Làm cho việc nấu nướng trở nên thú vị bằng cách xoay vòng để nạp protein, carbs và rau.",
+      "3": "<strong>Ngẫu nhiên mang đi</strong> — Pizza? Tiếng Trung Quốc? Thái? Xoay bất cứ khi nào bạn có cảm giác thèm ăn.",
+      "4": "<strong>Phục vụ tiệc văn phòng</strong> — Hãy để nhóm gửi các lựa chọn và sử dụng bánh xe để quyết định món ăn."
+    },
+    "whyTitle": "Tại sao nên sử dụng Bánh xe thực phẩm của chúng tôi?",
+    "whyDesc": "Bỏ qua việc cuộn vô tận trên các ứng dụng giao hàng. Bánh xe Thực phẩm của chúng tôi giúp bạn quyết định nhanh chóng và công bằng:",
+    "features": {
+      "1Title": "Kết thúc cuộc tranh luận",
+      "1Desc": "Không còn \"Tôi không biết, bạn muốn gì?\" Quay bánh xe và quyết định được đưa ra ngay lập tức.",
+      "2Title": "Thiết lập tức thì",
+      "2Desc": "Không cần tài khoản. Mở trang, nhập các lựa chọn thực phẩm của bạn và quay ngay.",
+      "3Title": "Hoàn toàn có thể tùy chỉnh",
+      "3Desc": "Thêm biểu tượng cảm xúc, thay đổi màu lát để phù hợp với món ăn và loại trừ các tùy chọn.",
+      "4Title": "Kết quả công bằng",
+      "4Desc": "Tính ngẫu nhiên được bảo mật bằng mật mã có nghĩa là bạn thực sự đang nhận được một kết quả không thiên vị.",
+      "5Title": "Hoạt động trên thiết bị di động",
+      "5Desc": "Hoàn hảo để quyết định trên đường đi. Thiết kế đáp ứng đầy đủ trông tuyệt vời trên mọi điện thoại.",
+      "6Title": "Miễn phí 100%",
+      "6Desc": "Food Wheel của chúng tôi luôn miễn phí, không có tường phí hoặc đăng ký bắt buộc."
+    },
+    "faqTitle": "Câu hỏi thường gặp",
+    "faqs": {
+      "1Title": "Food Wheel có hoạt động trên điện thoại của tôi không?",
+      "1Desc": "Đúng! Food Wheel hoàn toàn thân thiện với thiết bị di động.",
+      "2Title": "Kết quả có thực sự ngẫu nhiên không?",
+      "2Desc": "Đúng. Mỗi vòng quay đều sử dụng thuật toán giả ngẫu nhiên mạnh mẽ để đảm bảo rằng mỗi lựa chọn thực phẩm đều có cơ hội như nhau.",
+      "3Title": "Tôi có thể lưu danh sách món ăn yêu thích của mình không?",
+      "3Desc": "Miễn là bạn luôn mở tab trình duyệt, danh sách của bạn vẫn hoạt động. Chúng tôi khuyên bạn nên đánh dấu trang."
+    }
+  },
+  "namesPage": {
+    "title": "Bánh xe tên",
+    "heroTitle": "Vòng quay tên — Công cụ chọn tên ngẫu nhiên miễn phí",
+    "heroDesc": "Nhập bất kỳ tên nào, quay bánh xe và để số phận chọn ra người chiến thắng sau vài giây. Cho dù bạn cần <strong>công cụ chọn tên ngẫu nhiên</strong> cho lớp học của mình, rút ​​thăm công bằng để nhận quà hay cách nhanh chóng để phân công nhiệm vụ cho nhóm của bạn — Bánh xe Tên miễn phí này đều đáp ứng được cho bạn. Không cần đăng ký, không cần tải xuống, hoạt động trên mọi thiết bị.",
+    "howToTitle": "Cách sử dụng Bánh xe tên",
+    "steps": {
+      "1": "<strong>Thêm tên</strong> — Nhập từng tên vào hộp nhập và nhấn <em>Enter</em>.",
+      "2": "<strong>Tùy chỉnh màu</strong> — Nhấp vào mẫu màu bên cạnh bất kỳ tên nào.",
+      "3": "<strong>Quay bánh xe</strong> — Nhấp vào <em>Quay bánh xe</em> hoặc nút ở giữa.",
+      "4": "<strong>Xem Người chiến thắng</strong> — Tên được chọn sẽ xuất hiện phía trên bánh xe với lễ kỷ niệm 🎉. Số lần thắng theo dõi số lần mỗi tên được chọn.",
+      "5": "<strong>Quay lại</strong> — Tiếp tục quay nhiều vòng. Sử dụng <em>Loại trừ</em> để loại bỏ người chiến thắng khỏi các vòng quay trong tương lai hoặc <em>Đặt lại</em> để bắt đầu lại."
+    },
+    "seoTitle": "Bánh xe tên là gì?",
+    "seoDesc": "<strong>Bánh xe tên</strong> là một bánh xe quay kỹ thuật số được thiết kế sẵn để chọn tên ngẫu nhiên từ danh sách. Nó hoạt động giống như một vòng quay giải thưởng cổ điển — bạn thêm bất kỳ tên nào bạn thích, nhấp vào vòng quay và vòng quay sẽ quay ngẫu nhiên về người chiến thắng.",
+    "seoList": {
+      "1": "<strong>Bộ chọn tên ngẫu nhiên trong lớp học</strong> — Giáo viên sử dụng vòng quay tên để gọi học sinh một cách không thiên vị.",
+      "2": "<strong>Quà tặng và cuộc thi</strong> — Chạy quà tặng trên mạng xã hội? Thêm tất cả tên người tham gia và quay.",
+      "3": "<strong>Chọn đội</strong> — Chia ngẫu nhiên người chơi thành các đội, chọn đội trưởng hoặc phân công vai trò.",
+      "4": "<strong>Trò chơi văn phòng và trò chơi phá băng</strong> — Ai trình bày trước? Ai mang cà phê vào ngày mai? Hãy để bánh xe quyết định."
+    },
+    "whyTitle": "Tại sao nên sử dụng Bánh xe tên của chúng tôi?",
+    "whyDesc": "Có rất nhiều công cụ chọn tên trực tuyến, nhưng công cụ của chúng tôi nổi bật vì một số lý do chính:",
+    "features": {
+      "1Title": "Thực sự ngẫu nhiên",
+      "1Desc": "Chúng tôi sử dụng trình tạo số giả ngẫu nhiên được mã hóa để đảm bảo mọi vòng quay hoàn toàn không thể đoán trước được.",
+      "2Title": "Thiết lập tức thì",
+      "2Desc": "Không cần tài khoản. Mở trang, nhập tên của bạn và quay. Toàn bộ quá trình mất dưới 30 giây.",
+      "3Title": "Hoàn toàn có thể tùy chỉnh",
+      "3Desc": "Thay đổi màu lát, sắp xếp lại tên, sao chép các mục để có kết quả có trọng số hoặc loại trừ một số tên nhất định.",
+      "4Title": "Theo dõi chiến thắng",
+      "4Desc": "Bánh xe theo dõi số lần mỗi tên được chọn trong nhiều vòng.",
+      "5Title": "Hoạt động trên mọi thiết bị",
+      "5Desc": "Thiết kế hoàn toàn đáp ứng có nghĩa là bánh xe trông và hoạt động tốt trên cả điện thoại, máy tính bảng và máy tính để bàn.",
+      "6Title": "Luôn miễn phí",
+      "6Desc": "Không có quảng cáo làm gián đoạn vòng quay của bạn, không có cấp độ cao cấp và không có đăng ký. Miễn phí 100%, mãi mãi."
+    },
+    "tipsTitle": "Lời khuyên để tận dụng tối đa vòng quay tên của bạn",
+    "tips": {
+      "1Title": "Chọn tên có trọng số",
+      "1Desc": "Bạn muốn tăng cơ hội chọn một cái tên cụ thể? Chỉ cần thêm tên đó nhiều lần bằng nút <em>Sao chép</em>. Mỗi mục trùng lặp sẽ có phần riêng, tăng gấp đôi (hoặc gấp ba) xác suất được chọn của người đó một cách hiệu quả.",
+      "2Title": "Chế độ loại bỏ",
+      "2Desc": "Tổ chức một giải đấu, chương trình đố vui hay xổ số? Sử dụng nút <em>Loại trừ</em> để loại bỏ từng người chiến thắng khỏi các lần quay tiếp theo. Điều này đảm bảo mỗi người tham gia chỉ có thể giành chiến thắng một lần.",
+      "3Title": "Xáo trộn để công bằng",
+      "3Desc": "Nếu bạn thường xuyên sử dụng lại cùng một danh sách tên, hãy nhấn nút <em>Xáo trộn</em> trước khi quay. Việc xáo trộn sẽ ngẫu nhiên hóa thứ tự bắt đầu của các lát cắt.",
+      "4Title": "Lưu danh sách tên của bạn",
+      "4Desc": "Cần những cái tên giống nhau trong mỗi bài học hoặc cuộc họp? Chỉ cần giữ tab trình duyệt mở — các tên vẫn ở trên bánh xe cho đến khi bạn đặt lại hoặc đóng trang."
+    },
+    "faqTitle": "Câu hỏi thường gặp",
+    "faqs": {
+      "1Title": "Bánh xe tên tuổi có hoàn toàn ngẫu nhiên không?",
+      "1Desc": "Đúng. Mỗi vòng quay sử dụng hàm Math.random() của JavaScript để tạo ra một số giả ngẫu nhiên để xác định phần thắng.",
+      "2Title": "Tôi có thể thêm bao nhiêu tên vào bánh xe?",
+      "2Desc": "Không có giới hạn cứng. Bánh xe tự động thay đổi kích thước từng lát để phù hợp với tất cả các mục. Để dễ đọc nhất, chúng tôi khuyên bạn nên giữ nó dưới 50 tên.",
+      "3Title": "Tôi có thể lưu bánh xe tên của mình không?",
+      "3Desc": "Tên của bạn được lưu trữ miễn là trang được mở. Đánh dấu trang sau khi thêm tên của bạn — mở lại cùng một tab trong hầu hết các trình duyệt sẽ khôi phục trạng thái.",
+      "4Title": "Wheel of Name có hoạt động trên thiết bị di động không?",
+      "4Desc": "Tuyệt đối. Bánh xe hoàn toàn đáp ứng và hoạt động trên iOS, Android và mọi trình duyệt di động hiện đại.",
+      "5Title": "Sự khác biệt giữa Vòng quay Tên và trình tạo tên ngẫu nhiên là gì?",
+      "5Desc": "<em>Trình tạo tên ngẫu nhiên</em> thường tạo tên hư cấu từ cơ sở dữ liệu. Vòng quay tên của chúng tôi chọn từ những cái tên cụ thể mà <em>bạn</em> cung cấp.",
+      "6Title": "Tôi có thể sử dụng điều này như một công cụ chọn học sinh ngẫu nhiên không?",
+      "6Desc": "Có - đó là một trong những cách sử dụng phổ biến nhất. Giáo viên thêm danh sách lớp của mình, sau đó quay bánh xe để gọi học sinh."
+    }
+  },
+  "embed": {
+    "loading": "Đang tải cấu hình bánh xe...",
+    "instructions": "Sử dụng các điều khiển bên dưới để thiết lập nội dung và hình thức bánh xe của bạn. Sau đó, định cấu hình cài đặt nhúng và tạo mã để đặt mã đó trên trang web của bạn.",
+    "settingsTitle": "Cài đặt nhúng",
+    "titleLabel": "Tiêu đề (để có khả năng tiếp cận):",
+    "widthLabel": "Chiều rộng (px):",
+    "heightLabel": "Chiều cao (px):",
+    "codeTitle": "Mã nhúng",
+    "codeDesc": "Sao chép mã bên dưới để nhúng bánh xe được định cấu hình này vào trang web của bạn:",
+    "generateBtn": "Tạo mã nhúng",
+    "errConfigure": "Lỗi tạo mã. Vui lòng cấu hình bánh xe trước.",
+    "errEmpty": "Vui lòng thêm ít nhất một mục vào bánh xe trước khi tạo mã nhúng."
+  }
+}

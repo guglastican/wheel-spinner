@@ -3,15 +3,15 @@
     <div class="result-display">
       <div class="result-box yes" :class="{ active: lastResult === 'yes' }">
         <div class="result-count">{{ results.yes }}</div>
-        <div class="result-label">YES</div>
+        <div class="result-label">{{ $t('yesNoWheel.yes') }}</div>
       </div>
       <div class="result-box no" :class="{ active: lastResult === 'no' }">
         <div class="result-count">{{ results.no }}</div>
-        <div class="result-label">NO</div>
+        <div class="result-label">{{ $t('yesNoWheel.no') }}</div>
       </div>
       <div v-if="mode === 'ternary'" class="result-box maybe" :class="{ active: lastResult === 'maybe' }">
         <div class="result-count">{{ results.maybe }}</div>
-        <div class="result-label">MAYBE</div>
+        <div class="result-label">{{ $t('yesNoWheel.maybe') }}</div>
       </div>
     </div>
 
@@ -42,7 +42,7 @@
               @click="spinWheel"
               :disabled="isSpinning"
               class="spin-center-button">
-              Spin
+              {{ $t('mainWheel.spin') }}
             </button>
           </template>
         </VueWheelSpinner>
@@ -51,25 +51,25 @@
 
     <div class="settings-container">
       <div class="setting-group">
-        <label>Mode</label>
+        <label>{{ $t('yesNoWheel.mode') }}</label>
         <div class="mode-buttons">
           <button 
             class="mode-btn" 
             :class="{ active: mode === 'binary' }"
             @click="setMode('binary')">
-            YES or NO
+            {{ $t('yesNoWheel.binaryMode') }}
           </button>
           <button 
             class="mode-btn" 
             :class="{ active: mode === 'ternary' }"
             @click="setMode('ternary')">
-            YES NO or MAYBE
+            {{ $t('yesNoWheel.ternaryMode') }}
           </button>
         </div>
       </div>
       
       <div class="setting-group">
-        <label>Number of Input Sets</label>
+        <label>{{ $t('yesNoWheel.numInputSets') }}</label>
         <div class="input-sets">
           <button 
             v-for="n in 7" 
@@ -82,7 +82,7 @@
         </div>
       </div>
 
-      <button @click="resetResults" class="reset-btn">Reset Results</button>
+      <button @click="resetResults" class="reset-btn">{{ $t('yesNoWheel.resetResults') }}</button>
     </div>
   </div>
 </template>
@@ -144,7 +144,8 @@ export default {
         for (let i = 0; i < totalSlices; i++) {
           slices.push({
             color: colors[i % colors.length], // Cycle through the chosen palette
-            text: i % 2 === 0 ? 'YES' : 'NO'  // Alternate text YES/NO
+            text: i % 2 === 0 ? this.$t('yesNoWheel.yes') : this.$t('yesNoWheel.no'),
+            type: i % 2 === 0 ? 'yes' : 'no'
           });
         }
         // No shuffle needed here, color cycling handles distinction for >= 3
@@ -157,13 +158,15 @@ export default {
         for (let i = 0; i < totalSlicesNeeded; i++) {
           const typeIndex = i % 3; // 0 for YES, 1 for NO, 2 for MAYBE
           let text = '';
-          if (typeIndex === 0) text = 'YES';
-          else if (typeIndex === 1) text = 'NO';
-          else text = 'MAYBE';
+          let type = '';
+          if (typeIndex === 0) { text = this.$t('yesNoWheel.yes'); type = 'yes'; }
+          else if (typeIndex === 1) { text = this.$t('yesNoWheel.no'); type = 'no'; }
+          else { text = this.$t('yesNoWheel.maybe'); type = 'maybe'; }
           
           slices.push({ 
               color: ternaryColors[typeIndex], 
-              text: text 
+              text: text,
+              type: type
           });
         }
         // Shuffle the ternary slices for better distribution if desired, 
@@ -187,7 +190,7 @@ export default {
     },
     onSpinEnd(winnerIndex) {
       this.isSpinning = false;
-      const result = this.wheelSlices[winnerIndex].text.toLowerCase();
+      const result = this.wheelSlices[winnerIndex].type;
       this.lastResult = result;
       this.results[result]++;
     },

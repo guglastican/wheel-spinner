@@ -1,0 +1,240 @@
+{
+    "header": {
+        "randomWheel": "Random Wheel",
+        "wheelOfNames": "Wheel of Names",
+        "yesNoWheel": "Yes/No Wheel",
+        "embed": "Embed",
+        "foodWheel": "Food Wheel",
+        "configureEmbed": "Configure Embeddable Wheel"
+    },
+    "footer": {
+        "randoWheel": "Rando Wheel",
+        "copyright": "© {year} Wheel Spinner. All rights reserved.",
+        "privacyPolicy": "Privacy Policy",
+        "termsConditions": "Terms & Conditions",
+        "otherWheels": "Other Wheels"
+    },
+    "mainWheel": {
+        "winner": "Winner: {text} 🎉",
+        "spin": "Spin",
+        "inputs": "Inputs",
+        "reset": "Reset",
+        "shuffle": "Shuffle",
+        "placeholder": "Input text here...",
+        "spinTheWheel": "Spin the Wheel",
+        "cursor": "Cursor",
+        "cursorAngle": "Cursor Angle",
+        "cursorDistance": "Cursor Distance",
+        "pleaseInclude": "Please include at least one item in the wheel",
+        "copySuffix": "(copy)"
+    },
+    "yesNoWheel": {
+        "yes": "YES",
+        "no": "NO",
+        "maybe": "MAYBE",
+        "mode": "Mode",
+        "binaryMode": "YES or NO",
+        "ternaryMode": "YES NO or MAYBE",
+        "numInputSets": "Number of Input Sets",
+        "resetResults": "Reset Results"
+    },
+    "exploreMore": {
+        "title": "Explore More Free Spinning Wheels",
+        "descDefault": "Looking for a different kind of random picker? Check out our other free wheel tools:",
+        "descFood": "Need to make other types of decisions? Try our other tools:",
+        "rwTitle": "Random Wheel Spinner",
+        "rwDesc": "The ultimate customizable wheel for practically any choice.",
+        "wonTitle": "Wheel of Names",
+        "wonDesc": "A perfect companion for giveaways, classroom participation, or assigning tasks.",
+        "ynwTitle": "Yes / No Wheel",
+        "ynwDesc": "A simple yes or no spinner to handle quick binary choices instantly."
+    },
+    "home": {
+        "mainTitle": "Random Wheel Spinner",
+        "whatIsTitle": "What is a Random Wheel?",
+        "whatIsDesc": "A Random Wheel is an interactive tool that spins to make a random selection from a set of choices. Whether you're picking names, colors, numbers, or yes/no answers, a random spinner adds fun and fairness to decision-making. Ideal for games, raffles, classroom activities, or just making everyday choices easier, random wheels are simple, engaging, and widely used. Try a random wheel spinner to add excitement to your next decision!",
+        "howWorksTitle": "How a Random Wheel Works?",
+        "howWorksDesc": "A Random Wheel operates by spinning a digital wheel divided into multiple sections, each containing a unique option. When the wheel is spun, it randomly lands on one of these sections, providing an unbiased selection.",
+        "stepsTitle": "Steps to Use a Random Wheel:",
+        "step1Title": "Insert text:",
+        "step1Desc": "You can typically add items (like names, tasks, or decisions) one by one or paste a whole list.",
+        "step2Title": "Spin:",
+        "step2Desc": "Once your choices are in and you're happy with the look, just initiate the spin. There's usually a clear button like \"Spin the Wheel!\".",
+        "stepsList": {
+            "1": "<strong>Enter Your Options</strong> – Add names, numbers, colors, or choices to the wheel.",
+            "2": "<strong>Spin the Wheel</strong> – Click or tap the spin button to start the random selection process.",
+            "3": "<strong>Get Instant Results</strong> – The wheel stops on a random choice, providing your answer.",
+            "4": "<strong>Repeat as Needed</strong> – You can spin again for new results or customize the wheel for different decisions."
+        },
+        "manageTitle": "Manage Your Wheel & Results",
+        "manageDesc": "Depending on the specific tool, you might find features like:",
+        "manageList": {
+            "modes": "<strong>Modes:</strong> You might be able to choose different ways for the wheel to work, like 'Elimination' mode where the chosen option is removed for the next spin.",
+            "editing": "<strong>Editing:</strong> Most tools let you edit, duplicate, hide, or delete the entries you've added. You can also usually clear the whole list easily.",
+            "sharing": "<strong>Saving/Sharing:</strong> You can often save your wheel setup (sometimes requires an account) and share it with others using a link or maybe even get code to embed it.",
+            "results": "<strong>Results:</strong> Some wheels might keep track of past results."
+        },
+        "otherToolsTitle": "Other Wheel Tool",
+        "otherToolsDesc": "Other than the main random Wheel, there are several specialized tools of random Wheel created as well.",
+        "otherToolsList": {
+            "names": "<strong>Name Pickers / Student Selectors:</strong> Commonly used by educators to randomly select individuals, sometimes called \"Wheel of Names\" or \"Random Name Picker\".",
+            "yesno": "<strong>Yes/No Wheels:</strong> For simple binary decisions.",
+            "food": "<strong>Food Wheel:</strong> Unsure what to eat? Spin the food wheel for quick random meal decisions."
+        },
+        "otherToolsOutro": "Each specialized version takes the core concept of random selection and tailors it to meet distinct needs, making them handy for everything from organizing activities to settling debates with a fun, impartial twist."
+    },
+    "yesNoPage": {
+        "title": "Yes/No Wheel Picker",
+        "heroTitle": "Make Quick Yes/No Decisions",
+        "heroDesc": "Can't decide between yes and no? Let our wheel decide for you! Customize the wheel with different modes and input sets to get the answer you need.",
+        "howToTitle": "How to Use",
+        "steps": {
+            "1": "Choose between \"YES or NO\" mode or \"YES NO or MAYBE\" mode",
+            "2": "Select the number of input sets (1-5) to adjust the probability distribution",
+            "3": "Click the \"Spin\" button to get your answer",
+            "4": "The result will be highlighted and counted in the boxes above",
+            "5": "Use the \"Reset Results\" button to clear all counters"
+        },
+        "seoTitle": "Why Use a Yes/No Wheel?",
+        "seoDesc1": "Life is full of choices, and sometimes the simplest ones are the hardest. Our Yes/No Wheel Spinner is the perfect decision maker when you're stuck. It's a fun and fast way to get a random choice, acting as a quick yes or no generator.",
+        "seoList": {
+            "1": "<strong>Settle Debates:</strong> Quickly resolve friendly arguments.",
+            "2": "<strong>Make Quick Decisions:</strong> Decide on dinner, movie night, or simple daily choices effortlessly.",
+            "3": "<strong>Add Fun:</strong> Inject randomness and excitement into group activities.",
+            "4": "<strong>Overcome Indecision:</strong> Let the wheel break the deadlock when you're truly undecided."
+        },
+        "seoDesc2": "Whether you need a simple yes or no, or want to add 'maybe' for more nuance, this fun decision tool provides an unbiased answer instantly. Spin the wheel and let fate decide!",
+        "moreTitle": "Beyond Simple Choices: More Uses",
+        "moreDesc": "While great for straightforward yes/no questions, this tool can be surprisingly versatile:",
+        "moreList": {
+            "1": "<strong>Learning & Study Aid:</strong> Quiz yourself! Frame questions with a yes/no answer and spin.",
+            "2": "<strong>Creative Prompts:</strong> Stuck on a story or project? Use the wheel for binary creative decisions.",
+            "3": "<strong>Breaking Habits:</strong> Trying to decide whether to indulge in a minor temptation? Let the wheel add a layer of chance.",
+            "4": "<strong>Fair Turn-Taking:</strong> Use it in games to decide who goes next."
+        },
+        "powerTitle": "The Power of Randomness",
+        "powerDesc": "Our wheel uses a reliable pseudo-random number generator to ensure each spin is fair and unpredictable. This removes personal bias from simple decisions, making it a truly impartial decision maker. Sometimes, leaving small choices to chance can free up mental energy for more important matters! The optional 'Maybe' adds flexibility for those times when a simple yes or no isn't quite enough."
+    },
+    "foodPage": {
+        "title": "Food Wheel",
+        "heroTitle": "Food Wheel — What Should I Eat?",
+        "heroDesc": "Can't decide what to eat for lunch or dinner? Spin the <strong>Food Wheel</strong> and let fate decide! Whether you are craving pizza, sushi, or looking for a healthy salad, just add your options, give the wheel a spin, and your meal is set.",
+        "howToTitle": "How to Use the Food Wheel",
+        "steps": {
+            "1": "<strong>Add Cravings and Options</strong> — Type each food name or restaurant and click the <em>+</em> button.",
+            "2": "<strong>Customise Colours</strong> — Click the colour swatch next to any food to change the slice colour.",
+            "3": "<strong>Spin the Wheel</strong> — Click <em>Spin the Wheel</em> or the centre button on the wheel.",
+            "4": "<strong>See the Winner</strong> — The chosen food appears above the wheel with a 🎉 celebration. You can finally stop debating and start eating!",
+            "5": "<strong>Spin Again</strong> — Still not convinced? Keep spinning or remove the options you don't like using the <em>Remove</em> feature."
+        },
+        "seoTitle": "What Is a Food Wheel?",
+        "seoDesc": "A <strong>Food Wheel</strong> is a digital spinning wheel specifically used for picking random meals, restaurants, or cuisines from a list. It solves the classic \"What do you want to eat?\" problem.",
+        "seoList": {
+            "1": "<strong>Restaurant decider</strong> — Can't agree on a restaurant? Add the top 5 choices and let the wheel choose.",
+            "2": "<strong>Meal prep roulette</strong> — Make cooking fun by spinning for your proteins, carbs, and veggies.",
+            "3": "<strong>Takeout randomizer</strong> — Pizza? Chinese? Thai? Spin whenever you have cravings.",
+            "4": "<strong>Office party catering</strong> — Let the team submit options and use the wheel to decide food."
+        },
+        "whyTitle": "Why Use Our Food Wheel?",
+        "whyDesc": "Skip the endless scrolling on delivery apps. Our Food Wheel helps you decide fast and fairly:",
+        "features": {
+            "1Title": "End the Debate",
+            "1Desc": "No more \"I don't know, what do you want?\" Spin the wheel and the decision is made instantly.",
+            "2Title": "Instant Setup",
+            "2Desc": "No account needed. Open the page, type your food options, and spin right away.",
+            "3Title": "Fully Customisable",
+            "3Desc": "Add emojis, change slice colours to match the food, and exclude options.",
+            "4Title": "Fair Results",
+            "4Desc": "Cryptographically secure randomness means you're actually getting an unbiased roll.",
+            "5Title": "Works on Mobile",
+            "5Desc": "Perfect for deciding on the go. The fully responsive design looks great on any phone.",
+            "6Title": "100% Free",
+            "6Desc": "Our Food Wheel is always free, with no paywalls or required sign-ups."
+        },
+        "faqTitle": "Frequently Asked Questions",
+        "faqs": {
+            "1Title": "Does the Food Wheel work on my phone?",
+            "1Desc": "Yes! The Food Wheel is completely mobile-friendly.",
+            "2Title": "Are the results truly random?",
+            "2Desc": "Yes. Every spin uses a robust pseudo-random algorithm to guarantee that each food option has an equal chance.",
+            "3Title": "Can I save my favorite food lists?",
+            "3Desc": "As long as you keep the browser tab open, your lists remain active. We recommend bookmarking the page."
+        }
+    },
+    "namesPage": {
+        "title": "Wheel of Names",
+        "heroTitle": "Wheel of Names — Free Random Name Picker",
+        "heroDesc": "Type in any names, give the wheel a spin, and let fate pick a winner in seconds. Whether you need a <strong>random name picker</strong> for your classroom, a fair draw for a giveaway, or a quick way to assign tasks to your team — this free Wheel of Names has you covered. No sign-up, no download, works on any device.",
+        "howToTitle": "How to Use the Wheel of Names",
+        "steps": {
+            "1": "<strong>Add Names</strong> — Type each name in the input box and press <em>Enter</em>.",
+            "2": "<strong>Customise Colours</strong> — Click the colour swatch next to any name.",
+            "3": "<strong>Spin the Wheel</strong> — Click <em>Spin the Wheel</em> or the centre button.",
+            "4": "<strong>See the Winner</strong> — The chosen name appears above the wheel with a 🎉 celebration. The win count tracks how many times each name has been picked.",
+            "5": "<strong>Spin Again</strong> — Keep spinning for multiple rounds. Use <em>Exclude</em> to remove winners from future spins, or <em>Reset</em> to start fresh."
+        },
+        "seoTitle": "What Is a Wheel of Names?",
+        "seoDesc": "A <strong>Wheel of Names</strong> is a digital spinning wheel pre-designed for picking random names from a list. It works the same way as a classic prize wheel — you add any names you like, click spin, and the wheel lands on a winner at random.",
+        "seoList": {
+            "1": "<strong>Classroom random name picker</strong> — Teachers use a wheel of names to call on students without bias.",
+            "2": "<strong>Giveaways & contests</strong> — Running a social-media giveaway? Add all participant names and spin.",
+            "3": "<strong>Team selection</strong> — Randomly split players into teams, pick a team captain, or assign roles.",
+            "4": "<strong>Office games & icebreakers</strong> — Who presents first? Who brings coffee tomorrow? Let the wheel decide."
+        },
+        "whyTitle": "Why Use Our Wheel of Names?",
+        "whyDesc": "There are many name-picker tools online, but our stands out for a handful of key reasons:",
+        "features": {
+            "1Title": "Truly Random",
+            "1Desc": "We use a cryptographically seeded pseudo-random number generator to ensure every spin is completely unpredictable.",
+            "2Title": "Instant Setup",
+            "2Desc": "No account needed. Open the page, type your names, and spin. The entire process takes under 30 seconds.",
+            "3Title": "Fully Customisable",
+            "3Desc": "Change slice colours, reorder names, duplicate entries for weighted results, or exclude certain names.",
+            "4Title": "Win Tracking",
+            "4Desc": "The wheel tracks how many times each name has been picked across multiple rounds.",
+            "5Title": "Works on Any Device",
+            "5Desc": "Fully responsive design means the wheel looks and works great on phones, tablets, and desktops alike.",
+            "6Title": "Always Free",
+            "6Desc": "No ads interrupting your spin, no premium tiers, and no subscription. 100% free, forever."
+        },
+        "tipsTitle": "Tips for Getting the Most Out of Your Name Wheel",
+        "tips": {
+            "1Title": "Weighted Name Picking",
+            "1Desc": "Want to increase the chances of a particular name being chosen? Simply add that name multiple times using the <em>Copy</em> button. Each duplicate entry gets its own slice, effectively doubling (or tripling) that person's probability of being picked.",
+            "2Title": "Elimination Mode",
+            "2Desc": "Running a tournament, quiz show, or raffle? Use the <em>Exclude</em> button to remove each winner from subsequent spins. This ensures every participant can only win once.",
+            "3Title": "Shuffle for Fairness",
+            "3Desc": "If you re-use the same list of names regularly, hit the <em>Shuffle</em> button before spinning. Shuffling randomises the starting order of slices.",
+            "4Title": "Save Your Name List",
+            "4Desc": "Need the same names every lesson or meeting? Simply keep the browser tab open — the names stay on the wheel until you reset or close the page."
+        },
+        "faqTitle": "Frequently Asked Questions",
+        "faqs": {
+            "1Title": "Is the Wheel of Names completely random?",
+            "1Desc": "Yes. Each spin uses JavaScript's Math.random() function, which generates a pseudo-random number to determine the winning slice.",
+            "2Title": "How many names can I add to the wheel?",
+            "2Desc": "There is no hard limit. The wheel automatically resizes each slice to fit all entries. For best readability, we recommend keeping it under 50 names.",
+            "3Title": "Can I save my wheel of names?",
+            "3Desc": "Your names are stored as long as the page is open. Bookmark the page after adding your names — reopening the same tab in most browsers will restore the state.",
+            "4Title": "Does the Wheel of Names work on mobile?",
+            "4Desc": "Absolutely. The wheel is fully responsive and works on iOS, Android, and any modern mobile browser.",
+            "5Title": "What is the difference between the Wheel of Names and a random name generator?",
+            "5Desc": "A <em>random name generator</em> typically creates fictional names from a database. Our Wheel of Names picks from the specific names <em>you</em> provide.",
+            "6Title": "Can I use this as a random student picker?",
+            "6Desc": "Yes — it is one of the most popular uses. Teachers add their class roster, then spin the wheel to call on a student."
+        }
+    },
+    "embed": {
+        "loading": "Loading wheel configuration...",
+        "instructions": "Use the controls below to set up the content and appearance of your wheel. Then, configure the embed settings and generate the code to place it on your website.",
+        "settingsTitle": "Embed Settings",
+        "titleLabel": "Title (for accessibility):",
+        "widthLabel": "Width (px):",
+        "heightLabel": "Height (px):",
+        "codeTitle": "Embed Code",
+        "codeDesc": "Copy the code below to embed this configured wheel on your website:",
+        "generateBtn": "Generate Embed Code",
+        "errConfigure": "Error generating code. Please configure the wheel first.",
+        "errEmpty": "Please add at least one item to the wheel before generating embed code."
+    }
+}

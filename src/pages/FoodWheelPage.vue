@@ -1,186 +1,111 @@
 <template>
   <div class="food-wheel-page">
-    <AppHeader title="Food Wheel" />
+    <AppHeader :title="$t('foodPage.title')" />
 
     <main class="main-content">
-
-      <!-- The Wheel -->
       <MainWheelSpinner :initial-slices="foodOptions" />
 
-      <!-- Hero Intro -->
       <section class="hero-section">
-        <h1 class="hero-title">Food Wheel — What Should I Eat?</h1>
-        <p class="hero-description">
-          Can't decide what to eat for lunch or dinner? Spin the <strong>Food Wheel</strong> and let fate decide! 
-          Whether you are craving pizza, sushi, or looking for a healthy salad, just add your options, give the wheel a spin, and your meal is set. 
-          Perfect for couples, families, or anyone experiencing indecision at dinner time.
-        </p>
+        <h1 class="hero-title" v-html="$t('foodPage.heroTitle')"></h1>
+        <p class="hero-description" v-html="$t('foodPage.heroDesc')"></p>
       </section>
 
-      <!-- How To Use -->
       <section class="info-section">
-        <h2>How to Use the Food Wheel</h2>
+        <h2>{{ $t('foodPage.howToTitle') }}</h2>
         <ol class="steps-list">
-          <li>
-            <strong>Add Cravings and Options</strong> — Type each food name or restaurant in the input box and press <em>Enter</em>
-            or click the <em>+</em> button to add it to the wheel.
-          </li>
-          <li>
-            <strong>Customise Colours</strong> — Click the colour swatch next to any food to
-            change the slice colour.
-          </li>
-          <li>
-            <strong>Spin the Wheel</strong> — Click <em>Spin the Wheel</em> or the centre button
-            on the wheel. It will spin and land on a random meal.
-          </li>
-          <li>
-            <strong>See the Winner</strong> — The chosen food appears above the wheel with a 🎉
-            celebration. You can finally stop debating and start eating!
-          </li>
-          <li>
-            <strong>Spin Again</strong> — Still not convinced? Keep spinning or remove the options you don't like using the <em>Remove</em> feature.
-          </li>
+          <li v-html="$t('foodPage.steps.1')"></li>
+          <li v-html="$t('foodPage.steps.2')"></li>
+          <li v-html="$t('foodPage.steps.3')"></li>
+          <li v-html="$t('foodPage.steps.4')"></li>
+          <li v-html="$t('foodPage.steps.5')"></li>
         </ol>
       </section>
 
-      <!-- SEO Section 1 -->
       <section class="seo-section">
-        <h2>What Is a Food Wheel?</h2>
-        <p>
-          A <strong>Food Wheel</strong> is a digital spinning wheel specifically used for picking
-          random meals, restaurants, or cuisines from a list. It solves the classic "What do you want to eat?" problem. You add any
-          options you or your group are considering, click spin, and the wheel lands on a random choice. 
-          You can also use our
-          <router-link to="/wheel-of-names" class="inline-link">Wheel of Names</router-link> for picking who pays, or the
-          <router-link to="/yes-no-wheel" class="inline-link">Yes/No Wheel</router-link>
-          for answering questions like "Should we get dessert?":
-        </p>
+        <h2>{{ $t('foodPage.seoTitle') }}</h2>
+        <p v-html="$t('foodPage.seoDesc')"></p>
         <ul>
-          <li>
-            <strong>Restaurant decider</strong> — Can't agree on a restaurant? Add the top 5 choices and let the wheel choose impartially.
-          </li>
-          <li>
-            <strong>Meal prep roulette</strong> — Make cooking fun by spinning for your proteins, carbs, and veggies for the week.
-          </li>
-          <li>
-            <strong>Takeout randomizer</strong> — Pizza? Chinese? Thai? Spin whenever you have cravings for multiple cuisines.
-          </li>
-          <li>
-            <strong>Office party catering</strong> — Let the team submit options and use the wheel to decide food for the next gathering.
-          </li>
+          <li v-html="$t('foodPage.seoList.1')"></li>
+          <li v-html="$t('foodPage.seoList.2')"></li>
+          <li v-html="$t('foodPage.seoList.3')"></li>
+          <li v-html="$t('foodPage.seoList.4')"></li>
         </ul>
       </section>
 
-      <!-- SEO Section 2 -->
       <section class="seo-section seo-section--alt">
-        <h2>Why Use Our Food Wheel?</h2>
-        <p>
-          Skip the endless scrolling on delivery apps. Our <strong>Food Wheel</strong>
-          helps you decide fast and fairly:
-        </p>
+        <h2>{{ $t('foodPage.whyTitle') }}</h2>
+        <p>{{ $t('foodPage.whyDesc') }}</p>
         <div class="feature-grid">
           <div class="feature-card">
             <div class="feature-icon">🍔</div>
-            <h3>End the Debate</h3>
-            <p>
-              No more "I don't know, what do you want?" Spin the wheel and the decision is made instantly, saving relationships everywhere.
-            </p>
+            <h3>{{ $t('foodPage.features.1Title') || $t('foodPage.features.debateTitle') }}</h3>
+            <p>{{ $t('foodPage.features.1Desc') || $t('foodPage.features.debateDesc') }}</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">⚡</div>
-            <h3>Instant Setup</h3>
-            <p>
-              No account needed. Open the page, type your food options, and spin right away.
-            </p>
+            <h3>{{ $t('foodPage.features.2Title') || $t('foodPage.features.setupTitle') }}</h3>
+            <p>{{ $t('foodPage.features.2Desc') || $t('foodPage.features.setupDesc') }}</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🎨</div>
-            <h3>Fully Customisable</h3>
-            <p>
-              Add emojis, change slice colours to match the food, and exclude options mid-debate.
-            </p>
+            <h3>{{ $t('foodPage.features.3Title') || $t('foodPage.features.customTitle') }}</h3>
+            <p>{{ $t('foodPage.features.3Desc') || $t('foodPage.features.customDesc') }}</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">📊</div>
-            <h3>Fair Results</h3>
-            <p>
-              Cryptographically secure randomness means you're actually getting an unbiased, 100% random meal option.
-            </p>
+            <h3>{{ $t('foodPage.features.4Title') || $t('foodPage.features.fairTitle') }}</h3>
+            <p>{{ $t('foodPage.features.4Desc') || $t('foodPage.features.fairDesc') }}</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">📱</div>
-            <h3>Works on Mobile</h3>
-            <p>
-              Perfect for deciding on the go. The fully responsive design looks great on any phone or tablet browser.
-            </p>
+            <h3>{{ $t('foodPage.features.5Title') || $t('foodPage.features.mobileTitle') }}</h3>
+            <p>{{ $t('foodPage.features.5Desc') || $t('foodPage.features.mobileDesc') }}</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🆓</div>
-            <h3>100% Free</h3>
-            <p>
-              Our Food Wheel is always free, with no paywalls or required sign-ups.
-            </p>
+            <h3>{{ $t('foodPage.features.6Title') || $t('foodPage.features.freeTitle') }}</h3>
+            <p>{{ $t('foodPage.features.6Desc') || $t('foodPage.features.freeDesc') }}</p>
           </div>
         </div>
       </section>
 
-      <!-- FAQ Section -->
       <section class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-
+        <h2>{{ $t('foodPage.faqTitle') }}</h2>
         <div class="faq-item">
-          <h3>Does the Food Wheel work on my phone?</h3>
-          <p>
-            Yes! The Food Wheel is completely mobile-friendly. You can easily pull it up on your smartphone while hanging out with friends to pick a restaurant.
-          </p>
+          <h3>{{ $t('foodPage.faqs.1Title') }}</h3>
+          <p>{{ $t('foodPage.faqs.1Desc') }}</p>
         </div>
-
         <div class="faq-item">
-          <h3>Are the results truly random?</h3>
-          <p>
-            Yes. Every spin uses a robust pseudo-random algorithm to guarantee that each food option has an equal chance of being selected.
-          </p>
+          <h3>{{ $t('foodPage.faqs.2Title') }}</h3>
+          <p>{{ $t('foodPage.faqs.2Desc') }}</p>
         </div>
-
         <div class="faq-item">
-          <h3>Can I save my favorite food lists?</h3>
-          <p>
-            As long as you keep the browser tab open, your lists remain active. We recommend bookmarking the page for quick access next time you need culinary inspiration.
-          </p>
+          <h3>{{ $t('foodPage.faqs.3Title') }}</h3>
+          <p>{{ $t('foodPage.faqs.3Desc') }}</p>
         </div>
       </section>
 
-      <!-- Internal Linking Section -->
       <section class="related-tools-section">
-        <h2>Explore More Free Spinning Wheels</h2>
-        <p>
-          Need to make other types of decisions? Try our other tools:
-        </p>
+        <h2>{{ $t('exploreMore.title') }}</h2>
+        <p>{{ $t('exploreMore.descFood') }}</p>
         <div class="tool-cards">
-          <router-link to="/" class="tool-card">
+          <router-link :to="localePath('/')" class="tool-card">
             <div class="tool-card-icon">🎡</div>
-            <h3>Random Wheel Spinner</h3>
-            <p>
-              The ultimate customizable wheel for practically any choice.
-            </p>
+            <h3>{{ $t('exploreMore.rwTitle') }}</h3>
+            <p>{{ $t('exploreMore.rwDesc') }}</p>
           </router-link>
-          <router-link to="/wheel-of-names" class="tool-card">
+          <router-link :to="localePath('/wheel-of-names')" class="tool-card">
             <div class="tool-card-icon">👩‍🏫</div>
-            <h3>Wheel of Names</h3>
-            <p>
-              A perfect companion for giveaways, classroom participation, or assigning tasks.
-            </p>
+            <h3>{{ $t('exploreMore.wonTitle') }}</h3>
+            <p>{{ $t('exploreMore.wonDesc') }}</p>
           </router-link>
-          <router-link to="/yes-no-wheel" class="tool-card">
+          <router-link :to="localePath('/yes-no-wheel')" class="tool-card">
             <div class="tool-card-icon">✅</div>
-            <h3>Yes / No Wheel</h3>
-            <p>
-              A simple yes or no spinner to handle quick binary choices instantly.
-            </p>
+            <h3>{{ $t('exploreMore.ynwTitle') }}</h3>
+            <p>{{ $t('exploreMore.ynwDesc') }}</p>
           </router-link>
         </div>
       </section>
-
     </main>
   </div>
 </template>

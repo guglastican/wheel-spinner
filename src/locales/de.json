@@ -1,0 +1,240 @@
+{
+  "header": {
+    "randomWheel": "Zufallsrad",
+    "wheelOfNames": "Rad der Namen",
+    "yesNoWheel": "Ja/Nein-Rad",
+    "embed": "Einbetten",
+    "foodWheel": "Lebensmittelrad",
+    "configureEmbed": "Konfigurieren Sie das einbettbare Rad"
+  },
+  "footer": {
+    "randoWheel": "Rando Wheel",
+    "copyright": "© {year} Wheel Spinner. Alle Rechte vorbehalten.",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "termsConditions": "Allgemeine Geschäftsbedingungen",
+    "otherWheels": "Andere Räder"
+  },
+  "mainWheel": {
+    "winner": "Gewinner: {text} 🎉",
+    "spin": "Drehen",
+    "inputs": "Eingaben",
+    "reset": "Zurücksetzen",
+    "shuffle": "Shuffle",
+    "placeholder": "Geben Sie hier Text ein...",
+    "spinTheWheel": "Drehen Sie das Rad",
+    "cursor": "Cursor",
+    "cursorAngle": "Cursorwinkel",
+    "cursorDistance": "Cursorentfernung",
+    "pleaseInclude": "Bitte fügen Sie mindestens einen Artikel in das Rad ein",
+    "copySuffix": "(Kopie)"
+  },
+  "yesNoWheel": {
+    "yes": "JA",
+    "no": "NEIN",
+    "maybe": "VIELLEICHT",
+    "mode": "Modus",
+    "binaryMode": "Ja oder nein",
+    "ternaryMode": "JA NEIN oder VIELLEICHT",
+    "numInputSets": "Anzahl der Eingabesätze",
+    "resetResults": "Ergebnisse zurücksetzen"
+  },
+  "exploreMore": {
+    "title": "Entdecken Sie weitere kostenlose Spinnräder",
+    "descDefault": "Suchen Sie nach einer anderen Art von Zufallsauswahl? Schauen Sie sich unsere anderen Freilaufwerkzeuge an:",
+    "descFood": "Müssen Sie andere Arten von Entscheidungen treffen? Probieren Sie unsere anderen Tools aus:",
+    "rwTitle": "Zufälliger Radspinner",
+    "rwDesc": "Das ultimative anpassbare Rad für praktisch jede Wahl.",
+    "wonTitle": "Rad der Namen",
+    "wonDesc": "Ein perfekter Begleiter für Giveaways, die Teilnahme am Unterricht oder die Zuweisung von Aufgaben.",
+    "ynwTitle": "Ja/Nein Rad",
+    "ynwDesc": "Ein einfacher Ja- oder Nein-Spinner, um schnelle binäre Entscheidungen sofort zu treffen."
+  },
+  "home": {
+    "mainTitle": "Zufälliger Radspinner",
+    "whatIsTitle": "Was ist ein Zufallsrad?",
+    "whatIsDesc": "Ein Zufallsrad ist ein interaktives Werkzeug, das sich dreht, um aus einer Reihe von Möglichkeiten eine zufällige Auswahl zu treffen. Egal, ob Sie Namen, Farben, Zahlen oder Ja/Nein-Antworten auswählen, ein Zufallsdreher sorgt für Spaß und Fairness bei der Entscheidungsfindung. Zufallsräder sind einfach, ansprechend und weit verbreitet und eignen sich ideal für Spiele, Tombola, Unterrichtsaktivitäten oder einfach zur Erleichterung alltäglicher Entscheidungen. Probieren Sie einen zufälligen Raddreher aus, um Ihrer nächsten Entscheidung mehr Spannung zu verleihen!",
+    "howWorksTitle": "Wie funktioniert ein Zufallsrad?",
+    "howWorksDesc": "Bei einem Zufallsrad dreht sich ein digitales Rad, das in mehrere Abschnitte unterteilt ist, von denen jeder eine einzigartige Option enthält. Wenn das Rad gedreht wird, landet es zufällig auf einem dieser Abschnitte und sorgt so für eine unvoreingenommene Auswahl.",
+    "stepsTitle": "Schritte zur Verwendung eines Zufallsrads:",
+    "step1Title": "Text einfügen:",
+    "step1Desc": "Normalerweise können Sie Elemente (wie Namen, Aufgaben oder Entscheidungen) einzeln hinzufügen oder eine ganze Liste einfügen.",
+    "step2Title": "Drehen:",
+    "step2Desc": "Sobald Sie Ihre Wahl getroffen haben und mit dem Aussehen zufrieden sind, beginnen Sie einfach mit dem Drehen. Normalerweise gibt es eine klare Schaltfläche wie „Spin the Wheel!“.",
+    "stepsList": {
+      "1": "<strong>Geben Sie Ihre Optionen ein</strong> – Fügen Sie dem Rad Namen, Zahlen, Farben oder Auswahlmöglichkeiten hinzu.",
+      "2": "<strong>Drehen Sie das Rad</strong> – Klicken oder tippen Sie auf die Drehschaltfläche, um den zufälligen Auswahlprozess zu starten.",
+      "3": "<strong>Sofortige Ergebnisse erhalten</strong> – Das Rad stoppt bei einer zufälligen Auswahl und liefert Ihre Antwort.",
+      "4": "<strong>Bei Bedarf wiederholen</strong> – Sie können das Rad erneut drehen, um neue Ergebnisse zu erzielen, oder das Rad für andere Entscheidungen anpassen."
+    },
+    "manageTitle": "Verwalten Sie Ihr Rad und Ihre Ergebnisse",
+    "manageDesc": "Abhängig vom jeweiligen Tool finden Sie möglicherweise Funktionen wie:",
+    "manageList": {
+      "modes": "<strong>Modi:</strong> Möglicherweise können Sie verschiedene Funktionsweisen des Rads auswählen, z. B. den „Elimination“-Modus, bei dem die ausgewählte Option für die nächste Drehung entfernt wird.",
+      "editing": "<strong>Bearbeiten:</strong> Mit den meisten Tools können Sie die von Ihnen hinzugefügten Einträge bearbeiten, duplizieren, ausblenden oder löschen. Normalerweise können Sie auch die gesamte Liste problemlos löschen.",
+      "sharing": "<strong>Speichern/Teilen:</strong> Sie können Ihr Rad-Setup oft speichern (manchmal ist ein Konto erforderlich) und es über einen Link mit anderen teilen oder vielleicht sogar Code zum Einbetten erhalten.",
+      "results": "<strong>Ergebnisse:</strong> Einige Räder speichern möglicherweise frühere Ergebnisse."
+    },
+    "otherToolsTitle": "Anderes Radwerkzeug",
+    "otherToolsDesc": "Neben dem Haupt-Zufallsrad gibt es auch mehrere Spezialwerkzeuge für das Zufallsrad.",
+    "otherToolsList": {
+      "names": "<strong>Namensauswahl/Studentenauswahl:</strong> Wird häufig von Pädagogen verwendet, um Personen nach dem Zufallsprinzip auszuwählen, manchmal auch „Rad der Namen“ oder „Zufällige Namensauswahl“ genannt.",
+      "yesno": "<strong>Ja/Nein-Räder:</strong> Für einfache binäre Entscheidungen.",
+      "food": "<strong>Food Wheel:</strong> Sie sind sich nicht sicher, was Sie essen sollen? Drehen Sie das Lebensmittelrad, um schnell zufällige Essensentscheidungen zu treffen."
+    },
+    "otherToolsOutro": "Jede Spezialversion übernimmt das Kernkonzept der Zufallsauswahl und passt es an unterschiedliche Bedürfnisse an, sodass sie für alles praktisch sind, von der Organisation von Aktivitäten bis zur Beilegung von Debatten mit einer unterhaltsamen, unparteiischen Wendung."
+  },
+  "yesNoPage": {
+    "title": "Ja/Nein Wheel Picker",
+    "heroTitle": "Treffen Sie schnelle Ja/Nein-Entscheidungen",
+    "heroDesc": "Sie können sich nicht zwischen Ja und Nein entscheiden? Lassen Sie unser Rad für Sie entscheiden! Passen Sie das Rad mit verschiedenen Modi und Eingabesätzen an, um die Antwort zu erhalten, die Sie benötigen.",
+    "howToTitle": "Verwendung",
+    "steps": {
+      "1": "Wählen Sie zwischen dem Modus „JA oder NEIN“ oder dem Modus „JA NEIN oder VIELLEICHT“.",
+      "2": "Wählen Sie die Anzahl der Eingabesätze (1–5) aus, um die Wahrscheinlichkeitsverteilung anzupassen",
+      "3": "Klicken Sie auf die Schaltfläche „Drehen“, um Ihre Antwort zu erhalten",
+      "4": "Das Ergebnis wird in den Feldern oben hervorgehoben und gezählt",
+      "5": "Verwenden Sie die Schaltfläche „Ergebnisse zurücksetzen“, um alle Zähler zu löschen"
+    },
+    "seoTitle": "Warum ein Ja/Nein-Rad verwenden?",
+    "seoDesc1": "Das Leben ist voller Entscheidungen und manchmal sind die einfachsten die schwierigsten. Unser Ja/Nein-Radspinner ist der perfekte Entscheidungsträger, wenn Sie nicht weiterkommen. Es ist eine unterhaltsame und schnelle Möglichkeit, eine zufällige Auswahl zu treffen und fungiert als schneller Ja- oder Nein-Generator.",
+    "seoList": {
+      "1": "<strong>Debatten beilegen:</strong> Lösen Sie schnell einvernehmliche Auseinandersetzungen.",
+      "2": "<strong>Treffen Sie schnelle Entscheidungen:</strong> Entscheiden Sie sich mühelos für ein Abendessen, einen Filmabend oder einfache tägliche Entscheidungen.",
+      "3": "<strong>Spaß hinzufügen:</strong> Bringen Sie Zufälligkeit und Spannung in die Gruppenaktivitäten.",
+      "4": "<strong>Unentschlossenheit überwinden:</strong> Lassen Sie das Rad die Sackgasse überwinden, wenn Sie wirklich unentschlossen sind."
+    },
+    "seoDesc2": "Egal, ob Sie ein einfaches „Ja“ oder „Nein“ benötigen oder für mehr Nuancen „Vielleicht“ hinzufügen möchten, dieses unterhaltsame Entscheidungstool liefert sofort eine unvoreingenommene Antwort. Drehen Sie das Rad und lassen Sie das Schicksal entscheiden!",
+    "moreTitle": "Über einfache Entscheidungen hinaus: Mehr Einsatzmöglichkeiten",
+    "moreDesc": "Dieses Tool eignet sich zwar hervorragend für einfache Ja/Nein-Fragen, kann aber überraschend vielseitig sein:",
+    "moreList": {
+      "1": "<strong>Lern- und Lernhilfe:</strong> Testen Sie sich selbst! Formulieren Sie Fragen mit einer Ja/Nein-Antwort und drehen Sie sie.",
+      "2": "<strong>Kreative Anregungen:</strong> Sind Sie bei einer Story oder einem Projekt hängen geblieben? Nutzen Sie das Rad für binäre kreative Entscheidungen.",
+      "3": "<strong>Gewohnheiten brechen:</strong> Sie überlegen, ob Sie einer kleinen Versuchung nachgeben sollen? Lassen Sie das Rad eine Ebene des Zufalls hinzufügen.",
+      "4": "<strong>Fair Turn-Taking:</strong> Verwenden Sie es in Spielen, um zu entscheiden, wer als nächstes an der Reihe ist."
+    },
+    "powerTitle": "Die Macht des Zufalls",
+    "powerDesc": "Unser Rad verwendet einen zuverlässigen Pseudozufallszahlengenerator, um sicherzustellen, dass jede Drehung fair und unvorhersehbar ist. Dadurch wird die persönliche Voreingenommenheit bei einfachen Entscheidungen beseitigt, was ihn zu einem wirklich unparteiischen Entscheidungsträger macht. Wenn man kleine Entscheidungen dem Zufall überlässt, kann man manchmal mentale Energie für wichtigere Dinge freisetzen! Das optionale „Vielleicht“ sorgt für zusätzliche Flexibilität, wenn ein einfaches Ja oder Nein nicht ausreicht."
+  },
+  "foodPage": {
+    "title": "Lebensmittelrad",
+    "heroTitle": "Food Wheel – Was soll ich essen?",
+    "heroDesc": "Sie können sich nicht entscheiden, was Sie zum Mittag- oder Abendessen essen möchten? Drehen Sie das <strong>Food Wheel</strong> und lassen Sie das Schicksal entscheiden! Ganz gleich, ob Sie Lust auf Pizza oder Sushi haben oder auf der Suche nach einem gesunden Salat sind: Fügen Sie einfach Ihre Optionen hinzu, drehen Sie das Rad und schon ist Ihre Mahlzeit fertig.",
+    "howToTitle": "So verwenden Sie das Food Wheel",
+    "steps": {
+      "1": "<strong>Heißhunger und Optionen hinzufügen</strong> – Geben Sie den Namen jedes Lebensmittels oder Restaurants ein und klicken Sie auf die Schaltfläche <em>+</em>.",
+      "2": "<strong>Farben anpassen</strong> – Klicken Sie auf das Farbfeld neben einem beliebigen Lebensmittel, um die Scheibenfarbe zu ändern.",
+      "3": "<strong>Rad drehen</strong> – Klicken Sie auf <em>Rad drehen</em> oder auf die mittlere Schaltfläche am Rad.",
+      "4": "<strong>Sehen Sie den Gewinner</strong> – Das ausgewählte Essen erscheint über dem Rad mit einer 🎉-Feier. Endlich können Sie mit dem Diskutieren aufhören und mit dem Essen beginnen!",
+      "5": "<strong>Spin Again</strong> – Immer noch nicht überzeugt? Drehen Sie weiter oder entfernen Sie die Optionen, die Ihnen nicht gefallen, mit der Funktion <em>Entfernen</em>."
+    },
+    "seoTitle": "Was ist ein Food Wheel?",
+    "seoDesc": "Ein <strong>Food Wheel</strong> ist ein digitales Spinnrad, das speziell zum Auswählen zufälliger Mahlzeiten, Restaurants oder Küchen aus einer Liste verwendet wird. Es löst den Klassiker „Was möchtest du essen?“ Problem.",
+    "seoList": {
+      "1": "<strong>Restaurant-Entscheider</strong> – Sie können sich nicht auf ein Restaurant einigen? Fügen Sie die fünf besten Optionen hinzu und lassen Sie das Rad entscheiden.",
+      "2": "<strong>Meal-Prep-Roulette</strong> – Machen Sie das Kochen zum Spaß, indem Sie für Ihre Proteine, Kohlenhydrate und Gemüse drehen.",
+      "3": "<strong>Randomizer zum Mitnehmen</strong> – Pizza? Chinesisch? Thailändisch? Drehen Sie, wann immer Sie Lust haben.",
+      "4": "<strong>Büroparty-Catering</strong> – Lassen Sie das Team Optionen einreichen und das Rad nutzen, um über das Essen zu entscheiden."
+    },
+    "whyTitle": "Warum unser Food Wheel nutzen?",
+    "whyDesc": "Überspringen Sie das endlose Scrollen bei Liefer-Apps. Unser Food Wheel hilft Ihnen, schnell und fair zu entscheiden:",
+    "features": {
+      "1Title": "Beenden Sie die Debatte",
+      "1Desc": "Kein „Ich weiß nicht, was willst du?“ mehr. Drehen Sie das Rad und die Entscheidung wird sofort getroffen.",
+      "2Title": "Sofortige Einrichtung",
+      "2Desc": "Kein Konto erforderlich. Öffnen Sie die Seite, geben Sie Ihre Essensoptionen ein und drehen Sie sofort los.",
+      "3Title": "Vollständig anpassbar",
+      "3Desc": "Fügen Sie Emojis hinzu, ändern Sie die Scheibenfarben passend zum Essen und schließen Sie Optionen aus.",
+      "4Title": "Faire Ergebnisse",
+      "4Desc": "Die kryptografisch sichere Zufälligkeit bedeutet, dass Sie tatsächlich einen unvoreingenommenen Wurf erhalten.",
+      "5Title": "Funktioniert auf Mobilgeräten",
+      "5Desc": "Perfekt für die Entscheidung unterwegs. Das vollständig responsive Design sieht auf jedem Telefon großartig aus.",
+      "6Title": "100 % kostenlos",
+      "6Desc": "Unser Food Wheel ist immer kostenlos, ohne Paywalls oder erforderliche Anmeldungen."
+    },
+    "faqTitle": "Häufig gestellte Fragen",
+    "faqs": {
+      "1Title": "Funktioniert das Food Wheel auf meinem Telefon?",
+      "1Desc": "Ja! Das Food Wheel ist vollständig mobilfreundlich.",
+      "2Title": "Sind die Ergebnisse wirklich zufällig?",
+      "2Desc": "Ja. Bei jeder Drehung wird ein robuster Pseudozufallsalgorithmus verwendet, um sicherzustellen, dass jede Lebensmitteloption die gleiche Chance hat.",
+      "3Title": "Kann ich meine Lieblingsspeisenlisten speichern?",
+      "3Desc": "Solange Sie den Browser-Tab geöffnet lassen, bleiben Ihre Listen aktiv. Wir empfehlen, die Seite mit einem Lesezeichen zu versehen."
+    }
+  },
+  "namesPage": {
+    "title": "Rad der Namen",
+    "heroTitle": "Wheel of Names – Kostenlose zufällige Namensauswahl",
+    "heroDesc": "Geben Sie beliebige Namen ein, drehen Sie das Rad und lassen Sie das Schicksal in Sekundenschnelle einen Gewinner ermitteln. Egal, ob Sie eine <strong>zufällige Namensauswahl</strong> für Ihr Klassenzimmer, eine faire Verlosung eines Gewinnspiels oder eine schnelle Möglichkeit benötigen, Ihrem Team Aufgaben zuzuweisen – mit diesem kostenlosen Rad der Namen sind Sie an der richtigen Adresse. Keine Anmeldung, kein Download, funktioniert auf jedem Gerät.",
+    "howToTitle": "So verwenden Sie das Rad der Namen",
+    "steps": {
+      "1": "<strong>Namen hinzufügen</strong> – Geben Sie jeden Namen in das Eingabefeld ein und drücken Sie die <em>Eingabetaste</em>.",
+      "2": "<strong>Farben anpassen</strong> – Klicken Sie auf das Farbfeld neben einem beliebigen Namen.",
+      "3": "<strong>Rad drehen</strong> – Klicken Sie auf <em>Rad drehen</em> oder auf die mittlere Schaltfläche.",
+      "4": "<strong>Siehe den Gewinner</strong> – Der gewählte Name erscheint über dem Rad mit einem 🎉-Jubiläum. Die Gewinnzahl erfasst, wie oft jeder Name ausgewählt wurde.",
+      "5": "<strong>Erneut drehen</strong> – Drehen Sie mehrere Runden lang weiter. Verwenden Sie <em>Ausschließen</em>, um Gewinner aus zukünftigen Drehungen zu entfernen, oder <em>Zurücksetzen</em>, um neu zu beginnen."
+    },
+    "seoTitle": "Was ist ein Namensrad?",
+    "seoDesc": "Ein <strong>Namensrad</strong> ist ein digitales Spinnrad, das für die Auswahl zufälliger Namen aus einer Liste konzipiert ist. Es funktioniert auf die gleiche Weise wie ein klassisches Gewinnrad: Sie geben beliebige Namen ein, klicken auf „Spin“ und das Rad landet nach dem Zufallsprinzip auf einem Gewinner.",
+    "seoList": {
+      "1": "<strong>Zufällige Namensauswahl im Klassenzimmer</strong> – Lehrer verwenden ein Namensrad, um Schüler unvoreingenommen anzusprechen.",
+      "2": "<strong>Werbegeschenke und Wettbewerbe</strong> – Veranstalten Sie ein Social-Media-Werbegeschenk? Fügen Sie alle Teilnehmernamen hinzu und drehen Sie.",
+      "3": "<strong>Teamauswahl</strong> – Teilen Sie Spieler nach dem Zufallsprinzip in Teams auf, wählen Sie einen Teamkapitän aus oder weisen Sie Rollen zu.",
+      "4": "<strong>Bürospiele und Eisbrecher</strong> – Wer präsentiert zuerst? Wer bringt morgen Kaffee? Lass das Rad entscheiden."
+    },
+    "whyTitle": "Warum unser Namensrad nutzen?",
+    "whyDesc": "Es gibt viele Online-Tools zur Namensauswahl, aber unseres sticht aus einigen wichtigen Gründen heraus:",
+    "features": {
+      "1Title": "Wirklich zufällig",
+      "1Desc": "Wir verwenden einen kryptografisch gesäten Pseudozufallszahlengenerator, um sicherzustellen, dass jede Drehung völlig unvorhersehbar ist.",
+      "2Title": "Sofortige Einrichtung",
+      "2Desc": "Kein Konto erforderlich. Öffnen Sie die Seite, geben Sie Ihre Namen ein und drehen Sie sie. Der gesamte Vorgang dauert weniger als 30 Sekunden.",
+      "3Title": "Vollständig anpassbar",
+      "3Desc": "Ändern Sie die Slice-Farben, ordnen Sie Namen neu an, duplizieren Sie Einträge für gewichtete Ergebnisse oder schließen Sie bestimmte Namen aus.",
+      "4Title": "Gewinnverfolgung",
+      "4Desc": "Das Rad verfolgt, wie oft jeder Name in mehreren Runden ausgewählt wurde.",
+      "5Title": "Funktioniert auf jedem Gerät",
+      "5Desc": "Durch das vollständig responsive Design sieht das Lenkrad sowohl auf Telefonen als auch auf Tablets und Desktops großartig aus und funktioniert auch hervorragend.",
+      "6Title": "Immer kostenlos",
+      "6Desc": "Keine Werbung, die Ihren Spin unterbricht, keine Premium-Stufen und kein Abonnement. 100 % kostenlos, für immer."
+    },
+    "tipsTitle": "Tipps, wie Sie Ihr Namensrad optimal nutzen",
+    "tips": {
+      "1Title": "Gewichtete Namensauswahl",
+      "1Desc": "Möchten Sie die Chancen erhöhen, dass ein bestimmter Name ausgewählt wird? Fügen Sie diesen Namen einfach mehrmals über die Schaltfläche <em>Kopieren</em> hinzu. Jeder doppelte Eintrag erhält seinen eigenen Anteil, wodurch sich die Wahrscheinlichkeit, dass diese Person ausgewählt wird, effektiv verdoppelt (oder verdreifacht).",
+      "2Title": "Eliminierungsmodus",
+      "2Desc": "Veranstalten Sie ein Turnier, eine Quizshow oder eine Tombola? Verwenden Sie die Schaltfläche <em>Ausschließen</em>, um jeden Gewinner aus nachfolgenden Drehungen zu entfernen. Dadurch ist sichergestellt, dass jeder Teilnehmer nur einmal gewinnen kann.",
+      "3Title": "Aus Gründen der Fairness mischen",
+      "3Desc": "Wenn Sie dieselbe Namensliste regelmäßig wiederverwenden, klicken Sie vor dem Drehen auf die Schaltfläche <em>Mischen</em>. Durch das Mischen wird die Startreihenfolge der Slices zufällig festgelegt.",
+      "4Title": "Speichern Sie Ihre Namensliste",
+      "4Desc": "Benötigen Sie in jeder Unterrichtsstunde oder Besprechung dieselben Namen? Lassen Sie einfach den Browser-Tab geöffnet – die Namen bleiben auf dem Rad, bis Sie die Seite zurücksetzen oder schließen."
+    },
+    "faqTitle": "Häufig gestellte Fragen",
+    "faqs": {
+      "1Title": "Ist das Rad der Namen völlig zufällig?",
+      "1Desc": "Ja. Bei jeder Drehung wird die Funktion Math.random() von JavaScript verwendet, die eine Pseudozufallszahl generiert, um das Gewinnstück zu bestimmen.",
+      "2Title": "Wie viele Namen kann ich dem Rad hinzufügen?",
+      "2Desc": "Es gibt keine feste Grenze. Das Rad passt die Größe jedes Slice automatisch an alle Einträge an. Für eine optimale Lesbarkeit empfehlen wir, die Zahl auf maximal 50 Namen zu beschränken.",
+      "3Title": "Kann ich mein Namensrad speichern?",
+      "3Desc": "Ihre Namen werden solange gespeichert, wie die Seite geöffnet ist. Setzen Sie ein Lesezeichen für die Seite, nachdem Sie Ihre Namen hinzugefügt haben. Durch erneutes Öffnen derselben Registerkarte in den meisten Browsern wird der Status wiederhergestellt.",
+      "4Title": "Funktioniert das Rad der Namen auf Mobilgeräten?",
+      "4Desc": "Absolut. Das Rad reagiert vollständig und funktioniert auf iOS, Android und jedem modernen mobilen Browser.",
+      "5Title": "Was ist der Unterschied zwischen dem Namensrad und einem Zufallsnamengenerator?",
+      "5Desc": "Ein <em>Zufallsnamengenerator</em> erstellt normalerweise fiktive Namen aus einer Datenbank. Unser Namensrad wählt aus den spezifischen Namen aus, die <em>Sie</em> angeben.",
+      "6Title": "Kann ich dies als zufällige Studentenauswahl verwenden?",
+      "6Desc": "Ja – es ist eine der beliebtesten Anwendungen. Lehrer fügen ihre Klassenliste hinzu und drehen dann das Rad, um einen Schüler anzurufen."
+    }
+  },
+  "embed": {
+    "loading": "Radkonfiguration wird geladen...",
+    "instructions": "Verwenden Sie die folgenden Steuerelemente, um den Inhalt und das Erscheinungsbild Ihres Rads einzurichten. Konfigurieren Sie dann die Einbettungseinstellungen und generieren Sie den Code, um ihn auf Ihrer Website zu platzieren.",
+    "settingsTitle": "Einbettungseinstellungen",
+    "titleLabel": "Titel (zur Barrierefreiheit):",
+    "widthLabel": "Breite (px):",
+    "heightLabel": "Höhe (px):",
+    "codeTitle": "Code einbetten",
+    "codeDesc": "Kopieren Sie den folgenden Code, um dieses konfigurierte Rad auf Ihrer Website einzubetten:",
+    "generateBtn": "Einbettungscode generieren",
+    "errConfigure": "Fehler beim Generieren des Codes. Bitte konfigurieren Sie zuerst das Rad.",
+    "errEmpty": "Bitte fügen Sie dem Rad mindestens ein Element hinzu, bevor Sie den Einbettungscode generieren."
+  }
+}

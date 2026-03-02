@@ -1,0 +1,240 @@
+{
+  "header": {
+    "randomWheel": "Rastgele Çark",
+    "wheelOfNames": "İsim Çarkı",
+    "yesNoWheel": "Evet/Hayır Çarkı",
+    "embed": "Göm",
+    "foodWheel": "Yemek Çarkı",
+    "configureEmbed": "Katıştırılabilir Tekerleği Yapılandır"
+  },
+  "footer": {
+    "randoWheel": "Rando Çarkı",
+    "copyright": "© {yıl} Çark Döndürücü. Her hakkı saklıdır.",
+    "privacyPolicy": "Gizlilik Politikası",
+    "termsConditions": "Şartlar ve Koşullar",
+    "otherWheels": "Diğer Tekerlekler"
+  },
+  "mainWheel": {
+    "winner": "Kazanan: {text} 🎉",
+    "spin": "Döndürmek",
+    "inputs": "Girişler",
+    "reset": "Sıfırla",
+    "shuffle": "Karıştır",
+    "placeholder": "Metni buraya girin...",
+    "spinTheWheel": "Çarkı Döndür",
+    "cursor": "İmleç",
+    "cursorAngle": "İmleç Açısı",
+    "cursorDistance": "İmleç Mesafesi",
+    "pleaseInclude": "Lütfen çarka en az bir öğe ekleyin",
+    "copySuffix": "(kopya)"
+  },
+  "yesNoWheel": {
+    "yes": "EVET",
+    "no": "HAYIR",
+    "maybe": "BELKİ",
+    "mode": "Mod",
+    "binaryMode": "Evet veya hayır",
+    "ternaryMode": "EVET HAYIR veya BELKİ",
+    "numInputSets": "Giriş Kümesi Sayısı",
+    "resetResults": "Sonuçları Sıfırla"
+  },
+  "exploreMore": {
+    "title": "Daha Fazla Ücretsiz Dönen Çarkı Keşfedin",
+    "descDefault": "Farklı türde bir rastgele seçici mi arıyorsunuz? Diğer ücretsiz tekerlek araçlarımıza göz atın:",
+    "descFood": "Başka tür kararlar almanız mı gerekiyor? Diğer araçlarımızı deneyin:",
+    "rwTitle": "Rastgele Çark Döndürücü",
+    "rwDesc": "Hemen hemen her seçim için en üst düzeyde özelleştirilebilir tekerlek.",
+    "wonTitle": "İsim Çarkı",
+    "wonDesc": "Hediyeler, sınıfa katılım veya görev atama için mükemmel bir arkadaştır.",
+    "ynwTitle": "Evet / Hayır Tekerlek",
+    "ynwDesc": "Hızlı ikili seçimleri anında gerçekleştirmek için basit bir evet veya hayır döndürücü."
+  },
+  "home": {
+    "mainTitle": "Rastgele Çark Döndürücü",
+    "whatIsTitle": "Rastgele Çark Nedir?",
+    "whatIsDesc": "Rastgele Çark, bir dizi seçenek arasından rastgele seçim yapmak için dönen etkileşimli bir araçtır. İster isimleri, renkleri, sayıları, ister evet/hayır cevaplarını seçiyor olun, rastgele bir çark karar verme sürecine eğlence ve adalet katar. Oyunlar, çekilişler, sınıf aktiviteleri veya sadece günlük seçimleri kolaylaştırmak için ideal olan rastgele çarklar basit, ilgi çekici ve yaygın olarak kullanılmaktadır. Bir sonraki kararınıza heyecan katmak için rastgele bir çark döndürücüyü deneyin!",
+    "howWorksTitle": "Rastgele Çark Nasıl Çalışır?",
+    "howWorksDesc": "Rastgele Çark, her biri benzersiz bir seçenek içeren birden fazla bölüme ayrılmış bir dijital çarkın döndürülmesiyle çalışır. Çark döndürüldüğünde bu bölümlerden birine rastgele inerek tarafsız bir seçim sağlar.",
+    "stepsTitle": "Rastgele Çark Kullanma Adımları:",
+    "step1Title": "Metin ekle:",
+    "step1Desc": "Öğeleri (adlar, görevler veya kararlar gibi) genellikle tek tek ekleyebilir veya listenin tamamını yapıştırabilirsiniz.",
+    "step2Title": "Döndürmek:",
+    "step2Desc": "Seçimlerinizi yaptıktan ve görünümden memnun kaldığınızda, döndürmeyi başlatın. Genellikle \"Çarkı Döndürün!\" Gibi net bir düğme bulunur.",
+    "stepsList": {
+      "1": "<strong>Seçeneklerinizi Girin</strong> – Çark'a adlar, numaralar, renkler veya seçenekler ekleyin.",
+      "2": "<strong>Çarkı Döndür</strong> – Rastgele seçim sürecini başlatmak için döndürme düğmesine tıklayın veya dokunun.",
+      "3": "<strong>Anında Sonuç Alın</strong> – Çark rastgele bir seçimde durarak yanıtınızı sağlar.",
+      "4": "<strong>Gerektiği Kadar Tekrarlayın</strong> – Yeni sonuçlar için tekrar dönebilir veya çarkı farklı kararlar için özelleştirebilirsiniz."
+    },
+    "manageTitle": "Çarkınızı ve Sonuçlarınızı Yönetin",
+    "manageDesc": "Belirli bir araca bağlı olarak aşağıdaki gibi özellikler bulabilirsiniz:",
+    "manageList": {
+      "modes": "<strong>Modlar:</strong> Tekerleğin çalışması için farklı yollar seçebilirsiniz; örneğin seçilen seçeneğin bir sonraki dönüşte kaldırıldığı 'Eleme' modu.",
+      "editing": "<strong>Düzenleme:</strong> Çoğu araç, eklediğiniz girişleri düzenlemenize, çoğaltmanıza, gizlemenize veya silmenize olanak tanır. Ayrıca genellikle listenin tamamını kolayca temizleyebilirsiniz.",
+      "sharing": "<strong>Kaydetme/Paylaşma:</strong> Çark kurulumunuzu sıklıkla kaydedebilir (bazen bir hesap gerektirir) ve bir bağlantı kullanarak başkalarıyla paylaşabilir veya hatta onu yerleştirmek için kod alabilirsiniz.",
+      "results": "<strong>Sonuçlar:</strong> Bazı çarklar geçmiş sonuçları takip edebilir."
+    },
+    "otherToolsTitle": "Diğer Tekerlek Aracı",
+    "otherToolsDesc": "Ana rastgele Çark dışında, rastgele Çark'ın oluşturulmuş çeşitli özel araçları da vardır.",
+    "otherToolsList": {
+      "names": "<strong>Ad Seçiciler / Öğrenci Seçiciler:</strong> Genellikle eğitimciler tarafından bireyleri rastgele seçmek için kullanılır; bazen \"İsim Çarkı\" veya \"Rastgele Ad Seçici\" olarak da adlandırılır.",
+      "yesno": "<strong>Evet/Hayır Çarkları:</strong> Basit ikili kararlar için.",
+      "food": "<strong>Yemek Çarkı:</strong> Ne yiyeceğinizden emin değil misiniz? Hızlı, rastgele yemek kararları için yemek çarkını döndürün."
+    },
+    "otherToolsOutro": "Her özel sürüm, temel rastgele seçim konseptini alır ve onu farklı ihtiyaçları karşılayacak şekilde uyarlar; bu da onları etkinliklerin organize edilmesinden tartışmaların eğlenceli ve tarafsız bir şekilde sonuçlandırılmasına kadar her şey için kullanışlı hale getirir."
+  },
+  "yesNoPage": {
+    "title": "Evet/Hayır Tekerlek Seçici",
+    "heroTitle": "Hızlı Evet/Hayır Kararları Alın",
+    "heroDesc": "Evet ile hayır arasında karar veremiyor musunuz? Bırakın çarkımız sizin için karar versin! İhtiyacınız olan yanıtı almak için tekerleği farklı modlar ve giriş setleriyle özelleştirin.",
+    "howToTitle": "Nasıl Kullanılır",
+    "steps": {
+      "1": "\"EVET veya HAYIR\" modu veya \"EVET HAYIR veya BELKİ\" modu arasında seçim yapın",
+      "2": "Olasılık dağılımını ayarlamak için giriş kümesi sayısını (1-5) seçin",
+      "3": "Cevabınızı almak için \"Döndür\" düğmesini tıklayın",
+      "4": "Sonuç, yukarıdaki kutularda vurgulanacak ve sayılacaktır.",
+      "5": "Tüm sayaçları temizlemek için \"Sonuçları Sıfırla\" düğmesini kullanın"
+    },
+    "seoTitle": "Neden Evet/Hayır Tekerleğini Kullanmalısınız?",
+    "seoDesc1": "Hayat seçimlerle doludur ve bazen en basit olanlar en zor olanlardır. Evet/Hayır Çarkı Döndürücümüz, sıkışıp kaldığınızda mükemmel karar vericidir. Hızlı bir evet veya hayır üreteci görevi görerek rastgele bir seçim yapmanın eğlenceli ve hızlı bir yoludur.",
+    "seoList": {
+      "1": "<strong>Tartışmaları Çözün:</strong> Dostça tartışmaları hızla çözün.",
+      "2": "<strong>Hızlı Kararlar Alın:</strong> Akşam yemeğine, film gecesine veya basit günlük seçimlere zahmetsizce karar verin.",
+      "3": "<strong>Eğlence Ekleyin:</strong> Grup etkinliklerine rastgelelik ve heyecan katın.",
+      "4": "<strong>Kararsızlığın Üstesinden Gelin:</strong> Gerçekten kararsız olduğunuzda çarkın çıkmazdan kurtulmasına izin verin."
+    },
+    "seoDesc2": "Basit bir evet ya da hayır cevabına ihtiyacınız varsa ya da daha fazla nüans için 'belki' eklemek istiyorsanız, bu eğlenceli karar aracı anında tarafsız bir yanıt sağlar. Çarkı döndürün ve kaderin karar vermesine izin verin!",
+    "moreTitle": "Basit Seçimlerin Ötesinde: Daha Fazla Kullanım",
+    "moreDesc": "Basit evet/hayır soruları için mükemmel olsa da bu araç şaşırtıcı derecede çok yönlü olabilir:",
+    "moreList": {
+      "1": "<strong>Öğrenim ve Çalışma Yardımı:</strong> Kendinizi test edin! Soruları evet/hayır yanıtıyla çerçeveleyin ve döndürün.",
+      "2": "<strong>Yaratıcı İpuçları:</strong> Bir hikaye veya proje üzerinde mi takıldınız? İkili yaratıcı kararlar için çarkı kullanın.",
+      "3": "<strong>Alışkanlıklardan Kurtulmak:</strong> Küçük bir günaha kapılıp sürüklenmeyeceğinize karar vermeye mi çalışıyorsunuz? Çarkın bir şans katmanı eklemesine izin verin.",
+      "4": "<strong>Adil Sıra Alma:</strong> Sırada kimin olacağına karar vermek için bunu oyunlarda kullanın."
+    },
+    "powerTitle": "Rastgeleliğin Gücü",
+    "powerDesc": "Çarkımız, her dönüşün adil ve öngörülemez olmasını sağlamak için güvenilir bir sözde rastgele sayı üreteci kullanır. Bu, basit kararlarda kişisel önyargıyı ortadan kaldırır ve onu gerçekten tarafsız bir karar verici haline getirir. Bazen küçük seçimleri şansa bırakmak, zihinsel enerjiyi daha önemli konulara serbest bırakabilir! İsteğe bağlı 'Belki', basit bir evet veya hayırın yeterli olmadığı zamanlar için esneklik sağlar."
+  },
+  "foodPage": {
+    "title": "Yemek Çarkı",
+    "heroTitle": "Yemek Çarkı — Ne Yemeliyim?",
+    "heroDesc": "Öğle veya akşam yemeğinde ne yiyeceğinize karar veremiyor musunuz? <strong>Yemek Çarkı</strong>'nı çevirin ve kaderin karar vermesine izin verin! Canınız ister pizza ister suşi isterse sağlıklı bir salata olsun, sadece seçeneklerinizi ekleyin, çarkı çevirin ve yemeğiniz hazır.",
+    "howToTitle": "Yemek Çarkı Nasıl Kullanılır?",
+    "steps": {
+      "1": "<strong>İstekler ve Seçenekler Ekle</strong> — Her yemeğin veya restoranın adını yazın ve <em>+</em> düğmesini tıklayın.",
+      "2": "<strong>Renkleri Özelleştirin</strong> — Dilim rengini değiştirmek için herhangi bir yiyeceğin yanındaki renk örneğini tıklayın.",
+      "3": "<strong>Tekerleği Döndür</strong> — <em>Tekerleği Döndür</em>'ü veya çarkın ortasındaki düğmeyi tıklayın.",
+      "4": "<strong>Kazananı Görün</strong> — Seçilen yiyecek, çarkın üzerinde 🎉 kutlamasıyla görünür. Sonunda tartışmayı bırakıp yemeye başlayabilirsiniz!",
+      "5": "<strong>Tekrar Döndür</strong> — Hala ikna olmadınız mı? <em>Kaldır</em> özelliğini kullanarak beğenmediğiniz seçenekleri döndürmeye devam edin veya kaldırın."
+    },
+    "seoTitle": "Besin Çarkı Nedir?",
+    "seoDesc": "<strong>Yemek Çarkı</strong>, özellikle bir listeden rastgele yemekler, restoranlar veya mutfaklar seçmek için kullanılan dijital bir çıkrıktır. Klasik \"Ne yemek istersin?\" sorusunu çözüyor. sorun.",
+    "seoList": {
+      "1": "<strong>Restorana karar verecek kişi</strong> — Bir restoran konusunda anlaşamıyor musunuz? İlk 5 seçeneği ekleyin ve tekerleğin seçmesine izin verin.",
+      "2": "<strong>Yemek hazırlama ruleti</strong> — Proteinleriniz, karbonhidratlarınız ve sebzeleriniz için dönerek yemek pişirmeyi eğlenceli hale getirin.",
+      "3": "<strong>Paket servisi rastgeleleştiricisi</strong> — Pizza mı? Çince? Tay mı? Canınız çektiğinde döndürün.",
+      "4": "<strong>Ofis partisi ikram hizmetleri</strong> — Ekibin seçenekleri sunmasına ve yemeğe karar vermek için çarkı kullanmasına izin verin."
+    },
+    "whyTitle": "Neden Yemek Çarkımızı Kullanmalısınız?",
+    "whyDesc": "Teslimat uygulamalarında sonsuz kaydırmayı atlayın. Yemek Çarkımız hızlı ve adil karar vermenize yardımcı olur:",
+    "features": {
+      "1Title": "Tartışmayı Bitir",
+      "1Desc": "Artık \"Bilmiyorum, ne istiyorsun?\" Çarkı döndürün ve karar anında verilir.",
+      "2Title": "Anında Kurulum",
+      "2Desc": "Hesaba gerek yok. Sayfayı açın, yemek seçeneklerinizi yazın ve hemen dönün.",
+      "3Title": "Tamamen Özelleştirilebilir",
+      "3Desc": "Emojiler ekleyin, dilim renklerini yiyeceğe uyacak şekilde değiştirin ve seçenekleri hariç tutun.",
+      "4Title": "Fuar Sonuçları",
+      "4Desc": "Kriptografik olarak güvenli rastgelelik, aslında tarafsız bir atış aldığınız anlamına gelir.",
+      "5Title": "Mobil Cihazda Çalışır",
+      "5Desc": "Hareket halindeyken karar vermek için mükemmeldir. Tamamen duyarlı tasarım her telefonda harika görünür.",
+      "6Title": "%100 Ücretsiz",
+      "6Desc": "Food Wheel'imiz her zaman ücretsizdir; herhangi bir ödeme duvarı veya kayıt zorunluluğu yoktur."
+    },
+    "faqTitle": "Sıkça Sorulan Sorular",
+    "faqs": {
+      "1Title": "Yemek Çarkı telefonumda çalışıyor mu?",
+      "1Desc": "Evet! Food Wheel tamamen mobil uyumludur.",
+      "2Title": "Sonuçlar gerçekten rastgele mi?",
+      "2Desc": "Evet. Her döndürme, her yiyecek seçeneğinin eşit şansa sahip olmasını garanti etmek için sağlam bir sözde rastgele algoritma kullanır.",
+      "3Title": "Favori yemek listelerimi kaydedebilir miyim?",
+      "3Desc": "Tarayıcı sekmesini açık tuttuğunuz sürece listeleriniz aktif kalır. Sayfayı favorilerinize eklemenizi öneririz."
+    }
+  },
+  "namesPage": {
+    "title": "İsim Çarkı",
+    "heroTitle": "İsim Çarkı — Ücretsiz Rastgele İsim Seçici",
+    "heroDesc": "İstediğiniz ismi yazın, çarkı çevirin ve kaderin saniyeler içinde kazananı seçmesine izin verin. Sınıfınız için <strong>rastgele bir ad seçiciye</strong>, bir hediye için adil bir çekilişe veya ekibinize görev atamanın hızlı bir yoluna ihtiyacınız varsa, bu ücretsiz İsim Çarkı aradığınızı bulur. Kayıt yok, indirme yok, her cihazda çalışıyor.",
+    "howToTitle": "İsim Çarkı Nasıl Kullanılır?",
+    "steps": {
+      "1": "<strong>Ad Ekle</strong> — Her adı giriş kutusuna yazın ve <em>Enter</em> tuşuna basın.",
+      "2": "<strong>Renkleri Özelleştirin</strong> — Herhangi bir adın yanındaki renk örneğini tıklayın.",
+      "3": "<strong>Tekerleği Döndür</strong> — <em>Tekerleği Döndür</em>'ü veya ortadaki düğmeyi tıklayın.",
+      "4": "<strong>Kazananı Görün</strong> — Seçilen isim çarkın üzerinde 🎉 kutlamasıyla görünür. Kazanma sayısı, her ismin kaç kez seçildiğini takip eder.",
+      "5": "<strong>Tekrar Döndür</strong> — Birden fazla tur boyunca dönmeye devam edin. Kazananları gelecekteki dönüşlerden çıkarmak için <em>Hariç Tut</em>'u kullanın veya yeni bir başlangıç ​​yapmak için <em>Sıfırla</em>'yı kullanın."
+    },
+    "seoTitle": "İsim Çarkı Nedir?",
+    "seoDesc": "<strong>İsim Çarkı</strong>, bir listeden rastgele adlar seçmek için önceden tasarlanmış dijital bir çıkrıktır. Klasik ödül çarkıyla aynı şekilde çalışır; istediğiniz isimleri eklersiniz, döndürmeye tıklarsınız ve çark rastgele bir kazananın üzerine gelir.",
+    "seoList": {
+      "1": "<strong>Sınıfta rastgele ad seçici</strong> — Öğretmenler, öğrencilere önyargısız bir şekilde seslenmek için bir ad çarkı kullanır.",
+      "2": "<strong>Çekilişler ve yarışmalar</strong> — Bir sosyal medya çekilişi mi düzenliyorsunuz? Tüm katılımcı adlarını ekleyin ve döndürün.",
+      "3": "<strong>Takım seçimi</strong> — Oyuncuları rastgele takımlara ayırın, bir takım kaptanı seçin veya rol atayın.",
+      "4": "<strong>Ofis oyunları ve buz kırıcılar</strong> — İlk önce kim sunum yapar? Yarın kahveyi kim getirecek? Bırakın çark karar versin."
+    },
+    "whyTitle": "Neden İsim Çarkımızı Kullanmalısınız?",
+    "whyDesc": "Çevrimiçi olarak pek çok ad seçme aracı vardır, ancak bizimki birkaç önemli nedenden dolayı öne çıkmaktadır:",
+    "features": {
+      "1Title": "Gerçekten Rastgele",
+      "1Desc": "Her dönüşün tamamen öngörülemez olmasını sağlamak için kriptografik olarak tohumlanmış bir sözde rastgele sayı üreteci kullanıyoruz.",
+      "2Title": "Anında Kurulum",
+      "2Desc": "Hesaba gerek yok. Sayfayı açın, adlarınızı yazın ve çevirin. Tüm süreç 30 saniyenin altında sürüyor.",
+      "3Title": "Tamamen Özelleştirilebilir",
+      "3Desc": "Dilim renklerini değiştirin, adları yeniden sıralayın, ağırlıklı sonuçlar için girişleri çoğaltın veya belirli adları hariç tutun.",
+      "4Title": "Kazanma Takibi",
+      "4Desc": "Çark, her ismin birden fazla turda kaç kez seçildiğini izler.",
+      "5Title": "Her Cihazda Çalışır",
+      "5Desc": "Tamamen duyarlı tasarım, direksiyonun telefonlarda, tabletlerde ve masaüstü bilgisayarlarda harika görünmesi ve çalışması anlamına gelir.",
+      "6Title": "Daima Ücretsiz",
+      "6Desc": "Dönüşünüzü kesintiye uğratan reklamlar yok, premium katmanlar yok ve abonelik yok. Sonsuza kadar %100 ücretsiz."
+    },
+    "tipsTitle": "İsim Çarkınızdan En İyi Şekilde Yararlanmak için İpuçları",
+    "tips": {
+      "1Title": "Ağırlıklı Ad Seçimi",
+      "1Desc": "Belirli bir ismin seçilme şansını artırmak mı istiyorsunuz? <em>Kopyala</em> düğmesini kullanarak bu adı birden çok kez eklemeniz yeterlidir. Her yinelenen giriş kendi dilimini alır ve bu da o kişinin seçilme olasılığını etkili bir şekilde iki katına (veya üç katına) çıkarır.",
+      "2Title": "Eliminasyon Modu",
+      "2Desc": "Bir turnuva, bilgi yarışması veya çekiliş mi düzenliyorsunuz? Her kazananı sonraki dönüşlerden çıkarmak için <em>Hariç Tut</em> düğmesini kullanın. Bu, her katılımcının yalnızca bir kez kazanabilmesini sağlar.",
+      "3Title": "Adalet için Karıştır",
+      "3Desc": "Aynı ad listesini düzenli olarak yeniden kullanıyorsanız döndürmeden önce <em>Karıştır</em> düğmesine basın. Karıştırma, dilimlerin başlangıç ​​sırasını rastgele hale getirir.",
+      "4Title": "İsim Listenizi Kaydedin",
+      "4Desc": "Her derste veya toplantıda aynı adlara mı ihtiyacınız var? Tarayıcı sekmesini açık tutmanız yeterlidir; siz sayfayı sıfırlayana veya kapatana kadar adlar çarkta kalır."
+    },
+    "faqTitle": "Sıkça Sorulan Sorular",
+    "faqs": {
+      "1Title": "İsim Çarkı tamamen rastgele mi?",
+      "1Desc": "Evet. Her döndürme, kazanan dilimi belirlemek için sözde rastgele bir sayı üreten JavaScript'in Math.random() işlevini kullanır.",
+      "2Title": "Tekerleğe kaç isim ekleyebilirim?",
+      "2Desc": "Kesin bir sınır yoktur. Tekerlek, tüm girişlere uyacak şekilde her dilimi otomatik olarak yeniden boyutlandırır. En iyi okunabilirlik için 50 ismin altında tutulmasını öneririz.",
+      "3Title": "İsim çarkımı kaydedebilir miyim?",
+      "3Desc": "İsimleriniz sayfa açık olduğu sürece saklanır. Adlarınızı ekledikten sonra sayfayı yer imlerine ekleyin; çoğu tarayıcıda aynı sekmeyi yeniden açmak, durumu geri yükler.",
+      "4Title": "İsim Çarkı mobilde çalışıyor mu?",
+      "4Desc": "Kesinlikle. Direksiyon tamamen duyarlıdır ve iOS, Android ve tüm modern mobil tarayıcılarda çalışır.",
+      "5Title": "İsim Çarkı ile rastgele isim oluşturucu arasındaki fark nedir?",
+      "5Desc": "<em>Rastgele ad oluşturucu</em> genellikle bir veritabanından kurgusal adlar oluşturur. İsim Çarkımız <em>sizin</em> sağladığınız belirli adlar arasından seçim yapar.",
+      "6Title": "Bunu rastgele öğrenci seçici olarak kullanabilir miyim?",
+      "6Desc": "Evet, en popüler kullanımlardan biridir. Öğretmenler sınıf listelerini ekler ve ardından bir öğrenciyi aramak için çarkı döndürür."
+    }
+  },
+  "embed": {
+    "loading": "Tekerlek konfigürasyonu yükleniyor...",
+    "instructions": "Direksiyonunuzun içeriğini ve görünümünü ayarlamak için aşağıdaki kontrolleri kullanın. Ardından yerleştirme ayarlarını yapılandırın ve web sitenize yerleştirmek için kodu oluşturun.",
+    "settingsTitle": "Gömme Ayarları",
+    "titleLabel": "Başlık (erişilebilirlik için):",
+    "widthLabel": "Genişlik (px):",
+    "heightLabel": "Yükseklik (px):",
+    "codeTitle": "Kod Ekle",
+    "codeDesc": "Bu yapılandırılmış tekerleği web sitenize yerleştirmek için aşağıdaki kodu kopyalayın:",
+    "generateBtn": "Ekleme Kodu Oluştur",
+    "errConfigure": "Kod oluşturulurken hata oluştu. Lütfen önce tekerleği yapılandırın.",
+    "errEmpty": "Ekleme kodunu oluşturmadan önce lütfen tekerleğe en az bir öğe ekleyin."
+  }
+}

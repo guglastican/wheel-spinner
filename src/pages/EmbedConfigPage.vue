@@ -1,89 +1,77 @@
 <template>
   <div class="embed-config-page">
-    <AppHeader title="Configure Embeddable Wheel" /> <!-- Use shared header -->
+    <AppHeader :title="$t('header.configureEmbed')" />
 
     <main class="main-content">
       <p class="instructions">
-        Use the controls below to set up the content and appearance of your wheel. Then, configure the embed settings and generate the code to place it on your website.
+        {{ $t('embed.instructions') }}
       </p>
 
-      <!-- Wheel Configuration (using MainWheelSpinner) -->
       <MainWheelSpinner ref="wheelConfigurator" />
 
-      <!-- Embed Settings Section -->
       <section class="embed-settings control-section">
-        <h2>Embed Settings</h2>
+        <h2>{{ $t('embed.settingsTitle') }}</h2>
         <div class="setting-group">
-          <label for="embedTitle">Title (for accessibility):</label>
+          <label for="embedTitle">{{ $t('embed.titleLabel') }}</label>
           <input type="text" id="embedTitle" v-model="embedOptions.title" class="form-control">
         </div>
         <div class="setting-group">
-          <label for="embedWidth">Width (px):</label>
+          <label for="embedWidth">{{ $t('embed.widthLabel') }}</label>
           <input type="number" id="embedWidth" v-model.number="embedOptions.width" class="form-control" min="50">
         </div>
         <div class="setting-group">
-          <label for="embedHeight">Height (px):</label>
+          <label for="embedHeight">{{ $t('embed.heightLabel') }}</label>
           <input type="number" id="embedHeight" v-model.number="embedOptions.height" class="form-control" min="50">
         </div>
       </section>
 
-      <!-- Embed Code Generation Section -->
       <section class="embed-code-section control-section">
-        <h2>Embed Code</h2>
-        <p>Copy the code below to embed this configured wheel on your website:</p>
+        <h2>{{ $t('embed.codeTitle') }}</h2>
+        <p>{{ $t('embed.codeDesc') }}</p>
         <textarea v-model="embedCode" readonly class="embed-code-area"></textarea>
-        <button @click="generateEmbedCode" class="btn btn-primary">Generate Embed Code</button>
+        <button @click="generateEmbedCode" class="btn btn-primary">{{ $t('embed.generateBtn') }}</button>
       </section>
 
     </main>
-
-    <footer class="footer">
-      <p>&copy; {{ new Date().getFullYear() }} Rando Wheel Spinner. All rights reserved.</p>
-    </footer>
   </div>
 </template>
 
 <script setup>
 import { ref, reactive } from 'vue';
 import MainWheelSpinner from '../components/MainWheelSpinner.vue';
-import AppHeader from '../components/AppHeader.vue'; // Import shared header
+import AppHeader from '../components/AppHeader.vue';
+import { useI18n } from 'vue-i18n';
 
 const wheelConfigurator = ref(null);
 const embedCode = ref('');
-const embedOptions = reactive({ // Reactive object for embed settings
+const embedOptions = reactive({
   title: 'Random Wheel Spinner',
   width: 400,
   height: 400,
 });
+const { t } = useI18n();
 
 const generateEmbedCode = () => {
   if (!wheelConfigurator.value || !wheelConfigurator.value.slices) {
     console.error("Wheel configurator component or its slices not available.");
-    embedCode.value = 'Error generating code. Please configure the wheel first.';
+    embedCode.value = t('embed.errConfigure');
     return;
   }
 
-  // 1. Get current slices and extract relevant data
   const currentSlices = wheelConfigurator.value.slices;
   const configData = currentSlices.map(slice => ({
     text: slice.text,
     color: slice.color
   }));
 
-  // Basic validation: Ensure there are slices to embed
   if (configData.length === 0) {
-      embedCode.value = 'Please add at least one item to the wheel before generating embed code.';
+      embedCode.value = t('embed.errEmpty');
       return;
   }
 
-  // 2. Serialize and encode the data
   const configString = JSON.stringify(configData);
   const encodedConfig = encodeURIComponent(configString);
-
-  // 3. Construct the embed URL
   const embedUrl = `${window.location.origin}/embed?config=${encodedConfig}`;
-
-  // 4. Generate the iframe code using embedOptions
   const iframeCode = `<iframe
   src="${embedUrl}"
   width="${embedOptions.width}"
@@ -94,10 +82,8 @@ const generateEmbedCode = () => {
   title="${embedOptions.title}">
 </iframe>`;
 
-  // 5. Update the reactive variable
   embedCode.value = iframeCode;
 };
-
 </script>
 
 <style scoped>

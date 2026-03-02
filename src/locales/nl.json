@@ -1,0 +1,240 @@
+{
+  "header": {
+    "randomWheel": "Willekeurig wiel",
+    "wheelOfNames": "Wiel van Namen",
+    "yesNoWheel": "Ja/Nee wiel",
+    "embed": "Insluiten",
+    "foodWheel": "Voedselwiel",
+    "configureEmbed": "Configureer een insluitbaar wiel"
+  },
+  "footer": {
+    "randoWheel": "Rando wiel",
+    "copyright": "© {jaar} Radspinner. Alle rechten voorbehouden.",
+    "privacyPolicy": "Privacybeleid",
+    "termsConditions": "Algemene voorwaarden",
+    "otherWheels": "Andere wielen"
+  },
+  "mainWheel": {
+    "winner": "Winnaar: {text} 🎉",
+    "spin": "Draai",
+    "inputs": "Ingangen",
+    "reset": "Opnieuw instellen",
+    "shuffle": "Schudden",
+    "placeholder": "Voer hier tekst in...",
+    "spinTheWheel": "Draai aan het wiel",
+    "cursor": "Cursor",
+    "cursorAngle": "Cursorhoek",
+    "cursorDistance": "Cursorafstand",
+    "pleaseInclude": "Voeg ten minste één item toe aan het wiel",
+    "copySuffix": "(kopiëren)"
+  },
+  "yesNoWheel": {
+    "yes": "JA",
+    "no": "NEE",
+    "maybe": "MISSCHIEN",
+    "mode": "Modus",
+    "binaryMode": "JA of NEE",
+    "ternaryMode": "JA NEE of MISSCHIEN",
+    "numInputSets": "Aantal invoersets",
+    "resetResults": "Resultaten resetten"
+  },
+  "exploreMore": {
+    "title": "Ontdek meer gratis draaiende wielen",
+    "descDefault": "Op zoek naar een ander soort willekeurige kiezer? Bekijk ook onze andere gratis wielgereedschappen:",
+    "descFood": "Moet u andere soorten beslissingen nemen? Probeer onze andere tools:",
+    "rwTitle": "Willekeurige wielspinner",
+    "rwDesc": "Het ultieme aanpasbare stuur voor vrijwel elke keuze.",
+    "wonTitle": "Wiel van Namen",
+    "wonDesc": "Een perfecte metgezel voor weggeefacties, deelname aan de klas of het toewijzen van taken.",
+    "ynwTitle": "Ja / Nee wiel",
+    "ynwDesc": "Een eenvoudige ja of nee-spinner om snelle binaire keuzes direct af te handelen."
+  },
+  "home": {
+    "mainTitle": "Willekeurige wielspinner",
+    "whatIsTitle": "Wat is een willekeurig wiel?",
+    "whatIsDesc": "Een Random Wheel is een interactief hulpmiddel dat draait om een ​​willekeurige selectie te maken uit een reeks keuzes. Of je nu namen, kleuren, cijfers of ja/nee-antwoorden kiest, een willekeurige spinner voegt plezier en eerlijkheid toe aan de besluitvorming. Ideaal voor spelletjes, loterijen, activiteiten in de klas, of gewoon om dagelijkse keuzes gemakkelijker te maken. Willekeurige wielen zijn eenvoudig, boeiend en worden veel gebruikt. Probeer een willekeurige wielspinner om opwinding toe te voegen aan uw volgende beslissing!",
+    "howWorksTitle": "Hoe een willekeurig wiel werkt?",
+    "howWorksDesc": "Een Random Wheel werkt door het draaien van een digitaal wiel dat is opgedeeld in meerdere secties, die elk een unieke optie bevatten. Wanneer het wiel wordt rondgedraaid, komt het willekeurig op een van deze secties terecht, wat een onbevooroordeelde selectie oplevert.",
+    "stepsTitle": "Stappen om een ​​willekeurig wiel te gebruiken:",
+    "step1Title": "Tekst invoegen:",
+    "step1Desc": "Normaal gesproken kunt u items (zoals namen, taken of beslissingen) één voor één toevoegen of een hele lijst plakken.",
+    "step2Title": "Draaien:",
+    "step2Desc": "Zodra je keuzes bekend zijn en je tevreden bent met het uiterlijk, kun je gewoon beginnen met draaien. Er is meestal een duidelijke knop zoals \"Draai aan het wiel!\".",
+    "stepsList": {
+      "1": "<strong>Voer uw opties in</strong> – Voeg namen, cijfers, kleuren of keuzes toe aan het wiel.",
+      "2": "<strong>Draai aan het wiel</strong> – Klik of tik op de draaiknop om het willekeurige selectieproces te starten.",
+      "3": "<strong>Ontvang direct resultaat</strong> – Het wiel stopt bij een willekeurige keuze en geeft jouw antwoord.",
+      "4": "<strong>Herhaal indien nodig</strong> – Je kunt opnieuw draaien voor nieuwe resultaten of het wiel aanpassen voor andere beslissingen."
+    },
+    "manageTitle": "Beheer uw wiel en resultaten",
+    "manageDesc": "Afhankelijk van de specifieke tool vindt u mogelijk functies zoals:",
+    "manageList": {
+      "modes": "<strong>Modi:</strong> je kunt mogelijk verschillende manieren kiezen waarop het wiel werkt, zoals de 'Elimination'-modus, waarbij de gekozen optie wordt verwijderd voor de volgende draai.",
+      "editing": "<strong>Bewerken:</strong> met de meeste tools kunt u de items die u heeft toegevoegd bewerken, dupliceren, verbergen of verwijderen. Meestal kunt u de hele lijst ook eenvoudig wissen.",
+      "sharing": "<strong>Opslaan/delen:</strong> je kunt je wielconfiguratie vaak opslaan (soms is een account vereist) en deze met anderen delen via een link of misschien zelfs code krijgen om deze in te sluiten.",
+      "results": "<strong>Resultaten:</strong> sommige wielen kunnen resultaten uit het verleden bijhouden."
+    },
+    "otherToolsTitle": "Ander wielgereedschap",
+    "otherToolsDesc": "Naast het belangrijkste willekeurige wiel zijn er ook verschillende gespecialiseerde tools voor het willekeurige wiel gemaakt.",
+    "otherToolsList": {
+      "names": "<strong>Naamkiezers/leerlingenkiezers:</strong> vaak gebruikt door docenten om willekeurig individuen te selecteren, ook wel \"Wiel van namen\" of \"Willekeurige naamkiezer\" genoemd.",
+      "yesno": "<strong>Ja/Nee-wielen:</strong> voor eenvoudige binaire beslissingen.",
+      "food": "<strong>Voedselwiel:</strong> Weet u niet zeker wat u moet eten? Draai aan het voedselwiel voor snelle, willekeurige maaltijdbeslissingen."
+    },
+    "otherToolsOutro": "Elke gespecialiseerde versie neemt het kernconcept van willekeurige selectie over en stemt dit af op verschillende behoeften, waardoor ze handig zijn voor alles, van het organiseren van activiteiten tot het beslechten van debatten met een leuke, onpartijdige twist."
+  },
+  "yesNoPage": {
+    "title": "Ja/Nee Wielkiezer",
+    "heroTitle": "Neem snelle ja/nee-beslissingen",
+    "heroDesc": "Kunt u niet kiezen tussen ja en nee? Laat ons wiel voor u beslissen! Pas het stuur aan met verschillende modi en invoersets om het antwoord te krijgen dat je nodig hebt.",
+    "howToTitle": "Hoe te gebruiken",
+    "steps": {
+      "1": "Kies tussen de modus \"JA of NEE\" of de modus \"JA NEE of MISSCHIEN\".",
+      "2": "Selecteer het aantal invoersets (1-5) om de kansverdeling aan te passen",
+      "3": "Klik op de knop \"Draaien\" om uw antwoord te krijgen",
+      "4": "Het resultaat wordt gemarkeerd en geteld in de bovenstaande vakken",
+      "5": "Gebruik de knop \"Reset resultaten\" om alle tellers te wissen"
+    },
+    "seoTitle": "Waarom een ​​ja/nee-wiel gebruiken?",
+    "seoDesc1": "Het leven is vol keuzes, en soms zijn de eenvoudigste de moeilijkste. Onze Ja/Nee Wheel Spinner is de perfecte beslisser als je vastzit. Het is een leuke en snelle manier om een ​​willekeurige keuze te maken en fungeert als een snelle ja of nee-generator.",
+    "seoList": {
+      "1": "<strong>Debatten beslechten:</strong> beslecht vriendschappelijke argumenten snel.",
+      "2": "<strong>Neem snelle beslissingen:</strong> beslis moeiteloos over een diner, een filmavond of eenvoudige dagelijkse keuzes.",
+      "3": "<strong>Voeg plezier toe:</strong> voeg willekeur en opwinding toe aan groepsactiviteiten.",
+      "4": "<strong>Overwin besluiteloosheid:</strong> laat het wiel de impasse doorbreken als je echt besluiteloos bent."
+    },
+    "seoDesc2": "Of je nu een eenvoudig ja of nee nodig hebt, of 'misschien' wilt toevoegen voor meer nuance, dit leuke beslissingshulpmiddel biedt direct een onbevooroordeeld antwoord. Draai aan het wiel en laat het lot beslissen!",
+    "moreTitle": "Meer dan eenvoudige keuzes: meer toepassingen",
+    "moreDesc": "Hoewel deze tool geweldig is voor eenvoudige ja/nee-vragen, kan hij verrassend veelzijdig zijn:",
+    "moreList": {
+      "1": "<strong>Leer- en studiehulpmiddel:</strong> Test jezelf! Kadreer vragen met een ja/nee-antwoord en draai.",
+      "2": "<strong>Creatieve aanwijzingen:</strong> Zit je vast aan een verhaal of project? Gebruik het wiel voor binaire creatieve beslissingen.",
+      "3": "<strong>Gewoontes doorbreken:</strong> probeer je te beslissen of je aan een kleine verleiding wilt toegeven? Laat het wiel een laagje kans toevoegen.",
+      "4": "<strong>Eerlijke beurten:</strong> gebruik het in games om te beslissen wie de volgende is."
+    },
+    "powerTitle": "De kracht van willekeur",
+    "powerDesc": "Ons wiel maakt gebruik van een betrouwbare generator voor pseudo-willekeurige getallen om ervoor te zorgen dat elke draai eerlijk en onvoorspelbaar is. Dit elimineert persoonlijke vooringenomenheid bij eenvoudige beslissingen, waardoor het een werkelijk onpartijdige beslisser wordt. Soms kan het aan het toeval overlaten van kleine keuzes mentale energie vrijmaken voor belangrijkere zaken! Het optionele 'Misschien' voegt flexibiliteit toe voor die momenten waarop een simpel ja of nee niet voldoende is."
+  },
+  "foodPage": {
+    "title": "Voedselwiel",
+    "heroTitle": "Voedselwiel: wat moet ik eten?",
+    "heroDesc": "Kunt u niet beslissen wat u gaat eten voor de lunch of het diner? Draai aan het <strong>Voedselwiel</strong> en laat het lot beslissen! Of je nu zin ​​hebt in pizza, sushi of op zoek bent naar een gezonde salade, voeg gewoon je opties toe, draai aan het wiel en je maaltijd is klaar.",
+    "howToTitle": "Hoe het voedselwiel te gebruiken",
+    "steps": {
+      "1": "<strong>Voeg verlangens en opties toe</strong> — Typ de naam van elk voedsel of restaurant en klik op de knop <em>+</em>.",
+      "2": "<strong>Kleuren aanpassen</strong> — Klik op het kleurstaal naast het voedsel om de kleur van het plakje te wijzigen.",
+      "3": "<strong>Draai aan het wiel</strong> — Klik op <em>Draai aan het wiel</em> of op de middelste knop op het wiel.",
+      "4": "<strong>Zie de winnaar</strong> — Het gekozen eten verschijnt boven het wiel met een 🎉 viering. Je kunt eindelijk stoppen met debatteren en beginnen met eten!",
+      "5": "<strong>Opnieuw draaien</strong> — Nog steeds niet overtuigd? Blijf draaien of verwijder de opties die u niet bevalt met de functie <em>Verwijderen</em>."
+    },
+    "seoTitle": "Wat is een voedselwiel?",
+    "seoDesc": "Een <strong>Voedselwiel</strong> is een digitaal draaiend wiel dat specifiek wordt gebruikt voor het kiezen van willekeurige maaltijden, restaurants of keukens uit een lijst. Het lost de klassieker \"Wat wil je eten?\" probleem.",
+    "seoList": {
+      "1": "<strong>Restaurantbeslisser</strong> — Kunt u het niet eens worden over een restaurant? Voeg de top 5 keuzes toe en laat het wiel kiezen.",
+      "2": "<strong>Maaltijdroulette</strong> — Maak koken leuk door te draaien voor je eiwitten, koolhydraten en groenten.",
+      "3": "<strong>Takeout-randomizer</strong> — Pizza? Chinese? Thais? Draai wanneer je trek hebt.",
+      "4": "<strong>Catering voor kantoorfeesten</strong> — Laat het team opties indienen en gebruik het wiel om het eten te bepalen."
+    },
+    "whyTitle": "Waarom ons voedselwiel gebruiken?",
+    "whyDesc": "Sla het eindeloze scrollen in bezorgapps over. Ons Voedselwiel helpt u snel en eerlijk te beslissen:",
+    "features": {
+      "1Title": "Beëindig het debat",
+      "1Desc": "Niet meer \"Ik weet het niet, wat wil je?\" Draai aan het wiel en de beslissing is onmiddellijk genomen.",
+      "2Title": "Directe installatie",
+      "2Desc": "Geen account nodig. Open de pagina, typ uw voedselopties en draai meteen.",
+      "3Title": "Volledig aanpasbaar",
+      "3Desc": "Voeg emoji's toe, wijzig de segmentkleuren zodat ze bij het eten passen en sluit opties uit.",
+      "4Title": "Eerlijke resultaten",
+      "4Desc": "Cryptografisch veilige willekeur betekent dat u daadwerkelijk een onbevooroordeelde rol krijgt.",
+      "5Title": "Werkt op mobiel",
+      "5Desc": "Perfect om onderweg een beslissing te nemen. Het volledig responsieve ontwerp ziet er geweldig uit op elke telefoon.",
+      "6Title": "100% gratis",
+      "6Desc": "Ons Food Wheel is altijd gratis, zonder betaalmuren of verplichte aanmeldingen."
+    },
+    "faqTitle": "Veelgestelde vragen",
+    "faqs": {
+      "1Title": "Werkt het Voedselwiel op mijn telefoon?",
+      "1Desc": "Ja! Het Food Wheel is volledig mobielvriendelijk.",
+      "2Title": "Zijn de resultaten echt willekeurig?",
+      "2Desc": "Ja. Elke draai maakt gebruik van een robuust pseudo-willekeurig algoritme om te garanderen dat elke voedseloptie een gelijke kans heeft.",
+      "3Title": "Kan ik mijn favoriete voedsellijsten opslaan?",
+      "3Desc": "Zolang u het browsertabblad open houdt, blijven uw lijsten actief. Wij raden u aan een bladwijzer voor de pagina te maken."
+    }
+  },
+  "namesPage": {
+    "title": "Wiel van Namen",
+    "heroTitle": "Wiel van namen - Gratis willekeurige naamkiezer",
+    "heroDesc": "Typ een willekeurige naam, draai aan het wiel en laat het lot binnen enkele seconden een winnaar kiezen. Of je nu een <strong>willekeurige naamkiezer</strong> nodig hebt voor je klaslokaal, een eerlijke trekking voor een weggeefactie of een snelle manier om taken aan je team toe te wijzen: met dit gratis Namenwiel zit je goed. Geen aanmelding, geen download, werkt op elk apparaat.",
+    "howToTitle": "Hoe u het wiel van namen gebruikt",
+    "steps": {
+      "1": "<strong>Namen toevoegen</strong> — Typ elke naam in het invoervak ​​en druk op <em>Enter</em>.",
+      "2": "<strong>Kleuren aanpassen</strong> — Klik op het kleurstaal naast een naam.",
+      "3": "<strong>Draai aan het wiel</strong> — Klik op <em>Draai aan het wiel</em> of op de middelste knop.",
+      "4": "<strong>Zie de winnaar</strong> — De gekozen naam verschijnt boven het wiel met een 🎉 viering. Het aantal overwinningen houdt bij hoe vaak elke naam is gekozen.",
+      "5": "<strong>Opnieuw draaien</strong> — Blijf meerdere rondes draaien. Gebruik <em>Uitsluiten</em> om winnaars uit toekomstige spins te verwijderen, of <em>Reset</em> om opnieuw te beginnen."
+    },
+    "seoTitle": "Wat is een wiel van namen?",
+    "seoDesc": "Een <strong>Wheel of Names</strong> is een digitaal draaiend wiel dat vooraf is ontworpen om willekeurige namen uit een lijst te kiezen. Het werkt op dezelfde manier als een klassiek prijzenrad: je voegt namen toe die je leuk vindt, klikt op draaien en het rad belandt willekeurig op een winnaar.",
+    "seoList": {
+      "1": "<strong>Willekeurige naamkiezer in de klas</strong>: docenten gebruiken een wiel van namen om leerlingen onbevooroordeeld aan te spreken.",
+      "2": "<strong>Giveaways en wedstrijden</strong> — Organiseert u een weggeefactie op sociale media? Voeg alle deelnemersnamen toe en draai.",
+      "3": "<strong>Teamselectie</strong>: verdeel spelers willekeurig in teams, kies een teamcaptain of wijs rollen toe.",
+      "4": "<strong>Kantoorspellen en ijsbrekers</strong> — Wie presenteert het eerst? Wie brengt morgen koffie? Laat het wiel beslissen."
+    },
+    "whyTitle": "Waarom ons namenwiel gebruiken?",
+    "whyDesc": "Er zijn veel tools voor het kiezen van namen online, maar onze onderscheidt zich door een aantal belangrijke redenen:",
+    "features": {
+      "1Title": "Echt willekeurig",
+      "1Desc": "We gebruiken een cryptografisch geplaatste pseudo-willekeurige nummergenerator om ervoor te zorgen dat elke draai volledig onvoorspelbaar is.",
+      "2Title": "Directe installatie",
+      "2Desc": "Geen account nodig. Open de pagina, typ uw naam en draai. Het hele proces duurt minder dan 30 seconden.",
+      "3Title": "Volledig aanpasbaar",
+      "3Desc": "Wijzig de segmentkleuren, herschik namen, dupliceer invoer voor gewogen resultaten of sluit bepaalde namen uit.",
+      "4Title": "Wint volgen",
+      "4Desc": "Het wiel houdt bij hoe vaak elke naam in meerdere rondes is gekozen.",
+      "5Title": "Werkt op elk apparaat",
+      "5Desc": "Het volledig responsieve ontwerp betekent dat het stuur er geweldig uitziet en werkt op zowel telefoons, tablets als desktops.",
+      "6Title": "Altijd gratis",
+      "6Desc": "Geen advertenties die uw draai onderbreken, geen premiumniveaus en geen abonnement. 100% gratis, voor altijd."
+    },
+    "tipsTitle": "Tips om het meeste uit uw naamwiel te halen",
+    "tips": {
+      "1Title": "Gewogen naamkeuze",
+      "1Desc": "Wilt u de kans vergroten dat een bepaalde naam wordt gekozen? Voeg die naam eenvoudig meerdere keren toe met de knop <em>Kopiëren</em>. Elke dubbele invoer krijgt een eigen deel, waardoor de kans dat die persoon wordt uitgekozen, effectief wordt verdubbeld (of verdrievoudigd).",
+      "2Title": "Eliminatiemodus",
+      "2Desc": "Organiseert u een toernooi, quiz of loterij? Gebruik de knop <em>Uitsluiten</em> om elke winnaar uit volgende spins te verwijderen. Dit zorgt ervoor dat elke deelnemer maar één keer kan winnen.",
+      "3Title": "Shuffle voor eerlijkheid",
+      "3Desc": "Als je dezelfde lijst met namen regelmatig opnieuw gebruikt, druk dan op de knop <em>Shuffle</em> voordat je gaat draaien. Door het schudden wordt de startvolgorde van de plakjes willekeurig gemaakt.",
+      "4Title": "Bewaar uw namenlijst",
+      "4Desc": "Elke les of bijeenkomst dezelfde namen nodig? Houd gewoon het browsertabblad open. De namen blijven op het wiel staan ​​totdat u de pagina opnieuw instelt of sluit."
+    },
+    "faqTitle": "Veelgestelde vragen",
+    "faqs": {
+      "1Title": "Is het Rad van Namen volledig willekeurig?",
+      "1Desc": "Ja. Elke draai maakt gebruik van de functie Math.random() van JavaScript, die een pseudo-willekeurig getal genereert om het winnende segment te bepalen.",
+      "2Title": "Hoeveel namen kan ik aan het wiel toevoegen?",
+      "2Desc": "Er is geen harde grens. Het wiel past de grootte van elk segment automatisch aan, zodat het in alle items past. Voor de beste leesbaarheid raden we aan om het onder 50 namen te houden.",
+      "3Title": "Kan ik mijn wiel met namen opslaan?",
+      "3Desc": "Uw namen worden bewaard zolang de pagina geopend is. Maak een bladwijzer van de pagina nadat u uw naam heeft toegevoegd. Als u hetzelfde tabblad in de meeste browsers opnieuw opent, wordt de status hersteld.",
+      "4Title": "Werkt het Rad van Namen op mobiel?",
+      "4Desc": "Absoluut. Het stuur is volledig responsief en werkt op iOS, Android en elke moderne mobiele browser.",
+      "5Title": "Wat is het verschil tussen het Namenrad en een willekeurige naamgenerator?",
+      "5Desc": "Een <em>willekeurige naamgenerator</em> creëert doorgaans fictieve namen uit een database. Ons Namenwiel maakt een keuze uit de specifieke namen die <em>u</em> opgeeft.",
+      "6Title": "Kan ik dit gebruiken als willekeurige studentenkiezer?",
+      "6Desc": "Ja, het is een van de meest populaire toepassingen. Leraren voegen hun klassenrooster toe en draaien vervolgens aan het wiel om een ​​leerling te bellen."
+    }
+  },
+  "embed": {
+    "loading": "Configuratie laadwiel...",
+    "instructions": "Gebruik de onderstaande bedieningselementen om de inhoud en het uiterlijk van uw wiel in te stellen. Configureer vervolgens de insluitinstellingen en genereer de code om deze op uw website te plaatsen.",
+    "settingsTitle": "Instellingen voor insluiten",
+    "titleLabel": "Titel (voor toegankelijkheid):",
+    "widthLabel": "Breedte (px):",
+    "heightLabel": "Hoogte (px):",
+    "codeTitle": "Code insluiten",
+    "codeDesc": "Kopieer de onderstaande code om dit geconfigureerde wiel op uw website in te sluiten:",
+    "generateBtn": "Genereer insluitcode",
+    "errConfigure": "Fout bij het genereren van code. Configureer eerst het wiel.",
+    "errEmpty": "Voeg ten minste één item aan het wiel toe voordat u de insluitcode genereert."
+  }
+}

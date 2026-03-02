@@ -5,25 +5,57 @@
       <h1>{{ title }}</h1>
     </div>
     <nav class="navigation">
-      <router-link to="/" class="nav-link">Random Wheel</router-link>
-      <router-link to="/wheel-of-names" class="nav-link">Wheel of Names</router-link>
-      <router-link to="/yes-no-wheel" class="nav-link">Yes/No Wheel</router-link>
-      <router-link to="/configure-embed" class="nav-link">Embed</router-link>
-      
+      <router-link :to="localePath('/')" class="nav-link">{{ $t('header.randomWheel') }}</router-link>
+      <router-link :to="localePath('/wheel-of-names')" class="nav-link">{{ $t('header.wheelOfNames') }}</router-link>
+      <router-link :to="localePath('/yes-no-wheel')" class="nav-link">{{ $t('header.yesNoWheel') }}</router-link>
+      <router-link :to="localePath('/configure-embed')" class="nav-link">{{ $t('header.embed') }}</router-link>
+
+      <select v-model="$i18n.locale" @change="changeLocale" class="lang-switcher">
+        <option v-for="loc in supportedLocales" :key="loc" :value="loc">{{ loc.toUpperCase() }}</option>
+      </select>
     </nav>
   </header>
 </template>
 
 <script setup>
 import { defineProps } from 'vue';
+import { useI18n } from 'vue-i18n';
+import { useRouter, useRoute } from 'vue-router';
+import { SUPPORTED_LOCALES } from '../i18n.js';
 
-// Define props for the component (e.g., title)
+const { locale } = useI18n();
+const router = useRouter();
+const route = useRoute();
+
 defineProps({
   title: {
     type: String,
     required: true
   }
 });
+
+const supportedLocales = SUPPORTED_LOCALES;
+
+const localePath = (path) => {
+  const currentLang = locale.value;
+  if (currentLang === 'en') return path;
+  if (path === '/') return `/${currentLang}`;
+  return `/${currentLang}${path}`;
+};
+
+const changeLocale = (event) => {
+  const newLocale = event.target.value;
+  let currentPath = route.path;
+  
+  // Regex to strip the locale prefix safely if it exists
+  const localePrefixRegex = new RegExp(`^/(${supportedLocales.join('|')})(/|$)`);
+  if (localePrefixRegex.test(currentPath)) {
+    currentPath = currentPath.replace(localePrefixRegex, '/');
+  }
+  
+  const newPath = newLocale === 'en' ? currentPath : `/${newLocale}${currentPath === '/' ? '' : currentPath}`;
+  router.push(newPath);
+};
 </script>
 
 <style scoped>

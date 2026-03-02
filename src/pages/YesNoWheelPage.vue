@@ -1,65 +1,50 @@
 <template>
   <div class="yes-no-wheel-page">
-    <AppHeader title="Yes/No Wheel Picker" /> <!-- Use shared header -->
+    <AppHeader :title="$t('yesNoPage.title')" />
 
     <main class="main-content">
       <section class="intro-section">
-        <h2>Make Quick Yes/No Decisions</h2>
-        <p>
-          Can't decide between yes and no? Let our wheel decide for you! 
-          Customize the wheel with different modes and input sets to get the answer you need.
-        </p>
+        <h2>{{ $t('yesNoPage.heroTitle') }}</h2>
+        <p>{{ $t('yesNoPage.heroDesc') }}</p>
       </section>
 
       <YesNoWheel />
 
       <section class="info-section">
-        <h3>How to Use</h3>
+        <h3>{{ $t('yesNoPage.howToTitle') }}</h3>
         <ol>
-          <li>Choose between "YES or NO" mode or "YES NO or MAYBE" mode</li>
-          <li>Select the number of input sets (1-5) to adjust the probability distribution</li>
-          <li>Click the "Spin" button to get your answer</li>
-          <li>The result will be highlighted and counted in the boxes above</li>
-          <li>Use the "Reset Results" button to clear all counters</li>
+          <li>{{ $t('yesNoPage.steps.1') }}</li>
+          <li>{{ $t('yesNoPage.steps.2') }}</li>
+          <li>{{ $t('yesNoPage.steps.3') }}</li>
+          <li>{{ $t('yesNoPage.steps.4') }}</li>
+          <li>{{ $t('yesNoPage.steps.5') }}</li>
         </ol>
       </section>
 
-      <!-- Added SEO Content Section -->
       <section class="seo-content-section">
-        <h3>Why Use a Yes/No Wheel?</h3>
-        <p>
-          Life is full of choices, and sometimes the simplest ones are the hardest. Our Yes/No Wheel Spinner is the perfect decision maker when you're stuck. It's a fun and fast way to get a random choice, acting as a quick yes or no generator. 
-        </p>
+        <h3>{{ $t('yesNoPage.seoTitle') }}</h3>
+        <p>{{ $t('yesNoPage.seoDesc1') }}</p>
         <ul>
-          <li><strong>Settle Debates:</strong> Quickly resolve friendly arguments or disagreements.</li>
-          <li><strong>Make Quick Decisions:</strong> Decide on dinner, movie night, or simple daily choices effortlessly.</li>
-          <li><strong>Add Fun:</strong> Inject randomness and excitement into group activities or personal choices.</li>
-          <li><strong>Overcome Indecision:</strong> Let the wheel break the deadlock when you're truly undecided.</li>
+          <li v-html="$t('yesNoPage.seoList.1')"></li>
+          <li v-html="$t('yesNoPage.seoList.2')"></li>
+          <li v-html="$t('yesNoPage.seoList.3')"></li>
+          <li v-html="$t('yesNoPage.seoList.4')"></li>
         </ul>
-        <p>
-          Whether you need a simple yes or no, or want to add 'maybe' for more nuance, this fun decision tool provides an unbiased answer instantly. Spin the wheel and let fate decide!
-        </p>
+        <p>{{ $t('yesNoPage.seoDesc2') }}</p>
       </section>
-      <!-- End SEO Content Section -->
 
-      <!-- Added More Content Section -->
       <section class="more-content-section">
-        <h3>Beyond Simple Choices: More Uses</h3>
-        <p>
-          While great for straightforward yes/no questions, this tool can be surprisingly versatile:
-        </p>
+        <h3>{{ $t('yesNoPage.moreTitle') }}</h3>
+        <p>{{ $t('yesNoPage.moreDesc') }}</p>
         <ul>
-          <li><strong>Learning & Study Aid:</strong> Quiz yourself! Frame questions with a yes/no answer and spin the wheel.</li>
-          <li><strong>Creative Prompts:</strong> Stuck on a story or project? Use the wheel for binary creative decisions (e.g., "Should the character turn left?").</li>
-          <li><strong>Breaking Habits:</strong> Trying to decide whether to indulge in a minor temptation? Let the wheel add a layer of chance.</li>
-          <li><strong>Fair Turn-Taking:</strong> Use it in games or group settings to decide who goes next or performs a task.</li>
+          <li v-html="$t('yesNoPage.moreList.1')"></li>
+          <li v-html="$t('yesNoPage.moreList.2')"></li>
+          <li v-html="$t('yesNoPage.moreList.3')"></li>
+          <li v-html="$t('yesNoPage.moreList.4')"></li>
         </ul>
-        <h3>The Power of Randomness</h3>
-        <p>
-          Our wheel uses a reliable pseudo-random number generator to ensure each spin is fair and unpredictable. This removes personal bias from simple decisions, making it a truly impartial decision maker. Sometimes, leaving small choices to chance can free up mental energy for more important matters! The optional 'Maybe' adds flexibility for those times when a simple yes or no isn't quite enough.
-        </p>
+        <h3>{{ $t('yesNoPage.powerTitle') }}</h3>
+        <p>{{ $t('yesNoPage.powerDesc') }}</p>
       </section>
-      <!-- End More Content Section -->
 
     </main>
 

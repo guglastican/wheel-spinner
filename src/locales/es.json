@@ -1,0 +1,240 @@
+{
+  "header": {
+    "randomWheel": "Rueda aleatoria",
+    "wheelOfNames": "Rueda de nombres",
+    "yesNoWheel": "Sí/No Rueda",
+    "embed": "Empotrar",
+    "foodWheel": "Rueda de comida",
+    "configureEmbed": "Configurar rueda integrable"
+  },
+  "footer": {
+    "randoWheel": "Rando Wheel",
+    "copyright": "© {año} Rueda giratoria. Reservados todos los derechos.",
+    "privacyPolicy": "política de privacidad",
+    "termsConditions": "Términos y condiciones",
+    "otherWheels": "Otras ruedas"
+  },
+  "mainWheel": {
+    "winner": "Ganadora: {texto} 🎉",
+    "spin": "Girar",
+    "inputs": "Entradas",
+    "reset": "Reiniciar",
+    "shuffle": "Barajar",
+    "placeholder": "Introduzca texto aquí...",
+    "spinTheWheel": "Gira la rueda",
+    "cursor": "Cursor",
+    "cursorAngle": "Ángulo del cursor",
+    "cursorDistance": "Distancia del cursor",
+    "pleaseInclude": "Por favor incluya al menos un elemento en la rueda",
+    "copySuffix": "(Copiar)"
+  },
+  "yesNoWheel": {
+    "yes": "SÍ",
+    "no": "NO",
+    "maybe": "TAL VEZ",
+    "mode": "Modo",
+    "binaryMode": "Sí o no",
+    "ternaryMode": "SÍ NO o QUIZÁS",
+    "numInputSets": "Número de conjuntos de entrada",
+    "resetResults": "Restablecer resultados"
+  },
+  "exploreMore": {
+    "title": "Explora más ruedas giratorias gratuitas",
+    "descDefault": "¿Busca un tipo diferente de selector aleatorio? Consulte nuestras otras herramientas de rueda libre:",
+    "descFood": "¿Necesitas tomar otro tipo de decisiones? Pruebe nuestras otras herramientas:",
+    "rwTitle": "Rueda giratoria aleatoria",
+    "rwDesc": "La rueda personalizable definitiva para prácticamente cualquier elección.",
+    "wonTitle": "Rueda de nombres",
+    "wonDesc": "Un compañero perfecto para obsequios, participación en el aula o asignación de tareas.",
+    "ynwTitle": "Sí / No Rueda",
+    "ynwDesc": "Un simple control giratorio de sí o no para manejar opciones binarias rápidas al instante."
+  },
+  "home": {
+    "mainTitle": "Rueda giratoria aleatoria",
+    "whatIsTitle": "¿Qué es una rueda aleatoria?",
+    "whatIsDesc": "Una rueda aleatoria es una herramienta interactiva que gira para realizar una selección aleatoria entre un conjunto de opciones. Ya sea que esté eligiendo nombres, colores, números o respuestas de sí o no, una ruleta aleatoria agrega diversión y equidad a la toma de decisiones. Ideales para juegos, rifas, actividades en el aula o simplemente para facilitar las decisiones cotidianas, las ruedas aleatorias son simples, atractivas y ampliamente utilizadas. ¡Pruebe una rueda giratoria aleatoria para agregar emoción a su próxima decisión!",
+    "howWorksTitle": "¿Cómo funciona una rueda aleatoria?",
+    "howWorksDesc": "Una rueda aleatoria funciona girando una rueda digital dividida en varias secciones, cada una de las cuales contiene una opción única. Cuando se hace girar la rueda, aterriza aleatoriamente en una de estas secciones, lo que proporciona una selección imparcial.",
+    "stepsTitle": "Pasos para utilizar una rueda aleatoria:",
+    "step1Title": "Insertar texto:",
+    "step1Desc": "Normalmente puedes agregar elementos (como nombres, tareas o decisiones) uno por uno o pegar una lista completa.",
+    "step2Title": "Girar:",
+    "step2Desc": "Una vez que hayas elegido tus opciones y estés satisfecho con el aspecto, simplemente inicia el giro. Generalmente hay un botón claro como \"¡Gira la rueda!\".",
+    "stepsList": {
+      "1": "<strong>Ingrese sus opciones</strong>: agregue nombres, números, colores u opciones a la rueda.",
+      "2": "<strong>Gira la rueda</strong>: haz clic o toca el botón giratorio para iniciar el proceso de selección aleatoria.",
+      "3": "<strong>Obtenga resultados instantáneos</strong>: la rueda se detiene en una elección aleatoria y le proporciona su respuesta.",
+      "4": "<strong>Repita según sea necesario</strong>: puede girar nuevamente para obtener nuevos resultados o personalizar la rueda para tomar diferentes decisiones."
+    },
+    "manageTitle": "Administre su rueda y sus resultados",
+    "manageDesc": "Dependiendo de la herramienta específica, es posible que encuentre características como:",
+    "manageList": {
+      "modes": "<strong>Modos:</strong> Es posible que puedas elegir diferentes formas de funcionamiento de la rueda, como el modo \"Eliminación\", donde la opción elegida se elimina para el siguiente giro.",
+      "editing": "<strong>Edición:</strong> la mayoría de las herramientas le permiten editar, duplicar, ocultar o eliminar las entradas que ha agregado. Por lo general, también puedes borrar toda la lista fácilmente.",
+      "sharing": "<strong>Guardar/Compartir:</strong> a menudo puedes guardar la configuración de tu rueda (a veces requiere una cuenta) y compartirla con otras personas mediante un enlace o incluso obtener un código para incrustarla.",
+      "results": "<strong>Resultados:</strong> algunas ruedas pueden realizar un seguimiento de resultados anteriores."
+    },
+    "otherToolsTitle": "Otra herramienta de rueda",
+    "otherToolsDesc": "Además de la rueda aleatoria principal, también se crean varias herramientas especializadas de rueda aleatoria.",
+    "otherToolsList": {
+      "names": "<strong>Selector de nombres/Selector de estudiantes:</strong> comúnmente utilizado por los educadores para seleccionar individuos al azar, a veces llamado \"Rueda de nombres\" o \"Selector de nombres aleatorios\".",
+      "yesno": "<strong>Sí/No Ruedas:</strong> Para decisiones binarias simples.",
+      "food": "<strong>Rueda de la comida:</strong> ¿No estás seguro de qué comer? Gire la rueda de la comida para tomar decisiones rápidas sobre comidas al azar."
+    },
+    "otherToolsOutro": "Cada versión especializada toma el concepto central de selección aleatoria y lo adapta para satisfacer distintas necesidades, haciéndolos útiles para todo, desde organizar actividades hasta resolver debates con un toque divertido e imparcial."
+  },
+  "yesNoPage": {
+    "title": "Sí/No Selector de ruedas",
+    "heroTitle": "Tome decisiones rápidas de sí o no",
+    "heroDesc": "¿No puedes decidir entre sí y no? ¡Deja que nuestra rueda decida por ti! Personaliza la rueda con diferentes modos y conjuntos de entradas para obtener la respuesta que necesitas.",
+    "howToTitle": "Cómo utilizar",
+    "steps": {
+      "1": "Elija entre el modo \"SÍ o NO\" o el modo \"SÍ NO o QUIZÁS\"",
+      "2": "Seleccione el número de conjuntos de entrada (1-5) para ajustar la distribución de probabilidad",
+      "3": "Haga clic en el botón \"Girar\" para obtener su respuesta.",
+      "4": "El resultado se resaltará y se contará en los cuadros de arriba.",
+      "5": "Utilice el botón \"Restablecer resultados\" para borrar todos los contadores."
+    },
+    "seoTitle": "¿Por qué utilizar una rueda Sí/No?",
+    "seoDesc1": "La vida está llena de opciones y, a veces, las más simples son las más difíciles. Nuestra rueda giratoria Sí/No es la persona perfecta para tomar decisiones cuando estás estancado. Es una forma divertida y rápida de obtener una elección aleatoria, que actúa como un generador rápido de sí o no.",
+    "seoList": {
+      "1": "<strong>Resolver debates:</strong> Resuelva rápidamente discusiones amistosas.",
+      "2": "<strong>Tome decisiones rápidas:</strong> Decida sin esfuerzo la cena, la noche de cine o las elecciones diarias sencillas.",
+      "3": "<strong>Agregue diversión:</strong> inyecte aleatoriedad y entusiasmo en las actividades grupales.",
+      "4": "<strong>Supere la indecisión:</strong> deje que la rueda rompa el punto muerto cuando esté realmente indeciso."
+    },
+    "seoDesc2": "Ya sea que necesite un simple sí o no, o desee agregar \"tal vez\" para obtener más matices, esta divertida herramienta de toma de decisiones proporciona una respuesta imparcial al instante. ¡Gira la rueda y deja que el destino decida!",
+    "moreTitle": "Más allá de las opciones simples: más usos",
+    "moreDesc": "Si bien es excelente para preguntas sencillas de sí o no, esta herramienta puede ser sorprendentemente versátil:",
+    "moreList": {
+      "1": "<strong>Ayuda para el aprendizaje y el estudio:</strong> ¡Examínese usted mismo! Formule las preguntas con una respuesta de sí o no y gírelas.",
+      "2": "<strong>Indicaciones creativas:</strong> ¿Atascado en una historia o proyecto? Utilice la rueda para tomar decisiones creativas binarias.",
+      "3": "<strong>Romper hábitos:</strong> ¿Estás tratando de decidir si te entregarás a una tentación menor? Deje que la rueda agregue una capa de oportunidad.",
+      "4": "<strong>Toma de turnos justa:</strong> úsalo en juegos para decidir quién sigue."
+    },
+    "powerTitle": "El poder de la aleatoriedad",
+    "powerDesc": "Nuestra rueda utiliza un generador de números pseudoaleatorios confiable para garantizar que cada giro sea justo e impredecible. Esto elimina los prejuicios personales de las decisiones simples, lo que lo convierte en una persona que toma decisiones verdaderamente imparciales. A veces, dejar pequeñas decisiones al azar puede liberar energía mental para asuntos más importantes. El 'Quizás' opcional agrega flexibilidad para esos momentos en los que un simple sí o no no es suficiente."
+  },
+  "foodPage": {
+    "title": "Rueda de comida",
+    "heroTitle": "Rueda alimentaria: ¿qué debo comer?",
+    "heroDesc": "¿No puedes decidir qué comer en el almuerzo o la cena? ¡Gira la <strong>rueda de la comida</strong> y deja que el destino decida! Ya sea que se le antoje pizza, sushi o busque una ensalada saludable, simplemente agregue sus opciones, gire la rueda y su comida estará lista.",
+    "howToTitle": "Cómo utilizar la rueda de la comida",
+    "steps": {
+      "1": "<strong>Agregar antojos y opciones</strong>: escriba el nombre de cada comida o restaurante y haga clic en el botón <em>+</em>.",
+      "2": "<strong>Personalizar colores</strong>: haz clic en la muestra de color junto a cualquier alimento para cambiar el color de la porción.",
+      "3": "<strong>Girar la rueda</strong>: haz clic en <em>Girar la rueda</em> o en el botón central de la rueda.",
+      "4": "<strong>Ver al ganador</strong>: la comida elegida aparece encima de la rueda con una celebración 🎉. ¡Por fin puedes dejar de debatir y empezar a comer!",
+      "5": "<strong>Spin Again</strong>: ¿Aún no estás convencido? Sigue girando o elimina las opciones que no te gustan usando la función <em>Eliminar</em>."
+    },
+    "seoTitle": "¿Qué es una rueda de alimentos?",
+    "seoDesc": "Una <strong>Rueda de comida</strong> es una rueca digital que se utiliza específicamente para seleccionar comidas, restaurantes o cocinas al azar de una lista. Resuelve el clásico \"¿Qué quieres comer?\" problema.",
+    "seoList": {
+      "1": "<strong>Decisor del restaurante</strong>: ¿No podéis poneros de acuerdo sobre un restaurante? Añade las 5 mejores opciones y deja que la rueda elija.",
+      "2": "<strong>Ruleta de preparación de comidas</strong>: haga que cocinar sea divertido girando para obtener proteínas, carbohidratos y verduras.",
+      "3": "<strong>Aleatorio de comida para llevar</strong>: ¿pizza? ¿Chino? ¿Tailandés? Gira cuando tengas antojos.",
+      "4": "<strong>Catering para fiestas en la oficina</strong>: deje que el equipo presente opciones y use la rueda para decidir la comida."
+    },
+    "whyTitle": "¿Por qué utilizar nuestra rueda de alimentos?",
+    "whyDesc": "Evite el desplazamiento interminable en las aplicaciones de entrega. Nuestra Food Wheel te ayuda a decidir de forma rápida y justa:",
+    "features": {
+      "1Title": "Poner fin al debate",
+      "1Desc": "No más \"No sé, ¿qué quieres?\" Gira la rueda y la decisión se toma al instante.",
+      "2Title": "Configuración instantánea",
+      "2Desc": "No se necesita cuenta. Abra la página, escriba sus opciones de comida y gire de inmediato.",
+      "3Title": "Totalmente personalizable",
+      "3Desc": "Agregue emojis, cambie los colores de las rebanadas para que coincidan con la comida y excluya opciones.",
+      "4Title": "Resultados justos",
+      "4Desc": "La aleatoriedad criptográficamente segura significa que en realidad estás obteniendo una tirada imparcial.",
+      "5Title": "Funciona en dispositivos móviles",
+      "5Desc": "Perfecto para decidir sobre la marcha. El diseño totalmente responsivo luce genial en cualquier teléfono.",
+      "6Title": "100% gratis",
+      "6Desc": "Nuestra Food Wheel es siempre gratuita, sin barreras de pago ni registros obligatorios."
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faqs": {
+      "1Title": "¿Funciona Food Wheel en mi teléfono?",
+      "1Desc": "¡Sí! Food Wheel es completamente compatible con dispositivos móviles.",
+      "2Title": "¿Son los resultados realmente aleatorios?",
+      "2Desc": "Sí. Cada giro utiliza un algoritmo pseudoaleatorio robusto para garantizar que cada opción de alimento tenga las mismas posibilidades.",
+      "3Title": "¿Puedo guardar mis listas de comidas favoritas?",
+      "3Desc": "Mientras mantenga abierta la pestaña del navegador, sus listas permanecerán activas. Recomendamos marcar la página como favorita."
+    }
+  },
+  "namesPage": {
+    "title": "Rueda de nombres",
+    "heroTitle": "Rueda de nombres: selector de nombres aleatorio gratuito",
+    "heroDesc": "Escribe cualquier nombre, gira la rueda y deja que el destino elija un ganador en segundos. Ya sea que necesite un <strong>selector de nombres aleatorio</strong> para su salón de clases, un sorteo justo para un sorteo o una manera rápida de asignar tareas a su equipo, esta Rueda de Nombres gratuita lo tiene cubierto. Sin registro, sin descarga, funciona en cualquier dispositivo.",
+    "howToTitle": "Cómo utilizar la rueda de nombres",
+    "steps": {
+      "1": "<strong>Agregar nombres</strong>: escriba cada nombre en el cuadro de entrada y presione <em>Entrar</em>.",
+      "2": "<strong>Personalizar colores</strong>: haz clic en la muestra de color junto a cualquier nombre.",
+      "3": "<strong>Girar la rueda</strong>: haga clic en <em>Girar la rueda</em> o en el botón central.",
+      "4": "<strong>Ver al ganador</strong>: el nombre elegido aparece encima de la rueda con una celebración 🎉. El recuento de ganancias rastrea cuántas veces se ha elegido cada nombre.",
+      "5": "<strong>Gira de nuevo</strong>: sigue girando durante varias rondas. Utilice <em>Excluir</em> para eliminar a los ganadores de giros futuros o <em>Restablecer</em> para empezar de nuevo."
+    },
+    "seoTitle": "¿Qué es una rueda de nombres?",
+    "seoDesc": "Una <strong>Rueda de nombres</strong> es una rueca digital diseñada previamente para seleccionar nombres aleatorios de una lista. Funciona de la misma manera que una rueda de premios clásica: agregas los nombres que quieras, haces clic en girar y la rueda aterriza en un ganador al azar.",
+    "seoList": {
+      "1": "<strong>Selector de nombres aleatorios en el aula</strong>: los profesores utilizan una rueda de nombres para llamar a los estudiantes sin prejuicios.",
+      "2": "<strong>Sorteos y concursos</strong>: ¿realizas un sorteo en las redes sociales? Agregue todos los nombres de los participantes y gire.",
+      "3": "<strong>Selección de equipo</strong>: divide jugadores aleatoriamente en equipos, elige un capitán de equipo o asigna roles.",
+      "4": "<strong>Juegos de oficina y rompehielos</strong>: ¿quién presenta primero? ¿Quién trae café mañana? Deja que la rueda decida."
+    },
+    "whyTitle": "¿Por qué utilizar nuestra rueda de nombres?",
+    "whyDesc": "Hay muchas herramientas para seleccionar nombres en línea, pero la nuestra se destaca por varias razones clave:",
+    "features": {
+      "1Title": "Verdaderamente aleatoria",
+      "1Desc": "Utilizamos un generador de números pseudoaleatorios criptográficamente para garantizar que cada giro sea completamente impredecible.",
+      "2Title": "Configuración instantánea",
+      "2Desc": "No se necesita cuenta. Abra la página, escriba sus nombres y gire. Todo el proceso dura menos de 30 segundos.",
+      "3Title": "Totalmente personalizable",
+      "3Desc": "Cambie los colores de los sectores, reordene los nombres, duplique entradas para obtener resultados ponderados o excluya ciertos nombres.",
+      "4Title": "Seguimiento de ganancias",
+      "4Desc": "La rueda registra cuántas veces se ha elegido cada nombre en varias rondas.",
+      "5Title": "Funciona en cualquier dispositivo",
+      "5Desc": "El diseño totalmente responsivo significa que el volante se ve y funciona muy bien en teléfonos, tabletas y computadoras de escritorio por igual.",
+      "6Title": "Siempre gratis",
+      "6Desc": "Sin anuncios que interrumpan tu giro, sin niveles premium y sin suscripción. 100% gratis, para siempre."
+    },
+    "tipsTitle": "Consejos para aprovechar al máximo su rueda de nombres",
+    "tips": {
+      "1Title": "Selección de nombres ponderados",
+      "1Desc": "¿Quiere aumentar las posibilidades de que se elija un nombre en particular? Simplemente agregue ese nombre varias veces usando el botón <em>Copiar</em>. Cada entrada duplicada obtiene su propia porción, lo que efectivamente duplica (o triplica) la probabilidad de que esa persona sea elegida.",
+      "2Title": "Modo de eliminación",
+      "2Desc": "¿Organizar un torneo, un concurso o una rifa? Utilice el botón <em>Excluir</em> para eliminar a cada ganador de los giros posteriores. Esto garantiza que cada participante solo pueda ganar una vez.",
+      "3Title": "Mezclar por la equidad",
+      "3Desc": "Si reutiliza la misma lista de nombres con regularidad, presione el botón <em>Aleatorio</em> antes de girar. La mezcla aleatoria hace que el orden inicial de los cortes sea aleatorio.",
+      "4Title": "Guarde su lista de nombres",
+      "4Desc": "¿Necesita los mismos nombres en cada lección o reunión? Simplemente mantenga abierta la pestaña del navegador; los nombres permanecen en la rueda hasta que reinicie o cierre la página."
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faqs": {
+      "1Title": "¿La Rueda de Nombres es completamente aleatoria?",
+      "1Desc": "Sí. Cada giro utiliza la función Math.random() de JavaScript, que genera un número pseudoaleatorio para determinar la porción ganadora.",
+      "2Title": "¿Cuántos nombres puedo agregar a la rueda?",
+      "2Desc": "No hay un límite estricto. La rueda cambia automáticamente el tamaño de cada sector para que se ajuste a todas las entradas. Para una mejor legibilidad, recomendamos mantenerlo por debajo de 50 nombres.",
+      "3Title": "¿Puedo guardar mi rueda de nombres?",
+      "3Desc": "Sus nombres se almacenan mientras la página esté abierta. Marque la página después de agregar sus nombres; volver a abrir la misma pestaña en la mayoría de los navegadores restaurará el estado.",
+      "4Title": "¿La Rueda de Nombres funciona en dispositivos móviles?",
+      "4Desc": "Absolutamente. La rueda responde completamente y funciona en iOS, Android y cualquier navegador móvil moderno.",
+      "5Title": "¿Cuál es la diferencia entre la Rueda de Nombres y un generador de nombres aleatorios?",
+      "5Desc": "Un <em>generador de nombres aleatorios</em> normalmente crea nombres ficticios a partir de una base de datos. Nuestra Rueda de Nombres elige entre los nombres específicos que <em>usted</em> proporciona.",
+      "6Title": "¿Puedo usar esto como seleccionador aleatorio de estudiantes?",
+      "6Desc": "Sí, es uno de los usos más populares. Los profesores agregan su lista de clases y luego hacen girar la rueda para llamar a un estudiante."
+    }
+  },
+  "embed": {
+    "loading": "Cargando configuración de ruedas...",
+    "instructions": "Utilice los controles a continuación para configurar el contenido y la apariencia de su rueda. Luego, configure los ajustes de inserción y genere el código para colocarlo en su sitio web.",
+    "settingsTitle": "Configuración de inserción",
+    "titleLabel": "Título (para accesibilidad):",
+    "widthLabel": "Ancho (px):",
+    "heightLabel": "Altura (píxeles):",
+    "codeTitle": "Código para insertar",
+    "codeDesc": "Copie el siguiente código para insertar esta rueda configurada en su sitio web:",
+    "generateBtn": "Generar código para insertar",
+    "errConfigure": "Error al generar código. Primero configure la rueda.",
+    "errEmpty": "Agregue al menos un elemento a la rueda antes de generar el código para insertar."
+  }
+}

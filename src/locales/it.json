@@ -1,0 +1,240 @@
+{
+  "header": {
+    "randomWheel": "Ruota casuale",
+    "wheelOfNames": "Ruota dei nomi",
+    "yesNoWheel": "Ruota Sì/No",
+    "embed": "Incorpora",
+    "foodWheel": "Ruota del cibo",
+    "configureEmbed": "Configura la ruota incorporabile"
+  },
+  "footer": {
+    "randoWheel": "Ruota Rando",
+    "copyright": "© {anno} Ruota Spinner. Tutti i diritti riservati.",
+    "privacyPolicy": "politica sulla riservatezza",
+    "termsConditions": "Termini e condizioni",
+    "otherWheels": "Altre ruote"
+  },
+  "mainWheel": {
+    "winner": "Vincitore: {testo} 🎉",
+    "spin": "Rotazione",
+    "inputs": "Ingressi",
+    "reset": "Reset",
+    "shuffle": "Mescola",
+    "placeholder": "Inserisci il testo qui...",
+    "spinTheWheel": "Gira la ruota",
+    "cursor": "Cursore",
+    "cursorAngle": "Angolo del cursore",
+    "cursorDistance": "Distanza del cursore",
+    "pleaseInclude": "Si prega di includere almeno un oggetto nella ruota",
+    "copySuffix": "(copia)"
+  },
+  "yesNoWheel": {
+    "yes": "SÌ",
+    "no": "NO",
+    "maybe": "FORSE",
+    "mode": "Modalità",
+    "binaryMode": "Sì o no",
+    "ternaryMode": "SI NO o FORSE",
+    "numInputSets": "Numero di set di input",
+    "resetResults": "Reimposta risultati"
+  },
+  "exploreMore": {
+    "title": "Esplora altre ruote girevoli gratuite",
+    "descDefault": "Cerchi un diverso tipo di selettore casuale? Dai un'occhiata ai nostri altri strumenti per la ruota libera:",
+    "descFood": "Hai bisogno di prendere altri tipi di decisioni? Prova i nostri altri strumenti:",
+    "rwTitle": "Girandola casuale",
+    "rwDesc": "La ruota personalizzabile definitiva per praticamente qualsiasi scelta.",
+    "wonTitle": "Ruota dei nomi",
+    "wonDesc": "Un compagno perfetto per omaggi, partecipazione in classe o assegnazione di compiti.",
+    "ynwTitle": "Ruota sì/no",
+    "ynwDesc": "Un semplice spinner sì o no per gestire istantaneamente scelte binarie rapide."
+  },
+  "home": {
+    "mainTitle": "Girandola casuale",
+    "whatIsTitle": "Cos'è una ruota casuale?",
+    "whatIsDesc": "Una ruota casuale è uno strumento interattivo che gira per effettuare una selezione casuale da una serie di scelte. Che tu stia scegliendo nomi, colori, numeri o risposte sì/no, uno spinner casuale aggiunge divertimento ed equità al processo decisionale. Ideali per giochi, lotterie, attività in classe o semplicemente per semplificare le scelte quotidiane, le ruote casuali sono semplici, coinvolgenti e ampiamente utilizzate. Prova uno spinner casuale per aggiungere entusiasmo alla tua prossima decisione!",
+    "howWorksTitle": "Come funziona una ruota casuale?",
+    "howWorksDesc": "Una ruota casuale funziona facendo girare una ruota digitale divisa in più sezioni, ciascuna contenente un'opzione unica. Quando la ruota gira, si ferma casualmente su una di queste sezioni, fornendo una selezione imparziale.",
+    "stepsTitle": "Passaggi per utilizzare una ruota casuale:",
+    "step1Title": "Inserisci testo:",
+    "step1Desc": "In genere puoi aggiungere elementi (come nomi, attività o decisioni) uno per uno o incollare un intero elenco.",
+    "step2Title": "Rotazione:",
+    "step2Desc": "Una volta effettuate le tue scelte e sei soddisfatto del look, avvia il giro. Di solito c'è un pulsante chiaro come \"Gira la ruota!\".",
+    "stepsList": {
+      "1": "<strong>Inserisci le tue opzioni</strong>: aggiungi nomi, numeri, colori o scelte alla ruota.",
+      "2": "<strong>Gira la ruota</strong>: fai clic o tocca il pulsante di rotazione per avviare il processo di selezione casuale.",
+      "3": "<strong>Ottieni risultati immediati</strong>: la ruota si ferma su una scelta casuale, fornendo la tua risposta.",
+      "4": "<strong>Ripeti secondo necessità</strong>: puoi girare di nuovo per ottenere nuovi risultati o personalizzare la ruota per prendere decisioni diverse."
+    },
+    "manageTitle": "Gestisci la tua ruota e i risultati",
+    "manageDesc": "A seconda dello strumento specifico, potresti trovare funzionalità come:",
+    "manageList": {
+      "modes": "<strong>Modalità:</strong> potresti essere in grado di scegliere diversi modi di funzionamento della ruota, come la modalità \"Eliminazione\" in cui l'opzione scelta viene rimossa per il giro successivo.",
+      "editing": "<strong>Modifica:</strong> la maggior parte degli strumenti ti consente di modificare, duplicare, nascondere o eliminare le voci che hai aggiunto. Di solito puoi anche cancellare facilmente l'intero elenco.",
+      "sharing": "<strong>Salvataggio/Condivisione:</strong> puoi spesso salvare la configurazione del tuo volante (a volte è necessario un account) e condividerla con altri utilizzando un collegamento o magari anche ottenere il codice per incorporarla.",
+      "results": "<strong>Risultati:</strong> alcune ruote potrebbero tenere traccia dei risultati passati."
+    },
+    "otherToolsTitle": "Altro strumento ruota",
+    "otherToolsDesc": "Oltre alla ruota casuale principale, sono stati creati anche diversi strumenti specializzati della ruota casuale.",
+    "otherToolsList": {
+      "names": "<strong>Selettori di nomi/Selettori di studenti:</strong> comunemente utilizzato dagli educatori per selezionare casualmente le persone, a volte chiamato \"Ruota dei nomi\" o \"Selettore di nomi casuale\".",
+      "yesno": "<strong>Ruote Sì/No:</strong> per semplici decisioni binarie.",
+      "food": "<strong>Ruota del cibo:</strong> non sai cosa mangiare? Gira la ruota del cibo per prendere decisioni rapide e casuali sui pasti."
+    },
+    "otherToolsOutro": "Ogni versione specializzata prende il concetto centrale della selezione casuale e lo adatta per soddisfare esigenze specifiche, rendendole utili per qualsiasi cosa, dall'organizzazione delle attività alla risoluzione dei dibattiti con un tocco divertente e imparziale."
+  },
+  "yesNoPage": {
+    "title": "Sì/No Selettore ruota",
+    "heroTitle": "Prendi rapidamente decisioni Sì/No",
+    "heroDesc": "Non riesci a decidere tra sì e no? Lascia che la nostra ruota decida per te! Personalizza la ruota con diverse modalità e set di input per ottenere la risposta di cui hai bisogno.",
+    "howToTitle": "Come usare",
+    "steps": {
+      "1": "Scegli tra la modalità \"SI o NO\" o la modalità \"SI NO o FORSE\".",
+      "2": "Selezionare il numero di set di input (1-5) per regolare la distribuzione di probabilità",
+      "3": "Fare clic sul pulsante \"Gira\" per ottenere la risposta",
+      "4": "Il risultato verrà evidenziato e conteggiato nelle caselle sopra",
+      "5": "Utilizzare il pulsante \"Reimposta risultati\" per cancellare tutti i contatori"
+    },
+    "seoTitle": "Perché utilizzare una ruota Sì/No?",
+    "seoDesc1": "La vita è piena di scelte e a volte quelle più semplici sono le più difficili. Il nostro Sì/No Wheel Spinner è il perfetto decisore quando sei bloccato. È un modo divertente e veloce per ottenere una scelta casuale, agendo come un rapido generatore di sì o no.",
+    "seoList": {
+      "1": "<strong>Risolvi i dibattiti:</strong> risolvi rapidamente le discussioni amichevoli.",
+      "2": "<strong>Prendi decisioni rapide:</strong> decidi senza sforzo la cena, la serata al cinema o le semplici scelte quotidiane.",
+      "3": "<strong>Aggiungi divertimento:</strong> aggiungi casualità ed entusiasmo alle attività di gruppo.",
+      "4": "<strong>Superare l'indecisione:</strong> lascia che sia la ruota a sbloccare la situazione quando sei veramente indeciso."
+    },
+    "seoDesc2": "Che tu abbia bisogno di un semplice sì o no, o desideri aggiungere \"forse\" per ulteriori sfumature, questo divertente strumento decisionale fornisce immediatamente una risposta imparziale. Gira la ruota e lascia che sia il destino a decidere!",
+    "moreTitle": "Oltre le scelte semplici: più usi",
+    "moreDesc": "Sebbene sia ottimo per semplici domande sì/no, questo strumento può essere sorprendentemente versatile:",
+    "moreList": {
+      "1": "<strong>Ausili per l'apprendimento e lo studio:</strong> mettiti alla prova! Inquadra le domande con una risposta sì/no e gira.",
+      "2": "<strong>Suggerimenti creativi:</strong> sei bloccato su una storia o un progetto? Usa la ruota per decisioni creative binarie.",
+      "3": "<strong>Rompere le abitudini:</strong> stai cercando di decidere se indulgere in una piccola tentazione? Lascia che la ruota aggiunga uno strato di possibilità.",
+      "4": "<strong>Turni equi:</strong> usalo nei giochi per decidere chi sarà il prossimo."
+    },
+    "powerTitle": "Il potere della casualità",
+    "powerDesc": "La nostra ruota utilizza un affidabile generatore di numeri pseudo-casuali per garantire che ogni giro sia corretto e imprevedibile. Ciò rimuove i pregiudizi personali dalle decisioni semplici, rendendolo un decisore veramente imparziale. A volte, lasciare le piccole scelte al caso può liberare energia mentale per questioni più importanti! L'opzione \"Forse\" aggiunge flessibilità per quei momenti in cui un semplice sì o no non è sufficiente."
+  },
+  "foodPage": {
+    "title": "Ruota del cibo",
+    "heroTitle": "Ruota del cibo: cosa dovrei mangiare?",
+    "heroDesc": "Non riesci a decidere cosa mangiare a pranzo o a cena? Gira la <strong>ruota del cibo</strong> e lascia che sia il destino a decidere! Che tu abbia voglia di pizza, sushi o cerchi un'insalata salutare, aggiungi semplicemente le tue opzioni, fai un giro alla ruota e il tuo pasto è pronto.",
+    "howToTitle": "Come utilizzare la ruota del cibo",
+    "steps": {
+      "1": "<strong>Aggiungi voglie e opzioni</strong>: digita il nome di ciascun cibo o ristorante e fai clic sul pulsante <em>+</em>.",
+      "2": "<strong>Personalizza colori</strong>: fai clic sul campione di colore accanto a qualsiasi alimento per modificare il colore della fetta.",
+      "3": "<strong>Gira la ruota</strong>: fai clic su <em>Gira la ruota</em> o sul pulsante centrale della ruota.",
+      "4": "<strong>Guarda il vincitore</strong>: il cibo scelto appare sopra la ruota con una 🎉 celebrazione. Puoi finalmente smettere di discutere e iniziare a mangiare!",
+      "5": "<strong>Spin Again</strong>: non sei ancora convinto? Continua a girare o rimuovi le opzioni che non ti piacciono utilizzando la funzione <em>Rimuovi</em>."
+    },
+    "seoTitle": "Cos'è una ruota alimentare?",
+    "seoDesc": "Una <strong>ruota del cibo</strong> è una ruota che gira digitale utilizzata specificatamente per scegliere pasti, ristoranti o cucine casuali da un elenco. Risolve il classico \"Cosa vuoi mangiare?\" problema.",
+    "seoList": {
+      "1": "<strong>Decidere il ristorante</strong>: non riesci a trovare un accordo su un ristorante? Aggiungi le prime 5 scelte e lascia che sia la ruota a scegliere.",
+      "2": "<strong>Roulette di preparazione dei pasti</strong>: rendi divertente la cucina puntando su proteine, carboidrati e verdure.",
+      "3": "<strong>Randomizzatore da asporto</strong>: Pizza? Cinese? Tailandese? Gira ogni volta che hai voglia.",
+      "4": "<strong>Catering per feste in ufficio</strong>: lascia che il team invii le opzioni e usi la ruota per decidere il cibo."
+    },
+    "whyTitle": "Perché utilizzare la nostra ruota alimentare?",
+    "whyDesc": "Evita lo scorrimento infinito sulle app di consegna. La nostra ruota del cibo ti aiuta a decidere in modo rapido ed equo:",
+    "features": {
+      "1Title": "Concludere il dibattito",
+      "1Desc": "Non più \"Non lo so, cosa vuoi?\" Gira la ruota e la decisione viene presa all'istante.",
+      "2Title": "Configurazione istantanea",
+      "2Desc": "Nessun account necessario. Apri la pagina, digita le tue opzioni alimentari e gira subito.",
+      "3Title": "Completamente personalizzabile",
+      "3Desc": "Aggiungi emoji, cambia i colori delle fette per adattarli al cibo ed escludi le opzioni.",
+      "4Title": "Risultati discreti",
+      "4Desc": "La casualità crittograficamente sicura significa che stai effettivamente ottenendo un tiro imparziale.",
+      "5Title": "Funziona su dispositivi mobili",
+      "5Desc": "Perfetto per decidere in movimento. Il design completamente reattivo è perfetto su qualsiasi telefono.",
+      "6Title": "100% gratuito",
+      "6Desc": "La nostra ruota del cibo è sempre gratuita, senza paywall o registrazioni obbligatorie."
+    },
+    "faqTitle": "Domande frequenti",
+    "faqs": {
+      "1Title": "La Ruota del Cibo funziona sul mio telefono?",
+      "1Desc": "SÌ! La ruota del cibo è completamente ottimizzata per i dispositivi mobili.",
+      "2Title": "I risultati sono davvero casuali?",
+      "2Desc": "SÌ. Ogni giro utilizza un robusto algoritmo pseudo-casuale per garantire che ogni opzione alimentare abbia le stesse possibilità.",
+      "3Title": "Posso salvare le mie liste di cibi preferiti?",
+      "3Desc": "Finché mantieni aperta la scheda del browser, i tuoi elenchi rimangono attivi. Ti consigliamo di aggiungere la pagina ai segnalibri."
+    }
+  },
+  "namesPage": {
+    "title": "Ruota dei nomi",
+    "heroTitle": "Ruota dei nomi: raccoglitore di nomi casuale gratuito",
+    "heroDesc": "Digita qualsiasi nome, fai girare la ruota e lascia che il destino scelga il vincitore in pochi secondi. Che tu abbia bisogno di un <strong>selettore di nomi casuale</strong> per la tua classe, di un'estrazione equa per un omaggio o di un modo rapido per assegnare compiti al tuo team, questa Ruota dei nomi gratuita fa al caso tuo. Nessuna registrazione, nessun download, funziona su qualsiasi dispositivo.",
+    "howToTitle": "Come utilizzare la ruota dei nomi",
+    "steps": {
+      "1": "<strong>Aggiungi nomi</strong>: digita ciascun nome nella casella di input e premi <em>Invio</em>.",
+      "2": "<strong>Personalizza colori</strong>: fai clic sul campione di colori accanto a qualsiasi nome.",
+      "3": "<strong>Gira la ruota</strong>: fai clic su <em>Gira la ruota</em> o sul pulsante centrale.",
+      "4": "<strong>Guarda il vincitore</strong>: il nome scelto appare sopra la ruota con una 🎉 celebrativa. Il conteggio delle vittorie tiene traccia di quante volte ciascun nome è stato scelto.",
+      "5": "<strong>Gira ancora</strong>: continua a girare per più giri. Utilizza <em>Escludi</em> per rimuovere i vincitori dai giri futuri oppure <em>Reimposta</em> per ricominciare da capo."
+    },
+    "seoTitle": "Cos'è una ruota dei nomi?",
+    "seoDesc": "Una <strong>Ruota dei nomi</strong> è una ruota che gira digitale predisposta per scegliere nomi casuali da un elenco. Funziona allo stesso modo di una classica ruota dei premi: aggiungi i nomi che preferisci, fai clic su Gira e la ruota si ferma su un vincitore a caso.",
+    "seoList": {
+      "1": "<strong>Selettore casuale di nomi in classe</strong>: gli insegnanti utilizzano una ruota di nomi per chiamare gli studenti senza pregiudizi.",
+      "2": "<strong>Omaggi e concorsi</strong>: organizzare un giveaway sui social media? Aggiungi tutti i nomi dei partecipanti e gira.",
+      "3": "<strong>Selezione della squadra</strong>: dividi casualmente i giocatori in squadre, scegli un capitano della squadra o assegna ruoli.",
+      "4": "<strong>Giochi da ufficio e rompighiaccio</strong>: chi presenta per primo? Chi porta il caffè domani? Lasciamo che sia la ruota a decidere."
+    },
+    "whyTitle": "Perché usare la nostra ruota dei nomi?",
+    "whyDesc": "Esistono molti strumenti per la selezione dei nomi online, ma il nostro si distingue per una serie di motivi chiave:",
+    "features": {
+      "1Title": "Veramente casuale",
+      "1Desc": "Utilizziamo un generatore di numeri pseudo-casuali crittograficamente seminati per garantire che ogni giro sia completamente imprevedibile.",
+      "2Title": "Configurazione istantanea",
+      "2Desc": "Nessun account necessario. Apri la pagina, digita i tuoi nomi e gira. L'intero processo richiede meno di 30 secondi.",
+      "3Title": "Completamente personalizzabile",
+      "3Desc": "Modifica i colori delle sezioni, riordina i nomi, duplica le voci per ottenere risultati ponderati o escludi determinati nomi.",
+      "4Title": "Vinci il monitoraggio",
+      "4Desc": "La ruota tiene traccia di quante volte ciascun nome è stato scelto in più round.",
+      "5Title": "Funziona su qualsiasi dispositivo",
+      "5Desc": "Il design completamente reattivo significa che il volante ha un aspetto e funziona perfettamente su telefoni, tablet e desktop.",
+      "6Title": "Sempre gratuito",
+      "6Desc": "Nessuna pubblicità che interrompe il tuo giro, nessun livello premium e nessun abbonamento. 100% gratuito, per sempre."
+    },
+    "tipsTitle": "Suggerimenti per ottenere il massimo dalla ruota dei nomi",
+    "tips": {
+      "1Title": "Scelta ponderata dei nomi",
+      "1Desc": "Vuoi aumentare le possibilità che venga scelto un nome particolare? Aggiungi semplicemente quel nome più volte utilizzando il pulsante <em>Copia</em>. Ogni voce duplicata ottiene la propria fetta, raddoppiando (o triplicando) la probabilità di quella persona di essere scelta.",
+      "2Title": "Modalità di eliminazione",
+      "2Desc": "Organizzare un torneo, un quiz show o una lotteria? Utilizza il pulsante <em>Escludi</em> per rimuovere ciascun vincitore dai giri successivi. Ciò garantisce che ogni partecipante possa vincere solo una volta.",
+      "3Title": "Mescola per correttezza",
+      "3Desc": "Se riutilizzi regolarmente lo stesso elenco di nomi, premi il pulsante <em>Mescola</em> prima di girarlo. Il rimescolamento rende casuale l'ordine iniziale delle fette.",
+      "4Title": "Salva l'elenco dei tuoi nomi",
+      "4Desc": "Hai bisogno degli stessi nomi in ogni lezione o riunione? Tieni semplicemente aperta la scheda del browser: i nomi rimangono sul volante finché non reimposti o chiudi la pagina."
+    },
+    "faqTitle": "Domande frequenti",
+    "faqs": {
+      "1Title": "La Ruota dei Nomi è completamente casuale?",
+      "1Desc": "SÌ. Ogni giro utilizza la funzione Math.random() di JavaScript, che genera un numero pseudo-casuale per determinare la fetta vincente.",
+      "2Title": "Quanti nomi posso aggiungere alla ruota?",
+      "2Desc": "Non esiste un limite rigido. La ruota ridimensiona automaticamente ogni sezione per adattarla a tutte le voci. Per una migliore leggibilità, ti consigliamo di mantenerlo sotto i 50 nomi.",
+      "3Title": "Posso salvare la mia ruota dei nomi?",
+      "3Desc": "I tuoi nomi vengono memorizzati finché la pagina è aperta. Aggiungi la pagina ai segnalibri dopo aver aggiunto i tuoi nomi: la riapertura della stessa scheda nella maggior parte dei browser ripristinerà lo stato.",
+      "4Title": "La Ruota dei Nomi funziona sui dispositivi mobili?",
+      "4Desc": "Assolutamente. Il volante è completamente reattivo e funziona su iOS, Android e qualsiasi browser mobile moderno.",
+      "5Title": "Qual è la differenza tra la Ruota dei Nomi e un generatore di nomi casuali?",
+      "5Desc": "Un <em>generatore di nomi casuali</em> in genere crea nomi fittizi da un database. La nostra Ruota dei Nomi sceglie tra i nomi specifici che <em>tu</em> fornisci.",
+      "6Title": "Posso usarlo come selezionatore casuale di studenti?",
+      "6Desc": "Sì, è uno degli usi più popolari. Gli insegnanti aggiungono l'elenco degli studenti della loro classe, quindi girano la ruota per chiamare uno studente."
+    }
+  },
+  "embed": {
+    "loading": "Caricamento configurazione ruota...",
+    "instructions": "Utilizza i controlli seguenti per impostare il contenuto e l'aspetto del tuo volante. Quindi, configura le impostazioni di incorporamento e genera il codice per inserirlo nel tuo sito web.",
+    "settingsTitle": "Impostazioni di incorporamento",
+    "titleLabel": "Titolo (per l'accessibilità):",
+    "widthLabel": "Larghezza (px):",
+    "heightLabel": "Altezza (px):",
+    "codeTitle": "Incorpora codice",
+    "codeDesc": "Copia il codice qui sotto per incorporare questa ruota configurata sul tuo sito web:",
+    "generateBtn": "Genera codice di incorporamento",
+    "errConfigure": "Errore durante la generazione del codice. Per favore configura prima il volante.",
+    "errEmpty": "Aggiungi almeno un elemento alla ruota prima di generare il codice di incorporamento."
+  }
+}

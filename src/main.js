@@ -1,134 +1,170 @@
-import { createApp, nextTick } from 'vue'; // Import nextTick here
-import { createRouter, createWebHistory } from 'vue-router';
-// Removed: import { createHead } from '@vueuse/head'; 
+import { createApp, nextTick, h } from 'vue';
+import { createRouter, createWebHistory, RouterView } from 'vue-router';
+import i18n, { SUPPORTED_LOCALES } from './i18n.js';
+
 import HomePage from './pages/HomePage.vue';
 import YesNoWheelPage from './pages/YesNoWheelPage.vue';
-import EmbedWheelPage from './pages/EmbedWheelPage.vue'
-import EmbedConfigPage from './pages/EmbedConfigPage.vue' // Import the config page
-import WheelOfNamesPage from './pages/WheelOfNamesPage.vue'
-import FoodWheelPage from './pages/FoodWheelPage.vue'
-import App from './App.vue'
+import EmbedWheelPage from './pages/EmbedWheelPage.vue';
+import EmbedConfigPage from './pages/EmbedConfigPage.vue';
+import WheelOfNamesPage from './pages/WheelOfNamesPage.vue';
+import FoodWheelPage from './pages/FoodWheelPage.vue';
+import App from './App.vue';
 
-// Define routes with meta titles and SEO tags
-const routes = [
+// Create regex to match any of the non-English locale codes for dynamic routing
+const localeRegex = SUPPORTED_LOCALES.filter(l => l !== 'en').join('|');
+
+const baseRoutes = [
   {
-    path: '/',
+    path: '',
     component: HomePage,
     meta: {
-      title: 'Rando Wheel - Fun Random Decision Maker & Wheel Spinner',
-      description: 'Spin the wheel for random decisions! Create custom wheels, use the Yes/No spinner, or generate random choices. Fun, free, and easy decision-making tool.',
-      canonical: 'https://randowheel.com/',
+      canonicalPath: '',
+      titleKey: 'home.mainTitle',
+      descKey: 'home.whatIsDesc',
       robots: 'index, follow'
     }
   },
   {
-    path: '/yes-no-wheel',
+    path: 'yes-no-wheel',
     component: YesNoWheelPage,
     meta: {
-      title: 'Yes No Wheel Spinner - Quick Decision Maker',
-      description: 'Can\'t decide between yes and no? Let our Yes/No wheel decide for you! Customize the wheel for quick answers.',
-      canonical: 'https://randowheel.com/yes-no-wheel',
+      canonicalPath: 'yes-no-wheel',
+      titleKey: 'yesNoPage.title',
+      descKey: 'yesNoPage.heroDesc',
       robots: 'index, follow'
     }
   },
   {
-    path: '/embed',
+    path: 'embed',
     component: EmbedWheelPage,
     meta: {
-      title: 'Embedded Wheel',
-      robots: 'noindex, nofollow'
-    } // Simple title for embed
-  },
-  {
-    path: '/configure-embed',
-    component: EmbedConfigPage,
-    meta: {
-      title: 'Configure Embeddable Wheel - Rando Wheel',
+      titleKey: 'embed.settingsTitle',
       robots: 'noindex, nofollow'
     }
   },
   {
-    path: '/wheel-of-names',
+    path: 'configure-embed',
+    component: EmbedConfigPage,
+    meta: {
+      titleKey: 'header.configureEmbed',
+      robots: 'noindex, nofollow'
+    }
+  },
+  {
+    path: 'wheel-of-names',
     component: WheelOfNamesPage,
     meta: {
-      title: 'Wheel of Names - Free Random Name Picker | Rando Wheel',
-      description: 'A free, browser-based random name picker. Add names to a spinning wheel and click spin to choose a random winner. Used for classrooms, giveaways, team selections, and more.',
-      canonical: 'https://randowheel.com/wheel-of-names',
+      canonicalPath: 'wheel-of-names',
+      titleKey: 'namesPage.title',
+      descKey: 'namesPage.heroDesc',
       robots: 'index, follow'
     }
   },
   {
-    path: '/food-wheel',
+    path: 'food-wheel',
     component: FoodWheelPage,
     meta: {
-      title: 'Food Wheel - Random Food and Restaurant Picker | Rando Wheel',
-      description: 'Can\'t decide what to eat? Spin the Food Wheel to pick a random food, restaurant, or cuisine. A purely random decider for your meals.',
-      canonical: 'https://randowheel.com/food-wheel',
+      canonicalPath: 'food-wheel',
+      titleKey: 'foodPage.title',
+      descKey: 'foodPage.heroDesc',
       robots: 'index, follow'
     }
   }
-  // Removed route for non-existent TermsAndConditionsPage.vue
-]
+];
 
-// Create router instance
+const routes = [
+  {
+    // Make locale optional so English operates at the root path '/'
+    path: `/:locale(${localeRegex})?`,
+    component: { render: () => h(RouterView) },
+    children: baseRoutes
+  }
+];
+
 const router = createRouter({
   history: createWebHistory(),
   routes
-})
+});
 
-// Navigation guard to update SEO tags after each navigation
+// Navigation guard to update Locale
+router.beforeEach((to, from, next) => {
+  const paramLocale = to.params.locale || 'en';
+  i18n.global.locale.value = paramLocale;
+  document.documentElement.lang = paramLocale;
+  next();
+});
+
+// Navigation guard to dynamically update all SEO parameters post-navigation
 router.afterEach((to) => {
-  nextTick(() => { // Use imported nextTick
-    document.title = to.meta.title || 'Rando Wheel'; // Fallback title
+  nextTick(() => {
+    const locale = i18n.global.locale.value;
+    const t = i18n.global.t;
 
-    // Update meta description
-    if (to.meta.description) {
+    // Set Document Title
+    if (to.meta.titleKey) {
+      document.title = t(to.meta.titleKey) + ' | ' + t('footer.randoWheel');
+    } else {
+      document.title = t('footer.randoWheel');
+    }
+
+    // Set Document Description
+    if (to.meta.descKey) {
       let metaDescription = document.querySelector('meta[name="description"]');
       if (!metaDescription) {
         metaDescription = document.createElement('meta');
         metaDescription.name = 'description';
         document.head.appendChild(metaDescription);
       }
-      metaDescription.content = to.meta.description;
+      // Trim string reliably for SEO length guidelines
+      let descString = t(to.meta.descKey).replace(/<[^>]*>?/gm, '');
+      metaDescription.content = descString.substring(0, 155) + (descString.length > 155 ? '...' : '');
     }
 
-    // Update canonical URL
-    let canonicalLink = document.querySelector('link[rel="canonical"]');
-    if (to.meta.canonical) {
+    // Process canonical metadata and Hreflang loop
+    if (to.meta.canonicalPath !== undefined) {
+      // 1. Set canonicalURL
+      let canonicalLink = document.querySelector('link[rel="canonical"]');
       if (!canonicalLink) {
         canonicalLink = document.createElement('link');
         canonicalLink.rel = 'canonical';
         document.head.appendChild(canonicalLink);
       }
-      canonicalLink.href = to.meta.canonical;
-    } else if (canonicalLink) {
-      canonicalLink.remove();
+      const localePrefix = locale === 'en' ? '' : `/${locale}`;
+      const pathSuffix = to.meta.canonicalPath ? `/${to.meta.canonicalPath}` : '';
+      canonicalLink.href = `https://randowheel.com${localePrefix}${pathSuffix}`;
+
+      // 2. Erase existing hreflangs and rebuild them for the entire language pool
+      document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(el => el.remove());
+
+      SUPPORTED_LOCALES.forEach(lang => {
+        const link = document.createElement('link');
+        link.rel = 'alternate';
+        link.hreflang = lang;
+        const prefix = lang === 'en' ? '' : `/${lang}`;
+        link.href = `https://randowheel.com${prefix}${pathSuffix}`;
+        document.head.appendChild(link);
+      });
+
+      // 3. Fallback globally
+      const xDefault = document.createElement('link');
+      xDefault.rel = 'alternate';
+      xDefault.hreflang = 'x-default';
+      xDefault.href = `https://randowheel.com${pathSuffix}`;
+      document.head.appendChild(xDefault);
     }
 
-    // Update meta robots
+    // Enforce Robot meta directions
     let metaRobots = document.querySelector('meta[name="robots"]');
-    if (to.meta.robots) {
-      if (!metaRobots) {
-        metaRobots = document.createElement('meta');
-        metaRobots.name = 'robots';
-        document.head.appendChild(metaRobots);
-      }
-      metaRobots.content = to.meta.robots;
-    } else {
-      if (!metaRobots) {
-        metaRobots = document.createElement('meta');
-        metaRobots.name = 'robots';
-        document.head.appendChild(metaRobots);
-      }
-      metaRobots.content = 'index, follow'; // default
+    if (!metaRobots) {
+      metaRobots = document.createElement('meta');
+      metaRobots.name = 'robots';
+      document.head.appendChild(metaRobots);
     }
+    metaRobots.content = to.meta.robots || 'index, follow';
   });
 });
 
-// Create and mount the app
-// Removed head management initialization
 const app = createApp(App);
 app.use(router);
+app.use(i18n);
 app.mount('#app');
-
-// Removed duplicated code below

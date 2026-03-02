@@ -1,0 +1,240 @@
+{
+  "header": {
+    "randomWheel": "Véletlenszerű kerék",
+    "wheelOfNames": "A nevek kereke",
+    "yesNoWheel": "Igen/Nem Kerék",
+    "embed": "Beágyaz",
+    "foodWheel": "Élelmiszer kerék",
+    "configureEmbed": "Beágyazható kerék konfigurálása"
+  },
+  "footer": {
+    "randoWheel": "Rando Wheel",
+    "copyright": "© {year} Wheel Spinner. Minden jog fenntartva.",
+    "privacyPolicy": "Adatvédelmi szabályzat",
+    "termsConditions": "Általános Szerződési Feltételek",
+    "otherWheels": "Egyéb kerekek"
+  },
+  "mainWheel": {
+    "winner": "Nyertes: {text} 🎉",
+    "spin": "Spin",
+    "inputs": "Bemenetek",
+    "reset": "Reset",
+    "shuffle": "Keverés",
+    "placeholder": "Írja be ide a szöveget...",
+    "spinTheWheel": "Forgasd meg a kereket",
+    "cursor": "Kurzor",
+    "cursorAngle": "Kurzor szöge",
+    "cursorDistance": "A kurzor távolsága",
+    "pleaseInclude": "Kérjük, tegyen be legalább egy elemet a kerékbe",
+    "copySuffix": "(másolat)"
+  },
+  "yesNoWheel": {
+    "yes": "IGEN",
+    "no": "NEM",
+    "maybe": "TALÁN",
+    "mode": "Mód",
+    "binaryMode": "IGEN vagy NEM",
+    "ternaryMode": "IGEN NEM vagy TALÁN",
+    "numInputSets": "Bemeneti készletek száma",
+    "resetResults": "Eredmények visszaállítása"
+  },
+  "exploreMore": {
+    "title": "Fedezzen fel további ingyenesen forgó kerekeket",
+    "descDefault": "Másfajta véletlenszerű válogatót keres? Tekintse meg további ingyenes kerékszerszámainkat:",
+    "descFood": "Más típusú döntéseket kell hoznia? Próbálja ki további eszközeinket:",
+    "rwTitle": "Random Wheel Spinner",
+    "rwDesc": "A tökéletes testreszabható kerék gyakorlatilag bármilyen választáshoz.",
+    "wonTitle": "A nevek kereke",
+    "wonDesc": "Tökéletes társ ajándékozáshoz, osztálytermi részvételhez vagy feladatok kiosztásához.",
+    "ynwTitle": "Igen / Nem Kerék",
+    "ynwDesc": "Egy egyszerű igen vagy nem pörgető a gyors bináris választások azonnali kezelésére."
+  },
+  "home": {
+    "mainTitle": "Random Wheel Spinner",
+    "whatIsTitle": "Mi az a Random Wheel?",
+    "whatIsDesc": "A Random Wheel egy interaktív eszköz, amely pörögve véletlenszerűen kiválaszt egy sor választási lehetőséget. Akár neveket, színeket, számokat választ, akár igen/nem válaszokat választ, egy véletlenszerű pörgető szórakoztató és tisztességes döntéshozatalt tesz lehetővé. Ideális játékokhoz, tombolákhoz, osztálytermi tevékenységekhez vagy egyszerűen a mindennapi döntések megkönnyítéséhez, a véletlenszerű kerekek egyszerűek, vonzóak és széles körben használhatók. Próbáljon ki egy véletlenszerű keréktárcsát, hogy izgalmasabbá tegye a következő döntését!",
+    "howWorksTitle": "Hogyan működik a véletlenszerű kerék?",
+    "howWorksDesc": "A Random Wheel egy több részre osztott digitális kerék pörgetésével működik, amelyek mindegyike egyedi opciót tartalmaz. Amikor a kerék megpördül, véletlenszerűen ezen szakaszok egyikére kerül, így elfogulatlan kiválasztást biztosít.",
+    "stepsTitle": "A véletlenszerű kerék használatának lépései:",
+    "step1Title": "Szöveg beszúrása:",
+    "step1Desc": "Jellemzően elemeket (például neveket, feladatokat vagy döntéseket) adhat hozzá egyenként, vagy beilleszthet egy teljes listát.",
+    "step2Title": "Pörgetés:",
+    "step2Desc": "Ha megvan a választása, és elégedett a megjelenéssel, kezdje el a pörgetést. Általában van egy átlátszó gomb, például \"Fordítsa meg a kereket!\".",
+    "stepsList": {
+      "1": "<strong>Adja meg az opciókat</strong> – Adjon hozzá neveket, számokat, színeket vagy lehetőségeket a kerékhez.",
+      "2": "<strong>Forgasd meg a kereket</strong> – Kattintson vagy koppintson a forgatás gombra a véletlenszerű kiválasztási folyamat elindításához.",
+      "3": "<strong>Szerezzen azonnali eredményeket</strong> – A kerék véletlenszerű választásra megáll, és megadja a választ.",
+      "4": "<strong>Ismétlés szükség szerint</strong> – Újra pörgetheti az új eredményeket, vagy testreszabhatja a kereket különböző döntésekhez."
+    },
+    "manageTitle": "Kezelje a kereket és az eredményeket",
+    "manageDesc": "Az adott eszköztől függően olyan funkciókat találhat, mint:",
+    "manageList": {
+      "modes": "<strong>Módok:</strong> Lehetséges, hogy különböző módokat választhat a kerék működéséhez, például az „Eltávolítás” módot, ahol a kiválasztott opciót a következő pörgetéshez eltávolítja.",
+      "editing": "<strong>Szerkesztés:</strong> A legtöbb eszköz lehetővé teszi a hozzáadott bejegyzések szerkesztését, másolását, elrejtését vagy törlését. Általában egyszerűen törölheti a teljes listát.",
+      "sharing": "<strong>Mentés/Megosztás:</strong> Gyakran elmentheti a kerék beállításait (néha fiókra van szükség), és megoszthatja másokkal egy link segítségével, vagy akár kódot is kérhet a beágyazáshoz.",
+      "results": "<strong>Eredmények:</strong> Egyes kerekek nyomon követhetik a korábbi eredményeket."
+    },
+    "otherToolsTitle": "Egyéb kerékszerszám",
+    "otherToolsDesc": "A fő véletlenszerű keréken kívül a véletlenszerű kerékhez számos speciális eszköz is készült.",
+    "otherToolsList": {
+      "names": "<strong>Névválasztók / Diákválasztók:</strong> Az oktatók gyakran használják az egyének véletlenszerű kiválasztására, néha „nevek kerekének” vagy „véletlen névválasztónak” nevezik.",
+      "yesno": "<strong>Igen/Nem kerekek:</strong> Egyszerű bináris döntésekhez.",
+      "food": "<strong>Food Wheel:</strong> Nem biztos benne, mitévő legyél? Forgassa meg az ételkereket a gyors véletlenszerű étkezési döntésekért."
+    },
+    "otherToolsOutro": "Mindegyik speciális verzió a véletlenszerű kiválasztás alapkoncepcióját veszi alapul, és a különböző igényekhez igazítja, így a tevékenységek szervezésétől a viták szórakoztató, pártatlan fordulattal történő rendezéséig mindenben használható."
+  },
+  "yesNoPage": {
+    "title": "Igen/Nem Kerékválasztó",
+    "heroTitle": "Hozz gyors igen/nem döntéseket",
+    "heroDesc": "Nem tud dönteni igen és nem között? Hagyja, hogy a mi kerekünk döntsön Ön helyett! Testreszabhatja a kereket különböző módokkal és beviteli készletekkel, hogy megtalálja a kívánt választ.",
+    "howToTitle": "Hogyan kell használni",
+    "steps": {
+      "1": "Válasszon a \"IGEN vagy NEM\" mód vagy a \"IGEN NEM vagy TALÁN\" mód közül",
+      "2": "Válassza ki a bemeneti készletek számát (1-5) a valószínűségi eloszlás beállításához",
+      "3": "Kattintson a \"Pörgetés\" gombra, hogy megkapja a választ",
+      "4": "Az eredmény kiemelve lesz, és a fenti mezőkbe beszámítja",
+      "5": "Az \"Eredmények visszaállítása\" gombbal törölje az összes számlálót"
+    },
+    "seoTitle": "Miért használjunk igen/nem kereket?",
+    "seoDesc1": "Az élet tele van választásokkal, és néha a legegyszerűbbek a legnehezebbek. Igen/Nem keréktárcsánk tökéletes döntéshozó, ha elakad. Ez egy szórakoztató és gyors módja annak, hogy véletlenszerű választást kapjon, gyors igen vagy nem generátorként.",
+    "seoList": {
+      "1": "<strong>Viták rendezése:</strong> Gyorsan oldja meg a baráti vitákat.",
+      "2": "<strong>Gyors döntések meghozatala:</strong> Könnyedén dönthet vacsoráról, filmestről vagy egyszerű napi döntésekről.",
+      "3": "<strong>Szórakozás hozzáadása:</strong> adjon véletlenszerűséget és izgalmat a csoporttevékenységekbe.",
+      "4": "<strong>Győzd le a határozatlanságot:</strong> Hagyd, hogy a kerék kitörje a holtpontról, ha valóban bizonytalan vagy."
+    },
+    "seoDesc2": "Függetlenül attól, hogy egy egyszerű igenre vagy nemre van szüksége, vagy a „talán” szót szeretné hozzáadni az árnyaltság növeléséhez, ez a szórakoztató döntési eszköz azonnal elfogulatlan választ ad. Pörgesd meg a kereket, és hagyd, hogy a sors döntsön!",
+    "moreTitle": "Az egyszerű választásokon túl: több felhasználás",
+    "moreDesc": "Bár nagyszerű az egyszerű igen/nem kérdésekre, ez az eszköz meglepően sokoldalú lehet:",
+    "moreList": {
+      "1": "<strong>Tanulási és tanulmányi segédlet:</strong> Tedd fel magad! Keret kérdéseket igen/nem válaszokkal és pörgetéssel.",
+      "2": "<strong>Kreatív felszólítások:</strong> Elakadt egy történet vagy projekt? Használja a kereket bináris kreatív döntésekhez.",
+      "3": "<strong>Szokások megtörése:</strong> Megpróbálja eldönteni, hogy engedjen-e egy kisebb kísértésnek? Hagyja, hogy a kerék adjon egy réteg esélyt.",
+      "4": "<strong>Tisztességes körváltás:</strong> Használd a játékokban, hogy eldöntsd, ki következzen."
+    },
+    "powerTitle": "A véletlenszerűség ereje",
+    "powerDesc": "A kerekünk megbízható pszeudo-véletlenszám-generátort használ, hogy minden pörgés igazságos és kiszámíthatatlan legyen. Ez eltávolítja a személyes elfogultságot az egyszerű döntésekből, és valóban pártatlan döntéshozóvá válik. Néha az apró döntések véletlenre bízása mentális energiát szabadíthat fel fontosabb ügyekre! Az opcionális „Talán” rugalmasságot biztosít azokban az esetekben, amikor egy egyszerű igen vagy nem nem elég."
+  },
+  "foodPage": {
+    "title": "Élelmiszer kerék",
+    "heroTitle": "Élelmiszerkerék – mit egyek?",
+    "heroDesc": "Nem tudod eldönteni, mit egyél ebédre vagy vacsorára? Pörgesd meg a<strong>Food Wheel</strong>t, és hagyd, hogy a sors döntsön! Akár pizzára, sushira, akár egészséges salátára vágyik, egyszerűen adja hozzá a lehetőségeket, pörgesse meg a kormányt, és már kész is az étel.",
+    "howToTitle": "A Food Wheel használata",
+    "steps": {
+      "1": "<strong>Cravings and Options hozzáadása</strong> – Írja be az egyes ételek vagy éttermek nevét, majd kattintson a <em>+</em> gombra.",
+      "2": "<strong>Színek testreszabása</strong> – Kattintson bármely étel melletti színmintára a szelet színének módosításához.",
+      "3": "<strong>Forgassa meg a kereket</strong> – Kattintson a <em>Forgassa meg a kereket</em> vagy a kerék középső gombjára.",
+      "4": "<strong>Nézd meg a nyertest</strong> – A kiválasztott étel megjelenik a kerék felett 🎉 ünnepléssel. Végre abbahagyhatod a vitát és elkezdhetsz enni!",
+      "5": "<strong>Újra pörgetés</strong> – Még mindig nem vagy meggyőződve? Pörgessen tovább, vagy távolítsa el a nem tetsző lehetőségeket az <em>Eltávolítás</em> funkcióval."
+    },
+    "seoTitle": "Mi az a Food Wheel?",
+    "seoDesc": "Az <strong>Food Wheel</strong> egy digitális forgókerék, amelyet kifejezetten arra használnak, hogy véletlenszerű ételeket, éttermeket vagy konyhákat válasszunk a listáról. Megoldja a klasszikus \"Mit akarsz enni?\" probléma.",
+    "seoList": {
+      "1": "<strong>Az étterem döntése</strong> – Nem tud megegyezni az étteremben? Adja hozzá az 5 legjobb választási lehetőséget, és hagyja, hogy a kerék válasszon.",
+      "2": "<strong>Étkezési rulett</strong> – Tedd szórakoztatóvá a főzést a fehérjék, szénhidrátok és zöldségek pörgetésével.",
+      "3": "<strong>Takeout randomizer</strong> – Pizza? Kínai? Thai? Pörgessen, amikor csak vágyakozik.",
+      "4": "<strong>Irodai étkeztetés</strong> – Hagyja, hogy a csapat bemutassa a lehetőségeket, és használja a kereket az ételek kiválasztásához."
+    },
+    "whyTitle": "Miért használja Food Wheel-ünket?",
+    "whyDesc": "Hagyja ki a végtelen görgetést a kézbesítő alkalmazásoknál. Élelmiszerkerékünk segít gyorsan és igazságosan dönteni:",
+    "features": {
+      "1Title": "Fejezd be a vitát",
+      "1Desc": "Nincs több \"Nem tudom, mit akarsz?\" Pörgesd meg a kereket, és a döntés azonnal megszületik.",
+      "2Title": "Azonnali beállítás",
+      "2Desc": "Nincs szükség fiókra. Nyissa meg az oldalt, írja be az étkezési lehetőségeket, és azonnal forgassa meg.",
+      "3Title": "Teljesen testreszabható",
+      "3Desc": "Adjon hozzá hangulatjeleket, változtassa meg a szeletek színét az ételhez illően, és zárjon ki lehetőségeket.",
+      "4Title": "Tisztességes eredmények",
+      "4Desc": "A kriptográfiailag biztonságos véletlenszerűség azt jelenti, hogy valójában elfogulatlan dobást kap.",
+      "5Title": "Mobilon működik",
+      "5Desc": "Tökéletes választás útközben. A teljesen reszponzív kialakítás bármilyen telefonon jól mutat.",
+      "6Title": "100% ingyenes",
+      "6Desc": "Élelmiszerkerékünk mindig ingyenes, fizetőfalak és regisztrációk nélkül."
+    },
+    "faqTitle": "Gyakran Ismételt Kérdések",
+    "faqs": {
+      "1Title": "Működik a Food Wheel a telefonomon?",
+      "1Desc": "Igen! A Food Wheel teljesen mobilbarát.",
+      "2Title": "Valóban véletlenszerűek az eredmények?",
+      "2Desc": "Igen. Minden pörgetés robusztus pszeudo-véletlenszerű algoritmust használ, hogy garantálja, hogy minden ételre egyenlő esély van.",
+      "3Title": "Elmenthetem a kedvenc étellistáimat?",
+      "3Desc": "Amíg nyitva tartja a böngésző lapot, a listák aktívak maradnak. Javasoljuk, hogy vegye fel az oldalt könyvjelzővel."
+    }
+  },
+  "namesPage": {
+    "title": "A nevek kereke",
+    "heroTitle": "Nevek kereke – Ingyenes véletlenszerű névválasztó",
+    "heroDesc": "Írjon be egy tetszőleges nevet, pörgesse meg a kereket, és hagyja, hogy a sors másodpercek alatt kiválasztja a győztest. Akár egy <strong>véletlenszerű névválasztóra</strong> van szüksége az osztálytermébe, akár igazságos sorsolásra van szüksége egy nyereményjátékhoz, akár egy gyors módszerre, amellyel feladatokat oszthat ki csapatának – ez az ingyenes nevek kereke mindent megtalál. Nincs regisztráció, nincs letöltés, minden eszközön működik.",
+    "howToTitle": "Hogyan használjuk a nevek kerekét",
+    "steps": {
+      "1": "<strong>Nevek hozzáadása</strong> – Írjon be minden nevet a beviteli mezőbe, és nyomja meg az <em>Enter</em> billentyűt.",
+      "2": "<strong>Színek testreszabása</strong> – Kattintson bármelyik név melletti színmintára.",
+      "3": "<strong>Forgassa meg a kereket</strong> – Kattintson a <em>Forgassa meg a kereket</em> vagy a középső gombra.",
+      "4": "<strong>Nézd meg a nyertest</strong> – A kiválasztott név a kerék felett 🎉 ünnepléssel jelenik meg. A nyeremények száma nyomon követi, hogy az egyes neveket hányszor választották ki.",
+      "5": "<strong>Újra pörgetés</strong> – Pörögj tovább több körön keresztül. A <em>Kizárás</em> használatával távolíthatja el a nyerteseket a jövőbeli pörgetésekből, vagy használja a <em>Reset</em> parancsot az újrakezdéshez."
+    },
+    "seoTitle": "Mi az a nevek kereke?",
+    "seoDesc": "A <strong>Nevek kereke</strong> egy digitális forgó kerék, amelyet előre terveztek véletlenszerű nevek listáról történő kiválasztására. Ugyanúgy működik, mint a klasszikus nyereménykerék – bármilyen nevet adsz hozzá, kattints a pörgetésre, és a kerék véletlenszerűen a nyerteshez kerül.",
+    "seoList": {
+      "1": "<strong>Véletlenszerű névválasztó az osztályteremben</strong> – A tanárok egy névkerék segítségével hívják fel a tanulókat elfogultság nélkül.",
+      "2": "<strong>Ajándékozások és versenyek</strong> – Ajándékot szervez a közösségi médiában? Adja hozzá az összes résztvevő nevét, és forgassa.",
+      "3": "<strong>Csapatválasztás</strong> – Véletlenszerűen osszuk fel a játékosokat csapatokra, válasszunk csapatkapitányt, vagy osszuk ki a szerepeket.",
+      "4": "<strong>Irodai játékok és jégtörők</strong> – Ki mutat be először? Ki hoz holnap kávét? Hagyja, hogy a kerék döntsön."
+    },
+    "whyTitle": "Miért használjuk a nevek kerekét?",
+    "whyDesc": "Számos névválasztó eszköz található az interneten, de a mi néhány fő okból kiemelkedik:",
+    "features": {
+      "1Title": "Valóban véletlenszerű",
+      "1Desc": "Egy kriptográfiailag beoltott pszeudo-véletlenszám-generátort használunk annak biztosítására, hogy minden pörgés teljesen kiszámíthatatlan legyen.",
+      "2Title": "Azonnali beállítás",
+      "2Desc": "Nincs szükség fiókra. Nyissa meg az oldalt, írja be a nevét, és forgassa. A teljes folyamat kevesebb mint 30 másodpercet vesz igénybe.",
+      "3Title": "Teljesen testreszabható",
+      "3Desc": "Módosítsa a szeletek színét, rendezze át a neveket, ismételje meg a bejegyzéseket a súlyozott eredményekhez, vagy zárjon ki bizonyos neveket.",
+      "4Title": "Nyereménykövetés",
+      "4Desc": "A kerék nyomon követi, hogy az egyes neveket hányszor választották ki több körben.",
+      "5Title": "Bármilyen eszközön működik",
+      "5Desc": "A teljesen reszponzív kialakítás azt jelenti, hogy a kerék remekül néz ki és működik telefonokon, táblagépeken és asztali számítógépeken egyaránt.",
+      "6Title": "Mindig ingyenes",
+      "6Desc": "Nincsenek hirdetések, amelyek megszakítanák a pörgést, nincsenek prémium szintek és nincs előfizetés. 100% ingyenes, örökre."
+    },
+    "tipsTitle": "Tippek, hogyan hozhatja ki a legtöbbet névkerékből",
+    "tips": {
+      "1Title": "Súlyozott névválasztás",
+      "1Desc": "Növelni szeretné egy adott név kiválasztásának esélyét? Egyszerűen adja hozzá ezt a nevet többször a <em>Másolás</em> gombbal. Minden ismétlődő bejegyzés saját szeletet kap, ami gyakorlatilag megduplázza (vagy megháromszorozza) annak a valószínűségét, hogy a személy kiválasztásra kerül.",
+      "2Title": "Eliminációs mód",
+      "2Desc": "Verseny, vetélkedő vagy tombola? Használja a <em>Kizárás</em> gombot az egyes nyertesek eltávolításához a következő pörgetésekből. Ez biztosítja, hogy minden résztvevő csak egyszer nyerjen.",
+      "3Title": "Shuffle for Fairness",
+      "3Desc": "If you re-use the same list of names regularly, hit the <em>Shuffle</em> button before spinning. Shuffling randomises the starting order of slices.",
+      "4Title": "Save Your Name List",
+      "4Desc": "Need the same names every lesson or meeting? Simply keep the browser tab open — the names stay on the wheel until you reset or close the page."
+    },
+    "faqTitle": "Frequently Asked Questions",
+    "faqs": {
+      "1Title": "Is the Wheel of Names completely random?",
+      "1Desc": "Yes. Each spin uses JavaScript's Math.random() function, which generates a pseudo-random number to determine the winning slice.",
+      "2Title": "How many names can I add to the wheel?",
+      "2Desc": "There is no hard limit. The wheel automatically resizes each slice to fit all entries. For best readability, we recommend keeping it under 50 names.",
+      "3Title": "Can I save my wheel of names?",
+      "3Desc": "A neveket mindaddig tároljuk, amíg az oldal nyitva van. A nevek hozzáadása után vegye fel az oldalt a könyvjelzők közé – ha újra megnyitja ugyanazt a lapot a legtöbb böngészőben, az visszaállítja az állapotot.",
+      "4Title": "Működik a nevek kereke mobilon?",
+      "4Desc": "Teljesen. A kerék teljesen érzékeny, és működik iOS-en, Androidon és bármely modern mobilböngészőn.",
+      "5Title": "Mi a különbség a nevek kereke és a véletlenszerű névgenerátor között?",
+      "5Desc": "A <em>véletlenszerű névgenerátor</em> általában kitalált neveket hoz létre egy adatbázisból. A nevek kereke az <em>Ön</em> megadott nevek közül választ.",
+      "6Title": "Használhatom ezt véletlenszerű diákválasztóként?",
+      "6Desc": "Igen – ez az egyik legnépszerűbb felhasználás. A tanárok hozzáadják az osztálylistájukat, majd megpörgetik a kereket, hogy felhívják a tanulót."
+    }
+  },
+  "embed": {
+    "loading": "Kerékkonfiguráció betöltése...",
+    "instructions": "Használja az alábbi vezérlőket a kerék tartalmának és megjelenésének beállításához. Ezután konfigurálja a beágyazási beállításokat, és hozza létre a kódot, hogy elhelyezze a webhelyén.",
+    "settingsTitle": "Beágyazási beállítások",
+    "titleLabel": "Cím (a hozzáférhetőség érdekében):",
+    "widthLabel": "Szélesség (px):",
+    "heightLabel": "Magasság (px):",
+    "codeTitle": "Kód beágyazása",
+    "codeDesc": "Másolja ki az alábbi kódot a konfigurált kerék beágyazásához a webhelyén:",
+    "generateBtn": "Beágyazási kód generálása",
+    "errConfigure": "Hiba a kód generálásakor. Kérjük, először konfigurálja a kereket.",
+    "errEmpty": "A beágyazási kód generálása előtt adjon hozzá legalább egy elemet a kerékhez."
+  }
+}

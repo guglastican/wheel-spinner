@@ -3,7 +3,7 @@
     <div class="main-content">
       <div class="wheel-container">
         <h2 v-if="winnerResult" class="winner-text">
-          Winner: {{ winnerResult.text }} 🎉
+          {{ $t('mainWheel.winner').replace('{text}', winnerResult.text) }}
         </h2>
         <div class="wheel-wrapper" :style="wheelWrapperStyle">
           <VueWheelSpinner
@@ -36,7 +36,7 @@
                 @click="handleSpinButtonClick"
                 :disabled="isSpinning"
                 class="spin-center-button">
-                Spin
+                {{ $t('mainWheel.spin') }}
               </button>
             </template>
           </VueWheelSpinner>
@@ -50,7 +50,7 @@
             <div class="header-content">
               <h2 class="section-title">
                 <span class="title-icon">🎯</span>
-                Inputs
+                {{ $t('mainWheel.inputs') }}
                 <span class="item-count-badge">{{ slices.length }}</span>
               </h2>
               <div class="header-actions">
@@ -59,7 +59,7 @@
                     <svg viewBox="0 0 24 24" width="24" height="24">
                       <path d="M17.65 6.35A7.958 7.958 0 0 0 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z" />
                     </svg>
-                    <span class="btn-label">Reset</span>
+                    <span class="btn-label">{{ $t('mainWheel.reset') }}</span>
                   </div>
                 </button>
                 <button class="icon-btn action-btn shuffle-btn" title="Shuffle" @click="shuffleItems">
@@ -67,7 +67,7 @@
                     <svg viewBox="0 0 24 24" width="24" height="24">
                       <path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z" />
                     </svg>
-                    <span class="btn-label">Shuffle</span>
+                    <span class="btn-label">{{ $t('mainWheel.shuffle') }}</span>
                   </div>
                 </button>
               </div>
@@ -80,7 +80,7 @@
             <input
               type="text"
               v-model="newItemText"
-              placeholder="Input text here..."
+              :placeholder="$t('mainWheel.placeholder')"
               class="form-control"
               @keyup.enter="addNewItem" />
             <button class="add-btn" @click="addNewItem" title="Add item">
@@ -139,15 +139,15 @@
           </div>
 
           <button @click="spinWheel" class="btn btn-primary spin-btn" :disabled="isSpinning">
-            Spin the Wheel
+            {{ $t('mainWheel.spinTheWheel') }}
           </button>
         </section>
 
         <!-- Cursor Section -->
         <section class="control-section">
-          <h2>Cursor</h2>
+          <h2>{{ $t('mainWheel.cursor') }}</h2>
           <div class="control-group">
-            <label>Cursor Angle</label>
+            <label>{{ $t('mainWheel.cursorAngle') }}</label>
             <div class="input-group">
               <input
                 type="number"
@@ -179,7 +179,7 @@
           </div>
 
           <div class="control-group">
-            <label>Cursor Distance</label>
+            <label>{{ $t('mainWheel.cursorDistance') }}</label>
             <input
               type="number"
               v-model.number="cursorDistance"
@@ -253,7 +253,7 @@ export default {
 
       // Check if there are any included slices
       if (includedSlices.length === 0) {
-        alert("Please include at least one item in the wheel");
+        alert(this.$t('mainWheel.pleaseInclude'));
         return;
       }
 
@@ -336,7 +336,7 @@ export default {
       const originalItem = this.slices[index];
       const newItem = {
         color: originalItem.color,
-        text: `${originalItem.text} (copy)`,
+        text: `${originalItem.text} ${this.$t('mainWheel.copySuffix')}`,
         winCount: 0,
         included: originalItem.included !== false
       };

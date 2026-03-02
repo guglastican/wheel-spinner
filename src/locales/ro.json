@@ -1,0 +1,240 @@
+{
+  "header": {
+    "randomWheel": "Roată aleatorie",
+    "wheelOfNames": "Roata Numelor",
+    "yesNoWheel": "Da/Nu Roata",
+    "embed": "Încorporați",
+    "foodWheel": "Roata Alimentelor",
+    "configureEmbed": "Configurați roata incorporabilă"
+  },
+  "footer": {
+    "randoWheel": "Roata Rando",
+    "copyright": "© {an} Wheel Spinner. Toate drepturile rezervate.",
+    "privacyPolicy": "Politica de confidențialitate",
+    "termsConditions": "Termeni și condiții",
+    "otherWheels": "Alte roți"
+  },
+  "mainWheel": {
+    "winner": "Câștigător: {text} 🎉",
+    "spin": "Învârtiți",
+    "inputs": "Intrări",
+    "reset": "Resetați",
+    "shuffle": "Amesteca",
+    "placeholder": "Introdu textul aici...",
+    "spinTheWheel": "Învârte roata",
+    "cursor": "Cursor",
+    "cursorAngle": "Unghiul cursorului",
+    "cursorDistance": "Distanța cursorului",
+    "pleaseInclude": "Vă rugăm să includeți cel puțin un articol în roată",
+    "copySuffix": "(copie)"
+  },
+  "yesNoWheel": {
+    "yes": "DA",
+    "no": "NU",
+    "maybe": "POT FI",
+    "mode": "Modul",
+    "binaryMode": "Da sau nu",
+    "ternaryMode": "DA NU sau POATE",
+    "numInputSets": "Numărul de seturi de intrare",
+    "resetResults": "Resetarea rezultatelor"
+  },
+  "exploreMore": {
+    "title": "Explorați mai multe roți de învârtire gratuite",
+    "descDefault": "Căutați un alt tip de selectator aleatoriu? Consultați celelalte instrumente pentru roți libere ale noastre:",
+    "descFood": "Trebuie să iei alte tipuri de decizii? Încercați celelalte instrumente ale noastre:",
+    "rwTitle": "Random Wheel Spinner",
+    "rwDesc": "Cea mai personalizată roată pentru practic orice alegere.",
+    "wonTitle": "Roata Numelor",
+    "wonDesc": "Un partener perfect pentru cadouri, participarea la clasă sau atribuirea de sarcini.",
+    "ynwTitle": "Da / Nu Roata",
+    "ynwDesc": "Un simplu spinner da sau nu pentru a gestiona instantaneu alegerile binare rapide."
+  },
+  "home": {
+    "mainTitle": "Random Wheel Spinner",
+    "whatIsTitle": "Ce este o roată aleatorie?",
+    "whatIsDesc": "O roată aleatorie este un instrument interactiv care se rotește pentru a face o selecție aleatorie dintr-un set de opțiuni. Indiferent dacă alegeți nume, culori, numere sau răspunsuri da/nu, un rotitor la întâmplare adaugă distracție și corectitudine în luarea deciziilor. Ideale pentru jocuri, tombole, activități în clasă sau pur și simplu pentru a face alegerile de zi cu zi mai ușoare, roțile aleatorii sunt simple, captivante și utilizate pe scară largă. Încercați o roată de roată aleatorie pentru a adăuga entuziasm la următoarea decizie!",
+    "howWorksTitle": "Cum funcționează o roată aleatorie?",
+    "howWorksDesc": "O roată aleatorie funcționează prin rotirea unei roți digitale împărțite în mai multe secțiuni, fiecare conținând o opțiune unică. Când roata este rotită, aterizează aleatoriu pe una dintre aceste secțiuni, oferind o selecție imparțială.",
+    "stepsTitle": "Pași pentru a utiliza o roată aleatorie:",
+    "step1Title": "Inserați text:",
+    "step1Desc": "De obicei, puteți adăuga elemente (cum ar fi nume, sarcini sau decizii) unul câte unul sau puteți lipi o listă întreagă.",
+    "step2Title": "Rotire:",
+    "step2Desc": "Odată ce alegerile tale sunt făcute și ești mulțumit de aspect, doar inițiază rotirea. Există de obicei un buton clar, cum ar fi „Întoarce roata!”.",
+    "stepsList": {
+      "1": "<strong>Introduceți opțiunile dvs.</strong> – Adăugați nume, numere, culori sau opțiuni la roată.",
+      "2": "<strong>Rotiți roata</strong> – Faceți clic sau atingeți butonul de rotire pentru a începe procesul de selecție aleatorie.",
+      "3": "<strong>Obține rezultate instantanee</strong> – roata se oprește la o alegere aleatorie, oferind răspunsul tău.",
+      "4": "<strong>Repetați după cum este necesar</strong> – puteți roti din nou pentru rezultate noi sau puteți personaliza roata pentru diferite decizii."
+    },
+    "manageTitle": "Gestionați-vă roata și rezultatele",
+    "manageDesc": "În funcție de instrumentul specific, este posibil să găsiți funcții precum:",
+    "manageList": {
+      "modes": "<strong>Moduri:</strong> este posibil să puteți alege diferite moduri de funcționare a roții, cum ar fi modul „Eliminare” în care opțiunea aleasă este eliminată pentru următoarea rotire.",
+      "editing": "<strong>Editare:</strong> majoritatea instrumentelor vă permit să editați, să duplicați, să ascundeți sau să ștergeți intrările pe care le-ați adăugat. De asemenea, puteți șterge cu ușurință întreaga listă.",
+      "sharing": "<strong>Salvare/Partajare:</strong> puteți salva adesea configurația roții (uneori necesită un cont) și o puteți partaja altora folosind un link sau poate chiar să obțineți cod pentru a o încorpora.",
+      "results": "<strong>Rezultate:</strong> unele roți pot urmări rezultatele anterioare."
+    },
+    "otherToolsTitle": "Alt instrument de roată",
+    "otherToolsDesc": "În afară de roata aleatorie principală, există și mai multe instrumente specializate ale roții aleatorii create.",
+    "otherToolsList": {
+      "names": "<strong>Selectori de nume/Selectori de elevi:</strong> utilizate în mod obișnuit de educatori pentru a selecta aleatoriu persoane, denumite uneori „Roata numelor” sau „Selector aleatoriu de nume”.",
+      "yesno": "<strong>Da/Nu Roți:</strong> pentru decizii binare simple.",
+      "food": "<strong>Roata alimentelor:</strong> nu sunteți sigur ce să mâncați? Rotiți roata alimentelor pentru a lua decizii rapide ale mesei."
+    },
+    "otherToolsOutro": "Fiecare versiune specializată preia conceptul de bază al selecției aleatorii și îl adaptează pentru a răspunde nevoilor distincte, făcându-le la îndemână pentru orice, de la organizarea activităților până la aranjarea dezbaterilor cu o întorsătură distractivă și imparțială."
+  },
+  "yesNoPage": {
+    "title": "Da/Nu Selector de roți",
+    "heroTitle": "Luați decizii rapide da/nu",
+    "heroDesc": "Nu poți decide între da și nu? Lasă roata noastră să decidă pentru tine! Personalizați roata cu diferite moduri și seturi de intrare pentru a obține răspunsul de care aveți nevoie.",
+    "howToTitle": "Cum se utilizează",
+    "steps": {
+      "1": "Alegeți între modul „DA sau NU” sau modul „DA NU sau POATE”.",
+      "2": "Selectați numărul de seturi de intrare (1-5) pentru a ajusta distribuția probabilității",
+      "3": "Faceți clic pe butonul „Rotire” pentru a obține răspunsul",
+      "4": "Rezultatul va fi evidențiat și numărat în casetele de mai sus",
+      "5": "Utilizați butonul „Resetare rezultate” pentru a șterge toate contoarele"
+    },
+    "seoTitle": "De ce să folosiți o roată Da/Nu?",
+    "seoDesc1": "Viața este plină de alegeri, iar uneori cele mai simple sunt cele mai grele. Spinnerul nostru cu roți Da/Nu este factorul perfect de decizie atunci când ești blocat. Este o modalitate distractivă și rapidă de a obține o alegere aleatorie, acționând ca un generator rapid de da sau nu.",
+    "seoList": {
+      "1": "<strong>Rezolvați dezbaterile:</strong> rezolvați rapid argumentele prietenoase.",
+      "2": "<strong>Luați decizii rapide:</strong> decideți fără efort cina, seara de film sau alegeri simple zilnice.",
+      "3": "<strong>Adăugați distracție:</strong> injectați aleatoriu și entuziasm în activitățile de grup.",
+      "4": "<strong>Depășiți indecizia:</strong> lăsați roata să rupă impas atunci când sunteți cu adevărat indecis."
+    },
+    "seoDesc2": "Indiferent dacă aveți nevoie de un simplu da sau nu, sau doriți să adăugați „poate” pentru mai multe nuanțe, acest instrument de decizie distractiv oferă instantaneu un răspuns imparțial. Învârte roata și lasă soarta să decidă!",
+    "moreTitle": "Dincolo de alegeri simple: mai multe utilizări",
+    "moreDesc": "Deși excelent pentru întrebări simple da/nu, acest instrument poate fi surprinzător de versatil:",
+    "moreList": {
+      "1": "<strong>Ajutor pentru învățare și studiu:</strong> Testați-vă! Încadrați întrebările cu un răspuns da/nu și rotiți.",
+      "2": "<strong>Indemnuri pentru reclame:</strong> ați rămas blocat într-o poveste sau un proiect? Utilizați roata pentru decizii creative binare.",
+      "3": "<strong>Încălcarea obiceiurilor:</strong> Încercați să decideți dacă vă lăsați o tentație minoră? Lasă roata să adauge un strat de șansă.",
+      "4": "<strong>Trebuie corectă:</strong> folosește-l în jocuri pentru a decide cine urmează."
+    },
+    "powerTitle": "Puterea aleatoriei",
+    "powerDesc": "Roata noastră folosește un generator de numere pseudoaleatoare fiabil pentru a se asigura că fiecare rotire este corectă și imprevizibilă. Acest lucru înlătură părtinirile personale din deciziile simple, făcându-l un factor de decizie cu adevărat imparțial. Uneori, lăsarea micilor alegeri la voia întâmplării poate elibera energie mentală pentru chestiuni mai importante! Opționalul „Poate” adaugă flexibilitate pentru acele momente în care un simplu da sau nu nu este suficient."
+  },
+  "foodPage": {
+    "title": "Roata Alimentelor",
+    "heroTitle": "Roata alimentelor - Ce ar trebui să mănânc?",
+    "heroDesc": "Nu poți decide ce să mănânci la prânz sau la cină? Învârte <strong>Roata de mâncare</strong> și lasă soarta să decidă! Indiferent dacă îți este pofta de pizza, sushi sau cauți o salată sănătoasă, doar adaugă opțiunile tale, dă-ți roata o rotire și masa ta este gata.",
+    "howToTitle": "Cum se folosește roata alimentară",
+    "steps": {
+      "1": "<strong>Adăugați pofte și opțiuni</strong> — Introduceți fiecare nume de mâncare sau restaurant și faceți clic pe butonul <em>+</em>.",
+      "2": "<strong>Personalizați culorile</strong> — Faceți clic pe eșantionul de culoare de lângă orice aliment pentru a schimba culoarea feliei.",
+      "3": "<strong>Rotiți roata</strong> — Faceți clic pe <em>Întoarceți roata</em> sau pe butonul central de pe roată.",
+      "4": "<strong>Vezi câștigătorul</strong> — Mâncarea aleasă apare deasupra roții cu o sărbătoare 🎉. Poți în sfârșit să te oprești din dezbateri și să începi să mănânci!",
+      "5": "<strong>Rotiți din nou</strong> — Încă nu sunteți convins? Continuați să rotiți sau eliminați opțiunile care nu vă plac folosind funcția <em>Eliminați</em>."
+    },
+    "seoTitle": "Ce este o roată alimentară?",
+    "seoDesc": "O <strong>Roată pentru alimente</strong> este o roată digitală care se învârte în mod special pentru a alege la întâmplare mese, restaurante sau bucătării dintr-o listă. Rezolvă clasicul „Ce vrei să mănânci?” problemă.",
+    "seoList": {
+      "1": "<strong>Hotărâtor restaurant</strong> — Nu puteți fi de acord cu un restaurant? Adăugați primele 5 opțiuni și lăsați roata să aleagă.",
+      "2": "<strong>Ruletă de pregătire a mesei</strong> — Fă gătitul distractiv prin rotirea pentru proteine, carbohidrați și legume.",
+      "3": "<strong>Dispozitiv aleatoriu pentru mâncare la pachet</strong> — Pizza? Chinez? thailandeză? Învârte ori de câte ori ai pofte.",
+      "4": "<strong>Catering pentru petreceri la birou</strong> — Lăsați echipa să trimită opțiuni și folosiți roata pentru a decide mâncarea."
+    },
+    "whyTitle": "De ce să folosim roata noastră alimentare?",
+    "whyDesc": "Sari peste derularea nesfârșită a aplicațiilor de livrare. Roata noastră de alimente vă ajută să decideți rapid și corect:",
+    "features": {
+      "1Title": "Încheiați Dezbaterea",
+      "1Desc": "Nu mai \"Nu știu, ce vrei?\" Învârti roata și decizia se ia instantaneu.",
+      "2Title": "Configurare instantanee",
+      "2Desc": "Nu este nevoie de cont. Deschideți pagina, introduceți opțiunile alimentare și rotiți imediat.",
+      "3Title": "Complet personalizabil",
+      "3Desc": "Adăugați emoji, schimbați culorile feliilor pentru a se potrivi cu mâncarea și excludeți opțiuni.",
+      "4Title": "Rezultate corecte",
+      "4Desc": "Aleatoritatea sigură criptografic înseamnă că obțineți de fapt un rol imparțial.",
+      "5Title": "Funcționează pe mobil",
+      "5Desc": "Perfect pentru a decide din mers. Designul complet receptiv arată grozav pe orice telefon.",
+      "6Title": "100% gratuit",
+      "6Desc": "Food Wheel este întotdeauna gratuit, fără plăți sau înscrieri necesare."
+    },
+    "faqTitle": "Întrebări frecvente",
+    "faqs": {
+      "1Title": "Funcționează roata alimentelor pe telefonul meu?",
+      "1Desc": "Da! Food Wheel este complet compatibil cu dispozitivele mobile.",
+      "2Title": "Sunt rezultatele cu adevărat aleatorii?",
+      "2Desc": "Da. Fiecare rotire folosește un algoritm robust pseudo-aleatoriu pentru a garanta că fiecare opțiune alimentară are șanse egale.",
+      "3Title": "Pot să-mi salvez listele cu alimente preferate?",
+      "3Desc": "Atâta timp cât păstrați fila browserului deschisă, listele dvs. rămân active. Vă recomandăm să marcați pagina."
+    }
+  },
+  "namesPage": {
+    "title": "Roata Numelor",
+    "heroTitle": "Roata numelor — Selector de nume aleatoriu gratuit",
+    "heroDesc": "Introdu orice nume, dă roata o rotire și lasă soarta să aleagă un câștigător în câteva secunde. Indiferent dacă aveți nevoie de un <strong>selector aleatoriu de nume</strong> pentru sala dvs. de clasă, de o extragere corectă pentru un cadou sau de o modalitate rapidă de a atribui sarcini echipei dvs. - această roată gratuită a numelor vă acoperă. Fără înregistrare, fără descărcare, funcționează pe orice dispozitiv.",
+    "howToTitle": "Cum se folosește roata numelor",
+    "steps": {
+      "1": "<strong>Adăugați nume</strong> — introduceți fiecare nume în caseta de introducere și apăsați pe <em>Enter</em>.",
+      "2": "<strong>Personalizați culorile</strong> — faceți clic pe eșantionul de culoare de lângă orice nume.",
+      "3": "<strong>Rotiți roata</strong> — Faceți clic pe <em>Rotiți roata</em> sau pe butonul central.",
+      "4": "<strong>Vezi câștigătorul</strong> — Numele ales apare deasupra roții cu o sărbătoare 🎉. Numărul de câștiguri urmărește de câte ori a fost ales fiecare nume.",
+      "5": "<strong>Rotiți din nou</strong> — Continuați să vă învârtiți pentru mai multe runde. Folosiți <em>Excludeți</em> pentru a elimina câștigătorii din rotiri viitoare sau <em>Resetați</em> pentru a începe din nou."
+    },
+    "seoTitle": "Ce este o roată a numelor?",
+    "seoDesc": "O <strong>Roată a numelor</strong> este o roată digitală care se învârte pre-proiectată pentru a alege nume aleatorii dintr-o listă. Funcționează la fel ca o roată clasică de premii - adăugați orice nume doriți, faceți clic pe rotire și roata ajunge la un câștigător la întâmplare.",
+    "seoList": {
+      "1": "<strong>Selector aleatoriu de nume pentru clasă</strong> — profesorii folosesc o roată de nume pentru a apela elevilor fără părtinire.",
+      "2": "<strong>Giveaways și concursuri</strong> — Organizați un giveaway pe rețelele sociale? Adăugați numele tuturor participanților și rotiți.",
+      "3": "<strong>Selectarea echipei</strong> — Împărțiți aleatoriu jucătorii în echipe, alegeți un căpitan de echipă sau atribuiți roluri.",
+      "4": "<strong>Jocuri de birou și spărgătoare de gheață</strong> — Cine prezintă primul? Cine aduce cafeaua mâine? Lasă roata să decidă."
+    },
+    "whyTitle": "De ce să folosim roata noastră de nume?",
+    "whyDesc": "Există multe instrumente de selecție de nume online, dar noastre se remarcă din câteva motive cheie:",
+    "features": {
+      "1Title": "Cu adevărat aleatoriu",
+      "1Desc": "Folosim un generator de numere pseudo-aleatoare însămânțat criptografic pentru a ne asigura că fiecare rotire este complet imprevizibilă.",
+      "2Title": "Configurare instantanee",
+      "2Desc": "Nu este nevoie de cont. Deschideți pagina, introduceți-vă numele și rotiți. Întregul proces durează mai puțin de 30 de secunde.",
+      "3Title": "Complet personalizabil",
+      "3Desc": "Schimbați culorile feliilor, reordonați numele, duplicați intrările pentru rezultate ponderate sau excludeți anumite nume.",
+      "4Title": "Urmărirea câștigurilor",
+      "4Desc": "Roata urmărește de câte ori a fost ales fiecare nume în mai multe runde.",
+      "5Title": "Funcționează pe orice dispozitiv",
+      "5Desc": "Designul complet receptiv înseamnă că roata arată și funcționează grozav pe telefoane, tablete și desktopuri deopotrivă.",
+      "6Title": "Întotdeauna gratuit",
+      "6Desc": "Fără reclame care să vă întrerupă rotirea, fără niveluri premium și fără abonament. 100% gratuit, pentru totdeauna."
+    },
+    "tipsTitle": "Sfaturi pentru a profita la maximum de roata numelui",
+    "tips": {
+      "1Title": "Alegerea numelui ponderat",
+      "1Desc": "Doriți să creșteți șansele ca un anumit nume să fie ales? Pur și simplu adăugați acel nume de mai multe ori folosind butonul <em>Copiați</em>. Fiecare intrare duplicată primește propria sa felie, dublând efectiv (sau triplând) probabilitatea acelei persoane de a fi aleasă.",
+      "2Title": "Modul de eliminare",
+      "2Desc": "Desfășurați un turneu, un test sau o tombolă? Folosiți butonul <em>Excludeți</em> pentru a elimina fiecare câștigător din rotiri ulterioare. Acest lucru asigură că fiecare participant poate câștiga o singură dată.",
+      "3Title": "Amestecă pentru corectitudine",
+      "3Desc": "Dacă reutilizați aceeași listă de nume în mod regulat, apăsați butonul <em>Aleatori</em> înainte de a roti. Amestecarea randomizează ordinea de pornire a feliilor.",
+      "4Title": "Salvați lista de nume",
+      "4Desc": "Ai nevoie de aceleași nume la fiecare lecție sau întâlnire? Pur și simplu păstrați fila browserului deschisă - numele rămân pe roată până când resetați sau închideți pagina."
+    },
+    "faqTitle": "Întrebări frecvente",
+    "faqs": {
+      "1Title": "Roata Numelor este complet aleatorie?",
+      "1Desc": "Da. Fiecare rotire folosește funcția Math.random() a JavaScript, care generează un număr pseudo-aleatoriu pentru a determina felia câștigătoare.",
+      "2Title": "Câte nume pot adăuga la roată?",
+      "2Desc": "Nu există o limită grea. Roata redimensionează automat fiecare felie pentru a se potrivi tuturor intrărilor. Pentru o mai bună lizibilitate, vă recomandăm să-l păstrați sub 50 de nume.",
+      "3Title": "Îmi pot salva roata numelor?",
+      "3Desc": "Numele dumneavoastră sunt stocate atâta timp cât pagina este deschisă. Marcați pagina după adăugarea numelor dvs. - redeschiderea aceleiași file în majoritatea browserelor va restabili starea.",
+      "4Title": "Roata Numelor funcționează pe mobil?",
+      "4Desc": "Absolut. Roata este complet receptivă și funcționează pe iOS, Android și orice browser mobil modern.",
+      "5Title": "Care este diferența dintre Roata Numelor și un generator de nume aleatoriu?",
+      "5Desc": "Un <em>generator de nume aleatoriu</em> creează de obicei nume fictive dintr-o bază de date. Roata Numelor alege dintre numele specifice <em>pe care</em> le furnizați.",
+      "6Title": "Pot folosi asta ca un selector aleatoriu de elevi?",
+      "6Desc": "Da, este una dintre cele mai populare utilizări. Profesorii își adaugă lista clasei, apoi rotesc roata pentru a chema un elev."
+    }
+  },
+  "embed": {
+    "loading": "Se încarcă configurația roții...",
+    "instructions": "Utilizați comenzile de mai jos pentru a configura conținutul și aspectul roții dvs. Apoi, configurați setările de încorporare și generați codul pentru a-l plasa pe site-ul dvs. web.",
+    "settingsTitle": "Setări de încorporare",
+    "titleLabel": "Titlu (pentru accesibilitate):",
+    "widthLabel": "Lățimea (px):",
+    "heightLabel": "Înălțime (px):",
+    "codeTitle": "Cod încorporat",
+    "codeDesc": "Copiați codul de mai jos pentru a încorpora această roată configurată pe site-ul dvs. web:",
+    "generateBtn": "Generați codul de încorporare",
+    "errConfigure": "Eroare la generarea codului. Vă rugăm să configurați mai întâi roata.",
+    "errEmpty": "Vă rugăm să adăugați cel puțin un articol la roată înainte de a genera codul de încorporare."
+  }
+}

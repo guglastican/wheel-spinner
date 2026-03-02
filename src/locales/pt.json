@@ -1,0 +1,240 @@
+{
+  "header": {
+    "randomWheel": "Roda Aleatória",
+    "wheelOfNames": "Roda de Nomes",
+    "yesNoWheel": "Roda Sim/Não",
+    "embed": "Incorporar",
+    "foodWheel": "Roda Alimentar",
+    "configureEmbed": "Configurar roda incorporável"
+  },
+  "footer": {
+    "randoWheel": "Roda Rando",
+    "copyright": "© {ano} Girador de Rodas. Todos os direitos reservados.",
+    "privacyPolicy": "política de Privacidade",
+    "termsConditions": "Termos e Condições",
+    "otherWheels": "Outras rodas"
+  },
+  "mainWheel": {
+    "winner": "Vencedor: {texto} 🎉",
+    "spin": "Rodar",
+    "inputs": "Entradas",
+    "reset": "Reiniciar",
+    "shuffle": "Embaralhar",
+    "placeholder": "Insira o texto aqui...",
+    "spinTheWheel": "Gire a roda",
+    "cursor": "Cursora",
+    "cursorAngle": "Ângulo do Cursor",
+    "cursorDistance": "Distância do Cursor",
+    "pleaseInclude": "Por favor inclua pelo menos um item na roda",
+    "copySuffix": "(cópia)"
+  },
+  "yesNoWheel": {
+    "yes": "SIM",
+    "no": "NÃO",
+    "maybe": "TALVEZ",
+    "mode": "Modo",
+    "binaryMode": "SIM ou NÃO",
+    "ternaryMode": "SIM NÃO ou TALVEZ",
+    "numInputSets": "Número de conjuntos de entrada",
+    "resetResults": "Redefinir resultados"
+  },
+  "exploreMore": {
+    "title": "Explore mais rodas giratórias grátis",
+    "descDefault": "Procurando um tipo diferente de seletor aleatório? Confira nossas outras ferramentas de roda gratuitas:",
+    "descFood": "Precisa tomar outros tipos de decisões? Experimente nossas outras ferramentas:",
+    "rwTitle": "Girador de roda aleatória",
+    "rwDesc": "A roda personalizável definitiva para praticamente qualquer escolha.",
+    "wonTitle": "Roda de Nomes",
+    "wonDesc": "Um companheiro perfeito para brindes, participação em sala de aula ou atribuição de tarefas.",
+    "ynwTitle": "Sim/Não Roda",
+    "ynwDesc": "Um botão giratório simples de sim ou não para lidar com escolhas binárias rápidas instantaneamente."
+  },
+  "home": {
+    "mainTitle": "Girador de roda aleatório",
+    "whatIsTitle": "O que é uma roda aleatória?",
+    "whatIsDesc": "Uma Roda Aleatória é uma ferramenta interativa que gira para fazer uma seleção aleatória de um conjunto de escolhas. Esteja você escolhendo nomes, cores, números ou respostas sim/não, um botão giratório aleatório adiciona diversão e justiça à tomada de decisões. Ideais para jogos, sorteios, atividades em sala de aula ou apenas para facilitar as escolhas do dia a dia, as rodas aleatórias são simples, envolventes e amplamente utilizadas. Experimente um girador de roda aleatório para adicionar emoção à sua próxima decisão!",
+    "howWorksTitle": "Como funciona uma roda aleatória?",
+    "howWorksDesc": "Uma Roda Aleatória funciona girando uma roda digital dividida em múltiplas seções, cada uma contendo uma opção exclusiva. Quando a roda é girada, ela pousa aleatoriamente em uma dessas seções, proporcionando uma seleção imparcial.",
+    "stepsTitle": "Etapas para usar uma roda aleatória:",
+    "step1Title": "Inserir texto:",
+    "step1Desc": "Normalmente, você pode adicionar itens (como nomes, tarefas ou decisões) um por um ou colar uma lista inteira.",
+    "step2Title": "Rodar:",
+    "step2Desc": "Assim que suas escolhas estiverem feitas e você estiver satisfeito com o visual, basta iniciar o giro. Geralmente há um botão claro como \"Gire a roda!\".",
+    "stepsList": {
+      "1": "<strong>Insira suas opções</strong> – Adicione nomes, números, cores ou opções à roda.",
+      "2": "<strong>Gire a roda</strong> – Clique ou toque no botão girar para iniciar o processo de seleção aleatória.",
+      "3": "<strong>Obtenha resultados instantâneos</strong> – A roda para em uma escolha aleatória, fornecendo sua resposta.",
+      "4": "<strong>Repetir conforme necessário</strong> – Você pode girar novamente para obter novos resultados ou personalizar a roda para diferentes decisões."
+    },
+    "manageTitle": "Gerencie sua roda e resultados",
+    "manageDesc": "Dependendo da ferramenta específica, você poderá encontrar recursos como:",
+    "manageList": {
+      "modes": "<strong>Modos:</strong> você pode escolher diferentes maneiras de a roda funcionar, como o modo 'Eliminação', onde a opção escolhida é removida para a próxima rodada.",
+      "editing": "<strong>Edição:</strong> a maioria das ferramentas permite editar, duplicar, ocultar ou excluir as entradas adicionadas. Geralmente, você também pode limpar a lista inteira facilmente.",
+      "sharing": "<strong>Salvar/Compartilhar:</strong> muitas vezes você pode salvar a configuração do seu volante (às vezes requer uma conta) e compartilhá-la com outras pessoas usando um link ou talvez até obter um código para incorporá-lo.",
+      "results": "<strong>Resultados:</strong> algumas rodas podem acompanhar resultados anteriores."
+    },
+    "otherToolsTitle": "Outra ferramenta de roda",
+    "otherToolsDesc": "Além da roda aleatória principal, também existem várias ferramentas especializadas de roda aleatória criadas.",
+    "otherToolsList": {
+      "names": "<strong>Seletores de Nomes/Seletores de Alunos:</strong> Comumente usados ​​por educadores para selecionar indivíduos aleatoriamente, às vezes chamado de \"Roda de Nomes\" ou \"Seletor de Nomes Aleatórios\".",
+      "yesno": "<strong>Rodas Sim/Não:</strong> Para decisões binárias simples.",
+      "food": "<strong>Roda Alimentar:</strong> Não sabe o que comer? Gire a roda dos alimentos para tomar decisões rápidas e aleatórias sobre refeições."
+    },
+    "otherToolsOutro": "Cada versão especializada pega o conceito central de seleção aleatória e o adapta para atender a necessidades distintas, tornando-os úteis para tudo, desde a organização de atividades até a resolução de debates com um toque divertido e imparcial."
+  },
+  "yesNoPage": {
+    "title": "Sim/Não Seletor de Roda",
+    "heroTitle": "Tome decisões rápidas de sim/não",
+    "heroDesc": "Não consegue decidir entre sim e não? Deixe nossa roda decidir por você! Personalize a roda com diferentes modos e conjuntos de entradas para obter a resposta que você precisa.",
+    "howToTitle": "Como usar",
+    "steps": {
+      "1": "Escolha entre o modo \"SIM ou NÃO\" ou o modo \"SIM NÃO ou TALVEZ\"",
+      "2": "Selecione o número de conjuntos de entradas (1-5) para ajustar a distribuição de probabilidade",
+      "3": "Clique no botão \"Girar\" para obter sua resposta",
+      "4": "O resultado será destacado e contado nas caixas acima",
+      "5": "Use o botão \"Redefinir resultados\" para limpar todos os contadores"
+    },
+    "seoTitle": "Por que usar uma roda Sim/Não?",
+    "seoDesc1": "A vida é cheia de escolhas e às vezes as mais simples são as mais difíceis. Nosso Sim/Não Wheel Spinner é o tomador de decisão perfeito quando você está preso. É uma maneira divertida e rápida de obter uma escolha aleatória, agindo como um gerador rápido de sim ou não.",
+    "seoList": {
+      "1": "<strong>Resolver debates:</strong> resolva rapidamente argumentos amigáveis.",
+      "2": "<strong>Tome decisões rápidas:</strong> decida sobre jantar, noite de cinema ou escolhas diárias simples sem esforço.",
+      "3": "<strong>Adicione diversão:</strong> injete aleatoriedade e entusiasmo nas atividades em grupo.",
+      "4": "<strong>Supere a indecisão:</strong> deixe a roda quebrar o impasse quando você estiver realmente indeciso."
+    },
+    "seoDesc2": "Se você precisa de um simples sim ou não, ou deseja adicionar “talvez” para obter mais nuances, esta divertida ferramenta de decisão fornece uma resposta imparcial instantaneamente. Gire a roda e deixe o destino decidir!",
+    "moreTitle": "Além das escolhas simples: mais usos",
+    "moreDesc": "Embora seja ótima para perguntas simples de sim/não, esta ferramenta pode ser surpreendentemente versátil:",
+    "moreList": {
+      "1": "<strong>Auxílio de aprendizagem e estudo:</strong> teste você mesmo! Enquadre as perguntas com uma resposta sim/não e gire.",
+      "2": "<strong>Instruções criativas:</strong> Está preso em uma história ou projeto? Use a roda para decisões criativas binárias.",
+      "3": "<strong>Quebrando Hábitos:</strong> Tentando decidir se vai ceder a uma pequena tentação? Deixe a roda adicionar uma camada de chance.",
+      "4": "<strong>Tomada de turnos justa:</strong> Use-o em jogos para decidir quem será o próximo."
+    },
+    "powerTitle": "O poder da aleatoriedade",
+    "powerDesc": "Nossa roda usa um gerador de números pseudo-aleatórios confiável para garantir que cada giro seja justo e imprevisível. Isso elimina preconceitos pessoais de decisões simples, tornando-o um tomador de decisões verdadeiramente imparcial. Às vezes, deixar pequenas escolhas ao acaso pode liberar energia mental para assuntos mais importantes! O opcional 'Talvez' adiciona flexibilidade para aqueles momentos em que um simples sim ou não não é suficiente."
+  },
+  "foodPage": {
+    "title": "Roda Alimentar",
+    "heroTitle": "Roda Alimentar – O que devo comer?",
+    "heroDesc": "Não consegue decidir o que comer no almoço ou no jantar? Gire a <strong>Roda da Comida</strong> e deixe o destino decidir! Esteja você com vontade de pizza, sushi ou procurando uma salada saudável, basta adicionar suas opções, girar o volante e sua refeição estará pronta.",
+    "howToTitle": "Como usar a roda dos alimentos",
+    "steps": {
+      "1": "<strong>Adicionar desejos e opções</strong> — Digite o nome de cada comida ou restaurante e clique no botão <em>+</em>.",
+      "2": "<strong>Personalizar cores</strong> — Clique na amostra de cor ao lado de qualquer alimento para alterar a cor da fatia.",
+      "3": "<strong>Girar a roda</strong> — Clique em <em>Girar a roda</em> ou no botão central da roda.",
+      "4": "<strong>Veja o Vencedor</strong> — A comida escolhida aparece acima da roda com uma 🎉 comemoração. Você pode finalmente parar de debater e começar a comer!",
+      "5": "<strong>Gire novamente</strong> — Ainda não está convencido? Continue girando ou remova as opções que você não gosta usando o recurso <em>Remover</em>."
+    },
+    "seoTitle": "O que é uma roda alimentar?",
+    "seoDesc": "Uma <strong>Roda Alimentar</strong> é uma roda giratória digital usada especificamente para escolher refeições, restaurantes ou culinárias aleatórias em uma lista. Resolve o clássico “O que você quer comer?” problema.",
+    "seoList": {
+      "1": "<strong>Decisão do restaurante</strong> — Não consegue chegar a um acordo sobre um restaurante? Adicione as 5 opções principais e deixe a roda escolher.",
+      "2": "<strong>Roleta de preparação de refeições</strong> — Torne a culinária divertida girando em busca de proteínas, carboidratos e vegetais.",
+      "3": "<strong>Randomizador de comida para viagem</strong> — Pizza? Chinês? Tailandês? Gire sempre que tiver desejos.",
+      "4": "<strong>Catering para festas no escritório</strong> — Deixe a equipe enviar opções e use a roda para decidir a comida."
+    },
+    "whyTitle": "Por que usar nossa roda alimentar?",
+    "whyDesc": "Evite a rolagem interminável nos aplicativos de entrega. Nossa Roda Alimentar ajuda você a decidir de forma rápida e justa:",
+    "features": {
+      "1Title": "Terminar o debate",
+      "1Desc": "Chega de \"não sei, o que você quer?\" Gire a roda e a decisão será tomada instantaneamente.",
+      "2Title": "Configuração instantânea",
+      "2Desc": "Nenhuma conta é necessária. Abra a página, digite suas opções de comida e gire imediatamente.",
+      "3Title": "Totalmente personalizável",
+      "3Desc": "Adicione emojis, altere as cores das fatias para combinar com a comida e exclua opções.",
+      "4Title": "Resultados Justos",
+      "4Desc": "A aleatoriedade criptograficamente segura significa que você está realmente obtendo um resultado imparcial.",
+      "5Title": "Funciona no celular",
+      "5Desc": "Perfeito para decidir em qualquer lugar. O design totalmente responsivo fica ótimo em qualquer telefone.",
+      "6Title": "100% grátis",
+      "6Desc": "Nossa Roda Alimentar é sempre gratuita, sem acesso pago ou inscrição obrigatória."
+    },
+    "faqTitle": "Perguntas frequentes",
+    "faqs": {
+      "1Title": "A Roda dos Alimentos funciona no meu telefone?",
+      "1Desc": "Sim! A Food Wheel é totalmente compatível com dispositivos móveis.",
+      "2Title": "Os resultados são verdadeiramente aleatórios?",
+      "2Desc": "Sim. Cada rodada usa um algoritmo pseudo-aleatório robusto para garantir que cada opção de comida tenha chances iguais.",
+      "3Title": "Posso salvar minhas listas de comidas favoritas?",
+      "3Desc": "Contanto que você mantenha a aba do navegador aberta, suas listas permanecerão ativas. Recomendamos marcar a página como favorita."
+    }
+  },
+  "namesPage": {
+    "title": "Roda de Nomes",
+    "heroTitle": "Roda de Nomes – Selecionador de Nome Aleatório Gratuito",
+    "heroDesc": "Digite qualquer nome, gire a roda e deixe o destino escolher um vencedor em segundos. Se você precisa de um <strong>seletor de nomes aleatório</strong> para sua sala de aula, de um sorteio justo para um sorteio ou de uma maneira rápida de atribuir tarefas à sua equipe, esta Roda de Nomes gratuita tem o que você precisa. Sem inscrição, sem download, funciona em qualquer dispositivo.",
+    "howToTitle": "Como usar a roda dos nomes",
+    "steps": {
+      "1": "<strong>Adicionar nomes</strong> — Digite cada nome na caixa de entrada e pressione <em>Enter</em>.",
+      "2": "<strong>Personalizar cores</strong> — Clique na amostra de cor ao lado de qualquer nome.",
+      "3": "<strong>Girar a roda</strong> — Clique em <em>Girar a roda</em> ou no botão central.",
+      "4": "<strong>Veja o Vencedor</strong> — O nome escolhido aparece acima da roda com uma 🎉 comemoração. A contagem de vitórias monitora quantas vezes cada nome foi escolhido.",
+      "5": "<strong>Gire novamente</strong> — Continue girando por várias rodadas. Use <em>Excluir</em> para remover vencedores de rodadas futuras ou <em>Redefinir</em> para começar do zero."
+    },
+    "seoTitle": "O que é uma roda de nomes?",
+    "seoDesc": "Uma <strong>Roda de Nomes</strong> é uma roda giratória digital pré-projetada para escolher nomes aleatórios em uma lista. Funciona da mesma maneira que uma roda de prêmios clássica – você adiciona os nomes que quiser, clica em girar e a roda aparece aleatoriamente em um vencedor.",
+    "seoList": {
+      "1": "<strong>Seletor de nomes aleatórios para sala de aula</strong> — Os professores usam uma roda de nomes para chamar os alunos sem preconceitos.",
+      "2": "<strong>Brindes e concursos</strong> — Fazendo um sorteio nas redes sociais? Adicione todos os nomes dos participantes e gire.",
+      "3": "<strong>Seleção de equipe</strong> — Divida aleatoriamente os jogadores em equipes, escolha um capitão de equipe ou atribua funções.",
+      "4": "<strong>Jogos de escritório e quebra-gelos</strong> — Quem apresenta primeiro? Quem traz café amanhã? Deixe a roda decidir."
+    },
+    "whyTitle": "Por que usar nossa roda de nomes?",
+    "whyDesc": "Existem muitas ferramentas de seleção de nomes online, mas a nossa se destaca por alguns motivos principais:",
+    "features": {
+      "1Title": "Verdadeiramente Aleatório",
+      "1Desc": "Usamos um gerador de números pseudo-aleatórios criptograficamente propagados para garantir que cada giro seja completamente imprevisível.",
+      "2Title": "Configuração instantânea",
+      "2Desc": "Nenhuma conta é necessária. Abra a página, digite seus nomes e gire. Todo o processo leva menos de 30 segundos.",
+      "3Title": "Totalmente personalizável",
+      "3Desc": "Altere as cores das fatias, reordene nomes, duplique entradas para resultados ponderados ou exclua determinados nomes.",
+      "4Title": "Rastreamento de vitórias",
+      "4Desc": "A roda monitora quantas vezes cada nome foi escolhido em várias rodadas.",
+      "5Title": "Funciona em qualquer dispositivo",
+      "5Desc": "O design totalmente responsivo significa que a roda tem uma ótima aparência e funciona perfeitamente em telefones, tablets e desktops.",
+      "6Title": "Sempre grátis",
+      "6Desc": "Nenhum anúncio interrompendo seu giro, nenhum nível premium e nenhuma assinatura. 100% grátis, para sempre."
+    },
+    "tipsTitle": "Dicas para aproveitar ao máximo sua roda de nomes",
+    "tips": {
+      "1Title": "Escolha de nome ponderada",
+      "1Desc": "Quer aumentar as chances de um determinado nome ser escolhido? Basta adicionar esse nome várias vezes usando o botão <em>Copiar</em>. Cada entrada duplicada recebe sua própria fatia, efetivamente duplicando (ou triplicando) a probabilidade daquela pessoa ser escolhida.",
+      "2Title": "Modo de Eliminação",
+      "2Desc": "Organizando um torneio, quiz show ou sorteio? Use o botão <em>Excluir</em> para remover cada vencedor das rodadas subsequentes. Isso garante que cada participante só possa ganhar uma vez.",
+      "3Title": "Embaralhar por justiça",
+      "3Desc": "Se você reutilizar a mesma lista de nomes regularmente, pressione o botão <em>Shuffle</em> antes de girar. O embaralhamento randomiza a ordem inicial das fatias.",
+      "4Title": "Salve sua lista de nomes",
+      "4Desc": "Precisa dos mesmos nomes em todas as aulas ou reuniões? Basta manter a guia do navegador aberta – os nomes permanecem na roda até você redefinir ou fechar a página."
+    },
+    "faqTitle": "Perguntas frequentes",
+    "faqs": {
+      "1Title": "A Roda dos Nomes é completamente aleatória?",
+      "1Desc": "Sim. Cada rodada usa a função Math.random() do JavaScript, que gera um número pseudo-aleatório para determinar a fatia vencedora.",
+      "2Title": "Quantos nomes posso adicionar à roda?",
+      "2Desc": "Não há limite rígido. A roda redimensiona automaticamente cada fatia para caber em todas as entradas. Para melhor legibilidade, recomendamos mantê-lo com menos de 50 nomes.",
+      "3Title": "Posso salvar minha roda de nomes?",
+      "3Desc": "Seus nomes serão armazenados enquanto a página estiver aberta. Marque a página como favorita depois de adicionar seus nomes – reabrir a mesma guia na maioria dos navegadores restaurará o estado.",
+      "4Title": "A Roda dos Nomes funciona no celular?",
+      "4Desc": "Absolutamente. A roda é totalmente responsiva e funciona em iOS, Android e em qualquer navegador móvel moderno.",
+      "5Title": "Qual é a diferença entre a Roda dos Nomes e um gerador de nomes aleatórios?",
+      "5Desc": "Um <em>gerador de nomes aleatórios</em> normalmente cria nomes fictícios a partir de um banco de dados. Nossa Roda de Nomes escolhe os nomes específicos que <em>você</em> fornece.",
+      "6Title": "Posso usar isso como um selecionador aleatório de alunos?",
+      "6Desc": "Sim – é um dos usos mais populares. Os professores adicionam a lista da turma e giram a roda para chamar um aluno."
+    }
+  },
+  "embed": {
+    "loading": "Carregando configuração da roda...",
+    "instructions": "Use os controles abaixo para configurar o conteúdo e a aparência da sua roda. Em seguida, defina as configurações de incorporação e gere o código para colocá-lo em seu site.",
+    "settingsTitle": "Incorporar configurações",
+    "titleLabel": "Título (para acessibilidade):",
+    "widthLabel": "Largura (px):",
+    "heightLabel": "Altura (px):",
+    "codeTitle": "Código incorporado",
+    "codeDesc": "Copie o código abaixo para incorporar esta roda configurada em seu site:",
+    "generateBtn": "Gerar código incorporado",
+    "errConfigure": "Erro ao gerar código. Configure a roda primeiro.",
+    "errEmpty": "Adicione pelo menos um item à roda antes de gerar o código de incorporação."
+  }
+}

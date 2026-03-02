@@ -1,0 +1,240 @@
+{
+  "header": {
+    "randomWheel": "Roue aléatoire",
+    "wheelOfNames": "Roue des noms",
+    "yesNoWheel": "Oui/Non Roue",
+    "embed": "Intégrer",
+    "foodWheel": "Roue alimentaire",
+    "configureEmbed": "Configurer la roue intégrable"
+  },
+  "footer": {
+    "randoWheel": "Roue Rando",
+    "copyright": "© {année} Roue Spinner. Tous droits réservés.",
+    "privacyPolicy": "politique de confidentialité",
+    "termsConditions": "Conditions générales",
+    "otherWheels": "Autres roues"
+  },
+  "mainWheel": {
+    "winner": "Gagnant : {texte} 🎉",
+    "spin": "Rotation",
+    "inputs": "Entrées",
+    "reset": "Réinitialiser",
+    "shuffle": "Mélanger",
+    "placeholder": "Saisissez le texte ici...",
+    "spinTheWheel": "Faites tourner la roue",
+    "cursor": "Curseur",
+    "cursorAngle": "Angle du curseur",
+    "cursorDistance": "Distance du curseur",
+    "pleaseInclude": "Veuillez inclure au moins un élément dans la roue",
+    "copySuffix": "(copie)"
+  },
+  "yesNoWheel": {
+    "yes": "OUI",
+    "no": "NON",
+    "maybe": "PEUT ÊTRE",
+    "mode": "Mode",
+    "binaryMode": "OUI ou NON",
+    "ternaryMode": "OUI NON ou PEUT-ÊTRE",
+    "numInputSets": "Nombre de jeux d'entrées",
+    "resetResults": "Réinitialiser les résultats"
+  },
+  "exploreMore": {
+    "title": "Explorez plus de roues gratuites",
+    "descDefault": "Vous recherchez un autre type de sélecteur aléatoire ? Découvrez nos autres outils de roue libre :",
+    "descFood": "Besoin de prendre d’autres types de décisions ? Essayez nos autres outils :",
+    "rwTitle": "Roue aléatoire",
+    "rwDesc": "La roue personnalisable ultime pour pratiquement tous les choix.",
+    "wonTitle": "Roue des noms",
+    "wonDesc": "Un compagnon idéal pour les cadeaux, la participation en classe ou l'attribution de tâches.",
+    "ynwTitle": "Oui / Non Roue",
+    "ynwDesc": "Un simple oui ou non pour gérer instantanément des choix binaires rapides."
+  },
+  "home": {
+    "mainTitle": "Roue aléatoire",
+    "whatIsTitle": "Qu'est-ce qu'une roue aléatoire ?",
+    "whatIsDesc": "Une roue aléatoire est un outil interactif qui tourne pour effectuer une sélection aléatoire parmi un ensemble de choix. Que vous choisissiez des noms, des couleurs, des chiffres ou des réponses oui/non, une roulette aléatoire ajoute du plaisir et de l'équité à la prise de décision. Idéales pour les jeux, les tirages au sort, les activités en classe ou simplement pour faciliter les choix quotidiens, les roues aléatoires sont simples, attrayantes et largement utilisées. Essayez une roue aléatoire pour ajouter de l'excitation à votre prochaine décision !",
+    "howWorksTitle": "Comment fonctionne une roue aléatoire ?",
+    "howWorksDesc": "Une roue aléatoire fonctionne en faisant tourner une roue numérique divisée en plusieurs sections, chacune contenant une option unique. Lorsque la roue tourne, elle atterrit au hasard sur l'une de ces sections, offrant ainsi une sélection impartiale.",
+    "stepsTitle": "Étapes pour utiliser une roue aléatoire :",
+    "step1Title": "Insérer du texte :",
+    "step1Desc": "Vous pouvez généralement ajouter des éléments (comme des noms, des tâches ou des décisions) un par un ou coller une liste entière.",
+    "step2Title": "Rotation:",
+    "step2Desc": "Une fois que vos choix sont faits et que vous êtes satisfait du look, lancez simplement la rotation. Il y a généralement un bouton clair comme « Faites tourner la roue ! ».",
+    "stepsList": {
+      "1": "<strong>Entrez vos options</strong> – Ajoutez des noms, des chiffres, des couleurs ou des choix à la roue.",
+      "2": "<strong>Faire tourner la roue</strong> – Cliquez ou appuyez sur le bouton de rotation pour démarrer le processus de sélection aléatoire.",
+      "3": "<strong>Obtenez des résultats instantanés</strong> – La roue s'arrête sur un choix aléatoire, fournissant votre réponse.",
+      "4": "<strong>Répéter selon les besoins</strong> : vous pouvez tourner à nouveau pour obtenir de nouveaux résultats ou personnaliser la roue pour différentes décisions."
+    },
+    "manageTitle": "Gérez votre roue et vos résultats",
+    "manageDesc": "Selon l'outil spécifique, vous pouvez trouver des fonctionnalités telles que :",
+    "manageList": {
+      "modes": "<strong>Modes</strong> : vous pourrez peut-être choisir différentes manières de faire fonctionner la roue, comme le mode « Élimination » où l'option choisie est supprimée pour le prochain tour.",
+      "editing": "<strong>Modification</strong> : la plupart des outils vous permettent de modifier, dupliquer, masquer ou supprimer les entrées que vous avez ajoutées. Vous pouvez également généralement effacer facilement toute la liste.",
+      "sharing": "<strong>Enregistrement/Partage</strong> : vous pouvez souvent enregistrer la configuration de votre roue (nécessite parfois un compte) et la partager avec d'autres personnes à l'aide d'un lien ou peut-être même obtenir du code pour l'intégrer.",
+      "results": "<strong>Résultats</strong> : certaines roues peuvent garder une trace des résultats passés."
+    },
+    "otherToolsTitle": "Autre outil de roue",
+    "otherToolsDesc": "Outre la roue aléatoire principale, plusieurs outils spécialisés de roue aléatoire ont également été créés.",
+    "otherToolsList": {
+      "names": "<strong>Sélecteurs de noms/sélecteurs d'élèves</strong> : couramment utilisés par les enseignants pour sélectionner des individus au hasard, parfois appelés « Roue des noms » ou « Sélecteur de noms aléatoires ».",
+      "yesno": "<strong>Roues Oui/Non :</strong> Pour des décisions binaires simples.",
+      "food": "<strong>Roue des aliments :</strong> Vous ne savez pas quoi manger ? Faites tourner la roue des aliments pour prendre des décisions rapides et aléatoires en matière de repas."
+    },
+    "otherToolsOutro": "Chaque version spécialisée reprend le concept de base de la sélection aléatoire et l'adapte pour répondre à des besoins distincts, ce qui les rend pratiques pour tout, de l'organisation d'activités au règlement de débats avec une touche amusante et impartiale."
+  },
+  "yesNoPage": {
+    "title": "Oui/Non Sélecteur de roues",
+    "heroTitle": "Prenez des décisions rapides oui/non",
+    "heroDesc": "Vous n'arrivez pas à choisir entre oui et non ? Laissez notre roue décider pour vous ! Personnalisez la roue avec différents modes et jeux de saisie pour obtenir la réponse dont vous avez besoin.",
+    "howToTitle": "Comment utiliser",
+    "steps": {
+      "1": "Choisissez entre le mode \"OUI ou NON\" ou le mode \"OUI NON ou PEUT-ÊTRE\"",
+      "2": "Sélectionnez le nombre d'ensembles d'entrées (1-5) pour ajuster la distribution de probabilité",
+      "3": "Cliquez sur le bouton \"Spin\" pour obtenir votre réponse",
+      "4": "Le résultat sera mis en évidence et compté dans les cases ci-dessus",
+      "5": "Utilisez le bouton \"Réinitialiser les résultats\" pour effacer tous les compteurs"
+    },
+    "seoTitle": "Pourquoi utiliser une roue oui/non ?",
+    "seoDesc1": "La vie est pleine de choix et parfois les plus simples sont les plus difficiles. Notre Oui/Non Wheel Spinner est le décideur idéal lorsque vous êtes coincé. C'est un moyen amusant et rapide d'obtenir un choix aléatoire, agissant comme un générateur rapide de oui ou de non.",
+    "seoList": {
+      "1": "<strong>Régler les débats</strong> : résolvez rapidement les arguments amicaux.",
+      "2": "<strong>Prenez des décisions rapides</strong> : décidez sans effort d'un dîner, d'une soirée cinéma ou de simples choix quotidiens.",
+      "3": "<strong>Ajoutez du plaisir :</strong> Injectez du hasard et de l'enthousiasme dans les activités de groupe.",
+      "4": "<strong>Surmontez l'indécision :</strong> Laissez la roue sortir de l'impasse lorsque vous êtes vraiment indécis."
+    },
+    "seoDesc2": "Que vous ayez besoin d'un simple oui ou non, ou que vous souhaitiez ajouter « peut-être » pour plus de nuances, cet outil de décision amusant fournit instantanément une réponse impartiale. Faites tourner la roue et laissez le destin décider !",
+    "moreTitle": "Au-delà des simples choix : davantage d'utilisations",
+    "moreDesc": "Bien qu'il soit idéal pour les questions simples par oui/non, cet outil peut être étonnamment polyvalent :",
+    "moreList": {
+      "1": "<strong>Aide à l'apprentissage et aux études :</strong> Testez-vous ! Formulez les questions avec une réponse oui/non et faites-les tourner.",
+      "2": "<strong>Invites de création :</strong> Vous êtes bloqué sur une histoire ou un projet ? Utilisez la roue pour les décisions créatives binaires.",
+      "3": "<strong>Briser les habitudes :</strong> Vous essayez de décider si vous devez vous livrer à une tentation mineure ? Laissez la roue ajouter une couche de chance.",
+      "4": "<strong>Tour de tour équitable</strong> : utilisez-le dans les jeux pour décider qui joue ensuite."
+    },
+    "powerTitle": "Le pouvoir du hasard",
+    "powerDesc": "Notre roue utilise un générateur de nombres pseudo-aléatoires fiable pour garantir que chaque tour est juste et imprévisible. Cela supprime les préjugés personnels des décisions simples, ce qui en fait un décideur véritablement impartial. Parfois, laisser de petits choix au hasard peut libérer de l’énergie mentale pour des choses plus importantes ! L'option « Peut-être » ajoute de la flexibilité pour les moments où un simple oui ou non ne suffit pas."
+  },
+  "foodPage": {
+    "title": "Roue alimentaire",
+    "heroTitle": "Roue alimentaire : que dois-je manger ?",
+    "heroDesc": "Vous n'arrivez pas à décider quoi manger pour le déjeuner ou le dîner ? Faites tourner la <strong>Roue de la nourriture</strong> et laissez le destin décider ! Que vous ayez envie de pizza, de sushi ou d'une salade saine, ajoutez simplement vos options, faites tourner la roue et votre repas est prêt.",
+    "howToTitle": "Comment utiliser la roue alimentaire",
+    "steps": {
+      "1": "<strong>Ajouter des envies et des options</strong> : saisissez le nom de chaque aliment ou restaurant et cliquez sur le bouton <em>+</em>.",
+      "2": "<strong>Personnaliser les couleurs</strong> : cliquez sur l'échantillon de couleur à côté d'un aliment pour modifier la couleur des tranches.",
+      "3": "<strong>Faire tourner la roue</strong> : cliquez sur <em>Faire tourner la roue</em> ou sur le bouton central de la roue.",
+      "4": "<strong>Voir le gagnant</strong> — L'aliment choisi apparaît au-dessus de la roue avec une célébration 🎉. Vous pouvez enfin arrêter de débattre et commencer à manger !",
+      "5": "<strong>Spin Again</strong> — Vous n'êtes toujours pas convaincu ? Continuez à faire tourner ou supprimez les options que vous n'aimez pas à l'aide de la fonctionnalité <em>Supprimer</em>."
+    },
+    "seoTitle": "Qu’est-ce qu’une roue alimentaire ?",
+    "seoDesc": "Une <strong>Food Wheel</strong> est un rouet numérique spécifiquement utilisé pour sélectionner des repas, des restaurants ou des cuisines au hasard dans une liste. Il résout le classique « Que veux-tu manger ? problème.",
+    "seoList": {
+      "1": "<strong>Décideur de restaurant</strong> — Vous n'arrivez pas à vous mettre d'accord sur un restaurant ? Ajoutez les 5 meilleurs choix et laissez la roue choisir.",
+      "2": "<strong>Roulette de préparation des repas</strong> — Amusez-vous à cuisiner en faisant tourner pour vos protéines, vos glucides et vos légumes.",
+      "3": "<strong>Randomiseur à emporter</strong> — Pizza ? Chinois? Thaïlandais? Faites tourner chaque fois que vous en avez envie.",
+      "4": "<strong>Restauration de fête au bureau</strong> : laissez l'équipe proposer des options et utiliser le volant pour décider de la nourriture."
+    },
+    "whyTitle": "Pourquoi utiliser notre roue alimentaire ?",
+    "whyDesc": "Évitez le défilement sans fin sur les applications de livraison. Notre Food Wheel vous aide à prendre une décision rapide et équitable :",
+    "features": {
+      "1Title": "Mettre fin au débat",
+      "1Desc": "Plus de \"Je ne sais pas, qu'est-ce que tu veux ?\" Faites tourner la roue et la décision est prise instantanément.",
+      "2Title": "Configuration instantanée",
+      "2Desc": "Aucun compte requis. Ouvrez la page, saisissez vos options alimentaires et tournez immédiatement.",
+      "3Title": "Entièrement personnalisable",
+      "3Desc": "Ajoutez des émojis, modifiez les couleurs des tranches en fonction de la nourriture et excluez des options.",
+      "4Title": "Résultats équitables",
+      "4Desc": "Le caractère aléatoire cryptographiquement sécurisé signifie que vous obtenez réellement un résultat impartial.",
+      "5Title": "Fonctionne sur mobile",
+      "5Desc": "Parfait pour décider en déplacement. Le design entièrement réactif convient parfaitement à n'importe quel téléphone.",
+      "6Title": "100% Gratuit",
+      "6Desc": "Notre Food Wheel est toujours gratuite, sans paywall ni inscription requise."
+    },
+    "faqTitle": "Foire aux questions",
+    "faqs": {
+      "1Title": "La Food Wheel fonctionne-t-elle sur mon téléphone ?",
+      "1Desc": "Oui! La Food Wheel est entièrement adaptée aux appareils mobiles.",
+      "2Title": "Les résultats sont-ils vraiment aléatoires ?",
+      "2Desc": "Oui. Chaque tour utilise un algorithme pseudo-aléatoire robuste pour garantir que chaque option alimentaire a une chance égale.",
+      "3Title": "Puis-je sauvegarder mes listes de plats préférés ?",
+      "3Desc": "Tant que vous gardez l'onglet du navigateur ouvert, vos listes restent actives. Nous vous recommandons de mettre la page dans vos favoris."
+    }
+  },
+  "namesPage": {
+    "title": "Roue des noms",
+    "heroTitle": "Roue des noms — Sélecteur de noms aléatoire gratuit",
+    "heroDesc": "Tapez n'importe quel nom, faites tourner la roue et laissez le destin choisir un gagnant en quelques secondes. Que vous ayez besoin d'un <strong>sélecteur de noms aléatoire</strong> pour votre classe, d'un tirage au sort équitable pour un cadeau ou d'un moyen rapide d'attribuer des tâches à votre équipe, cette Roue des noms gratuite est là pour vous. Pas d'inscription, pas de téléchargement, fonctionne sur n'importe quel appareil.",
+    "howToTitle": "Comment utiliser la roue des noms",
+    "steps": {
+      "1": "<strong>Ajouter des noms</strong> : saisissez chaque nom dans la zone de saisie et appuyez sur <em>Entrée</em>.",
+      "2": "<strong>Personnaliser les couleurs</strong> : cliquez sur l'échantillon de couleur à côté d'un nom.",
+      "3": "<strong>Faire tourner la roue</strong> : cliquez sur <em>Faire tourner la roue</em> ou sur le bouton central.",
+      "4": "<strong>Voir le gagnant</strong> — Le nom choisi apparaît au-dessus de la roue avec une célébration 🎉. Le nombre de gains indique combien de fois chaque nom a été choisi.",
+      "5": "<strong>Spin Again</strong> : continuez à tourner pendant plusieurs tours. Utilisez <em>Exclure</em> pour supprimer les gagnants des futurs tours, ou <em>Réinitialiser</em> pour repartir à zéro."
+    },
+    "seoTitle": "Qu'est-ce qu'une roue des noms ?",
+    "seoDesc": "Une <strong>Roue des noms</strong> est un rouet numérique préconçu pour sélectionner des noms aléatoires dans une liste. Cela fonctionne de la même manière qu'une roue de prix classique : vous ajoutez les noms de votre choix, cliquez sur Spin et la roue atterrit sur un gagnant au hasard.",
+    "seoList": {
+      "1": "<strong>Sélecteur de noms aléatoires en classe</strong> : les enseignants utilisent une roue de noms pour appeler les élèves sans parti pris.",
+      "2": "<strong>Cadeaux et concours</strong> – Vous organisez un cadeau sur les réseaux sociaux ? Ajoutez tous les noms des participants et faites tourner.",
+      "3": "<strong>Sélection d'équipe</strong> : divisez aléatoirement les joueurs en équipes, choisissez un capitaine d'équipe ou attribuez des rôles.",
+      "4": "<strong>Jeux de bureau et brise-glace</strong> — Qui présente en premier ? Qui apporte le café demain ? Laissez la roue décider."
+    },
+    "whyTitle": "Pourquoi utiliser notre roue des noms ?",
+    "whyDesc": "Il existe de nombreux outils de sélection de noms en ligne, mais le nôtre se démarque pour plusieurs raisons principales :",
+    "features": {
+      "1Title": "Vraiment aléatoire",
+      "1Desc": "Nous utilisons un générateur de nombres pseudo-aléatoires cryptographiquement amorcés pour garantir que chaque tour est complètement imprévisible.",
+      "2Title": "Configuration instantanée",
+      "2Desc": "Aucun compte requis. Ouvrez la page, tapez vos noms et tournez. L'ensemble du processus prend moins de 30 secondes.",
+      "3Title": "Entièrement personnalisable",
+      "3Desc": "Modifiez les couleurs des tranches, réorganisez les noms, dupliquez les entrées pour les résultats pondérés ou excluez certains noms.",
+      "4Title": "Suivi des gains",
+      "4Desc": "La roue indique combien de fois chaque nom a été choisi au cours de plusieurs tours.",
+      "5Title": "Fonctionne sur n'importe quel appareil",
+      "5Desc": "La conception entièrement réactive signifie que la roue ressemble et fonctionne parfaitement sur les téléphones, les tablettes et les ordinateurs de bureau.",
+      "6Title": "Toujours gratuit",
+      "6Desc": "Aucune publicité n'interrompant votre lecture, aucun niveau premium et aucun abonnement. 100% gratuit, pour toujours."
+    },
+    "tipsTitle": "Conseils pour tirer le meilleur parti de votre roue de noms",
+    "tips": {
+      "1Title": "Sélection de noms pondérée",
+      "1Desc": "Vous souhaitez augmenter les chances qu’un nom particulier soit choisi ? Ajoutez simplement ce nom plusieurs fois à l'aide du bouton <em>Copier</em>. Chaque entrée en double obtient sa propre tranche, doublant (ou triplant) efficacement la probabilité que cette personne soit sélectionnée.",
+      "2Title": "Mode d'élimination",
+      "2Desc": "Organiser un tournoi, un quiz ou une tombola ? Utilisez le bouton <em>Exclure</em> pour supprimer chaque gagnant des tours suivants. Cela garantit que chaque participant ne peut gagner qu'une seule fois.",
+      "3Title": "Mélanger pour l’équité",
+      "3Desc": "Si vous réutilisez régulièrement la même liste de noms, appuyez sur le bouton <em>Shuffle</em> avant de faire tourner la liste. Le brassage randomise l’ordre de départ des tranches.",
+      "4Title": "Enregistrez votre liste de noms",
+      "4Desc": "Besoin des mêmes noms à chaque cours ou réunion ? Gardez simplement l'onglet du navigateur ouvert : les noms restent sur la roue jusqu'à ce que vous réinitialisiez ou fermiez la page."
+    },
+    "faqTitle": "Foire aux questions",
+    "faqs": {
+      "1Title": "La Roue des Noms est-elle complètement aléatoire ?",
+      "1Desc": "Oui. Chaque tour utilise la fonction Math.random() de JavaScript, qui génère un nombre pseudo-aléatoire pour déterminer la tranche gagnante.",
+      "2Title": "Combien de noms puis-je ajouter à la roue ?",
+      "2Desc": "Il n’y a pas de limite stricte. La roue redimensionne automatiquement chaque tranche pour s'adapter à toutes les entrées. Pour une meilleure lisibilité, nous vous recommandons de ne pas contenir plus de 50 noms.",
+      "3Title": "Puis-je sauvegarder ma roue des noms ?",
+      "3Desc": "Vos noms sont stockés tant que la page est ouverte. Ajoutez la page à vos favoris après avoir ajouté vos noms – la réouverture du même onglet dans la plupart des navigateurs restaurera l’état.",
+      "4Title": "La Roue des Noms fonctionne-t-elle sur mobile ?",
+      "4Desc": "Absolument. La roue est entièrement réactive et fonctionne sur iOS, Android et tout navigateur mobile moderne.",
+      "5Title": "Quelle est la différence entre la Roue des Noms et un générateur de noms aléatoires ?",
+      "5Desc": "Un <em>générateur de noms aléatoires</em> crée généralement des noms fictifs à partir d'une base de données. Notre roue des noms sélectionne les noms spécifiques que <em>vous</em> fournissez.",
+      "6Title": "Puis-je l'utiliser comme sélecteur d'étudiants aléatoire ?",
+      "6Desc": "Oui, c'est l'une des utilisations les plus populaires. Les enseignants ajoutent leur liste de classe, puis font tourner la roue pour faire appel à un élève."
+    }
+  },
+  "embed": {
+    "loading": "Chargement de la configuration des roues...",
+    "instructions": "Utilisez les commandes ci-dessous pour configurer le contenu et l'apparence de votre roue. Ensuite, configurez les paramètres d'intégration et générez le code pour le placer sur votre site Web.",
+    "settingsTitle": "Paramètres d'intégration",
+    "titleLabel": "Titre (pour l'accessibilité) :",
+    "widthLabel": "Largeur (px) :",
+    "heightLabel": "Hauteur (px) :",
+    "codeTitle": "Code intégré",
+    "codeDesc": "Copiez le code ci-dessous pour intégrer cette roue configurée sur votre site Web :",
+    "generateBtn": "Générer du code intégré",
+    "errConfigure": "Erreur lors de la génération du code. Veuillez d'abord configurer la roue.",
+    "errEmpty": "Veuillez ajouter au moins un élément à la roue avant de générer le code d'intégration."
+  }
+}

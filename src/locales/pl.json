@@ -1,0 +1,240 @@
+{
+  "header": {
+    "randomWheel": "Losowe koło",
+    "wheelOfNames": "Koło imion",
+    "yesNoWheel": "Tak/Nie, koło",
+    "embed": "Osadzać",
+    "foodWheel": "Koło Żywności",
+    "configureEmbed": "Skonfiguruj osadzane koło"
+  },
+  "footer": {
+    "randoWheel": "Koło Rando",
+    "copyright": "© {rok} Koło Spinner. Wszelkie prawa zastrzeżone.",
+    "privacyPolicy": "Polityka prywatności",
+    "termsConditions": "Regulamin",
+    "otherWheels": "Inne koła"
+  },
+  "mainWheel": {
+    "winner": "Zwycięzca: {tekst} 🎉",
+    "spin": "Kręcić się",
+    "inputs": "Wejścia",
+    "reset": "Nastawić",
+    "shuffle": "Człapać",
+    "placeholder": "Tutaj wpisz tekst...",
+    "spinTheWheel": "Zakręć kołem",
+    "cursor": "Kursor",
+    "cursorAngle": "Kąt kursora",
+    "cursorDistance": "Odległość kursora",
+    "pleaseInclude": "Proszę uwzględnić co najmniej jeden przedmiot w kole",
+    "copySuffix": "(kopia)"
+  },
+  "yesNoWheel": {
+    "yes": "TAK",
+    "no": "NIE",
+    "maybe": "MOŻE",
+    "mode": "Tryb",
+    "binaryMode": "TAK lub NIE",
+    "ternaryMode": "TAK NIE lub MOŻE",
+    "numInputSets": "Liczba zestawów wejściowych",
+    "resetResults": "Zresetuj wyniki"
+  },
+  "exploreMore": {
+    "title": "Odkryj więcej darmowych kółek obrotowych",
+    "descDefault": "Szukasz innego rodzaju losowego selektora? Sprawdź nasze inne narzędzia z wolnym kołem:",
+    "descFood": "Potrzebujesz podejmować inne decyzje? Wypróbuj nasze inne narzędzia:",
+    "rwTitle": "Losowy kołowrotek",
+    "rwDesc": "Najbardziej konfigurowalne koło do praktycznie każdego wyboru.",
+    "wonTitle": "Koło imion",
+    "wonDesc": "Idealny towarzysz rozdawania prezentów, uczestnictwa w zajęciach lub przydzielania zadań.",
+    "ynwTitle": "Tak/Nie Koło",
+    "ynwDesc": "Prosty przycisk „tak” lub „nie”, umożliwiający natychmiastową obsługę szybkich wyborów binarnych."
+  },
+  "home": {
+    "mainTitle": "Losowy kołowrotek",
+    "whatIsTitle": "Co to jest losowe koło?",
+    "whatIsDesc": "Losowe koło to interaktywne narzędzie, które obraca się, aby dokonać losowego wyboru z zestawu możliwości. Niezależnie od tego, czy wybierasz imiona, kolory, liczby, czy odpowiedzi tak/nie, losowy spinner dodaje zabawy i uczciwości do podejmowania decyzji. Idealne do gier, loterii, zajęć w klasie lub po prostu ułatwiania codziennych wyborów, losowe koła są proste, wciągające i szeroko stosowane. Wypróbuj losowe kołowrotek, aby dodać emocji do kolejnej decyzji!",
+    "howWorksTitle": "Jak działa losowe koło?",
+    "howWorksDesc": "Losowe koło działa poprzez kręcenie cyfrowym kołem podzielonym na wiele sekcji, z których każda zawiera unikalną opcję. Kiedy koło się obraca, losowo ląduje na jednej z tych sekcji, zapewniając bezstronny wybór.",
+    "stepsTitle": "Kroki, aby użyć losowego koła:",
+    "step1Title": "Wstaw tekst:",
+    "step1Desc": "Zazwyczaj możesz dodawać elementy (takie jak nazwiska, zadania lub decyzje) pojedynczo lub wkleić całą listę.",
+    "step2Title": "Kręcić się:",
+    "step2Desc": "Gdy już dokonasz wyboru i będziesz zadowolony z wyglądu, po prostu zainicjuj obrót. Zwykle jest tam wyraźny przycisk, taki jak „Zakręć kołem!”.",
+    "stepsList": {
+      "1": "<strong>Wprowadź swoje opcje</strong> – dodaj do koła nazwy, liczby, kolory lub opcje.",
+      "2": "<strong>Zakręć kołem</strong> – kliknij lub naciśnij przycisk obracania, aby rozpocząć proces losowego wyboru.",
+      "3": "<strong>Uzyskaj natychmiastowe wyniki</strong> – koło zatrzymuje się przy losowym wyborze i podaje odpowiedź.",
+      "4": "<strong>Powtórz w razie potrzeby</strong> – możesz obrócić ponownie, aby uzyskać nowe wyniki, lub dostosować koło do różnych decyzji."
+    },
+    "manageTitle": "Zarządzaj swoim kołem i wynikami",
+    "manageDesc": "W zależności od konkretnego narzędzia możesz znaleźć takie funkcje, jak:",
+    "manageList": {
+      "modes": "<strong>Tryby:</strong> możesz wybrać różne sposoby działania koła, na przykład tryb „Eliminacja”, w którym wybrana opcja jest usuwana do następnego obrotu.",
+      "editing": "<strong>Edycja:</strong> większość narzędzi pozwala edytować, powielać, ukrywać lub usuwać dodane wpisy. Zwykle można również łatwo wyczyścić całą listę.",
+      "sharing": "<strong>Zapisywanie/udostępnianie:</strong> często możesz zapisać konfigurację koła (czasami wymaga to konta) i udostępnić ją innym za pomocą linku, a może nawet uzyskać kod do jej osadzenia.",
+      "results": "<strong>Wyniki:</strong> niektóre koła mogą śledzić wcześniejsze wyniki."
+    },
+    "otherToolsTitle": "Inne narzędzie do kół",
+    "otherToolsDesc": "Oprócz głównego losowego koła, istnieje również kilka wyspecjalizowanych narzędzi losowego koła.",
+    "otherToolsList": {
+      "names": "<strong>Wybieracze imion / Selektory uczniów:</strong> Powszechnie używane przez nauczycieli do losowego wybierania osób, czasami nazywane „Kołem imion” lub „Losowym wybieraniem imion”.",
+      "yesno": "<strong>Koła Tak/Nie:</strong> do prostych decyzji binarnych.",
+      "food": "<strong>Koło Żywności:</strong> Nie wiesz, co zjeść? Zakręć kołem jedzenia, aby podejmować szybkie, losowe decyzje dotyczące posiłków."
+    },
+    "otherToolsOutro": "Każda specjalistyczna wersja opiera się na podstawowej koncepcji losowego wyboru i dostosowuje ją do różnych potrzeb, dzięki czemu jest przydatna do wszystkiego, od organizowania zajęć po rozstrzyganie debat w zabawny i bezstronny sposób."
+  },
+  "yesNoPage": {
+    "title": "Tak/Nie Wybór kół",
+    "heroTitle": "Podejmuj szybkie decyzje tak/nie",
+    "heroDesc": "Nie możesz się zdecydować pomiędzy tak a nie? Pozwól, aby nasze koło decydowało za Ciebie! Dostosuj koło za pomocą różnych trybów i zestawów wejściowych, aby uzyskać odpowiedź, której potrzebujesz.",
+    "howToTitle": "Jak używać",
+    "steps": {
+      "1": "Wybierz pomiędzy trybem „TAK lub NIE” lub „TAK NIE lub MOŻE”.",
+      "2": "Wybierz liczbę zestawów wejściowych (1-5), aby dostosować rozkład prawdopodobieństwa",
+      "3": "Kliknij przycisk „Zakręć”, aby uzyskać odpowiedź",
+      "4": "Wynik zostanie podświetlony i policzony w powyższych polach",
+      "5": "Użyj przycisku „Resetuj wyniki”, aby wyczyścić wszystkie liczniki"
+    },
+    "seoTitle": "Dlaczego warto używać koła Tak/Nie?",
+    "seoDesc1": "Życie jest pełne wyborów, a czasami te najprostsze są najtrudniejsze. Nasz kołowrotek Tak/Nie jest idealnym narzędziem do podejmowania decyzji, gdy utkniesz. To zabawny i szybki sposób na losowy wybór, działający jak szybki generator tak lub nie.",
+    "seoList": {
+      "1": "<strong>Rozstrzygaj debaty:</strong> szybko rozstrzygaj przyjazne spory.",
+      "2": "<strong>Podejmuj szybkie decyzje:</strong> bez wysiłku decyduj o kolacji, wieczorze filmowym lub prostych codziennych wyborach.",
+      "3": "<strong>Dodaj zabawę:</strong> wprowadź przypadkowość i emocje do zajęć grupowych.",
+      "4": "<strong>Pokonaj niezdecydowanie:</strong> pozwól, aby koło przełamało impas, gdy naprawdę jesteś niezdecydowany."
+    },
+    "seoDesc2": "Niezależnie od tego, czy potrzebujesz prostego „tak” czy „nie”, czy też chcesz dodać „być może”, aby uzyskać więcej niuansów, to zabawne narzędzie do podejmowania decyzji natychmiast zapewnia bezstronną odpowiedź. Zakręć kołem i pozwól losowi zadecydować!",
+    "moreTitle": "Poza prostymi wyborami: więcej zastosowań",
+    "moreDesc": "Narzędzie to, choć świetnie nadaje się do prostych pytań typu „tak/nie”, może być zaskakująco wszechstronne:",
+    "moreList": {
+      "1": "<strong>Pomoc w nauce i nauce:</strong> Przeprowadź quiz! Ułóż pytania z odpowiedzią tak/nie i zakręć.",
+      "2": "<strong>Podpowiedzi kreatywne:</strong> utknąłeś w historii lub projekcie? Użyj koła do podejmowania binarnych decyzji twórczych.",
+      "3": "<strong>Przełamywanie nawyków:</strong> próbujesz zdecydować, czy poddać się drobnej pokusie? Niech koło doda warstwę szansy.",
+      "4": "<strong>Uczciwe odgrywanie tur:</strong> używaj tej opcji w grach, aby zdecydować, kto będzie następny."
+    },
+    "powerTitle": "Siła losowości",
+    "powerDesc": "Nasze koło wykorzystuje niezawodny generator liczb pseudolosowych, aby zapewnić, że każdy obrót jest uczciwy i nieprzewidywalny. Eliminuje to osobiste uprzedzenia przy podejmowaniu prostych decyzji, czyniąc z niego naprawdę bezstronnego decydenta. Czasami pozostawienie drobnych wyborów przypadkowi może uwolnić energię mentalną na ważniejsze sprawy! Opcjonalna opcja „Może” zwiększa elastyczność w sytuacjach, gdy proste „tak” lub „nie” nie wystarczy."
+  },
+  "foodPage": {
+    "title": "Koło Żywności",
+    "heroTitle": "Koło żywieniowe – co jeść?",
+    "heroDesc": "Nie możesz się zdecydować, co zjeść na lunch lub kolację? Zakręć <strong>Kołem Pożywienia</strong> i pozwól losowi zadecydować! Niezależnie od tego, czy masz ochotę na pizzę, sushi, czy zdrową sałatkę, po prostu dodaj swoje opcje, zakręć kołem i posiłek gotowy.",
+    "howToTitle": "Jak korzystać z koła żywnościowego",
+    "steps": {
+      "1": "<strong>Dodaj ochotę i opcje</strong> — wpisz nazwę każdego dania lub restauracji i kliknij przycisk <em>+</em>.",
+      "2": "<strong>Dostosuj kolory</strong> — kliknij próbkę koloru obok dowolnego jedzenia, aby zmienić kolor plasterka.",
+      "3": "<strong>Zakręć kołem</strong> — kliknij <em>Zakręć kołem</em> lub środkowy przycisk na kole.",
+      "4": "<strong>Zobacz zwycięzcę</strong> — wybrane jedzenie pojawi się nad kołem z okazji 🎉. Możesz w końcu przestać się zastanawiać i zacząć jeść!",
+      "5": "<strong>Zakręć ponownie</strong> — nadal nie jesteś przekonany? Kręć dalej lub usuń opcje, które Ci się nie podobają, korzystając z funkcji <em>Usuń</em>."
+    },
+    "seoTitle": "Co to jest koło żywnościowe?",
+    "seoDesc": "<strong>Koło Żywności</strong> to cyfrowe koło obrotowe używane specjalnie do wybierania z listy losowych posiłków, restauracji lub kuchni. Rozwiązuje klasyczne pytanie „Co chcesz zjeść?” problem.",
+    "seoList": {
+      "1": "<strong>Decydujący o restauracji</strong> — nie możesz zgodzić się na restaurację? Dodaj 5 najlepszych opcji i pozwól, aby koło wybrało.",
+      "2": "<strong>Ruletka przygotowywania posiłków</strong> — spraw, aby gotowanie było zabawą, obracając się w poszukiwaniu białek, węglowodanów i warzyw.",
+      "3": "<strong>randomizer na wynos</strong> – pizza? Chiński? Tajski? Zakręć, kiedy tylko masz ochotę.",
+      "4": "<strong>Catering na przyjęciu w biurze</strong> — pozwól zespołowi przedstawić opcje i skorzystać z koła, aby wybrać jedzenie."
+    },
+    "whyTitle": "Dlaczego warto korzystać z naszego koła żywieniowego?",
+    "whyDesc": "Pomiń niekończące się przewijanie w aplikacjach do dostawy. Nasze koło żywnościowe pomoże Ci szybko i uczciwie podjąć decyzję:",
+    "features": {
+      "1Title": "Zakończ debatę",
+      "1Desc": "Nigdy więcej „Nie wiem, czego chcesz?” Zakręć kołem, a decyzja zostanie podjęta natychmiast.",
+      "2Title": "Natychmiastowa konfiguracja",
+      "2Desc": "Nie potrzeba konta. Otwórz stronę, wpisz opcje jedzenia i od razu zakręć.",
+      "3Title": "W pełni konfigurowalny",
+      "3Desc": "Dodaj emotikony, zmień kolory plasterków, aby pasowały do ​​jedzenia i wyklucz opcje.",
+      "4Title": "Uczciwe wyniki",
+      "4Desc": "Kryptograficznie bezpieczna losowość oznacza, że ​​faktycznie otrzymujesz bezstronny rzut.",
+      "5Title": "Działa na urządzeniach mobilnych",
+      "5Desc": "Idealny do podejmowania decyzji w podróży. W pełni responsywna konstrukcja wygląda świetnie na każdym telefonie.",
+      "6Title": "100% za darmo",
+      "6Desc": "Nasze koło żywności jest zawsze bezpłatne, bez płatnych płatności i wymaganych rejestracji."
+    },
+    "faqTitle": "Często zadawane pytania",
+    "faqs": {
+      "1Title": "Czy Food Wheel działa na moim telefonie?",
+      "1Desc": "Tak! Koło Żywności jest całkowicie przyjazne dla urządzeń mobilnych.",
+      "2Title": "Czy wyniki są naprawdę losowe?",
+      "2Desc": "Tak. Każdy obrót wykorzystuje solidny algorytm pseudolosowy, aby zagwarantować, że każda opcja jedzenia ma równe szanse.",
+      "3Title": "Czy mogę zapisać listę moich ulubionych potraw?",
+      "3Desc": "Dopóki karta przeglądarki jest otwarta, Twoje listy pozostają aktywne. Zalecamy dodanie strony do zakładek."
+    }
+  },
+  "namesPage": {
+    "title": "Koło imion",
+    "heroTitle": "Koło nazw — bezpłatny, losowy wybór nazw",
+    "heroDesc": "Wpisz dowolne imiona, zakręć kołem i pozwól losowi wybrać zwycięzcę w ciągu kilku sekund. Niezależnie od tego, czy potrzebujesz <strong>losowego wybierania nazw</strong> dla swojej klasy, uczciwego losowania w ramach rozdania nagród, czy też szybkiego sposobu przydzielania zadań swojemu zespołowi – to bezpłatne Koło nazw zapewni Ci wszystko. Bez rejestracji, bez pobierania, działa na każdym urządzeniu.",
+    "howToTitle": "Jak korzystać z Koła Nazw",
+    "steps": {
+      "1": "<strong>Dodaj nazwy</strong> — wpisz każdą nazwę w polu wejściowym i naciśnij <em>Enter</em>.",
+      "2": "<strong>Dostosuj kolory</strong> — kliknij próbkę koloru obok dowolnej nazwy.",
+      "3": "<strong>Zakręć kołem</strong> — kliknij <em>Zakręć kołem</em> lub środkowy przycisk.",
+      "4": "<strong>Zobacz zwycięzcę</strong> — wybrane imię pojawi się nad kołem z okazji 🎉. Liczba wygranych śledzi, ile razy każde imię zostało wybrane.",
+      "5": "<strong>Zakręć ponownie</strong> — kręć się przez wiele rund. Użyj <em>Wyklucz</em>, aby usunąć zwycięzców z przyszłych spinów, lub <em>Resetuj</em>, aby zacząć od nowa."
+    },
+    "seoTitle": "Co to jest koło imion?",
+    "seoDesc": "<strong>Koło imion</strong> to cyfrowe kołowrotek, wstępnie zaprojektowane do wybierania losowych nazw z listy. Działa tak samo, jak klasyczne koło nagród — dodajesz dowolne nazwy, klikasz zakręć, a koło losowo ląduje na zwycięzcy.",
+    "seoList": {
+      "1": "<strong>Losowy wybór imion w klasie</strong> — nauczyciele korzystają z koła imion, aby zwracać się do uczniów bez uprzedzeń.",
+      "2": "<strong>Rozdanie i konkursy</strong> — organizujesz rozdanie w mediach społecznościowych? Dodaj nazwiska wszystkich uczestników i zakręć.",
+      "3": "<strong>Wybór drużyny</strong> — losowo podziel graczy na drużyny, wybierz kapitana drużyny lub przypisz role.",
+      "4": "<strong>Gry biurowe i lodołamacze</strong> — kto prezentuje pierwszy? Kto jutro przyniesie kawę? Niech koło zadecyduje."
+    },
+    "whyTitle": "Dlaczego warto korzystać z naszego koła nazw?",
+    "whyDesc": "W Internecie dostępnych jest wiele narzędzi do wybierania nazw, ale nasze wyróżnia się z kilku kluczowych powodów:",
+    "features": {
+      "1Title": "Naprawdę losowe",
+      "1Desc": "Używamy kryptograficznie zaszczepionego generatora liczb pseudolosowych, aby mieć pewność, że każdy obrót jest całkowicie nieprzewidywalny.",
+      "2Title": "Natychmiastowa konfiguracja",
+      "2Desc": "Nie potrzeba konta. Otwórz stronę, wpisz swoje imiona i zakręć. Cały proces trwa niecałe 30 sekund.",
+      "3Title": "W pełni konfigurowalny",
+      "3Desc": "Zmień kolory plasterków, zmień kolejność nazw, zduplikuj wpisy dla wyników ważonych lub wyklucz niektóre nazwy.",
+      "4Title": "Śledzenie wygranych",
+      "4Desc": "Koło śledzi, ile razy każde imię zostało wybrane w wielu rundach.",
+      "5Title": "Działa na każdym urządzeniu",
+      "5Desc": "W pełni responsywna konstrukcja oznacza, że ​​koło wygląda i działa świetnie zarówno na telefonach, tabletach, jak i komputerach stacjonarnych.",
+      "6Title": "Zawsze za darmo",
+      "6Desc": "Żadnych reklam zakłócających Twój obrót, żadnych poziomów premium ani subskrypcji. 100% za darmo, na zawsze."
+    },
+    "tipsTitle": "Wskazówki, jak najlepiej wykorzystać koło swojego imienia",
+    "tips": {
+      "1Title": "Ważone wybieranie nazw",
+      "1Desc": "Chcesz zwiększyć szanse na wybranie konkretnego imienia? Po prostu dodaj tę nazwę kilka razy, używając przycisku <em>Kopiuj</em>. Każdy zduplikowany wpis otrzymuje swój własny fragment, skutecznie podwajając (lub potrajając) prawdopodobieństwo wybrania tej osoby.",
+      "2Title": "Tryb eliminacji",
+      "2Desc": "Organizujesz turniej, quiz lub loterię? Użyj przycisku <em>Wyklucz</em>, aby usunąć każdego zwycięzcę z kolejnych spinów. Dzięki temu każdy uczestnik może wygrać tylko raz.",
+      "3Title": "Tasuj o sprawiedliwość",
+      "3Desc": "Jeśli regularnie korzystasz z tej samej listy nazw, przed jej przekręceniem naciśnij przycisk <em>Przemieszaj</em>. Tasowanie losuje początkową kolejność plasterków.",
+      "4Title": "Zapisz swoją listę imion",
+      "4Desc": "Potrzebujesz tych samych nazw na każdej lekcji lub spotkaniu? Po prostu nie zamykaj karty przeglądarki — nazwy pozostaną na kole, dopóki nie zresetujesz lub nie zamkniesz strony."
+    },
+    "faqTitle": "Często zadawane pytania",
+    "faqs": {
+      "1Title": "Czy Koło Nazw jest całkowicie losowe?",
+      "1Desc": "Tak. Każde zakręcenie wykorzystuje funkcję Math.random() JavaScript, która generuje liczbę pseudolosową w celu ustalenia zwycięskiego wycinka.",
+      "2Title": "Ile nazw mogę dodać do koła?",
+      "2Desc": "Nie ma twardego limitu. Koło automatycznie zmienia rozmiar każdego plasterka, aby dopasować go do wszystkich wpisów. Aby zapewnić najlepszą czytelność, zalecamy trzymanie go poniżej 50 nazw.",
+      "3Title": "Czy mogę zapisać moje koło imion?",
+      "3Desc": "Twoje imiona i nazwiska są przechowywane tak długo, jak strona jest otwarta. Dodaj stronę do zakładek po dodaniu swoich imion — ponowne otwarcie tej samej karty w większości przeglądarek przywróci stan.",
+      "4Title": "Czy Koło Imion działa na urządzeniach mobilnych?",
+      "4Desc": "Absolutnie. Koło jest w pełni responsywne i działa na systemach iOS, Android i każdej nowoczesnej przeglądarce mobilnej.",
+      "5Title": "Jaka jest różnica pomiędzy Kołem Nazw a generatorem losowych nazw?",
+      "5Desc": "<em>Generator nazw losowych</em> zazwyczaj tworzy fikcyjne nazwy z bazy danych. Nasze Koło Nazw wybiera spośród konkretnych nazw, które <em>ty</em> podasz.",
+      "6Title": "Czy mogę użyć tego jako losowego wybieracza uczniów?",
+      "6Desc": "Tak – to jedno z najpopularniejszych zastosowań. Nauczyciele dodają spis zajęć, a następnie zakręć kołem, aby zadzwonić do ucznia."
+    }
+  },
+  "embed": {
+    "loading": "Ładowanie konfiguracji koła...",
+    "instructions": "Użyj poniższych elementów sterujących, aby skonfigurować zawartość i wygląd koła. Następnie skonfiguruj ustawienia osadzania i wygeneruj kod, aby umieścić go na swojej stronie internetowej.",
+    "settingsTitle": "Ustawienia osadzania",
+    "titleLabel": "Tytuł (dla dostępności):",
+    "widthLabel": "Szerokość (px):",
+    "heightLabel": "Wysokość (px):",
+    "codeTitle": "Wstaw kod",
+    "codeDesc": "Skopiuj poniższy kod, aby osadzić skonfigurowane koło na swojej stronie internetowej:",
+    "generateBtn": "Wygeneruj kod osadzania",
+    "errConfigure": "Błąd podczas generowania kodu. Najpierw skonfiguruj koło.",
+    "errEmpty": "Przed wygenerowaniem kodu do umieszczenia na stronie dodaj co najmniej jeden element do koła."
+  }
+}

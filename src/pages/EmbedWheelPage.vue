@@ -9,9 +9,9 @@
       :cursor-distance="0"
       :display-center-button="false" 
       :display-shadow="false" 
-    ></VueWheelSpinner> <!-- Hide the default spin button --> <!-- Optional: simplify appearance -->
+    ></VueWheelSpinner>
     <div v-else class="loading-message">
-      Loading wheel configuration...
+      {{ $t('embed.loading') }}
     </div>
   </div>
 </template>

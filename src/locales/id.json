@@ -1,0 +1,240 @@
+{
+  "header": {
+    "randomWheel": "Roda Acak",
+    "wheelOfNames": "Roda Nama",
+    "yesNoWheel": "Ya/Tidak Roda",
+    "embed": "Menanamkan",
+    "foodWheel": "Roda Makanan",
+    "configureEmbed": "Konfigurasikan Roda yang Dapat Disematkan"
+  },
+  "footer": {
+    "randoWheel": "Roda Rando",
+    "copyright": "© {tahun} Pemintal Roda. Semua hak dilindungi undang-undang.",
+    "privacyPolicy": "Kebijakan Privasi",
+    "termsConditions": "Syarat & Ketentuan",
+    "otherWheels": "Roda Lainnya"
+  },
+  "mainWheel": {
+    "winner": "Pemenang: {teks} 🎉",
+    "spin": "Putaran",
+    "inputs": "masukan",
+    "reset": "Mengatur ulang",
+    "shuffle": "Acak",
+    "placeholder": "Masukkan teks di sini...",
+    "spinTheWheel": "Putar Roda",
+    "cursor": "Kursor",
+    "cursorAngle": "Sudut Kursor",
+    "cursorDistance": "Jarak Kursor",
+    "pleaseInclude": "Harap sertakan setidaknya satu item di roda",
+    "copySuffix": "(menyalin)"
+  },
+  "yesNoWheel": {
+    "yes": "YA",
+    "no": "TIDAK",
+    "maybe": "MUNGKIN",
+    "mode": "Mode",
+    "binaryMode": "YA atau TIDAK",
+    "ternaryMode": "YA TIDAK atau MUNGKIN",
+    "numInputSets": "Jumlah Set Input",
+    "resetResults": "Atur Ulang Hasil"
+  },
+  "exploreMore": {
+    "title": "Jelajahi Lebih Banyak Roda Berputar Gratis",
+    "descDefault": "Mencari jenis pemilih acak yang berbeda? Lihat alat roda gratis kami yang lain:",
+    "descFood": "Perlu membuat jenis keputusan lain? Coba alat kami yang lain:",
+    "rwTitle": "Pemintal Roda Acak",
+    "rwDesc": "Roda paling dapat disesuaikan untuk hampir semua pilihan.",
+    "wonTitle": "Roda Nama",
+    "wonDesc": "Pendamping yang sempurna untuk hadiah, partisipasi kelas, atau pemberian tugas.",
+    "ynwTitle": "Ya / Tidak Roda",
+    "ynwDesc": "Pemintal ya atau tidak yang sederhana untuk menangani pilihan biner cepat secara instan."
+  },
+  "home": {
+    "mainTitle": "Pemintal Roda Acak",
+    "whatIsTitle": "Apa itu Roda Acak?",
+    "whatIsDesc": "Roda Acak adalah alat interaktif yang berputar untuk membuat pilihan acak dari serangkaian pilihan. Baik Anda memilih nama, warna, angka, atau jawaban ya/tidak, pemutar acak menambah kesenangan dan keadilan dalam pengambilan keputusan. Ideal untuk permainan, undian, aktivitas kelas, atau sekadar mempermudah pilihan sehari-hari, roda acak sederhana, menarik, dan banyak digunakan. Cobalah pemintal roda acak untuk menambah kegembiraan pada keputusan Anda berikutnya!",
+    "howWorksTitle": "Bagaimana Roda Acak Bekerja?",
+    "howWorksDesc": "Roda Acak beroperasi dengan memutar roda digital yang dibagi menjadi beberapa bagian, masing-masing berisi opsi unik. Saat roda diputar, ia mendarat secara acak di salah satu bagian ini, memberikan pilihan yang tidak memihak.",
+    "stepsTitle": "Langkah-langkah Menggunakan Roda Acak:",
+    "step1Title": "Sisipkan teks:",
+    "step1Desc": "Anda biasanya dapat menambahkan item (seperti nama, tugas, atau keputusan) satu per satu atau menempelkan seluruh daftar.",
+    "step2Title": "Putaran:",
+    "step2Desc": "Setelah pilihan Anda ada dan Anda puas dengan tampilannya, mulai saja putarannya. Biasanya ada tombol bening seperti \"Putar Roda!\".",
+    "stepsList": {
+      "1": "<strong>Masukkan Pilihan Anda</strong> – Tambahkan nama, nomor, warna, atau pilihan ke roda.",
+      "2": "<strong>Putar Roda</strong> – Klik atau ketuk tombol putar untuk memulai proses pemilihan acak.",
+      "3": "<strong>Dapatkan Hasil Instan</strong> – Roda berhenti pada pilihan acak, memberikan jawaban Anda.",
+      "4": "<strong>Ulangi sesuai Kebutuhan</strong> – Anda dapat memutar lagi untuk mendapatkan hasil baru atau menyesuaikan roda untuk keputusan berbeda."
+    },
+    "manageTitle": "Kelola Roda & Hasil Anda",
+    "manageDesc": "Bergantung pada alat spesifiknya, Anda mungkin menemukan fitur seperti:",
+    "manageList": {
+      "modes": "<strong>Mode:</strong> Anda mungkin dapat memilih cara berbeda agar roda berfungsi, seperti mode 'Eliminasi' yang mana opsi yang dipilih dihapus untuk putaran berikutnya.",
+      "editing": "<strong>Pengeditan:</strong> Sebagian besar alat memungkinkan Anda mengedit, menggandakan, menyembunyikan, atau menghapus entri yang telah Anda tambahkan. Biasanya Anda juga dapat menghapus seluruh daftar dengan mudah.",
+      "sharing": "<strong>Menyimpan/Berbagi:</strong> Anda sering kali dapat menyimpan pengaturan roda Anda (terkadang memerlukan akun) dan membaginya dengan orang lain menggunakan tautan atau bahkan mungkin mendapatkan kode untuk menyematkannya.",
+      "results": "<strong>Hasil:</strong> Beberapa roda mungkin melacak hasil sebelumnya."
+    },
+    "otherToolsTitle": "Alat Roda Lainnya",
+    "otherToolsDesc": "Selain Roda acak utama, ada beberapa alat khusus Roda acak yang dibuat juga.",
+    "otherToolsList": {
+      "names": "<strong>Pemilih Nama / Pemilih Siswa:</strong> Biasa digunakan oleh pendidik untuk memilih individu secara acak, terkadang disebut \"Roda Nama\" atau \"Pemilih Nama Acak\".",
+      "yesno": "<strong>Roda Ya/Tidak:</strong> Untuk keputusan biner sederhana.",
+      "food": "<strong>Roda Makanan:</strong> Tidak yakin harus makan apa? Putar roda makanan untuk mengambil keputusan makan secara acak dan cepat."
+    },
+    "otherToolsOutro": "Setiap versi khusus mengambil konsep inti dari pemilihan acak dan menyesuaikannya untuk memenuhi kebutuhan yang berbeda, menjadikannya berguna untuk segala hal mulai dari mengatur kegiatan hingga menyelesaikan perdebatan dengan cara yang menyenangkan dan tidak memihak."
+  },
+  "yesNoPage": {
+    "title": "Ya/Tidak Pemilih Roda",
+    "heroTitle": "Buat Keputusan Cepat Ya/Tidak",
+    "heroDesc": "Tidak bisa memutuskan antara ya dan tidak? Biarkan roda kami yang memutuskan untuk Anda! Sesuaikan roda dengan mode dan set input berbeda untuk mendapatkan jawaban yang Anda butuhkan.",
+    "howToTitle": "Cara Menggunakan",
+    "steps": {
+      "1": "Pilih antara mode \"YA atau TIDAK\" atau mode \"YA TIDAK atau MUNGKIN\".",
+      "2": "Pilih jumlah set input (1-5) untuk menyesuaikan distribusi probabilitas",
+      "3": "Klik tombol \"Putar\" untuk mendapatkan jawaban Anda",
+      "4": "Hasilnya akan disorot dan dihitung dalam kotak di atas",
+      "5": "Gunakan tombol \"Reset Hasil\" untuk menghapus semua penghitung"
+    },
+    "seoTitle": "Mengapa Menggunakan Roda Ya/Tidak?",
+    "seoDesc1": "Hidup ini penuh dengan pilihan, dan terkadang pilihan yang paling sederhana adalah yang tersulit. Wheel Spinner Ya/Tidak kami adalah pengambil keputusan yang sempurna saat Anda mengalami kebuntuan. Ini adalah cara yang menyenangkan dan cepat untuk mendapatkan pilihan acak, bertindak sebagai generator ya atau tidak yang cepat.",
+    "seoList": {
+      "1": "<strong>Selesaikan Perdebatan:</strong> Selesaikan argumen persahabatan dengan cepat.",
+      "2": "<strong>Buat Keputusan Cepat:</strong> Putuskan makan malam, menonton film, atau pilihan sederhana sehari-hari dengan mudah.",
+      "3": "<strong>Tambahkan Kegembiraan:</strong> Menambah keacakan dan kegembiraan ke dalam aktivitas kelompok.",
+      "4": "<strong>Atasi Keragu-raguan:</strong> Biarkan roda memecahkan kebuntuan saat Anda benar-benar ragu-ragu."
+    },
+    "seoDesc2": "Apakah Anda memerlukan jawaban sederhana ya atau tidak, atau ingin menambahkan 'mungkin' agar lebih bernuansa, alat pengambilan keputusan yang menyenangkan ini memberikan jawaban yang tidak memihak secara instan. Putar rodanya dan biarkan takdir yang memutuskan!",
+    "moreTitle": "Melampaui Pilihan Sederhana: Lebih Banyak Kegunaan",
+    "moreDesc": "Meskipun bagus untuk pertanyaan lugas ya/tidak, alat ini ternyata sangat serbaguna:",
+    "moreList": {
+      "1": "<strong>Bantuan Belajar & Belajar:</strong> Uji diri Anda sendiri! Susun pertanyaan dengan jawaban ya/tidak dan putar.",
+      "2": "<strong>Anjuran Kreatif:</strong> Terjebak pada cerita atau proyek? Gunakan roda untuk keputusan kreatif biner.",
+      "3": "<strong>Melanggar Kebiasaan:</strong> Mencoba memutuskan apakah akan menuruti godaan kecil? Biarkan roda menambahkan lapisan peluang.",
+      "4": "<strong>Pengambilan giliran yang Adil:</strong> Gunakan dalam permainan untuk memutuskan siapa yang maju selanjutnya."
+    },
+    "powerTitle": "Kekuatan Keacakan",
+    "powerDesc": "Roda kami menggunakan generator angka pseudo-acak yang andal untuk memastikan setiap putaran adil dan tidak dapat diprediksi. Hal ini menghilangkan bias pribadi dari keputusan sederhana, menjadikannya pengambil keputusan yang benar-benar tidak memihak. Terkadang, membiarkan pilihan-pilihan kecil secara kebetulan dapat membebaskan energi mental untuk hal-hal yang lebih penting! Pilihan 'Mungkin' menambah fleksibilitas ketika jawaban ya atau tidak saja tidak cukup."
+  },
+  "foodPage": {
+    "title": "Roda Makanan",
+    "heroTitle": "Roda Makanan — Apa yang Harus Saya Makan?",
+    "heroDesc": "Bingung memutuskan mau makan apa untuk makan siang atau makan malam? Putar <strong>Roda Makanan</strong> dan biarkan takdir yang menentukan! Baik Anda mendambakan pizza, sushi, atau mencari salad sehat, cukup tambahkan pilihan Anda, putar rodanya, dan makanan Anda pun siap.",
+    "howToTitle": "Cara Menggunakan Roda Makanan",
+    "steps": {
+      "1": "<strong>Tambahkan Keinginan dan Pilihan</strong> — Ketik setiap nama makanan atau restoran dan klik tombol <em>+</em>.",
+      "2": "<strong>Sesuaikan Warna</strong> — Klik contoh warna di samping makanan mana pun untuk mengubah warna irisan.",
+      "3": "<strong>Putar Roda</strong> — Klik <em>Putar Roda</em> atau tombol tengah pada roda.",
+      "4": "<strong>Lihat Pemenangnya</strong> — Makanan yang dipilih muncul di atas kemudi dengan perayaan 🎉. Anda akhirnya bisa berhenti berdebat dan mulai makan!",
+      "5": "<strong>Putar Lagi</strong> — Masih belum yakin? Putar terus atau hapus opsi yang tidak Anda sukai menggunakan fitur <em>Hapus</em>."
+    },
+    "seoTitle": "Apa Itu Roda Makanan?",
+    "seoDesc": "<strong>Roda Makanan</strong> adalah roda pemintal digital yang khusus digunakan untuk memilih makanan, restoran, atau masakan secara acak dari daftar. Ini memecahkan pertanyaan klasik \"Apa yang ingin kamu makan?\" masalah.",
+    "seoList": {
+      "1": "<strong>Penentu restoran</strong> — Tidak dapat menyetujui restoran? Tambahkan 5 pilihan teratas dan biarkan roda memilih.",
+      "2": "<strong>Roulette persiapan makan</strong> — Jadikan memasak menyenangkan dengan memanfaatkan protein, karbohidrat, dan sayuran Anda.",
+      "3": "<strong>Pengacak bungkus makanan</strong> — Pizza? Cina? Thai? Putar kapan pun Anda mengidam.",
+      "4": "<strong>Katering pesta kantor</strong> — Biarkan tim mengajukan opsi dan menggunakan roda untuk memutuskan makanan."
+    },
+    "whyTitle": "Mengapa Menggunakan Roda Makanan Kami?",
+    "whyDesc": "Lewati pengguliran tanpa akhir pada aplikasi pengiriman. Roda Makanan kami membantu Anda mengambil keputusan dengan cepat dan adil:",
+    "features": {
+      "1Title": "Akhiri Perdebatan",
+      "1Desc": "Tidak ada lagi \"Saya tidak tahu, apa yang Anda inginkan?\" Putar rodanya dan keputusan diambil secara instan.",
+      "2Title": "Pengaturan Instan",
+      "2Desc": "Tidak diperlukan akun. Buka halamannya, ketik pilihan makanan Anda, dan segera putar.",
+      "3Title": "Dapat Disesuaikan Sepenuhnya",
+      "3Desc": "Tambahkan emoji, ubah warna irisan agar sesuai dengan makanan, dan kecualikan opsi.",
+      "4Title": "Hasil yang Wajar",
+      "4Desc": "Keacakan yang aman secara kriptografis berarti Anda benar-benar mendapatkan hasil yang tidak memihak.",
+      "5Title": "Bekerja di Ponsel",
+      "5Desc": "Sempurna untuk memutuskan saat bepergian. Desain yang sepenuhnya responsif tampak hebat di ponsel apa pun.",
+      "6Title": "100% Gratis",
+      "6Desc": "Food Wheel kami selalu gratis, tanpa pembayaran berbayar atau pendaftaran wajib."
+    },
+    "faqTitle": "Pertanyaan yang Sering Diajukan",
+    "faqs": {
+      "1Title": "Apakah Food Wheel berfungsi di ponsel saya?",
+      "1Desc": "Ya! Roda Makanan sepenuhnya ramah seluler.",
+      "2Title": "Apakah hasilnya benar-benar acak?",
+      "2Desc": "Ya. Setiap putaran menggunakan algoritma pseudo-acak yang kuat untuk menjamin bahwa setiap pilihan makanan memiliki peluang yang sama.",
+      "3Title": "Bisakah saya menyimpan daftar makanan favorit saya?",
+      "3Desc": "Selama Anda tetap membuka tab browser, daftar Anda tetap aktif. Kami merekomendasikan untuk menandai halaman tersebut."
+    }
+  },
+  "namesPage": {
+    "title": "Roda Nama",
+    "heroTitle": "Roda Nama — Pemilih Nama Acak Gratis",
+    "heroDesc": "Ketik nama apa pun, putar rodanya, dan biarkan takdir memilih pemenang dalam hitungan detik. Baik Anda memerlukan <strong>pemilih nama acak</strong> untuk kelas Anda, undian yang adil untuk hadiah, atau cara cepat untuk menugaskan tugas ke tim Anda — Roda Nama gratis ini siap membantu Anda. Tidak perlu mendaftar, tidak perlu mengunduh, berfungsi di perangkat apa pun.",
+    "howToTitle": "Cara Menggunakan Roda Nama",
+    "steps": {
+      "1": "<strong>Tambahkan Nama</strong> — Ketik setiap nama di kotak masukan dan tekan <em>Enter</em>.",
+      "2": "<strong>Sesuaikan Warna</strong> — Klik contoh warna di samping nama mana pun.",
+      "3": "<strong>Putar Roda</strong> — Klik <em>Putar Roda</em> atau tombol tengah.",
+      "4": "<strong>Lihat Pemenangnya</strong> — Nama yang dipilih muncul di atas kemudi dengan perayaan 🎉. Hitungan kemenangan melacak berapa kali setiap nama dipilih.",
+      "5": "<strong>Putar Lagi</strong> — Terus berputar selama beberapa putaran. Gunakan <em>Kecualikan</em> untuk menghapus pemenang dari putaran berikutnya, atau <em>Setel Ulang</em> untuk memulai dari awal."
+    },
+    "seoTitle": "Apa Itu Roda Nama?",
+    "seoDesc": "<strong>Roda Nama</strong> adalah roda pemintal digital yang telah dirancang sebelumnya untuk memilih nama acak dari daftar. Cara kerjanya sama seperti roda hadiah klasik — Anda menambahkan nama apa pun yang Anda suka, klik putar, dan roda tersebut mendarat pada pemenang secara acak.",
+    "seoList": {
+      "1": "<strong>Pemilih nama acak di kelas</strong> — Guru menggunakan roda nama untuk memanggil siswa tanpa bias.",
+      "2": "<strong>Hadiah & kontes</strong> — Mengadakan giveaway di media sosial? Tambahkan semua nama peserta dan putar.",
+      "3": "<strong>Pemilihan tim</strong> — Secara acak membagi pemain menjadi beberapa tim, memilih kapten tim, atau menetapkan peran.",
+      "4": "<strong>Permainan kantor & pemecah kebekuan</strong> — Siapa yang melakukan presentasi terlebih dahulu? Siapa yang membawakan kopi besok? Biarkan roda yang memutuskan."
+    },
+    "whyTitle": "Mengapa Menggunakan Roda Nama Kami?",
+    "whyDesc": "Ada banyak alat pemilih nama online, tetapi alat kami menonjol karena beberapa alasan utama:",
+    "features": {
+      "1Title": "Benar-benar Acak",
+      "1Desc": "Kami menggunakan generator nomor pseudo-acak yang diunggulkan secara kriptografis untuk memastikan setiap putaran benar-benar tidak dapat diprediksi.",
+      "2Title": "Pengaturan Instan",
+      "2Desc": "Tidak diperlukan akun. Buka halamannya, ketik nama Anda, dan putar. Seluruh proses memakan waktu kurang dari 30 detik.",
+      "3Title": "Dapat Disesuaikan Sepenuhnya",
+      "3Desc": "Ubah warna irisan, susun ulang nama, duplikat entri untuk hasil berbobot, atau kecualikan nama tertentu.",
+      "4Title": "Menangkan Pelacakan",
+      "4Desc": "Roda melacak berapa kali setiap nama dipilih dalam beberapa putaran.",
+      "5Title": "Bekerja di Perangkat Apa Pun",
+      "5Desc": "Desain yang sepenuhnya responsif berarti roda terlihat dan berfungsi dengan baik di ponsel, tablet, dan desktop.",
+      "6Title": "Selalu Gratis",
+      "6Desc": "Tidak ada iklan yang mengganggu putaran Anda, tidak ada tingkatan premium, dan tidak ada langganan. 100% gratis, selamanya."
+    },
+    "tipsTitle": "Kiat untuk Mendapatkan Hasil Maksimal dari Roda Nama Anda",
+    "tips": {
+      "1Title": "Pemilihan Nama Tertimbang",
+      "1Desc": "Ingin meningkatkan peluang terpilihnya nama tertentu? Cukup tambahkan nama itu beberapa kali menggunakan tombol <em>Salin</em>. Setiap entri duplikat mendapatkan bagiannya sendiri, yang secara efektif menggandakan (atau melipatgandakan) kemungkinan orang tersebut untuk dipilih.",
+      "2Title": "Modus Eliminasi",
+      "2Desc": "Menjalankan turnamen, acara kuis, atau undian? Gunakan tombol <em>Kecualikan</em> untuk menghapus setiap pemenang dari putaran berikutnya. Hal ini memastikan setiap peserta hanya bisa menang satu kali.",
+      "3Title": "Acak untuk Keadilan",
+      "3Desc": "Jika Anda menggunakan kembali daftar nama yang sama secara rutin, tekan tombol <em>Acak</em> sebelum memutar. Pengocokan mengacak urutan awal irisan.",
+      "4Title": "Simpan Daftar Nama Anda",
+      "4Desc": "Butuh nama yang sama setiap pelajaran atau pertemuan? Biarkan tab browser tetap terbuka — nama-namanya tetap ada sampai Anda mengatur ulang atau menutup halaman."
+    },
+    "faqTitle": "Pertanyaan yang Sering Diajukan",
+    "faqs": {
+      "1Title": "Apakah Roda Nama benar-benar acak?",
+      "1Desc": "Ya. Setiap putaran menggunakan fungsi Math.random() JavaScript, yang menghasilkan angka pseudo-acak untuk menentukan potongan pemenang.",
+      "2Title": "Berapa banyak nama yang bisa saya tambahkan ke roda?",
+      "2Desc": "Tidak ada batasan yang tegas. Roda secara otomatis mengubah ukuran setiap irisan agar sesuai dengan semua entri. Untuk keterbacaan terbaik, sebaiknya simpan di bawah 50 nama.",
+      "3Title": "Bisakah saya menyimpan roda nama saya?",
+      "3Desc": "Nama Anda disimpan selama halaman terbuka. Tandai halaman setelah menambahkan nama Anda — membuka kembali tab yang sama di sebagian besar browser akan memulihkan keadaan.",
+      "4Title": "Apakah Roda Nama berfungsi di perangkat seluler?",
+      "4Desc": "Sangat. Roda ini sepenuhnya responsif dan berfungsi di iOS, Android, dan browser seluler modern apa pun.",
+      "5Title": "Apa perbedaan antara Roda Nama dan generator nama acak?",
+      "5Desc": "<em>generator nama acak</em> biasanya membuat nama fiktif dari database. Roda Nama kami memilih dari nama spesifik yang <em>Anda</em> berikan.",
+      "6Title": "Bisakah saya menggunakan ini sebagai pemilih siswa acak?",
+      "6Desc": "Ya — ini adalah salah satu kegunaan yang paling populer. Guru menambahkan daftar nama kelasnya, lalu memutar roda untuk memanggil siswa."
+    }
+  },
+  "embed": {
+    "loading": "Konfigurasi roda pemuatan...",
+    "instructions": "Gunakan kontrol di bawah ini untuk mengatur konten dan tampilan roda Anda. Kemudian, konfigurasikan pengaturan penyematan dan buat kode untuk ditempatkan di situs web Anda.",
+    "settingsTitle": "Pengaturan Sematkan",
+    "titleLabel": "Judul (untuk aksesibilitas):",
+    "widthLabel": "Lebar (px):",
+    "heightLabel": "Tinggi (px):",
+    "codeTitle": "Sematkan Kode",
+    "codeDesc": "Salin kode di bawah ini untuk menyematkan roda yang dikonfigurasi ini di situs web Anda:",
+    "generateBtn": "Hasilkan Kode Sematan",
+    "errConfigure": "Kesalahan saat membuat kode. Silakan konfigurasikan rodanya terlebih dahulu.",
+    "errEmpty": "Harap tambahkan setidaknya satu item ke roda sebelum membuat kode semat."
+  }
+}

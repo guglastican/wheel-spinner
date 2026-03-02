@@ -1,0 +1,240 @@
+{
+  "header": {
+    "randomWheel": "Random Wheel",
+    "wheelOfNames": "Hjulet av namn",
+    "yesNoWheel": "Ja/Nej hjul",
+    "embed": "Bädda in",
+    "foodWheel": "Mathjul",
+    "configureEmbed": "Konfigurera inbäddningsbara hjul"
+  },
+  "footer": {
+    "randoWheel": "Rando hjul",
+    "copyright": "© {year} Hjulspinnare. Alla rättigheter reserverade.",
+    "privacyPolicy": "Sekretesspolicy",
+    "termsConditions": "Allmänna villkor",
+    "otherWheels": "Andra hjul"
+  },
+  "mainWheel": {
+    "winner": "Vinnare: {text} 🎉",
+    "spin": "Snurra",
+    "inputs": "Ingångar",
+    "reset": "Återställa",
+    "shuffle": "Blanda",
+    "placeholder": "Skriv in text här...",
+    "spinTheWheel": "Snurra hjulet",
+    "cursor": "Markör",
+    "cursorAngle": "Markörvinkel",
+    "cursorDistance": "Markörens avstånd",
+    "pleaseInclude": "Inkludera minst ett föremål i hjulet",
+    "copySuffix": "(kopiera)"
+  },
+  "yesNoWheel": {
+    "yes": "JA",
+    "no": "INGA",
+    "maybe": "KANSKE",
+    "mode": "Läge",
+    "binaryMode": "JA eller NEJ",
+    "ternaryMode": "JA NEJ eller KANSKE",
+    "numInputSets": "Antal ingångsuppsättningar",
+    "resetResults": "Återställ resultat"
+  },
+  "exploreMore": {
+    "title": "Utforska fler gratissnurrhjul",
+    "descDefault": "Letar du efter en annan sorts slumpvisare? Kolla in våra andra gratis hjulverktyg:",
+    "descFood": "Behöver du fatta andra typer av beslut? Prova våra andra verktyg:",
+    "rwTitle": "Random Wheel Spinner",
+    "rwDesc": "Det ultimata anpassningsbara hjulet för praktiskt taget alla val.",
+    "wonTitle": "Hjulet av namn",
+    "wonDesc": "En perfekt följeslagare för giveaways, klassrumsdeltagande eller tilldela uppgifter.",
+    "ynwTitle": "Ja / Nej Hjul",
+    "ynwDesc": "En enkel ja eller nej spinner för att hantera snabba binära val direkt."
+  },
+  "home": {
+    "mainTitle": "Random Wheel Spinner",
+    "whatIsTitle": "Vad är ett slumpmässigt hjul?",
+    "whatIsDesc": "Ett slumpmässigt hjul är ett interaktivt verktyg som snurrar för att göra ett slumpmässigt urval från en uppsättning val. Oavsett om du väljer namn, färger, siffror eller ja/nej-svar, ger en slumpmässig snurr ett roligt och rättvist beslutsfattande. Idealiska för spel, lotterier, klassrumsaktiviteter eller bara göra vardagliga val enklare, slumpmässiga hjul är enkla, engagerande och ofta använda. Prova en slumpmässig hjulspinnare för att lägga till spänning till ditt nästa beslut!",
+    "howWorksTitle": "Hur fungerar ett slumpmässigt hjul?",
+    "howWorksDesc": "Ett slumpmässigt hjul fungerar genom att snurra ett digitalt hjul uppdelat i flera sektioner, som var och en innehåller ett unikt alternativ. När hjulet snurras landar det slumpmässigt på en av dessa sektioner, vilket ger ett opartiskt urval.",
+    "stepsTitle": "Steg för att använda ett slumpmässigt hjul:",
+    "step1Title": "Infoga text:",
+    "step1Desc": "Du kan vanligtvis lägga till objekt (som namn, uppgifter eller beslut) en efter en eller klistra in en hel lista.",
+    "step2Title": "Snurra:",
+    "step2Desc": "När dina val är klara och du är nöjd med utseendet är det bara att börja snurra. Det finns vanligtvis en tydlig knapp som \"Snurra hjulet!\".",
+    "stepsList": {
+      "1": "<strong>Ange dina alternativ</strong> – Lägg till namn, nummer, färger eller val till hjulet.",
+      "2": "<strong>Snurra hjulet</strong> – Klicka eller tryck på snurrknappen för att starta den slumpmässiga urvalsprocessen.",
+      "3": "<strong>Få omedelbara resultat</strong> – Hjulet stannar vid ett slumpmässigt val och ger ditt svar.",
+      "4": "<strong>Upprepa vid behov</strong> – Du kan snurra igen för nya resultat eller anpassa hjulet för olika beslut."
+    },
+    "manageTitle": "Hantera ditt hjul och resultat",
+    "manageDesc": "Beroende på det specifika verktyget kan du hitta funktioner som:",
+    "manageList": {
+      "modes": "<strong>Lägen:</strong> Du kanske kan välja olika sätt för hjulet att fungera, som \"Elimineringsläge\" där det valda alternativet tas bort för nästa snurr.",
+      "editing": "<strong>Redigering:</strong> De flesta verktyg låter dig redigera, duplicera, dölja eller ta bort de poster du har lagt till. Du kan också vanligtvis rensa hela listan enkelt.",
+      "sharing": "<strong>Spara/Dela:</strong> Du kan ofta spara din hjulkonfiguration (ibland kräver ett konto) och dela den med andra med hjälp av en länk eller kanske till och med få kod för att bädda in den.",
+      "results": "<strong>Resultat:</strong> Vissa hjul kan hålla reda på tidigare resultat."
+    },
+    "otherToolsTitle": "Annat hjulverktyg",
+    "otherToolsDesc": "Förutom det huvudsakliga slumpmässiga hjulet, finns det flera specialiserade verktyg för slumpmässiga hjul skapade också.",
+    "otherToolsList": {
+      "names": "<strong>Namnväljare / Elevväljare:</strong> Används vanligen av lärare för att slumpmässigt välja individer, ibland kallade \"Namnhjul\" eller \"Slumpmässiga namnväljare\".",
+      "yesno": "<strong>Ja/Nej hjul:</strong> För enkla binära beslut.",
+      "food": "<strong>Mathjul:</strong> Osäker på vad du ska äta? Snurra på mathjulet för snabba slumpmässiga måltidsbeslut."
+    },
+    "otherToolsOutro": "Varje specialiserad version tar kärnkonceptet slumpmässigt urval och skräddarsyr det för att möta olika behov, vilket gör dem praktiska för allt från att organisera aktiviteter till att avgöra debatter med en rolig, opartisk twist."
+  },
+  "yesNoPage": {
+    "title": "Ja/Nej hjulväljare",
+    "heroTitle": "Ta snabba ja/nej-beslut",
+    "heroDesc": "Kan du inte välja mellan ja och nej? Låt vårt hjul bestämma åt dig! Anpassa hjulet med olika lägen och inmatningsuppsättningar för att få svaret du behöver.",
+    "howToTitle": "Hur man använder",
+    "steps": {
+      "1": "Välj mellan \"JA eller NEJ\" läge eller \"JA NEJ eller KANSKE\" läge",
+      "2": "Välj antalet ingångsuppsättningar (1-5) för att justera sannolikhetsfördelningen",
+      "3": "Klicka på \"Snurra\"-knappen för att få ditt svar",
+      "4": "Resultatet kommer att markeras och räknas i rutorna ovan",
+      "5": "Använd knappen \"Återställ resultat\" för att rensa alla räknare"
+    },
+    "seoTitle": "Varför använda ett Ja/Nej-hjul?",
+    "seoDesc1": "Livet är fullt av val, och ibland är de enklaste de svåraste. Vår Ja/Nej hjulspinnare är den perfekta beslutsfattaren när du har fastnat. Det är ett roligt och snabbt sätt att få ett slumpmässigt val, som fungerar som en snabb ja eller nej-generator.",
+    "seoList": {
+      "1": "<strong>Avgör debatter:</strong> Lös snabbt vänliga argument.",
+      "2": "<strong>Ta snabba beslut:</strong> Bestäm dig för middag, filmkväll eller enkla dagliga val utan ansträngning.",
+      "3": "<strong>Lägg till kul:</strong> Injicera slumpmässighet och spänning i gruppaktiviteter.",
+      "4": "<strong>Övervinn obeslutsamhet:</strong> Låt hjulet bryta dödläget när du verkligen är osäker."
+    },
+    "seoDesc2": "Oavsett om du behöver ett enkelt ja eller nej, eller vill lägga till \"kanske\" för mer nyans, ger detta roliga beslutsverktyg ett opartiskt svar direkt. Snurra på hjulet och låt ödet bestämma!",
+    "moreTitle": "Beyond Simple Choices: Fler användningsområden",
+    "moreDesc": "Även om det här verktyget är perfekt för enkla ja/nej-frågor, kan det vara förvånansvärt mångsidigt:",
+    "moreList": {
+      "1": "<strong>Lärande och studiestöd:</strong> Testa dig själv! Rama in frågor med ett ja/nej-svar och snurra.",
+      "2": "<strong>Kreativa uppmaningar:</strong> Har du fastnat i en berättelse eller ett projekt? Använd hjulet för binära kreativa beslut.",
+      "3": "<strong>Brota vanor:</strong> Försöker du bestämma dig för om du ska ägna dig åt en mindre frestelse? Låt hjulet lägga till ett lager av slump.",
+      "4": "<strong>Rättvis turtagning:</strong> Använd det i spel för att avgöra vem som går härnäst."
+    },
+    "powerTitle": "Slumpmässighetens kraft",
+    "powerDesc": "Vårt hjul använder en pålitlig pseudo-slumptalsgenerator för att säkerställa att varje snurr är rättvist och oförutsägbart. Detta tar bort personlig fördom från enkla beslut, vilket gör det till en verkligt opartisk beslutsfattare. Att lämna små val åt slumpen kan ibland frigöra mental energi för viktigare saker! Tillvalet \"Kanske\" ger flexibilitet för de tillfällen då ett enkelt ja eller nej inte riktigt räcker."
+  },
+  "foodPage": {
+    "title": "Mathjul",
+    "heroTitle": "Mathjul – vad ska jag äta?",
+    "heroDesc": "Kan du inte bestämma vad du ska äta till lunch eller middag? Snurra på <strong>mathjulet</strong> och låt ödet bestämma! Oavsett om du är sugen på pizza, sushi eller letar efter en hälsosam sallad, lägg bara till dina alternativ, ge ratten en snurra och din måltid är klar.",
+    "howToTitle": "Hur man använder mathjulet",
+    "steps": {
+      "1": "<strong>Lägg till begär och alternativ</strong> — Skriv varje matnamn eller restaurang och klicka på knappen <em>+</em>.",
+      "2": "<strong>Anpassa färger</strong> — Klicka på färgprovet bredvid maten för att ändra skivans färg.",
+      "3": "<strong>Snurra hjulet</strong> — Klicka på <em>Snurra hjulet</em> eller mittknappen på hjulet.",
+      "4": "<strong>Se vinnaren</strong> — Den utvalda maten visas ovanför ratten med ett 🎉-firande. Äntligen kan du sluta debattera och börja äta!",
+      "5": "<strong>Snurra igen</strong> – Fortfarande inte övertygad? Fortsätt snurra eller ta bort alternativen du inte gillar med funktionen <em>Ta bort</em>."
+    },
+    "seoTitle": "Vad är ett mathjul?",
+    "seoDesc": "Ett <strong>Mathjul</strong> är ett digitalt snurrhjul som specifikt används för att välja slumpmässiga måltider, restauranger eller kök från en lista. Det löser klassikern \"Vad vill du äta?\" problem.",
+    "seoList": {
+      "1": "<strong>Restaurangavgörande</strong> — Kan du inte komma överens om en restaurang? Lägg till de 5 bästa valen och låt hjulet välja.",
+      "2": "<strong>Måltidsförberedande roulette</strong> — Gör matlagning rolig genom att snurra efter dina proteiner, kolhydrater och grönsaker.",
+      "3": "<strong>Takeout randomizer</strong> — Pizza? kinesiska? Thai? Snurra när du är sugen.",
+      "4": "<strong>Kontorsfestcatering</strong> — Låt teamet skicka in alternativ och använd ratten för att bestämma mat."
+    },
+    "whyTitle": "Varför använda vårt mathjul?",
+    "whyDesc": "Hoppa över den oändliga rullningen på leveransappar. Vårt mathjul hjälper dig att bestämma snabbt och rättvist:",
+    "features": {
+      "1Title": "Avsluta debatten",
+      "1Desc": "Inte mer \"Jag vet inte, vad vill du?\" Snurra på hjulet och beslutet fattas omedelbart.",
+      "2Title": "Omedelbar installation",
+      "2Desc": "Inget konto behövs. Öppna sidan, skriv dina matalternativ och snurra direkt.",
+      "3Title": "Fullt anpassningsbar",
+      "3Desc": "Lägg till emojis, ändra skivans färger för att matcha maten och uteslut alternativ.",
+      "4Title": "Rättvisa resultat",
+      "4Desc": "Kryptografiskt säker slumpmässighet betyder att du faktiskt får en opartisk roll.",
+      "5Title": "Fungerar på mobil",
+      "5Desc": "Perfekt för att bestämma sig i farten. Den fullt lyhörda designen ser bra ut på vilken telefon som helst.",
+      "6Title": "100 % gratis",
+      "6Desc": "Vårt mathjul är alltid gratis, utan betalväggar eller obligatoriska registreringar."
+    },
+    "faqTitle": "Vanliga frågor",
+    "faqs": {
+      "1Title": "Fungerar mathjulet på min telefon?",
+      "1Desc": "Ja! Mathjulet är helt mobilvänligt.",
+      "2Title": "Är resultaten verkligen slumpmässiga?",
+      "2Desc": "Ja. Varje snurr använder en robust pseudo-slumpmässig algoritm för att garantera att varje matalternativ har samma chans.",
+      "3Title": "Kan jag spara mina favoritmatlistor?",
+      "3Desc": "Så länge du håller webbläsarfliken öppen förblir dina listor aktiva. Vi rekommenderar att du bokmärker sidan."
+    }
+  },
+  "namesPage": {
+    "title": "Hjulet av namn",
+    "heroTitle": "Wheel of Names — Gratis Random Name Picker",
+    "heroDesc": "Skriv in valfria namn, ge hjulet en snurr och låt ödet välja en vinnare på några sekunder. Oavsett om du behöver en <strong>slumpmässig namnväljare</strong> för ditt klassrum, en rättvis utlottning av en giveaway eller ett snabbt sätt att tilldela uppgifter till ditt team – detta kostnadsfria namnhjul har dig täckt. Ingen registrering, ingen nedladdning, fungerar på vilken enhet som helst.",
+    "howToTitle": "Hur man använder namnhjulet",
+    "steps": {
+      "1": "<strong>Lägg till namn</strong> — Skriv varje namn i inmatningsrutan och tryck på <em>Retur</em>.",
+      "2": "<strong>Anpassa färger</strong> – Klicka på färgrutan bredvid ett namn.",
+      "3": "<strong>Snurra hjulet</strong> — Klicka på <em>Snurra hjulet</em> eller mittknappen.",
+      "4": "<strong>Se vinnaren</strong> — Det valda namnet visas ovanför hjulet med ett 🎉-firande. Vinsträkningen spårar hur många gånger varje namn har valts.",
+      "5": "<strong>Snurra igen</strong> — Fortsätt snurra i flera omgångar. Använd <em>Uteslut</em> för att ta bort vinnare från framtida snurr, eller <em>Återställ</em> för att börja om på nytt."
+    },
+    "seoTitle": "Vad är ett namnhjul?",
+    "seoDesc": "Ett <strong>Namnhjul</strong> är ett digitalt snurrhjul som är fördesignat för att välja slumpmässiga namn från en lista. Det fungerar på samma sätt som ett klassiskt prishjul — du lägger till vilka namn du vill, klickar på snurra och hjulet landar slumpmässigt på en vinnare.",
+    "seoList": {
+      "1": "<strong>Klassrummets slumpmässiga namnväljare</strong> – Lärare använder ett hjul med namn för att ringa eleverna utan fördomar.",
+      "2": "<strong>Giveaways och tävlingar</strong> – Kör du en social media giveaway? Lägg till alla deltagarnamn och snurra.",
+      "3": "<strong>Lagval</strong> — Dela upp spelare slumpmässigt i lag, välj en lagkapten eller tilldela roller.",
+      "4": "<strong>Kontorsspel och isbrytare</strong> – Vem presenterar först? Vem tar med kaffe imorgon? Låt hjulet bestämma."
+    },
+    "whyTitle": "Varför använda vårt namnhjul?",
+    "whyDesc": "Det finns många namnväljarverktyg online, men våra sticker ut av en handfull viktiga skäl:",
+    "features": {
+      "1Title": "Verkligen slumpmässigt",
+      "1Desc": "Vi använder en kryptografiskt seedad pseudo-slumptalsgenerator för att säkerställa att varje snurr är helt oförutsägbar.",
+      "2Title": "Omedelbar installation",
+      "2Desc": "Inget konto behövs. Öppna sidan, skriv dina namn och snurra. Hela processen tar under 30 sekunder.",
+      "3Title": "Fullt anpassningsbar",
+      "3Desc": "Ändra segmentfärger, ändra ordning på namn, dubblera poster för viktade resultat eller exkludera vissa namn.",
+      "4Title": "Vinn spårning",
+      "4Desc": "Hjulet spårar hur många gånger varje namn har valts över flera omgångar.",
+      "5Title": "Fungerar på vilken enhet som helst",
+      "5Desc": "Fullt responsiv design betyder att hjulet ser ut och fungerar utmärkt på både telefoner, surfplattor och stationära datorer.",
+      "6Title": "Alltid gratis",
+      "6Desc": "Inga annonser som avbryter ditt snurr, inga premiumnivåer och ingen prenumeration. 100 % gratis, för alltid."
+    },
+    "tipsTitle": "Tips för att få ut det mesta av ditt namnhjul",
+    "tips": {
+      "1Title": "Viktat namnval",
+      "1Desc": "Vill du öka chanserna att ett visst namn väljs? Lägg bara till det namnet flera gånger med knappen <em>Kopiera</em>. Varje dubblettpost får sin egen del, vilket i praktiken fördubblar (eller tredubblar) den personens sannolikhet att bli plockad.",
+      "2Title": "Elimineringsläge",
+      "2Desc": "Kör du en turnering, frågesport eller lotteri? Använd knappen <em>Uteslut</em> för att ta bort varje vinnare från efterföljande snurr. Detta säkerställer att varje deltagare bara kan vinna en gång.",
+      "3Title": "Blanda för rättvisa",
+      "3Desc": "Om du återanvänder samma lista med namn regelbundet, tryck på <em>Blanda</em>-knappen innan du snurrar. Blandning gör att startordningen för skivor slumpas.",
+      "4Title": "Spara din namnlista",
+      "4Desc": "Need the same names every lesson or meeting? Håll bara webbläsarfliken öppen — namnen stannar kvar på hjulet tills du återställer eller stänger sidan."
+    },
+    "faqTitle": "Vanliga frågor",
+    "faqs": {
+      "1Title": "Är namnhjulet helt slumpmässigt?",
+      "1Desc": "Ja. Varje snurr använder JavaScripts Math.random()-funktion, som genererar ett pseudoslumptal för att bestämma den vinnande delen.",
+      "2Title": "Hur många namn kan jag lägga till i hjulet?",
+      "2Desc": "Det finns ingen hård gräns. Hjulet ändrar automatiskt storleken på varje skiva för att passa alla poster. För bästa läsbarhet rekommenderar vi att du håller den under 50 namn.",
+      "3Title": "Kan jag spara mitt hjul med namn?",
+      "3Desc": "Dina namn lagras så länge sidan är öppen. Bokmärk sidan efter att du har lagt till dina namn - om du öppnar samma flik igen i de flesta webbläsare återställs tillståndet.",
+      "4Title": "Fungerar namnhjulet på mobilen?",
+      "4Desc": "Absolut. Hjulet är fullt responsivt och fungerar på iOS, Android och alla moderna mobilwebbläsare.",
+      "5Title": "Vad är skillnaden mellan Wheel of Names och en slumpmässig namngenerator?",
+      "5Desc": "En <em>slumpnamnsgenerator</em> skapar vanligtvis fiktiva namn från en databas. Vårt namnhjul väljer bland de specifika namnen <em>du</em> tillhandahåller.",
+      "6Title": "Kan jag använda detta som en slumpmässig studentväljare?",
+      "6Desc": "Ja - det är en av de mest populära användningsområdena. Lärare lägger till sin klasslista och snurrar sedan på hjulet för att kalla på en elev."
+    }
+  },
+  "embed": {
+    "loading": "Laddar hjulkonfiguration...",
+    "instructions": "Använd kontrollerna nedan för att ställa in innehållet och utseendet på ditt hjul. Konfigurera sedan inbäddningsinställningarna och generera koden för att placera den på din webbplats.",
+    "settingsTitle": "Bädda in inställningar",
+    "titleLabel": "Titel (för tillgänglighet):",
+    "widthLabel": "Bredd (px):",
+    "heightLabel": "Höjd (px):",
+    "codeTitle": "Bädda in kod",
+    "codeDesc": "Kopiera koden nedan för att bädda in detta konfigurerade hjul på din webbplats:",
+    "generateBtn": "Generera inbäddningskod",
+    "errConfigure": "Fel vid generering av kod. Vänligen konfigurera hjulet först.",
+    "errEmpty": "Lägg till minst ett objekt till hjulet innan du genererar inbäddningskod."
+  }
+}

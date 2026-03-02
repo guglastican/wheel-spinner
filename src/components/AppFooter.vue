@@ -3,26 +3,38 @@
     <div class="footer-content">
       
       <div class="footer-section">
-        <h3 class="footer-title">Rando Wheel</h3>
-        <p class="copyright">&copy; {{ new Date().getFullYear() }} Wheel Spinner</p>
+        <h3 class="footer-title">{{ $t('footer.randoWheel') }}</h3>
+        <p class="copyright">{{ $t('footer.copyright').replace('{year}', new Date().getFullYear()) }}</p>
         <div class="footer-links">
-          <a href="/privacy-policy.html" target="_blank">Privacy Policy</a>
-          <a href="/terms-and-conditions.html" target="_blank">Terms & Conditions</a>
+          <a href="/privacy-policy.html" target="_blank">{{ $t('footer.privacyPolicy') }}</a>
+          <a href="/terms-and-conditions.html" target="_blank">{{ $t('footer.termsConditions') }}</a>
         </div>
       </div>
 
       <div class="footer-section right-section">
-        <h3 class="footer-title">Other Wheels</h3>
+        <h3 class="footer-title">{{ $t('footer.otherWheels') }}</h3>
         <div class="footer-links vertical-links">
-          <router-link to="/wheel-of-names">Wheel of Names</router-link>
-          <router-link to="/yes-no-wheel">Yes/No Wheel</router-link>
-          <router-link to="/food-wheel">Food Wheel</router-link>
+          <router-link :to="localePath('/wheel-of-names')">{{ $t('header.wheelOfNames') }}</router-link>
+          <router-link :to="localePath('/yes-no-wheel')">{{ $t('header.yesNoWheel') }}</router-link>
+          <router-link :to="localePath('/food-wheel')">{{ $t('header.foodWheel') }}</router-link>
         </div>
       </div>
 
     </div>
   </footer>
 </template>
+
+<script setup>
+import { useI18n } from 'vue-i18n';
+
+const { locale } = useI18n();
+const localePath = (path) => {
+  const currentLang = locale.value;
+  if (currentLang === 'en') return path;
+  if (path === '/') return `/${currentLang}`;
+  return `/${currentLang}${path}`;
+};
+</script>
 
 <style scoped>
 .app-footer {

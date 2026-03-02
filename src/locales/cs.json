@@ -1,0 +1,240 @@
+{
+  "header": {
+    "randomWheel": "Náhodné kolo",
+    "wheelOfNames": "Kolo jmen",
+    "yesNoWheel": "Ano/Ne kolo",
+    "embed": "Vložit",
+    "foodWheel": "Food Wheel",
+    "configureEmbed": "Konfigurace zabudovatelného kola"
+  },
+  "footer": {
+    "randoWheel": "Kolo Rando",
+    "copyright": "© {rok} Kolečko. Všechna práva vyhrazena.",
+    "privacyPolicy": "Zásady ochrany osobních údajů",
+    "termsConditions": "Smluvní podmínky",
+    "otherWheels": "Jiná kola"
+  },
+  "mainWheel": {
+    "winner": "Vítěz: {text} 🎉",
+    "spin": "Roztočit",
+    "inputs": "Vstupy",
+    "reset": "Resetovat",
+    "shuffle": "Zamíchat",
+    "placeholder": "Zde zadejte text...",
+    "spinTheWheel": "Roztočte kolo",
+    "cursor": "Kurzor",
+    "cursorAngle": "Úhel kurzoru",
+    "cursorDistance": "Vzdálenost kurzoru",
+    "pleaseInclude": "Zahrňte do kola alespoň jednu položku",
+    "copySuffix": "(kopie)"
+  },
+  "yesNoWheel": {
+    "yes": "ANO",
+    "no": "ŽÁDNÝ",
+    "maybe": "MOŽNÁ",
+    "mode": "Režim",
+    "binaryMode": "ANO nebo NE",
+    "ternaryMode": "ANO NE nebo MOŽNÁ",
+    "numInputSets": "Počet vstupních sad",
+    "resetResults": "Resetovat výsledky"
+  },
+  "exploreMore": {
+    "title": "Prozkoumejte další bezplatná kolovrata",
+    "descDefault": "Hledáte jiný druh náhodného výběru? Podívejte se na naše další nástroje pro volné kolo:",
+    "descFood": "Potřebujete dělat jiné typy rozhodnutí? Vyzkoušejte naše další nástroje:",
+    "rwTitle": "Náhodný kolotoč",
+    "rwDesc": "Dokonalé přizpůsobitelné kolo pro prakticky jakoukoli volbu.",
+    "wonTitle": "Kolo jmen",
+    "wonDesc": "Perfektní společník pro dárky, účast ve třídě nebo přidělování úkolů.",
+    "ynwTitle": "Ano / Ne kolo",
+    "ynwDesc": "Jednoduchý číselník ano nebo ne, který okamžitě zvládne rychlé binární volby."
+  },
+  "home": {
+    "mainTitle": "Náhodný kolotoč",
+    "whatIsTitle": "Co je to náhodné kolo?",
+    "whatIsDesc": "Náhodné kolo je interaktivní nástroj, který se otáčí za účelem náhodného výběru ze sady možností. Ať už vybíráte jména, barvy, čísla nebo odpovědi ano/ne, náhodný spinner přidává zábavu a spravedlnost do rozhodování. Náhodná kola jsou jednoduchá, poutavá a široce používaná, ideální pro hry, tomboly, aktivity ve třídě nebo jen pro usnadnění každodenního rozhodování. Vyzkoušejte náhodný otočný kotouč a přidejte vzrušení do svého dalšího rozhodnutí!",
+    "howWorksTitle": "Jak funguje náhodné kolo?",
+    "howWorksDesc": "Náhodné kolo funguje tak, že se otáčí digitálním kolem rozděleným do několika sekcí, z nichž každá obsahuje jedinečnou možnost. Když se kolo roztočí, náhodně přistane na jedné z těchto sekcí, což poskytuje nezaujatý výběr.",
+    "stepsTitle": "Kroky k použití náhodného kola:",
+    "step1Title": "Vložit text:",
+    "step1Desc": "Obvykle můžete přidávat položky (jako jsou jména, úkoly nebo rozhodnutí) jednu po druhé nebo vložit celý seznam.",
+    "step2Title": "Roztočit:",
+    "step2Desc": "Jakmile máte na výběr a jste spokojeni se vzhledem, spusťte točení. Obvykle je tam jasné tlačítko jako „Roztočit kolo!“.",
+    "stepsList": {
+      "1": "<strong>Zadejte možnosti</strong> – Přidejte do kola jména, čísla, barvy nebo možnosti.",
+      "2": "<strong>Roztočit kolo</strong> – Kliknutím nebo klepnutím na tlačítko otáčení spustíte proces náhodného výběru.",
+      "3": "<strong>Získejte okamžité výsledky</strong> – Kolo se zastaví na náhodném výběru a poskytne vaši odpověď.",
+      "4": "<strong>Opakujte podle potřeby</strong> – Můžete znovu zatočit a získat nové výsledky nebo přizpůsobit volant pro různá rozhodnutí."
+    },
+    "manageTitle": "Spravujte své kolo a výsledky",
+    "manageDesc": "V závislosti na konkrétním nástroji můžete najít funkce jako:",
+    "manageList": {
+      "modes": "<strong>Režimy:</strong> Můžete si vybrat různé způsoby fungování kola, například režim 'Elimination', kde je vybraná možnost pro další roztočení odstraněna.",
+      "editing": "<strong>Úpravy:</strong> Většina nástrojů umožňuje upravovat, duplikovat, skrývat nebo mazat položky, které jste přidali. Celý seznam můžete také obvykle snadno vymazat.",
+      "sharing": "<strong>Ukládání/sdílení:</strong> Nastavení kola můžete často uložit (někdy vyžaduje účet) a sdílet je s ostatními pomocí odkazu nebo dokonce získat kód pro jeho vložení.",
+      "results": "<strong>Výsledky:</strong> Některá kola mohou sledovat minulé výsledky."
+    },
+    "otherToolsTitle": "Jiné nářadí na kola",
+    "otherToolsDesc": "Kromě hlavního náhodného kola existuje také několik specializovaných nástrojů náhodného kola.",
+    "otherToolsList": {
+      "names": "<strong>Výběr jmen / Výběr studentů:</strong> Běžně používaný pedagogy k náhodnému výběru jednotlivců, někdy nazývaný „kolo jmen“ nebo „náhodný výběr jmen“.",
+      "yesno": "<strong>Ano/ne kolečka:</strong> Pro jednoduchá binární rozhodnutí.",
+      "food": "<strong>Food Wheel:</strong> Nejste si jisti, co jíst? Roztočte potravinové kolo pro rychlé náhodné rozhodování o jídle."
+    },
+    "otherToolsOutro": "Každá specializovaná verze přebírá základní koncept náhodného výběru a přizpůsobuje jej tak, aby vyhovovala odlišným potřebám, takže jsou užitečné pro vše od organizování aktivit až po urovnávání debat se zábavným a nestranným nádechem."
+  },
+  "yesNoPage": {
+    "title": "Ano/Ne Wheel Picker",
+    "heroTitle": "Dělejte rychlá rozhodnutí ano/ne",
+    "heroDesc": "Nemůžete se rozhodnout mezi ano a ne? Nechte za vás rozhodnout naše kolo! Přizpůsobte si kolo pomocí různých režimů a vstupních sad, abyste získali odpověď, kterou potřebujete.",
+    "howToTitle": "Jak používat",
+    "steps": {
+      "1": "Vyberte si mezi režimem „ANO nebo NE“ nebo „ANO NE nebo MOŽNÁ“.",
+      "2": "Vyberte počet vstupních sad (1-5) pro úpravu rozdělení pravděpodobnosti",
+      "3": "Kliknutím na tlačítko \"Spin\" získáte odpověď",
+      "4": "Výsledek bude zvýrazněn a započítán v polích výše",
+      "5": "Pro vymazání všech počítadel použijte tlačítko \"Reset Results\"."
+    },
+    "seoTitle": "Proč používat kolečko ano/ne?",
+    "seoDesc1": "Život je plný možností a někdy jsou ty nejjednodušší ty nejtěžší. Náš Ano/Ne Wheel Spinner je dokonalým nástrojem pro rozhodování, když uvíznete. Je to zábavný a rychlý způsob, jak získat náhodnou volbu, fungující jako rychlý generátor ano nebo ne.",
+    "seoList": {
+      "1": "<strong>Urovnejte debaty:</strong> Rychle vyřešte přátelské hádky.",
+      "2": "<strong>Rychle se rozhodujte:</strong> Rozhodujte se bez námahy o večeři, filmovém večeru nebo jednoduchých denních volbách.",
+      "3": "<strong>Přidejte zábavu:</strong> Vneste do skupinových aktivit náhodnost a vzrušení.",
+      "4": "<strong>Překonejte nerozhodnost:</strong> Nechte volant prolomit uváznutí, když jste opravdu nerozhodní."
+    },
+    "seoDesc2": "Ať už potřebujete jednoduché ano nebo ne, nebo chcete přidat „možná“ pro více nuancí, tento zábavný nástroj pro rozhodování poskytuje okamžitě nezaujatou odpověď. Roztočte kolo a nechte osud rozhodnout!",
+    "moreTitle": "Kromě jednoduchých možností: Více využití",
+    "moreDesc": "I když je tento nástroj skvělý pro přímé otázky ano/ne, může být překvapivě všestranný:",
+    "moreList": {
+      "1": "<strong>Učební a studijní pomůcka:</strong> Udělejte si kvíz! Rámcujte otázky s odpovědí ano/ne a rotujte.",
+      "2": "<strong>Kreativní výzvy:</strong> Zasekli jste se u příběhu nebo projektu? Použijte kolo pro binární kreativní rozhodnutí.",
+      "3": "<strong>Porušení návyků:</strong> Zkoušíte se rozhodnout, zda si dopřát menší pokušení? Nechte kolo přidat vrstvu náhody.",
+      "4": "<strong>Fair Turn-Taking:</strong> Použijte jej ve hrách, abyste rozhodli, kdo bude další."
+    },
+    "powerTitle": "Síla náhody",
+    "powerDesc": "Naše kolo používá spolehlivý generátor pseudonáhodných čísel, aby bylo zajištěno, že každé roztočení bude spravedlivé a nepředvídatelné. To odstraňuje osobní zaujatost z jednoduchých rozhodnutí, což z ní činí skutečně nestranné rozhodnutí. Někdy může ponechání malých rozhodnutí náhodě uvolnit mentální energii pro důležitější záležitosti! Volitelné „Možná“ přidává flexibilitu pro situace, kdy jednoduché ano nebo ne nestačí."
+  },
+  "foodPage": {
+    "title": "Food Wheel",
+    "heroTitle": "Food Wheel — Co bych měl jíst?",
+    "heroDesc": "Nemůžete se rozhodnout, co si dát k obědu nebo večeři? Roztočte <strong>Food Wheel</strong> a nechte osud rozhodnout! Ať už máte chuť na pizzu, sushi nebo hledáte zdravý salát, stačí přidat své možnosti, roztočit kolo a jídlo je hotové.",
+    "howToTitle": "Jak používat Food Wheel",
+    "steps": {
+      "1": "<strong>Přidat chutě a možnosti</strong> – Zadejte název každého jídla nebo restaurace a klikněte na tlačítko <em>+</em>.",
+      "2": "<strong>Přizpůsobit barvy</strong> – Chcete-li změnit barvu řezu, klikněte na vzorník barev vedle libovolného jídla.",
+      "3": "<strong>Roztočit kolo</strong> – Klikněte na <em>Roztočit kolo</em> nebo na středové tlačítko na volantu.",
+      "4": "<strong>Zobrazit vítěze</strong> — Vybrané jídlo se objeví nad volantem s 🎉 oslavou. Konečně můžete přestat debatovat a začít jíst!",
+      "5": "<strong>Spin Again</strong> — Stále nejste přesvědčeni? Pokračujte v otáčení nebo odeberte možnosti, které se vám nelíbí, pomocí funkce <em>Odebrat</em>."
+    },
+    "seoTitle": "Co je Food Wheel?",
+    "seoDesc": "<strong>Food Wheel</strong> je digitální točící se kolo, které se speciálně používá k výběru náhodných jídel, restaurací nebo kuchyní ze seznamu. Řeší klasické \"Co chceš jíst?\" problém.",
+    "seoList": {
+      "1": "<strong>Rozhodování o restauraci</strong> — Nemůžete se dohodnout na restauraci? Přidejte prvních 5 možností a nechte kolo vybrat.",
+      "2": "<strong>Ruleta s přípravou jídla</strong> — Udělejte z vaření zábavu tím, že budete točit pro bílkoviny, sacharidy a zeleninu.",
+      "3": "<strong>Náhodně s sebou</strong> — Pizza? Čínština? thajština? Točte, kdykoli máte chuť.",
+      "4": "<strong>Stravování večírků v kanceláři</strong> — Nechte tým předložit možnosti a pomocí kolečka rozhodovat o jídle."
+    },
+    "whyTitle": "Proč používat naše Food Wheel?",
+    "whyDesc": "Přeskočte nekonečné posouvání aplikací pro doručení. Naše Food Wheel vám pomůže rozhodnout se rychle a spravedlivě:",
+    "features": {
+      "1Title": "Ukončete debatu",
+      "1Desc": "Už žádné \"Nevím, co chceš?\" Roztočte kolo a rozhodnutí je učiněno okamžitě.",
+      "2Title": "Okamžité nastavení",
+      "2Desc": "Není potřeba žádný účet. Otevřete stránku, zadejte možnosti jídla a hned točte.",
+      "3Title": "Plně přizpůsobitelné",
+      "3Desc": "Přidejte emotikony, změňte barvy plátků tak, aby odpovídaly jídlu, a vylučte možnosti.",
+      "4Title": "Spravedlivé výsledky",
+      "4Desc": "Kryptograficky bezpečná náhodnost znamená, že ve skutečnosti získáváte nezaujatý hod.",
+      "5Title": "Funguje na mobilu",
+      "5Desc": "Ideální pro rozhodování na cestách. Plně responzivní design vypadá skvěle na každém telefonu.",
+      "6Title": "100% zdarma",
+      "6Desc": "Naše Food Wheel je vždy zdarma, bez paywallů nebo povinných registrací."
+    },
+    "faqTitle": "Často kladené otázky",
+    "faqs": {
+      "1Title": "Funguje Food Wheel na mém telefonu?",
+      "1Desc": "Ano! Food Wheel je zcela mobilní.",
+      "2Title": "Jsou výsledky skutečně náhodné?",
+      "2Desc": "Ano. Každé otočení používá robustní pseudonáhodný algoritmus, který zaručuje, že každá varianta jídla má stejnou šanci.",
+      "3Title": "Mohu si uložit seznam oblíbených jídel?",
+      "3Desc": "Dokud necháte kartu prohlížeče otevřenou, vaše seznamy zůstanou aktivní. Doporučujeme stránku uložit do záložek."
+    }
+  },
+  "namesPage": {
+    "title": "Kolo jmen",
+    "heroTitle": "Kolo jmen — Volný výběr náhodných jmen",
+    "heroDesc": "Zadejte libovolná jména, roztočte kolo a nechte osud vybrat vítěze během několika sekund. Ať už potřebujete <strong>náhodný výběr jmen</strong> pro vaši třídu, spravedlivé losování o dárek nebo rychlý způsob, jak svému týmu přidělit úkoly – toto bezplatné kolo jmen vám pomůže. Žádná registrace, žádné stahování, funguje na jakémkoli zařízení.",
+    "howToTitle": "Jak používat kolo jmen",
+    "steps": {
+      "1": "<strong>Přidat jména</strong> – Do vstupního pole zadejte jednotlivá jména a stiskněte <em>Enter</em>.",
+      "2": "<strong>Přizpůsobit barvy</strong> – Klikněte na vzorník barev vedle libovolného názvu.",
+      "3": "<strong>Roztočit kolo</strong> – Klikněte na <em>Roztočit kolo</em> nebo na středové tlačítko.",
+      "4": "<strong>Zobrazit vítěze</strong> — Vybrané jméno se zobrazí nad volantem s 🎉 oslavou. Počet výher sleduje, kolikrát bylo každé jméno vybráno.",
+      "5": "<strong>Spin Again</strong> — Pokračujte v točení po několik kol. Použijte <em>Vyloučit</em> k odstranění vítězů z budoucích zatočení nebo <em>Resetovat</em>, chcete-li začít znovu."
+    },
+    "seoTitle": "Co je kolo jmen?",
+    "seoDesc": "<strong>Kolo jmen</strong> je digitální rotující kolo předem navržené pro výběr náhodných jmen ze seznamu. Funguje to stejně jako klasické kolo cen – přidáte jména, která se vám líbí, kliknete na roztočení a kolo náhodně dopadne na vítěze.",
+    "seoList": {
+      "1": "<strong>Náhodný výběr jmen v Učebně</strong> – Učitelé používají kolo jmen, aby mohli oslovit studenty bez předsudků.",
+      "2": "<strong>Dárky a soutěže</strong> — Pořádáte dárky na sociálních sítích? Přidejte všechna jména účastníků a roztočte je.",
+      "3": "<strong>Výběr týmu</strong> – Náhodně rozdělte hráče do týmů, vyberte kapitána týmu nebo přidělte role.",
+      "4": "<strong>Kancelářské hry a ledoborce</strong> — Kdo představuje první? Kdo přinese zítra kávu? Ať rozhodne kolo."
+    },
+    "whyTitle": "Proč používat naše kolo jmen?",
+    "whyDesc": "Na internetu je mnoho nástrojů pro výběr jmen, ale náš vyniká několika klíčovými důvody:",
+    "features": {
+      "1Title": "Opravdu náhodné",
+      "1Desc": "Používáme kryptograficky nasazený generátor pseudonáhodných čísel, abychom zajistili, že každé roztočení je zcela nepředvídatelné.",
+      "2Title": "Okamžité nastavení",
+      "2Desc": "Není potřeba žádný účet. Otevřete stránku, zadejte svá jména a roztočte. Celý proces trvá méně než 30 sekund.",
+      "3Title": "Plně přizpůsobitelné",
+      "3Desc": "Změňte barvy řezů, změňte pořadí názvů, duplicitní položky pro vážené výsledky nebo vynechejte určitá jména.",
+      "4Title": "Sledování výher",
+      "4Desc": "Kolo sleduje, kolikrát bylo každé jméno vybráno v několika kolech.",
+      "5Title": "Funguje na jakémkoli zařízení",
+      "5Desc": "Plně responzivní design znamená, že volant vypadá a funguje skvěle na telefonech, tabletech i stolních počítačích.",
+      "6Title": "Vždy zdarma",
+      "6Desc": "Žádné reklamy, které by přerušovaly vaši rotaci, žádné prémiové úrovně a žádné předplatné. 100% zdarma, navždy."
+    },
+    "tipsTitle": "Tipy, jak z kola se svým jménem vytěžit maximum",
+    "tips": {
+      "1Title": "Vážený výběr jmen",
+      "1Desc": "Chcete zvýšit šance na výběr konkrétního jména? Jednoduše přidejte toto jméno vícekrát pomocí tlačítka <em>Kopírovat</em>. Každý duplicitní záznam dostane svůj vlastní řez, čímž se fakticky zdvojnásobí (nebo ztrojnásobí) pravděpodobnost, že bude vybrán.",
+      "2Title": "Režim eliminace",
+      "2Desc": "Pořádáte turnaj, kvíz nebo tombolu? Pomocí tlačítka <em>Vyloučit</em> odeberete každého vítěze z následujících zatočení. Díky tomu může každý účastník vyhrát pouze jednou.",
+      "3Title": "Zamíchejte pro spravedlnost",
+      "3Desc": "Pokud pravidelně používáte stejný seznam jmen, stiskněte před roztočením tlačítko <em>Zamíchat</em>. Náhodné řazení náhodně rozdělí počáteční pořadí řezů.",
+      "4Title": "Uložte si seznam jmen",
+      "4Desc": "Potřebujete stejná jména na každé lekci nebo schůzce? Jednoduše ponechte kartu prohlížeče otevřenou – jména zůstanou zobrazena, dokud stránku neresetujete nebo nezavřete."
+    },
+    "faqTitle": "Často kladené otázky",
+    "faqs": {
+      "1Title": "Je Kolo jmen zcela náhodné?",
+      "1Desc": "Ano. Každé otočení používá JavaScriptovou funkci Math.random(), která generuje pseudonáhodné číslo k určení vítězného dílu.",
+      "2Title": "Kolik jmen mohu přidat do kola?",
+      "2Desc": "Neexistuje žádný pevný limit. Kolečko automaticky změní velikost každého řezu tak, aby odpovídalo všem záznamům. Pro nejlepší čitelnost doporučujeme udržovat pod 50 názvy.",
+      "3Title": "Mohu si uložit své kolo jmen?",
+      "3Desc": "Vaše jména jsou uložena, dokud je stránka otevřená. Po přidání svých jmen přidejte stránku do záložek – znovuotevření stejné karty ve většině prohlížečů obnoví stav.",
+      "4Title": "Funguje Kolo jmen na mobilu?",
+      "4Desc": "Absolutně. Kolo je plně citlivé a funguje na iOS, Androidu a jakémkoli moderním mobilním prohlížeči.",
+      "5Title": "Jaký je rozdíl mezi Kolem jmen a generátorem náhodných jmen?",
+      "5Desc": "<em>Generátor náhodných jmen</em> obvykle vytváří fiktivní jména z databáze. Naše kolo jmen vybírá z konkrétních jmen, které <em>vám</em> poskytnete.",
+      "6Title": "Mohu to použít jako náhodný výběr studentů?",
+      "6Desc": "Ano – je to jedno z nejoblíbenějších použití. Učitelé přidají seznam svých tříd a poté roztočí kolečko, aby vyzvali studenta."
+    }
+  },
+  "embed": {
+    "loading": "Načítání konfigurace kola...",
+    "instructions": "Pomocí ovládacích prvků níže nastavte obsah a vzhled vašeho kola. Poté nakonfigurujte nastavení vkládání a vygenerujte kód, který jej umístíte na svůj web.",
+    "settingsTitle": "Nastavení vložení",
+    "titleLabel": "Název (pro usnadnění):",
+    "widthLabel": "Šířka (px):",
+    "heightLabel": "Výška (px):",
+    "codeTitle": "Vložit kód",
+    "codeDesc": "Zkopírujte níže uvedený kód a vložte toto nakonfigurované kolo na svůj web:",
+    "generateBtn": "Vygenerovat kód pro vložení",
+    "errConfigure": "Chyba při generování kódu. Nejprve nakonfigurujte kolo.",
+    "errEmpty": "Před vygenerováním kódu pro vložení přidejte do kola alespoň jednu položku."
+  }
+}
