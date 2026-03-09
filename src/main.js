@@ -8,6 +8,7 @@ import EmbedWheelPage from './pages/EmbedWheelPage.vue';
 import EmbedConfigPage from './pages/EmbedConfigPage.vue';
 import WheelOfNamesPage from './pages/WheelOfNamesPage.vue';
 import FoodWheelPage from './pages/FoodWheelPage.vue';
+import SpinTheWheelPage from './pages/SpinTheWheelPage.vue';
 import App from './App.vue';
 
 // Create regex to match any of the non-English locale codes for dynamic routing
@@ -67,6 +68,16 @@ const baseRoutes = [
       canonicalPath: 'food-wheel',
       titleKey: 'foodPage.title',
       descKey: 'foodPage.heroDesc',
+      robots: 'index, follow'
+    }
+  },
+  {
+    path: 'spin-the-wheel',
+    component: SpinTheWheelPage,
+    meta: {
+      canonicalPath: 'spin-the-wheel',
+      titleKey: 'spinPage.title',
+      descKey: 'spinPage.heroDesc',
       robots: 'index, follow'
     }
   }

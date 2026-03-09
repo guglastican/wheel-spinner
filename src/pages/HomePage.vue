@@ -54,6 +54,7 @@
           <li><strong><router-link :to="localePath('/wheel-of-names')">{{ $t('header.wheelOfNames') }}</router-link>:</strong> <span v-html="$t('home.otherToolsList.names') && $t('home.otherToolsList.names').split('</strong>') ? $t('home.otherToolsList.names').split('</strong>')[1] : ''"></span></li>
           <li><strong><router-link :to="localePath('/yes-no-wheel')">{{ $t('header.yesNoWheel') }}</router-link>:</strong> <span v-html="$t('home.otherToolsList.yesno') && $t('home.otherToolsList.yesno').split('</strong>') ? $t('home.otherToolsList.yesno').split('</strong>')[1] : ''"></span></li>
           <li><strong><router-link :to="localePath('/food-wheel')">{{ $t('header.foodWheel') }}</router-link>:</strong> <span v-html="$t('home.otherToolsList.food') && $t('home.otherToolsList.food').split('</strong>') ? $t('home.otherToolsList.food').split('</strong>')[1] : ''"></span></li>
+          <li><strong><router-link :to="localePath('/spin-the-wheel')">{{ $t('header.spinTheWheel') || 'Spin the Wheel' }}</router-link>:</strong> <span v-html="$t('home.otherToolsList.spin') && $t('home.otherToolsList.spin').split('</strong>') ? $t('home.otherToolsList.spin').split('</strong>')[1] : ''"></span></li>
         </ul>
         <p>{{ $t('home.otherToolsOutro') }}</p>
       </div>

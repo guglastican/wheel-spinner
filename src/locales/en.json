@@ -5,6 +5,7 @@
         "yesNoWheel": "Yes/No Wheel",
         "embed": "Embed",
         "foodWheel": "Food Wheel",
+        "spinTheWheel": "Spin the Wheel",
         "configureEmbed": "Configure Embeddable Wheel"
     },
     "footer": {
@@ -47,7 +48,9 @@
         "wonTitle": "Wheel of Names",
         "wonDesc": "A perfect companion for giveaways, classroom participation, or assigning tasks.",
         "ynwTitle": "Yes / No Wheel",
-        "ynwDesc": "A simple yes or no spinner to handle quick binary choices instantly."
+        "ynwDesc": "A simple yes or no spinner to handle quick binary choices instantly.",
+        "stwTitle": "Spin the Wheel",
+        "stwDesc": "A fully customizable random picker for any situation."
     },
     "home": {
         "mainTitle": "Random Wheel Spinner",
@@ -79,7 +82,8 @@
         "otherToolsList": {
             "names": "<strong>Name Pickers / Student Selectors:</strong> Commonly used by educators to randomly select individuals, sometimes called \"Wheel of Names\" or \"Random Name Picker\".",
             "yesno": "<strong>Yes/No Wheels:</strong> For simple binary decisions.",
-            "food": "<strong>Food Wheel:</strong> Unsure what to eat? Spin the food wheel for quick random meal decisions."
+            "food": "<strong>Food Wheel:</strong> Unsure what to eat? Spin the food wheel for quick random meal decisions.",
+            "spin": "<strong>Spin the Wheel:</strong> A fully customizable random picker for any situation."
         },
         "otherToolsOutro": "Each specialized version takes the core concept of random selection and tailors it to meet distinct needs, making them handy for everything from organizing activities to settling debates with a fun, impartial twist."
     },
@@ -159,6 +163,39 @@
             "2Desc": "Yes. Every spin uses a robust pseudo-random algorithm to guarantee that each food option has an equal chance.",
             "3Title": "Can I save my favorite food lists?",
             "3Desc": "As long as you keep the browser tab open, your lists remain active. We recommend bookmarking the page."
+        }
+    },
+    "spinPage": {
+        "title": "Spin the Wheel",
+        "heroTitle": "Spin the Wheel — Custom Random Picker",
+        "heroDesc": "Create your own custom <strong>Spin the Wheel</strong> to make decisions, play games, or pick a random winner. Enter your choices, spin the wheel, and let the fun begin!",
+        "howToTitle": "How to Use the Custom Wheel",
+        "steps": {
+            "1": "<strong>Enter your inputs</strong> — Add names, numbers, words, or anything else you need to decide on.",
+            "2": "<strong>Customise colours</strong> — Change the slice colours to match your theme.",
+            "3": "<strong>Spin the Wheel</strong> — Click the big spin button in the middle or below the wheel.",
+            "4": "<strong>See the Result</strong> — The winning item will be announced and tracked in the counters.",
+            "5": "<strong>Manage options</strong> — Remove, duplicate, or temporarily hide options for your next spin."
+        },
+        "seoTitle": "What Is a Custom Spin the Wheel?",
+        "seoDesc": "A <strong>Custom Spin the Wheel</strong> allows you to turn any list of options into a fun, interactive roulette. Whether you're organizing a raffle, dividing chores, or just trying to decide what movie to watch, a random wheel makes the process unbiased and exciting.",
+        "seoList": {
+            "1": "<strong>Party Games</strong> — Create custom Truth or Dare prompts or drinking games.",
+            "2": "<strong>Classroom Activities</strong> — Pick a subject, a reward, or a student at random.",
+            "3": "<strong>Daily Decisions</strong> — Decide who does the dishes or takes out the trash.",
+            "4": "<strong>Giveaways</strong> — Fairly pick a winner from a list of contestants."
+        },
+        "whyTitle": "Why Use Our Custom Wheel?",
+        "whyDesc": "Our wheel spinner is designed to be the most flexible and easy-to-use option available:",
+        "features": {
+            "1Title": "Endless Customization",
+            "1Desc": "Add as many options as you want, change weights by copying slices, and customize colours.",
+            "2Title": "Instant Results",
+            "2Desc": "No login or downloads required. Just type and spin instantly.",
+            "3Title": "Save Your State",
+            "3Desc": "Your wheel configuration stays active as long as you keep the browser tab open.",
+            "4Title": "Fair and Random",
+            "4Desc": "Our algorithm ensures a truly random and unbiased result every single time."
         }
     },
     "namesPage": {
