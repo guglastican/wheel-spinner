@@ -10,13 +10,13 @@
   },
   "footer": {
     "randoWheel": "रैंडो व्हील",
-    "copyright": "© {वर्ष} व्हील स्पिनर. सर्वाधिकार सुरक्षित।",
+    "copyright": "© {year} व्हील स्पिनर. सर्वाधिकार सुरक्षित।",
     "privacyPolicy": "गोपनीयता नीति",
     "termsConditions": "नियम एवं शर्तें",
     "otherWheels": "अन्य पहिये"
   },
   "mainWheel": {
-    "winner": "विजेता: {पाठ} 🎉",
+    "winner": "विजेता: {text} 🎉",
     "spin": "घुमाना",
     "inputs": "इनपुट",
     "reset": "रीसेट करें",

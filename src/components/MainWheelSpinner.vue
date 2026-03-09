@@ -3,7 +3,7 @@
     <div class="main-content">
       <div class="wheel-container">
         <h2 v-if="winnerResult" class="winner-text">
-          {{ $t('mainWheel.winner').replace('{text}', winnerResult.text) }}
+          {{ $t('mainWheel.winner', { text: winnerResult.text }) }}
         </h2>
         <div class="wheel-wrapper" :style="wheelWrapperStyle">
           <VueWheelSpinner

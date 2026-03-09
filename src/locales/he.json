@@ -10,13 +10,13 @@
   },
   "footer": {
     "randoWheel": "רנדו גלגל",
-    "copyright": "© {שנה} ספינר גלגלים. כֹּל הַזְכוּיוֹת שְׁמוּרוֹת.",
+    "copyright": "© {year} ספינר גלגלים. כֹּל הַזְכוּיוֹת שְׁמוּרוֹת.",
     "privacyPolicy": "מדיניות פרטיות",
     "termsConditions": "תנאים והגבלות",
     "otherWheels": "גלגלים אחרים"
   },
   "mainWheel": {
-    "winner": "הזוכה: {טקסט} 🎉",
+    "winner": "הזוכה: {text} 🎉",
     "spin": "לְסוֹבֵב",
     "inputs": "תשומות",
     "reset": "אִתחוּל",

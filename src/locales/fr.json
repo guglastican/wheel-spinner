@@ -10,13 +10,13 @@
   },
   "footer": {
     "randoWheel": "Roue Rando",
-    "copyright": "© {année} Roue Spinner. Tous droits réservés.",
+    "copyright": "© {year} Roue Spinner. Tous droits réservés.",
     "privacyPolicy": "politique de confidentialité",
     "termsConditions": "Conditions générales",
     "otherWheels": "Autres roues"
   },
   "mainWheel": {
-    "winner": "Gagnant : {texte} 🎉",
+    "winner": "Gagnant : {text} 🎉",
     "spin": "Rotation",
     "inputs": "Entrées",
     "reset": "Réinitialiser",

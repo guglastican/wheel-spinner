@@ -10,13 +10,13 @@
   },
   "footer": {
     "randoWheel": "Roda Rando",
-    "copyright": "© {ano} Girador de Rodas. Todos os direitos reservados.",
+    "copyright": "© {year} Girador de Rodas. Todos os direitos reservados.",
     "privacyPolicy": "política de Privacidade",
     "termsConditions": "Termos e Condições",
     "otherWheels": "Outras rodas"
   },
   "mainWheel": {
-    "winner": "Vencedor: {texto} 🎉",
+    "winner": "Vencedor: {text} 🎉",
     "spin": "Rodar",
     "inputs": "Entradas",
     "reset": "Reiniciar",

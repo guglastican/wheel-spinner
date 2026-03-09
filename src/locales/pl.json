@@ -10,13 +10,13 @@
   },
   "footer": {
     "randoWheel": "Koło Rando",
-    "copyright": "© {rok} Koło Spinner. Wszelkie prawa zastrzeżone.",
+    "copyright": "© {year} Koło Spinner. Wszelkie prawa zastrzeżone.",
     "privacyPolicy": "Polityka prywatności",
     "termsConditions": "Regulamin",
     "otherWheels": "Inne koła"
   },
   "mainWheel": {
-    "winner": "Zwycięzca: {tekst} 🎉",
+    "winner": "Zwycięzca: {text} 🎉",
     "spin": "Kręcić się",
     "inputs": "Wejścia",
     "reset": "Nastawić",

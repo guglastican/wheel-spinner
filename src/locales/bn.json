@@ -10,13 +10,13 @@
   },
   "footer": {
     "randoWheel": "র‍্যান্ডো হুইল",
-    "copyright": "© {বছর} হুইল স্পিনার। সর্বস্বত্ব সংরক্ষিত",
+    "copyright": "© {year} হুইল স্পিনার। সর্বস্বত্ব সংরক্ষিত",
     "privacyPolicy": "গোপনীয়তা নীতি",
     "termsConditions": "শর্তাবলী",
     "otherWheels": "অন্যান্য চাকা"
   },
   "mainWheel": {
-    "winner": "বিজয়ী: {টেক্সট} 🎉",
+    "winner": "বিজয়ী: {text} 🎉",
     "spin": "স্পিন",
     "inputs": "ইনপুট",
     "reset": "রিসেট করুন",

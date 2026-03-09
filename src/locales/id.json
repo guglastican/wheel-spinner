@@ -10,13 +10,13 @@
   },
   "footer": {
     "randoWheel": "Roda Rando",
-    "copyright": "© {tahun} Pemintal Roda. Semua hak dilindungi undang-undang.",
+    "copyright": "© {year} Pemintal Roda. Semua hak dilindungi undang-undang.",
     "privacyPolicy": "Kebijakan Privasi",
     "termsConditions": "Syarat & Ketentuan",
     "otherWheels": "Roda Lainnya"
   },
   "mainWheel": {
-    "winner": "Pemenang: {teks} 🎉",
+    "winner": "Pemenang: {text} 🎉",
     "spin": "Putaran",
     "inputs": "masukan",
     "reset": "Mengatur ulang",

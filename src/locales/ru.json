@@ -10,13 +10,13 @@
   },
   "footer": {
     "randoWheel": "Колесо Рандо",
-    "copyright": "© {год} Колесо Spinner. Все права защищены.",
+    "copyright": "© {year} Колесо Spinner. Все права защищены.",
     "privacyPolicy": "политика конфиденциальности",
     "termsConditions": "Условия использования",
     "otherWheels": "Другие колеса"
   },
   "mainWheel": {
-    "winner": "Победитель: {текст} 🎉",
+    "winner": "Победитель: {text} 🎉",
     "spin": "Вращаться",
     "inputs": "Входы",
     "reset": "Перезагрузить",

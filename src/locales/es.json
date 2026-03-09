@@ -10,13 +10,13 @@
   },
   "footer": {
     "randoWheel": "Rando Wheel",
-    "copyright": "© {año} Rueda giratoria. Reservados todos los derechos.",
+    "copyright": "© {year} Rueda giratoria. Reservados todos los derechos.",
     "privacyPolicy": "política de privacidad",
     "termsConditions": "Términos y condiciones",
     "otherWheels": "Otras ruedas"
   },
   "mainWheel": {
-    "winner": "Ganadora: {texto} 🎉",
+    "winner": "Ganadora: {text} 🎉",
     "spin": "Girar",
     "inputs": "Entradas",
     "reset": "Reiniciar",

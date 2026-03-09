@@ -16,7 +16,7 @@
     "otherWheels": "عجلات أخرى"
   },
   "mainWheel": {
-    "winner": "الفائز: {نص} 🎉",
+    "winner": "الفائز: {text} 🎉",
     "spin": "يلف",
     "inputs": "المدخلات",
     "reset": "إعادة ضبط",
