@@ -5,7 +5,8 @@
     "yesNoWheel": "Ya/Tidak Roda",
     "embed": "Menanamkan",
     "foodWheel": "Roda Makanan",
-    "configureEmbed": "Konfigurasikan Roda yang Dapat Disematkan"
+    "configureEmbed": "Konfigurasikan Roda yang Dapat Disematkan",
+    "spinTheWheel": "Putar Roda"
   },
   "footer": {
     "randoWheel": "Roda Rando",
@@ -47,7 +48,9 @@
     "wonTitle": "Roda Nama",
     "wonDesc": "Pendamping yang sempurna untuk hadiah, partisipasi kelas, atau pemberian tugas.",
     "ynwTitle": "Ya / Tidak Roda",
-    "ynwDesc": "Pemintal ya atau tidak yang sederhana untuk menangani pilihan biner cepat secara instan."
+    "ynwDesc": "Pemintal ya atau tidak yang sederhana untuk menangani pilihan biner cepat secara instan.",
+    "stwTitle": "Putar Roda",
+    "stwDesc": "Pemilih acak yang dapat disesuaikan sepenuhnya untuk situasi apa pun."
   },
   "home": {
     "mainTitle": "Pemintal Roda Acak",
@@ -79,7 +82,8 @@
     "otherToolsList": {
       "names": "<strong>Pemilih Nama / Pemilih Siswa:</strong> Biasa digunakan oleh pendidik untuk memilih individu secara acak, terkadang disebut \"Roda Nama\" atau \"Pemilih Nama Acak\".",
       "yesno": "<strong>Roda Ya/Tidak:</strong> Untuk keputusan biner sederhana.",
-      "food": "<strong>Roda Makanan:</strong> Tidak yakin harus makan apa? Putar roda makanan untuk mengambil keputusan makan secara acak dan cepat."
+      "food": "<strong>Roda Makanan:</strong> Tidak yakin harus makan apa? Putar roda makanan untuk mengambil keputusan makan secara acak dan cepat.",
+      "spin": "<strong>Putar Roda:</strong> Alat pilih acak yang dapat disesuaikan sepenuhnya untuk situasi apa pun."
     },
     "otherToolsOutro": "Setiap versi khusus mengambil konsep inti dari pemilihan acak dan menyesuaikannya untuk memenuhi kebutuhan yang berbeda, menjadikannya berguna untuk segala hal mulai dari mengatur kegiatan hingga menyelesaikan perdebatan dengan cara yang menyenangkan dan tidak memihak."
   },
@@ -236,5 +240,68 @@
     "generateBtn": "Hasilkan Kode Sematan",
     "errConfigure": "Kesalahan saat membuat kode. Silakan konfigurasikan rodanya terlebih dahulu.",
     "errEmpty": "Harap tambahkan setidaknya satu item ke roda sebelum membuat kode semat."
+  },
+  "spinPage": {
+    "title": "Putar Roda",
+    "heroTitle": "Putar Roda — Pemilih Acak Khusus",
+    "heroDesc": "Buat <strong>Putar Roda</strong> khusus Anda sendiri untuk mengambil keputusan, bermain game, atau memilih pemenang secara acak. Masukkan pilihan Anda, putar rodanya, dan biarkan kesenangan dimulai!",
+    "howToTitle": "Cara Menggunakan Roda Kustom",
+    "steps": {
+      "1": "<strong>Masukkan masukan Anda</strong> — Tambahkan nama, angka, kata, atau apa pun yang perlu Anda putuskan.",
+      "2": "<strong>Sesuaikan warna</strong> — Mengubah warna irisan agar sesuai dengan tema Anda.",
+      "3": "<strong>Putar Roda</strong> — Klik tombol putar besar di tengah atau di bawah roda.",
+      "4": "<strong>Lihat Hasilnya</strong> — Item pemenang akan diumumkan dan dilacak di konter.",
+      "5": "<strong>Kelola opsi</strong> — Menghapus, menduplikasi, atau menyembunyikan sementara opsi untuk putaran berikutnya."
+    },
+    "seoTitle": "Apa Itu Putar Roda Khusus?",
+    "seoDesc": "<strong>Putar Roda Khusus</strong> memungkinkan Anda mengubah daftar opsi apa pun menjadi rolet interaktif yang menyenangkan. Baik Anda mengatur undian, membagi tugas, atau hanya mencoba memutuskan film apa yang akan ditonton, roda acak membuat prosesnya tidak memihak dan mengasyikkan.",
+    "seoList": {
+      "1": "<strong>Game Pesta</strong> — Buat perintah Kebenaran atau Tantangan khusus atau permainan minum.",
+      "2": "<strong>Aktivitas Kelas</strong> — Pilih mata pelajaran, hadiah, atau siswa secara acak.",
+      "3": "<strong>Keputusan Harian</strong> — Putuskan siapa yang mencuci piring atau membuang sampah.",
+      "4": "<strong>Hadiah</strong> — Pilih pemenang dari daftar kontestan dengan adil."
+    },
+    "whyTitle": "Mengapa Menggunakan Roda Kustom Kami?",
+    "whyDesc": "Pemintal roda kami dirancang untuk menjadi opsi paling fleksibel dan mudah digunakan yang tersedia:",
+    "features": {
+      "1Title": "Kustomisasi Tanpa Akhir",
+      "1Desc": "Tambahkan opsi sebanyak yang Anda inginkan, ubah bobot dengan menyalin irisan, dan sesuaikan warna.",
+      "2Title": "Hasil Instan",
+      "2Desc": "Tidak diperlukan login atau unduhan. Cukup ketik dan putar secara instan.",
+      "3Title": "Selamatkan Negara Anda",
+      "3Desc": "Konfigurasi roda Anda tetap aktif selama Anda tetap membuka tab browser.",
+      "4Title": "Adil dan Acak",
+      "4Desc": "Algoritme kami memastikan hasil yang benar-benar acak dan tidak memihak setiap saat."
+    },
+    "article": {
+      "sec1Title": "Mengapa Alat Putar Roda Khusus Begitu Populer",
+      "sec1Text": "Jujur saja, membuat keputusan sepanjang hari bisa melelahkan. Entah Anda sedang mencoba mencari tahu apa yang akan Anda santap untuk makan malam, memilih pemenang untuk giveaway di media sosial Anda, atau sekadar memutuskan siapa yang membayar kopi, terkadang lebih mudah membiarkan takdir yang menentukan. Alat putar roda khusus adalah jalan pintas sempurna untuk momen-momen itu. Alih-alih menggulir atau berdebat tanpa henti dengan teman-teman Anda, cukup masukkan pilihan Anda ke dalam roda dan tekan putar. Yang terbaik dari semuanya, Anda tidak terjebak dengan daftar yang telah ditentukan sebelumnya. Anda dapat menambahkan apa saja ke dalam irisan—nama, tempat, angka, atau bahkan tantangan tantangan untuk permainan pesta. Ini bekerja dengan baik karena roda yang berputar dan klik yang memuaskan memberikan sedikit kegembiraan bagi semua orang yang terlibat. Dibutuhkan tugas yang membosankan seperti \"memilih seseorang untuk mencuci piring\" dan mengubahnya menjadi permainan yang cepat dan menyenangkan.",
+      "sec2Title": "Mengapa Kami Senang Membiarkan Segalanya Menjadi Kebetulan",
+      "sec2Text": "Ada alasan mengapa kita melempar koin dan menggambar sedotan. Otak manusia sebenarnya suka membiarkan segala sesuatunya terjadi secara kebetulan karena hal itu menghilangkan rasa panas dari kita. Jika Anda memilih seseorang secara acak, tidak ada yang dapat membantah bahwa Anda bermain favorit. Logika yang sama berlaku untuk roda pemintal digital. Ini sepenuhnya tidak memihak, yang langsung menghilangkan argumen “itu tidak adil”. Ketika roda yang berputar melambat dan akhirnya berbunyi klik pada pemenangnya, hal itu justru memicu sedikit dopamin di otak kita. Ketegangan itu—meskipun Anda baru saja memilih film untuk ditonton di Netflix—adalah alasan mengapa roda acak begitu menarik. Dengan mengubah keputusan sederhana menjadi permainan visual, Anda membuat orang memperhatikan dan menerima hasilnya dengan senyuman.",
+      "sec3Title": "Sebuah Game-Changer untuk Guru dan Ruang Kelas",
+      "sec3TextStart": "Jika Anda pernah berdiri di depan kelas, Anda pasti tahu betapa sulitnya membuat semua orang berpartisipasi secara setara. Ketiga anak yang sama selalu mengangkat tangan, sementara yang lain mencoba membaur di kursi. Itu sebabnya guru senang menggunakan a",
+      "sec3LinkText": "Roda Nama",
+      "sec3TextMiddle": "atau pemintal khusus. Saat Anda meletakkan daftar kelas pada roda dan memproyeksikannya ke papan tulis, setiap siswa mengetahui bahwa mereka memiliki peluang yang sama untuk dipanggil. Hal ini membuat ruangan tetap waspada tanpa merasa ada orang yang dijadikan sasaran secara tidak adil. Anda juga dapat menggunakannya untuk lebih dari sekadar memilih siswa untuk menjawab pertanyaan. Anda dapat memuat roda dengan soal matematika, kosakata, atau topik diskusi. Untuk membuat segalanya lebih mudah, yang berdedikasi",
+      "sec3LinkText2": "Roda Nama",
+      "sec3TextEnd": "memungkinkan Anda menghapus nama setelah dipilih, artinya setiap siswa mendapat giliran sebelum ada yang dipanggil dua kali.",
+      "sec4Title": "Berhentilah Berdebat Tentang Apa yang Harus Dimakan",
+      "sec4TextStart": "Kita semua pernah ke sana: \"Apa yang ingin kamu makan?\" \"Aku tidak tahu, apa yang kamu inginkan?\" Itu adalah percakapan yang tidak pernah berakhir. Semakin banyak opsi bawa pulang yang kita miliki, semakin sulit menentukan pilihan. Jika Anda bosan berdebat,",
+      "sec4LinkText": "Roda Makanan",
+      "sec4TextMiddle": "itulah yang Anda butuhkan. Cukup colokkan empat atau lima tempat yang Anda sukai, tekan spin, dan berkomitmen pada apa pun yang ada di sana. Tidak perlu lagi bolak-balik selama 45 menit. Tidak hanya menghemat waktu, tetapi juga memaksa Anda untuk keluar dari kebiasaan memesan yang biasa. Kunjungi salah satu tempat Thailand yang belum Anda coba sebagai wildcard, dan biarkan roda meningkatkan rutinitas Anda. Jika Anda membutuhkan keputusan cepat saat bepergian, kunjungi",
+      "sec4LinkText2": "Roda Makanan",
+      "sec4TextEnd": "halaman. Ini sudah bertema sebelumnya dan tampak bagus di ponsel Anda saat kelaparan melanda.",
+      "sec5Title": "Jawaban Cepat untuk Pertanyaan Sederhana",
+      "sec5TextStart": "Roda khusus yang besar sangat bagus untuk daftar yang panjang, tetapi terkadang Anda hanya memerlukan jawaban langsung ya atau tidak. Haruskah saya membeli sepatu ini? Haruskah saya melewatkan gym hari ini? Untuk pilihan biner cepat tersebut, a",
+      "sec5LinkText": "Ya/Tidak Roda",
+      "sec5TextMiddle": "adalah lemparan koin digital yang sempurna. Terkadang, Anda mungkin sebenarnya sudah mengetahui apa yang ingin Anda lakukan, dan roda membantu Anda mengetahuinya. Jika roda mendarat di \"Tidak\" dan Anda langsung merasa kecewa, maka Anda jelas ingin melakukannya! Anda juga dapat mengubah peluangnya. Jika Anda benar-benar ingin pergi ke gym tetapi perlu sedikit dorongan, letakkan tiga irisan \"Ya\" dan satu irisan \"Tidak\" pada roda. Untuk hal-hal yang tidak sepenuhnya hitam dan putih, menambahkan potongan \"Mungkin\" akan memberi Anda jalan keluar yang berguna. Kapanpun Anda membutuhkan jawaban instan tanpa repot, itu",
+      "sec5LinkText2": "Ya/Tidak Roda",
+      "sec5TextEnd": "selalu siap.",
+      "sec6Title": "Sesuaikan Sesuai Keinginan Anda",
+      "sec6TextStart": "Apa yang membuat",
+      "sec6LinkText": "Pemintal Roda Acak",
+      "sec6TextMiddle": "lebih baik daripada kebanyakan aplikasi adalah kenyataan bahwa Anda dapat mengubah segala sesuatu tentangnya. Jika Anda menjalankan giveaway perusahaan yang serius atau streaming di Twitch, Anda memerlukan lebih dari sekadar pemintal dasar. Misalnya, jika Anda ingin beberapa hadiah lebih langka dibandingkan yang lain, Anda cukup menduplikasi hadiah yang lebih kecil beberapa kali pada roda sehingga kemungkinan besar akan didapat. Fitur \"pembobotan\" ini memberi Anda kendali penuh atas peluang. Anda juga dapat mendalami warna dan mencocokkan roda secara visual dengan merek atau tema pesta Anda. Dengan fitur yang memungkinkan Anda melacak berapa kali suatu opsi menang, menyembunyikan pilihan secara instan, dan mengubah tampilan roda, ini adalah alat profesional yang menyamar sebagai permainan menyenangkan. Cobalah",
+      "sec6LinkText2": "alat pemintal utama",
+      "sec6TextEnd": "dan menghilangkan stres dari keputusan besar Anda berikutnya."
+    }
   }
 }

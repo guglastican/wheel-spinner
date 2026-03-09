@@ -5,7 +5,8 @@
     "yesNoWheel": "Roda Sim/Não",
     "embed": "Incorporar",
     "foodWheel": "Roda Alimentar",
-    "configureEmbed": "Configurar roda incorporável"
+    "configureEmbed": "Configurar roda incorporável",
+    "spinTheWheel": "Gire a roda"
   },
   "footer": {
     "randoWheel": "Roda Rando",
@@ -47,7 +48,9 @@
     "wonTitle": "Roda de Nomes",
     "wonDesc": "Um companheiro perfeito para brindes, participação em sala de aula ou atribuição de tarefas.",
     "ynwTitle": "Sim/Não Roda",
-    "ynwDesc": "Um botão giratório simples de sim ou não para lidar com escolhas binárias rápidas instantaneamente."
+    "ynwDesc": "Um botão giratório simples de sim ou não para lidar com escolhas binárias rápidas instantaneamente.",
+    "stwTitle": "Gire a roda",
+    "stwDesc": "Um seletor aleatório totalmente personalizável para qualquer situação."
   },
   "home": {
     "mainTitle": "Girador de roda aleatório",
@@ -79,7 +82,8 @@
     "otherToolsList": {
       "names": "<strong>Seletores de Nomes/Seletores de Alunos:</strong> Comumente usados ​​por educadores para selecionar indivíduos aleatoriamente, às vezes chamado de \"Roda de Nomes\" ou \"Seletor de Nomes Aleatórios\".",
       "yesno": "<strong>Rodas Sim/Não:</strong> Para decisões binárias simples.",
-      "food": "<strong>Roda Alimentar:</strong> Não sabe o que comer? Gire a roda dos alimentos para tomar decisões rápidas e aleatórias sobre refeições."
+      "food": "<strong>Roda Alimentar:</strong> Não sabe o que comer? Gire a roda dos alimentos para tomar decisões rápidas e aleatórias sobre refeições.",
+      "spin": "<strong>Gire a roda:</strong> um seletor aleatório totalmente personalizável para qualquer situação."
     },
     "otherToolsOutro": "Cada versão especializada pega o conceito central de seleção aleatória e o adapta para atender a necessidades distintas, tornando-os úteis para tudo, desde a organização de atividades até a resolução de debates com um toque divertido e imparcial."
   },
@@ -236,5 +240,68 @@
     "generateBtn": "Gerar código incorporado",
     "errConfigure": "Erro ao gerar código. Configure a roda primeiro.",
     "errEmpty": "Adicione pelo menos um item à roda antes de gerar o código de incorporação."
+  },
+  "spinPage": {
+    "title": "Gire a roda",
+    "heroTitle": "Gire a roda — Seletor aleatório personalizado",
+    "heroDesc": "Crie seu próprio <strong>Spin the Wheel</strong> personalizado para tomar decisões, jogar ou escolher um vencedor aleatório. Insira suas escolhas, gire a roda e deixe a diversão começar!",
+    "howToTitle": "Como usar a roda personalizada",
+    "steps": {
+      "1": "<strong>Digite suas informações</strong> — Adicione nomes, números, palavras ou qualquer outra coisa que você precise decidir.",
+      "2": "<strong>Personalizar cores</strong> — Altere as cores das fatias para combinar com seu tema.",
+      "3": "<strong>Gire a roda</strong> — Clique no grande botão giratório no meio ou abaixo da roda.",
+      "4": "<strong>Veja o resultado</strong> — O item vencedor será anunciado e rastreado nos contadores.",
+      "5": "<strong>Gerenciar opções</strong> — Remova, duplique ou oculte temporariamente as opções para sua próxima rodada."
+    },
+    "seoTitle": "O que é um giro da roda personalizado?",
+    "seoDesc": "Um <strong>Gire a Roda Personalizado</strong> permite que você transforme qualquer lista de opções em uma roleta divertida e interativa. Esteja você organizando um sorteio, dividindo tarefas ou apenas tentando decidir que filme assistir, uma roda aleatória torna o processo imparcial e emocionante.",
+    "seoList": {
+      "1": "<strong>Jogos de festa</strong> — Crie avisos personalizados de Verdade ou Desafio ou jogos de bebida.",
+      "2": "<strong>Atividades em sala de aula</strong> — Escolha uma matéria, uma recompensa ou um aluno aleatoriamente.",
+      "3": "<strong>Decisões diárias</strong> — Decida quem lava a louça ou leva o lixo para fora.",
+      "4": "<strong>Brindes</strong> — Escolha um vencedor de maneira justa em uma lista de concorrentes."
+    },
+    "whyTitle": "Por que usar nossa roda personalizada?",
+    "whyDesc": "Nosso girador de roda foi projetado para ser a opção mais flexível e fácil de usar disponível:",
+    "features": {
+      "1Title": "Personalização infinita",
+      "1Desc": "Adicione quantas opções desejar, altere os pesos copiando fatias e personalize as cores.",
+      "2Title": "Resultados instantâneos",
+      "2Desc": "Não é necessário fazer login ou downloads. Basta digitar e girar instantaneamente.",
+      "3Title": "Salve seu estado",
+      "3Desc": "A configuração do seu wheel permanece ativa enquanto você mantiver a aba do navegador aberta.",
+      "4Title": "Justo e Aleatório",
+      "4Desc": "Nosso algoritmo garante sempre um resultado verdadeiramente aleatório e imparcial."
+    },
+    "article": {
+      "sec1Title": "Por que as ferramentas Spin the Wheel personalizadas são tão populares",
+      "sec1Text": "Sejamos honestos: tomar decisões o dia todo pode ser exaustivo. Esteja você tentando descobrir o que jantar, escolhendo um vencedor para um sorteio nas redes sociais ou apenas decidindo quem paga pelo café, às vezes é mais fácil deixar o destino decidir. Uma ferramenta personalizada de girar a roda é o atalho perfeito para esses momentos. Em vez de rolar ou debater interminavelmente com seus amigos, basta colocar suas opções em uma roda e pressionar girar. O melhor de tudo é que você não fica preso a uma lista predefinida. Você pode adicionar literalmente qualquer coisa às fatias – nomes, lugares, números ou até mesmo desafiar desafios para um jogo de festa. Funciona bem porque a roda giratória e o clique satisfatório proporcionam a todos os envolvidos uma pequena explosão de entusiasmo. É preciso uma tarefa chata como “escolher alguém para lavar a louça” e transformá-la em um jogo rápido e divertido.",
+      "sec2Title": "Por que amamos deixar as coisas ao acaso",
+      "sec2Text": "Há uma razão pela qual jogamos moedas e tiramos palitos. Na verdade, o cérebro humano adora deixar as coisas ao acaso porque isso tira o calor de nós. Se você escolher alguém aleatoriamente, ninguém poderá argumentar que você tinha favoritos. A mesma lógica se aplica a uma roda giratória digital. É completamente imparcial, o que elimina instantaneamente os argumentos “isso não é justo”. Quando uma roda giratória desacelera e finalmente atinge o vencedor, ela na verdade desencadeia uma pequena dose de dopamina em nossos cérebros. Esse suspense - mesmo que você esteja apenas escolhendo um filme para assistir no Netflix - é exatamente o motivo pelo qual as rodas aleatórias são tão envolventes. Ao transformar uma decisão simples em um jogo visual, você faz com que as pessoas prestem atenção e aceitem o resultado com um sorriso.",
+      "sec3Title": "Uma virada de jogo para professores e salas de aula",
+      "sec3TextStart": "Se você já esteve na frente de uma sala de aula, sabe como é difícil fazer com que todos participem igualmente. As mesmas três crianças sempre levantam as mãos, enquanto as demais tentam se misturar nas cadeiras. É por isso que os professores adoram usar um",
+      "sec3LinkText": "Roda de Nomes",
+      "sec3TextMiddle": "ou um girador personalizado. Quando você coloca a lista da turma em uma roda e a projeta no quadro, cada aluno sabe que tem chances iguais de ser chamado. Isso mantém a sala alerta sem sentir que alguém está sendo alvo injustamente. Você também pode usá-lo para muito mais do que apenas escolher um aluno para responder a uma pergunta. Você pode carregar uma roda com problemas matemáticos, palavras de vocabulário ou tópicos de discussão. Para tornar as coisas ainda mais fáceis, o dedicado",
+      "sec3LinkText2": "Roda de Nomes",
+      "sec3TextEnd": "permite remover um nome depois de escolhido, o que significa que cada aluno tem a oportunidade antes que alguém seja chamado duas vezes.",
+      "sec4Title": "Pare de discutir sobre o que comer",
+      "sec4TextStart": "Todos nós já passamos por isso: \"O que você quer comer?\" \"Eu não sei, o que você quer?\" É a conversa que nunca acaba. Quanto mais opções de comida para viagem tivermos, mais difícil será fazer uma escolha. Se você está cansado de debater, o",
+      "sec4LinkText": "Roda Alimentar",
+      "sec4TextMiddle": "é exatamente o que você precisa. Basta inserir quatro ou cinco lugares com os quais você ficaria satisfeito, apertar o botão giratório e comprometer-se com o que quer que apareça. Chega de ir e voltar por 45 minutos. Isso não apenas economiza tempo, mas também força você a abandonar seus hábitos regulares de pedidos. Adicione aquele lugar tailandês que você ainda não experimentou como curinga e deixe a roda apimentar sua rotina. Se você precisar de uma decisão rápida em qualquer lugar, vá para o",
+      "sec4LinkText2": "Roda Alimentar",
+      "sec4TextEnd": "página. É pré-temático e fica ótimo no seu telefone quando a fome bate.",
+      "sec5Title": "Respostas rápidas para perguntas simples",
+      "sec5TextStart": "Uma enorme roda personalizada é ótima para listas longas, mas às vezes você só precisa de uma resposta direta, sim ou não. Devo comprar esses sapatos? Devo faltar à academia hoje? Para aquelas escolhas binárias rápidas, um",
+      "sec5LinkText": "Roda Sim/Não",
+      "sec5TextMiddle": "é o lançamento de moeda digital perfeito. Às vezes, você já sabe o que quer fazer e a roda o ajuda a descobrir. Se a roda parar em “Não” e você imediatamente se sentir desapontado, bem, então obviamente você queria fazer isso! Você também pode ajustar as probabilidades. Se você realmente quer ir para a academia, mas precisa de um empurrãozinho, coloque três fatias “Sim” e uma fatia “Não” na roda. Para coisas que não são totalmente em preto e branco, adicionar uma fatia \"Talvez\" é útil. Sempre que você precisar de uma resposta instantânea e sem complicações, o",
+      "sec5LinkText2": "Roda Sim/Não",
+      "sec5TextEnd": "está sempre pronto.",
+      "sec6Title": "Personalize exatamente como você deseja",
+      "sec6TextStart": "O que faz o",
+      "sec6LinkText": "Girador de roda aleatória",
+      "sec6TextMiddle": "melhor do que a maioria dos aplicativos é o fato de que você pode ajustar tudo nele. Se você está realizando um sorteio ou streaming de uma empresa séria no Twitch, você precisa de mais do que apenas um spinner básico. Por exemplo, se quiser que alguns prêmios sejam mais raros do que outros, você pode simplesmente duplicar os prêmios menores várias vezes na roda para que tenham maior probabilidade de serem acertados. Este recurso de “ponderação” oferece controle total sobre as probabilidades. Você também pode mergulhar nas cores e combinar visualmente a roda com a sua marca ou tema da festa. Com recursos que permitem rastrear quantas vezes uma opção ganhou, ocultar escolhas instantaneamente e ajustar a aparência da roda, é uma ferramenta totalmente profissional disfarçada de um jogo divertido. Experimente o",
+      "sec6LinkText2": "ferramenta giratória principal",
+      "sec6TextEnd": "e tire o estresse de sua próxima grande decisão."
+    }
   }
 }

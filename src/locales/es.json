@@ -5,7 +5,8 @@
     "yesNoWheel": "Sí/No Rueda",
     "embed": "Empotrar",
     "foodWheel": "Rueda de comida",
-    "configureEmbed": "Configurar rueda integrable"
+    "configureEmbed": "Configurar rueda integrable",
+    "spinTheWheel": "Gira la rueda"
   },
   "footer": {
     "randoWheel": "Rando Wheel",
@@ -47,7 +48,9 @@
     "wonTitle": "Rueda de nombres",
     "wonDesc": "Un compañero perfecto para obsequios, participación en el aula o asignación de tareas.",
     "ynwTitle": "Sí / No Rueda",
-    "ynwDesc": "Un simple control giratorio de sí o no para manejar opciones binarias rápidas al instante."
+    "ynwDesc": "Un simple control giratorio de sí o no para manejar opciones binarias rápidas al instante.",
+    "stwTitle": "Gira la rueda",
+    "stwDesc": "Un selector aleatorio totalmente personalizable para cualquier situación."
   },
   "home": {
     "mainTitle": "Rueda giratoria aleatoria",
@@ -79,7 +82,8 @@
     "otherToolsList": {
       "names": "<strong>Selector de nombres/Selector de estudiantes:</strong> comúnmente utilizado por los educadores para seleccionar individuos al azar, a veces llamado \"Rueda de nombres\" o \"Selector de nombres aleatorios\".",
       "yesno": "<strong>Sí/No Ruedas:</strong> Para decisiones binarias simples.",
-      "food": "<strong>Rueda de la comida:</strong> ¿No estás seguro de qué comer? Gire la rueda de la comida para tomar decisiones rápidas sobre comidas al azar."
+      "food": "<strong>Rueda de la comida:</strong> ¿No estás seguro de qué comer? Gire la rueda de la comida para tomar decisiones rápidas sobre comidas al azar.",
+      "spin": "<strong>Gira la rueda:</strong> un selector aleatorio totalmente personalizable para cualquier situación."
     },
     "otherToolsOutro": "Cada versión especializada toma el concepto central de selección aleatoria y lo adapta para satisfacer distintas necesidades, haciéndolos útiles para todo, desde organizar actividades hasta resolver debates con un toque divertido e imparcial."
   },
@@ -236,5 +240,68 @@
     "generateBtn": "Generar código para insertar",
     "errConfigure": "Error al generar código. Primero configure la rueda.",
     "errEmpty": "Agregue al menos un elemento a la rueda antes de generar el código para insertar."
+  },
+  "spinPage": {
+    "title": "Gira la rueda",
+    "heroTitle": "Gira la rueda: selector aleatorio personalizado",
+    "heroDesc": "Crea tu propia <strong>Gira la Rueda</strong> personalizada para tomar decisiones, jugar o elegir un ganador al azar. ¡Ingresa tus elecciones, gira la rueda y deja que comience la diversión!",
+    "howToTitle": "Cómo utilizar la rueda personalizada",
+    "steps": {
+      "1": "<strong>Ingrese sus entradas</strong>: agregue nombres, números, palabras o cualquier otra cosa que necesite decidir.",
+      "2": "<strong>Personalizar colores</strong>: cambie los colores de los sectores para que coincidan con su tema.",
+      "3": "<strong>Gira la rueda</strong>: haz clic en el botón de giro grande en el medio o debajo de la rueda.",
+      "4": "<strong>Ver el resultado</strong>: el artículo ganador se anunciará y se rastreará en los contadores.",
+      "5": "<strong>Administrar opciones</strong>: elimina, duplica u oculta temporalmente opciones para tu próximo giro."
+    },
+    "seoTitle": "¿Qué es un giro de la rueda personalizado?",
+    "seoDesc": "Un <strong>giro de la rueda personalizado</strong> le permite convertir cualquier lista de opciones en una ruleta divertida e interactiva. Ya sea que esté organizando una rifa, dividiendo las tareas del hogar o simplemente tratando de decidir qué película ver, una rueda aleatoria hace que el proceso sea imparcial y emocionante.",
+    "seoList": {
+      "1": "<strong>Juegos de fiesta</strong>: crea mensajes personalizados de Verdad o Reto o juegos para beber.",
+      "2": "<strong>Actividades en el aula</strong>: elige una materia, una recompensa o un estudiante al azar.",
+      "3": "<strong>Decisiones diarias</strong>: decide quién lava los platos o saca la basura.",
+      "4": "<strong>Sorteos</strong>: elija un ganador de una lista de concursantes."
+    },
+    "whyTitle": "¿Por qué utilizar nuestra rueda personalizada?",
+    "whyDesc": "Nuestra rueda giratoria está diseñada para ser la opción más flexible y fácil de usar disponible:",
+    "features": {
+      "1Title": "Personalización infinita",
+      "1Desc": "Agregue tantas opciones como desee, cambie los pesos copiando sectores y personalice los colores.",
+      "2Title": "Resultados instantáneos",
+      "2Desc": "No es necesario iniciar sesión ni realizar descargas. Simplemente escribe y gira al instante.",
+      "3Title": "Salva tu estado",
+      "3Desc": "La configuración de su rueda permanece activa mientras mantenga abierta la pestaña del navegador.",
+      "4Title": "Justo y aleatorio",
+      "4Desc": "Nuestro algoritmo garantiza un resultado verdaderamente aleatorio e imparcial en todo momento."
+    },
+    "article": {
+      "sec1Title": "Por qué las herramientas personalizadas para hacer girar la rueda son tan populares",
+      "sec1Text": "Seamos honestos, tomar decisiones todo el día puede resultar agotador. Ya sea que estés tratando de decidir qué cenar, eligiendo un ganador para un sorteo en tus redes sociales o simplemente decidiendo quién paga el café, a veces es más fácil dejar que el destino decida. Una herramienta personalizada para girar la rueda es el atajo perfecto para esos momentos. En lugar de desplazarte interminablemente o debatir con tus amigos, simplemente coloca tus opciones en una rueda y presiona girar. Lo mejor de todo es que no estarás atrapado con una lista preestablecida. Puedes agregar literalmente cualquier cosa a las porciones: nombres, lugares, números o incluso desafíos desafiantes para un juego de fiesta. Funciona bien porque la rueda giratoria y el clic satisfactorio brindan a todos los involucrados una pequeña explosión de emoción. Se necesita una tarea aburrida como \"elegir a alguien para que lave los platos\" y la convierte en un juego rápido y divertido.",
+      "sec2Title": "Por qué nos encanta dejar las cosas al azar",
+      "sec2Text": "Hay una razón por la que lanzamos monedas y sacamos pajitas. Al cerebro humano le encanta dejar las cosas al azar porque así nos quita presión. Si eliges a alguien al azar de un sombrero, nadie puede argumentar que tenías favoritos. La misma lógica se aplica a una rueca digital. Es completamente imparcial, lo que elimina instantáneamente los argumentos de \"eso no es justo\". Cuando una rueca se ralentiza y finalmente hace clic en el ganador, en realidad desencadena una pequeña dosis de dopamina en nuestro cerebro. Ese suspenso, incluso si simplemente estás eligiendo una película para ver en Netflix, es exactamente la razón por la que las ruedas aleatorias son tan atractivas. Al convertir una decisión simple en un juego visual, logras que la gente preste atención y acepte el resultado con una sonrisa.",
+      "sec3Title": "Un cambio de juego para maestras y aulas.",
+      "sec3TextStart": "Si alguna vez ha estado al frente de un salón de clases, sabrá lo difícil que es lograr que todos participen por igual. Los mismos tres niños siempre levantan la mano, mientras el resto intenta mimetizarse con sus sillas. Por eso a los profesores les encanta usar un",
+      "sec3LinkText": "Rueda de nombres",
+      "sec3TextMiddle": "o una ruleta personalizada. Cuando pones la lista de la clase en una rueda y la proyectas en la pizarra, todos los estudiantes saben que tienen las mismas posibilidades de ser llamados. Esto mantiene a la sala alerta sin sentir que alguien está siendo un objetivo injusto. También puedes usarlo para mucho más que simplemente elegir a un estudiante para que responda una pregunta. Puede cargar una rueda con problemas matemáticos, palabras de vocabulario o temas de discusión. Para facilitar aún más las cosas, el dedicado",
+      "sec3LinkText2": "Rueda de nombres",
+      "sec3TextEnd": "le permite eliminar un nombre después de haberlo elegido, lo que significa que cada estudiante tiene un turno antes de que llamen a alguien dos veces.",
+      "sec4Title": "Deja de discutir sobre qué comer",
+      "sec4TextStart": "A todos nos ha pasado: \"¿Qué quieres comer?\" \"No lo sé, ¿qué quieres?\" Es la conversación que nunca termina. Cuantas más opciones de comida para llevar tengamos, más difícil será tomar una decisión. Si estás cansado de debatir, el",
+      "sec4LinkText": "Rueda de comida",
+      "sec4TextMiddle": "es exactamente lo que necesitas. Simplemente conecte cuatro o cinco lugares con los que estaría satisfecho, presione girar y comprométase con lo que sea que aterrice. No más idas y venidas durante 45 minutos. No sólo ahorra tiempo, sino que también le obliga a abandonar sus hábitos habituales de pedido. Añade ese lugar tailandés que aún no has probado como comodín y deja que la rueda le dé vida a tu rutina. Si necesita una decisión rápida sobre la marcha, vaya a la",
+      "sec4LinkText2": "Rueda de comida",
+      "sec4TextEnd": "página. Tiene un tema previo y se ve muy bien en tu teléfono cuando llega el hambre.",
+      "sec5Title": "Respuestas rápidas para preguntas simples",
+      "sec5TextStart": "Una enorme rueda personalizada es ideal para listas largas, pero a veces solo necesitas una respuesta directa de sí o no. ¿Debería comprar estos zapatos? ¿Debería saltarme el gimnasio hoy? Para esas elecciones binarias rápidas, un",
+      "sec5LinkText": "Sí/No Rueda",
+      "sec5TextMiddle": "es el lanzamiento de moneda digital perfecto. A veces, es posible que ya sepas lo que quieres hacer y la rueda te ayude a descubrirlo. Si la rueda se detiene en \"No\" e inmediatamente te sientes decepcionado, ¡entonces obviamente querías hacerlo! También puedes modificar las probabilidades. Si realmente quieres ir al gimnasio pero necesitas un pequeño empujón, coloca tres rebanadas de \"Sí\" y una rebanada de \"No\" en la rueda. Para cosas que no son totalmente en blanco y negro, agregar una porción de \"Quizás\" te resultará útil. Siempre que necesite una respuesta instantánea y sin complicaciones, el",
+      "sec5LinkText2": "Sí/No Rueda",
+      "sec5TextEnd": "siempre está listo.",
+      "sec6Title": "Personalízalo exactamente como quieras",
+      "sec6TextStart": "¿Qué hace que el",
+      "sec6LinkText": "Rueda giratoria aleatoria",
+      "sec6TextMiddle": "mejor que la mayoría de las aplicaciones es el hecho de que puedes modificar todo al respecto. Si estás organizando un sorteo empresarial serio o transmitiendo en Twitch, necesitas algo más que un control giratorio básico. Por ejemplo, si desea que algunos premios sean más raros que otros, puede simplemente duplicar los premios más pequeños varias veces en la rueda para que sea más probable que los consiga. Esta función de \"ponderación\" le brinda control total sobre las probabilidades. También puedes sumergirte en los colores y hacer coincidir visualmente la rueda con tu marca o tema de fiesta. Con funciones que te permiten realizar un seguimiento de cuántas veces ha ganado una opción, ocultar opciones al instante y modificar el aspecto de la rueda, es una herramienta completamente profesional disfrazada de juego divertido. Pruebe el",
+      "sec6LinkText2": "herramienta giratoria principal",
+      "sec6TextEnd": "y elimine el estrés de su próxima gran decisión."
+    }
   }
 }

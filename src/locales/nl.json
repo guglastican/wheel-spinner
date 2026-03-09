@@ -5,7 +5,8 @@
     "yesNoWheel": "Ja/Nee wiel",
     "embed": "Insluiten",
     "foodWheel": "Voedselwiel",
-    "configureEmbed": "Configureer een insluitbaar wiel"
+    "configureEmbed": "Configureer een insluitbaar wiel",
+    "spinTheWheel": "Draai aan het wiel"
   },
   "footer": {
     "randoWheel": "Rando wiel",
@@ -47,7 +48,9 @@
     "wonTitle": "Wiel van Namen",
     "wonDesc": "Een perfecte metgezel voor weggeefacties, deelname aan de klas of het toewijzen van taken.",
     "ynwTitle": "Ja / Nee wiel",
-    "ynwDesc": "Een eenvoudige ja of nee-spinner om snelle binaire keuzes direct af te handelen."
+    "ynwDesc": "Een eenvoudige ja of nee-spinner om snelle binaire keuzes direct af te handelen.",
+    "stwTitle": "Draai aan het wiel",
+    "stwDesc": "Een volledig aanpasbare willekeurige kiezer voor elke situatie."
   },
   "home": {
     "mainTitle": "Willekeurige wielspinner",
@@ -79,7 +82,8 @@
     "otherToolsList": {
       "names": "<strong>Naamkiezers/leerlingenkiezers:</strong> vaak gebruikt door docenten om willekeurig individuen te selecteren, ook wel \"Wiel van namen\" of \"Willekeurige naamkiezer\" genoemd.",
       "yesno": "<strong>Ja/Nee-wielen:</strong> voor eenvoudige binaire beslissingen.",
-      "food": "<strong>Voedselwiel:</strong> Weet u niet zeker wat u moet eten? Draai aan het voedselwiel voor snelle, willekeurige maaltijdbeslissingen."
+      "food": "<strong>Voedselwiel:</strong> Weet u niet zeker wat u moet eten? Draai aan het voedselwiel voor snelle, willekeurige maaltijdbeslissingen.",
+      "spin": "<strong>Draai aan het wiel:</strong> een volledig aanpasbare willekeurige kiezer voor elke situatie."
     },
     "otherToolsOutro": "Elke gespecialiseerde versie neemt het kernconcept van willekeurige selectie over en stemt dit af op verschillende behoeften, waardoor ze handig zijn voor alles, van het organiseren van activiteiten tot het beslechten van debatten met een leuke, onpartijdige twist."
   },
@@ -236,5 +240,68 @@
     "generateBtn": "Genereer insluitcode",
     "errConfigure": "Fout bij het genereren van code. Configureer eerst het wiel.",
     "errEmpty": "Voeg ten minste één item aan het wiel toe voordat u de insluitcode genereert."
+  },
+  "spinPage": {
+    "title": "Draai aan het wiel",
+    "heroTitle": "Draai aan het wiel - Aangepaste willekeurige kiezer",
+    "heroDesc": "Maak uw eigen aangepaste <strong>Draai aan het wiel</strong> om beslissingen te nemen, games te spelen of een willekeurige winnaar te kiezen. Voer uw keuzes in, draai aan het wiel en laat het plezier beginnen!",
+    "howToTitle": "Hoe u het aangepaste wiel gebruikt",
+    "steps": {
+      "1": "<strong>Voer uw invoer in</strong> — Voeg namen, cijfers, woorden of iets anders toe waarover u moet beslissen.",
+      "2": "<strong>Kleuren aanpassen</strong> — Wijzig de segmentkleuren zodat deze bij uw thema passen.",
+      "3": "<strong>Draai aan het wiel</strong> — Klik op de grote draaiknop in het midden of onder het wiel.",
+      "4": "<strong>Bekijk het resultaat</strong> — Het winnende item wordt aangekondigd en bijgehouden in de tellers.",
+      "5": "<strong>Opties beheren</strong> — Verwijder, dupliceer of verberg tijdelijk opties voor uw volgende draai."
+    },
+    "seoTitle": "Wat is een aangepaste draai aan het wiel?",
+    "seoDesc": "Met een <strong>aangepast draaiwiel</strong> kunt u elke lijst met opties omzetten in een leuke, interactieve roulette. Of je nu een loterij organiseert, klusjes verdeelt of gewoon probeert te beslissen welke film je wilt kijken, een willekeurig wiel maakt het proces onbevooroordeeld en spannend.",
+    "seoList": {
+      "1": "<strong>Gezelschapsspellen</strong> — Maak aangepaste Durf-waarheid-prompts of drinkspelletjes.",
+      "2": "<strong>Klaslokaalactiviteiten</strong>: kies willekeurig een onderwerp, beloning of leerling.",
+      "3": "<strong>Dagelijkse beslissingen</strong> — Bepaal wie de afwas doet of het afval buitenzet.",
+      "4": "<strong>Giveaways</strong> — Kies eerlijk een winnaar uit een lijst met deelnemers."
+    },
+    "whyTitle": "Waarom ons aangepaste wiel gebruiken?",
+    "whyDesc": "Onze wielspinner is ontworpen als de meest flexibele en gebruiksvriendelijke optie die beschikbaar is:",
+    "features": {
+      "1Title": "Eindeloos maatwerk",
+      "1Desc": "Voeg zoveel opties toe als je wilt, verander de gewichten door plakjes te kopiëren en pas de kleuren aan.",
+      "2Title": "Directe resultaten",
+      "2Desc": "Geen login of downloads vereist. Typ gewoon en draai direct.",
+      "3Title": "Red uw staat",
+      "3Desc": "Uw wielconfiguratie blijft actief zolang u het browsertabblad open houdt.",
+      "4Title": "Eerlijk en willekeurig",
+      "4Desc": "Ons algoritme zorgt elke keer weer voor een echt willekeurig en onbevooroordeeld resultaat."
+    },
+    "article": {
+      "sec1Title": "Waarom aangepaste Spin the Wheel-tools zo populair zijn",
+      "sec1Text": "Laten we eerlijk zijn: de hele dag beslissingen nemen kan vermoeiend zijn. Of je nu probeert uit te vinden wat je gaat eten, een winnaar kiest voor een weggeefactie op je sociale media, of gewoon besluit wie de koffie betaalt, soms is het gewoon gemakkelijker om het lot te laten beslissen. Een aangepast gereedschap voor het draaien aan het wiel is de perfecte snelkoppeling voor die momenten. In plaats van eindeloos te scrollen of te debatteren met je vrienden, plaats je gewoon je opties in een wiel en druk je op draaien. Het beste van alles is dat u niet vastzit aan een vooraf ingestelde lijst. Je kunt letterlijk alles aan de plakjes toevoegen: namen, plaatsen, nummers, of zelfs uitdagingen aangaan voor een gezelschapsspel. Het werkt goed omdat het roterende wiel en de bevredigende klik alle betrokkenen een kleine uitbarsting van opwinding bezorgen. Het kost een saai karwei, zoals \"iemand uitkiezen om de afwas te doen\", en verandert het in een snel, leuk spel.",
+      "sec2Title": "Waarom we dingen graag aan het toeval overlaten",
+      "sec2Text": "Er is een reden waarom we munten opgooien en rietjes trekken. Het menselijk brein houdt er eigenlijk van om dingen aan het toeval over te laten, omdat het de druk van ons wegneemt. Als je willekeurig iemand uit een hoed kiest, kan niemand beweren dat je favoriet was. Dezelfde logica is van toepassing op een digitaal spinnerwiel. Het is volledig onpartijdig, waardoor de ‘dat is niet eerlijk’-argumenten onmiddellijk worden uitgesloten. Wanneer een draaiend wiel langzamer gaat draaien en uiteindelijk op de winnaar klikt, veroorzaakt dit feitelijk een kleine dosis dopamine in onze hersenen. Die spanning – zelfs als je alleen maar een film uitkiest om op Netflix te bekijken – is precies waarom willekeurige wielen zo boeiend zijn. Door van een eenvoudige beslissing een visueel spel te maken, zorg je ervoor dat mensen opletten en de uitkomst met een glimlach accepteren.",
+      "sec3Title": "Een game-changer voor docenten en klaslokalen",
+      "sec3TextStart": "Als je ooit vooraan in een klaslokaal hebt gestaan, weet je hoe moeilijk het is om iedereen gelijkwaardig te laten meedoen. Dezelfde drie kinderen steken altijd hun hand op, terwijl de rest probeert op te gaan in hun stoelen. Daarom gebruiken leraren graag een",
+      "sec3LinkText": "Wiel van Namen",
+      "sec3TextMiddle": "of een aangepaste spinner. Wanneer je de klassenlijst op een wieltje zet en op het bord projecteert, weet iedere leerling dat hij evenveel kans heeft om opgeroepen te worden. Dit houdt de kamer alert zonder het gevoel te hebben dat iemand onterecht het doelwit is. Je kunt het voor veel meer gebruiken dan alleen een leerling kiezen om een ​​vraag te beantwoorden. Je kunt een wiel laden met wiskundige problemen, woordenschatwoorden of discussieonderwerpen. Om het nog eenvoudiger te maken, is er de dedicated",
+      "sec3LinkText2": "Wiel van Namen",
+      "sec3TextEnd": "Hiermee kun je een naam verwijderen nadat deze is gekozen, wat betekent dat elke leerling aan de beurt komt voordat iemand twee keer wordt opgeroepen.",
+      "sec4Title": "Stop met ruzie maken over wat je moet eten",
+      "sec4TextStart": "We hebben het allemaal wel eens gehad: \"Wat wil je eten?\" \"Ik weet het niet, wat wil je?\" Het is het gesprek dat nooit eindigt. Hoe meer afhaalmogelijkheden we hebben, hoe moeilijker het wordt om zomaar een keuze te maken. Als je het debat beu bent, kun je de",
+      "sec4LinkText": "Voedsel wiel",
+      "sec4TextMiddle": "is precies wat je nodig hebt. Sluit gewoon vier of vijf plaatsen aan waar u blij mee bent, druk op 'spin' en zet u in voor waar het ook op terechtkomt. Je hoeft niet meer 45 minuten heen en weer te gaan. Het bespaart niet alleen tijd, maar het dwingt je ook om je reguliere bestelgewoonten te doorbreken. Gooi die ene Thaise plek die je nog niet hebt geprobeerd in als wildcard en laat het wiel je routine opfleuren. Als u onderweg een snelle beslissing nodig heeft, ga dan naar de",
+      "sec4LinkText2": "Voedsel wiel",
+      "sec4TextEnd": "pagina. Het heeft een vooraf thema en ziet er geweldig uit op je telefoon als de honger toeslaat.",
+      "sec5Title": "Snelle antwoorden op eenvoudige vragen",
+      "sec5TextStart": "Een enorm aangepast wiel is geweldig voor lange lijsten, maar soms heb je gewoon een duidelijk ja of nee antwoord nodig. Moet ik deze schoenen kopen? Moet ik vandaag de sportschool overslaan? Voor die snelle binaire keuzes, a",
+      "sec5LinkText": "Ja/Nee wiel",
+      "sec5TextMiddle": "is de perfecte digitale toss. Soms weet je misschien al wat je wilt doen, en helpt het wiel je daarachter te komen. Als het wiel op 'Nee' komt te staan ​​en je voelt je meteen teleurgesteld, nou, dan wilde je het duidelijk doen! Je kunt de kansen ook aanpassen. Als je echt naar de sportschool wilt, maar een klein zetje nodig hebt, plaats dan drie 'Ja'-schijfjes en één 'Nee'-schijfje op het wiel. Voor dingen die niet helemaal zwart-wit zijn, geeft het toevoegen van een 'Misschien'-segment je een handig hulpmiddel. Wanneer u direct en zonder gedoe een antwoord nodig heeft, kunt u terecht bij de",
+      "sec5LinkText2": "Ja/Nee wiel",
+      "sec5TextEnd": "staat altijd klaar.",
+      "sec6Title": "Pas het precies aan zoals u dat wilt",
+      "sec6TextStart": "Wat maakt de",
+      "sec6LinkText": "Willekeurige wielspinner",
+      "sec6TextMiddle": "beter dan de meeste apps is het feit dat je er alles aan kunt aanpassen. Als je een serieuze bedrijfsweggeefactie organiseert of streamt op Twitch, heb je meer nodig dan alleen een eenvoudige spinner. Als u bijvoorbeeld wilt dat sommige prijzen zeldzamer zijn dan andere, kunt u de kleinere prijzen meerdere keren op het rad dupliceren, zodat de kans groter is dat ze worden gewonnen. Deze \"wegings\"-functie geeft u volledige controle over de kansen. Je kunt ook in de kleuren duiken en het wiel visueel afstemmen op jouw merk of feestthema. Met functies waarmee je kunt bijhouden hoe vaak een optie heeft gewonnen, keuzes direct kunt verbergen en kunt aanpassen hoe het wiel eruit ziet, is het een volledig professionele tool, vermomd als een leuk spel. Probeer de",
+      "sec6LinkText2": "belangrijkste spinnergereedschap",
+      "sec6TextEnd": "en haal de stress weg bij uw volgende grote beslissing."
+    }
   }
 }

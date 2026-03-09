@@ -5,7 +5,8 @@
     "yesNoWheel": "Da/Nu Roata",
     "embed": "Încorporați",
     "foodWheel": "Roata Alimentelor",
-    "configureEmbed": "Configurați roata incorporabilă"
+    "configureEmbed": "Configurați roata incorporabilă",
+    "spinTheWheel": "Învârte roata"
   },
   "footer": {
     "randoWheel": "Roata Rando",
@@ -47,7 +48,9 @@
     "wonTitle": "Roata Numelor",
     "wonDesc": "Un partener perfect pentru cadouri, participarea la clasă sau atribuirea de sarcini.",
     "ynwTitle": "Da / Nu Roata",
-    "ynwDesc": "Un simplu spinner da sau nu pentru a gestiona instantaneu alegerile binare rapide."
+    "ynwDesc": "Un simplu spinner da sau nu pentru a gestiona instantaneu alegerile binare rapide.",
+    "stwTitle": "Învârte roata",
+    "stwDesc": "Un selector aleatoriu complet personalizabil pentru orice situație."
   },
   "home": {
     "mainTitle": "Random Wheel Spinner",
@@ -79,7 +82,8 @@
     "otherToolsList": {
       "names": "<strong>Selectori de nume/Selectori de elevi:</strong> utilizate în mod obișnuit de educatori pentru a selecta aleatoriu persoane, denumite uneori „Roata numelor” sau „Selector aleatoriu de nume”.",
       "yesno": "<strong>Da/Nu Roți:</strong> pentru decizii binare simple.",
-      "food": "<strong>Roata alimentelor:</strong> nu sunteți sigur ce să mâncați? Rotiți roata alimentelor pentru a lua decizii rapide ale mesei."
+      "food": "<strong>Roata alimentelor:</strong> nu sunteți sigur ce să mâncați? Rotiți roata alimentelor pentru a lua decizii rapide ale mesei.",
+      "spin": "<strong>Rotiți roata:</strong> un selector aleatoriu complet personalizabil pentru orice situație."
     },
     "otherToolsOutro": "Fiecare versiune specializată preia conceptul de bază al selecției aleatorii și îl adaptează pentru a răspunde nevoilor distincte, făcându-le la îndemână pentru orice, de la organizarea activităților până la aranjarea dezbaterilor cu o întorsătură distractivă și imparțială."
   },
@@ -236,5 +240,68 @@
     "generateBtn": "Generați codul de încorporare",
     "errConfigure": "Eroare la generarea codului. Vă rugăm să configurați mai întâi roata.",
     "errEmpty": "Vă rugăm să adăugați cel puțin un articol la roată înainte de a genera codul de încorporare."
+  },
+  "spinPage": {
+    "title": "Învârte roata",
+    "heroTitle": "Spin the Wheel — Selector aleatoriu personalizat",
+    "heroDesc": "Creează-ți propriul <strong>Rotire roata</strong> personalizat pentru a lua decizii, a juca jocuri sau a alege un câștigător aleatoriu. Introduceți alegerile, rotiți roata și lăsați distracția să înceapă!",
+    "howToTitle": "Cum să utilizați roata personalizată",
+    "steps": {
+      "1": "<strong>Introduceți datele introduse</strong> — Adăugați nume, numere, cuvinte sau orice altceva despre care trebuie să decideți.",
+      "2": "<strong>Personalizați culorile</strong> — Schimbați culorile feliei pentru a se potrivi cu tema dvs.",
+      "3": "<strong>Rotiți roata</strong> — faceți clic pe butonul mare de rotire din mijloc sau de sub roată.",
+      "4": "<strong>Vedeți rezultatul</strong> — articolul câștigător va fi anunțat și urmărit în ghișee.",
+      "5": "<strong>Gestionați opțiunile</strong> — Eliminați, duplicați sau ascundeți temporar opțiunile pentru următoarea învârtire."
+    },
+    "seoTitle": "Ce este o roată personalizată învârtită?",
+    "seoDesc": "O <strong>Rotire personalizată a roții</strong> vă permite să transformați orice listă de opțiuni într-o ruletă interactivă distractivă. Indiferent dacă organizați o tombolă, împărțiți treburile sau doar încercați să decideți ce film să vizionați, o roată aleatorie face procesul imparțial și interesant.",
+    "seoList": {
+      "1": "<strong>Jocuri de petrecere</strong> — Creați mesaje personalizate pentru Adevărul sau Îndrăzneala sau jocuri de băutură.",
+      "2": "<strong>Activități la clasă</strong> — alegeți la întâmplare un subiect, o recompensă sau un student.",
+      "3": "<strong>Decizii zilnice</strong> — decideți cine va spăla sau scoate gunoiul.",
+      "4": "<strong>Giveaways</strong> — alegeți un câștigător dintr-o listă de concurenți."
+    },
+    "whyTitle": "De ce să folosiți roata noastră personalizată?",
+    "whyDesc": "Învârtitorul nostru cu roți este conceput pentru a fi cea mai flexibilă și mai ușor de utilizat opțiune disponibilă:",
+    "features": {
+      "1Title": "Personalizare fără sfârșit",
+      "1Desc": "Adăugați câte opțiuni doriți, modificați greutățile prin copierea feliilor și personalizați culorile.",
+      "2Title": "Rezultate instantanee",
+      "2Desc": "Nu sunt necesare autentificare sau descărcări. Doar introduceți și rotiți instantaneu.",
+      "3Title": "Salvează-ți statul",
+      "3Desc": "Configurația roții dvs. rămâne activă atâta timp cât mențineți fila browserului deschisă.",
+      "4Title": "Corect și aleatoriu",
+      "4Desc": "Algoritmul nostru asigură un rezultat cu adevărat aleatoriu și imparțial de fiecare dată."
+    },
+    "article": {
+      "sec1Title": "De ce instrumentele personalizate pentru rotirea roții sunt atât de populare",
+      "sec1Text": "Să fim sinceri, luarea deciziilor toată ziua poate fi obositoare. Fie că încerci să-ți dai seama ce să mănânci la cină, să alegi un câștigător pentru un cadou pe rețelele de socializare sau doar să decizi cine plătește pentru cafea, uneori este mai ușor să lași soarta să decidă. Un instrument personalizat de rotire a roții este scurtătura perfectă pentru acele momente. În loc să derulați la nesfârșit sau să dezbateți cu prietenii dvs., trebuie doar să vă lăsați opțiunile într-o roată și să apăsați pe rotire. Cel mai bine, nu ești blocat cu o listă prestabilită. Puteți adăuga literalmente orice la felii - nume, locuri, numere sau chiar provocări îndrăznețe pentru un joc de petrecere. Funcționează bine, deoarece roata rotativă și clicul satisfăcător oferă tuturor celor implicați o mică explozie de entuziasm. Este nevoie de o corvoadă plictisitoare precum „a alege pe cineva care să facă vasele” și îl transformă într-un joc rapid și distractiv.",
+      "sec2Title": "De ce ne place să lăsăm lucrurile la întâmplare",
+      "sec2Text": "Există un motiv pentru care aruncăm monede și tragem paie. Creierului uman îi place de fapt să lase lucrurile la voia întâmplării pentru că ne ia căldura. Dacă alegi pe cineva la întâmplare dintr-o pălărie, nimeni nu poate argumenta că ai jucat favorite. Aceeași logică este valabilă pentru o roată digitală. Este complet imparțial, ceea ce elimină instantaneu argumentele „asta nu este corect”. Când o roată care se învârte încetinește și în cele din urmă face clic pe câștigător, de fapt declanșează o mică cantitate de dopamină în creierul nostru. Acest suspans – chiar dacă alegeți doar un film pe care să îl vizionați pe Netflix – este exact motivul pentru care roțile randomizate sunt atât de captivante. Transformând o decizie simplă într-un joc vizual, îi convingeți pe oameni să acorde atenție și să accepte rezultatul cu un zâmbet.",
+      "sec3Title": "O schimbare de joc pentru profesori și săli de clasă",
+      "sec3TextStart": "Dacă ai stat vreodată în fața unei săli de clasă, știi cât de greu este să-i faci pe toți să participe în mod egal. Aceiași trei copii își ridică întotdeauna mâinile, în timp ce restul încearcă să se amestece în scaune. De aceea profesorilor le place să folosească un",
+      "sec3LinkText": "Roata Numelor",
+      "sec3TextMiddle": "sau un filator personalizat. Când puneți lista clasei pe o roată și o proiectați pe tablă, fiecare elev știe că are șanse egale de a fi chemat. Acest lucru menține camera în alertă fără a avea sentimentul că cineva este vizat în mod nedrept. Îl poți folosi și pentru mai mult decât pentru a alege un student pentru a răspunde la o întrebare. Puteți încărca o roată cu probleme de matematică, cuvinte de vocabular sau subiecte de discuție. Pentru a face lucrurile și mai ușoare, cei dedicati",
+      "sec3LinkText2": "Roata Numelor",
+      "sec3TextEnd": "vă permite să eliminați un nume după ce a fost ales, ceea ce înseamnă că fiecare elev primește un rând înainte ca cineva să fie chemat de două ori.",
+      "sec4Title": "Nu vă mai certați despre ce să mâncați",
+      "sec4TextStart": "Am fost cu toții acolo: „Ce vrei să mănânci?” „Nu știu, ce vrei?” Este conversația care nu se termină niciodată. Cu cât avem mai multe opțiuni la pachet, cu atât este mai greu să facem o alegere. Dacă te-ai săturat de dezbateri,",
+      "sec4LinkText": "Roata Alimentelor",
+      "sec4TextMiddle": "este exact ceea ce ai nevoie. Doar conectați patru sau cinci locuri de care ați fi mulțumit, faceți rotire și dedicați-vă la orice aterizează. Nu mai merge înainte și înapoi timp de 45 de minute. Nu numai că economisește timp, dar te obligă și să renunți la obiceiurile tale obișnuite de a comanda. Introduceți acel loc thailandez pe care nu l-ați încercat încă ca wildcard și lăsați roata să vă condimenteze rutina. Dacă aveți nevoie de o decizie rapidă din mers, treceți la",
+      "sec4LinkText2": "Roata Alimentelor",
+      "sec4TextEnd": "pagină. Este tematică prealabilă și arată grozav pe telefonul tău atunci când foamea vine.",
+      "sec5Title": "Răspunsuri rapide pentru întrebări simple",
+      "sec5TextStart": "O roată personalizată uriașă este grozavă pentru liste lungi, dar uneori aveți nevoie doar de un răspuns direct da sau nu. Ar trebui să cumpăr acești pantofi? Ar trebui să renunț la sala azi? Pentru acele alegeri binare rapide, a",
+      "sec5LinkText": "Da/Nu Roata",
+      "sec5TextMiddle": "este aruncarea perfectă a monedelor digitale. Uneori, s-ar putea să știi deja ce vrei să faci, iar roata te ajută să-ți dai seama. Dacă roata aterizează pe „Nu” și te simți imediat dezamăgit, ei bine, atunci evident că ai vrut să o faci! De asemenea, puteți modifica șansele. Dacă vrei neapărat să mergi la sală, dar ai nevoie de o mică împingere, pune trei felii „Da” și o felie „Nu” pe roată. Pentru lucrurile care nu sunt în totalitate alb-negru, adăugarea unei felii „Poate” vă oferă o utilă. Ori de câte ori aveți nevoie de un răspuns instantaneu fără tam-tam,",
+      "sec5LinkText2": "Da/Nu Roata",
+      "sec5TextEnd": "este mereu gata.",
+      "sec6Title": "Personalizați-l exact așa cum doriți",
+      "sec6TextStart": "Ce face ca",
+      "sec6LinkText": "Random Wheel Spinner",
+      "sec6TextMiddle": "mai bun decât majoritatea aplicațiilor este faptul că puteți modifica totul despre el. Dacă desfășurați un giveaway serios de companie sau transmiteți în flux pe Twitch, aveți nevoie de mai mult decât un simplu spinner de bază. De exemplu, dacă doriți ca unele premii să fie mai rare decât altele, puteți doar să duplicați premiile mai mici de mai multe ori pe roată, astfel încât să fie mai probabil să fie lovite. Această funcție de „ponderare” vă oferă control total asupra cotelor. De asemenea, puteți să vă scufundați în culori și să potriviți vizual roata cu marca sau tema petrecerii dvs. Cu funcții care vă permit să urmăriți de câte ori a câștigat o opțiune, să ascundeți opțiunile instantaneu și să modificați modul în care arată roata, este un instrument complet profesional deghizat într-un joc distractiv. Încearcă",
+      "sec6LinkText2": "instrument principal de filare",
+      "sec6TextEnd": "și elimină stresul din următoarea ta mare decizie."
+    }
   }
 }

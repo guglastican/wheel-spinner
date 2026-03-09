@@ -39,28 +39,46 @@ function unflattenObj(flatObj) {
     return result;
 }
 
-// Check for HTML tags placeholders, we only translate the text inside and out.
-// But google-translate-api-x natively handles HTML well if we pass it, but sometimes it messes up brackets.
-// We'll pass strings directly.
-
 async function translateDictionary(targetLang) {
     console.log(`Translating to ${targetLang}...`);
     const flatEn = flattenObj(enData);
-    const flatTranslated = {};
 
-    const keys = Object.keys(flatEn);
-    const values = Object.values(flatEn);
+    // Read existing translation file if it exists
+    let existingFlat = {};
+    const targetFile = path.join(localesDir, `${targetLang}.json`);
+    if (fs.existsSync(targetFile)) {
+        existingFlat = flattenObj(JSON.parse(fs.readFileSync(targetFile, 'utf8')));
+    }
 
-    // Translate in chunks of 10 to avoid payload too large
-    const chunkSize = 10;
-    for (let i = 0; i < values.length; i += chunkSize) {
-        const chunkValues = values.slice(i, i + chunkSize);
-        const chunkKeys = keys.slice(i, i + chunkSize);
+    const flatTranslated = { ...existingFlat };
+
+    const missingKeys = [];
+    const missingValues = [];
+
+    // Find keys in flatEn that are NOT in existingFlat
+    for (const key of Object.keys(flatEn)) {
+        if (!existingFlat[key]) {
+            missingKeys.push(key);
+            missingValues.push(flatEn[key]);
+        }
+    }
+
+    if (missingKeys.length === 0) {
+        console.log(`No missing keys for ${targetLang}.`);
+        return;
+    }
+
+    console.log(`Found ${missingKeys.length} missing keys for ${targetLang}.`);
+
+    // Translate in chunks of 50 to avoid payload too large
+    const chunkSize = 50;
+    for (let i = 0; i < missingValues.length; i += chunkSize) {
+        const chunkValues = missingValues.slice(i, i + chunkSize);
+        const chunkKeys = missingKeys.slice(i, i + chunkSize);
 
         try {
             const resp = await translate(chunkValues, { to: targetLang });
 
-            // If single item, resp is an object, if multiple, it's an array
             const results = Array.isArray(resp) ? resp : [resp];
 
             for (let j = 0; j < results.length; j++) {
@@ -68,10 +86,10 @@ async function translateDictionary(targetLang) {
             }
 
             // small delay to prevent rate limit
-            await new Promise(r => setTimeout(r, 1000));
+            await new Promise(r => setTimeout(r, 2000));
         } catch (err) {
             console.error(`Failed on chunk ${i} for ${targetLang}`, err.message);
-            // Fallback: keep original english string
+            // Fallback: keep original english string for failed chunks
             for (let j = 0; j < chunkKeys.length; j++) {
                 flatTranslated[chunkKeys[j]] = chunkValues[j];
             }
@@ -80,19 +98,14 @@ async function translateDictionary(targetLang) {
 
     const translatedData = unflattenObj(flatTranslated);
     fs.writeFileSync(
-        path.join(localesDir, `${targetLang}.json`),
+        targetFile,
         JSON.stringify(translatedData, null, 2)
     );
-    console.log(`Finished ${targetLang}.json`);
+    console.log(`Finished handling ${targetLang}.json`);
 }
 
 async function run() {
     for (const lang of LANGUAGES) {
-        const targetFile = path.join(localesDir, `${lang}.json`);
-        if (fs.existsSync(targetFile)) {
-            console.log(`Skipping ${targetFile} - already exists.`);
-            continue;
-        }
         await translateDictionary(lang);
     }
     console.log('All translations completed!');

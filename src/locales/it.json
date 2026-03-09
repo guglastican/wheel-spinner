@@ -5,7 +5,8 @@
     "yesNoWheel": "Ruota Sì/No",
     "embed": "Incorpora",
     "foodWheel": "Ruota del cibo",
-    "configureEmbed": "Configura la ruota incorporabile"
+    "configureEmbed": "Configura la ruota incorporabile",
+    "spinTheWheel": "Gira la ruota"
   },
   "footer": {
     "randoWheel": "Ruota Rando",
@@ -47,7 +48,9 @@
     "wonTitle": "Ruota dei nomi",
     "wonDesc": "Un compagno perfetto per omaggi, partecipazione in classe o assegnazione di compiti.",
     "ynwTitle": "Ruota sì/no",
-    "ynwDesc": "Un semplice spinner sì o no per gestire istantaneamente scelte binarie rapide."
+    "ynwDesc": "Un semplice spinner sì o no per gestire istantaneamente scelte binarie rapide.",
+    "stwTitle": "Gira la ruota",
+    "stwDesc": "Un selettore casuale completamente personalizzabile per ogni situazione."
   },
   "home": {
     "mainTitle": "Girandola casuale",
@@ -79,7 +82,8 @@
     "otherToolsList": {
       "names": "<strong>Selettori di nomi/Selettori di studenti:</strong> comunemente utilizzato dagli educatori per selezionare casualmente le persone, a volte chiamato \"Ruota dei nomi\" o \"Selettore di nomi casuale\".",
       "yesno": "<strong>Ruote Sì/No:</strong> per semplici decisioni binarie.",
-      "food": "<strong>Ruota del cibo:</strong> non sai cosa mangiare? Gira la ruota del cibo per prendere decisioni rapide e casuali sui pasti."
+      "food": "<strong>Ruota del cibo:</strong> non sai cosa mangiare? Gira la ruota del cibo per prendere decisioni rapide e casuali sui pasti.",
+      "spin": "<strong>Gira la ruota:</strong> un selettore casuale completamente personalizzabile per ogni situazione."
     },
     "otherToolsOutro": "Ogni versione specializzata prende il concetto centrale della selezione casuale e lo adatta per soddisfare esigenze specifiche, rendendole utili per qualsiasi cosa, dall'organizzazione delle attività alla risoluzione dei dibattiti con un tocco divertente e imparziale."
   },
@@ -236,5 +240,68 @@
     "generateBtn": "Genera codice di incorporamento",
     "errConfigure": "Errore durante la generazione del codice. Per favore configura prima il volante.",
     "errEmpty": "Aggiungi almeno un elemento alla ruota prima di generare il codice di incorporamento."
+  },
+  "spinPage": {
+    "title": "Gira la ruota",
+    "heroTitle": "Gira la ruota: selettore casuale personalizzato",
+    "heroDesc": "Crea il tuo <strong>Gira la ruota</strong> personalizzato per prendere decisioni, giocare o scegliere un vincitore casuale. Inserisci le tue scelte, gira la ruota e inizia il divertimento!",
+    "howToTitle": "Come utilizzare la ruota personalizzata",
+    "steps": {
+      "1": "<strong>Inserisci i tuoi input</strong>: aggiungi nomi, numeri, parole o qualsiasi altra cosa su cui devi decidere.",
+      "2": "<strong>Personalizza colori</strong>: modifica i colori delle sezioni per adattarli al tuo tema.",
+      "3": "<strong>Gira la ruota</strong>: fai clic sul grande pulsante di rotazione al centro o sotto la ruota.",
+      "4": "<strong>Guarda il risultato</strong>: l'oggetto vincente verrà annunciato e monitorato nei contatori.",
+      "5": "<strong>Gestisci opzioni</strong>: rimuovi, duplica o nascondi temporaneamente le opzioni per il tuo prossimo giro."
+    },
+    "seoTitle": "Che cos'è un giro della ruota personalizzato?",
+    "seoDesc": "Un <strong>Gira la ruota personalizzato</strong> ti consente di trasformare qualsiasi elenco di opzioni in una roulette divertente e interattiva. Che tu stia organizzando una lotteria, dividendo i compiti o semplicemente cercando di decidere quale film guardare, una ruota casuale rende il processo imparziale ed emozionante.",
+    "seoList": {
+      "1": "<strong>Giochi di società</strong>: crea suggerimenti personalizzati di Obbligo o Verità o giochi di bevute.",
+      "2": "<strong>Attività in classe</strong>: scegli una materia, un premio o uno studente a caso.",
+      "3": "<strong>Decisioni quotidiane</strong>: decidi chi lava i piatti o porta fuori la spazzatura.",
+      "4": "<strong>Omaggi</strong>: scegli un vincitore da un elenco di concorrenti."
+    },
+    "whyTitle": "Perché utilizzare la nostra ruota personalizzata?",
+    "whyDesc": "Il nostro giraruota è progettato per essere l'opzione più flessibile e facile da usare disponibile:",
+    "features": {
+      "1Title": "Personalizzazione infinita",
+      "1Desc": "Aggiungi tutte le opzioni che desideri, modifica i pesi copiando le sezioni e personalizza i colori.",
+      "2Title": "Risultati immediati",
+      "2Desc": "Nessun accesso o download richiesti. Basta digitare e girare all'istante.",
+      "3Title": "Salva il tuo Stato",
+      "3Desc": "La configurazione del tuo volante rimane attiva finché mantieni aperta la scheda del browser.",
+      "4Title": "Giusto e casuale",
+      "4Desc": "Il nostro algoritmo garantisce ogni volta un risultato veramente casuale e imparziale."
+    },
+    "article": {
+      "sec1Title": "Perché gli strumenti personalizzati per girare la ruota sono così popolari",
+      "sec1Text": "Siamo onesti, prendere decisioni tutto il giorno può essere estenuante. Che tu stia cercando di decidere cosa mangiare per cena, scegliendo un vincitore per un giveaway sui tuoi social media o semplicemente decidendo chi paga il caffè, a volte è semplicemente più facile lasciare che sia il destino a decidere. Uno strumento personalizzato per girare la ruota è la scorciatoia perfetta per quei momenti. Invece di scorrere o discutere all'infinito con i tuoi amici, inserisci semplicemente le opzioni in una ruota e premi Gira. Meglio ancora, non sei bloccato con un elenco preimpostato. Puoi aggiungere letteralmente qualsiasi cosa alle sezioni: nomi, luoghi, numeri o persino sfide audaci per un gioco di società. Funziona bene perché la rotella che gira e il clic soddisfacente danno a tutti i soggetti coinvolti una piccola esplosione di eccitazione. Ci vuole un compito noioso come \"scegliere qualcuno che lava i piatti\" e lo trasforma in un gioco veloce e divertente.",
+      "sec2Title": "Perché amiamo lasciare le cose al caso",
+      "sec2Text": "C'è una ragione per cui lanciamo le monete e peschiamo le cannucce. Il cervello umano in realtà ama lasciare le cose al caso perché ci toglie il calore. Se scegli qualcuno a caso da un cappello, nessuno potrà sostenere che stavi giocando ai favoriti. La stessa logica si applica a una ruota girevole digitale. È completamente imparziale, il che elimina immediatamente le argomentazioni \"non è giusto\". Quando una ruota che gira rallenta e alla fine clicca sul vincitore, in realtà si innesca una piccola scarica di dopamina nel nostro cervello. Quella suspense, anche se stai solo scegliendo un film da guardare su Netflix, è esattamente il motivo per cui le ruote casuali sono così coinvolgenti. Trasformando una semplice decisione in un gioco visivo, induci le persone a prestare attenzione e ad accettare il risultato con un sorriso.",
+      "sec3Title": "Un punto di svolta per insegnanti e aule",
+      "sec3TextStart": "Se ti sei mai trovato davanti a una classe, sai quanto sia difficile far partecipare tutti allo stesso modo. Gli stessi tre ragazzi alzano sempre la mano, mentre gli altri cercano di mimetizzarsi nelle loro sedie. Ecco perché gli insegnanti adorano usare a",
+      "sec3LinkText": "Ruota dei nomi",
+      "sec3TextMiddle": "o uno spinner personalizzato. Quando metti l'elenco delle classi su una ruota e lo proietti sulla lavagna, ogni singolo studente sa di avere le stesse possibilità di essere chiamato. Ciò mantiene la stanza in allerta senza avere la sensazione che qualcuno venga ingiustamente preso di mira. Puoi usarlo anche per molto di più che semplicemente scegliere uno studente per rispondere a una domanda. Puoi caricare una ruota con problemi di matematica, vocaboli o argomenti di discussione. Per rendere le cose ancora più semplici, il dedicato",
+      "sec3LinkText2": "Ruota dei nomi",
+      "sec3TextEnd": "ti consente di rimuovere un nome dopo che è stato scelto, il che significa che ogni studente ha un turno prima che qualcuno venga chiamato due volte.",
+      "sec4Title": "Smettila di discutere su cosa mangiare",
+      "sec4TextStart": "Siamo stati tutti lì: \"Cosa vuoi mangiare?\" \"Non lo so, cosa vuoi?\" È la conversazione che non finisce mai. Più opzioni da asporto abbiamo, più difficile diventa semplicemente fare una scelta. Se sei stanco di discutere, il",
+      "sec4LinkText": "Ruota del cibo",
+      "sec4TextMiddle": "è esattamente ciò di cui hai bisogno. Basta collegare quattro o cinque posti di cui saresti soddisfatto, premere il giro e impegnarsi in qualunque cosa si fermi. Non dovrai più andare avanti e indietro per 45 minuti. Non solo ti fa risparmiare tempo, ma ti costringe anche a uscire dalle tue normali abitudini di ordinazione. Aggiungi quel posto tailandese che non hai ancora provato come jolly e lascia che la ruota ravvivi la tua routine. Se hai bisogno di una decisione rapida mentre sei in movimento, passa al",
+      "sec4LinkText2": "Ruota del cibo",
+      "sec4TextEnd": "pagina. È pre-tematico e sta benissimo sul tuo telefono quando la fame colpisce.",
+      "sec5Title": "Risposte rapide a domande semplici",
+      "sec5TextStart": "Un'enorme ruota personalizzata è ottima per elenchi lunghi, ma a volte hai solo bisogno di una risposta diretta sì o no. Dovrei comprare queste scarpe? Dovrei saltare la palestra oggi? Per quelle scelte binarie veloci, a",
+      "sec5LinkText": "Ruota Sì/No",
+      "sec5TextMiddle": "è il perfetto lancio della moneta digitale. A volte potresti già sapere cosa vuoi fare e la ruota ti aiuta a capirlo. Se la ruota si ferma su \"No\" e ti senti subito deluso, beh, allora ovviamente volevi farlo! Puoi anche modificare le probabilità. Se vuoi davvero andare in palestra ma hai bisogno di una piccola spinta, metti tre fette \"Sì\" e una fetta \"No\" sulla ruota. Per le cose che non sono totalmente in bianco e nero, aggiungere una sezione \"Forse\" ti dà una mano. Ogni volta che hai bisogno di una risposta immediata senza problemi, il",
+      "sec5LinkText2": "Ruota Sì/No",
+      "sec5TextEnd": "è sempre pronto.",
+      "sec6Title": "Personalizzalo esattamente come vuoi",
+      "sec6TextStart": "Ciò che rende il",
+      "sec6LinkText": "Girandola casuale",
+      "sec6TextMiddle": "meglio della maggior parte delle app è il fatto che puoi modificare tutto al riguardo. Se stai organizzando un serio giveaway aziendale o trasmettendo in streaming su Twitch, hai bisogno di qualcosa di più di un semplice spinner di base. Ad esempio, se desideri che alcuni premi siano più rari di altri, puoi semplicemente duplicare i premi più piccoli più volte sulla ruota in modo che abbiano maggiori probabilità di essere vinti. Questa funzione di \"ponderazione\" ti dà il controllo totale sulle quote. Puoi anche tuffarti nei colori e abbinare visivamente la ruota al tuo marchio o al tema della festa. Con funzionalità che ti consentono di tenere traccia di quante volte un'opzione ha vinto, nascondere istantaneamente le scelte e modificare l'aspetto della ruota, è uno strumento completamente professionale mascherato da gioco divertente. Prova il",
+      "sec6LinkText2": "strumento di rotazione principale",
+      "sec6TextEnd": "e togli lo stress dalla tua prossima grande decisione."
+    }
   }
 }

@@ -5,7 +5,8 @@
     "yesNoWheel": "Có/Không",
     "embed": "Nhúng",
     "foodWheel": "Bánh xe thức ăn",
-    "configureEmbed": "Định cấu hình bánh xe có thể nhúng"
+    "configureEmbed": "Định cấu hình bánh xe có thể nhúng",
+    "spinTheWheel": "Quay bánh xe"
   },
   "footer": {
     "randoWheel": "Bánh xe Rando",
@@ -47,7 +48,9 @@
     "wonTitle": "Bánh xe tên",
     "wonDesc": "Một người bạn đồng hành hoàn hảo để tặng quà, tham gia lớp học hoặc giao nhiệm vụ.",
     "ynwTitle": "Có / Không",
-    "ynwDesc": "Một công cụ quay vòng có hoặc không đơn giản để xử lý các lựa chọn nhị phân nhanh chóng ngay lập tức."
+    "ynwDesc": "Một công cụ quay vòng có hoặc không đơn giản để xử lý các lựa chọn nhị phân nhanh chóng ngay lập tức.",
+    "stwTitle": "Quay bánh xe",
+    "stwDesc": "Một công cụ chọn ngẫu nhiên hoàn toàn có thể tùy chỉnh cho mọi tình huống."
   },
   "home": {
     "mainTitle": "Máy quay bánh xe ngẫu nhiên",
@@ -79,7 +82,8 @@
     "otherToolsList": {
       "names": "<strong>Bộ chọn tên / Bộ chọn học sinh:</strong> Thường được các nhà giáo dục sử dụng để chọn ngẫu nhiên các cá nhân, đôi khi được gọi là \"Bánh xe tên\" hoặc \"Bộ chọn tên ngẫu nhiên\".",
       "yesno": "<strong>Bánh xe Có/Không:</strong> Dành cho các quyết định nhị phân đơn giản.",
-      "food": "<strong>Bánh xe ăn uống:</strong> Bạn không biết nên ăn gì? Xoay bánh xe thức ăn để đưa ra quyết định bữa ăn ngẫu nhiên nhanh chóng."
+      "food": "<strong>Bánh xe ăn uống:</strong> Bạn không biết nên ăn gì? Xoay bánh xe thức ăn để đưa ra quyết định bữa ăn ngẫu nhiên nhanh chóng.",
+      "spin": "<strong>Quay bánh xe:</strong> Công cụ chọn ngẫu nhiên có thể tùy chỉnh hoàn toàn cho mọi tình huống."
     },
     "otherToolsOutro": "Mỗi phiên bản chuyên biệt lấy khái niệm cốt lõi về lựa chọn ngẫu nhiên và điều chỉnh nó để đáp ứng các nhu cầu riêng biệt, giúp chúng thuận tiện cho mọi việc, từ tổ chức hoạt động đến giải quyết các cuộc tranh luận một cách vui vẻ, khách quan."
   },
@@ -236,5 +240,68 @@
     "generateBtn": "Tạo mã nhúng",
     "errConfigure": "Lỗi tạo mã. Vui lòng cấu hình bánh xe trước.",
     "errEmpty": "Vui lòng thêm ít nhất một mục vào bánh xe trước khi tạo mã nhúng."
+  },
+  "spinPage": {
+    "title": "Quay bánh xe",
+    "heroTitle": "Quay bánh xe — Bộ chọn ngẫu nhiên tùy chỉnh",
+    "heroDesc": "Tạo <strong>Quay bánh xe</strong> tùy chỉnh của riêng bạn để đưa ra quyết định, chơi trò chơi hoặc chọn người chiến thắng ngẫu nhiên. Nhập các lựa chọn của bạn, quay bánh xe và bắt đầu cuộc vui!",
+    "howToTitle": "Cách sử dụng bánh xe tùy chỉnh",
+    "steps": {
+      "1": "<strong>Nhập dữ liệu đầu vào của bạn</strong> — Thêm tên, số, từ hoặc bất kỳ thứ gì khác mà bạn cần quyết định.",
+      "2": "<strong>Tùy chỉnh màu</strong> — Thay đổi màu của lát cắt để phù hợp với chủ đề của bạn.",
+      "3": "<strong>Quay bánh xe</strong> — Nhấp vào nút quay lớn ở giữa hoặc bên dưới bánh xe.",
+      "4": "<strong>Xem kết quả</strong> — Vật phẩm chiến thắng sẽ được công bố và theo dõi tại quầy.",
+      "5": "<strong>Quản lý tùy chọn</strong> — Xóa, sao chép hoặc tạm thời ẩn các tùy chọn cho lần quay tiếp theo của bạn."
+    },
+    "seoTitle": "Quay bánh xe tùy chỉnh là gì?",
+    "seoDesc": "<strong>Quay bánh xe tùy chỉnh</strong> cho phép bạn biến bất kỳ danh sách tùy chọn nào thành trò chơi roulette tương tác, thú vị. Cho dù bạn đang tổ chức xổ số, phân chia công việc hay chỉ đang cố gắng quyết định nên xem bộ phim nào, một bánh xe ngẫu nhiên sẽ khiến quá trình này trở nên khách quan và thú vị.",
+    "seoList": {
+      "1": "<strong>Trò chơi tiệc tùng</strong> — Tạo lời nhắc Sự thật hoặc Thử thách tùy chỉnh hoặc trò chơi uống rượu.",
+      "2": "<strong>Hoạt động trong lớp</strong> — Chọn ngẫu nhiên một môn học, phần thưởng hoặc một học sinh.",
+      "3": "<strong>Quyết định hàng ngày</strong> — Quyết định ai rửa bát hoặc đổ rác.",
+      "4": "<strong>Quà tặng</strong> — Chọn một cách công bằng người chiến thắng từ danh sách người dự thi."
+    },
+    "whyTitle": "Tại sao nên sử dụng bánh xe tùy chỉnh của chúng tôi?",
+    "whyDesc": "Máy quay bánh xe của chúng tôi được thiết kế để trở thành tùy chọn linh hoạt và dễ sử dụng nhất hiện có:",
+    "features": {
+      "1Title": "Tùy chỉnh vô tận",
+      "1Desc": "Thêm bao nhiêu tùy chọn tùy thích, thay đổi trọng lượng bằng cách sao chép các lát và tùy chỉnh màu sắc.",
+      "2Title": "Kết quả tức thì",
+      "2Desc": "Không cần đăng nhập hoặc tải xuống. Chỉ cần gõ và quay ngay lập tức.",
+      "3Title": "Lưu tiểu bang của bạn",
+      "3Desc": "Cấu hình bánh xe của bạn vẫn hoạt động miễn là bạn luôn mở tab trình duyệt.",
+      "4Title": "Công bằng và ngẫu nhiên",
+      "4Desc": "Thuật toán của chúng tôi đảm bảo kết quả thực sự ngẫu nhiên và không thiên vị mỗi lần."
+    },
+    "article": {
+      "sec1Title": "Tại sao các công cụ quay bánh xe tùy chỉnh lại phổ biến đến vậy",
+      "sec1Text": "Thành thật mà nói, việc đưa ra quyết định cả ngày có thể khiến bạn mệt mỏi. Cho dù bạn đang cố gắng tìm xem nên ăn gì cho bữa tối, chọn người chiến thắng cho một món quà trên mạng xã hội của mình hay chỉ quyết định xem ai sẽ trả tiền cà phê, đôi khi việc để số phận quyết định sẽ dễ dàng hơn. Công cụ bánh xe quay tùy chỉnh là lối tắt hoàn hảo cho những khoảnh khắc đó. Thay vì cuộn hoặc tranh luận không ngừng với bạn bè, bạn chỉ cần thả các lựa chọn của mình vào một bánh xe và nhấn nút xoay. Điều tuyệt vời nhất là bạn không bị mắc kẹt với một danh sách được thiết lập sẵn. Bạn có thể thêm bất cứ thứ gì theo đúng nghĩa đen vào các lát cắt—tên, địa điểm, con số hoặc thậm chí là những thử thách táo bạo cho một trò chơi nhóm. Nó hoạt động tốt vì bánh xe quay và tiếng click thỏa mãn mang lại cho mọi người tham gia một cảm giác phấn khích nho nhỏ. Nó biến một công việc nhàm chán như \"chọn ai đó rửa bát\" và biến nó thành một trò chơi nhanh chóng, vui nhộn.",
+      "sec2Title": "Tại sao chúng ta thích phó thác mọi việc cho cơ hội",
+      "sec2Text": "Có lý do để chúng ta tung đồng xu và rút ống hút. Bộ não con người thực sự thích để mọi thứ theo cơ hội vì nó giúp chúng ta giảm nhiệt. Nếu bạn chọn ngẫu nhiên một ai đó từ chiếc mũ, không ai có thể tranh cãi rằng bạn đang chơi trò yêu thích. Logic tương tự cũng áp dụng cho bánh xe quay kỹ thuật số. Nó hoàn toàn vô tư, ngay lập tức loại bỏ những lập luận \"điều đó không công bằng\". Khi một bánh xe quay chậm lại và cuối cùng chạm vào người chiến thắng, nó thực sự kích hoạt một chút dopamine trong não chúng ta. Sự hồi hộp đó—ngay cả khi bạn chỉ chọn một bộ phim để xem trên Netflix—chính xác là lý do tại sao bánh xe ngẫu nhiên lại hấp dẫn đến vậy. Bằng cách biến một quyết định đơn giản thành một trò chơi trực quan, bạn sẽ khiến mọi người chú ý và mỉm cười chấp nhận kết quả.",
+      "sec3Title": "Công cụ thay đổi cuộc chơi cho giáo viên và lớp học",
+      "sec3TextStart": "Nếu bạn đã từng đứng trước lớp học, bạn sẽ biết thật khó để có được sự tham gia bình đẳng của mọi người. Ba đứa trẻ giống nhau luôn giơ tay, trong khi những đứa trẻ còn lại cố gắng ngồi vào ghế của mình. Đó là lý do vì sao giáo viên thích sử dụng",
+      "sec3LinkText": "Bánh xe tên",
+      "sec3TextMiddle": "hoặc một spinner tùy chỉnh. Khi bạn đặt danh sách lớp lên một bánh xe và chiếu nó lên bảng, mọi học sinh đều biết rằng họ có cơ hội được gọi vào lớp như nhau. Điều này giúp căn phòng luôn cảnh giác mà không có cảm giác như có ai đó đang bị nhắm tới một cách không công bằng. Bạn có thể sử dụng nó cho nhiều mục đích hơn là chỉ chọn một học sinh trả lời một câu hỏi. Bạn có thể tải một bánh xe với các bài toán, từ vựng hoặc chủ đề thảo luận. Để làm cho mọi việc trở nên dễ dàng hơn, người tận tâm",
+      "sec3LinkText2": "Bánh xe tên",
+      "sec3TextEnd": "cho phép bạn xóa tên sau khi tên đó được chọn, nghĩa là mỗi học sinh sẽ có lượt trước khi có ai được gọi hai lần.",
+      "sec4Title": "Ngừng tranh cãi về việc nên ăn gì",
+      "sec4TextStart": "Tất cả chúng ta đều đã từng ở đó: \"Bạn muốn ăn gì?\" “Tôi không biết, cậu muốn gì?” Đó là cuộc trò chuyện không bao giờ kết thúc. Chúng ta càng có nhiều lựa chọn mang đi thì việc đưa ra lựa chọn càng khó khăn hơn. Nếu bạn cảm thấy mệt mỏi với việc tranh luận,",
+      "sec4LinkText": "Bánh xe thức ăn",
+      "sec4TextMiddle": "chính xác là những gì bạn cần Chỉ cần cắm vào bốn hoặc năm vị trí mà bạn hài lòng, nhấn nút quay và cam kết với bất kỳ vị trí nào nó chạm tới. Không còn phải quay đi quay lại trong 45 phút. Nó không chỉ tiết kiệm thời gian mà còn buộc bạn phải thoát khỏi thói quen đặt hàng thông thường. Thêm một địa điểm Thái Lan mà bạn chưa thử làm ký tự đại diện và để bánh xe thêm gia vị cho thói quen của bạn. Nếu bạn cần một quyết định nhanh chóng khi đang di chuyển, hãy chuyển sang phần",
+      "sec4LinkText2": "Bánh xe thức ăn",
+      "sec4TextEnd": "trang. Nó có chủ đề sẵn và trông tuyệt vời trên điện thoại của bạn khi cơn đói xảy ra.",
+      "sec5Title": "Câu trả lời nhanh cho các câu hỏi đơn giản",
+      "sec5TextStart": "Một bánh xe tùy chỉnh khổng lồ rất phù hợp cho những danh sách dài nhưng đôi khi bạn chỉ cần một câu trả lời thẳng thắn có hoặc không. Có nên mua đôi giày này không? Hôm nay tôi có nên bỏ tập gym không? Đối với những lựa chọn nhị phân nhanh chóng đó,",
+      "sec5LinkText": "Có/Không",
+      "sec5TextMiddle": "là trò tung đồng xu kỹ thuật số hoàn hảo. Đôi khi, bạn thực sự có thể đã biết mình muốn làm gì và bánh xe sẽ giúp bạn tìm ra điều đó. Nếu bánh xe dừng ở số \"Không\" và bạn ngay lập tức cảm thấy thất vọng, thì rõ ràng là bạn muốn làm điều đó! Bạn cũng có thể điều chỉnh tỷ lệ cược. Nếu bạn thực sự muốn đến phòng tập thể dục nhưng cần một cú đẩy nhẹ, hãy đặt ba lát \"Có\" và một lát \"Không\" lên bánh xe. Đối với những thứ không hoàn toàn là đen trắng, việc thêm phần \"Có thể\" sẽ giúp ích cho bạn. Bất cứ khi nào bạn cần một câu trả lời ngay lập tức mà không phiền phức,",
+      "sec5LinkText2": "Có/Không",
+      "sec5TextEnd": "luôn sẵn sàng.",
+      "sec6Title": "Tùy chỉnh nó chính xác như bạn muốn",
+      "sec6TextStart": "Điều gì làm cho",
+      "sec6LinkText": "Máy quay bánh xe ngẫu nhiên",
+      "sec6TextMiddle": "tốt hơn hầu hết các ứng dụng là bạn có thể điều chỉnh mọi thứ về nó. Nếu bạn đang tổ chức chương trình tặng quà nghiêm túc cho công ty hoặc phát trực tuyến trên Twitch, bạn cần nhiều thứ hơn là chỉ một công cụ quay vòng cơ bản. Ví dụ: nếu bạn muốn một số giải thưởng hiếm hơn những giải thưởng khác, bạn chỉ cần nhân đôi các giải thưởng nhỏ hơn nhiều lần trên bánh xe để chúng có nhiều khả năng trúng hơn. Tính năng \"trọng số\" này cho phép bạn kiểm soát hoàn toàn tỷ lệ cược. Bạn cũng có thể đi sâu vào màu sắc và kết hợp trực quan bánh xe với thương hiệu hoặc chủ đề bữa tiệc của bạn. Với các tính năng cho phép bạn theo dõi số lần một tùy chọn đã thắng, ẩn các lựa chọn ngay lập tức và điều chỉnh hình thức của bánh xe, đây là một công cụ hoàn toàn chuyên nghiệp được ngụy trang dưới dạng một trò chơi vui nhộn. Hãy thử",
+      "sec6LinkText2": "công cụ quay chính",
+      "sec6TextEnd": "và giảm bớt căng thẳng cho quyết định quan trọng tiếp theo của bạn."
+    }
   }
 }

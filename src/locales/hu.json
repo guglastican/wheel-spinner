@@ -5,7 +5,8 @@
     "yesNoWheel": "Igen/Nem Kerék",
     "embed": "Beágyaz",
     "foodWheel": "Élelmiszer kerék",
-    "configureEmbed": "Beágyazható kerék konfigurálása"
+    "configureEmbed": "Beágyazható kerék konfigurálása",
+    "spinTheWheel": "Forgasd meg a kereket"
   },
   "footer": {
     "randoWheel": "Rando Wheel",
@@ -47,7 +48,9 @@
     "wonTitle": "A nevek kereke",
     "wonDesc": "Tökéletes társ ajándékozáshoz, osztálytermi részvételhez vagy feladatok kiosztásához.",
     "ynwTitle": "Igen / Nem Kerék",
-    "ynwDesc": "Egy egyszerű igen vagy nem pörgető a gyors bináris választások azonnali kezelésére."
+    "ynwDesc": "Egy egyszerű igen vagy nem pörgető a gyors bináris választások azonnali kezelésére.",
+    "stwTitle": "Forgasd meg a kereket",
+    "stwDesc": "Teljesen testreszabható véletlenszerű válogató bármilyen helyzethez."
   },
   "home": {
     "mainTitle": "Random Wheel Spinner",
@@ -79,7 +82,8 @@
     "otherToolsList": {
       "names": "<strong>Névválasztók / Diákválasztók:</strong> Az oktatók gyakran használják az egyének véletlenszerű kiválasztására, néha „nevek kerekének” vagy „véletlen névválasztónak” nevezik.",
       "yesno": "<strong>Igen/Nem kerekek:</strong> Egyszerű bináris döntésekhez.",
-      "food": "<strong>Food Wheel:</strong> Nem biztos benne, mitévő legyél? Forgassa meg az ételkereket a gyors véletlenszerű étkezési döntésekért."
+      "food": "<strong>Food Wheel:</strong> Nem biztos benne, mitévő legyél? Forgassa meg az ételkereket a gyors véletlenszerű étkezési döntésekért.",
+      "spin": "<strong>Forgasd meg a kereket:</strong> Teljesen testreszabható véletlenszerű válogató bármilyen helyzethez."
     },
     "otherToolsOutro": "Mindegyik speciális verzió a véletlenszerű kiválasztás alapkoncepcióját veszi alapul, és a különböző igényekhez igazítja, így a tevékenységek szervezésétől a viták szórakoztató, pártatlan fordulattal történő rendezéséig mindenben használható."
   },
@@ -236,5 +240,68 @@
     "generateBtn": "Beágyazási kód generálása",
     "errConfigure": "Hiba a kód generálásakor. Kérjük, először konfigurálja a kereket.",
     "errEmpty": "A beágyazási kód generálása előtt adjon hozzá legalább egy elemet a kerékhez."
+  },
+  "spinPage": {
+    "title": "Forgasd meg a kereket",
+    "heroTitle": "Forgasd meg a kereket – Egyéni véletlenszerű választó",
+    "heroDesc": "Hozz létre saját egyéni <strong>Forgasd meg a kereket</strong>, hogy döntéseket hozhass, játszhass, vagy válassz véletlenszerű nyertest. Adja meg döntéseit, forgassa meg a kereket, és kezdődhet a móka!",
+    "howToTitle": "Az egyéni kerék használata",
+    "steps": {
+      "1": "<strong>Írja be a bevitelt</strong> – Adjon hozzá neveket, számokat, szavakat vagy bármi mást, amiről döntenie kell.",
+      "2": "<strong>Színek testreszabása</strong> – Módosítsa a szeletek színeit a témának megfelelően.",
+      "3": "<strong>Forgasd meg a kereket</strong> – Kattintson a kerék közepén vagy alatt található nagy pörgető gombra.",
+      "4": "<strong>Tekintse meg az eredményt</strong> – A nyertes tételt kihirdetik és nyomon követik a számlálókban.",
+      "5": "<strong>Beállítások kezelése</strong> – Távolítsa el, másolja le vagy ideiglenesen elrejtse a következő pörgetés opcióit."
+    },
+    "seoTitle": "Mi az az egyedi pörgetése?",
+    "seoDesc": "A <strong>Custom Spin the Wheel</strong> lehetővé teszi, hogy bármilyen opciólistát szórakoztató, interaktív ruletté alakítson. Legyen szó tombolasorsolásról, a házimunkák felosztásáról, vagy csak azt próbálja eldönteni, hogy melyik filmet nézze meg, egy véletlenszerű kerék elfogulatlanná és izgalmassá teszi a folyamatot.",
+    "seoList": {
+      "1": "<strong>Partijátékok</strong> – Hozzon létre egyéni Truth or Dare üzeneteket vagy ivójátékokat.",
+      "2": "<strong>Osztálytermi tevékenységek</strong> – Véletlenszerűen válasszon tantárgyat, jutalmat vagy tanulót.",
+      "3": "<strong>Napi döntések</strong> – Döntse el, hogy ki mosogat vagy viszi ki a szemetet.",
+      "4": "<strong>Giveaway</strong> – tisztességesen válassza ki a nyertest a versenyzők listájáról."
+    },
+    "whyTitle": "Miért használja egyedi kerekünket?",
+    "whyDesc": "Kerekes fonógépünket úgy terveztük, hogy az elérhető legrugalmasabb és legkönnyebben használható opció legyen:",
+    "features": {
+      "1Title": "Végtelen testreszabás",
+      "1Desc": "Adjon hozzá annyi opciót, amennyit csak akar, módosítsa a súlyokat a szeletek másolásával, és testreszabhatja a színeket.",
+      "2Title": "Azonnali eredmények",
+      "2Desc": "Nincs szükség bejelentkezésre vagy letöltésre. Csak gépeljen és forgasson azonnal.",
+      "3Title": "Mentsd meg államodat",
+      "3Desc": "A kerékkonfiguráció mindaddig aktív marad, amíg nyitva tartja a böngésző lapot.",
+      "4Title": "Tisztességes és véletlenszerű",
+      "4Desc": "Algoritmusunk valóban véletlenszerű és elfogulatlan eredményt biztosít minden egyes alkalommal."
+    },
+    "article": {
+      "sec1Title": "Miért olyan népszerűek az egyedi Spin the Wheel szerszámok?",
+      "sec1Text": "Legyünk őszinték, az egész napos döntések meghozatala kimerítő lehet. Akár azt próbálod kitalálni, hogy mit vacsorázz, a közösségi médián egy nyereményjáték nyertesét választod, akár csak arról döntesz, hogy ki fizesse a kávét, néha könnyebb hagyni, hogy a sors döntsön. Az egyéni forgó kerék eszköz a tökéletes parancsikon ezekre a pillanatokra. Ahelyett, hogy végtelenül görgetne vagy vitatkozna a barátaival, egyszerűen csak dobja a lehetőségeket egy kerékbe, és nyomja meg a pörgetést. A legjobb az egészben, hogy nem ragadsz le egy előre beállított listánál. Szó szerint bármit hozzáadhat a szeletekhez – neveket, helyeket, számokat vagy akár kihívásokat egy társasjátékhoz. Jól működik, mert a forgó kerék és a kielégítő kattanás minden érintettet egy kis izgalommal tölt el. Egy unalmas házimunka kell hozzá, mint például „mosogatni valakit”, és gyors, szórakoztató játékká változtatja.",
+      "sec2Title": "Miért szeretjük a véletlenre bízni a dolgokat",
+      "sec2Text": "Megvan az oka annak, hogy feldobunk érméket és szívószálakat húzunk. Az emberi agy valójában szereti a véletlenre bízni a dolgokat, mert leveszi rólunk a hőt. Ha véletlenszerűen választasz ki valakit a kalapból, senki sem vitathatja, hogy kedvencként játszottál. The same logic applies to a digital spinner wheel. Teljesen pártatlan, ami azonnal kivágja az \"ez nem fair\" érveket. Amikor egy forgó kerék lelassul, és végül rákattan a győztesre, valójában egy kis dopaminütést vált ki az agyunkban. Ez a feszültség – még akkor is, ha éppen filmet választ a Netflixen való megtekintéshez – pontosan ez az oka annak, hogy a véletlenszerűen kiválasztott kerekek annyira vonzóak. Ha egy egyszerű döntést vizuális játékká alakít, arra készteti az embereket, hogy figyeljenek, és mosolyogva fogadják el az eredményt.",
+      "sec3Title": "Játékváltó tanárok és osztálytermek számára",
+      "sec3TextStart": "Ha valaha is egy osztályterem előtt állt, tudja, milyen nehéz mindenkit egyenlő arányban bevonni. Ugyanaz a három gyerek mindig felemeli a kezét, míg a többiek megpróbálnak beleolvadni a székbe. Ezért szeretik a tanárok használni a",
+      "sec3LinkText": "A nevek kereke",
+      "sec3TextMiddle": "vagy egyedi fonó. Amikor felteszi az osztálylistát egy kerékre, és kivetíti a táblára, minden diák tudja, hogy egyenlő esélye van a behívásra. Így éber marad a szoba anélkül, hogy azt érezné, hogy valakit igazságtalanul céloznak meg. Használhatja sokkal többre is, mint egy tanuló kiválasztására, hogy válaszoljon egy kérdésre. Feltölthet egy kereket matematikai feladatokkal, szókincsszavakkal vagy vitatémákkal. Hogy még könnyebb legyen a dolog, az elkötelezett",
+      "sec3LinkText2": "A nevek kereke",
+      "sec3TextEnd": "lehetővé teszi a név eltávolítását a kiválasztás után, ami azt jelenti, hogy minden diáknak sorra kerül, mielőtt bárkit kétszer hívnának.",
+      "sec4Title": "Hagyd abba a vitát, hogy mit egyél",
+      "sec4TextStart": "Mindannyian ott voltunk: \"Mit akarsz enni?\" – Nem tudom, mit akarsz? Ez a beszélgetés, ami soha nem ér véget. Minél több elvitelre van lehetőségünk, annál nehezebb lesz a választás. Ha belefáradt a vitába, a",
+      "sec4LinkText": "Élelmiszer kerék",
+      "sec4TextMiddle": "pontosan az, amire szüksége van. Csak csatlakoztasson négy vagy öt helyet, ahol elégedett lehet, nyomja meg a pörgetést, és kötelezze el magát, bármire is kerüljön. Nincs több oda-vissza járás 45 percig. Not only does it save time, but it also forces you to break out of your regular ordering habits. Dobd be helyettesítő karakterként azt az egyetlen thai helyet, amelyet még nem próbáltál ki, és hagyd, hogy a kerék feldobja a rutinodat. Ha gyors döntésre van szüksége útközben, ugorjon át a",
+      "sec4LinkText2": "Élelmiszer kerék",
+      "sec4TextEnd": "oldalon. Előre témázott, és jól mutat a telefonodon, amikor éhség támad.",
+      "sec5Title": "Gyors válaszok egyszerű kérdésekre",
+      "sec5TextStart": "A hatalmas egyéni kerék nagyszerű a hosszú listákhoz, de néha csak egy igen vagy nem válaszra van szüksége. Vásároljam meg ezeket a cipőket? Kihagyjam ma az edzőtermet? A gyors bináris választásokhoz a",
+      "sec5LinkText": "Igen/Nem Kerék",
+      "sec5TextMiddle": "a tökéletes digitális érmefeldobás. Előfordulhat, hogy valójában már tudod, mit akarsz csinálni, és a kerék segít kitalálni. Ha a kerék a „Nem”-re érkezik, és azonnal csalódottnak érzed magad, akkor nyilvánvalóan meg akartad csinálni! You can also tweak the odds. Ha valóban edzőterembe szeretne menni, de egy apró lökésre van szüksége, tegyen három „Igen” és egy „Nem” szeletet a kerékre. A nem teljesen fekete-fehér dolgokhoz a „Talán” szelet hozzáadásával praktikus megoldást kínál. Amikor azonnali válaszra van szüksége, felhajtás nélkül, a",
+      "sec5LinkText2": "Igen/Nem Kerék",
+      "sec5TextEnd": "mindig készen áll.",
+      "sec6Title": "Szabja személyre pontosan úgy, ahogy szeretné",
+      "sec6TextStart": "Mi teszi a",
+      "sec6LinkText": "Random Wheel Spinner",
+      "sec6TextMiddle": "A legtöbb alkalmazásnál jobb az a tény, hogy mindent módosíthat rajta. Ha komoly céges ajándékot szervezel, vagy streamelsz a Twitchen, akkor többre van szükséged, mint egy egyszerű pörgetőre. Például, ha azt szeretné, hogy egyes nyeremények ritkábbak legyenek, mint mások, egyszerűen megismételheti a kisebb nyereményeket többször is a keréken, így nagyobb valószínűséggel ütik el őket. Ez a „súlyozási” funkció teljes ellenőrzést biztosít az esélyek felett. Elmerülhet a színekben, és vizuálisan illesztheti a kereket márkájához vagy partitémájához. A funkciókkal, amelyek segítségével nyomon követheti, hányszor nyert egy opció, azonnal elrejtheti a választási lehetőségeket, és módosíthatja a kerék megjelenését, ez egy teljesen professzionális eszköz, amelyet szórakoztató játéknak álcáznak. Próbáld ki a",
+      "sec6LinkText2": "fő fonószerszám",
+      "sec6TextEnd": "és vidd le a stresszt a következő nagy döntésedből."
+    }
   }
 }

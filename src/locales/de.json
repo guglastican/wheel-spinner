@@ -5,7 +5,8 @@
     "yesNoWheel": "Ja/Nein-Rad",
     "embed": "Einbetten",
     "foodWheel": "Lebensmittelrad",
-    "configureEmbed": "Konfigurieren Sie das einbettbare Rad"
+    "configureEmbed": "Konfigurieren Sie das einbettbare Rad",
+    "spinTheWheel": "Drehen Sie das Rad"
   },
   "footer": {
     "randoWheel": "Rando Wheel",
@@ -47,7 +48,9 @@
     "wonTitle": "Rad der Namen",
     "wonDesc": "Ein perfekter Begleiter für Giveaways, die Teilnahme am Unterricht oder die Zuweisung von Aufgaben.",
     "ynwTitle": "Ja/Nein Rad",
-    "ynwDesc": "Ein einfacher Ja- oder Nein-Spinner, um schnelle binäre Entscheidungen sofort zu treffen."
+    "ynwDesc": "Ein einfacher Ja- oder Nein-Spinner, um schnelle binäre Entscheidungen sofort zu treffen.",
+    "stwTitle": "Drehen Sie das Rad",
+    "stwDesc": "Eine vollständig anpassbare Zufallsauswahl für jede Situation."
   },
   "home": {
     "mainTitle": "Zufälliger Radspinner",
@@ -79,7 +82,8 @@
     "otherToolsList": {
       "names": "<strong>Namensauswahl/Studentenauswahl:</strong> Wird häufig von Pädagogen verwendet, um Personen nach dem Zufallsprinzip auszuwählen, manchmal auch „Rad der Namen“ oder „Zufällige Namensauswahl“ genannt.",
       "yesno": "<strong>Ja/Nein-Räder:</strong> Für einfache binäre Entscheidungen.",
-      "food": "<strong>Food Wheel:</strong> Sie sind sich nicht sicher, was Sie essen sollen? Drehen Sie das Lebensmittelrad, um schnell zufällige Essensentscheidungen zu treffen."
+      "food": "<strong>Food Wheel:</strong> Sie sind sich nicht sicher, was Sie essen sollen? Drehen Sie das Lebensmittelrad, um schnell zufällige Essensentscheidungen zu treffen.",
+      "spin": "<strong>Spin the Wheel:</strong> Eine vollständig anpassbare Zufallsauswahl für jede Situation."
     },
     "otherToolsOutro": "Jede Spezialversion übernimmt das Kernkonzept der Zufallsauswahl und passt es an unterschiedliche Bedürfnisse an, sodass sie für alles praktisch sind, von der Organisation von Aktivitäten bis zur Beilegung von Debatten mit einer unterhaltsamen, unparteiischen Wendung."
   },
@@ -236,5 +240,68 @@
     "generateBtn": "Einbettungscode generieren",
     "errConfigure": "Fehler beim Generieren des Codes. Bitte konfigurieren Sie zuerst das Rad.",
     "errEmpty": "Bitte fügen Sie dem Rad mindestens ein Element hinzu, bevor Sie den Einbettungscode generieren."
+  },
+  "spinPage": {
+    "title": "Drehen Sie das Rad",
+    "heroTitle": "Drehen Sie das Rad – Benutzerdefinierte Zufallsauswahl",
+    "heroDesc": "Erstellen Sie Ihr eigenes benutzerdefiniertes <strong>Spin the Wheel</strong>, um Entscheidungen zu treffen, Spiele zu spielen oder einen zufälligen Gewinner auszuwählen. Geben Sie Ihre Auswahl ein, drehen Sie das Rad und der Spaß kann beginnen!",
+    "howToTitle": "So verwenden Sie das benutzerdefinierte Rad",
+    "steps": {
+      "1": "<strong>Geben Sie Ihre Eingaben ein</strong> – Fügen Sie Namen, Zahlen, Wörter oder alles andere hinzu, worüber Sie sich entscheiden müssen.",
+      "2": "<strong>Farben anpassen</strong> – Ändern Sie die Slice-Farben entsprechend Ihrem Thema.",
+      "3": "<strong>Drehen Sie das Rad</strong> – Klicken Sie auf die große Drehschaltfläche in der Mitte oder unter dem Rad.",
+      "4": "<strong>Sehen Sie sich das Ergebnis an</strong> – Der Gewinnerartikel wird bekannt gegeben und in den Zählern nachverfolgt.",
+      "5": "<strong>Optionen verwalten</strong> – Optionen für Ihren nächsten Dreh entfernen, duplizieren oder vorübergehend ausblenden."
+    },
+    "seoTitle": "Was ist ein benutzerdefiniertes Spin the Wheel?",
+    "seoDesc": "Mit einem <strong>benutzerdefinierten Spin the Wheel</strong> können Sie jede Liste von Optionen in ein unterhaltsames, interaktives Roulette verwandeln. Ganz gleich, ob Sie eine Tombola veranstalten, Aufgaben aufteilen oder einfach nur entscheiden möchten, welchen Film Sie sich ansehen möchten – ein Zufallsrad macht den Prozess unvoreingenommen und spannend.",
+    "seoList": {
+      "1": "<strong>Partyspiele</strong> – Erstellen Sie benutzerdefinierte Wahrheits-oder-Pflicht-Aufforderungen oder Trinkspiele.",
+      "2": "<strong>Klassenzimmeraktivitäten</strong> – Wählen Sie zufällig ein Thema, eine Belohnung oder einen Schüler aus.",
+      "3": "<strong>Tägliche Entscheidungen</strong> – Entscheiden Sie, wer den Abwasch erledigt oder den Müll rausbringt.",
+      "4": "<strong>Werbegeschenke</strong> – Wählen Sie fairerweise einen Gewinner aus einer Liste von Teilnehmern aus."
+    },
+    "whyTitle": "Warum unser kundenspezifisches Rad verwenden?",
+    "whyDesc": "Unser Radspinner ist als die flexibelste und benutzerfreundlichste Option auf dem Markt konzipiert:",
+    "features": {
+      "1Title": "Endlose Anpassung",
+      "1Desc": "Fügen Sie beliebig viele Optionen hinzu, ändern Sie die Gewichtung durch Kopieren von Slices und passen Sie die Farben an.",
+      "2Title": "Sofortige Ergebnisse",
+      "2Desc": "Keine Anmeldung oder Downloads erforderlich. Einfach tippen und sofort drehen.",
+      "3Title": "Retten Sie Ihren Staat",
+      "3Desc": "Ihre Radkonfiguration bleibt aktiv, solange Sie den Browser-Tab geöffnet lassen.",
+      "4Title": "Fair und zufällig",
+      "4Desc": "Unser Algorithmus sorgt jedes Mal für ein wirklich zufälliges und unvoreingenommenes Ergebnis."
+    },
+    "article": {
+      "sec1Title": "Warum kundenspezifische Spin-the-Wheel-Werkzeuge so beliebt sind",
+      "sec1Text": "Seien wir ehrlich: Den ganzen Tag über Entscheidungen zu treffen, kann anstrengend sein. Egal, ob Sie herausfinden möchten, was Sie zum Abendessen essen möchten, einen Gewinner für ein Gewinnspiel in Ihren sozialen Medien auswählen oder einfach nur entscheiden möchten, wer für den Kaffee bezahlt – manchmal ist es einfach einfacher, das Schicksal entscheiden zu lassen. Ein individuelles „Spin the Wheel“-Werkzeug ist die perfekte Abkürzung für diese Momente. Anstatt endlos zu scrollen oder mit Ihren Freunden zu diskutieren, legen Sie Ihre Optionen einfach in ein Rad und drücken Sie die Spin-Taste. Das Beste ist, dass Sie nicht an eine voreingestellte Liste gebunden sind. Sie können den Scheiben buchstäblich alles hinzufügen – Namen, Orte, Zahlen oder sogar Herausforderungen für ein Partyspiel. Das funktioniert gut, denn das rotierende Rad und das satte Klicken sorgen bei allen Beteiligten für einen kleinen Nervenkitzel. Es erfordert eine langweilige Aufgabe wie „jemanden auswählen, der den Abwasch macht“ und verwandelt es in ein schnelles, unterhaltsames Spiel.",
+      "sec2Title": "Warum wir es lieben, Dinge dem Zufall zu überlassen",
+      "sec2Text": "Es gibt einen Grund, warum wir Münzen werfen und Strohhalme ziehen. Das menschliche Gehirn liebt es tatsächlich, Dinge dem Zufall zu überlassen, weil es uns die Hitze nimmt. Wenn Sie jemanden zufällig aus dem Hut holen, kann niemand behaupten, dass Sie Favoriten gespielt haben. Die gleiche Logik gilt für ein digitales Spinnerrad. Es ist völlig unparteiisch, wodurch die „Das ist nicht fair“-Argumente sofort ausgeblendet werden. Wenn ein sich drehendes Rad langsamer wird und schließlich auf den Gewinner klickt, löst es tatsächlich einen kleinen Dopaminstoß in unserem Gehirn aus. Diese Spannung – selbst wenn Sie nur einen Film auswählen, den Sie auf Netflix ansehen möchten – ist genau der Grund, warum Zufallsräder so fesselnd sind. Indem Sie eine einfache Entscheidung in ein visuelles Spiel umwandeln, bringen Sie die Leute dazu, aufmerksam zu sein und das Ergebnis mit einem Lächeln zu akzeptieren.",
+      "sec3Title": "Ein Game-Changer für Lehrer und Klassenzimmer",
+      "sec3TextStart": "Wenn Sie jemals an der Spitze eines Klassenzimmers gestanden haben, wissen Sie, wie schwierig es ist, alle gleichermaßen zum Mitmachen zu bewegen. Die gleichen drei Kinder heben immer ihre Hände, während die anderen versuchen, sich in ihre Stühle einzufügen. Aus diesem Grund verwenden Lehrer gerne a",
+      "sec3LinkText": "Rad der Namen",
+      "sec3TextMiddle": "oder ein benutzerdefinierter Spinner. Wenn Sie die Klassenliste auf ein Rad legen und auf die Tafel projizieren, weiß jeder einzelne Schüler, dass er die gleichen Chancen hat, aufgerufen zu werden. Dadurch bleibt der Raum wachsam, ohne das Gefühl zu haben, dass jemand ungerechtfertigt angegriffen wird. Sie können es auch für viel mehr als nur die Auswahl eines Schülers zur Beantwortung einer Frage verwenden. Sie können ein Rad mit Matheaufgaben, Vokabeln oder Diskussionsthemen beladen. Um die Sache noch einfacher zu machen, ist die dedizierte",
+      "sec3LinkText2": "Rad der Namen",
+      "sec3TextEnd": "Mit dieser Option können Sie einen Namen entfernen, nachdem er ausgewählt wurde. Das bedeutet, dass jeder Schüler einmal an der Reihe ist, bevor jemand zweimal aufgerufen wird.",
+      "sec4Title": "Hören Sie auf, darüber zu streiten, was Sie essen sollen",
+      "sec4TextStart": "Wir alle kennen die Frage: „Was möchtest du essen?“ „Ich weiß nicht, was willst du?“ Es ist das Gespräch, das niemals endet. Je mehr Möglichkeiten wir zum Mitnehmen haben, desto schwieriger wird es, einfach eine Wahl zu treffen. Wenn Sie es satt haben zu debattieren, dann ist das",
+      "sec4LinkText": "Lebensmittelrad",
+      "sec4TextMiddle": "ist genau das, was Sie brauchen. Stecken Sie einfach vier oder fünf Stellen ein, mit denen Sie zufrieden sind, drücken Sie die Spin-Taste und verpflichten Sie sich zu dem, wo auch immer es landet. Kein 45-minütiges Hin und Her mehr. Das spart nicht nur Zeit, sondern zwingt Sie auch dazu, mit Ihren gewohnten Bestellgewohnheiten Schluss zu machen. Fügen Sie den einen thailändischen Ort, den Sie noch nicht ausprobiert haben, als Wildcard hinzu und lassen Sie das Rad Ihre Routine aufpeppen. Wenn Sie unterwegs eine schnelle Entscheidung benötigen, springen Sie zu",
+      "sec4LinkText2": "Lebensmittelrad",
+      "sec4TextEnd": "Seite. Es hat ein vorgefertigtes Thema und sieht auf Ihrem Telefon großartig aus, wenn der Hunger zuschlägt.",
+      "sec5Title": "Schnelle Antworten auf einfache Fragen",
+      "sec5TextStart": "Ein riesiges Custom-Rad eignet sich hervorragend für lange Listen, aber manchmal braucht man einfach eine klare Ja- oder Nein-Antwort. Soll ich diese Schuhe kaufen? Sollte ich heute auf das Fitnessstudio verzichten? Für diese schnellen binären Entscheidungen: a",
+      "sec5LinkText": "Ja/Nein-Rad",
+      "sec5TextMiddle": "ist der perfekte digitale Münzwurf. Manchmal wissen Sie möglicherweise bereits, was Sie tun möchten, und das Rad hilft Ihnen dabei, es herauszufinden. Wenn das Rad auf „Nein“ steht und Sie sofort enttäuscht sind, dann wollten Sie es offensichtlich tun! Sie können auch die Quoten anpassen. Wenn Sie wirklich ins Fitnessstudio gehen möchten, aber einen kleinen Anstoß brauchen, legen Sie drei „Ja“-Scheiben und eine „Nein“-Scheibe auf das Rad. Bei Dingen, die nicht vollständig schwarz-weiß sind, bietet das Hinzufügen eines „Vielleicht“-Slices eine praktische Lösung. Wann immer Sie eine sofortige und unkomplizierte Antwort benötigen, ist die",
+      "sec5LinkText2": "Ja/Nein-Rad",
+      "sec5TextEnd": "ist immer bereit.",
+      "sec6Title": "Passen Sie es genau so an, wie Sie es möchten",
+      "sec6TextStart": "Was macht das",
+      "sec6LinkText": "Zufälliger Radspinner",
+      "sec6TextMiddle": "Besser als bei den meisten Apps ist die Tatsache, dass man alles daran anpassen kann. Wenn Sie eine ernsthafte Firmenverlosung durchführen oder auf Twitch streamen, benötigen Sie mehr als nur einen einfachen Spinner. Wenn Sie beispielsweise möchten, dass einige Preise seltener sind als andere, können Sie die kleineren Preise einfach mehrmals auf dem Rad duplizieren, damit die Wahrscheinlichkeit größer ist, dass sie gewonnen werden. Diese „Gewichtungs“-Funktion gibt Ihnen die vollständige Kontrolle über die Quoten. Sie können auch in die Farben eintauchen und das Rad optisch an Ihre Marke oder Ihr Partymotto anpassen. Mit Funktionen, mit denen Sie nachverfolgen können, wie oft eine Option gewonnen hat, Entscheidungen sofort ausblenden und das Aussehen des Rads optimieren können, handelt es sich um ein absolut professionelles Tool, das als unterhaltsames Spiel getarnt ist. Probieren Sie es aus",
+      "sec6LinkText2": "Haupt-Spinner-Werkzeug",
+      "sec6TextEnd": "und entlasten Sie Ihre nächste große Entscheidung."
+    }
   }
 }

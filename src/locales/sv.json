@@ -5,7 +5,8 @@
     "yesNoWheel": "Ja/Nej hjul",
     "embed": "Bädda in",
     "foodWheel": "Mathjul",
-    "configureEmbed": "Konfigurera inbäddningsbara hjul"
+    "configureEmbed": "Konfigurera inbäddningsbara hjul",
+    "spinTheWheel": "Snurra hjulet"
   },
   "footer": {
     "randoWheel": "Rando hjul",
@@ -47,7 +48,9 @@
     "wonTitle": "Hjulet av namn",
     "wonDesc": "En perfekt följeslagare för giveaways, klassrumsdeltagande eller tilldela uppgifter.",
     "ynwTitle": "Ja / Nej Hjul",
-    "ynwDesc": "En enkel ja eller nej spinner för att hantera snabba binära val direkt."
+    "ynwDesc": "En enkel ja eller nej spinner för att hantera snabba binära val direkt.",
+    "stwTitle": "Snurra hjulet",
+    "stwDesc": "En helt anpassningsbar slumpmässig väljare för alla situationer."
   },
   "home": {
     "mainTitle": "Random Wheel Spinner",
@@ -79,7 +82,8 @@
     "otherToolsList": {
       "names": "<strong>Namnväljare / Elevväljare:</strong> Används vanligen av lärare för att slumpmässigt välja individer, ibland kallade \"Namnhjul\" eller \"Slumpmässiga namnväljare\".",
       "yesno": "<strong>Ja/Nej hjul:</strong> För enkla binära beslut.",
-      "food": "<strong>Mathjul:</strong> Osäker på vad du ska äta? Snurra på mathjulet för snabba slumpmässiga måltidsbeslut."
+      "food": "<strong>Mathjul:</strong> Osäker på vad du ska äta? Snurra på mathjulet för snabba slumpmässiga måltidsbeslut.",
+      "spin": "<strong>Snurra hjulet:</strong> En helt anpassningsbar slumpmässig väljare för alla situationer."
     },
     "otherToolsOutro": "Varje specialiserad version tar kärnkonceptet slumpmässigt urval och skräddarsyr det för att möta olika behov, vilket gör dem praktiska för allt från att organisera aktiviteter till att avgöra debatter med en rolig, opartisk twist."
   },
@@ -236,5 +240,68 @@
     "generateBtn": "Generera inbäddningskod",
     "errConfigure": "Fel vid generering av kod. Vänligen konfigurera hjulet först.",
     "errEmpty": "Lägg till minst ett objekt till hjulet innan du genererar inbäddningskod."
+  },
+  "spinPage": {
+    "title": "Snurra hjulet",
+    "heroTitle": "Snurra hjulet — Anpassad slumpmässig väljare",
+    "heroDesc": "Skapa din egen anpassade <strong>snurra hjulet</strong> för att fatta beslut, spela spel eller välja en slumpmässig vinnare. Ange dina val, snurra på hjulet och låt det roliga börja!",
+    "howToTitle": "Hur man använder det anpassade hjulet",
+    "steps": {
+      "1": "<strong>Ange dina inmatningar</strong> – Lägg till namn, siffror, ord eller något annat du behöver bestämma dig för.",
+      "2": "<strong>Anpassa färger</strong> — Ändra skivans färger så att de matchar ditt tema.",
+      "3": "<strong>Snurra hjulet</strong> — Klicka på den stora snurrknappen i mitten eller under hjulet.",
+      "4": "<strong>Se resultatet</strong> — Det vinnande föremålet kommer att tillkännages och spåras i diskarna.",
+      "5": "<strong>Hantera alternativ</strong> — Ta bort, duplicera eller tillfälligt dölj alternativ för ditt nästa snurr."
+    },
+    "seoTitle": "Vad är en Custom Spin the Wheel?",
+    "seoDesc": "En <strong>Custom Spin the Wheel</strong> låter dig förvandla valfri lista med alternativ till en rolig, interaktiv roulette. Oavsett om du organiserar en utlottning, delar upp sysslor eller bara försöker bestämma vilken film du ska titta på, gör ett slumpmässigt hjul processen opartisk och spännande.",
+    "seoList": {
+      "1": "<strong>Festspel</strong> – Skapa anpassade Truth or Dare-uppmaningar eller dryckesspel.",
+      "2": "<strong>Klassrumsaktiviteter</strong> — Välj ett ämne, en belöning eller en elev på måfå.",
+      "3": "<strong>Dagliga beslut</strong> — Bestäm vem som diskar eller tar ut soporna.",
+      "4": "<strong>Giveaways</strong> — Välj rättvist en vinnare från en lista över tävlande."
+    },
+    "whyTitle": "Varför använda vårt anpassade hjul?",
+    "whyDesc": "Vår hjulspinnare är designad för att vara det mest flexibla och lättanvända alternativet som finns:",
+    "features": {
+      "1Title": "Oändlig anpassning",
+      "1Desc": "Lägg till så många alternativ du vill, ändra vikter genom att kopiera skivor och anpassa färgerna.",
+      "2Title": "Omedelbara resultat",
+      "2Desc": "Ingen inloggning eller nedladdning krävs. Bara skriv och snurra direkt.",
+      "3Title": "Rädda din stat",
+      "3Desc": "Din hjulkonfiguration förblir aktiv så länge du håller webbläsarfliken öppen.",
+      "4Title": "Rättvist och slumpmässigt",
+      "4Desc": "Vår algoritm säkerställer ett verkligt slumpmässigt och opartiskt resultat varje gång."
+    },
+    "article": {
+      "sec1Title": "Varför anpassade verktyg för att snurra hjulet är så populära",
+      "sec1Text": "Låt oss vara ärliga, att fatta beslut hela dagen kan vara utmattande. Oavsett om du försöker komma på vad du ska äta till middag, utse en vinnare för en giveaway på dina sociala medier eller bara bestämma vem som betalar för kaffet, ibland är det bara lättare att låta ödet bestämma. Ett anpassat snurrhjulsverktyg är den perfekta genvägen för dessa ögonblick. Istället för att oändligt rulla eller diskutera med dina vänner, släpper du bara dina alternativ i ett hjul och trycker på spin. Det bästa av allt är att du inte har fastnat med en förinställd lista. Du kan lägga till bokstavligen vad som helst till skivorna – namn, platser, siffror eller till och med våga utmaningar för ett sällskapsspel. Det fungerar bra eftersom det roterande hjulet och det tillfredsställande klicket ger alla inblandade en liten puls av spänning. Det tar en tråkig syssla som att \"plocka någon att diska\" och förvandlar det till ett snabbt, roligt spel.",
+      "sec2Title": "Varför vi älskar att lämna saker åt slumpen",
+      "sec2Text": "Det finns en anledning till att vi slår mynt och drar sugrör. Den mänskliga hjärnan älskar faktiskt att lämna saker åt slumpen eftersom det tar värmen från oss. Om du väljer någon slumpmässigt ur en hatt kan ingen hävda att du spelade favoriter. Samma logik gäller för ett digitalt spinnerhjul. Det är helt opartiskt, vilket omedelbart tar bort \"det är inte rättvist\"-argumenten. När ett snurrande hjul saktar ner och till slut klickar på vinnaren, utlöser det faktiskt en liten klick dopamin i våra hjärnor. Den spänningen – även om du bara väljer en film att se på Netflix – är precis varför randomiserade hjul är så engagerande. Genom att förvandla ett enkelt beslut till ett visuellt spel får du folk att uppmärksamma och acceptera resultatet med ett leende.",
+      "sec3Title": "En Game Changer för lärare och klassrum",
+      "sec3TextStart": "Om du någonsin har stått längst fram i ett klassrum, vet du hur svårt det är att få alla att delta på samma sätt. Samma tre barn räcker alltid upp händerna, medan resten försöker smälta in i sina stolar. Det är därför lärare älskar att använda en",
+      "sec3LinkText": "Hjulet av namn",
+      "sec3TextMiddle": "eller en anpassad spinner. När du sätter klasslistan på ett hjul och projicerar den på tavlan vet varje enskild elev att de har lika stor chans att bli kallade. Detta håller rummet alert utan att känna att någon är orättvist riktad. Du kan använda det för mycket mer än att bara välja en elev att svara på en fråga också. Du kan ladda ett hjul med matematiska problem, ordförråd eller diskussionsämnen. För att göra saker ännu enklare, de hängivna",
+      "sec3LinkText2": "Hjulet av namn",
+      "sec3TextEnd": "låter dig ta bort ett namn efter att det har valts, vilket innebär att varje elev får en tur innan någon blir kallad två gånger.",
+      "sec4Title": "Sluta bråka om vad du ska äta",
+      "sec4TextStart": "Vi har alla varit där: \"Vad vill du äta?\" \"Jag vet inte, vad vill du?\" Det är samtalet som aldrig tar slut. Ju fler avhämtningsalternativ vi har, desto svårare blir det att bara göra ett val. Om du är trött på att diskutera",
+      "sec4LinkText": "Mathjul",
+      "sec4TextMiddle": "är precis vad du behöver. Koppla bara in fyra eller fem platser du skulle vara nöjd med, slå snurr och satsa på vad det än landar på. Inget mer att gå fram och tillbaka på 45 minuter. Det sparar inte bara tid, det tvingar dig också att bryta dina vanliga beställningsvanor. Släng in det där thailändska stället du inte har provat ännu som ett jokertecken, och låt hjulet piffa upp din rutin. Om du behöver ett snabbt beslut på språng, hoppa över till",
+      "sec4LinkText2": "Mathjul",
+      "sec4TextEnd": "sida. Den har ett förtema och ser bra ut på din telefon när hungern slår till.",
+      "sec5Title": "Snabba svar på enkla frågor",
+      "sec5TextStart": "Ett stort anpassat hjul är bra för långa listor, men ibland behöver du bara ett rakt ja eller nej svar. Ska jag köpa dessa skor? Ska jag hoppa över gymmet idag? För de snabba binära valen, a",
+      "sec5LinkText": "Ja/Nej hjul",
+      "sec5TextMiddle": "är den perfekta digitala myntkastningen. Ibland kanske du redan vet vad du vill göra, och hjulet hjälper dig att räkna ut det. Om hjulet landar på \"Nej\" och du direkt känner dig besviken, ja, då ville du uppenbarligen göra det! Du kan också justera oddsen. Om du verkligen vill gå till gymmet men behöver en liten knuff, lägg tre \"Ja\"-skivor och en \"Nej\"-skiva på hjulet. För saker som inte är helt svarta och vita, att lägga till en \"Kanske\" skiva ger dig en handy ut. Närhelst du behöver ett omedelbart svar utan krångel",
+      "sec5LinkText2": "Ja/Nej hjul",
+      "sec5TextEnd": "är alltid redo.",
+      "sec6Title": "Anpassa det precis som du vill",
+      "sec6TextStart": "Vad gör",
+      "sec6LinkText": "Random Wheel Spinner",
+      "sec6TextMiddle": "bättre än de flesta appar är det faktum att du kan justera allt om det. Om du driver en seriös företagspresent eller streamar på Twitch behöver du mer än bara en grundläggande spinner. Till exempel, om du vill att vissa priser ska vara sällsynta än andra, kan du bara duplicera de mindre priserna flera gånger på hjulet så att de är mer benägna att träffas. Denna \"viktnings\"-funktion ger dig total kontroll över oddsen. Du kan också dyka in i färgerna och visuellt matcha hjulet till ditt varumärke eller festtema. Med funktioner som låter dig spåra hur många gånger ett alternativ har vunnit, dölja val direkt och justera hur hjulet ser ut, är det ett helt professionellt verktyg förklädd till ett roligt spel. Prova på",
+      "sec6LinkText2": "huvudspinnverktyget",
+      "sec6TextEnd": "och ta bort stressen från ditt nästa stora beslut."
+    }
   }
 }

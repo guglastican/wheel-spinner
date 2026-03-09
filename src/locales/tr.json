@@ -5,7 +5,8 @@
     "yesNoWheel": "Evet/Hayır Çarkı",
     "embed": "Göm",
     "foodWheel": "Yemek Çarkı",
-    "configureEmbed": "Katıştırılabilir Tekerleği Yapılandır"
+    "configureEmbed": "Katıştırılabilir Tekerleği Yapılandır",
+    "spinTheWheel": "Çarkı Döndür"
   },
   "footer": {
     "randoWheel": "Rando Çarkı",
@@ -47,7 +48,9 @@
     "wonTitle": "İsim Çarkı",
     "wonDesc": "Hediyeler, sınıfa katılım veya görev atama için mükemmel bir arkadaştır.",
     "ynwTitle": "Evet / Hayır Tekerlek",
-    "ynwDesc": "Hızlı ikili seçimleri anında gerçekleştirmek için basit bir evet veya hayır döndürücü."
+    "ynwDesc": "Hızlı ikili seçimleri anında gerçekleştirmek için basit bir evet veya hayır döndürücü.",
+    "stwTitle": "Çarkı Döndür",
+    "stwDesc": "Her durum için tamamen özelleştirilebilir rastgele seçici."
   },
   "home": {
     "mainTitle": "Rastgele Çark Döndürücü",
@@ -79,7 +82,8 @@
     "otherToolsList": {
       "names": "<strong>Ad Seçiciler / Öğrenci Seçiciler:</strong> Genellikle eğitimciler tarafından bireyleri rastgele seçmek için kullanılır; bazen \"İsim Çarkı\" veya \"Rastgele Ad Seçici\" olarak da adlandırılır.",
       "yesno": "<strong>Evet/Hayır Çarkları:</strong> Basit ikili kararlar için.",
-      "food": "<strong>Yemek Çarkı:</strong> Ne yiyeceğinizden emin değil misiniz? Hızlı, rastgele yemek kararları için yemek çarkını döndürün."
+      "food": "<strong>Yemek Çarkı:</strong> Ne yiyeceğinizden emin değil misiniz? Hızlı, rastgele yemek kararları için yemek çarkını döndürün.",
+      "spin": "<strong>Çarkı Döndür:</strong> Her duruma uygun tamamen özelleştirilebilir rastgele seçici."
     },
     "otherToolsOutro": "Her özel sürüm, temel rastgele seçim konseptini alır ve onu farklı ihtiyaçları karşılayacak şekilde uyarlar; bu da onları etkinliklerin organize edilmesinden tartışmaların eğlenceli ve tarafsız bir şekilde sonuçlandırılmasına kadar her şey için kullanışlı hale getirir."
   },
@@ -236,5 +240,68 @@
     "generateBtn": "Ekleme Kodu Oluştur",
     "errConfigure": "Kod oluşturulurken hata oluştu. Lütfen önce tekerleği yapılandırın.",
     "errEmpty": "Ekleme kodunu oluşturmadan önce lütfen tekerleğe en az bir öğe ekleyin."
+  },
+  "spinPage": {
+    "title": "Çarkı Döndür",
+    "heroTitle": "Çarkı Çevir — Özel Rastgele Seçici",
+    "heroDesc": "Karar vermek, oyun oynamak veya rastgele bir kazanan seçmek için kendi özel <strong>Çarkı Döndür</strong>'ünüzü oluşturun. Seçimlerinizi girin, çarkı çevirin ve eğlence başlasın!",
+    "howToTitle": "Özel Çark Nasıl Kullanılır",
+    "steps": {
+      "1": "<strong>Girişlerinizi girin</strong> — İsimleri, numaraları, kelimeleri veya karar vermeniz gereken diğer şeyleri ekleyin.",
+      "2": "<strong>Renkleri özelleştirin</strong> — Dilim renklerini temanıza uyacak şekilde değiştirin.",
+      "3": "<strong>Çarkı Döndür</strong> — Tekerleğin ortasındaki veya altındaki büyük döndürme düğmesini tıklayın.",
+      "4": "<strong>Sonucu Görün</strong> — Kazanan ürün duyurulacak ve sayaçlarda takip edilecektir.",
+      "5": "<strong>Seçenekleri yönetin</strong> — Bir sonraki dönüşünüz için seçenekleri kaldırın, çoğaltın veya geçici olarak gizleyin."
+    },
+    "seoTitle": "Özel Çark Çevirme Nedir?",
+    "seoDesc": "<strong>Özel Çark Çevirme</strong>, herhangi bir seçenek listesini eğlenceli, etkileşimli bir rulete dönüştürmenize olanak tanır. İster bir çekiliş düzenliyor olun, ister işleri bölüşüyor olun, ister sadece hangi filmi izleyeceğinize karar vermeye çalışıyor olun, rastgele bir çark süreci tarafsız ve heyecanlı hale getirir.",
+    "seoList": {
+      "1": "<strong>Parti Oyunları</strong> — Özel Doğruluk mu Cesaret mi yönlendirmeleri veya içki oyunları oluşturun.",
+      "2": "<strong>Sınıf Etkinlikleri</strong> — Rastgele bir konu, ödül veya öğrenci seçin.",
+      "3": "<strong>Günlük Kararlar</strong> — Bulaşıkları kimin yıkayacağına veya çöpü kimin çıkaracağına karar verin.",
+      "4": "<strong>Çekilişler</strong> — Yarışmacılar listesinden adil bir kazanan seçin."
+    },
+    "whyTitle": "Neden Özel Çarkımızı Kullanmalısınız?",
+    "whyDesc": "Çark döndürücümüz mevcut en esnek ve kullanımı kolay seçenek olacak şekilde tasarlanmıştır:",
+    "features": {
+      "1Title": "Sonsuz Özelleştirme",
+      "1Desc": "İstediğiniz kadar seçenek ekleyin, dilimleri kopyalayarak ağırlıkları değiştirin ve renkleri özelleştirin.",
+      "2Title": "Anında Sonuçlar",
+      "2Desc": "Giriş yapmanıza veya indirme yapmanıza gerek yok. Sadece yazın ve anında döndürün.",
+      "3Title": "Eyaletinizi Kurtarın",
+      "3Desc": "Tarayıcı sekmesini açık tuttuğunuz sürece tekerlek yapılandırmanız etkin kalır.",
+      "4Title": "Adil ve Rastgele",
+      "4Desc": "Algoritmamız her seferinde gerçekten rastgele ve tarafsız bir sonuç sağlar."
+    },
+    "article": {
+      "sec1Title": "Özel Döndürme Çarkı Aletleri Neden Bu Kadar Popüler?",
+      "sec1Text": "Dürüst olalım, bütün gün karar vermek yorucu olabilir. İster akşam yemeğinde ne yiyeceğinizi bulmaya çalışın, ister sosyal medyadaki bir hediye için kazananı seçin, ister sadece kahveyi kimin ödeyeceğine karar verin, bazen kaderin karar vermesine izin vermek daha kolaydır. Özel bir çarkı döndürme aracı, bu anlar için mükemmel bir kısayoldur. Sonsuza kadar kaydırma yapmak veya arkadaşlarınızla tartışmak yerine, seçeneklerinizi bir çarkın içine bırakın ve döndürmeye basın. Hepsinden iyisi, önceden belirlenmiş bir listeye sıkışıp kalmıyorsunuz. Dilimlere kelimenin tam anlamıyla her şeyi ekleyebilirsiniz: isimler, yerler, sayılar ve hatta bir parti oyunu için meydan okumalar. İyi çalışıyor çünkü dönen tekerlek ve tatmin edici tıklama, katılan herkese küçük bir heyecan patlaması yaşatıyor. \"Bulaşıkları yıkayacak birini seçmek\" gibi sıkıcı bir işi alır ve bunu hızlı, eğlenceli bir oyuna dönüştürür.",
+      "sec2Title": "İşi Şansa Bırakmayı Neden Seviyoruz?",
+      "sec2Text": "Yazı tura atmamızın ve pipet çekmemizin bir nedeni var. İnsan beyni aslında işleri şansa bırakmayı seviyor çünkü üzerimizdeki baskıyı alıyor. Eğer birini şapkadan rastgele seçerseniz, hiç kimse sizin favori oynadığınızı iddia edemez. Aynı mantık dijital dönen çark için de geçerlidir. Tamamen tarafsızdır, bu da \"bu adil değil\" argümanlarını anında ortadan kaldırır. Çıkrık yavaşlayıp sonunda kazanana ulaştığında aslında beynimizde küçük bir dopamin darbesini tetikler. Netflix'te izlemek için bir film seçiyor olsanız bile, bu gerilim tam olarak rastgele çarkların bu kadar ilgi çekici olmasının nedenidir. Basit bir kararı görsel bir oyuna dönüştürerek, insanların dikkat etmesini ve sonucu gülümsemeyle kabul etmesini sağlarsınız.",
+      "sec3Title": "Öğretmenler ve Sınıflar için Oyunun Kurallarını Değiştirecek Bir Şey",
+      "sec3TextStart": "Eğer bir sınıfın önünde durduysanız herkesin eşit şekilde katılmasını sağlamanın ne kadar zor olduğunu bilirsiniz. Aynı üç çocuk her zaman ellerini kaldırıyor, diğerleri ise sandalyelerine yerleşmeye çalışıyor. Bu yüzden öğretmenler bir",
+      "sec3LinkText": "İsim Çarkı",
+      "sec3TextMiddle": "veya özel bir döndürücü. Sınıf listesini bir tekerleğe yerleştirip tahtaya yansıttığınızda, her öğrenci çağrılma şansının eşit olduğunu bilir. Bu, kimsenin haksız yere hedef alındığı hissine kapılmadan odanın tetikte kalmasını sağlar. Bunu, bir soruyu cevaplayacak öğrenciyi seçmekten çok daha fazlası için kullanabilirsiniz. Bir çarkı matematik problemleri, kelime kelimeleri veya tartışma konularıyla doldurabilirsiniz. İşleri daha da kolaylaştırmak için, özel",
+      "sec3LinkText2": "İsim Çarkı",
+      "sec3TextEnd": "Bir adı seçildikten sonra kaldırmanıza olanak tanır; bu, herhangi biri iki kez çağrılmadan önce her öğrencinin bir sıra alması anlamına gelir.",
+      "sec4Title": "Ne Yenir Konusunda Tartışmayı Durdurun",
+      "sec4TextStart": "Hepimiz oradaydık: \"Ne yemek istersin?\" \"Bilmiyorum, ne istiyorsun?\" Hiç bitmeyen bir konuşmadır. Ne kadar çok paket seçeneğimiz olursa, seçim yapmak da o kadar zorlaşır. Tartışmaktan sıkıldıysanız",
+      "sec4LinkText": "Yemek Çarkı",
+      "sec4TextMiddle": "tam olarak ihtiyacınız olan şey. Sadece memnun kalacağınız dört veya beş yeri takın, döndürmeye basın ve nereye gelirse onu yapın. Artık 45 dakika boyunca ileri geri gitmek yok. Sadece zamandan tasarruf etmekle kalmıyor, aynı zamanda sizi düzenli sipariş verme alışkanlıklarınızdan kurtulmaya da zorluyor. Henüz denemediğiniz bir Tayland mekanını joker karakter olarak ekleyin ve çarkın rutininizi renklendirmesine izin verin. Hareket halindeyken hızlı bir karara ihtiyacınız varsa, şuraya geçin:",
+      "sec4LinkText2": "Yemek Çarkı",
+      "sec4TextEnd": "sayfa. Önceden temalıdır ve açlık grevinde telefonunuzda harika görünür.",
+      "sec5Title": "Basit Sorulara Hızlı Yanıtlar",
+      "sec5TextStart": "Büyük bir özel tekerlek, uzun listeler için harikadır, ancak bazen doğrudan bir evet veya hayır cevabına ihtiyaç duyarsınız. Bu ayakkabıları satın almalı mıyım? Bugün spor salonunu atlamalı mıyım? Bu hızlı ikili seçimler için,",
+      "sec5LinkText": "Evet/Hayır Çarkı",
+      "sec5TextMiddle": "mükemmel bir dijital yazı tura atma oyunudur. Bazen aslında ne yapmak istediğinizi zaten biliyor olabilirsiniz ve tekerlek bunu anlamanıza yardımcı olur. Çark \"Hayır\"a dönerse ve hemen hayal kırıklığına uğrarsanız, o zaman bunu yapmak istediğiniz açıktır! Ayrıca oranları da ayarlayabilirsiniz. Eğer gerçekten spor salonuna gitmek istiyorsanız ama biraz zorlamaya ihtiyacınız varsa, tekerleğe üç \"Evet\" dilimi ve bir \"Hayır\" dilimi koyun. Tamamen siyah beyaz olmayan şeyler için \"Belki\" dilimi eklemek size kolaylık sağlar. Karışıklık olmadan anında bir cevaba ihtiyaç duyduğunuzda,",
+      "sec5LinkText2": "Evet/Hayır Çarkı",
+      "sec5TextEnd": "her zaman hazırdır.",
+      "sec6Title": "Tam İstediğiniz Şekilde Kişiselleştirin",
+      "sec6TextStart": "Ne yapar",
+      "sec6LinkText": "Rastgele Çark Döndürücü",
+      "sec6TextMiddle": "çoğu uygulamadan daha iyi olan şey, onunla ilgili her şeyi ayarlayabilmenizdir. Ciddi bir şirket çekilişi yürütüyorsanız veya Twitch'te yayın yapıyorsanız, basit bir çeviriciden daha fazlasına ihtiyacınız var. Örneğin, bazı ödüllerin diğerlerinden daha nadir olmasını istiyorsanız, daha küçük ödülleri çarkta birden çok kez çoğaltabilirsiniz, böylece kazanılma olasılıkları daha yüksek olur. Bu \"ağırlıklandırma\" özelliği size oranlar üzerinde tam kontrol sağlar. Ayrıca renkleri derinlemesine inceleyebilir ve tekerleği görsel olarak markanıza veya parti temanıza göre eşleştirebilirsiniz. Bir seçeneğin kaç kez kazandığını takip etmenize, seçenekleri anında gizlemenize ve tekerleğin nasıl göründüğüne ince ayar yapmanıza olanak tanıyan özellikleriyle, eğlenceli bir oyun görünümüne bürünmüş tamamen profesyonel bir araçtır. Şunu deneyin:",
+      "sec6LinkText2": "ana döndürücü aracı",
+      "sec6TextEnd": "ve bir sonraki büyük kararınızın stresini üzerinizden alın."
+    }
   }
 }

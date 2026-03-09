@@ -5,7 +5,8 @@
     "yesNoWheel": "Ano/Ne kolo",
     "embed": "Vložit",
     "foodWheel": "Food Wheel",
-    "configureEmbed": "Konfigurace zabudovatelného kola"
+    "configureEmbed": "Konfigurace zabudovatelného kola",
+    "spinTheWheel": "Roztočte kolo"
   },
   "footer": {
     "randoWheel": "Kolo Rando",
@@ -47,7 +48,9 @@
     "wonTitle": "Kolo jmen",
     "wonDesc": "Perfektní společník pro dárky, účast ve třídě nebo přidělování úkolů.",
     "ynwTitle": "Ano / Ne kolo",
-    "ynwDesc": "Jednoduchý číselník ano nebo ne, který okamžitě zvládne rychlé binární volby."
+    "ynwDesc": "Jednoduchý číselník ano nebo ne, který okamžitě zvládne rychlé binární volby.",
+    "stwTitle": "Roztočte kolo",
+    "stwDesc": "Plně přizpůsobitelný náhodný výběr pro každou situaci."
   },
   "home": {
     "mainTitle": "Náhodný kolotoč",
@@ -79,7 +82,8 @@
     "otherToolsList": {
       "names": "<strong>Výběr jmen / Výběr studentů:</strong> Běžně používaný pedagogy k náhodnému výběru jednotlivců, někdy nazývaný „kolo jmen“ nebo „náhodný výběr jmen“.",
       "yesno": "<strong>Ano/ne kolečka:</strong> Pro jednoduchá binární rozhodnutí.",
-      "food": "<strong>Food Wheel:</strong> Nejste si jisti, co jíst? Roztočte potravinové kolo pro rychlé náhodné rozhodování o jídle."
+      "food": "<strong>Food Wheel:</strong> Nejste si jisti, co jíst? Roztočte potravinové kolo pro rychlé náhodné rozhodování o jídle.",
+      "spin": "<strong>Spin the Wheel:</strong> Plně přizpůsobitelný náhodný výběr pro každou situaci."
     },
     "otherToolsOutro": "Každá specializovaná verze přebírá základní koncept náhodného výběru a přizpůsobuje jej tak, aby vyhovovala odlišným potřebám, takže jsou užitečné pro vše od organizování aktivit až po urovnávání debat se zábavným a nestranným nádechem."
   },
@@ -236,5 +240,68 @@
     "generateBtn": "Vygenerovat kód pro vložení",
     "errConfigure": "Chyba při generování kódu. Nejprve nakonfigurujte kolo.",
     "errEmpty": "Před vygenerováním kódu pro vložení přidejte do kola alespoň jednu položku."
+  },
+  "spinPage": {
+    "title": "Roztočte kolo",
+    "heroTitle": "Roztočit kolo — Vlastní náhodný výběr",
+    "heroDesc": "Vytvořte si vlastní <strong>Roztočte kolo</strong>, abyste se mohli rozhodovat, hrát hry nebo vybírat náhodného vítěze. Zadejte své volby, roztočte kolo a zábava může začít!",
+    "howToTitle": "Jak používat vlastní kolo",
+    "steps": {
+      "1": "<strong>Zadejte své vstupy</strong> – Přidejte jména, čísla, slova nebo cokoli jiného, ​​o čem se potřebujete rozhodnout.",
+      "2": "<strong>Přizpůsobit barvy</strong> – Změňte barvy řezu tak, aby odpovídaly vašemu motivu.",
+      "3": "<strong>Roztočit kolo</strong> – Klikněte na velké tlačítko otáčení uprostřed nebo pod kolem.",
+      "4": "<strong>Zobrazit výsledek</strong> — Vítězná položka bude oznámena a sledována na počítadlech.",
+      "5": "<strong>Spravovat možnosti</strong> – Odeberte, duplikujte nebo dočasně skryjte možnosti pro příští roztočení."
+    },
+    "seoTitle": "Co je vlastní roztočení kola?",
+    "seoDesc": "<strong>Vlastní roztočení kola</strong> vám umožní proměnit jakýkoli seznam možností v zábavnou interaktivní ruletu. Ať už organizujete tombolu, rozdělujete domácí práce nebo se jen snažíte rozhodnout, na jaký film se dívat, náhodné kolo udělá proces nezaujatým a vzrušujícím.",
+    "seoList": {
+      "1": "<strong>Párty hry</strong> – Vytvářejte vlastní výzvy Truth or Dare nebo hry s pitím.",
+      "2": "<strong>Aktivity v učebně</strong> — Náhodně vyberte předmět, odměnu nebo studenta.",
+      "3": "<strong>Denní rozhodování</strong> – Rozhodněte se, kdo myje nádobí nebo vynáší odpadky.",
+      "4": "<strong>Dárky</strong> — Vyberte si vítěze ze seznamu soutěžících."
+    },
+    "whyTitle": "Proč používat naše vlastní kolo?",
+    "whyDesc": "Náš předřadník je navržen tak, aby byl tou nejflexibilnější a nejsnadněji použitelnou možností:",
+    "features": {
+      "1Title": "Nekonečné přizpůsobení",
+      "1Desc": "Přidejte tolik možností, kolik chcete, změňte hmotnosti kopírováním řezů a přizpůsobte barvy.",
+      "2Title": "Okamžité výsledky",
+      "2Desc": "Není vyžadováno žádné přihlášení ani stahování. Stačí napsat a okamžitě točit.",
+      "3Title": "Zachraňte svůj stát",
+      "3Desc": "Konfigurace kola zůstane aktivní, dokud necháte kartu prohlížeče otevřenou.",
+      "4Title": "Spravedlivé a náhodné",
+      "4Desc": "Náš algoritmus zajišťuje pokaždé skutečně náhodný a nezkreslený výsledek."
+    },
+    "article": {
+      "sec1Title": "Proč jsou vlastní nástroje Spin the Wheel tak oblíbené",
+      "sec1Text": "Buďme upřímní, rozhodování po celý den může být vyčerpávající. Ať už se snažíte přijít na to, co si dát k večeři, vybíráte vítěze dárků na svých sociálních sítích nebo se jen rozhodujete, kdo zaplatí kávu, někdy je prostě jednodušší nechat rozhodnout osud. Vlastní nástroj roztočení kola je perfektní zkratkou pro tyto okamžiky. Namísto nekonečného posouvání nebo debatování s přáteli jednoduše pustíte své možnosti do kolečka a stisknete spin. Nejlepší ze všeho je, že nezůstanete uvízlí u předem nastaveného seznamu. Do výsečí můžete přidat doslova cokoliv – jména, místa, čísla, nebo dokonce odvážné výzvy pro párty hru. Funguje to dobře, protože rotující kolečko a uspokojivé cvakání dodávají všem zúčastněným malou dávku vzrušení. Chce to nudnou práci, jako je „vybrat někoho, kdo umyje nádobí“, a změní to na rychlou a zábavnou hru.",
+      "sec2Title": "Proč rádi necháváme věci náhodě",
+      "sec2Text": "Existuje důvod, proč házíme mincemi a taháme brčka. Lidský mozek ve skutečnosti rád nechává věci náhodě, protože z nás bere teplo. Pokud někoho náhodně vyberete z klobouku, nikdo nemůže tvrdit, že jste hráli favorita. Stejná logika platí pro digitální koloběžku. Je zcela nestranný, což okamžitě odstraní argumenty „to není fér“. Když se kolovrátek zpomalí a nakonec klikne na vítěze, ve skutečnosti to spustí trochu dopaminu v našem mozku. Toto napětí – i když si právě vybíráte film, který chcete sledovat na Netflixu – je přesně tím důvodem, proč jsou náhodná kola tak poutavá. Tím, že změníte jednoduché rozhodnutí ve vizuální hru, přimějete lidi, aby věnovali pozornost a přijali výsledek s úsměvem.",
+      "sec3Title": "Změna hry pro učitele a třídy",
+      "sec3TextStart": "Pokud jste někdy stáli v čele třídy, víte, jak těžké je dosáhnout toho, aby se všichni zapojili stejně. Stejné tři děti vždy zvednou ruce, zatímco zbytek se snaží splynout do svých židlí. To je důvod, proč učitelé rádi používají a",
+      "sec3LinkText": "Kolo jmen",
+      "sec3TextMiddle": "nebo vlastní spinner. Když položíte seznam tříd na kolečko a promítnete ho na tabuli, každý student ví, že má stejnou šanci, že bude vyzván. To udržuje místnost v pohotovosti, aniž by měl pocit, že je někdo nespravedlivě zaměřen. Můžete jej použít i pro mnohem víc, než jen pro výběr studenta k zodpovězení otázky. Můžete nahrát kolo s matematickými problémy, slovíčky ze slovní zásoby nebo diskusními tématy. Aby to bylo ještě jednodušší, oddaný",
+      "sec3LinkText2": "Kolo jmen",
+      "sec3TextEnd": "umožňuje odstranit jméno poté, co bylo vybráno, což znamená, že každý student dostane řadu dříve, než je někdo dvakrát vyzván.",
+      "sec4Title": "Přestaňte se hádat, co jíst",
+      "sec4TextStart": "Všichni jsme tam byli: \"Co chceš jíst?\" \"Nevím, co chceš?\" Je to rozhovor, který nikdy nekončí. Čím více možností s sebou máme, tím těžší je prostě si vybrat. Pokud vás nebaví debatovat,",
+      "sec4LinkText": "Food Wheel",
+      "sec4TextMiddle": "je přesně to, co potřebujete. Stačí zapojit čtyři nebo pět míst, se kterými byste byli spokojeni, stisknout otočku a zavázat se k čemukoli. Už žádné cestování tam a zpět po dobu 45 minut. Nejen, že šetří čas, ale také vás nutí vymanit se ze svých běžných zvyků při objednávání. Vhoďte to jedno thajské místo, které jste ještě nezkusili, jako zástupný znak a nechte kolo okořenit vaši rutinu. Pokud se potřebujete rychle rozhodnout na cestách, skočte na",
+      "sec4LinkText2": "Food Wheel",
+      "sec4TextEnd": "strana. Je to pre-themed a vypadá skvěle na telefonu, když udeří hlad.",
+      "sec5Title": "Rychlé odpovědi na jednoduché otázky",
+      "sec5TextStart": "Obrovské vlastní kolo je skvělé pro dlouhé seznamy, ale někdy prostě potřebujete přímou odpověď ano nebo ne. Mám si koupit tyto boty? Mám dnes vynechat posilovnu? Pro tyto rychlé binární volby a",
+      "sec5LinkText": "Ano/Ne kolo",
+      "sec5TextMiddle": "je perfektní digitální házení mincí. Někdy už možná víte, co chcete dělat, a kolečko vám to pomůže zjistit. Pokud kolo dopadne na „Ne“ a vy se okamžitě cítíte zklamaní, pak jste to očividně chtěli udělat! Můžete také upravit šance. Pokud opravdu chcete jít do posilovny, ale potřebujete malý tlak, položte na kolo tři plátky „Ano“ a jeden „Ne“. U věcí, které nejsou úplně černobílé, vám přidání plátku „Možná“ pomůže. Kdykoli potřebujete okamžitou odpověď bez rozruchu,",
+      "sec5LinkText2": "Ano/Ne kolo",
+      "sec5TextEnd": "je vždy připraven.",
+      "sec6Title": "Přizpůsobte si jej přesně tak, jak chcete",
+      "sec6TextStart": "Co dělá",
+      "sec6LinkText": "Náhodný kolotoč",
+      "sec6TextMiddle": "lepší než u většiny aplikací je fakt, že si na ní můžete všechno vyladit. Pokud provozujete seriózní firemní dárky nebo streamujete na Twitchi, potřebujete víc než jen základní spinner. Pokud například chcete, aby některé ceny byly vzácnější než jiné, můžete menší ceny na kole několikrát duplikovat, takže je pravděpodobnější, že budou zasaženy. Tato funkce \"vážení\" vám dává úplnou kontrolu nad kurzy. Můžete se také ponořit do barev a vizuálně sladit kolo se svou značkou nebo tématem párty. Díky funkcím, které vám umožní sledovat, kolikrát daná možnost vyhrála, okamžitě skrýt volby a vyladit vzhled kola, jde o zcela profesionální nástroj maskovaný jako zábavná hra. Vyzkoušejte",
+      "sec6LinkText2": "hlavní spinner nástroj",
+      "sec6TextEnd": "a zbavit se stresu ze svého dalšího velkého rozhodnutí."
+    }
   }
 }

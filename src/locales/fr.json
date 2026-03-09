@@ -5,7 +5,8 @@
     "yesNoWheel": "Oui/Non Roue",
     "embed": "Intégrer",
     "foodWheel": "Roue alimentaire",
-    "configureEmbed": "Configurer la roue intégrable"
+    "configureEmbed": "Configurer la roue intégrable",
+    "spinTheWheel": "Faites tourner la roue"
   },
   "footer": {
     "randoWheel": "Roue Rando",
@@ -47,7 +48,9 @@
     "wonTitle": "Roue des noms",
     "wonDesc": "Un compagnon idéal pour les cadeaux, la participation en classe ou l'attribution de tâches.",
     "ynwTitle": "Oui / Non Roue",
-    "ynwDesc": "Un simple oui ou non pour gérer instantanément des choix binaires rapides."
+    "ynwDesc": "Un simple oui ou non pour gérer instantanément des choix binaires rapides.",
+    "stwTitle": "Faites tourner la roue",
+    "stwDesc": "Un sélecteur aléatoire entièrement personnalisable pour toutes les situations."
   },
   "home": {
     "mainTitle": "Roue aléatoire",
@@ -79,7 +82,8 @@
     "otherToolsList": {
       "names": "<strong>Sélecteurs de noms/sélecteurs d'élèves</strong> : couramment utilisés par les enseignants pour sélectionner des individus au hasard, parfois appelés « Roue des noms » ou « Sélecteur de noms aléatoires ».",
       "yesno": "<strong>Roues Oui/Non :</strong> Pour des décisions binaires simples.",
-      "food": "<strong>Roue des aliments :</strong> Vous ne savez pas quoi manger ? Faites tourner la roue des aliments pour prendre des décisions rapides et aléatoires en matière de repas."
+      "food": "<strong>Roue des aliments :</strong> Vous ne savez pas quoi manger ? Faites tourner la roue des aliments pour prendre des décisions rapides et aléatoires en matière de repas.",
+      "spin": "<strong>Spin the Wheel</strong> : un sélecteur aléatoire entièrement personnalisable pour toutes les situations."
     },
     "otherToolsOutro": "Chaque version spécialisée reprend le concept de base de la sélection aléatoire et l'adapte pour répondre à des besoins distincts, ce qui les rend pratiques pour tout, de l'organisation d'activités au règlement de débats avec une touche amusante et impartiale."
   },
@@ -236,5 +240,68 @@
     "generateBtn": "Générer du code intégré",
     "errConfigure": "Erreur lors de la génération du code. Veuillez d'abord configurer la roue.",
     "errEmpty": "Veuillez ajouter au moins un élément à la roue avant de générer le code d'intégration."
+  },
+  "spinPage": {
+    "title": "Faites tourner la roue",
+    "heroTitle": "Faites tourner la roue – Sélecteur aléatoire personnalisé",
+    "heroDesc": "Créez votre propre <strong>Spin the Wheel</strong> personnalisé pour prendre des décisions, jouer à des jeux ou choisir un gagnant au hasard. Entrez vos choix, faites tourner la roue et que la fête commence !",
+    "howToTitle": "Comment utiliser la roue personnalisée",
+    "steps": {
+      "1": "<strong>Saisissez vos saisies</strong> : ajoutez des noms, des chiffres, des mots ou tout autre élément dont vous avez besoin.",
+      "2": "<strong>Personnaliser les couleurs</strong> : modifiez les couleurs des tranches en fonction de votre thème.",
+      "3": "<strong>Faire tourner la roue</strong> : cliquez sur le gros bouton de rotation au milieu ou en dessous de la roue.",
+      "4": "<strong>Voir le résultat</strong> — L'article gagnant sera annoncé et suivi dans les compteurs.",
+      "5": "<strong>Gérer les options</strong> : supprimez, dupliquez ou masquez temporairement les options pour votre prochain tour."
+    },
+    "seoTitle": "Qu’est-ce qu’un Spin the Wheel personnalisé ?",
+    "seoDesc": "Un <strong>Tournez la roue personnalisé</strong> vous permet de transformer n'importe quelle liste d'options en une roulette amusante et interactive. Que vous organisiez un tirage au sort, répartissiez les tâches ou essayiez simplement de décider quel film regarder, une roue aléatoire rend le processus impartial et passionnant.",
+    "seoList": {
+      "1": "<strong>Jeux de société</strong> : créez des invites Action ou Vérité personnalisées ou des jeux à boire.",
+      "2": "<strong>Activités en classe</strong> : choisissez un sujet, une récompense ou un élève au hasard.",
+      "3": "<strong>Décisions quotidiennes</strong> : décidez qui fait la vaisselle ou sort les poubelles.",
+      "4": "<strong>Cadeaux</strong> – Choisissez équitablement un gagnant parmi une liste de participants."
+    },
+    "whyTitle": "Pourquoi utiliser notre roue personnalisée ?",
+    "whyDesc": "Notre roulette à roue est conçue pour être l'option la plus flexible et la plus facile à utiliser disponible :",
+    "features": {
+      "1Title": "Personnalisation sans fin",
+      "1Desc": "Ajoutez autant d'options que vous le souhaitez, modifiez les poids en copiant les tranches et personnalisez les couleurs.",
+      "2Title": "Résultats instantanés",
+      "2Desc": "Aucune connexion ni téléchargement requis. Tapez et faites tourner instantanément.",
+      "3Title": "Sauvez votre État",
+      "3Desc": "La configuration de votre roue reste active tant que vous gardez l'onglet du navigateur ouvert.",
+      "4Title": "Équitable et aléatoire",
+      "4Desc": "Notre algorithme garantit à chaque fois un résultat véritablement aléatoire et impartial."
+    },
+    "article": {
+      "sec1Title": "Pourquoi les outils personnalisés Spin the Wheel sont si populaires",
+      "sec1Text": "Soyons honnêtes, prendre des décisions toute la journée peut être épuisant. Que vous essayiez de savoir quoi manger pour le dîner, de choisir un gagnant pour un cadeau sur vos réseaux sociaux ou simplement de décider qui paiera pour un café, il est parfois plus facile de laisser le destin décider. Un outil personnalisé Faire tourner la roue est le raccourci parfait pour ces moments. Au lieu de faire défiler ou de débattre sans fin avec vos amis, déposez simplement vos options dans une roue et appuyez sur Spin. Mieux encore, vous n’êtes pas coincé avec une liste prédéfinie. Vous pouvez littéralement ajouter n'importe quoi aux tranches : des noms, des lieux, des numéros ou même relever des défis pour un jeu de société. Cela fonctionne bien parce que la roue rotative et le clic satisfaisant donnent à toutes les personnes impliquées une petite explosion d'excitation. Cela prend une corvée ennuyeuse comme « choisir quelqu'un pour faire la vaisselle » et la transforme en un jeu rapide et amusant.",
+      "sec2Title": "Pourquoi nous aimons laisser les choses au hasard",
+      "sec2Text": "Il y a une raison pour laquelle nous lançons des pièces et tirons à la paille. Le cerveau humain aime en fait laisser les choses au hasard, car cela nous soulage. Si vous choisissez quelqu’un au hasard dans un chapeau, personne ne pourra contester que vous jouiez les favoris. La même logique s’applique à une roue tournante numérique. C’est totalement impartial, ce qui élimine instantanément les arguments « ce n’est pas juste ». Lorsqu’un rouet ralentit et clique finalement sur le gagnant, cela déclenche en fait une petite dose de dopamine dans notre cerveau. Ce suspense, même si vous choisissez simplement un film à regarder sur Netflix, est exactement la raison pour laquelle les roues aléatoires sont si attrayantes. En transformant une simple décision en un jeu visuel, vous incitez les gens à y prêter attention et à accepter le résultat avec le sourire.",
+      "sec3Title": "Un changement de donne pour les enseignants et les salles de classe",
+      "sec3TextStart": "Si vous êtes déjà allé devant une classe, vous savez à quel point il est difficile d’amener tout le monde à participer de manière égale. Les trois mêmes enfants lèvent toujours la main, tandis que les autres tentent de se fondre dans leurs chaises. C'est pourquoi les enseignants adorent utiliser un",
+      "sec3LinkText": "Roue des noms",
+      "sec3TextMiddle": "ou une roulette personnalisée. Lorsque vous placez la liste des classes sur une roue et que vous la projetez sur le tableau, chaque élève sait qu'il a une chance égale d'être interpellé. Cela maintient la pièce en alerte sans avoir l’impression que quelqu’un est injustement ciblé. Vous pouvez également l'utiliser pour bien plus que simplement choisir un élève pour répondre à une question. Vous pouvez charger une roue avec des problèmes mathématiques, des mots de vocabulaire ou des sujets de discussion. Pour rendre les choses encore plus faciles, le dédié",
+      "sec3LinkText2": "Roue des noms",
+      "sec3TextEnd": "vous permet de supprimer un nom une fois qu'il a été choisi, ce qui signifie que chaque élève a son tour avant que quelqu'un ne soit appelé deux fois.",
+      "sec4Title": "Arrêtez de vous disputer sur quoi manger",
+      "sec4TextStart": "Nous avons tous été là : \"Qu'est-ce que tu veux manger ?\" \"Je ne sais pas, qu'est-ce que tu veux?\" C'est la conversation qui ne finit jamais. Plus nous avons d’options à emporter, plus il devient difficile de faire un choix. Si vous en avez assez de débattre, le",
+      "sec4LinkText": "Roue alimentaire",
+      "sec4TextMiddle": "c'est exactement ce dont vous avez besoin. Branchez simplement quatre ou cinq endroits qui vous plairont, appuyez sur Spin et engagez-vous dans tout ce sur quoi vous atterrirez. Plus besoin d’aller et venir pendant 45 minutes. Non seulement cela vous fait gagner du temps, mais cela vous oblige également à rompre avec vos habitudes de commande habituelles. Ajoutez cet endroit thaïlandais que vous n'avez pas encore essayé comme joker et laissez la roue pimenter votre routine. Si vous avez besoin d'une décision rapide lors de vos déplacements, passez à la page",
+      "sec4LinkText2": "Roue alimentaire",
+      "sec4TextEnd": "page. Il est pré-thème et s'affiche parfaitement sur votre téléphone lorsque la faim frappe.",
+      "sec5Title": "Réponses rapides à des questions simples",
+      "sec5TextStart": "Une énorme roue personnalisée est idéale pour les longues listes, mais parfois vous avez juste besoin d'une réponse directe par oui ou par non. Dois-je acheter ces chaussures ? Dois-je sauter la salle de sport aujourd’hui ? Pour ces choix binaires rapides, un",
+      "sec5LinkText": "Oui/Non Roue",
+      "sec5TextMiddle": "est le tirage au sort numérique parfait. Parfois, vous savez peut-être déjà ce que vous voulez faire, et la roue vous aide à le comprendre. Si la roue atterrit sur « Non » et que vous êtes immédiatement déçu, eh bien, vous aviez évidemment envie de le faire ! Vous pouvez également modifier les chances. Si vous voulez vraiment aller à la salle de sport mais que vous avez besoin d'un petit coup de pouce, mettez trois tranches « Oui » et une tranche « Non » sur la roue. Pour les choses qui ne sont pas totalement en noir et blanc, l’ajout d’une tranche « Peut-être » vous donne une solution pratique. Chaque fois que vous avez besoin d'une réponse instantanée et sans problème, le",
+      "sec5LinkText2": "Oui/Non Roue",
+      "sec5TextEnd": "est toujours prêt.",
+      "sec6Title": "Personnalisez-le exactement comme vous le souhaitez",
+      "sec6TextStart": "Qu'est-ce qui fait que",
+      "sec6LinkText": "Roue aléatoire",
+      "sec6TextMiddle": "mieux que la plupart des applications, c'est le fait que vous pouvez tout modifier. Si vous organisez un concours d'entreprise sérieux ou si vous diffusez sur Twitch, vous avez besoin de plus qu'un simple spinner de base. Par exemple, si vous souhaitez que certains prix soient plus rares que d'autres, vous pouvez simplement dupliquer les plus petits prix plusieurs fois sur la roue afin qu'ils aient plus de chances d'être gagnés. Cette fonctionnalité de « pondération » vous donne un contrôle total sur les cotes. Vous pouvez également vous plonger dans les couleurs et assortir visuellement la roue à votre marque ou au thème de votre fête. Avec des fonctionnalités qui vous permettent de suivre combien de fois une option a gagné, de masquer instantanément les choix et de modifier l'apparence de la roue, c'est un outil entièrement professionnel déguisé en jeu amusant. Essayez le",
+      "sec6LinkText2": "outil de rotation principal",
+      "sec6TextEnd": "et éliminez le stress lié à votre prochaine grande décision."
+    }
   }
 }

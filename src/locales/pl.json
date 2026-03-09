@@ -5,7 +5,8 @@
     "yesNoWheel": "Tak/Nie, koło",
     "embed": "Osadzać",
     "foodWheel": "Koło Żywności",
-    "configureEmbed": "Skonfiguruj osadzane koło"
+    "configureEmbed": "Skonfiguruj osadzane koło",
+    "spinTheWheel": "Zakręć kołem"
   },
   "footer": {
     "randoWheel": "Koło Rando",
@@ -47,7 +48,9 @@
     "wonTitle": "Koło imion",
     "wonDesc": "Idealny towarzysz rozdawania prezentów, uczestnictwa w zajęciach lub przydzielania zadań.",
     "ynwTitle": "Tak/Nie Koło",
-    "ynwDesc": "Prosty przycisk „tak” lub „nie”, umożliwiający natychmiastową obsługę szybkich wyborów binarnych."
+    "ynwDesc": "Prosty przycisk „tak” lub „nie”, umożliwiający natychmiastową obsługę szybkich wyborów binarnych.",
+    "stwTitle": "Zakręć kołem",
+    "stwDesc": "W pełni konfigurowalny losowy selektor do każdej sytuacji."
   },
   "home": {
     "mainTitle": "Losowy kołowrotek",
@@ -79,7 +82,8 @@
     "otherToolsList": {
       "names": "<strong>Wybieracze imion / Selektory uczniów:</strong> Powszechnie używane przez nauczycieli do losowego wybierania osób, czasami nazywane „Kołem imion” lub „Losowym wybieraniem imion”.",
       "yesno": "<strong>Koła Tak/Nie:</strong> do prostych decyzji binarnych.",
-      "food": "<strong>Koło Żywności:</strong> Nie wiesz, co zjeść? Zakręć kołem jedzenia, aby podejmować szybkie, losowe decyzje dotyczące posiłków."
+      "food": "<strong>Koło Żywności:</strong> Nie wiesz, co zjeść? Zakręć kołem jedzenia, aby podejmować szybkie, losowe decyzje dotyczące posiłków.",
+      "spin": "<strong>Zakręć kołem:</strong> w pełni konfigurowalny losowy selektor do każdej sytuacji."
     },
     "otherToolsOutro": "Każda specjalistyczna wersja opiera się na podstawowej koncepcji losowego wyboru i dostosowuje ją do różnych potrzeb, dzięki czemu jest przydatna do wszystkiego, od organizowania zajęć po rozstrzyganie debat w zabawny i bezstronny sposób."
   },
@@ -236,5 +240,68 @@
     "generateBtn": "Wygeneruj kod osadzania",
     "errConfigure": "Błąd podczas generowania kodu. Najpierw skonfiguruj koło.",
     "errEmpty": "Przed wygenerowaniem kodu do umieszczenia na stronie dodaj co najmniej jeden element do koła."
+  },
+  "spinPage": {
+    "title": "Zakręć kołem",
+    "heroTitle": "Zakręć kołem — niestandardowy losowy selektor",
+    "heroDesc": "Stwórz własne <strong>Zakręć kołem</strong>, aby podejmować decyzje, grać w gry lub wybierać losowego zwycięzcę. Wprowadź swoje wybory, zakręć kołem i rozpocznij zabawę!",
+    "howToTitle": "Jak korzystać z koła niestandardowego",
+    "steps": {
+      "1": "<strong>Wprowadź dane</strong> — dodaj nazwy, liczby, słowa lub cokolwiek innego, o czym musisz zdecydować.",
+      "2": "<strong>Dostosuj kolory</strong> — zmień kolory plasterków, aby pasowały do ​​Twojego motywu.",
+      "3": "<strong>Zakręć kołem</strong> — kliknij duży przycisk obracania na środku lub pod kołem.",
+      "4": "<strong>Zobacz wynik</strong> — zwycięski przedmiot zostanie ogłoszony i śledzony w licznikach.",
+      "5": "<strong>Zarządzaj opcjami</strong> — usuwaj, duplikuj lub tymczasowo ukrywaj opcje na potrzeby następnego obrotu."
+    },
+    "seoTitle": "Co to jest niestandardowe zakręcenie kołem?",
+    "seoDesc": "<strong>Własne zakręcenie kołem</strong> pozwala zamienić dowolną listę opcji w zabawną, interaktywną ruletkę. Niezależnie od tego, czy organizujesz loterię, dzielisz się obowiązkami, czy po prostu próbujesz zdecydować, jaki film obejrzeć, losowe koło sprawia, że ​​proces ten jest bezstronny i ekscytujący.",
+    "seoList": {
+      "1": "<strong>Gry towarzyskie</strong> — twórz niestandardowe podpowiedzi typu Prawda czy wyzwanie lub gry związane z piciem.",
+      "2": "<strong>Zajęcia w klasie</strong> — wybierz losowo przedmiot, nagrodę lub ucznia.",
+      "3": "<strong>Codzienne decyzje</strong> — zdecyduj, kto zmywa naczynia i kto wynosi śmieci.",
+      "4": "<strong>Rozdanie</strong> — sprawiedliwie wybierz zwycięzcę z listy uczestników."
+    },
+    "whyTitle": "Dlaczego warto korzystać z naszego niestandardowego koła?",
+    "whyDesc": "Nasz kołowrotek został zaprojektowany jako najbardziej elastyczna i łatwa w użyciu dostępna opcja:",
+    "features": {
+      "1Title": "Nieograniczona personalizacja",
+      "1Desc": "Dodaj tyle opcji, ile chcesz, zmień wagę, kopiując plasterki i dostosuj kolory.",
+      "2Title": "Natychmiastowe wyniki",
+      "2Desc": "Nie wymaga logowania ani pobierania. Po prostu wpisz i zakręć natychmiast.",
+      "3Title": "Zapisz swój stan",
+      "3Desc": "Konfiguracja Twojego koła pozostaje aktywna tak długo, jak długo karta przeglądarki jest otwarta.",
+      "4Title": "Uczciwe i losowe",
+      "4Desc": "Nasz algorytm zapewnia za każdym razem prawdziwie losowy i bezstronny wynik."
+    },
+    "article": {
+      "sec1Title": "Dlaczego niestandardowe narzędzia do obracania kół są tak popularne",
+      "sec1Text": "Bądźmy szczerzy, podejmowanie decyzji przez cały dzień może być wyczerpujące. Niezależnie od tego, czy próbujesz wymyślić, co zjeść na obiad, wybrać zwycięzcę rozdania w mediach społecznościowych, czy po prostu zdecydować, kto zapłaci za kawę, czasami łatwiej jest pozwolić, aby los zdecydował. Niestandardowe narzędzie do obracania kołem to idealny skrót na takie chwile. Zamiast bez końca przewijać lub debatować ze znajomymi, po prostu upuść swoje opcje na kółko i naciśnij obrót. A najlepsze jest to, że nie jesteś skazany na z góry ustaloną listę. Do kawałków możesz dodać dosłownie wszystko — imiona, miejsca, liczby, a nawet podejmować wyzwania w grze towarzyskiej. Działa dobrze, ponieważ obracające się koło i satysfakcjonujące kliknięcie dają wszystkim zaangażowanym mały wybuch emocji. Wymaga to nudnej pracy, takiej jak „wybieranie kogoś do zmywania naczyń”, i zamienia ją w szybką i zabawną grę.",
+      "sec2Title": "Dlaczego lubimy zostawiać sprawy przypadkowi",
+      "sec2Text": "Nie bez powodu rzucamy monetami i rysujemy słomki. Ludzki mózg tak naprawdę uwielbia pozostawiać wszystko przypadkowi, ponieważ odciąża nas to od ciepła. Jeśli wybierzesz kogoś losowo z kapelusza, nikt nie będzie mógł zaprzeczyć, że byłeś faworytem. Ta sama logika dotyczy cyfrowego koła obrotowego. Jest całkowicie bezstronny, co natychmiast eliminuje argumenty typu „to niesprawiedliwe”. Kiedy kręcące się koło zwalnia i w końcu wskazuje zwycięzcę, w naszym mózgu pojawia się niewielki zastrzyk dopaminy. To napięcie — nawet jeśli wybierasz film do obejrzenia w serwisie Netflix — jest właśnie powodem, dla którego losowe koła są tak wciągające. Zamieniając prostą decyzję w grę wizualną, sprawiasz, że ludzie zwracają uwagę i przyjmują wynik z uśmiechem.",
+      "sec3Title": "Zmiana zasad gry dla nauczycieli i klas",
+      "sec3TextStart": "Jeśli kiedykolwiek stałeś z przodu klasy, wiesz, jak trudno jest sprawić, aby wszyscy uczestniczyli w równym stopniu. Ta sama trójka dzieci zawsze podnosi ręce, a reszta próbuje wtopić się w krzesła. Dlatego nauczyciele uwielbiają używać a",
+      "sec3LinkText": "Koło imion",
+      "sec3TextMiddle": "lub niestandardowy spinner. Kiedy umieścisz listę zajęć na kole i wyświetlisz ją na tablicy, każdy uczeń będzie wiedział, że ma równe szanse na powołanie. Dzięki temu w pomieszczeniu panuje czujność i nie ma poczucia, że ​​ktoś stał się niesprawiedliwym celem. Możesz go używać do czegoś więcej niż tylko wybierania ucznia, który ma odpowiedzieć na pytanie. Możesz załadować koło problemami matematycznymi, słownictwem lub tematami dyskusji. Aby było jeszcze łatwiej, dedykowani",
+      "sec3LinkText2": "Koło imion",
+      "sec3TextEnd": "pozwala usunąć imię po jego wybraniu, co oznacza, że ​​każdy uczeń ma swoją turę, zanim ktokolwiek zostanie wezwany dwukrotnie.",
+      "sec4Title": "Przestań się kłócić o to, co zjeść",
+      "sec4TextStart": "Wszyscy tam byliśmy: „Co chcesz zjeść?” – Nie wiem, czego chcesz? To rozmowa, która nigdy się nie kończy. Im więcej mamy opcji na wynos, tym trudniej jest dokonać wyboru. Jeśli jesteś zmęczony debatowaniem,",
+      "sec4LinkText": "Koło Żywności",
+      "sec4TextMiddle": "jest dokładnie tym, czego potrzebujesz. Po prostu podłącz cztery lub pięć miejsc, z których będziesz zadowolony, wciśnij spin i zaangażuj się w cokolwiek, co wyląduje. Koniec z bieganiem tam i z powrotem przez 45 minut. Nie tylko oszczędza czas, ale także zmusza do wyrwania się z regularnych nawyków zamawiania. Dodaj jedno tajskie miejsce, którego jeszcze nie próbowałeś, jako symbol wieloznaczny i pozwól, aby koło urozmaiciło Twoją rutynę. Jeśli potrzebujesz szybkiej decyzji w podróży, przejdź do",
+      "sec4LinkText2": "Koło Żywności",
+      "sec4TextEnd": "strona. Ma gotowy motyw i świetnie wygląda na telefonie, gdy dopadnie Cię głód.",
+      "sec5Title": "Szybkie odpowiedzi na proste pytania",
+      "sec5TextStart": "Ogromne niestandardowe koło doskonale nadaje się do długich list, ale czasami potrzebujesz prostej odpowiedzi „tak” lub „nie”. Czy powinienem kupić te buty? Czy powinienem dzisiaj opuścić siłownię? W przypadku tych szybkich wyborów binarnych, a",
+      "sec5LinkText": "Tak/Nie, koło",
+      "sec5TextMiddle": "to idealny cyfrowy rzut monetą. Czasami możesz już wiedzieć, co chcesz zrobić, a koło pomoże Ci to rozgryźć. Jeśli koło wyląduje na „Nie” i od razu poczujesz się zawiedziony, cóż, najwyraźniej chciałeś to zrobić! Możesz także dostosować szanse. Jeśli naprawdę chcesz iść na siłownię, ale potrzebujesz lekkiego pchnięcia, połóż na kole trzy plasterki „Tak” i jeden plasterek „Nie”. W przypadku rzeczy, które nie są całkowicie czarno-białe, przydatne będzie dodanie wycinka „Być może”. Kiedykolwiek potrzebujesz natychmiastowej odpowiedzi, bez zamieszania,",
+      "sec5LinkText2": "Tak/Nie, koło",
+      "sec5TextEnd": "jest zawsze gotowy.",
+      "sec6Title": "Dostosuj go dokładnie tak, jak chcesz",
+      "sec6TextStart": "Co sprawia, że",
+      "sec6LinkText": "Losowy kołowrotek",
+      "sec6TextMiddle": "lepsze niż większość aplikacji jest to, że możesz wszystko w nich dostosować. Jeśli organizujesz poważną imprezę firmową lub prowadzisz transmisję strumieniową na Twitchu, potrzebujesz czegoś więcej niż zwykłego spinnera. Na przykład, jeśli chcesz, aby niektóre nagrody były rzadsze od innych, możesz po prostu wielokrotnie powielać mniejsze nagrody na kole, aby zwiększyć prawdopodobieństwo ich trafienia. Ta funkcja „ważenia” daje Ci całkowitą kontrolę nad kursami. Możesz także zagłębić się w kolory i wizualnie dopasować koło do swojej marki lub motywu imprezy. Dzięki funkcjom, które pozwalają śledzić, ile razy dana opcja wygrała, natychmiast ukrywać wybory i modyfikować wygląd koła, jest to całkowicie profesjonalne narzędzie udające zabawną grę. Wypróbuj",
+      "sec6LinkText2": "główne narzędzie obrotowe",
+      "sec6TextEnd": "i uwolnij się od stresu związanego z kolejną ważną decyzją."
+    }
   }
 }
