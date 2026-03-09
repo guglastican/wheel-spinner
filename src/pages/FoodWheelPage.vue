@@ -114,6 +114,15 @@
 import { onMounted, ref } from 'vue';
 import MainWheelSpinner from '../components/MainWheelSpinner.vue';
 import AppHeader from '../components/AppHeader.vue';
+import { useI18n } from 'vue-i18n';
+
+const { locale } = useI18n();
+const localePath = (path) => {
+  const currentLang = locale.value;
+  if (currentLang === 'en') return path;
+  if (path === '/') return `/${currentLang}`;
+  return `/${currentLang}${path}`;
+};
 
 // Define the default food options
 const foodOptions = ref([
