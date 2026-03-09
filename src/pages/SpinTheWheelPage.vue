@@ -59,6 +59,60 @@
         </div>
       </section>
 
+      <section class="seo-section">
+        <h2>{{ $t('spinPage.article.sec1Title') }}</h2>
+        <p>{{ $t('spinPage.article.sec1Text') }}</p>
+      </section>
+
+      <section class="seo-section seo-section--alt">
+        <h2>{{ $t('spinPage.article.sec2Title') }}</h2>
+        <p>{{ $t('spinPage.article.sec2Text') }}</p>
+      </section>
+
+      <section class="seo-section">
+        <h2>{{ $t('spinPage.article.sec3Title') }}</h2>
+        <p>
+          {{ $t('spinPage.article.sec3TextStart') }}
+          <router-link :to="localePath('/wheel-of-names')" class="inline-link">{{ $t('spinPage.article.sec3LinkText') }}</router-link>
+          {{ $t('spinPage.article.sec3TextMiddle') }}
+          <router-link :to="localePath('/wheel-of-names')" class="inline-link">{{ $t('spinPage.article.sec3LinkText2') }}</router-link>
+          {{ $t('spinPage.article.sec3TextEnd') }}
+        </p>
+      </section>
+
+      <section class="seo-section seo-section--alt">
+        <h2>{{ $t('spinPage.article.sec4Title') }}</h2>
+        <p>
+          {{ $t('spinPage.article.sec4TextStart') }}
+          <router-link :to="localePath('/food-wheel')" class="inline-link">{{ $t('spinPage.article.sec4LinkText') }}</router-link>
+          {{ $t('spinPage.article.sec4TextMiddle') }}
+          <router-link :to="localePath('/food-wheel')" class="inline-link">{{ $t('spinPage.article.sec4LinkText2') }}</router-link>
+          {{ $t('spinPage.article.sec4TextEnd') }}
+        </p>
+      </section>
+
+      <section class="seo-section">
+        <h2>{{ $t('spinPage.article.sec5Title') }}</h2>
+        <p>
+          {{ $t('spinPage.article.sec5TextStart') }}
+          <router-link :to="localePath('/yes-no-wheel')" class="inline-link">{{ $t('spinPage.article.sec5LinkText') }}</router-link>
+          {{ $t('spinPage.article.sec5TextMiddle') }}
+          <router-link :to="localePath('/yes-no-wheel')" class="inline-link">{{ $t('spinPage.article.sec5LinkText2') }}</router-link>
+          {{ $t('spinPage.article.sec5TextEnd') }}
+        </p>
+      </section>
+
+      <section class="seo-section seo-section--alt">
+        <h2>{{ $t('spinPage.article.sec6Title') }}</h2>
+        <p>
+          {{ $t('spinPage.article.sec6TextStart') }}
+          <router-link :to="localePath('/')" class="inline-link">{{ $t('spinPage.article.sec6LinkText') }}</router-link>
+          {{ $t('spinPage.article.sec6TextMiddle') }}
+          <router-link :to="localePath('/')" class="inline-link">{{ $t('spinPage.article.sec6LinkText2') }}</router-link>
+          {{ $t('spinPage.article.sec6TextEnd') }}
+        </p>
+      </section>
+
       <section class="related-tools-section">
         <h2>{{ $t('exploreMore.title') }}</h2>
         <p>{{ $t('exploreMore.descDefault') }}</p>
