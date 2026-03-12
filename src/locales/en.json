@@ -292,7 +292,15 @@
         }
     },
     "embed": {
+        "title": "How to Embed Random Wheel",
+        "heroDesc": "Embed our random wheel easily on your website or blog. Follow these simple steps below to generate the HTML iframe code.",
         "loading": "Loading wheel configuration...",
+        "step1Title": "Step 1: Enter Your Inputs",
+        "step1Desc": "First, configure the items you want on your wheel. Add names, choices, or anything else you'd like to spin for, and customize their colors.",
+        "step2Title": "Step 2: Customize Embed Settings",
+        "step2Desc": "Next, adjust the size and accessibility title for your embedded wheel.",
+        "step3Title": "Step 3: Copy Your Embed Code",
+        "step3Desc": "Finally, generate the code and copy it to your website's HTML.",
         "instructions": "Use the controls below to set up the content and appearance of your wheel. Then, configure the embed settings and generate the code to place it on your website.",
         "settingsTitle": "Embed Settings",
         "titleLabel": "Title (for accessibility):",
@@ -301,6 +309,8 @@
         "codeTitle": "Embed Code",
         "codeDesc": "Copy the code below to embed this configured wheel on your website:",
         "generateBtn": "Generate Embed Code",
+        "copyBtn": "Copy Code",
+        "copied": "Copied!",
         "errConfigure": "Error generating code. Please configure the wheel first.",
         "errEmpty": "Please add at least one item to the wheel before generating embed code."
     }
