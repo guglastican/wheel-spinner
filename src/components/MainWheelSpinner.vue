@@ -13,19 +13,19 @@
             :cursor-position="cursorPosition" 
             :cursor-angle="cursorAngle"
             :cursor-distance="cursorDistance"
+            :sounds="{
+              spinning: '/sounds/tick.mp3',
+              won: '/sounds/win.mp3'
+            }"
             @spin-start="onSpinStart"
             @spin-end="onSpinEnd">
 
             <template #cursor>
-              <div style="width: 30px; height: 40px;">
+              <div style="width: 30px; height: 40px; transform: rotate(180deg);">
                 <svg viewBox="0 0 24 24" style="width: 100%; height: 100%; filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));">
-                  <!-- Teardrop/droplet shape -->
-                  <path d="M12 2 C12 2, 2 16, 2 22 C2 28, 22 28, 22 22 C22 16, 12 2, 12 2 Z" fill="#8250df" /> <!-- Changed main color -->
-
-                  <!-- Highlight/shine effect -->
-                  <path d="M12 4 C12 4, 4 16, 4 21 C4 24, 10 26, 16 24 C10 26, 6 22, 6 19 C6 14, 12 4, 12 4 Z" fill="#f8c9c5" opacity="0.6" />
-
-                  <!-- Inner circle/hole -->
+                  <!-- Teardrop shape -->
+                  <path d="M12 2 C12 2, 2 16, 2 22 C2 28, 22 28, 22 22 C22 16, 12 2, 12 2 Z" fill="#8250df" />
+                  <!-- Inner circle -->
                   <circle cx="12" cy="20" r="4" fill="white" />
                 </svg>
               </div>

@@ -41,7 +41,7 @@ const props = defineProps({
   },
   spinDuration: {
     type: Number,
-    default: 4000
+    default: 8000
   },
   cursorAngle: {
     type: Number,
@@ -122,8 +122,8 @@ function getSliceAngles(sliceIndex, currentCanvasAngle) {
 
 }
 
-function getEaseInOutQuart(progress) {
-  return progress < 0.5 ? 8 * Math.pow(progress, 4) : 1 - Math.pow(-2 * progress + 2, 4) / 2;
+function getEaseOutQuint(x) {
+  return 1 - Math.pow(1 - x, 5);
 }
 
 function drawSlice(context, centerX, centerY, radius, startAngle, endAngle, fillColor) {
@@ -224,11 +224,6 @@ function spinWheel(winnerIndex) {
   // Set spinning true
   isSpinning.value = true;
 
-  // Play spinning sound
-  if (spinningAudio.value) {
-    playAudio(spinningAudio.value, true);
-  }
-
   // Emit spin start event
   emits('spin-start');
 
@@ -241,16 +236,21 @@ function spinWheel(winnerIndex) {
   // Get random spins count
   const extraSpinsAngle = extraSpins * 360;
 
+  // Get start angle
+  const startAngle = currentAngle.value;
+
   // Get winner start and end angle with current status
   const {
     endAngle: winnerEndAngle
-  } = getSliceAngles(winnerIndex, currentAngle.value);
+  } = getSliceAngles(winnerIndex, startAngle);
 
-  // Calculate target angle
-  const targetAngle = currentAngle.value + extraSpinsAngle + (getCursorAngle() - winnerEndAngle) + getRandomBetween(0, getAnglePerSlice());
+  // Calculate destination angle
+  const targetAngle = startAngle + extraSpinsAngle + (getCursorAngle() - winnerEndAngle) + getRandomBetween(0, getAnglePerSlice());
+  const totalRotation = targetAngle - startAngle;
 
   // Get start time to finish spinning
   const startTime = performance.now();
+  let lastSliceIndex = -1;
 
   // Create animation
   const animate = (currentTime) => {
@@ -258,8 +258,23 @@ function spinWheel(winnerIndex) {
     const elapsedTime = currentTime - startTime;
     const progress = Math.min(elapsedTime / props.spinDuration, 1);
 
-    let rotationAngle = currentAngle.value + (targetAngle * getEaseInOutQuart(progress));
+    let rotationAngle = startAngle + (totalRotation * getEaseOutQuint(progress));
     canvas.style.transform = `rotate3d(0, 0, 1, ${rotationAngle}deg)`;
+
+    // Calculate current slice under cursor for ticking sound
+    const slices = getSlices();
+    const anglePerSlice = 360 / slices.length;
+    // Normalize rotation angle for slice calculation
+    const normalizedRotation = rotationAngle % 360;
+    // Calculate which slice index is currently at the cursor position
+    const currentSliceIndex = Math.floor(getNormalizedAngle(getCursorAngle() - normalizedRotation) / anglePerSlice);
+
+    if (currentSliceIndex !== lastSliceIndex) {
+      if (spinningAudio.value && progress < 1) {
+        playAudio(spinningAudio.value);
+      }
+      lastSliceIndex = currentSliceIndex;
+    }
 
     if (progress < 1) {
 
@@ -295,8 +310,9 @@ function spinWheel(winnerIndex) {
 
 function playAudio(audio) {
   if (audio) {
-    audio.volume = 0.5
-    audio.play();
+    audio.currentTime = 0;
+    audio.volume = 0.5;
+    audio.play().catch(e => console.warn('Audio play blocked:', e));
   }
 }
 
