@@ -1,15 +1,37 @@
 <template>
   <div class="embed-container">
     <VueWheelSpinner
+      ref="spinner"
       v-if="slices.length > 0"
       :slices="slices"
-      :winner-index="0"
+      :winner-index="winnerIndex"
       :cursor-position="'edge'"
       :cursor-angle="90"
-      :cursor-distance="0"
-      :display-center-button="false" 
-      :display-shadow="false" 
-    ></VueWheelSpinner>
+      :cursor-distance="15"
+      @spin-start="onSpinStart"
+      @spin-end="onSpinEnd"
+    >
+      <template #cursor>
+        <div style="width: 30px; height: 40px; transform: rotate(180deg);">
+          <svg viewBox="0 0 24 24" style="width: 100%; height: 100%; filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4));">
+            <!-- Teardrop shape -->
+            <path d="M12 2 C12 2, 2 16, 2 22 C2 28, 22 28, 22 22 C22 16, 12 2, 12 2 Z" fill="#8250df" />
+            <!-- Inner circle -->
+            <circle cx="12" cy="20" r="4" fill="white" />
+          </svg>
+        </div>
+      </template>
+
+      <template #default>
+        <button
+          @click="spinWheel"
+          :disabled="isSpinning"
+          class="spin-center-button"
+        >
+          {{ $t('mainWheel.spin') }}
+        </button>
+      </template>
+    </VueWheelSpinner>
     <div v-else class="loading-message">
       {{ $t('embed.loading') }}
     </div>
@@ -18,8 +40,8 @@
 
 <script>
 import VueWheelSpinner from '../components/VueWheelSpinner.vue';
-import { ref, onMounted, computed } from 'vue';
-import { useRoute } from 'vue-router'; // Import useRoute
+import { ref, onMounted } from 'vue';
+import { useRoute } from 'vue-router';
 
 export default {
   name: 'EmbedWheelPage',
@@ -27,37 +49,51 @@ export default {
     VueWheelSpinner
   },
   setup() {
-    const route = useRoute(); // Get route information
+    const route = useRoute();
     const slices = ref([]);
+    const spinner = ref(null);
+    const isSpinning = ref(false);
+    const winnerIndex = ref(0);
 
     const parseConfigFromQuery = () => {
+      const choicesParam = route.query.choices;
+      const colorsParam = route.query.colors;
       const configParam = route.query.config;
-      if (configParam) {
+
+      if (choicesParam) {
+        // Handle simplified comma-separated format
+        const choiceList = choicesParam.split(',');
+        const colorList = colorsParam ? colorsParam.split(',') : [];
+
+        slices.value = choiceList.map((choice, index) => ({
+          text: choice.trim(),
+          color: colorList[index] ? (colorList[index].startsWith('#') ? colorList[index] : '#' + colorList[index]) : getRandomColor()
+        }));
+      } else if (configParam) {
+        // Handle legacy JSON format
         try {
-          // Decode the URL component and parse the JSON string
           const decodedConfig = decodeURIComponent(configParam);
           const parsedSlices = JSON.parse(decodedConfig);
 
-          // Basic validation: check if it's an array
           if (Array.isArray(parsedSlices)) {
-            // Further validation could be added here (e.g., check slice structure)
             slices.value = parsedSlices.map(slice => ({
-              color: slice.color || '#cccccc', // Default color if missing
-              text: slice.text || '?',       // Default text if missing
-              // Add other properties if needed by VueWheelSpinner, ensure defaults
+              color: slice.color || getRandomColor(),
+              text: slice.text || '?',
             }));
           } else {
-            console.error("Embed config is not an array:", parsedSlices);
-            slices.value = getDefaultSlices(); // Fallback
+            slices.value = getDefaultSlices();
           }
         } catch (error) {
           console.error("Error parsing embed config:", error);
-          slices.value = getDefaultSlices(); // Fallback on error
+          slices.value = getDefaultSlices();
         }
       } else {
-        console.warn("No config query parameter found for embed.");
-        slices.value = getDefaultSlices(); // Fallback if no config
+        slices.value = getDefaultSlices();
       }
+    };
+
+    const getRandomColor = () => {
+      return '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
     };
 
     const getDefaultSlices = () => {
@@ -69,15 +105,34 @@ export default {
       ];
     };
 
+    const spinWheel = () => {
+      if (isSpinning.value) return;
+      
+      const randomIndex = Math.floor(Math.random() * slices.value.length);
+      winnerIndex.value = randomIndex;
+      spinner.value.spinWheel(randomIndex);
+    };
+
+    const onSpinStart = () => {
+      isSpinning.value = true;
+    };
+
+    const onSpinEnd = (index) => {
+      isSpinning.value = false;
+    };
+
     onMounted(() => {
       parseConfigFromQuery();
     });
 
-    // Watch for route query changes if needed, though less common for embeds
-    // watch(() => route.query.config, parseConfigFromQuery);
-
     return {
-      slices
+      slices,
+      spinner,
+      isSpinning,
+      winnerIndex,
+      spinWheel,
+      onSpinStart,
+      onSpinEnd
     };
   }
 }
@@ -105,8 +160,58 @@ export default {
   max-height: none !important; /* Override any max-height */
 }
 
+/* Match the screenshot center button style */
+.spin-center-button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #348fcb, #2980b9);
+  border: 4px solid #ffffff;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  z-index: 20;
+}
+
+.spin-center-button:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.spin-center-button:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.spin-center-button:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
 .loading-message {
   font-family: sans-serif;
   color: #555;
+}
+
+/* Premium wheel outer glow mirroring the screenshot */
+:deep(.wheel-wrapper) {
+  padding: 30px;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 100%);
+  border-radius: 50%;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.05), 0 10px 30px rgba(0,0,0,0.1);
+  margin-top: -20px;
+}
+
+:deep(canvas) {
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 </style>

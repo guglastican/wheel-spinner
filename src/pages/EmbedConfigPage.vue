@@ -118,20 +118,17 @@ const generateEmbedCode = () => {
   }
 
   const currentSlices = wheelConfigurator.value.slices;
-  const configData = currentSlices.filter(slice => slice.included !== false).map(slice => ({
-    text: slice.text,
-    color: slice.color
-  }));
+  const includedSlices = currentSlices.filter(slice => slice.included !== false);
 
-  if (configData.length === 0) {
+  if (includedSlices.length === 0) {
       errorMessage.value = t('embed.errEmpty');
       embedCode.value = '';
       return;
   }
 
-  const configString = JSON.stringify(configData);
-  const encodedConfig = encodeURIComponent(configString);
-  const embedUrl = `${window.location.origin}/embed?config=${encodedConfig}`;
+  const choicesString = includedSlices.map(s => encodeURIComponent(s.text)).join(',');
+  const colorsString = includedSlices.map(s => s.color.replace('#', '')).join(',');
+  const embedUrl = `${window.location.origin}/embed?choices=${choicesString}&colors=${colorsString}`;
   
   iframeSrc.value = embedUrl;
   
