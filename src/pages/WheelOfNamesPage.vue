@@ -34,37 +34,37 @@
 
       <section class="seo-section seo-section--alt">
         <h2>{{ $t('namesPage.whyTitle') }}</h2>
-        <p>{{ $t('namesPage.whyDesc') }}</p>
+        <p v-html="$t('namesPage.whyDesc')"></p>
         <div class="feature-grid">
           <div class="feature-card">
             <div class="feature-icon">🎯</div>
             <h3>{{ $t('namesPage.features.1Title') }}</h3>
-            <p>{{ $t('namesPage.features.1Desc') }}</p>
+            <p v-html="$t('namesPage.features.1Desc')"></p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">⚡</div>
             <h3>{{ $t('namesPage.features.2Title') }}</h3>
-            <p>{{ $t('namesPage.features.2Desc') }}</p>
+            <p v-html="$t('namesPage.features.2Desc')"></p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🎨</div>
             <h3>{{ $t('namesPage.features.3Title') }}</h3>
-            <p>{{ $t('namesPage.features.3Desc') }}</p>
+            <p v-html="$t('namesPage.features.3Desc')"></p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">📊</div>
             <h3>{{ $t('namesPage.features.4Title') }}</h3>
-            <p>{{ $t('namesPage.features.4Desc') }}</p>
+            <p v-html="$t('namesPage.features.4Desc')"></p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">📱</div>
             <h3>{{ $t('namesPage.features.5Title') }}</h3>
-            <p>{{ $t('namesPage.features.5Desc') }}</p>
+            <p v-html="$t('namesPage.features.5Desc')"></p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🆓</div>
             <h3>{{ $t('namesPage.features.6Title') }}</h3>
-            <p>{{ $t('namesPage.features.6Desc') }}</p>
+            <p v-html="$t('namesPage.features.6Desc')"></p>
           </div>
         </div>
       </section>
@@ -92,15 +92,15 @@
         </div>
         <div class="faq-item">
           <h3>{{ $t('namesPage.faqs.2Title') }}</h3>
-          <p>{{ $t('namesPage.faqs.2Desc') }}</p>
+          <p v-html="$t('namesPage.faqs.2Desc')"></p>
         </div>
         <div class="faq-item">
           <h3>{{ $t('namesPage.faqs.3Title') }}</h3>
-          <p>{{ $t('namesPage.faqs.3Desc') }}</p>
+          <p v-html="$t('namesPage.faqs.3Desc')"></p>
         </div>
         <div class="faq-item">
           <h3>{{ $t('namesPage.faqs.4Title') }}</h3>
-          <p>{{ $t('namesPage.faqs.4Desc') }}</p>
+          <p v-html="$t('namesPage.faqs.4Desc')"></p>
         </div>
         <div class="faq-item">
           <h3>{{ $t('namesPage.faqs.5Title') }}</h3>

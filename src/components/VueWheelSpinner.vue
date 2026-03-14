@@ -435,7 +435,7 @@ defineExpose({
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 0;
   box-sizing: border-box;
 }
 

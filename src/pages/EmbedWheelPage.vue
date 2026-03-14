@@ -7,7 +7,7 @@
       :winner-index="winnerIndex"
       :cursor-position="'edge'"
       :cursor-angle="90"
-      :cursor-distance="5"
+      :cursor-distance="-15"
       :sounds="{
         spinning: '/sounds/tick.mp3',
         won: '/sounds/win.mp3'
@@ -215,12 +215,10 @@ export default {
   color: #555;
 }
 
-/* White circle around wheel */
 :deep(.wheel-wrapper) {
-  padding: 18px;
-  background: #ffffff;
+  padding: 0;
+  background: transparent;
   border-radius: 50%;
-  margin-top: -20px;
 }
 
 :deep(canvas) {

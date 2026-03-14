@@ -54,7 +54,7 @@
       </div>
     </div>
 
-    <div class="settings-container">
+    <div v-if="!isEmbed" class="settings-container">
       <div class="setting-group">
         <label>{{ $t('yesNoWheel.mode') }}</label>
         <div class="mode-buttons">
@@ -77,7 +77,7 @@
         <label>{{ $t('yesNoWheel.numInputSets') }}</label>
         <div class="input-sets">
           <button 
-            v-for="n in 7" 
+            v-for="n in 20" 
             :key="n" 
             class="input-set-btn" 
             :class="{ active: inputSets === n }"
@@ -97,12 +97,18 @@ import VueWheelSpinner from './VueWheelSpinner.vue'
 
 export default {
   name: "YesNoWheel",
-  metaInfo() {
-    return {
-      title: "Yes No Wheel - Make Decisions with Fun",
-      meta: [
-        { name: 'description', content: 'Spin the Yes No Wheel to make decisions or settle debates. Fun and easy to use decision-making tool with customizable options.' }
-      ]
+  props: {
+    initialMode: {
+      type: String,
+      default: 'binary'
+    },
+    initialInputSets: {
+      type: Number,
+      default: 4
+    },
+    isEmbed: {
+      type: Boolean,
+      default: false
     }
   },
   components: {
@@ -110,8 +116,8 @@ export default {
   },
   data() {
     return {
-      mode: 'binary', // 'binary' or 'ternary'
-      inputSets: 4,
+      mode: this.initialMode,
+      inputSets: this.initialInputSets,
       isSpinning: false,
       results: {
         yes: 0,
@@ -121,8 +127,8 @@ export default {
       lastResult: null,
       winnerIndex: 0,
       cursorPosition: 'edge',
-      cursorAngle: 90, // Changed default angle to bottom
-      cursorDistance: 0 // Moved from 10 to 0 to position cursor on the edge
+      cursorAngle: 90,
+      cursorDistance: -15
     }
   },
   computed: {
@@ -304,6 +310,7 @@ export default {
 
 .mode-buttons, .input-sets {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 

@@ -6,12 +6,12 @@
       <MainWheelSpinner />
       <div class="wheel-description">
         <h2>{{ $t('home.whatIsTitle') }}</h2>
-        <p>{{ $t('home.whatIsDesc') }}</p>
+        <p v-html="$t('home.whatIsDesc')"></p>
       </div>
 
       <div class="wheel-description">
         <h2>{{ $t('home.howWorksTitle') }}</h2>
-        <p>{{ $t('home.howWorksDesc') }}</p>
+        <p v-html="$t('home.howWorksDesc')"></p>
         <h3>{{ $t('home.stepsTitle') }}</h3>
         
         <div class="wheel-illustration">
@@ -56,7 +56,7 @@
           <li><strong><router-link :to="localePath('/food-wheel')">{{ $t('header.foodWheel') }}</router-link>:</strong> <span v-html="$t('home.otherToolsList.food') && $t('home.otherToolsList.food').split('</strong>') ? $t('home.otherToolsList.food').split('</strong>')[1] : ''"></span></li>
           <li><strong><router-link :to="localePath('/spin-the-wheel')">{{ $t('header.spinTheWheel') || 'Spin the Wheel' }}</router-link>:</strong> <span v-html="$t('home.otherToolsList.spin') && $t('home.otherToolsList.spin').split('</strong>') ? $t('home.otherToolsList.spin').split('</strong>')[1] : ''"></span></li>
         </ul>
-        <p>{{ $t('home.otherToolsOutro') }}</p>
+        <p v-html="$t('home.otherToolsOutro')"></p>
       </div>
     </main>
   </div>

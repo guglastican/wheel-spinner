@@ -88,36 +88,49 @@
         "otherToolsOutro": "Each specialized version takes the core concept of random selection and tailors it to meet distinct needs, making them handy for everything from organizing activities to settling debates with a fun, impartial twist."
     },
     "yesNoPage": {
-        "title": "Yes/No Wheel Picker",
-        "heroTitle": "Make Quick Yes/No Decisions",
-        "heroDesc": "Can't decide between yes and no? Let our wheel decide for you! Customize the wheel with different modes and input sets to get the answer you need.",
-        "howToTitle": "How to Use",
+        "title": "Yes or No Wheel Picker",
+        "heroTitle": "Yes or No Wheel — Make Quick Decisions Instantly",
+        "heroDesc": "Tired of overthinking? Let our premium <strong>Yes or No Wheel</strong> make the call! Whether you're settling a debate, picking a restaurant, or choosing your next workout, our high-precision randomizer provides a fun, fair, and instant answer every time.",
+        "howToTitle": "How to Use the Yes or No Wheel Spinner",
         "steps": {
-            "1": "Choose between \"YES or NO\" mode or \"YES NO or MAYBE\" mode",
-            "2": "Select the number of input sets (1-5) to adjust the probability distribution",
-            "3": "Click the \"Spin\" button to get your answer",
-            "4": "The result will be highlighted and counted in the boxes above",
-            "5": "Use the \"Reset Results\" button to clear all counters"
+            "1": "<strong>Pick Your Mode:</strong> Choose 'YES or NO' for quick binary flips, or add 'YES NO or MAYBE' for extra depth.",
+            "2": "<strong>Configure the Wheel:</strong> Use the 'Input Sets' slider to adjust the number of slices for a more visually dynamic experience.",
+            "3": "<strong>Initiate the Spin:</strong> Hit the center button and let our premium physics engine calculate your random result.",
+            "4": "<strong>Reveal the Winner:</strong> Watch the wheel glide to a stop on a perfectly unbiased outcome.",
+            "5": "<strong>Review Stats:</strong> Check the real-time counters to track your decision history across multiple spins."
         },
-        "seoTitle": "Why Use a Yes/No Wheel?",
-        "seoDesc1": "Life is full of choices, and sometimes the simplest ones are the hardest. Our Yes/No Wheel Spinner is the perfect decision maker when you're stuck. It's a fun and fast way to get a random choice, acting as a quick yes or no generator.",
+        "seoTitle": "Why Use Our Online Yes or No Wheel?",
+        "seoDesc1": "The <strong>Yes or No Wheel</strong> is the ultimate life-hack for overcoming decision fatigue. It transforms stressful choices into a fun, interactive experience, providing a neutral third-party answer whenever you're stuck between two (or three!) paths. Designed for speed, fairness, and reliability.",
         "seoList": {
-            "1": "<strong>Settle Debates:</strong> Quickly resolve friendly arguments.",
-            "2": "<strong>Make Quick Decisions:</strong> Decide on dinner, movie night, or simple daily choices effortlessly.",
-            "3": "<strong>Add Fun:</strong> Inject randomness and excitement into group activities.",
-            "4": "<strong>Overcome Indecision:</strong> Let the wheel break the deadlock when you're truly undecided."
+            "1": "<strong>Be Productive, Faster:</strong> Don't waste minutes on trivial choices. Spin, decide, and move forward.",
+            "2": "<strong>Guaranteed Fairness:</strong> Powered by an advanced randomizer, our wheel ensures every result is statistically impartial.",
+            "3": "<strong>Stunning Visuals:</strong> Enjoy a premium design with smooth animations and satisfying auditory feedback.",
+            "4": "<strong>Zero Friction:</strong> No downloads or sign-ups required. Access the world's best decision tool on any device."
         },
-        "seoDesc2": "Whether you need a simple yes or no, or want to add 'maybe' for more nuance, this fun decision tool provides an unbiased answer instantly. Spin the wheel and let fate decide!",
-        "moreTitle": "Beyond Simple Choices: More Uses",
-        "moreDesc": "While great for straightforward yes/no questions, this tool can be surprisingly versatile:",
+        "seoDesc2": "Whether you're deciding on a new purchase, a gym session, or a weekend plan, the <strong>Yes or No Wheel</strong> provides the clarity you need. It’s not just a game; it’s a high-performance productivity tool for your mind!",
+        "moreTitle": "Creative Ways to Use the Yes or No Picker",
+        "moreDesc": "The versatility of a random yes or no generator goes far beyond simple questions. Here are some innovative ways users integrate our wheel into their lives:",
         "moreList": {
-            "1": "<strong>Learning & Study Aid:</strong> Quiz yourself! Frame questions with a yes/no answer and spin.",
-            "2": "<strong>Creative Prompts:</strong> Stuck on a story or project? Use the wheel for binary creative decisions.",
-            "3": "<strong>Breaking Habits:</strong> Trying to decide whether to indulge in a minor temptation? Let the wheel add a layer of chance.",
-            "4": "<strong>Fair Turn-Taking:</strong> Use it in games to decide who goes next."
+            "1": "<strong>Gamified Productivity:</strong> Use it to decide if you should start a new task now or take a 5-minute break.",
+            "2": "<strong>Party Games:</strong> Use it as a quick randomizer for \"Truth or Dare\" style binary choices.",
+            "3": "<strong>Study Tool:</strong> Create a self-quiz where \"Yes\" means you got the answer right and \"No\" means you need to review.",
+            "4": "<strong>Overcome Decision Fatigue:</strong> Save your mental energy for big choices by letting the wheel handle the trivial ones."
         },
-        "powerTitle": "The Power of Randomness",
-        "powerDesc": "Our wheel uses a reliable pseudo-random number generator to ensure each spin is fair and unpredictable. This removes personal bias from simple decisions, making it a truly impartial decision maker. Sometimes, leaving small choices to chance can free up mental energy for more important matters! The optional 'Maybe' adds flexibility for those times when a simple yes or no isn't quite enough."
+        "powerTitle": "The Science of Random Decision Making",
+        "powerDesc": "Our <strong>Yes or No Wheel</strong> is built on a robust pseudo-random number generator (PRNG) that guarantees fairness. In the field of psychology, leaving minor decisions to external randomizers can significantly reduce stress and 'decision fatigue.' By trusting the wheel, you're not just getting an answer—you're freeing up your mind for what truly matters. Plus, the suspense of the spin makes even the smallest choices feel like a mini-game!",
+        "faqTitle": "Yes or No Wheel — Frequently Asked Questions",
+        "faqs": {
+            "1Title": "Is the Yes or No Wheel truly random?",
+            "1Desc": "Yes! Our wheel uses high-quality randomization algorithms to ensure that every spin is independent and fair. Every sliver of the wheel has an equal chance of winning based on the number of input sets you choose.",
+            "2Title": "Can I customize the Yes No wheel?",
+            "2Desc": "Absolutely. You can choose between two-option (Yes/No) and three-option (Yes/No/Maybe) modes. You can also adjust the number of 'sets' on the wheel to change how it looks.",
+            "3Title": "What is the 'Maybe' mode for?",
+            "3Desc": "The 'Maybe' mode adds a third possibility for those tricky decisions that aren't strictly black and white. It's perfect for when you need a 'draw' or a 'wait and see' result.",
+            "4Title": "Is this tool free to use?",
+            "4Desc": "Yes, our Yes or No Wheel is 100% free and requires no sign-up or downloads. You can spin as many times as you like!",
+            "5Title": "Does it work on mobile devices?",
+            "5Desc": "Yes, the tool is fully responsive and designed to work seamlessly on all modern mobile browsers, including iPhone and Android."
+        }
     },
     "foodPage": {
         "title": "Food Wheel",

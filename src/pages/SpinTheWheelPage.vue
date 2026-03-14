@@ -34,39 +34,39 @@
 
       <section class="seo-section seo-section--alt">
         <h2>{{ $t('spinPage.whyTitle') }}</h2>
-        <p>{{ $t('spinPage.whyDesc') }}</p>
+        <p v-html="$t('spinPage.whyDesc')"></p>
         <div class="feature-grid">
           <div class="feature-card">
             <div class="feature-icon">⚙️</div>
             <h3>{{ $t('spinPage.features.1Title') }}</h3>
-            <p>{{ $t('spinPage.features.1Desc') }}</p>
+            <p v-html="$t('spinPage.features.1Desc')"></p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">⚡</div>
             <h3>{{ $t('spinPage.features.2Title') }}</h3>
-            <p>{{ $t('spinPage.features.2Desc') }}</p>
+            <p v-html="$t('spinPage.features.2Desc')"></p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">💾</div>
             <h3>{{ $t('spinPage.features.3Title') }}</h3>
-            <p>{{ $t('spinPage.features.3Desc') }}</p>
+            <p v-html="$t('spinPage.features.3Desc')"></p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🎲</div>
             <h3>{{ $t('spinPage.features.4Title') }}</h3>
-            <p>{{ $t('spinPage.features.4Desc') }}</p>
+            <p v-html="$t('spinPage.features.4Desc')"></p>
           </div>
         </div>
       </section>
 
       <section class="seo-section">
         <h2>{{ $t('spinPage.article.sec1Title') }}</h2>
-        <p>{{ $t('spinPage.article.sec1Text') }}</p>
+        <p v-html="$t('spinPage.article.sec1Text')"></p>
       </section>
 
       <section class="seo-section seo-section--alt">
         <h2>{{ $t('spinPage.article.sec2Title') }}</h2>
-        <p>{{ $t('spinPage.article.sec2Text') }}</p>
+        <p v-html="$t('spinPage.article.sec2Text')"></p>
       </section>
 
       <section class="seo-section">

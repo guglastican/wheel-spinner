@@ -55,9 +55,6 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <p>&copy; {{ new Date().getFullYear() }} Vue Wheel Spinner. All rights reserved.</p>
-    </footer>
   </div>
 </template>
 

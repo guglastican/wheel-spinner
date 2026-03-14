@@ -5,6 +5,7 @@ import i18n, { SUPPORTED_LOCALES } from './i18n.js';
 import HomePage from './pages/HomePage.vue';
 import YesNoWheelPage from './pages/YesNoWheelPage.vue';
 import EmbedWheelPage from './pages/EmbedWheelPage.vue';
+import EmbedYesNoWheelPage from './pages/EmbedYesNoWheelPage.vue';
 import EmbedConfigPage from './pages/EmbedConfigPage.vue';
 import WheelOfNamesPage from './pages/WheelOfNamesPage.vue';
 import FoodWheelPage from './pages/FoodWheelPage.vue';
@@ -32,12 +33,50 @@ const baseRoutes = [
       canonicalPath: 'yes-no-wheel',
       titleKey: 'yesNoPage.title',
       descKey: 'yesNoPage.heroDesc',
-      robots: 'index, follow'
+      robots: 'index, follow',
+      schema: {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is the Yes or No Wheel truly random?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! Our wheel uses high-quality randomization algorithms to ensure that every spin is independent and fair. Every sliver of the wheel has an equal chance of winning based on the number of input sets you choose."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I customize the Yes No wheel?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. You can choose between two-option (Yes/No) and three-option (Yes/No/Maybe) modes. You can also adjust the number of 'sets' on the wheel to change how it looks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the 'Maybe' mode for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The 'Maybe' mode adds a third possibility for those tricky decisions that aren't strictly black and white. It's perfect for when you need a 'draw' or a 'wait and see' result."
+            }
+          }
+        ]
+      }
     }
   },
   {
     path: 'embed',
     component: EmbedWheelPage,
+    meta: {
+      titleKey: 'embed.settingsTitle',
+      robots: 'noindex, nofollow'
+    }
+  },
+  {
+    path: 'embed-yes-no',
+    component: EmbedYesNoWheelPage,
     meta: {
       titleKey: 'embed.settingsTitle',
       robots: 'noindex, nofollow'
@@ -172,6 +211,15 @@ router.afterEach((to) => {
       document.head.appendChild(metaRobots);
     }
     metaRobots.content = to.meta.robots || 'index, follow';
+
+    // Inject JSON-LD Schema
+    document.querySelectorAll('script[type="application/ld+json"]').forEach(el => el.remove());
+    if (to.meta.schema) {
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.text = JSON.stringify(to.meta.schema);
+      document.head.appendChild(script);
+    }
   });
 });
 

@@ -34,37 +34,37 @@
 
       <section class="seo-section seo-section--alt">
         <h2>{{ $t('foodPage.whyTitle') }}</h2>
-        <p>{{ $t('foodPage.whyDesc') }}</p>
+        <p v-html="$t('foodPage.whyDesc')"></p>
         <div class="feature-grid">
           <div class="feature-card">
             <div class="feature-icon">🍔</div>
             <h3>{{ $t('foodPage.features.1Title') || $t('foodPage.features.debateTitle') }}</h3>
-            <p>{{ $t('foodPage.features.1Desc') || $t('foodPage.features.debateDesc') }}</p>
+            <p v-html="$t('foodPage.features.1Desc') || $t('foodPage.features.debateDesc')"></p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">⚡</div>
             <h3>{{ $t('foodPage.features.2Title') || $t('foodPage.features.setupTitle') }}</h3>
-            <p>{{ $t('foodPage.features.2Desc') || $t('foodPage.features.setupDesc') }}</p>
+            <p v-html="$t('foodPage.features.2Desc') || $t('foodPage.features.setupDesc')"></p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🎨</div>
             <h3>{{ $t('foodPage.features.3Title') || $t('foodPage.features.customTitle') }}</h3>
-            <p>{{ $t('foodPage.features.3Desc') || $t('foodPage.features.customDesc') }}</p>
+            <p v-html="$t('foodPage.features.3Desc') || $t('foodPage.features.customDesc')"></p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">📊</div>
             <h3>{{ $t('foodPage.features.4Title') || $t('foodPage.features.fairTitle') }}</h3>
-            <p>{{ $t('foodPage.features.4Desc') || $t('foodPage.features.fairDesc') }}</p>
+            <p v-html="$t('foodPage.features.4Desc') || $t('foodPage.features.fairDesc')"></p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">📱</div>
             <h3>{{ $t('foodPage.features.5Title') || $t('foodPage.features.mobileTitle') }}</h3>
-            <p>{{ $t('foodPage.features.5Desc') || $t('foodPage.features.mobileDesc') }}</p>
+            <p v-html="$t('foodPage.features.5Desc') || $t('foodPage.features.mobileDesc')"></p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🆓</div>
             <h3>{{ $t('foodPage.features.6Title') || $t('foodPage.features.freeTitle') }}</h3>
-            <p>{{ $t('foodPage.features.6Desc') || $t('foodPage.features.freeDesc') }}</p>
+            <p v-html="$t('foodPage.features.6Desc') || $t('foodPage.features.freeDesc')"></p>
           </div>
         </div>
       </section>
@@ -73,15 +73,15 @@
         <h2>{{ $t('foodPage.faqTitle') }}</h2>
         <div class="faq-item">
           <h3>{{ $t('foodPage.faqs.1Title') }}</h3>
-          <p>{{ $t('foodPage.faqs.1Desc') }}</p>
+          <p v-html="$t('foodPage.faqs.1Desc')"></p>
         </div>
         <div class="faq-item">
           <h3>{{ $t('foodPage.faqs.2Title') }}</h3>
-          <p>{{ $t('foodPage.faqs.2Desc') }}</p>
+          <p v-html="$t('foodPage.faqs.2Desc')"></p>
         </div>
         <div class="faq-item">
           <h3>{{ $t('foodPage.faqs.3Title') }}</h3>
-          <p>{{ $t('foodPage.faqs.3Desc') }}</p>
+          <p v-html="$t('foodPage.faqs.3Desc')"></p>
         </div>
       </section>
 

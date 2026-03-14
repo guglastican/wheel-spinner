@@ -228,7 +228,7 @@ export default {
 
       // Cursor settings
       cursorAngle: 90,
-      cursorDistance: 0, // Set default distance to 260
+      cursorDistance: -15, // Set default distance to -15
       cursorPosition: 'edge',
 
     }
@@ -412,9 +412,9 @@ export default {
     width: 100%;
     max-width: 500px;
     margin: 20px auto;
-    border: 5px solid #e0e0e0;
+    border: none;
     border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
     aspect-ratio: 1 / 1;
     display: flex;
     justify-content: center;

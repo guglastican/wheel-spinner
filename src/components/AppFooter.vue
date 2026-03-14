@@ -4,7 +4,6 @@
       
       <div class="footer-section">
         <h3 class="footer-title">{{ $t('footer.randoWheel') }}</h3>
-        <p class="copyright">{{ $t('footer.copyright', { year: new Date().getFullYear() }) }}</p>
         <div class="footer-links">
           <a href="/privacy-policy.html" target="_blank">{{ $t('footer.privacyPolicy') }}</a>
           <a href="/terms-and-conditions.html" target="_blank">{{ $t('footer.termsConditions') }}</a>
