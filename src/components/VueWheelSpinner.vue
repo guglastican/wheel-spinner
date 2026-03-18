@@ -37,11 +37,11 @@ const props = defineProps({
   },
   extraSpins: {
     type: Number,
-    default: 10
+    default: 15
   },
   spinDuration: {
     type: Number,
-    default: 8000
+    default: 14000
   },
   cursorAngle: {
     type: Number,
@@ -123,7 +123,8 @@ function getSliceAngles(sliceIndex, currentCanvasAngle) {
 }
 
 function getEaseOutQuint(x) {
-  return 1 - Math.pow(1 - x, 5);
+  // Lower exponent (3) with higher spin count makes the slow-down much more visible and dramatic
+  return 1 - Math.pow(1 - x, 3);
 }
 
 function drawSlice(context, centerX, centerY, radius, startAngle, endAngle, fillColor) {

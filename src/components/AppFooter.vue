@@ -16,6 +16,7 @@
           <router-link :to="localePath('/wheel-of-names')">{{ $t('header.wheelOfNames') }}</router-link>
           <router-link :to="localePath('/yes-no-wheel')">{{ $t('header.yesNoWheel') }}</router-link>
           <router-link :to="localePath('/food-wheel')">{{ $t('header.foodWheel') }}</router-link>
+          <router-link :to="localePath('/twister-spinner')">{{ $t('header.twisterSpinner') || 'Twister Spinner' }}</router-link>
           <router-link :to="localePath('/spin-the-wheel')">{{ $t('header.spinTheWheel') || 'Spin the Wheel' }}</router-link>
         </div>
       </div>

@@ -7,9 +7,11 @@ import YesNoWheelPage from './pages/YesNoWheelPage.vue';
 import EmbedWheelPage from './pages/EmbedWheelPage.vue';
 import EmbedYesNoWheelPage from './pages/EmbedYesNoWheelPage.vue';
 import EmbedConfigPage from './pages/EmbedConfigPage.vue';
+import EmbedTwisterSpinnerPage from './pages/EmbedTwisterSpinnerPage.vue';
 import WheelOfNamesPage from './pages/WheelOfNamesPage.vue';
 import FoodWheelPage from './pages/FoodWheelPage.vue';
 import SpinTheWheelPage from './pages/SpinTheWheelPage.vue';
+import TwisterSpinnerPage from './pages/TwisterSpinnerPage.vue';
 import App from './App.vue';
 
 // Create regex to match any of the non-English locale codes for dynamic routing
@@ -83,6 +85,14 @@ const baseRoutes = [
     }
   },
   {
+    path: 'embed-twister-spinner',
+    component: EmbedTwisterSpinnerPage,
+    meta: {
+      titleKey: 'embed.settingsTitle',
+      robots: 'noindex, nofollow'
+    }
+  },
+  {
     path: 'configure-embed',
     component: EmbedConfigPage,
     meta: {
@@ -117,6 +127,16 @@ const baseRoutes = [
       canonicalPath: 'spin-the-wheel',
       titleKey: 'spinPage.title',
       descKey: 'spinPage.heroDesc',
+      robots: 'index, follow'
+    }
+  },
+  {
+    path: 'twister-spinner',
+    component: TwisterSpinnerPage,
+    meta: {
+      canonicalPath: 'twister-spinner',
+      titleKey: 'twisterPage.title',
+      descKey: 'twisterPage.seoDesc',
       robots: 'index, follow'
     }
   }

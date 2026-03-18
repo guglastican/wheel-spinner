@@ -117,6 +117,11 @@
         <h2>{{ $t('exploreMore.title') }}</h2>
         <p>{{ $t('exploreMore.descDefault') }}</p>
         <div class="tool-cards">
+          <router-link :to="localePath('/twister-spinner')" class="tool-card">
+            <div class="tool-card-icon">🌪️</div>
+            <h3>{{ $t('exploreMore.tsTitle') || 'Twister Spinner' }}</h3>
+            <p>{{ $t('exploreMore.tsDesc') || 'A custom wheel generator to call out moves for your party game.' }}</p>
+          </router-link>
           <router-link :to="localePath('/wheel-of-names')" class="tool-card">
             <div class="tool-card-icon">👩‍🏫</div>
             <h3>{{ $t('exploreMore.wonTitle') }}</h3>

@@ -5,6 +5,7 @@
         "yesNoWheel": "Yes/No Wheel",
         "embed": "Embed",
         "foodWheel": "Food Wheel",
+        "twisterSpinner": "Twister Spinner",
         "spinTheWheel": "Spin the Wheel",
         "configureEmbed": "Configure Embeddable Wheel"
     },
@@ -49,6 +50,8 @@
         "wonDesc": "A perfect companion for giveaways, classroom participation, or assigning tasks.",
         "ynwTitle": "Yes / No Wheel",
         "ynwDesc": "A simple yes or no spinner to handle quick binary choices instantly.",
+        "tsTitle": "Twister Spinner",
+        "tsDesc": "A custom wheel generator to call out moves for your party game.",
         "stwTitle": "Spin the Wheel",
         "stwDesc": "A fully customizable random picker for any situation."
     },
@@ -83,6 +86,7 @@
             "names": "<strong>Name Pickers / Student Selectors:</strong> Commonly used by educators to randomly select individuals, sometimes called \"Wheel of Names\" or \"Random Name Picker\".",
             "yesno": "<strong>Yes/No Wheels:</strong> For simple binary decisions.",
             "food": "<strong>Food Wheel:</strong> Unsure what to eat? Spin the food wheel for quick random meal decisions.",
+            "twister": "<strong>Twister Spinner:</strong> A convenient way to randomly select game moves like 'Right Hand Red'.",
             "spin": "<strong>Spin the Wheel:</strong> A fully customizable random picker for any situation."
         },
         "otherToolsOutro": "Each specialized version takes the core concept of random selection and tailors it to meet distinct needs, making them handy for everything from organizing activities to settling debates with a fun, impartial twist."
@@ -176,6 +180,76 @@
             "2Desc": "Yes. Every spin uses a robust pseudo-random algorithm to guarantee that each food option has an equal chance.",
             "3Title": "Can I save my favorite food lists?",
             "3Desc": "As long as you keep the browser tab open, your lists remain active. We recommend bookmarking the page."
+        }
+    },
+    "twisterPage": {
+        "title": "Twister Spinner",
+        "heroTitle": "Twister Spinner — Random Move Generator",
+        "heroDesc": "Lost your Twister spinner? Use our free online <strong>Twister Spinner</strong> to call out moves for your game! Just hit spin, and get instant random commands like 'Left Hand Blue' or 'Right Foot Red'.",
+        "howToTitle": "How to Use the Twister Spinner",
+        "steps": {
+            "1": "<strong>Gather Your Friends</strong> — Set up the mat and have everyone get into position.",
+            "2": "<strong>Spin the Wheel</strong> — Click <em>Spin the Wheel</em> or the centre button on the wheel.",
+            "3": "<strong>Call the Result</strong> — The winning move (e.g., 'Right Hand Red') appears above the wheel.",
+            "4": "<strong>Keep Playing</strong> — Continue spinning until only one person is left standing!"
+        },
+        "seoTitle": "What Is a Digital Twister Spinner?",
+        "seoDesc": "A <strong>Digital Twister Spinner</strong> is an interactive wheel designed to replace the physical cardboard spinner in the classic party game. It randomly selects one of 16 possible moves involving a body part (Left Hand, Right Hand, Left Foot, Right Foot) and a colour (Red, Blue, Yellow, Green).",
+        "seoList": {
+            "1": "<strong>Lost pieces replacement</strong> — No need to stop the game just because you lost the original spinner.",
+            "2": "<strong>Party ready</strong> — Everyone can see the spin clearly on a phone or cast to a TV screen.",
+            "3": "<strong>Fair and random</strong> — cryptographically seeded randomness prevents cheating or biased spins."
+        },
+        "whyTitle": "Why Use Our Twister Spinner?",
+        "whyDesc": "Our online spinner offers several advantages over a physical one:",
+        "features": {
+            "1Title": "Always Available",
+            "1Desc": "No need to download anything. Access the spinner from any smartphone, tablet, or laptop.",
+            "2Title": "Clear Graphics",
+            "2Desc": "Bright colours and clear text make it easy for the caller to read the move across the room.",
+            "3Title": "Fair Results",
+            "3Desc": "Cryptographically secure randomness means you're actually getting an unbiased roll, with no 'stuck' arrows.",
+            "4Title": "100% Free",
+            "4Desc": "Our tool is always free, with no paywalls or required sign-ups."
+        },
+        "faqTitle": "Frequently Asked Questions",
+        "faqs": {
+            "1Title": "Is the Twister Spinner completely free to use?",
+            "1Desc": "Yes! The Twister Spinner is completely free to use with no hidden fees or account creation required.",
+            "2Title": "Does the online spinner work on my phone?",
+            "2Desc": "Absolutely. It's fully responsive, so you can easily use it on any mobile device while playing.",
+            "3Title": "Are the results truly random?",
+            "3Desc": "Yes. Every spin uses a robust algorithm to guarantee that each limb and colour combination has an equal chance of appearing."
+        },
+        "article": {
+            "sec1Title": "Why Use a Digital Twister Spinner Game?",
+            "sec1Text": "The classic physical Twister game is incredibly fun, but the cardboard spinner that comes with it is notorious for getting bent, torn, or completely lost. Instead of stopping the fun when you can't find the spinner, you can launch a digital Twister Spinner right on your phone or tablet. A digital version provides the exact same 16 combinations (Left Hand, Right Hand, Left Foot, Right Foot in Red, Blue, Yellow, and Green) without the hassle of a physical board getting stuck. It's completely randomized, meaning the game remains entirely fair for all players until someone inevitably falls over.",
+            "sec2Title": "Bringing New Spin to Classic Party Games",
+            "sec2Text": "A digital spinner isn't just a replacement; it can actually enhance your gathering. When everyone is tangled up on the mat, reading a phone screen or casting it to a smart TV allows the caller to easily announce the moves. Plus, our high-quality cryptographically seeded randomization ensures true randomness, removing any arguments over whether an arrow was 'stuck on the line'. The game flows faster, and players can focus entirely on not falling down.",
+            "sec3Title": "Combine Party Games with the Wheel of Names",
+            "sec3TextStart": "If you are hosting a large party with a big group, you probably can't fit everyone on the Twister mat at once. A great way to manage turns fairly is by using our ",
+            "sec3LinkText": "Wheel of Names",
+            "sec3TextMiddle": " tool to randomly decide who gets to play the next round. You simply enter everyone's names, and spin the wheel to select the next contestants. Our ",
+            "sec3LinkText2": "Wheel of Names",
+            "sec3TextEnd": " also includes a handy elimination feature, ensuring that everyone gets a turn to play before anyone plays twice.",
+            "sec4Title": "Take a Break and Spin the Food Wheel",
+            "sec4TextStart": "Playing party games all night works up a serious appetite. When the game of Twister wraps up and it's time to order food, you might find that no one can agree on what to eat. Skip the long debate by using the ",
+            "sec4LinkText": "Food Wheel",
+            "sec4TextMiddle": ". Just enter the top restaurant options near your party, give it a quick spin, and the decision is made instantly. For convenience, the standalone ",
+            "sec4LinkText2": "Food Wheel",
+            "sec4TextEnd": " is optimized for mobile, so you can do it right from your phone before placing the delivery order.",
+            "sec5Title": "Settle Debates Instantly",
+            "sec5TextStart": "Sometimes during party games, disputes happen. Maybe someone's knee accidentally touched the mat, or perhaps two players want the exact same colored circle at the same time. If a friendly argument breaks out, the fastest way to resolve it is with a coin flip—or even better, a digital ",
+            "sec5LinkText": "Yes/No Wheel",
+            "sec5TextMiddle": ". It takes the responsibility off the host and leaves the final ruling entirely up to chance. The ",
+            "sec5LinkText2": "Yes/No Wheel",
+            "sec5TextEnd": " can also be customized to include a 'Maybe' option if you want to force a draw or ask players to replay the turn.",
+            "sec6Title": "Customize Everything for Your Next Game Night",
+            "sec6TextStart": "While the Twister Spinner is perfect for its specific game, you might want to create your own unique drinking games, truth-or-dare challenges, or party rules. This is where the core ",
+            "sec6LinkText": "Random Wheel Spinner",
+            "sec6TextMiddle": " shines. You can put literally anything onto the wheel's slices, change all the colors to match an event theme, and even adjust the odds if you want some challenges to appear less frequently. By taking advantage of the main ",
+            "sec6LinkText2": "main spinner tool",
+            "sec6TextEnd": ", you can design a fully custom game night experience that your guests will never forget."
         }
     },
     "spinPage": {
