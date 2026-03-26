@@ -13,7 +13,8 @@
     "copyright": "© {year} 휠 스피너. 모든 권리 보유.",
     "privacyPolicy": "개인 정보 보호 정책",
     "termsConditions": "이용약관",
-    "otherWheels": "기타 바퀴"
+    "otherWheels": "기타 바퀴",
+    "languages": "언어"
   },
   "mainWheel": {
     "winner": "우승자: {text} 🎉",

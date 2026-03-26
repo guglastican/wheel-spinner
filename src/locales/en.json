@@ -14,7 +14,8 @@
         "copyright": "© {year} Wheel Spinner. All rights reserved.",
         "privacyPolicy": "Privacy Policy",
         "termsConditions": "Terms & Conditions",
-        "otherWheels": "Other Wheels"
+        "otherWheels": "Other Wheels",
+        "languages": "Languages"
     },
     "mainWheel": {
         "winner": "Winner: {text} 🎉",
