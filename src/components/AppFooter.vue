@@ -21,15 +21,6 @@
         </div>
       </div>
 
-      <div class="footer-section full-width">
-        <h3 class="footer-title">{{ $t('footer.languages') || 'Languages' }}</h3>
-        <div class="language-links">
-          <a v-for="loc in SUPPORTED_LOCALES" :key="loc" :href="getLangPath(loc)" class="lang-link">
-            {{ getLangName(loc) }}
-          </a>
-        </div>
-      </div>
-
     </div>
   </footer>
 </template>
@@ -37,7 +28,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
 import { useRoute } from 'vue-router';
-import { SUPPORTED_LOCALES } from '../i18n.js';
+
 
 const { locale } = useI18n();
 const route = useRoute();
@@ -48,26 +39,7 @@ const localePath = (path) => {
   return `/${currentLang}${path}`;
 };
 
-const getLangPath = (targetLoc) => {
-  let currentPath = route.path;
-  const localePrefixRegex = new RegExp(`^/(${SUPPORTED_LOCALES.join('|')})(/|$)`);
-  if (localePrefixRegex.test(currentPath)) {
-    currentPath = currentPath.replace(localePrefixRegex, '/');
-  }
-  if (targetLoc === 'en') return currentPath;
-  return `/${targetLoc}${currentPath === '/' ? '' : currentPath}`;
-};
 
-const getLangName = (loc) => {
-  const names = {
-    'en': 'English', 'es': 'Español', 'de': 'Deutsch', 'ja': '日本語', 'fr': 'Français',
-    'pt': 'Português', 'zh-CN': '简体中文', 'ar': 'العربية', 'it': 'Italiano', 'ru': 'Русский',
-    'hi': 'हिन्दी', 'nl': 'Nederlands', 'tr': 'Türkçe', 'ko': '한국어', 'id': 'Bahasa Indonesia',
-    'vi': 'Tiếng Việt', 'pl': 'Polski', 'th': 'ไทย', 'sv': 'Svenska', 'el': 'Ελληνικά',
-    'ro': 'Română', 'cs': 'Čeština', 'hu': 'Magyar', 'bn': 'বাংলা', 'he': 'עברית'
-  };
-  return names[loc] || loc.toUpperCase();
-};
 </script>
 
 <style scoped>
