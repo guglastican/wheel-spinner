@@ -6,14 +6,16 @@
     "embed": "Göm",
     "foodWheel": "Yemek Çarkı",
     "configureEmbed": "Katıştırılabilir Tekerleği Yapılandır",
-    "spinTheWheel": "Çarkı Döndür"
+    "spinTheWheel": "Çarkı Döndür",
+    "twisterSpinner": "Twister Döndürücü"
   },
   "footer": {
     "randoWheel": "Rando Çarkı",
     "copyright": "© {year} Çark Döndürücü. Her hakkı saklıdır.",
     "privacyPolicy": "Gizlilik Politikası",
     "termsConditions": "Şartlar ve Koşullar",
-    "otherWheels": "Diğer Tekerlekler"
+    "otherWheels": "Diğer Tekerlekler",
+    "languages": "Diller"
   },
   "mainWheel": {
     "winner": "Kazanan: {text} 🎉",
@@ -50,7 +52,9 @@
     "ynwTitle": "Evet / Hayır Tekerlek",
     "ynwDesc": "Hızlı ikili seçimleri anında gerçekleştirmek için basit bir evet veya hayır döndürücü.",
     "stwTitle": "Çarkı Döndür",
-    "stwDesc": "Her durum için tamamen özelleştirilebilir rastgele seçici."
+    "stwDesc": "Her durum için tamamen özelleştirilebilir rastgele seçici.",
+    "tsTitle": "Twister Döndürücü",
+    "tsDesc": "Parti oyununuz için hamleleri bildiren özel bir tekerlek oluşturucu."
   },
   "home": {
     "mainTitle": "Rastgele Çark Döndürücü",
@@ -83,7 +87,8 @@
       "names": "<strong>Ad Seçiciler / Öğrenci Seçiciler:</strong> Genellikle eğitimciler tarafından bireyleri rastgele seçmek için kullanılır; bazen \"İsim Çarkı\" veya \"Rastgele Ad Seçici\" olarak da adlandırılır.",
       "yesno": "<strong>Evet/Hayır Çarkları:</strong> Basit ikili kararlar için.",
       "food": "<strong>Yemek Çarkı:</strong> Ne yiyeceğinizden emin değil misiniz? Hızlı, rastgele yemek kararları için yemek çarkını döndürün.",
-      "spin": "<strong>Çarkı Döndür:</strong> Her duruma uygun tamamen özelleştirilebilir rastgele seçici."
+      "spin": "<strong>Çarkı Döndür:</strong> Her duruma uygun tamamen özelleştirilebilir rastgele seçici.",
+      "twister": "<strong>Twister Spinner:</strong> 'Sağ El Kırmızı' gibi oyun hareketlerini rastgele seçmenin kullanışlı bir yolu."
     },
     "otherToolsOutro": "Her özel sürüm, temel rastgele seçim konseptini alır ve onu farklı ihtiyaçları karşılayacak şekilde uyarlar; bu da onları etkinliklerin organize edilmesinden tartışmaların eğlenceli ve tarafsız bir şekilde sonuçlandırılmasına kadar her şey için kullanışlı hale getirir."
   },
@@ -117,7 +122,20 @@
       "4": "<strong>Adil Sıra Alma:</strong> Sırada kimin olacağına karar vermek için bunu oyunlarda kullanın."
     },
     "powerTitle": "Rastgeleliğin Gücü",
-    "powerDesc": "Çarkımız, her dönüşün adil ve öngörülemez olmasını sağlamak için güvenilir bir sözde rastgele sayı üreteci kullanır. Bu, basit kararlarda kişisel önyargıyı ortadan kaldırır ve onu gerçekten tarafsız bir karar verici haline getirir. Bazen küçük seçimleri şansa bırakmak, zihinsel enerjiyi daha önemli konulara serbest bırakabilir! İsteğe bağlı 'Belki', basit bir evet veya hayırın yeterli olmadığı zamanlar için esneklik sağlar."
+    "powerDesc": "Çarkımız, her dönüşün adil ve öngörülemez olmasını sağlamak için güvenilir bir sözde rastgele sayı üreteci kullanır. Bu, basit kararlarda kişisel önyargıyı ortadan kaldırır ve onu gerçekten tarafsız bir karar verici haline getirir. Bazen küçük seçimleri şansa bırakmak, zihinsel enerjiyi daha önemli konulara serbest bırakabilir! İsteğe bağlı 'Belki', basit bir evet veya hayırın yeterli olmadığı zamanlar için esneklik sağlar.",
+    "faqTitle": "Evet veya Hayır Çarkı — Sıkça Sorulan Sorular",
+    "faqs": {
+      "1Title": "Evet veya Hayır Çarkı gerçekten rastgele mi?",
+      "1Desc": "Evet! Çarkımız, her dönüşün bağımsız ve adil olmasını sağlamak için yüksek kaliteli rastgele algoritmalar kullanır. Çarkın her şeridinin, seçtiğiniz girdi seti sayısına bağlı olarak eşit kazanma şansı vardır.",
+      "2Title": "Evet Hayır çarkını özelleştirebilir miyim?",
+      "2Desc": "Kesinlikle. İki seçenekli (Evet/Hayır) ve üç seçenekli (Evet/Hayır/Belki) modlar arasında seçim yapabilirsiniz. Görünüşünü değiştirmek için çarktaki 'setlerin' sayısını da ayarlayabilirsiniz.",
+      "3Title": "'Belki' modu ne içindir?",
+      "3Desc": "'Belki' modu, tamamen siyah ve beyaz olmayan zorlu kararlar için üçüncü bir olasılık ekler. 'Beraberlik' veya 'bekle ve gör' sonucuna ihtiyaç duyduğunuz zamanlar için mükemmeldir.",
+      "4Title": "Bu aracın kullanımı ücretsiz mi?",
+      "4Desc": "Evet, Evet veya Hayır Çarkımız %100 ücretsizdir ve kaydolma veya indirme gerektirmez. İstediğiniz kadar döndürebilirsiniz!",
+      "5Title": "Mobil cihazlarda çalışıyor mu?",
+      "5Desc": "Evet, araç tamamen duyarlıdır ve iPhone ve Android dahil tüm modern mobil tarayıcılarda sorunsuz çalışacak şekilde tasarlanmıştır."
+    }
   },
   "foodPage": {
     "title": "Yemek Çarkı",
@@ -239,7 +257,17 @@
     "codeDesc": "Bu yapılandırılmış tekerleği web sitenize yerleştirmek için aşağıdaki kodu kopyalayın:",
     "generateBtn": "Ekleme Kodu Oluştur",
     "errConfigure": "Kod oluşturulurken hata oluştu. Lütfen önce tekerleği yapılandırın.",
-    "errEmpty": "Ekleme kodunu oluşturmadan önce lütfen tekerleğe en az bir öğe ekleyin."
+    "errEmpty": "Ekleme kodunu oluşturmadan önce lütfen tekerleğe en az bir öğe ekleyin.",
+    "title": "Rastgele Çark Nasıl Yerleştirilir",
+    "heroDesc": "Rastgele tekerleğimizi web sitenize veya blogunuza kolayca yerleştirin. HTML iframe kodunu oluşturmak için aşağıdaki basit adımları izleyin.",
+    "step1Title": "1. Adım: Girişlerinizi Girin",
+    "step1Desc": "Öncelikle direksiyonunuzda olmasını istediğiniz öğeleri yapılandırın. İsimleri, seçenekleri veya döndürmek istediğiniz herhangi bir şeyi ekleyin ve renklerini özelleştirin.",
+    "step2Title": "2. Adım: Yerleştirme Ayarlarını Özelleştirin",
+    "step2Desc": "Ardından, gömülü tekerleğinizin boyutunu ve erişilebilirlik başlığını ayarlayın.",
+    "step3Title": "3. Adım: Ekleme Kodunuzu Kopyalayın",
+    "step3Desc": "Son olarak kodu oluşturun ve web sitenizin HTML'sine kopyalayın.",
+    "copyBtn": "Kodu Kopyala",
+    "copied": "Kopyalandı!"
   },
   "spinPage": {
     "title": "Çarkı Döndür",
@@ -302,6 +330,82 @@
       "sec6TextMiddle": "çoğu uygulamadan daha iyi olan şey, onunla ilgili her şeyi ayarlayabilmenizdir. Ciddi bir şirket çekilişi yürütüyorsanız veya Twitch'te yayın yapıyorsanız, basit bir çeviriciden daha fazlasına ihtiyacınız var. Örneğin, bazı ödüllerin diğerlerinden daha nadir olmasını istiyorsanız, daha küçük ödülleri çarkta birden çok kez çoğaltabilirsiniz, böylece kazanılma olasılıkları daha yüksek olur. Bu \"ağırlıklandırma\" özelliği size oranlar üzerinde tam kontrol sağlar. Ayrıca renkleri derinlemesine inceleyebilir ve tekerleği görsel olarak markanıza veya parti temanıza göre eşleştirebilirsiniz. Bir seçeneğin kaç kez kazandığını takip etmenize, seçenekleri anında gizlemenize ve tekerleğin nasıl göründüğüne ince ayar yapmanıza olanak tanıyan özellikleriyle, eğlenceli bir oyun görünümüne bürünmüş tamamen profesyonel bir araçtır. Şunu deneyin:",
       "sec6LinkText2": "ana döndürücü aracı",
       "sec6TextEnd": "ve bir sonraki büyük kararınızın stresini üzerinizden alın."
+    }
+  },
+  "twisterPage": {
+    "parts": {
+      "rh": "Sağ El",
+      "lh": "Sol El",
+      "rf": "Sağ Ayak",
+      "lf": "Sol Ayak"
+    },
+    "title": "Twister Döndürücü",
+    "heroTitle": "Twister Spinner — Rastgele Hareket Oluşturucu",
+    "heroDesc": "Twister topacını mı kaybettin? Oyununuz için hamleleri duyurmak için ücretsiz çevrimiçi <strong>Twister Spinner</strong>'ı kullanın! Sadece döndürmeye basın ve 'Sol El Mavi' veya 'Sağ Ayak Kırmızı' gibi anında rastgele komutlar alın.",
+    "howToTitle": "Twister Spinner'ın Kullanımı",
+    "steps": {
+      "1": "<strong>Arkadaşlarınızı Toplayın</strong> — Matı hazırlayın ve herkesin yerini almasını sağlayın.",
+      "2": "<strong>Tekerleği Döndür</strong> — <em>Tekerleği Döndür</em>'ü veya çarkın ortasındaki düğmeyi tıklayın.",
+      "3": "<strong>Sonucu Çağırın</strong> — Kazandıran hamle (örneğin, 'Sağ El Kırmızı') çarkın üzerinde görünür.",
+      "4": "<strong>Oynamaya Devam Edin</strong> — Ayakta yalnızca bir kişi kalana kadar dönmeye devam edin!"
+    },
+    "seoTitle": "Dijital Twister Spinner Nedir?",
+    "seoDesc": "<strong>Dijital Twister Döndürücü</strong>, klasik parti oyunundaki fiziksel karton döndürücünün yerini alacak şekilde tasarlanmış etkileşimli bir çarktır. Vücudun bir bölümünü (Sol El, Sağ El, Sol Ayak, Sağ Ayak) ve bir rengi (Kırmızı, Mavi, Sarı, Yeşil) içeren 16 olası hareketten birini rastgele seçer.",
+    "seoList": {
+      "1": "<strong>Kayıp parçaların değiştirilmesi</strong> — Orijinal topacı kaybettiniz diye oyunu durdurmanıza gerek yok.",
+      "2": "<strong>Partiye hazır</strong> — Herkes dönüşü bir telefonda net bir şekilde görebilir veya TV ekranına aktarabilir.",
+      "3": "<strong>Adil ve rastgele</strong> — kriptografik olarak tohumlanmış rastgelelik, hileyi veya önyargılı dönüşleri önler."
+    },
+    "whyTitle": "Neden Twister Spinner'ımızı Kullanmalısınız?",
+    "whyDesc": "Çevrimiçi çeviricimiz, fiziksel olana göre çeşitli avantajlar sunar:",
+    "features": {
+      "1Title": "Her Zaman Mevcut",
+      "1Desc": "Hiçbir şey indirmenize gerek yok. Döndürücüye herhangi bir akıllı telefon, tablet veya dizüstü bilgisayardan erişin.",
+      "2Title": "Grafikleri Temizle",
+      "2Desc": "Parlak renkler ve net metinler, arayan kişinin odadaki hareketi okumasını kolaylaştırır.",
+      "3Title": "Fuar Sonuçları",
+      "3Desc": "Kriptografik olarak güvenli rastgelelik, 'sıkışmış' oklar olmadan, aslında tarafsız bir zar attığınız anlamına gelir.",
+      "4Title": "%100 Ücretsiz",
+      "4Desc": "Aracımız her zaman ücretsizdir; herhangi bir ödeme duvarı veya kayıt zorunluluğu yoktur."
+    },
+    "faqTitle": "Sıkça Sorulan Sorular",
+    "faqs": {
+      "1Title": "Twister Spinner'ın kullanımı tamamen ücretsiz mi?",
+      "1Desc": "Evet! Twister Spinner'ı hiçbir gizli ücret veya hesap oluşturma gerektirmeden kullanmak tamamen ücretsizdir.",
+      "2Title": "Çevrimiçi döndürücü telefonumda çalışıyor mu?",
+      "2Desc": "Kesinlikle. Tamamen duyarlı olduğundan, oyun oynarken herhangi bir mobil cihazda kolayca kullanabilirsiniz.",
+      "3Title": "Sonuçlar gerçekten rastgele mi?",
+      "3Desc": "Evet. Her dönüşte, her uzuv ve renk kombinasyonunun eşit görünme şansına sahip olmasını garanti etmek için sağlam bir algoritma kullanılır."
+    },
+    "article": {
+      "sec1Title": "Neden Dijital Twister Spinner Oyununu Kullanmalı?",
+      "sec1Text": "Klasik fiziksel Twister oyunu inanılmaz derecede eğlencelidir, ancak beraberinde gelen karton döndürücünün bükülmesi, yırtılması veya tamamen kaybolmasıyla ünlüdür. Döndürücüyü bulamadığınızda eğlenceyi durdurmak yerine, dijital Twister Spinner'ı doğrudan telefonunuzda veya tabletinizde başlatabilirsiniz. Dijital versiyon, fiziksel bir tahtanın sıkışması sorunu olmadan tam olarak aynı 16 kombinasyonu (Sol El, Sağ El, Sol Ayak, Kırmızı, Mavi, Sarı ve Yeşil Sağ Ayak) sağlar. Tamamen rastgeledir, yani birisi kaçınılmaz olarak düşene kadar oyun tüm oyuncular için tamamen adil kalır.",
+      "sec2Title": "Klasik Parti Oyunlarına Yeni Bir Dönüş Getiriyoruz",
+      "sec2Text": "Dijital döndürücü yalnızca bir yedek değildir; aslında toplantınızı geliştirebilir. Herkes minderin üzerinde sıkışıp kaldığında, bir telefon ekranını okumak veya onu akıllı bir TV'ye yayınlamak, arayan kişinin hareketleri kolayca duyurmasına olanak tanır. Ayrıca, yüksek kaliteli kriptografik olarak tohumlanmış rastgeleleştirmemiz, gerçek rastgeleliği garantileyerek bir okun 'çizgiye takılıp takılmadığı' konusundaki tartışmaları ortadan kaldırır. Oyun daha hızlı akıyor ve oyuncular tamamen düşmemeye odaklanabiliyor.",
+      "sec3Title": "Parti Oyunlarını İsim Çarkı ile Birleştirin",
+      "sec3TextStart": "Büyük bir grupla büyük bir partiye ev sahipliği yapıyorsanız, muhtemelen herkesi Twister matına aynı anda sığdıramazsınız. Dönüşleri adil bir şekilde yönetmenin harika bir yolu,",
+      "sec3LinkText": "İsim Çarkı",
+      "sec3TextMiddle": "Bir sonraki turda kimin oynayacağına rastgele karar verme aracı. Sadece herkesin adını girin ve bir sonraki yarışmacıyı seçmek için çarkı çevirin. Bizim",
+      "sec3LinkText2": "İsim Çarkı",
+      "sec3TextEnd": "ayrıca, herhangi biri iki kez oynamadan önce herkesin oynama sırası almasını sağlayan kullanışlı bir eleme özelliği içerir.",
+      "sec4Title": "Bir Mola Verin ve Yemek Çarkını Döndürün",
+      "sec4TextStart": "Bütün gece parti oyunları oynamak ciddi bir iştah açar. Twister oyunu sona erdiğinde ve yemek sipariş etme zamanı geldiğinde, kimsenin ne yiyeceğiniz konusunda anlaşamadığını fark edebilirsiniz. kullanarak uzun tartışmayı atlayın.",
+      "sec4LinkText": "Yemek Çarkı",
+      "sec4TextMiddle": ". Sadece partinizin yakınındaki en iyi restoran seçeneklerine girin, hızlı bir şekilde çevirin ve karar anında verilir. Kolaylık sağlamak için bağımsız",
+      "sec4LinkText2": "Yemek Çarkı",
+      "sec4TextEnd": "mobil cihazlar için optimize edilmiştir, böylece teslimat siparişini vermeden önce bunu doğrudan telefonunuzdan yapabilirsiniz.",
+      "sec5Title": "Tartışmaları Anında Çözün",
+      "sec5TextStart": "Bazen parti oyunları sırasında anlaşmazlıklar yaşanır. Belki birisinin dizi kazara mata dokunmuştur ya da belki iki oyuncu aynı anda aynı renkli daireyi istiyordur. Dostça bir tartışma çıkarsa, bunu çözmenin en hızlı yolu yazı tura atmak, hatta daha iyisi dijital bir atış yapmaktır.",
+      "sec5LinkText": "Evet/Hayır Çarkı",
+      "sec5TextMiddle": ". Sorumluluğu ev sahibinin üzerinden alır ve nihai kararı tamamen şansa bırakır.",
+      "sec5LinkText2": "Evet/Hayır Çarkı",
+      "sec5TextEnd": "Ayrıca, beraberliğe zorlamak veya oyunculardan dönüşü tekrar oynamalarını istemek istiyorsanız 'Belki' seçeneğini içerecek şekilde özelleştirilebilir.",
+      "sec6Title": "Bir Sonraki Oyun Geceniz için Her Şeyi Kişiselleştirin",
+      "sec6TextStart": "Twister Spinner kendi oyunu için mükemmel olsa da, kendi benzersiz içki oyunlarınızı, doğruluk mu cesaret mi mücadelelerinizi veya parti kurallarınızı oluşturmak isteyebilirsiniz. Burası çekirdeğin olduğu yer",
+      "sec6LinkText": "Rastgele Çark Döndürücü",
+      "sec6TextMiddle": "parlıyor. Çarkın dilimlerine kelimenin tam anlamıyla her şeyi koyabilir, tüm renkleri bir etkinlik temasına uyacak şekilde değiştirebilir ve hatta bazı zorlukların daha az sıklıkta görünmesini istiyorsanız oranları bile ayarlayabilirsiniz. Ana avantajlardan yararlanarak",
+      "sec6LinkText2": "ana döndürücü aracı",
+      "sec6TextEnd": "misafirlerinizin asla unutamayacağı, tamamen size özel bir oyun gecesi deneyimi tasarlayabilirsiniz."
     }
   }
 }

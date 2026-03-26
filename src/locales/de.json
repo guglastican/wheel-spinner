@@ -6,14 +6,16 @@
     "embed": "Einbetten",
     "foodWheel": "Lebensmittelrad",
     "configureEmbed": "Konfigurieren Sie das einbettbare Rad",
-    "spinTheWheel": "Drehen Sie das Rad"
+    "spinTheWheel": "Drehen Sie das Rad",
+    "twisterSpinner": "Twister-Spinner"
   },
   "footer": {
     "randoWheel": "Rando Wheel",
     "copyright": "© {year} Wheel Spinner. Alle Rechte vorbehalten.",
     "privacyPolicy": "Datenschutzrichtlinie",
     "termsConditions": "Allgemeine Geschäftsbedingungen",
-    "otherWheels": "Andere Räder"
+    "otherWheels": "Andere Räder",
+    "languages": "Sprachen"
   },
   "mainWheel": {
     "winner": "Gewinner: {text} 🎉",
@@ -50,7 +52,9 @@
     "ynwTitle": "Ja/Nein Rad",
     "ynwDesc": "Ein einfacher Ja- oder Nein-Spinner, um schnelle binäre Entscheidungen sofort zu treffen.",
     "stwTitle": "Drehen Sie das Rad",
-    "stwDesc": "Eine vollständig anpassbare Zufallsauswahl für jede Situation."
+    "stwDesc": "Eine vollständig anpassbare Zufallsauswahl für jede Situation.",
+    "tsTitle": "Twister-Spinner",
+    "tsDesc": "Ein benutzerdefinierter Radgenerator zum Aufrufen von Bewegungen für Ihr Partyspiel."
   },
   "home": {
     "mainTitle": "Zufälliger Radspinner",
@@ -83,7 +87,8 @@
       "names": "<strong>Namensauswahl/Studentenauswahl:</strong> Wird häufig von Pädagogen verwendet, um Personen nach dem Zufallsprinzip auszuwählen, manchmal auch „Rad der Namen“ oder „Zufällige Namensauswahl“ genannt.",
       "yesno": "<strong>Ja/Nein-Räder:</strong> Für einfache binäre Entscheidungen.",
       "food": "<strong>Food Wheel:</strong> Sie sind sich nicht sicher, was Sie essen sollen? Drehen Sie das Lebensmittelrad, um schnell zufällige Essensentscheidungen zu treffen.",
-      "spin": "<strong>Spin the Wheel:</strong> Eine vollständig anpassbare Zufallsauswahl für jede Situation."
+      "spin": "<strong>Spin the Wheel:</strong> Eine vollständig anpassbare Zufallsauswahl für jede Situation.",
+      "twister": "<strong>Twister Spinner:</strong> Eine praktische Möglichkeit, Spielbewegungen wie „Right Hand Red“ zufällig auszuwählen."
     },
     "otherToolsOutro": "Jede Spezialversion übernimmt das Kernkonzept der Zufallsauswahl und passt es an unterschiedliche Bedürfnisse an, sodass sie für alles praktisch sind, von der Organisation von Aktivitäten bis zur Beilegung von Debatten mit einer unterhaltsamen, unparteiischen Wendung."
   },
@@ -117,7 +122,20 @@
       "4": "<strong>Fair Turn-Taking:</strong> Verwenden Sie es in Spielen, um zu entscheiden, wer als nächstes an der Reihe ist."
     },
     "powerTitle": "Die Macht des Zufalls",
-    "powerDesc": "Unser Rad verwendet einen zuverlässigen Pseudozufallszahlengenerator, um sicherzustellen, dass jede Drehung fair und unvorhersehbar ist. Dadurch wird die persönliche Voreingenommenheit bei einfachen Entscheidungen beseitigt, was ihn zu einem wirklich unparteiischen Entscheidungsträger macht. Wenn man kleine Entscheidungen dem Zufall überlässt, kann man manchmal mentale Energie für wichtigere Dinge freisetzen! Das optionale „Vielleicht“ sorgt für zusätzliche Flexibilität, wenn ein einfaches Ja oder Nein nicht ausreicht."
+    "powerDesc": "Unser Rad verwendet einen zuverlässigen Pseudozufallszahlengenerator, um sicherzustellen, dass jede Drehung fair und unvorhersehbar ist. Dadurch wird die persönliche Voreingenommenheit bei einfachen Entscheidungen beseitigt, was ihn zu einem wirklich unparteiischen Entscheidungsträger macht. Wenn man kleine Entscheidungen dem Zufall überlässt, kann man manchmal mentale Energie für wichtigere Dinge freisetzen! Das optionale „Vielleicht“ sorgt für zusätzliche Flexibilität, wenn ein einfaches Ja oder Nein nicht ausreicht.",
+    "faqTitle": "Ja- oder Nein-Rad – Häufig gestellte Fragen",
+    "faqs": {
+      "1Title": "Ist das Ja- oder Nein-Rad wirklich zufällig?",
+      "1Desc": "Ja! Unser Rad verwendet hochwertige Zufallsalgorithmen, um sicherzustellen, dass jede Drehung unabhängig und fair ist. Jeder Teil des Rades hat die gleiche Gewinnchance, basierend auf der Anzahl der von Ihnen gewählten Eingabesätze.",
+      "2Title": "Kann ich das Ja-Nein-Rad anpassen?",
+      "2Desc": "Absolut. Sie können zwischen den Modi mit zwei Optionen (Ja/Nein) und drei Optionen (Ja/Nein/Vielleicht) wählen. Sie können auch die Anzahl der „Sets“ am Rad anpassen, um das Aussehen zu ändern.",
+      "3Title": "Wozu dient der „Vielleicht“-Modus?",
+      "3Desc": "Der „Vielleicht“-Modus bietet eine dritte Möglichkeit für knifflige Entscheidungen, die nicht ausschließlich schwarz-weiß getroffen werden. Es ist perfekt, wenn Sie ein „Unentschieden“ oder ein „Abwarten“-Ergebnis benötigen.",
+      "4Title": "Ist die Nutzung dieses Tools kostenlos?",
+      "4Desc": "Ja, unser Ja-oder-Nein-Rad ist 100 % kostenlos und erfordert keine Anmeldung oder Downloads. Sie können so oft drehen, wie Sie möchten!",
+      "5Title": "Funktioniert es auf Mobilgeräten?",
+      "5Desc": "Ja, das Tool reagiert vollständig und ist so konzipiert, dass es nahtlos auf allen modernen mobilen Browsern, einschließlich iPhone und Android, funktioniert."
+    }
   },
   "foodPage": {
     "title": "Lebensmittelrad",
@@ -239,7 +257,17 @@
     "codeDesc": "Kopieren Sie den folgenden Code, um dieses konfigurierte Rad auf Ihrer Website einzubetten:",
     "generateBtn": "Einbettungscode generieren",
     "errConfigure": "Fehler beim Generieren des Codes. Bitte konfigurieren Sie zuerst das Rad.",
-    "errEmpty": "Bitte fügen Sie dem Rad mindestens ein Element hinzu, bevor Sie den Einbettungscode generieren."
+    "errEmpty": "Bitte fügen Sie dem Rad mindestens ein Element hinzu, bevor Sie den Einbettungscode generieren.",
+    "title": "So betten Sie das Zufallsrad ein",
+    "heroDesc": "Integrieren Sie unser Zufallsrad ganz einfach auf Ihrer Website oder Ihrem Blog. Befolgen Sie diese einfachen Schritte unten, um den HTML-Iframe-Code zu generieren.",
+    "step1Title": "Schritt 1: Geben Sie Ihre Eingaben ein",
+    "step1Desc": "Konfigurieren Sie zunächst die gewünschten Elemente auf Ihrem Lenkrad. Fügen Sie Namen, Auswahlmöglichkeiten oder alles andere hinzu, was Sie interessieren, und passen Sie deren Farben an.",
+    "step2Title": "Schritt 2: Passen Sie die Einbettungseinstellungen an",
+    "step2Desc": "Passen Sie als Nächstes die Größe und den Barrierefreiheitstitel für Ihr eingebettetes Rad an.",
+    "step3Title": "Schritt 3: Kopieren Sie Ihren Einbettungscode",
+    "step3Desc": "Generieren Sie abschließend den Code und kopieren Sie ihn in den HTML-Code Ihrer Website.",
+    "copyBtn": "Code kopieren",
+    "copied": "Kopiert!"
   },
   "spinPage": {
     "title": "Drehen Sie das Rad",
@@ -302,6 +330,82 @@
       "sec6TextMiddle": "Besser als bei den meisten Apps ist die Tatsache, dass man alles daran anpassen kann. Wenn Sie eine ernsthafte Firmenverlosung durchführen oder auf Twitch streamen, benötigen Sie mehr als nur einen einfachen Spinner. Wenn Sie beispielsweise möchten, dass einige Preise seltener sind als andere, können Sie die kleineren Preise einfach mehrmals auf dem Rad duplizieren, damit die Wahrscheinlichkeit größer ist, dass sie gewonnen werden. Diese „Gewichtungs“-Funktion gibt Ihnen die vollständige Kontrolle über die Quoten. Sie können auch in die Farben eintauchen und das Rad optisch an Ihre Marke oder Ihr Partymotto anpassen. Mit Funktionen, mit denen Sie nachverfolgen können, wie oft eine Option gewonnen hat, Entscheidungen sofort ausblenden und das Aussehen des Rads optimieren können, handelt es sich um ein absolut professionelles Tool, das als unterhaltsames Spiel getarnt ist. Probieren Sie es aus",
       "sec6LinkText2": "Haupt-Spinner-Werkzeug",
       "sec6TextEnd": "und entlasten Sie Ihre nächste große Entscheidung."
+    }
+  },
+  "twisterPage": {
+    "parts": {
+      "rh": "Rechte Hand",
+      "lh": "Linke Hand",
+      "rf": "Rechter Fuß",
+      "lf": "Linker Fuß"
+    },
+    "title": "Twister-Spinner",
+    "heroTitle": "Twister Spinner – Zufallsbewegungsgenerator",
+    "heroDesc": "Haben Sie Ihren Twister-Spinner verloren? Nutzen Sie unseren kostenlosen Online-<strong>Twister Spinner</strong>, um Züge für Ihr Spiel vorzuschlagen! Drücken Sie einfach „Spin“ und erhalten Sie sofort zufällige Befehle wie „Linke Hand blau“ oder „Rechter Fuß rot“.",
+    "howToTitle": "So verwenden Sie den Twister-Spinner",
+    "steps": {
+      "1": "<strong>Sammeln Sie Ihre Freunde</strong> – Stellen Sie die Matte auf und lassen Sie alle ihre Position einnehmen.",
+      "2": "<strong>Rad drehen</strong> – Klicken Sie auf <em>Rad drehen</em> oder auf die mittlere Schaltfläche am Rad.",
+      "3": "<strong>Ergebnis aufrufen</strong> – Der Gewinnzug (z. B. „Right Hand Red“) erscheint über dem Rad.",
+      "4": "<strong>Weiterspielen</strong> – Drehen Sie weiter, bis nur noch eine Person übrig ist!"
+    },
+    "seoTitle": "Was ist ein digitaler Twister-Spinner?",
+    "seoDesc": "Ein <strong>Digital Twister Spinner</strong> ist ein interaktives Rad, das den physischen Spinner aus Pappe im klassischen Partyspiel ersetzen soll. Es wählt zufällig eine von 16 möglichen Bewegungen mit einem Körperteil (linke Hand, rechte Hand, linker Fuß, rechter Fuß) und einer Farbe (Rot, Blau, Gelb, Grün) aus.",
+    "seoList": {
+      "1": "<strong>Ersatz verlorener Teile</strong> – Sie müssen das Spiel nicht stoppen, nur weil Sie den ursprünglichen Spinner verloren haben.",
+      "2": "<strong>Partybereit</strong> – Jeder kann die Drehung deutlich auf einem Telefon sehen oder auf einen Fernsehbildschirm übertragen.",
+      "3": "<strong>Fair und zufällig</strong> – kryptografisch gesäte Zufälligkeit verhindert Betrug oder voreingenommene Drehungen."
+    },
+    "whyTitle": "Warum sollten Sie unseren Twister-Spinner verwenden?",
+    "whyDesc": "Unser Online-Spinner bietet mehrere Vorteile gegenüber einem physischen:",
+    "features": {
+      "1Title": "Immer verfügbar",
+      "1Desc": "Sie müssen nichts herunterladen. Greifen Sie von jedem Smartphone, Tablet oder Laptop aus auf den Spinner zu.",
+      "2Title": "Klare Grafiken",
+      "2Desc": "Helle Farben und klarer Text machen es dem Anrufer leicht, die Bewegung im Raum zu lesen.",
+      "3Title": "Faire Ergebnisse",
+      "3Desc": "Die kryptografisch sichere Zufälligkeit bedeutet, dass Sie tatsächlich einen unvoreingenommenen Wurf erhalten, ohne dass Pfeile „stecken bleiben“.",
+      "4Title": "100 % kostenlos",
+      "4Desc": "Unser Tool ist immer kostenlos, ohne Paywalls oder erforderliche Anmeldungen."
+    },
+    "faqTitle": "Häufig gestellte Fragen",
+    "faqs": {
+      "1Title": "Ist die Nutzung des Twister Spinner völlig kostenlos?",
+      "1Desc": "Ja! Die Nutzung des Twister Spinners ist völlig kostenlos, es sind keine versteckten Gebühren oder die Erstellung eines Kontos erforderlich.",
+      "2Title": "Funktioniert der Online-Spinner auf meinem Telefon?",
+      "2Desc": "Absolut. Es reagiert vollständig, sodass Sie es beim Spielen problemlos auf jedem Mobilgerät verwenden können.",
+      "3Title": "Sind die Ergebnisse wirklich zufällig?",
+      "3Desc": "Ja. Bei jeder Drehung wird ein robuster Algorithmus verwendet, um sicherzustellen, dass jede Gliedmaßen- und Farbkombination die gleiche Chance hat, zu erscheinen."
+    },
+    "article": {
+      "sec1Title": "Warum ein digitales Twister-Spinnerspiel verwenden?",
+      "sec1Text": "Das klassische physische Twister-Spiel macht unglaublich viel Spaß, aber der mitgelieferte Pappkreisel ist dafür berüchtigt, dass er verbogen, zerrissen oder ganz verloren geht. Anstatt den Spaß zu stoppen, wenn Sie den Spinner nicht finden, können Sie einen digitalen Twister Spinner direkt auf Ihrem Telefon oder Tablet starten. Eine digitale Version bietet genau die gleichen 16 Kombinationen (linke Hand, rechte Hand, linker Fuß, rechter Fuß in Rot, Blau, Gelb und Grün), ohne dass ein physisches Brett hängen bleibt. Es ist völlig zufällig, was bedeutet, dass das Spiel für alle Spieler völlig fair bleibt, bis jemand unweigerlich umfällt.",
+      "sec2Title": "Bringt neuen Schwung in klassische Partyspiele",
+      "sec2Text": "Ein digitaler Spinner ist nicht nur ein Ersatz; it can actually enhance your gathering. Wenn alle auf der Matte verheddert sind, kann der Anrufer durch Lesen eines Telefonbildschirms oder Übertragen auf einen Smart-TV die Bewegungen einfach ansagen. Darüber hinaus sorgt unsere hochwertige kryptographisch gesäte Randomisierung für echte Zufälligkeit und beseitigt alle Streitigkeiten darüber, ob ein Pfeil „auf der Linie hängen geblieben“ ist. Das Spiel verläuft schneller und die Spieler können sich ganz darauf konzentrieren, nicht hinzufallen.",
+      "sec3Title": "Kombinieren Sie Partyspiele mit dem Namensrad",
+      "sec3TextStart": "Wenn Sie eine große Party mit einer großen Gruppe veranstalten, passen wahrscheinlich nicht alle gleichzeitig auf die Twister-Matte. Eine gute Möglichkeit, Kurven fair zu verwalten, ist die Verwendung unseres",
+      "sec3LinkText": "Rad der Namen",
+      "sec3TextMiddle": "Tool, um zufällig zu entscheiden, wer die nächste Runde spielen darf. Sie geben einfach alle Namen ein und drehen das Rad, um die nächsten Teilnehmer auszuwählen. Unser",
+      "sec3LinkText2": "Rad der Namen",
+      "sec3TextEnd": "Enthält außerdem eine praktische Eliminierungsfunktion, die sicherstellt, dass jeder einmal an der Reihe ist, bevor jemand zweimal spielt.",
+      "sec4Title": "Machen Sie eine Pause und drehen Sie das Food Wheel",
+      "sec4TextStart": "Die ganze Nacht über Partyspiele zu spielen, macht richtig Appetit. Wenn das Twister-Spiel zu Ende ist und es Zeit ist, Essen zu bestellen, werden Sie vielleicht feststellen, dass sich niemand auf das Essen einigen kann. Überspringen Sie die lange Debatte, indem Sie die verwenden",
+      "sec4LinkText": "Lebensmittelrad",
+      "sec4TextMiddle": ". Geben Sie einfach die Top-Restaurantoptionen in der Nähe Ihrer Party ein, probieren Sie es kurz aus und die Entscheidung wird sofort getroffen. Der Einfachheit halber das Standalone-Gerät",
+      "sec4LinkText2": "Lebensmittelrad",
+      "sec4TextEnd": "ist für Mobilgeräte optimiert, sodass Sie dies direkt von Ihrem Telefon aus erledigen können, bevor Sie den Lieferauftrag aufgeben.",
+      "sec5Title": "Schlichten Sie Debatten sofort",
+      "sec5TextStart": "Manchmal kommt es bei Partyspielen zu Streitigkeiten. Vielleicht hat jemand versehentlich mit dem Knie die Matte berührt, oder vielleicht möchten zwei Spieler gleichzeitig genau den gleichen farbigen Kreis haben. Kommt es zu einem freundschaftlichen Streit, lässt sich dieser am schnellsten mit einem Münzwurf – oder noch besser mit einem digitalen – lösen",
+      "sec5LinkText": "Ja/Nein-Rad",
+      "sec5TextMiddle": ". Es nimmt dem Gastgeber die Verantwortung ab und überlässt die endgültige Entscheidung völlig dem Zufall. Der",
+      "sec5LinkText2": "Ja/Nein-Rad",
+      "sec5TextEnd": "kann auch angepasst werden, um eine „Vielleicht“-Option einzuschließen, wenn Sie ein Unentschieden erzwingen oder die Spieler bitten möchten, den Zug zu wiederholen.",
+      "sec6Title": "Passen Sie alles für Ihren nächsten Spieleabend an",
+      "sec6TextStart": "Während der Twister Spinner perfekt für sein spezifisches Spiel geeignet ist, möchten Sie vielleicht Ihre eigenen einzigartigen Trinkspiele, Wahrheit-oder-Pflicht-Herausforderungen oder Partyregeln erstellen. Hier liegt der Kern",
+      "sec6LinkText": "Zufälliger Radspinner",
+      "sec6TextMiddle": "glänzt. Sie können buchstäblich alles auf die Scheiben des Rades legen, alle Farben ändern, um sie an ein Veranstaltungsthema anzupassen, und sogar die Gewinnchancen anpassen, wenn Sie möchten, dass einige Herausforderungen seltener auftreten. Indem man das Wichtigste ausnutzt",
+      "sec6LinkText2": "Haupt-Spinner-Werkzeug",
+      "sec6TextEnd": "können Sie ein völlig individuelles Spieleabenderlebnis gestalten, das Ihre Gäste nie vergessen werden."
     }
   }
 }

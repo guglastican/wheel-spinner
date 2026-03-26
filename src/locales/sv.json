@@ -6,14 +6,16 @@
     "embed": "Bädda in",
     "foodWheel": "Mathjul",
     "configureEmbed": "Konfigurera inbäddningsbara hjul",
-    "spinTheWheel": "Snurra hjulet"
+    "spinTheWheel": "Snurra hjulet",
+    "twisterSpinner": "Twister Spinner"
   },
   "footer": {
     "randoWheel": "Rando hjul",
     "copyright": "© {year} Hjulspinnare. Alla rättigheter reserverade.",
     "privacyPolicy": "Sekretesspolicy",
     "termsConditions": "Allmänna villkor",
-    "otherWheels": "Andra hjul"
+    "otherWheels": "Andra hjul",
+    "languages": "Språk"
   },
   "mainWheel": {
     "winner": "Vinnare: {text} 🎉",
@@ -50,7 +52,9 @@
     "ynwTitle": "Ja / Nej Hjul",
     "ynwDesc": "En enkel ja eller nej spinner för att hantera snabba binära val direkt.",
     "stwTitle": "Snurra hjulet",
-    "stwDesc": "En helt anpassningsbar slumpmässig väljare för alla situationer."
+    "stwDesc": "En helt anpassningsbar slumpmässig väljare för alla situationer.",
+    "tsTitle": "Twister Spinner",
+    "tsDesc": "En anpassad hjulgenerator för att ropa ut rörelser för ditt partyspel."
   },
   "home": {
     "mainTitle": "Random Wheel Spinner",
@@ -83,7 +87,8 @@
       "names": "<strong>Namnväljare / Elevväljare:</strong> Används vanligen av lärare för att slumpmässigt välja individer, ibland kallade \"Namnhjul\" eller \"Slumpmässiga namnväljare\".",
       "yesno": "<strong>Ja/Nej hjul:</strong> För enkla binära beslut.",
       "food": "<strong>Mathjul:</strong> Osäker på vad du ska äta? Snurra på mathjulet för snabba slumpmässiga måltidsbeslut.",
-      "spin": "<strong>Snurra hjulet:</strong> En helt anpassningsbar slumpmässig väljare för alla situationer."
+      "spin": "<strong>Snurra hjulet:</strong> En helt anpassningsbar slumpmässig väljare för alla situationer.",
+      "twister": "<strong>Twister Spinner:</strong> Ett bekvämt sätt att slumpmässigt välja spelrörelser som \"Röd högerhand\"."
     },
     "otherToolsOutro": "Varje specialiserad version tar kärnkonceptet slumpmässigt urval och skräddarsyr det för att möta olika behov, vilket gör dem praktiska för allt från att organisera aktiviteter till att avgöra debatter med en rolig, opartisk twist."
   },
@@ -117,7 +122,20 @@
       "4": "<strong>Rättvis turtagning:</strong> Använd det i spel för att avgöra vem som går härnäst."
     },
     "powerTitle": "Slumpmässighetens kraft",
-    "powerDesc": "Vårt hjul använder en pålitlig pseudo-slumptalsgenerator för att säkerställa att varje snurr är rättvist och oförutsägbart. Detta tar bort personlig fördom från enkla beslut, vilket gör det till en verkligt opartisk beslutsfattare. Att lämna små val åt slumpen kan ibland frigöra mental energi för viktigare saker! Tillvalet \"Kanske\" ger flexibilitet för de tillfällen då ett enkelt ja eller nej inte riktigt räcker."
+    "powerDesc": "Vårt hjul använder en pålitlig pseudo-slumptalsgenerator för att säkerställa att varje snurr är rättvist och oförutsägbart. Detta tar bort personlig fördom från enkla beslut, vilket gör det till en verkligt opartisk beslutsfattare. Att lämna små val åt slumpen kan ibland frigöra mental energi för viktigare saker! Tillvalet \"Kanske\" ger flexibilitet för de tillfällen då ett enkelt ja eller nej inte riktigt räcker.",
+    "faqTitle": "Ja eller nej hjul — Vanliga frågor",
+    "faqs": {
+      "1Title": "Är Ja eller Nej-hjulet verkligen slumpmässigt?",
+      "1Desc": "Ja! Vårt hjul använder högkvalitativa randomiseringsalgoritmer för att säkerställa att varje snurr är oberoende och rättvist. Varje del av hjulet har lika stor chans att vinna baserat på antalet inmatningsset du väljer.",
+      "2Title": "Kan jag anpassa Ja Nej-hjulet?",
+      "2Desc": "Absolut. Du kan välja mellan två-alternativ (Ja/Nej) och tre-alternativ (Ja/Nej/Kanske) lägen. Du kan också justera antalet \"set\" på hjulet för att ändra hur det ser ut.",
+      "3Title": "Vad är \"Kanske\"-läget till för?",
+      "3Desc": "\"Kanske\"-läget lägger till en tredje möjlighet för de knepiga beslut som inte är strikt svartvita. Den är perfekt för när du behöver en \"lottning\" eller ett \"vänta och se\" resultat.",
+      "4Title": "Är det här verktyget gratis att använda?",
+      "4Desc": "Ja, vårt Ja eller Nej-hjul är 100 % gratis och kräver ingen registrering eller nedladdning. Du kan snurra hur många gånger du vill!",
+      "5Title": "Fungerar det på mobila enheter?",
+      "5Desc": "Ja, verktyget är fullt responsivt och designat för att fungera sömlöst på alla moderna mobila webbläsare, inklusive iPhone och Android."
+    }
   },
   "foodPage": {
     "title": "Mathjul",
@@ -239,7 +257,17 @@
     "codeDesc": "Kopiera koden nedan för att bädda in detta konfigurerade hjul på din webbplats:",
     "generateBtn": "Generera inbäddningskod",
     "errConfigure": "Fel vid generering av kod. Vänligen konfigurera hjulet först.",
-    "errEmpty": "Lägg till minst ett objekt till hjulet innan du genererar inbäddningskod."
+    "errEmpty": "Lägg till minst ett objekt till hjulet innan du genererar inbäddningskod.",
+    "title": "Hur man bäddar in Random Wheel",
+    "heroDesc": "Bädda in vårt slumpmässiga hjul enkelt på din webbplats eller blogg. Följ dessa enkla steg nedan för att generera HTML iframe-koden.",
+    "step1Title": "Steg 1: Ange dina indata",
+    "step1Desc": "Konfigurera först de objekt du vill ha på ditt hjul. Lägg till namn, val eller något annat du vill snurra efter och anpassa deras färger.",
+    "step2Title": "Steg 2: Anpassa inbäddningsinställningarna",
+    "step2Desc": "Justera sedan storleken och tillgänglighetstiteln för ditt inbäddade hjul.",
+    "step3Title": "Steg 3: Kopiera din inbäddningskod",
+    "step3Desc": "Till sist, generera koden och kopiera den till din webbplats HTML.",
+    "copyBtn": "Kopiera kod",
+    "copied": "Kopierade!"
   },
   "spinPage": {
     "title": "Snurra hjulet",
@@ -302,6 +330,82 @@
       "sec6TextMiddle": "bättre än de flesta appar är det faktum att du kan justera allt om det. Om du driver en seriös företagspresent eller streamar på Twitch behöver du mer än bara en grundläggande spinner. Till exempel, om du vill att vissa priser ska vara sällsynta än andra, kan du bara duplicera de mindre priserna flera gånger på hjulet så att de är mer benägna att träffas. Denna \"viktnings\"-funktion ger dig total kontroll över oddsen. Du kan också dyka in i färgerna och visuellt matcha hjulet till ditt varumärke eller festtema. Med funktioner som låter dig spåra hur många gånger ett alternativ har vunnit, dölja val direkt och justera hur hjulet ser ut, är det ett helt professionellt verktyg förklädd till ett roligt spel. Prova på",
       "sec6LinkText2": "huvudspinnverktyget",
       "sec6TextEnd": "och ta bort stressen från ditt nästa stora beslut."
+    }
+  },
+  "twisterPage": {
+    "parts": {
+      "rh": "Höger Hand",
+      "lh": "Vänster Hand",
+      "rf": "Höger fot",
+      "lf": "Vänster fot"
+    },
+    "title": "Twister Spinner",
+    "heroTitle": "Twister Spinner — Random Move Generator",
+    "heroDesc": "Har du tappat bort din Twister-snurra? Använd vår gratis <strong>Twister Spinner</strong> online för att ropa ut drag för ditt spel! Tryck bara på spin och få omedelbara slumpmässiga kommandon som \"Left Hand Blue\" eller \"Right Foot Red\".",
+    "howToTitle": "Hur man använder Twister Spinner",
+    "steps": {
+      "1": "<strong>Samla dina vänner</strong> — Sätt upp mattan och låt alla komma på plats.",
+      "2": "<strong>Snurra hjulet</strong> — Klicka på <em>Snurra hjulet</em> eller mittknappen på hjulet.",
+      "3": "<strong>Ring fram resultatet</strong> – Det vinnande draget (t.ex. \"Röd högerhand\") visas ovanför hjulet.",
+      "4": "<strong>Fortsätt spela</strong> — Fortsätt snurra tills endast en person står kvar!"
+    },
+    "seoTitle": "Vad är en Digital Twister Spinner?",
+    "seoDesc": "En <strong>Digital Twister Spinner</strong> är ett interaktivt hjul designat för att ersätta den fysiska kartongsnurran i det klassiska partyspelet. Den väljer slumpmässigt ett av 16 möjliga drag som involverar en kroppsdel ​​(vänster hand, höger hand, vänster fot, höger fot) och en färg (röd, blå, gul, grön).",
+    "seoList": {
+      "1": "<strong>Ersättning av förlorade pjäser</strong> – Du behöver inte stoppa spelet bara för att du tappade den ursprungliga spinnern.",
+      "2": "<strong>Fest redo</strong> – Alla kan se snurran tydligt på en telefon eller casta till en TV-skärm.",
+      "3": "<strong>Rättvist och slumpmässigt</strong> – kryptografiskt seedad slumpmässighet förhindrar fusk eller partiska snurr."
+    },
+    "whyTitle": "Varför använda vår Twister Spinner?",
+    "whyDesc": "Vår online spinner erbjuder flera fördelar jämfört med en fysisk:",
+    "features": {
+      "1Title": "Alltid tillgänglig",
+      "1Desc": "Du behöver inte ladda ner något. Få åtkomst till spinnern från vilken smartphone, surfplatta eller bärbar dator som helst.",
+      "2Title": "Rensa grafik",
+      "2Desc": "Ljusa färger och tydlig text gör det enkelt för den som ringer att läsa rörelsen genom rummet.",
+      "3Title": "Rättvisa resultat",
+      "3Desc": "Kryptografiskt säker slumpmässighet betyder att du faktiskt får en opartisk roll, utan \"fasta\" pilar.",
+      "4Title": "100 % gratis",
+      "4Desc": "Vårt verktyg är alltid gratis, utan betalväggar eller obligatoriska registreringar."
+    },
+    "faqTitle": "Vanliga frågor",
+    "faqs": {
+      "1Title": "Är Twister Spinner helt gratis att använda?",
+      "1Desc": "Ja! Twister Spinner är helt gratis att använda utan några dolda avgifter eller kontoskapande krävs.",
+      "2Title": "Fungerar onlinesnurran på min telefon?",
+      "2Desc": "Absolut. Den är helt responsiv, så att du enkelt kan använda den på vilken mobil enhet som helst medan du spelar.",
+      "3Title": "Är resultaten verkligen slumpmässiga?",
+      "3Desc": "Ja. Varje snurr använder en robust algoritm för att garantera att varje lem och färgkombination har lika stor chans att dyka upp."
+    },
+    "article": {
+      "sec1Title": "Varför använda ett Digital Twister Spinner-spel?",
+      "sec1Text": "Det klassiska fysiska Twister-spelet är otroligt roligt, men kartongsnurran som följer med är ökänd för att bli böjd, sönderriven eller helt förlorad. Istället för att stoppa det roliga när du inte hittar spinnern kan du starta en digital Twister Spinner direkt på din telefon eller surfplatta. En digital version ger exakt samma 16 kombinationer (vänster hand, höger hand, vänster fot, höger fot i rött, blått, gult och grönt) utan att krånglet med att en fysisk bräda fastnar. Det är helt randomiserat, vilket innebär att spelet förblir helt rättvist för alla spelare tills någon oundvikligen faller omkull.",
+      "sec2Title": "Ta med nytt spin till klassiska festspel",
+      "sec2Text": "En digital spinner är inte bara en ersättning; det kan faktiskt förbättra din sammankomst. När alla är trassliga på mattan kan uppringaren enkelt meddela rörelserna genom att läsa en telefonskärm eller kasta den till en smart TV. Dessutom säkerställer vår högkvalitativa kryptografiskt seedade randomisering verklig slumpmässighet, och tar bort alla argument om huruvida en pil har \"fastnat på linjen\". Spelet flyter snabbare och spelarna kan fokusera helt på att inte ramla ner.",
+      "sec3Title": "Kombinera Party Games med Wheel of Names",
+      "sec3TextStart": "Om du är värd för en stor fest med en stor grupp, kan du förmodligen inte få plats med alla på Twister-mattan på en gång. Ett bra sätt att hantera svängar rättvist är att använda vår",
+      "sec3LinkText": "Hjulet av namn",
+      "sec3TextMiddle": "verktyg för att slumpmässigt bestämma vem som får spela nästa omgång. Du anger helt enkelt allas namn och snurrar på hjulet för att välja nästa tävlande. Vår",
+      "sec3LinkText2": "Hjulet av namn",
+      "sec3TextEnd": "Innehåller också en praktisk elimineringsfunktion, som säkerställer att alla får en tur att spela innan någon spelar två gånger.",
+      "sec4Title": "Ta en paus och snurra mathjulet",
+      "sec4TextStart": "Att spela sällskapsspel hela natten ger en seriös aptit. När spelet Twister avslutas och det är dags att beställa mat, kanske du upptäcker att ingen kan komma överens om vad du ska äta. Hoppa över den långa debatten genom att använda",
+      "sec4LinkText": "Mathjul",
+      "sec4TextMiddle": ". Ange bara de bästa restaurangalternativen nära din fest, ge den en snabb snurr och beslutet fattas omedelbart. För bekvämlighet, fristående",
+      "sec4LinkText2": "Mathjul",
+      "sec4TextEnd": "är optimerad för mobilen, så att du kan göra det direkt från din telefon innan du lägger leveransordern.",
+      "sec5Title": "Avgör debatter direkt",
+      "sec5TextStart": "Ibland under sällskapsspel uppstår dispyter. Kanske någons knä råkade vidröra mattan, eller kanske två spelare vill ha exakt samma färgade cirkel samtidigt. Om ett vänskapligt argument bryter ut är det snabbaste sättet att lösa det med en myntflip - eller ännu bättre, en digital",
+      "sec5LinkText": "Ja/Nej hjul",
+      "sec5TextMiddle": ". Det tar ansvaret från värden och lämnar det slutliga avgörandet helt upp till slumpen. De",
+      "sec5LinkText2": "Ja/Nej hjul",
+      "sec5TextEnd": "kan också anpassas för att inkludera ett \"Kanske\"-alternativ om du vill tvinga fram oavgjort eller be spelare att spela om turen.",
+      "sec6Title": "Anpassa allt för din nästa spelkväll",
+      "sec6TextStart": "Även om Twister Spinner är perfekt för sitt specifika spel, kanske du vill skapa dina egna unika dryckesspel, truth-or-dare-utmaningar eller festregler. Det är här kärnan",
+      "sec6LinkText": "Random Wheel Spinner",
+      "sec6TextMiddle": "lyser. Du kan lägga bokstavligen vad som helst på hjulets skivor, ändra alla färger för att matcha ett evenemangstema och till och med justera oddsen om du vill att vissa utmaningar ska dyka upp mindre ofta. Genom att dra nytta av det huvudsakliga",
+      "sec6LinkText2": "huvudspinnverktyget",
+      "sec6TextEnd": ", kan du designa en helt anpassad spelkvällsupplevelse som dina gäster aldrig kommer att glömma."
     }
   }
 }

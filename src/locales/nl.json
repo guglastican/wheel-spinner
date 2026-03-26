@@ -6,14 +6,16 @@
     "embed": "Insluiten",
     "foodWheel": "Voedselwiel",
     "configureEmbed": "Configureer een insluitbaar wiel",
-    "spinTheWheel": "Draai aan het wiel"
+    "spinTheWheel": "Draai aan het wiel",
+    "twisterSpinner": "Twister-spinner"
   },
   "footer": {
     "randoWheel": "Rando wiel",
     "copyright": "© {year} Radspinner. Alle rechten voorbehouden.",
     "privacyPolicy": "Privacybeleid",
     "termsConditions": "Algemene voorwaarden",
-    "otherWheels": "Andere wielen"
+    "otherWheels": "Andere wielen",
+    "languages": "Talen"
   },
   "mainWheel": {
     "winner": "Winnaar: {text} 🎉",
@@ -50,7 +52,9 @@
     "ynwTitle": "Ja / Nee wiel",
     "ynwDesc": "Een eenvoudige ja of nee-spinner om snelle binaire keuzes direct af te handelen.",
     "stwTitle": "Draai aan het wiel",
-    "stwDesc": "Een volledig aanpasbare willekeurige kiezer voor elke situatie."
+    "stwDesc": "Een volledig aanpasbare willekeurige kiezer voor elke situatie.",
+    "tsTitle": "Twister-spinner",
+    "tsDesc": "Een aangepaste wielgenerator om zetten uit te roepen voor je gezelschapsspel."
   },
   "home": {
     "mainTitle": "Willekeurige wielspinner",
@@ -83,7 +87,8 @@
       "names": "<strong>Naamkiezers/leerlingenkiezers:</strong> vaak gebruikt door docenten om willekeurig individuen te selecteren, ook wel \"Wiel van namen\" of \"Willekeurige naamkiezer\" genoemd.",
       "yesno": "<strong>Ja/Nee-wielen:</strong> voor eenvoudige binaire beslissingen.",
       "food": "<strong>Voedselwiel:</strong> Weet u niet zeker wat u moet eten? Draai aan het voedselwiel voor snelle, willekeurige maaltijdbeslissingen.",
-      "spin": "<strong>Draai aan het wiel:</strong> een volledig aanpasbare willekeurige kiezer voor elke situatie."
+      "spin": "<strong>Draai aan het wiel:</strong> een volledig aanpasbare willekeurige kiezer voor elke situatie.",
+      "twister": "<strong>Twister Spinner:</strong> Een handige manier om willekeurig spelbewegingen zoals 'Right Hand Red' te selecteren."
     },
     "otherToolsOutro": "Elke gespecialiseerde versie neemt het kernconcept van willekeurige selectie over en stemt dit af op verschillende behoeften, waardoor ze handig zijn voor alles, van het organiseren van activiteiten tot het beslechten van debatten met een leuke, onpartijdige twist."
   },
@@ -117,7 +122,20 @@
       "4": "<strong>Eerlijke beurten:</strong> gebruik het in games om te beslissen wie de volgende is."
     },
     "powerTitle": "De kracht van willekeur",
-    "powerDesc": "Ons wiel maakt gebruik van een betrouwbare generator voor pseudo-willekeurige getallen om ervoor te zorgen dat elke draai eerlijk en onvoorspelbaar is. Dit elimineert persoonlijke vooringenomenheid bij eenvoudige beslissingen, waardoor het een werkelijk onpartijdige beslisser wordt. Soms kan het aan het toeval overlaten van kleine keuzes mentale energie vrijmaken voor belangrijkere zaken! Het optionele 'Misschien' voegt flexibiliteit toe voor die momenten waarop een simpel ja of nee niet voldoende is."
+    "powerDesc": "Ons wiel maakt gebruik van een betrouwbare generator voor pseudo-willekeurige getallen om ervoor te zorgen dat elke draai eerlijk en onvoorspelbaar is. Dit elimineert persoonlijke vooringenomenheid bij eenvoudige beslissingen, waardoor het een werkelijk onpartijdige beslisser wordt. Soms kan het aan het toeval overlaten van kleine keuzes mentale energie vrijmaken voor belangrijkere zaken! Het optionele 'Misschien' voegt flexibiliteit toe voor die momenten waarop een simpel ja of nee niet voldoende is.",
+    "faqTitle": "Ja of geen wiel - Veelgestelde vragen",
+    "faqs": {
+      "1Title": "Is het ja of nee-wiel echt willekeurig?",
+      "1Desc": "Ja! Ons wiel maakt gebruik van hoogwaardige randomisatie-algoritmen om ervoor te zorgen dat elke draai onafhankelijk en eerlijk is. Elk stukje van het wiel heeft een gelijke kans om te winnen, gebaseerd op het aantal invoersets dat je kiest.",
+      "2Title": "Kan ik het Yes No-wiel aanpassen?",
+      "2Desc": "Absoluut. U kunt kiezen tussen modi met twee opties (Ja/Nee) en drie opties (Ja/Nee/Misschien). Je kunt ook het aantal 'sets' op het stuur aanpassen om het uiterlijk te veranderen.",
+      "3Title": "Waar is de 'Misschien'-modus voor?",
+      "3Desc": "De 'Misschien'-modus voegt een derde mogelijkheid toe voor lastige beslissingen die niet strikt zwart-wit zijn. Het is perfect voor als u een 'gelijkspel' of een 'afwachtend' resultaat nodig heeft.",
+      "4Title": "Is deze tool gratis te gebruiken?",
+      "4Desc": "Ja, ons Ja of Nee Rad is 100% gratis en vereist geen aanmelding of downloads. Je kunt zo vaak draaien als je wilt!",
+      "5Title": "Werkt het op mobiele apparaten?",
+      "5Desc": "Ja, de tool is volledig responsief en ontworpen om naadloos te werken op alle moderne mobiele browsers, inclusief iPhone en Android."
+    }
   },
   "foodPage": {
     "title": "Voedselwiel",
@@ -239,7 +257,17 @@
     "codeDesc": "Kopieer de onderstaande code om dit geconfigureerde wiel op uw website in te sluiten:",
     "generateBtn": "Genereer insluitcode",
     "errConfigure": "Fout bij het genereren van code. Configureer eerst het wiel.",
-    "errEmpty": "Voeg ten minste één item aan het wiel toe voordat u de insluitcode genereert."
+    "errEmpty": "Voeg ten minste één item aan het wiel toe voordat u de insluitcode genereert.",
+    "title": "Hoe een willekeurig wiel in te sluiten",
+    "heroDesc": "Integreer ons willekeurige wiel eenvoudig op uw website of blog. Volg deze eenvoudige stappen hieronder om de HTML-iframe-code te genereren.",
+    "step1Title": "Stap 1: Voer uw invoer in",
+    "step1Desc": "Configureer eerst de items die u op uw stuur wilt hebben. Voeg namen, keuzes of iets anders toe waar je voor wilt draaien, en pas de kleuren aan.",
+    "step2Title": "Stap 2: Pas de insluitingsinstellingen aan",
+    "step2Desc": "Pas vervolgens de grootte en toegankelijkheidstitel voor uw ingesloten wiel aan.",
+    "step3Title": "Stap 3: Kopieer uw insluitcode",
+    "step3Desc": "Genereer ten slotte de code en kopieer deze naar de HTML van uw website.",
+    "copyBtn": "Kopieer code",
+    "copied": "Gekopieerd!"
   },
   "spinPage": {
     "title": "Draai aan het wiel",
@@ -302,6 +330,82 @@
       "sec6TextMiddle": "beter dan de meeste apps is het feit dat je er alles aan kunt aanpassen. Als je een serieuze bedrijfsweggeefactie organiseert of streamt op Twitch, heb je meer nodig dan alleen een eenvoudige spinner. Als u bijvoorbeeld wilt dat sommige prijzen zeldzamer zijn dan andere, kunt u de kleinere prijzen meerdere keren op het rad dupliceren, zodat de kans groter is dat ze worden gewonnen. Deze \"wegings\"-functie geeft u volledige controle over de kansen. Je kunt ook in de kleuren duiken en het wiel visueel afstemmen op jouw merk of feestthema. Met functies waarmee je kunt bijhouden hoe vaak een optie heeft gewonnen, keuzes direct kunt verbergen en kunt aanpassen hoe het wiel eruit ziet, is het een volledig professionele tool, vermomd als een leuk spel. Probeer de",
       "sec6LinkText2": "belangrijkste spinnergereedschap",
       "sec6TextEnd": "en haal de stress weg bij uw volgende grote beslissing."
+    }
+  },
+  "twisterPage": {
+    "parts": {
+      "rh": "Rechterhand",
+      "lh": "Linkerhand",
+      "rf": "Rechtervoet",
+      "lf": "Linkervoet"
+    },
+    "title": "Twister-spinner",
+    "heroTitle": "Twister Spinner - Willekeurige bewegingsgenerator",
+    "heroDesc": "Bent u uw Twister-spinner kwijt? Gebruik onze gratis online <strong>Twister Spinner</strong> om zetten voor je spel op te roepen! Druk gewoon op Spin en ontvang direct willekeurige opdrachten zoals 'Left Hand Blue' of 'Right Foot Red'.",
+    "howToTitle": "Hoe de Twister-spinner te gebruiken",
+    "steps": {
+      "1": "<strong>Verzamel je vrienden</strong> — Zet de mat op en laat iedereen in positie komen.",
+      "2": "<strong>Draai aan het wiel</strong> — Klik op <em>Draai aan het wiel</em> of op de middelste knop op het wiel.",
+      "3": "<strong>Noem het resultaat</strong> — De winnende zet (bijvoorbeeld 'Right Hand Red') verschijnt boven het wiel.",
+      "4": "<strong>Blijf spelen</strong> — Blijf draaien totdat er nog maar één persoon overblijft!"
+    },
+    "seoTitle": "Wat is een digitale Twister-spinner?",
+    "seoDesc": "Een <strong>Digitale Twister Spinner</strong> is een interactief wiel dat is ontworpen om de fysieke kartonnen spinner in het klassieke gezelschapsspel te vervangen. Het selecteert willekeurig een van de 16 mogelijke bewegingen waarbij een lichaamsdeel (linkerhand, rechterhand, linkervoet, rechtervoet) en een kleur (rood, blauw, geel, groen) betrokken zijn.",
+    "seoList": {
+      "1": "<strong>Vervanging van verloren stukken</strong> — Je hoeft het spel niet te stoppen alleen maar omdat je de originele spinner bent kwijtgeraakt.",
+      "2": "<strong>Klaar voor een feestje</strong>: iedereen kan de draai duidelijk zien op een telefoon of casten naar een tv-scherm.",
+      "3": "<strong>Eerlijk en willekeurig</strong> — cryptografisch gezaaide willekeur voorkomt bedrog of bevooroordeelde spins."
+    },
+    "whyTitle": "Waarom onze Twister-spinner gebruiken?",
+    "whyDesc": "Onze online spinner biedt verschillende voordelen ten opzichte van een fysieke:",
+    "features": {
+      "1Title": "Altijd beschikbaar",
+      "1Desc": "U hoeft niets te downloaden. Toegang tot de spinner vanaf elke smartphone, tablet of laptop.",
+      "2Title": "Duidelijke afbeeldingen",
+      "2Desc": "Heldere kleuren en duidelijke tekst maken het voor de beller gemakkelijk om de beweging door de kamer te lezen.",
+      "3Title": "Eerlijke resultaten",
+      "3Desc": "Cryptografisch veilige willekeur betekent dat je daadwerkelijk een onbevooroordeelde worp krijgt, zonder 'vastzittende' pijlen.",
+      "4Title": "100% gratis",
+      "4Desc": "Onze tool is altijd gratis, zonder betaalmuren of verplichte aanmeldingen."
+    },
+    "faqTitle": "Veelgestelde vragen",
+    "faqs": {
+      "1Title": "Is de Twister Spinner volledig gratis te gebruiken?",
+      "1Desc": "Ja! De Twister Spinner is volledig gratis te gebruiken zonder verborgen kosten of het aanmaken van een account.",
+      "2Title": "Werkt de online spinner op mijn telefoon?",
+      "2Desc": "Absoluut. Het is volledig responsief, dus je kunt het tijdens het spelen gemakkelijk op elk mobiel apparaat gebruiken.",
+      "3Title": "Zijn de resultaten echt willekeurig?",
+      "3Desc": "Ja. Elke draai maakt gebruik van een robuust algoritme om te garanderen dat elke ledemaat en kleurencombinatie een gelijke kans heeft om te verschijnen."
+    },
+    "article": {
+      "sec1Title": "Waarom een ​​digitaal Twister Spinner-spel gebruiken?",
+      "sec1Text": "Het klassieke fysieke Twister-spel is ongelooflijk leuk, maar de kartonnen spinner die erbij wordt geleverd, staat erom bekend verbogen, gescheurd of volledig verloren te gaan. In plaats van het plezier te stoppen als je de spinner niet kunt vinden, kun je een digitale Twister Spinner rechtstreeks op je telefoon of tablet starten. Een digitale versie biedt exact dezelfde 16 combinaties (linkerhand, rechterhand, linkervoet, rechtervoet in rood, blauw, geel en groen) zonder dat een fysiek bord vastloopt. Het is volledig willekeurig, wat betekent dat het spel volkomen eerlijk blijft voor alle spelers totdat er onvermijdelijk iemand omvalt.",
+      "sec2Title": "Een nieuwe draai aan klassieke partygames",
+      "sec2Text": "Een digitale spinner is niet alleen een vervanging; het kan uw bijeenkomst daadwerkelijk verbeteren. Wanneer iedereen verstrikt op de mat ligt, kan de beller door het lezen van een telefoonscherm of het casten naar een smart-tv eenvoudig de zetten aankondigen. Bovendien zorgt onze hoogwaardige, cryptografisch gezaaide randomisatie voor echte willekeur, waardoor alle argumenten over de vraag of een pijl 'op de lijn zat' worden verwijderd. Het spel verloopt sneller en spelers kunnen zich volledig concentreren op het niet vallen.",
+      "sec3Title": "Combineer Party Games met het Namenwiel",
+      "sec3TextStart": "Als u met een grote groep een groot feest organiseert, kunt u waarschijnlijk niet iedereen tegelijk op de Twister-mat plaatsen. Een geweldige manier om beurten eerlijk te beheren is door gebruik te maken van onze",
+      "sec3LinkText": "Wiel van Namen",
+      "sec3TextMiddle": "hulpmiddel om willekeurig te beslissen wie de volgende ronde mag spelen. Je voert eenvoudigweg de namen van iedereen in en draait aan het wiel om de volgende deelnemers te selecteren. Ons",
+      "sec3LinkText2": "Wiel van Namen",
+      "sec3TextEnd": "bevat ook een handige eliminatiefunctie, die ervoor zorgt dat iedereen een beurt krijgt om te spelen voordat iemand twee keer speelt.",
+      "sec4Title": "Neem een ​​pauze en draai aan het voedselwiel",
+      "sec4TextStart": "De hele nacht gezelschapsspelletjes spelen, wekt een serieuze eetlust op. Wanneer het spel Twister is afgelopen en het tijd is om eten te bestellen, kom je er misschien achter dat niemand het eens kan worden over wat te eten. Sla het lange debat over door de",
+      "sec4LinkText": "Voedsel wiel",
+      "sec4TextMiddle": ". Voer gewoon de beste restaurantopties in de buurt van uw feest in, geef er een snelle draai aan en de beslissing is onmiddellijk genomen. Voor het gemak de stand-alone",
+      "sec4LinkText2": "Voedsel wiel",
+      "sec4TextEnd": "is geoptimaliseerd voor mobiel, dus u kunt dit rechtstreeks vanaf uw telefoon doen voordat u de bezorgopdracht plaatst.",
+      "sec5Title": "Beslecht debatten onmiddellijk",
+      "sec5TextStart": "Soms ontstaan ​​er tijdens gezelschapsspellen geschillen. Misschien heeft iemands knie per ongeluk de mat geraakt, of misschien willen twee spelers tegelijkertijd exact dezelfde gekleurde cirkel. Als er een vriendschappelijke discussie uitbreekt, is de snelste manier om deze op te lossen het opgooien van een muntje – of nog beter: een digitale",
+      "sec5LinkText": "Ja/Nee wiel",
+      "sec5TextMiddle": ". Het neemt de verantwoordelijkheid van de gastheer weg en laat de uiteindelijke uitspraak geheel aan het toeval over. De",
+      "sec5LinkText2": "Ja/Nee wiel",
+      "sec5TextEnd": "kan ook worden aangepast met een 'Misschien'-optie als je een gelijkspel wilt forceren of spelers wilt vragen de beurt opnieuw te spelen.",
+      "sec6Title": "Pas alles aan voor je volgende gameavond",
+      "sec6TextStart": "Hoewel de Twister Spinner perfect is voor zijn specifieke spel, wil je misschien je eigen unieke drinkspellen, waarheids-of-durf-uitdagingen of feestregels creëren. Dit is waar de kern ligt",
+      "sec6LinkText": "Willekeurige wielspinner",
+      "sec6TextMiddle": "schijnt. Je kunt letterlijk alles op de plakjes van het wiel plaatsen, alle kleuren veranderen zodat ze bij een evenementthema passen, en zelfs de kansen aanpassen als je wilt dat bepaalde uitdagingen minder vaak voorkomen. Door te profiteren van de belangrijkste",
+      "sec6LinkText2": "belangrijkste spinnergereedschap",
+      "sec6TextEnd": ", kunt u een volledig op maat gemaakte spelavondervaring ontwerpen die uw gasten nooit zullen vergeten."
     }
   }
 }

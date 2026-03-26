@@ -196,12 +196,12 @@
 </template>
 
 <script setup>
-import { onMounted, ref, reactive } from 'vue';
+import { onMounted, ref, reactive, computed } from 'vue';
 import MainWheelSpinner from '../components/MainWheelSpinner.vue';
 import AppHeader from '../components/AppHeader.vue';
 import { useI18n } from 'vue-i18n';
 
-const { locale } = useI18n();
+const { t, locale } = useI18n();
 const localePath = (path) => {
   const currentLang = locale.value;
   if (currentLang === 'en') return path;
@@ -245,24 +245,24 @@ const copyToClipboard = async () => {
   }
 };
 
-const twisterSlices = [
-  { color: '#ff4136', text: 'Right Hand', winCount: 0 },
-  { color: '#0074d9', text: 'Left Foot', winCount: 0 },
-  { color: '#ffdc00', text: 'Left Hand', winCount: 0 },
-  { color: '#2ecc40', text: 'Right Foot', winCount: 0 },
-  { color: '#ff4136', text: 'Left Foot', winCount: 0 },
-  { color: '#0074d9', text: 'Left Hand', winCount: 0 },
-  { color: '#ffdc00', text: 'Right Foot', winCount: 0 },
-  { color: '#2ecc40', text: 'Right Hand', winCount: 0 },
-  { color: '#ff4136', text: 'Left Hand', winCount: 0 },
-  { color: '#0074d9', text: 'Right Foot', winCount: 0 },
-  { color: '#ffdc00', text: 'Right Hand', winCount: 0 },
-  { color: '#2ecc40', text: 'Left Foot', winCount: 0 },
-  { color: '#ff4136', text: 'Right Foot', winCount: 0 },
-  { color: '#0074d9', text: 'Right Hand', winCount: 0 },
-  { color: '#ffdc00', text: 'Left Foot', winCount: 0 },
-  { color: '#2ecc40', text: 'Left Hand', winCount: 0 }
-];
+const twisterSlices = computed(() => [
+  { color: '#ff4136', text: t('twisterPage.parts.rh'), winCount: 0 },
+  { color: '#0074d9', text: t('twisterPage.parts.lf'), winCount: 0 },
+  { color: '#ffdc00', text: t('twisterPage.parts.lh'), winCount: 0 },
+  { color: '#2ecc40', text: t('twisterPage.parts.rf'), winCount: 0 },
+  { color: '#ff4136', text: t('twisterPage.parts.lf'), winCount: 0 },
+  { color: '#0074d9', text: t('twisterPage.parts.lh'), winCount: 0 },
+  { color: '#ffdc00', text: t('twisterPage.parts.rf'), winCount: 0 },
+  { color: '#2ecc40', text: t('twisterPage.parts.rh'), winCount: 0 },
+  { color: '#ff4136', text: t('twisterPage.parts.lh'), winCount: 0 },
+  { color: '#0074d9', text: t('twisterPage.parts.rf'), winCount: 0 },
+  { color: '#ffdc00', text: t('twisterPage.parts.rh'), winCount: 0 },
+  { color: '#2ecc40', text: t('twisterPage.parts.lf'), winCount: 0 },
+  { color: '#ff4136', text: t('twisterPage.parts.rf'), winCount: 0 },
+  { color: '#0074d9', text: t('twisterPage.parts.rh'), winCount: 0 },
+  { color: '#ffdc00', text: t('twisterPage.parts.lf'), winCount: 0 },
+  { color: '#2ecc40', text: t('twisterPage.parts.lh'), winCount: 0 }
+]);
 
 // Update meta tags for SEO when the component mounts
 onMounted(() => {

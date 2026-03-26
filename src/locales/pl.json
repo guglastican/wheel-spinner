@@ -6,14 +6,16 @@
     "embed": "Osadzać",
     "foodWheel": "Koło Żywności",
     "configureEmbed": "Skonfiguruj osadzane koło",
-    "spinTheWheel": "Zakręć kołem"
+    "spinTheWheel": "Zakręć kołem",
+    "twisterSpinner": "Twisterowy spinner"
   },
   "footer": {
     "randoWheel": "Koło Rando",
     "copyright": "© {year} Koło Spinner. Wszelkie prawa zastrzeżone.",
     "privacyPolicy": "Polityka prywatności",
     "termsConditions": "Regulamin",
-    "otherWheels": "Inne koła"
+    "otherWheels": "Inne koła",
+    "languages": "Języki"
   },
   "mainWheel": {
     "winner": "Zwycięzca: {text} 🎉",
@@ -50,7 +52,9 @@
     "ynwTitle": "Tak/Nie Koło",
     "ynwDesc": "Prosty przycisk „tak” lub „nie”, umożliwiający natychmiastową obsługę szybkich wyborów binarnych.",
     "stwTitle": "Zakręć kołem",
-    "stwDesc": "W pełni konfigurowalny losowy selektor do każdej sytuacji."
+    "stwDesc": "W pełni konfigurowalny losowy selektor do każdej sytuacji.",
+    "tsTitle": "Twisterowy spinner",
+    "tsDesc": "Niestandardowy generator kół do wywoływania ruchów w grze towarzyskiej."
   },
   "home": {
     "mainTitle": "Losowy kołowrotek",
@@ -83,7 +87,8 @@
       "names": "<strong>Wybieracze imion / Selektory uczniów:</strong> Powszechnie używane przez nauczycieli do losowego wybierania osób, czasami nazywane „Kołem imion” lub „Losowym wybieraniem imion”.",
       "yesno": "<strong>Koła Tak/Nie:</strong> do prostych decyzji binarnych.",
       "food": "<strong>Koło Żywności:</strong> Nie wiesz, co zjeść? Zakręć kołem jedzenia, aby podejmować szybkie, losowe decyzje dotyczące posiłków.",
-      "spin": "<strong>Zakręć kołem:</strong> w pełni konfigurowalny losowy selektor do każdej sytuacji."
+      "spin": "<strong>Zakręć kołem:</strong> w pełni konfigurowalny losowy selektor do każdej sytuacji.",
+      "twister": "<strong>Twister Spinner:</strong> wygodny sposób na losowe wybieranie ruchów w grze, takich jak „Czerwona prawa ręka”."
     },
     "otherToolsOutro": "Każda specjalistyczna wersja opiera się na podstawowej koncepcji losowego wyboru i dostosowuje ją do różnych potrzeb, dzięki czemu jest przydatna do wszystkiego, od organizowania zajęć po rozstrzyganie debat w zabawny i bezstronny sposób."
   },
@@ -117,7 +122,20 @@
       "4": "<strong>Uczciwe odgrywanie tur:</strong> używaj tej opcji w grach, aby zdecydować, kto będzie następny."
     },
     "powerTitle": "Siła losowości",
-    "powerDesc": "Nasze koło wykorzystuje niezawodny generator liczb pseudolosowych, aby zapewnić, że każdy obrót jest uczciwy i nieprzewidywalny. Eliminuje to osobiste uprzedzenia przy podejmowaniu prostych decyzji, czyniąc z niego naprawdę bezstronnego decydenta. Czasami pozostawienie drobnych wyborów przypadkowi może uwolnić energię mentalną na ważniejsze sprawy! Opcjonalna opcja „Może” zwiększa elastyczność w sytuacjach, gdy proste „tak” lub „nie” nie wystarczy."
+    "powerDesc": "Nasze koło wykorzystuje niezawodny generator liczb pseudolosowych, aby zapewnić, że każdy obrót jest uczciwy i nieprzewidywalny. Eliminuje to osobiste uprzedzenia przy podejmowaniu prostych decyzji, czyniąc z niego naprawdę bezstronnego decydenta. Czasami pozostawienie drobnych wyborów przypadkowi może uwolnić energię mentalną na ważniejsze sprawy! Opcjonalna opcja „Może” zwiększa elastyczność w sytuacjach, gdy proste „tak” lub „nie” nie wystarczy.",
+    "faqTitle": "Tak lub nie, koło — często zadawane pytania",
+    "faqs": {
+      "1Title": "Czy koło Tak lub Nie jest naprawdę losowe?",
+      "1Desc": "Tak! Nasze koło wykorzystuje wysokiej jakości algorytmy randomizacji, aby zapewnić, że każdy obrót jest niezależny i uczciwy. Każdy fragment koła ma równe szanse na wygraną w zależności od liczby wybranych zestawów wejściowych.",
+      "2Title": "Czy mogę dostosować koło Tak Nie?",
+      "2Desc": "Absolutnie. Możesz wybierać pomiędzy trybem dwóch opcji (Tak/Nie) i trzech opcji (Tak/Nie/Być może). Możesz także dostosować liczbę „zestawów” na kole, aby zmienić jego wygląd.",
+      "3Title": "Do czego służy tryb „Może”?",
+      "3Desc": "Tryb „Może” dodaje trzecią możliwość w przypadku trudnych decyzji, które nie są wyłącznie czarno-białe. Jest to idealne rozwiązanie, gdy potrzebujesz wyniku „remis” lub „poczekaj i zobacz”.",
+      "4Title": "Czy korzystanie z tego narzędzia jest bezpłatne?",
+      "4Desc": "Tak, nasze koło Tak lub Nie jest w 100% bezpłatne i nie wymaga rejestracji ani pobierania. Możesz kręcić tyle razy, ile chcesz!",
+      "5Title": "Czy to działa na urządzeniach mobilnych?",
+      "5Desc": "Tak, narzędzie jest w pełni responsywne i zaprojektowane tak, aby bezproblemowo działać na wszystkich nowoczesnych przeglądarkach mobilnych, w tym na iPhonie i Androidzie."
+    }
   },
   "foodPage": {
     "title": "Koło Żywności",
@@ -239,7 +257,17 @@
     "codeDesc": "Skopiuj poniższy kod, aby osadzić skonfigurowane koło na swojej stronie internetowej:",
     "generateBtn": "Wygeneruj kod osadzania",
     "errConfigure": "Błąd podczas generowania kodu. Najpierw skonfiguruj koło.",
-    "errEmpty": "Przed wygenerowaniem kodu do umieszczenia na stronie dodaj co najmniej jeden element do koła."
+    "errEmpty": "Przed wygenerowaniem kodu do umieszczenia na stronie dodaj co najmniej jeden element do koła.",
+    "title": "Jak osadzić losowe koło",
+    "heroDesc": "Z łatwością umieść nasze losowe koło na swojej stronie internetowej lub blogu. Wykonaj poniższe proste kroki, aby wygenerować kod HTML iframe.",
+    "step1Title": "Krok 1: Wprowadź swoje dane wejściowe",
+    "step1Desc": "Najpierw skonfiguruj elementy, które chcesz mieć na swoim kole. Dodaj imiona, opcje lub cokolwiek innego, czym chcesz się pochwalić, i dostosuj ich kolory.",
+    "step2Title": "Krok 2: Dostosuj ustawienia osadzania",
+    "step2Desc": "Następnie dostosuj rozmiar i tytuł ułatwień dostępu dla osadzonego koła.",
+    "step3Title": "Krok 3: Skopiuj swój kod do umieszczenia na stronie",
+    "step3Desc": "Na koniec wygeneruj kod i skopiuj go do kodu HTML swojej witryny.",
+    "copyBtn": "Skopiuj kod",
+    "copied": "Skopiowano!"
   },
   "spinPage": {
     "title": "Zakręć kołem",
@@ -302,6 +330,82 @@
       "sec6TextMiddle": "lepsze niż większość aplikacji jest to, że możesz wszystko w nich dostosować. Jeśli organizujesz poważną imprezę firmową lub prowadzisz transmisję strumieniową na Twitchu, potrzebujesz czegoś więcej niż zwykłego spinnera. Na przykład, jeśli chcesz, aby niektóre nagrody były rzadsze od innych, możesz po prostu wielokrotnie powielać mniejsze nagrody na kole, aby zwiększyć prawdopodobieństwo ich trafienia. Ta funkcja „ważenia” daje Ci całkowitą kontrolę nad kursami. Możesz także zagłębić się w kolory i wizualnie dopasować koło do swojej marki lub motywu imprezy. Dzięki funkcjom, które pozwalają śledzić, ile razy dana opcja wygrała, natychmiast ukrywać wybory i modyfikować wygląd koła, jest to całkowicie profesjonalne narzędzie udające zabawną grę. Wypróbuj",
       "sec6LinkText2": "główne narzędzie obrotowe",
       "sec6TextEnd": "i uwolnij się od stresu związanego z kolejną ważną decyzją."
+    }
+  },
+  "twisterPage": {
+    "parts": {
+      "rh": "Prawa ręka",
+      "lh": "Lewa ręka",
+      "rf": "Prawa stopa",
+      "lf": "Lewa stopa"
+    },
+    "title": "Twisterowy spinner",
+    "heroTitle": "Twister Spinner — generator losowych ruchów",
+    "heroDesc": "Zgubiłeś swój spinner Twister? Skorzystaj z naszego darmowego <strong>Twister Spinnera</strong>, aby wymyślić ruchy do swojej gry! Po prostu naciśnij obrót, a otrzymasz natychmiastowe losowe polecenia, takie jak „Niebieska lewa ręka” lub „Czerwona prawa stopa”.",
+    "howToTitle": "Jak korzystać z Twister Spinnera",
+    "steps": {
+      "1": "<strong>Zbierz znajomych</strong> — rozłóż matę i poproś wszystkich o zajęcie miejsc.",
+      "2": "<strong>Zakręć kołem</strong> — kliknij <em>Zakręć kołem</em> lub środkowy przycisk na kole.",
+      "3": "<strong>Ogłoszenie wyniku</strong> — zwycięski ruch (np. „Prawa ręka czerwona”) pojawia się nad kołem.",
+      "4": "<strong>Graj dalej</strong> — kręć dalej, aż zostanie tylko jedna osoba!"
+    },
+    "seoTitle": "Co to jest cyfrowy Twister Spinner?",
+    "seoDesc": "<strong>Cyfrowy Twister Spinner</strong> to interaktywne koło zaprojektowane w celu zastąpienia fizycznego kartonowego spinnera w klasycznej grze towarzyskiej. Losowo wybiera jeden z 16 możliwych ruchów obejmujących część ciała (lewa ręka, prawa ręka, lewa stopa, prawa stopa) i kolor (czerwony, niebieski, żółty, zielony).",
+    "seoList": {
+      "1": "<strong>Wymiana utraconych elementów</strong> — nie musisz przerywać gry tylko dlatego, że zgubiłeś oryginalną tarczę.",
+      "2": "<strong>Impreza gotowa</strong> — każdy może wyraźnie zobaczyć obrót na telefonie lub przesłać obraz na ekran telewizora.",
+      "3": "<strong>Uczciwa i losowa</strong> — losowość zaszczepiona kryptograficznie zapobiega oszustwom i stronniczym spinom."
+    },
+    "whyTitle": "Dlaczego warto używać naszego Twister Spinnera?",
+    "whyDesc": "Nasz internetowy spinner ma kilka zalet w porównaniu z fizycznym:",
+    "features": {
+      "1Title": "Zawsze dostępne",
+      "1Desc": "Nie trzeba niczego pobierać. Uzyskaj dostęp do spinnera z dowolnego smartfona, tabletu lub laptopa.",
+      "2Title": "Wyczyść grafikę",
+      "2Desc": "Jasne kolory i wyraźny tekst ułatwiają rozmówcy odczytanie ruchu w całym pomieszczeniu.",
+      "3Title": "Uczciwe wyniki",
+      "3Desc": "Kryptograficznie bezpieczna losowość oznacza, że ​​faktycznie otrzymujesz bezstronny rzut, bez „zablokowanych” strzałek.",
+      "4Title": "100% za darmo",
+      "4Desc": "Nasze narzędzie jest zawsze bezpłatne, bez paywallów i wymaganych rejestracji."
+    },
+    "faqTitle": "Często zadawane pytania",
+    "faqs": {
+      "1Title": "Czy korzystanie z Twister Spinner jest całkowicie darmowe?",
+      "1Desc": "Tak! Twister Spinner jest całkowicie darmowy, nie wymaga żadnych ukrytych opłat ani konieczności zakładania konta.",
+      "2Title": "Czy spinner online działa na moim telefonie?",
+      "2Desc": "Absolutnie. Jest w pełni responsywna, dzięki czemu z łatwością można z niej korzystać podczas gry na dowolnym urządzeniu mobilnym.",
+      "3Title": "Czy wyniki są naprawdę losowe?",
+      "3Desc": "Tak. Każdy obrót wykorzystuje solidny algorytm, aby zagwarantować, że każda kombinacja kończyn i kolorów ma równe szanse na pojawienie się."
+    },
+    "article": {
+      "sec1Title": "Dlaczego warto korzystać z cyfrowej gry Twister Spinner?",
+      "sec1Text": "Klasyczna gra Twister w wersji fizycznej jest niesamowicie zabawna, ale dołączony do niej kartonowy spinner notorycznie się wygina, podrywa lub całkowicie gubi. Zamiast przerywać zabawę, gdy nie możesz znaleźć spinnera, możesz uruchomić cyfrowy Twister Spinner bezpośrednio na swoim telefonie lub tablecie. Wersja cyfrowa zapewnia dokładnie te same 16 kombinacji (lewa ręka, prawa ręka, lewa stopa, prawa stopa w kolorze czerwonym, niebieskim, żółtym i zielonym) bez kłopotów z blokowaniem się fizycznej planszy. Jest całkowicie losowy, co oznacza, że ​​gra pozostaje całkowicie sprawiedliwa dla wszystkich graczy, dopóki ktoś nieuchronnie się nie przewróci.",
+      "sec2Title": "Nowe podejście do klasycznych gier towarzyskich",
+      "sec2Text": "Cyfrowy spinner to nie tylko zamiennik; może naprawdę ulepszyć twoje spotkanie. Kiedy wszyscy są splątani na macie, czytanie ekranu telefonu lub przesyłanie obrazu na inteligentny telewizor pozwala dzwoniącemu z łatwością ogłosić ruchy. Ponadto nasza wysokiej jakości randomizacja szyfrowana zapewnia prawdziwą losowość, eliminując wszelkie spory dotyczące tego, czy strzałka „utknęła na linii”. Gra toczy się szybciej, a gracze mogą całkowicie skupić się na tym, aby nie spaść.",
+      "sec3Title": "Połącz gry towarzyskie z kołem nazw",
+      "sec3TextStart": "Jeśli organizujesz dużą imprezę w większym gronie, prawdopodobnie nie zmieścisz wszystkich na macie Twister jednocześnie. Świetnym sposobem na sprawiedliwe zarządzanie zakrętami jest użycie naszego",
+      "sec3LinkText": "Koło imion",
+      "sec3TextMiddle": "narzędzie umożliwiające losową decyzję, kto zagra w następnej rundzie. Wystarczy wpisać imiona wszystkich uczestników i zakręcić kołem, aby wybrać kolejnych uczestników. Nasz",
+      "sec3LinkText2": "Koło imion",
+      "sec3TextEnd": "zawiera także przydatną funkcję eliminacji, dzięki której każdy otrzyma swoją turę, zanim ktokolwiek zagra dwa razy.",
+      "sec4Title": "Zrób sobie przerwę i zakręć kołem żywności",
+      "sec4TextStart": "Całonocne granie w gry towarzyskie zwiększa apetyt. Kiedy gra w Twister dobiegnie końca i nadejdzie czas zamówienia jedzenia, może się okazać, że nikt nie będzie mógł zgodzić się co do tego, co zjeść. Pomiń długą debatę, używając opcji",
+      "sec4LinkText": "Koło Żywności",
+      "sec4TextMiddle": ". Po prostu wejdź do najlepszych restauracji w pobliżu Twojej imprezy, szybko się obejrzyj, a decyzja zostanie podjęta natychmiast. Dla wygody, samodzielny",
+      "sec4LinkText2": "Koło Żywności",
+      "sec4TextEnd": "jest zoptymalizowany pod kątem urządzeń mobilnych, dzięki czemu możesz to zrobić bezpośrednio na telefonie przed złożeniem zamówienia na dostawę.",
+      "sec5Title": "Natychmiast rozstrzygaj spory",
+      "sec5TextStart": "Czasem podczas zabaw towarzyskich dochodzi do sprzeczek. Może czyjeś kolano przypadkowo dotknęło maty, a może dwóch graczy chce w tym samym czasie dokładnie tego samego kolorowego koła. Jeśli wybuchnie przyjacielska kłótnia, najszybszym sposobem jej rozwiązania jest rzut monetą – lub jeszcze lepiej – cyfrowo",
+      "sec5LinkText": "Tak/Nie, koło",
+      "sec5TextMiddle": ". Zdejmuje to odpowiedzialność z gospodarza i pozostawia ostateczną decyzję wyłącznie przypadkowi. The",
+      "sec5LinkText2": "Tak/Nie, koło",
+      "sec5TextEnd": "można również dostosować tak, aby zawierał opcję „Być może”, jeśli chcesz wymusić remis lub poprosić graczy o powtórzenie tury.",
+      "sec6Title": "Dostosuj wszystko na następny wieczór gier",
+      "sec6TextStart": "Chociaż Twister Spinner jest idealny do konkretnej gry, możesz stworzyć własne, unikalne gry alkoholowe, wyzwania typu „prawda czy wyzwanie” lub zasady imprezy. To tu znajduje się rdzeń",
+      "sec6LinkText": "Losowy kołowrotek",
+      "sec6TextMiddle": "świeci. Możesz umieścić dosłownie wszystko na wycinkach koła, zmienić wszystkie kolory, aby dopasować je do tematu wydarzenia, a nawet dostosować kursy, jeśli chcesz, aby niektóre wyzwania pojawiały się rzadziej. Korzystając z głównego",
+      "sec6LinkText2": "główne narzędzie obrotowe",
+      "sec6TextEnd": ", możesz zaprojektować w pełni spersonalizowaną zabawę, której Twoi goście nigdy nie zapomną."
     }
   }
 }

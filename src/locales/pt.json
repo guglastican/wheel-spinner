@@ -6,14 +6,16 @@
     "embed": "Incorporar",
     "foodWheel": "Roda Alimentar",
     "configureEmbed": "Configurar roda incorporável",
-    "spinTheWheel": "Gire a roda"
+    "spinTheWheel": "Gire a roda",
+    "twisterSpinner": "Girador Twister"
   },
   "footer": {
     "randoWheel": "Roda Rando",
     "copyright": "© {year} Girador de Rodas. Todos os direitos reservados.",
     "privacyPolicy": "política de Privacidade",
     "termsConditions": "Termos e Condições",
-    "otherWheels": "Outras rodas"
+    "otherWheels": "Outras rodas",
+    "languages": "Idiomas"
   },
   "mainWheel": {
     "winner": "Vencedor: {text} 🎉",
@@ -50,7 +52,9 @@
     "ynwTitle": "Sim/Não Roda",
     "ynwDesc": "Um botão giratório simples de sim ou não para lidar com escolhas binárias rápidas instantaneamente.",
     "stwTitle": "Gire a roda",
-    "stwDesc": "Um seletor aleatório totalmente personalizável para qualquer situação."
+    "stwDesc": "Um seletor aleatório totalmente personalizável para qualquer situação.",
+    "tsTitle": "Girador Twister",
+    "tsDesc": "Um gerador de roda personalizado para definir movimentos para o seu jogo de festa."
   },
   "home": {
     "mainTitle": "Girador de roda aleatório",
@@ -83,7 +87,8 @@
       "names": "<strong>Seletores de Nomes/Seletores de Alunos:</strong> Comumente usados ​​por educadores para selecionar indivíduos aleatoriamente, às vezes chamado de \"Roda de Nomes\" ou \"Seletor de Nomes Aleatórios\".",
       "yesno": "<strong>Rodas Sim/Não:</strong> Para decisões binárias simples.",
       "food": "<strong>Roda Alimentar:</strong> Não sabe o que comer? Gire a roda dos alimentos para tomar decisões rápidas e aleatórias sobre refeições.",
-      "spin": "<strong>Gire a roda:</strong> um seletor aleatório totalmente personalizável para qualquer situação."
+      "spin": "<strong>Gire a roda:</strong> um seletor aleatório totalmente personalizável para qualquer situação.",
+      "twister": "<strong>Twister Spinner:</strong> Uma maneira conveniente de selecionar aleatoriamente movimentos de jogo como 'Right Hand Red'."
     },
     "otherToolsOutro": "Cada versão especializada pega o conceito central de seleção aleatória e o adapta para atender a necessidades distintas, tornando-os úteis para tudo, desde a organização de atividades até a resolução de debates com um toque divertido e imparcial."
   },
@@ -117,7 +122,20 @@
       "4": "<strong>Tomada de turnos justa:</strong> Use-o em jogos para decidir quem será o próximo."
     },
     "powerTitle": "O poder da aleatoriedade",
-    "powerDesc": "Nossa roda usa um gerador de números pseudo-aleatórios confiável para garantir que cada giro seja justo e imprevisível. Isso elimina preconceitos pessoais de decisões simples, tornando-o um tomador de decisões verdadeiramente imparcial. Às vezes, deixar pequenas escolhas ao acaso pode liberar energia mental para assuntos mais importantes! O opcional 'Talvez' adiciona flexibilidade para aqueles momentos em que um simples sim ou não não é suficiente."
+    "powerDesc": "Nossa roda usa um gerador de números pseudo-aleatórios confiável para garantir que cada giro seja justo e imprevisível. Isso elimina preconceitos pessoais de decisões simples, tornando-o um tomador de decisões verdadeiramente imparcial. Às vezes, deixar pequenas escolhas ao acaso pode liberar energia mental para assuntos mais importantes! O opcional 'Talvez' adiciona flexibilidade para aqueles momentos em que um simples sim ou não não é suficiente.",
+    "faqTitle": "Roda Sim ou Não – Perguntas Frequentes",
+    "faqs": {
+      "1Title": "A roda do Sim ou Não é verdadeiramente aleatória?",
+      "1Desc": "Sim! Nossa roda usa algoritmos de randomização de alta qualidade para garantir que cada giro seja independente e justo. Cada pedaço da roda tem chances iguais de ganhar com base no número de conjuntos de entradas que você escolher.",
+      "2Title": "Posso personalizar a roda Sim Não?",
+      "2Desc": "Absolutamente. Você pode escolher entre os modos de duas opções (Sim/Não) e três opções (Sim/Não/Talvez). Você também pode ajustar o número de 'conjuntos' na roda para alterar sua aparência.",
+      "3Title": "Para que serve o modo 'Talvez'?",
+      "3Desc": "O modo 'Talvez' adiciona uma terceira possibilidade para aquelas decisões complicadas que não são estritamente preto e branco. É perfeito para quando você precisa de um resultado de 'empate' ou 'esperar para ver'.",
+      "4Title": "Esta ferramenta é gratuita?",
+      "4Desc": "Sim, nossa Roda Sim ou Não é 100% gratuita e não requer inscrição ou download. Você pode girar quantas vezes quiser!",
+      "5Title": "Funciona em dispositivos móveis?",
+      "5Desc": "Sim, a ferramenta é totalmente responsiva e projetada para funcionar perfeitamente em todos os navegadores móveis modernos, incluindo iPhone e Android."
+    }
   },
   "foodPage": {
     "title": "Roda Alimentar",
@@ -239,7 +257,17 @@
     "codeDesc": "Copie o código abaixo para incorporar esta roda configurada em seu site:",
     "generateBtn": "Gerar código incorporado",
     "errConfigure": "Erro ao gerar código. Configure a roda primeiro.",
-    "errEmpty": "Adicione pelo menos um item à roda antes de gerar o código de incorporação."
+    "errEmpty": "Adicione pelo menos um item à roda antes de gerar o código de incorporação.",
+    "title": "Como incorporar roda aleatória",
+    "heroDesc": "Incorpore nossa roda aleatória facilmente em seu site ou blog. Siga estas etapas simples abaixo para gerar o código HTML iframe.",
+    "step1Title": "Etapa 1: insira suas entradas",
+    "step1Desc": "Primeiro, configure os itens que deseja no seu volante. Adicione nomes, opções ou qualquer outra coisa que você gostaria de girar e personalize suas cores.",
+    "step2Title": "Etapa 2: personalizar as configurações de incorporação",
+    "step2Desc": "Em seguida, ajuste o tamanho e o título de acessibilidade da roda incorporada.",
+    "step3Title": "Etapa 3: copie seu código incorporado",
+    "step3Desc": "Por fim, gere o código e copie-o para o HTML do seu site.",
+    "copyBtn": "Copiar código",
+    "copied": "Copiada!"
   },
   "spinPage": {
     "title": "Gire a roda",
@@ -302,6 +330,82 @@
       "sec6TextMiddle": "melhor do que a maioria dos aplicativos é o fato de que você pode ajustar tudo nele. Se você está realizando um sorteio ou streaming de uma empresa séria no Twitch, você precisa de mais do que apenas um spinner básico. Por exemplo, se quiser que alguns prêmios sejam mais raros do que outros, você pode simplesmente duplicar os prêmios menores várias vezes na roda para que tenham maior probabilidade de serem acertados. Este recurso de “ponderação” oferece controle total sobre as probabilidades. Você também pode mergulhar nas cores e combinar visualmente a roda com a sua marca ou tema da festa. Com recursos que permitem rastrear quantas vezes uma opção ganhou, ocultar escolhas instantaneamente e ajustar a aparência da roda, é uma ferramenta totalmente profissional disfarçada de um jogo divertido. Experimente o",
       "sec6LinkText2": "ferramenta giratória principal",
       "sec6TextEnd": "e tire o estresse de sua próxima grande decisão."
+    }
+  },
+  "twisterPage": {
+    "parts": {
+      "rh": "Mão Direita",
+      "lh": "Mão Esquerda",
+      "rf": "Pé direito",
+      "lf": "Pé esquerdo"
+    },
+    "title": "Girador Twister",
+    "heroTitle": "Twister Spinner — Gerador de movimentos aleatórios",
+    "heroDesc": "Perdeu seu girador Twister? Use nosso <strong>Twister Spinner</strong> on-line gratuito para definir movimentos para o seu jogo! Basta clicar em girar e obter comandos aleatórios instantâneos como 'Left Hand Blue' ou 'Right Foot Red'.",
+    "howToTitle": "Como usar o Twister Spinner",
+    "steps": {
+      "1": "<strong>Reúna seus amigos</strong> — Prepare o tapete e faça com que todos se posicionem.",
+      "2": "<strong>Girar a roda</strong> — Clique em <em>Girar a roda</em> ou no botão central da roda.",
+      "3": "<strong>Afirme o resultado</strong> — A jogada vencedora (por exemplo, 'Mão Direita Vermelha') aparece acima da roda.",
+      "4": "<strong>Continue jogando</strong> — Continue girando até que apenas uma pessoa fique de pé!"
+    },
+    "seoTitle": "O que é um Twister Spinner Digital?",
+    "seoDesc": "Um <strong>Digital Twister Spinner</strong> é uma roda interativa projetada para substituir o girador de papelão físico no clássico jogo de festa. Ele seleciona aleatoriamente um dos 16 movimentos possíveis envolvendo uma parte do corpo (Mão Esquerda, Mão Direita, Pé Esquerdo, Pé Direito) e uma cor (Vermelho, Azul, Amarelo, Verde).",
+    "seoList": {
+      "1": "<strong>Substituição de peças perdidas</strong> — Não há necessidade de parar o jogo só porque você perdeu o botão giratório original.",
+      "2": "<strong>Pronto para a festa</strong> — Todos podem ver o giro claramente em um telefone ou transmitir para uma tela de TV.",
+      "3": "<strong>Justo e aleatório</strong> — a aleatoriedade semeada criptograficamente evita trapaças ou giros tendenciosos."
+    },
+    "whyTitle": "Por que usar nosso Twister Spinner?",
+    "whyDesc": "Nosso spinner online oferece várias vantagens em relação ao físico:",
+    "features": {
+      "1Title": "Sempre disponível",
+      "1Desc": "Não há necessidade de baixar nada. Acesse o spinner de qualquer smartphone, tablet ou laptop.",
+      "2Title": "Gráficos claros",
+      "2Desc": "Cores brilhantes e texto claro facilitam a leitura do movimento pelo chamador na sala.",
+      "3Title": "Resultados Justos",
+      "3Desc": "A aleatoriedade criptograficamente segura significa que você está realmente obtendo uma rolagem imparcial, sem setas 'presas'.",
+      "4Title": "100% grátis",
+      "4Desc": "Nossa ferramenta é sempre gratuita, sem acesso pago ou inscrições obrigatórias."
+    },
+    "faqTitle": "Perguntas frequentes",
+    "faqs": {
+      "1Title": "O uso do Twister Spinner é totalmente gratuito?",
+      "1Desc": "Sim! O Twister Spinner é totalmente gratuito, sem taxas ocultas ou necessidade de criação de conta.",
+      "2Title": "O spinner online funciona no meu telefone?",
+      "2Desc": "Absolutamente. É totalmente responsivo, então você pode usá-lo facilmente em qualquer dispositivo móvel enquanto joga.",
+      "3Title": "Os resultados são verdadeiramente aleatórios?",
+      "3Desc": "Sim. Cada giro usa um algoritmo robusto para garantir que cada combinação de membro e cor tenha chances iguais de aparecer."
+    },
+    "article": {
+      "sec1Title": "Por que usar um jogo digital Twister Spinner?",
+      "sec1Text": "O clássico jogo Twister físico é incrivelmente divertido, mas o girador de papelão que o acompanha é famoso por ficar dobrado, rasgado ou completamente perdido. Em vez de interromper a diversão quando não consegue encontrar o spinner, você pode lançar um Twister Spinner digital diretamente no seu telefone ou tablet. Uma versão digital oferece exatamente as mesmas 16 combinações (mão esquerda, mão direita, pé esquerdo, pé direito em vermelho, azul, amarelo e verde) sem o incômodo de uma prancha física ficar presa. É completamente aleatório, o que significa que o jogo permanece totalmente justo para todos os jogadores até que alguém inevitavelmente caia.",
+      "sec2Title": "Trazendo um novo toque aos jogos de festa clássicos",
+      "sec2Text": "Um spinner digital não é apenas um substituto; pode realmente melhorar sua reunião. Quando todos estão emaranhados no tapete, ler a tela do telefone ou transmiti-la para uma smart TV permite que o chamador anuncie facilmente os movimentos. Além disso, nossa randomização semeada criptograficamente de alta qualidade garante a verdadeira aleatoriedade, eliminando qualquer discussão sobre se uma seta estava 'presa na linha'. O jogo flui mais rápido e os jogadores podem se concentrar inteiramente em não cair.",
+      "sec3Title": "Combine jogos de festa com a roda dos nomes",
+      "sec3TextStart": "Se você estiver organizando uma grande festa com um grande grupo, provavelmente não conseguirá acomodar todos no tapete Twister ao mesmo tempo. Uma ótima maneira de gerenciar curvas de maneira justa é usar nosso",
+      "sec3LinkText": "Roda de Nomes",
+      "sec3TextMiddle": "ferramenta para decidir aleatoriamente quem jogará a próxima rodada. Basta inserir os nomes de todos e girar a roda para selecionar os próximos competidores. Nosso",
+      "sec3LinkText2": "Roda de Nomes",
+      "sec3TextEnd": "também inclui um recurso de eliminação útil, garantindo que todos tenham a oportunidade de jogar antes que alguém jogue duas vezes.",
+      "sec4Title": "Faça uma pausa e gire a roda da comida",
+      "sec4TextStart": "Jogar jogos de festa a noite toda aumenta o apetite. Quando o jogo Twister terminar e for hora de pedir comida, você poderá descobrir que ninguém concorda sobre o que comer. Evite o longo debate usando o",
+      "sec4LinkText": "Roda Alimentar",
+      "sec4TextMiddle": ". Basta inserir as principais opções de restaurantes perto da sua festa, dar uma olhada rápida e a decisão será tomada instantaneamente. Por conveniência, o autônomo",
+      "sec4LinkText2": "Roda Alimentar",
+      "sec4TextEnd": "é otimizado para celular, para que você possa fazer isso diretamente do seu telefone antes de fazer o pedido de entrega.",
+      "sec5Title": "Resolva debates instantaneamente",
+      "sec5TextStart": "Às vezes, durante os jogos de festa, acontecem disputas. Talvez o joelho de alguém tenha tocado acidentalmente o tapete, ou talvez dois jogadores queiram exatamente o mesmo círculo colorido ao mesmo tempo. Se surgir uma discussão amigável, a maneira mais rápida de resolvê-la é jogando uma moeda ao ar - ou melhor ainda, um jogo digital.",
+      "sec5LinkText": "Roda Sim/Não",
+      "sec5TextMiddle": ". Isso tira a responsabilidade do anfitrião e deixa a decisão final inteiramente ao acaso. O",
+      "sec5LinkText2": "Roda Sim/Não",
+      "sec5TextEnd": "também pode ser personalizado para incluir a opção 'Talvez' se você quiser forçar um empate ou pedir aos jogadores que joguem novamente o turno.",
+      "sec6Title": "Personalize tudo para sua próxima noite de jogo",
+      "sec6TextStart": "Embora o Twister Spinner seja perfeito para seu jogo específico, você pode querer criar seus próprios jogos de bebida exclusivos, desafios de verdade ou desafio ou regras de festa. É aqui que o núcleo",
+      "sec6LinkText": "Girador de roda aleatória",
+      "sec6TextMiddle": "brilha. Você pode colocar literalmente qualquer coisa nas fatias da roda, alterar todas as cores para combinar com o tema do evento e até mesmo ajustar as probabilidades se quiser que alguns desafios apareçam com menos frequência. Ao aproveitar os principais",
+      "sec6LinkText2": "ferramenta giratória principal",
+      "sec6TextEnd": ", você pode criar uma experiência noturna de jogo totalmente personalizada que seus convidados nunca esquecerão."
     }
   }
 }

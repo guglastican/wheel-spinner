@@ -6,14 +6,16 @@
     "embed": "Intégrer",
     "foodWheel": "Roue alimentaire",
     "configureEmbed": "Configurer la roue intégrable",
-    "spinTheWheel": "Faites tourner la roue"
+    "spinTheWheel": "Faites tourner la roue",
+    "twisterSpinner": "Tourneur Twister"
   },
   "footer": {
     "randoWheel": "Roue Rando",
     "copyright": "© {year} Roue Spinner. Tous droits réservés.",
     "privacyPolicy": "politique de confidentialité",
     "termsConditions": "Conditions générales",
-    "otherWheels": "Autres roues"
+    "otherWheels": "Autres roues",
+    "languages": "Langues"
   },
   "mainWheel": {
     "winner": "Gagnant : {text} 🎉",
@@ -50,7 +52,9 @@
     "ynwTitle": "Oui / Non Roue",
     "ynwDesc": "Un simple oui ou non pour gérer instantanément des choix binaires rapides.",
     "stwTitle": "Faites tourner la roue",
-    "stwDesc": "Un sélecteur aléatoire entièrement personnalisable pour toutes les situations."
+    "stwDesc": "Un sélecteur aléatoire entièrement personnalisable pour toutes les situations.",
+    "tsTitle": "Tourneur Twister",
+    "tsDesc": "Un générateur de roues personnalisé pour appeler les mouvements de votre jeu de société."
   },
   "home": {
     "mainTitle": "Roue aléatoire",
@@ -83,7 +87,8 @@
       "names": "<strong>Sélecteurs de noms/sélecteurs d'élèves</strong> : couramment utilisés par les enseignants pour sélectionner des individus au hasard, parfois appelés « Roue des noms » ou « Sélecteur de noms aléatoires ».",
       "yesno": "<strong>Roues Oui/Non :</strong> Pour des décisions binaires simples.",
       "food": "<strong>Roue des aliments :</strong> Vous ne savez pas quoi manger ? Faites tourner la roue des aliments pour prendre des décisions rapides et aléatoires en matière de repas.",
-      "spin": "<strong>Spin the Wheel</strong> : un sélecteur aléatoire entièrement personnalisable pour toutes les situations."
+      "spin": "<strong>Spin the Wheel</strong> : un sélecteur aléatoire entièrement personnalisable pour toutes les situations.",
+      "twister": "<strong>Twister Spinner :</strong> Un moyen pratique de sélectionner au hasard des mouvements de jeu comme « Main droite rouge »."
     },
     "otherToolsOutro": "Chaque version spécialisée reprend le concept de base de la sélection aléatoire et l'adapte pour répondre à des besoins distincts, ce qui les rend pratiques pour tout, de l'organisation d'activités au règlement de débats avec une touche amusante et impartiale."
   },
@@ -117,7 +122,20 @@
       "4": "<strong>Tour de tour équitable</strong> : utilisez-le dans les jeux pour décider qui joue ensuite."
     },
     "powerTitle": "Le pouvoir du hasard",
-    "powerDesc": "Notre roue utilise un générateur de nombres pseudo-aléatoires fiable pour garantir que chaque tour est juste et imprévisible. Cela supprime les préjugés personnels des décisions simples, ce qui en fait un décideur véritablement impartial. Parfois, laisser de petits choix au hasard peut libérer de l’énergie mentale pour des choses plus importantes ! L'option « Peut-être » ajoute de la flexibilité pour les moments où un simple oui ou non ne suffit pas."
+    "powerDesc": "Notre roue utilise un générateur de nombres pseudo-aléatoires fiable pour garantir que chaque tour est juste et imprévisible. Cela supprime les préjugés personnels des décisions simples, ce qui en fait un décideur véritablement impartial. Parfois, laisser de petits choix au hasard peut libérer de l’énergie mentale pour des choses plus importantes ! L'option « Peut-être » ajoute de la flexibilité pour les moments où un simple oui ou non ne suffit pas.",
+    "faqTitle": "Roue oui ou non – Foire aux questions",
+    "faqs": {
+      "1Title": "La roue Oui ou Non est-elle vraiment aléatoire ?",
+      "1Desc": "Oui! Notre roue utilise des algorithmes de randomisation de haute qualité pour garantir que chaque tour est indépendant et équitable. Chaque morceau de la roue a une chance égale de gagner en fonction du nombre d'ensembles d'entrées que vous choisissez.",
+      "2Title": "Puis-je personnaliser la roue Oui Non ?",
+      "2Desc": "Absolument. Vous pouvez choisir entre les modes à deux options (Oui/Non) et à trois options (Oui/Non/Peut-être). Vous pouvez également ajuster le nombre de « jeux » sur la roue pour modifier son apparence.",
+      "3Title": "A quoi sert le mode « Peut-être » ?",
+      "3Desc": "Le mode « Peut-être » ajoute une troisième possibilité pour les décisions délicates qui ne sont pas strictement en noir et blanc. C'est parfait lorsque vous avez besoin d'un résultat « nul » ou « attendre et voir ».",
+      "4Title": "Cet outil est-il gratuit ?",
+      "4Desc": "Oui, notre roue Oui ou Non est 100 % gratuite et ne nécessite aucune inscription ni téléchargement. Vous pouvez tourner autant de fois que vous le souhaitez !",
+      "5Title": "Est-ce que ça marche sur les appareils mobiles ?",
+      "5Desc": "Oui, l'outil est entièrement réactif et conçu pour fonctionner de manière transparente sur tous les navigateurs mobiles modernes, y compris iPhone et Android."
+    }
   },
   "foodPage": {
     "title": "Roue alimentaire",
@@ -239,7 +257,17 @@
     "codeDesc": "Copiez le code ci-dessous pour intégrer cette roue configurée sur votre site Web :",
     "generateBtn": "Générer du code intégré",
     "errConfigure": "Erreur lors de la génération du code. Veuillez d'abord configurer la roue.",
-    "errEmpty": "Veuillez ajouter au moins un élément à la roue avant de générer le code d'intégration."
+    "errEmpty": "Veuillez ajouter au moins un élément à la roue avant de générer le code d'intégration.",
+    "title": "Comment intégrer une roue aléatoire",
+    "heroDesc": "Intégrez facilement notre roue aléatoire sur votre site Web ou votre blog. Suivez ces étapes simples ci-dessous pour générer le code HTML iframe.",
+    "step1Title": "Étape 1 : saisissez vos entrées",
+    "step1Desc": "Tout d’abord, configurez les éléments que vous souhaitez sur votre roue. Ajoutez des noms, des choix ou tout ce que vous souhaitez utiliser et personnalisez leurs couleurs.",
+    "step2Title": "Étape 2 : Personnaliser les paramètres d'intégration",
+    "step2Desc": "Ensuite, ajustez la taille et le titre d'accessibilité de votre roue intégrée.",
+    "step3Title": "Étape 3 : copiez votre code d'intégration",
+    "step3Desc": "Enfin, générez le code et copiez-le dans le code HTML de votre site Web.",
+    "copyBtn": "Copier le code",
+    "copied": "Copié!"
   },
   "spinPage": {
     "title": "Faites tourner la roue",
@@ -302,6 +330,82 @@
       "sec6TextMiddle": "mieux que la plupart des applications, c'est le fait que vous pouvez tout modifier. Si vous organisez un concours d'entreprise sérieux ou si vous diffusez sur Twitch, vous avez besoin de plus qu'un simple spinner de base. Par exemple, si vous souhaitez que certains prix soient plus rares que d'autres, vous pouvez simplement dupliquer les plus petits prix plusieurs fois sur la roue afin qu'ils aient plus de chances d'être gagnés. Cette fonctionnalité de « pondération » vous donne un contrôle total sur les cotes. Vous pouvez également vous plonger dans les couleurs et assortir visuellement la roue à votre marque ou au thème de votre fête. Avec des fonctionnalités qui vous permettent de suivre combien de fois une option a gagné, de masquer instantanément les choix et de modifier l'apparence de la roue, c'est un outil entièrement professionnel déguisé en jeu amusant. Essayez le",
       "sec6LinkText2": "outil de rotation principal",
       "sec6TextEnd": "et éliminez le stress lié à votre prochaine grande décision."
+    }
+  },
+  "twisterPage": {
+    "parts": {
+      "rh": "Main droite",
+      "lh": "Main gauche",
+      "rf": "Pied droit",
+      "lf": "Pied gauche"
+    },
+    "title": "Tourneur Twister",
+    "heroTitle": "Twister Spinner — Générateur de mouvements aléatoires",
+    "heroDesc": "Vous avez perdu votre toupie Twister ? Utilisez notre <strong>Twister Spinner</strong> en ligne gratuit pour appeler les mouvements de votre jeu ! Appuyez simplement sur Spin et obtenez des commandes aléatoires instantanées telles que « Left Hand Blue » ou « Right Foot Red ».",
+    "howToTitle": "Comment utiliser le Twister Spinner",
+    "steps": {
+      "1": "<strong>Rassemblez vos amis</strong> : installez le tapis et demandez à tout le monde de se mettre en position.",
+      "2": "<strong>Faire tourner la roue</strong> : cliquez sur <em>Faire tourner la roue</em> ou sur le bouton central de la roue.",
+      "3": "<strong>Appelez le résultat</strong> : le coup gagnant (par exemple, « Main droite rouge ») apparaît au-dessus de la roue.",
+      "4": "<strong>Continuez à jouer</strong> – Continuez à tourner jusqu'à ce qu'il ne reste plus qu'une seule personne debout !"
+    },
+    "seoTitle": "Qu'est-ce qu'un Twister Spinner numérique ?",
+    "seoDesc": "Un <strong>Digital Twister Spinner</strong> est une roue interactive conçue pour remplacer le spinner physique en carton dans le jeu de société classique. Il sélectionne au hasard l'un des 16 mouvements possibles impliquant une partie du corps (main gauche, main droite, pied gauche, pied droit) et une couleur (rouge, bleu, jaune, vert).",
+    "seoList": {
+      "1": "<strong>Remplacement des pièces perdues</strong> — Pas besoin d'arrêter le jeu simplement parce que vous avez perdu la roulette d'origine.",
+      "2": "<strong>Prêt pour la fête</strong> : tout le monde peut voir clairement la rotation sur un téléphone ou la diffuser sur un écran de télévision.",
+      "3": "<strong>Équitable et aléatoire</strong> : le caractère aléatoire généré par la cryptographie empêche la triche ou les tours biaisés."
+    },
+    "whyTitle": "Pourquoi utiliser notre Twister Spinner ?",
+    "whyDesc": "Notre spinner en ligne offre plusieurs avantages par rapport à un spinner physique :",
+    "features": {
+      "1Title": "Toujours disponible",
+      "1Desc": "Pas besoin de télécharger quoi que ce soit. Access the spinner from any smartphone, tablet, or laptop.",
+      "2Title": "Graphiques clairs",
+      "2Desc": "Des couleurs vives et un texte clair permettent à l'appelant de lire facilement le mouvement dans la pièce.",
+      "3Title": "Résultats équitables",
+      "3Desc": "Le caractère aléatoire cryptographiquement sécurisé signifie que vous obtenez réellement un jet impartial, sans flèches « bloquées ».",
+      "4Title": "100% Gratuit",
+      "4Desc": "Notre outil est toujours gratuit, sans paywall ni inscription requise."
+    },
+    "faqTitle": "Foire aux questions",
+    "faqs": {
+      "1Title": "L’utilisation du Twister Spinner est-elle totalement gratuite ?",
+      "1Desc": "Oui! Le Twister Spinner est entièrement gratuit, sans frais cachés ni création de compte requis.",
+      "2Title": "Le spinner en ligne fonctionne-t-il sur mon téléphone ?",
+      "2Desc": "Absolument. Il est entièrement réactif, vous pouvez donc facilement l'utiliser sur n'importe quel appareil mobile tout en jouant.",
+      "3Title": "Les résultats sont-ils vraiment aléatoires ?",
+      "3Desc": "Oui. Every spin uses a robust algorithm to guarantee that each limb and colour combination has an equal chance of appearing."
+    },
+    "article": {
+      "sec1Title": "Pourquoi utiliser un jeu Digital Twister Spinner ?",
+      "sec1Text": "Le jeu physique classique Twister est incroyablement amusant, mais la toupie en carton qui l'accompagne est connue pour être pliée, déchirée ou complètement perdue. Au lieu d'arrêter le plaisir lorsque vous ne trouvez pas le spinner, vous pouvez lancer un Twister Spinner numérique directement sur votre téléphone ou votre tablette. Une version numérique fournit exactement les mêmes 16 combinaisons (main gauche, main droite, pied gauche, pied droit en rouge, bleu, jaune et vert) sans avoir à se coincer une planche physique. C'est complètement aléatoire, ce qui signifie que le jeu reste entièrement équitable pour tous les joueurs jusqu'à ce que quelqu'un tombe inévitablement.",
+      "sec2Title": "Apporter une nouvelle tournure aux jeux de société classiques",
+      "sec2Text": "Un spinner numérique n'est pas seulement un remplacement ; cela peut réellement améliorer votre rassemblement. Lorsque tout le monde est emmêlé sur le tapis, lire l'écran d'un téléphone ou le diffuser sur une télévision intelligente permet à l'appelant d'annoncer facilement les mouvements. De plus, notre randomisation cryptographique de haute qualité garantit un véritable caractère aléatoire, supprimant tout argument quant à savoir si une flèche était « coincée sur la ligne ». Le jeu se déroule plus rapidement et les joueurs peuvent se concentrer entièrement sur le fait de ne pas tomber.",
+      "sec3Title": "Combinez les jeux de société avec la roue des noms",
+      "sec3TextStart": "Si vous organisez une grande fête avec un grand groupe, vous ne pourrez probablement pas placer tout le monde sur le tapis Twister en même temps. Une excellente façon de gérer équitablement les virages est d'utiliser notre",
+      "sec3LinkText": "Roue des noms",
+      "sec3TextMiddle": "outil pour décider au hasard qui jouera au prochain tour. Il vous suffit d'entrer les noms de chacun et de faire tourner la roue pour sélectionner les prochains candidats. Notre",
+      "sec3LinkText2": "Roue des noms",
+      "sec3TextEnd": "comprend également une fonction d'élimination pratique, garantissant que tout le monde a son tour de jouer avant que quiconque ne joue deux fois.",
+      "sec4Title": "Faites une pause et faites tourner la roue alimentaire",
+      "sec4TextStart": "Jouer à des jeux de société toute la nuit ouvre un sérieux appétit. Lorsque le jeu de Twister se termine et qu'il est temps de commander à manger, vous constaterez peut-être que personne ne peut s'entendre sur ce qu'il faut manger. Évitez le long débat en utilisant le",
+      "sec4LinkText": "Roue alimentaire",
+      "sec4TextMiddle": ". Entrez simplement les meilleurs restaurants à proximité de votre fête, essayez-le rapidement et la décision est prise instantanément. Pour plus de commodité, le module autonome",
+      "sec4LinkText2": "Roue alimentaire",
+      "sec4TextEnd": "est optimisé pour les mobiles, vous pouvez donc le faire directement depuis votre téléphone avant de passer la commande de livraison.",
+      "sec5Title": "Réglez les débats instantanément",
+      "sec5TextStart": "Parfois, lors de jeux de société, des disputes surviennent. Peut-être que le genou de quelqu'un a accidentellement touché le tapis, ou peut-être que deux joueurs veulent exactement le même cercle de couleur en même temps. Si une dispute amicale éclate, le moyen le plus rapide de la résoudre est de lancer une pièce de monnaie ou, mieux encore, de lancer une conversation numérique.",
+      "sec5LinkText": "Oui/Non Roue",
+      "sec5TextMiddle": ". Cela enlève toute responsabilité à l'hôte et laisse la décision finale entièrement au hasard. Le",
+      "sec5LinkText2": "Oui/Non Roue",
+      "sec5TextEnd": "peut également être personnalisé pour inclure une option « Peut-être » si vous souhaitez forcer un match nul ou demander aux joueurs de rejouer le tour.",
+      "sec6Title": "Personnalisez tout pour votre prochaine soirée de jeux",
+      "sec6TextStart": "Bien que le Twister Spinner soit parfait pour son jeu spécifique, vous souhaiterez peut-être créer vos propres jeux à boire, défis vérité ou défi ou règles de fête. C'est là que se trouve le noyau",
+      "sec6LinkText": "Roue aléatoire",
+      "sec6TextMiddle": "brille. Vous pouvez littéralement mettre n'importe quoi sur les tranches de la roue, changer toutes les couleurs pour correspondre au thème d'un événement et même ajuster les chances si vous souhaitez que certains défis apparaissent moins fréquemment. En profitant du principal",
+      "sec6LinkText2": "outil de rotation principal",
+      "sec6TextEnd": ", vous pouvez concevoir une expérience de soirée de jeu entièrement personnalisée que vos invités n'oublieront jamais."
     }
   }
 }

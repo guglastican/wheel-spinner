@@ -6,14 +6,16 @@
     "embed": "Beágyaz",
     "foodWheel": "Élelmiszer kerék",
     "configureEmbed": "Beágyazható kerék konfigurálása",
-    "spinTheWheel": "Forgasd meg a kereket"
+    "spinTheWheel": "Forgasd meg a kereket",
+    "twisterSpinner": "Twister Spinner"
   },
   "footer": {
     "randoWheel": "Rando Wheel",
     "copyright": "© {year} Wheel Spinner. Minden jog fenntartva.",
     "privacyPolicy": "Adatvédelmi szabályzat",
     "termsConditions": "Általános Szerződési Feltételek",
-    "otherWheels": "Egyéb kerekek"
+    "otherWheels": "Egyéb kerekek",
+    "languages": "Nyelvek"
   },
   "mainWheel": {
     "winner": "Nyertes: {text} 🎉",
@@ -50,7 +52,9 @@
     "ynwTitle": "Igen / Nem Kerék",
     "ynwDesc": "Egy egyszerű igen vagy nem pörgető a gyors bináris választások azonnali kezelésére.",
     "stwTitle": "Forgasd meg a kereket",
-    "stwDesc": "Teljesen testreszabható véletlenszerű válogató bármilyen helyzethez."
+    "stwDesc": "Teljesen testreszabható véletlenszerű válogató bármilyen helyzethez.",
+    "tsTitle": "Twister Spinner",
+    "tsDesc": "Egyedi kerékgenerátor, amely mozdulatokat hív elő társasjátékodhoz."
   },
   "home": {
     "mainTitle": "Random Wheel Spinner",
@@ -83,7 +87,8 @@
       "names": "<strong>Névválasztók / Diákválasztók:</strong> Az oktatók gyakran használják az egyének véletlenszerű kiválasztására, néha „nevek kerekének” vagy „véletlen névválasztónak” nevezik.",
       "yesno": "<strong>Igen/Nem kerekek:</strong> Egyszerű bináris döntésekhez.",
       "food": "<strong>Food Wheel:</strong> Nem biztos benne, mitévő legyél? Forgassa meg az ételkereket a gyors véletlenszerű étkezési döntésekért.",
-      "spin": "<strong>Forgasd meg a kereket:</strong> Teljesen testreszabható véletlenszerű válogató bármilyen helyzethez."
+      "spin": "<strong>Forgasd meg a kereket:</strong> Teljesen testreszabható véletlenszerű válogató bármilyen helyzethez.",
+      "twister": "<strong>Twister Spinner:</strong> Kényelmes módja a játéklépések véletlenszerű kiválasztásának, például a „Right Hand Red”."
     },
     "otherToolsOutro": "Mindegyik speciális verzió a véletlenszerű kiválasztás alapkoncepcióját veszi alapul, és a különböző igényekhez igazítja, így a tevékenységek szervezésétől a viták szórakoztató, pártatlan fordulattal történő rendezéséig mindenben használható."
   },
@@ -117,7 +122,20 @@
       "4": "<strong>Tisztességes körváltás:</strong> Használd a játékokban, hogy eldöntsd, ki következzen."
     },
     "powerTitle": "A véletlenszerűség ereje",
-    "powerDesc": "A kerekünk megbízható pszeudo-véletlenszám-generátort használ, hogy minden pörgés igazságos és kiszámíthatatlan legyen. Ez eltávolítja a személyes elfogultságot az egyszerű döntésekből, és valóban pártatlan döntéshozóvá válik. Néha az apró döntések véletlenre bízása mentális energiát szabadíthat fel fontosabb ügyekre! Az opcionális „Talán” rugalmasságot biztosít azokban az esetekben, amikor egy egyszerű igen vagy nem nem elég."
+    "powerDesc": "A kerekünk megbízható pszeudo-véletlenszám-generátort használ, hogy minden pörgés igazságos és kiszámíthatatlan legyen. Ez eltávolítja a személyes elfogultságot az egyszerű döntésekből, és valóban pártatlan döntéshozóvá válik. Néha az apró döntések véletlenre bízása mentális energiát szabadíthat fel fontosabb ügyekre! Az opcionális „Talán” rugalmasságot biztosít azokban az esetekben, amikor egy egyszerű igen vagy nem nem elég.",
+    "faqTitle": "Igen vagy nem kerék – Gyakran Ismételt Kérdések",
+    "faqs": {
+      "1Title": "Az igen vagy nem kerék valóban véletlenszerű?",
+      "1Desc": "Igen! Kerekünk kiváló minőségű randomizációs algoritmusokat használ annak biztosítására, hogy minden pörgés független és igazságos legyen. A kerék minden szeletének egyenlő esélye van a győzelemre a választott bemeneti készletek száma alapján.",
+      "2Title": "Testreszabhatom a Yes No kereket?",
+      "2Desc": "Teljesen. Két opciós (Igen/Nem) és három opciós (Igen/Nem/Talán) mód közül választhat. A keréken lévő „készletek” számát is beállíthatja, hogy módosítsa a megjelenését.",
+      "3Title": "Mire való a 'Talán' mód?",
+      "3Desc": "A „Talán” mód egy harmadik lehetőséget ad azokhoz a trükkös döntésekhez, amelyek nem szigorúan fekete-fehérek. Tökéletes, ha „döntetlen” vagy „vár és meglátjuk” eredményre van szüksége.",
+      "4Title": "Ingyenesen használható ez az eszköz?",
+      "4Desc": "Igen, az Igen vagy nem kerék 100%-ban ingyenes, és nem igényel regisztrációt vagy letöltést. Annyiszor pörgetheted, ahányszor csak akarod!",
+      "5Title": "Működik mobil eszközökön?",
+      "5Desc": "Igen, az eszköz teljesen reszponzív, és úgy tervezték, hogy zökkenőmentesen működjön minden modern mobilböngészőn, beleértve az iPhone-t és az Androidot is."
+    }
   },
   "foodPage": {
     "title": "Élelmiszer kerék",
@@ -239,7 +257,17 @@
     "codeDesc": "Másolja ki az alábbi kódot a konfigurált kerék beágyazásához a webhelyén:",
     "generateBtn": "Beágyazási kód generálása",
     "errConfigure": "Hiba a kód generálásakor. Kérjük, először konfigurálja a kereket.",
-    "errEmpty": "A beágyazási kód generálása előtt adjon hozzá legalább egy elemet a kerékhez."
+    "errEmpty": "A beágyazási kód generálása előtt adjon hozzá legalább egy elemet a kerékhez.",
+    "title": "A véletlenszerű kerék beágyazása",
+    "heroDesc": "Illessze be véletlenszerű kerekünket egyszerűen webhelyébe vagy blogjába. Kövesse az alábbi egyszerű lépéseket a HTML iframe kód létrehozásához.",
+    "step1Title": "1. lépés: Adja meg a bemeneti adatokat",
+    "step1Desc": "Először állítsa be a keréken kívánt elemeket. Adjon hozzá neveket, választási lehetőségeket vagy bármi mást, amit szeretne, és testreszabhatja a színüket.",
+    "step2Title": "2. lépés: A beágyazási beállítások testreszabása",
+    "step2Desc": "Ezután állítsa be a beágyazott kerék méretét és hozzáférhetőségi címét.",
+    "step3Title": "3. lépés: Másolja ki a beágyazási kódot",
+    "step3Desc": "Végül állítsa elő a kódot, és másolja be webhelye HTML-kódjába.",
+    "copyBtn": "Kód másolása",
+    "copied": "Másolva!"
   },
   "spinPage": {
     "title": "Forgasd meg a kereket",
@@ -302,6 +330,82 @@
       "sec6TextMiddle": "A legtöbb alkalmazásnál jobb az a tény, hogy mindent módosíthat rajta. Ha komoly céges ajándékot szervezel, vagy streamelsz a Twitchen, akkor többre van szükséged, mint egy egyszerű pörgetőre. Például, ha azt szeretné, hogy egyes nyeremények ritkábbak legyenek, mint mások, egyszerűen megismételheti a kisebb nyereményeket többször is a keréken, így nagyobb valószínűséggel ütik el őket. Ez a „súlyozási” funkció teljes ellenőrzést biztosít az esélyek felett. Elmerülhet a színekben, és vizuálisan illesztheti a kereket márkájához vagy partitémájához. A funkciókkal, amelyek segítségével nyomon követheti, hányszor nyert egy opció, azonnal elrejtheti a választási lehetőségeket, és módosíthatja a kerék megjelenését, ez egy teljesen professzionális eszköz, amelyet szórakoztató játéknak álcáznak. Próbáld ki a",
       "sec6LinkText2": "fő fonószerszám",
       "sec6TextEnd": "és vidd le a stresszt a következő nagy döntésedből."
+    }
+  },
+  "twisterPage": {
+    "parts": {
+      "rh": "Jobb kéz",
+      "lh": "Bal kéz",
+      "rf": "Jobb láb",
+      "lf": "Bal láb"
+    },
+    "title": "Twister Spinner",
+    "heroTitle": "Twister Spinner — Véletlenszerű mozgásgenerátor",
+    "heroDesc": "Elvesztette a Twister spinnerjét? Használja ingyenes online <strong>Twister Spinnerünket</strong>, hogy mozdulatokat hívjon elő játékához! Csak nyomja meg a pörgetést, és azonnali véletlenszerű parancsokat kap, például „Bal kéz kék” vagy „Jobb láb piros”.",
+    "howToTitle": "A Twister Spinner használata",
+    "steps": {
+      "1": "<strong>Gyűjtse össze barátait</strong> — Állítsa fel a szőnyeget, és mindenki kerüljön a helyére.",
+      "2": "<strong>Forgassa meg a kereket</strong> – Kattintson a <em>Forgassa meg a kereket</em> vagy a kerék középső gombjára.",
+      "3": "<strong>Hívja az eredményt</strong> – A nyerő lépés (pl. „Jobb kéz piros”) megjelenik a kerék felett.",
+      "4": "<strong>Játssz tovább</strong> – Folytasd a pörgetést, amíg csak egy ember marad talpon!"
+    },
+    "seoTitle": "Mi az a digitális Twister Spinner?",
+    "seoDesc": "A <strong>Digital Twister Spinner</strong> egy interaktív kerék, amelyet a klasszikus társasjáték fizikai kartonpörgetőjének helyettesítésére terveztek. Véletlenszerűen kiválaszt egyet a 16 lehetséges mozgás közül, amelyek egy testrészt (bal kéz, jobb kéz, bal láb, jobb láb) és egy színt (piros, kék, sárga, zöld) érintenek.",
+    "seoList": {
+      "1": "<strong>Elveszett darabok pótlása</strong> – Nem kell leállítani a játékot csak azért, mert elvesztetted az eredeti pörgetőt.",
+      "2": "<strong>Party készen áll</strong> – Mindenki tisztán láthatja a pörgést telefonon vagy átküldheti a tévéképernyőre.",
+      "3": "<strong>Tisztességes és véletlenszerű</strong> – a kriptográfiailag beoltott véletlenszerűség megakadályozza a csalást vagy az elfogult pörgetést."
+    },
+    "whyTitle": "Miért használja a Twister Spinnerünket?",
+    "whyDesc": "Online fonógépünk számos előnnyel rendelkezik a fizikaihoz képest:",
+    "features": {
+      "1Title": "Mindig elérhető",
+      "1Desc": "Nem kell letölteni semmit. Bármilyen okostelefonról, táblagépről vagy laptopról elérheti a fonót.",
+      "2Title": "Tiszta grafika",
+      "2Desc": "Az élénk színek és az áttekinthető szöveg megkönnyíti a hívó számára, hogy elolvassa a szobán át való mozgást.",
+      "3Title": "Tisztességes eredmények",
+      "3Desc": "A kriptográfiailag biztonságos véletlenszerűség azt jelenti, hogy valójában elfogulatlan dobást kapsz, „elakadt” nyilak nélkül.",
+      "4Title": "100% ingyenes",
+      "4Desc": "Eszközünk mindig ingyenes, fizetőfalak és regisztrációk nélkül."
+    },
+    "faqTitle": "Gyakran Ismételt Kérdések",
+    "faqs": {
+      "1Title": "A Twister Spinner teljesen ingyenesen használható?",
+      "1Desc": "Igen! A Twister Spinner teljesen ingyenesen használható rejtett díjak vagy fiók létrehozása nélkül.",
+      "2Title": "Működik az online fonó a telefonomon?",
+      "2Desc": "Teljesen. Teljesen reszponzív, így könnyedén használhatod bármilyen mobileszközön játék közben.",
+      "3Title": "Valóban véletlenszerűek az eredmények?",
+      "3Desc": "Igen. Minden pörgetés egy robusztus algoritmust használ, amely garantálja, hogy minden végtag és színkombináció egyenlő eséllyel jelenik meg."
+    },
+    "article": {
+      "sec1Title": "Miért érdemes Digital Twister Spinner játékot használni?",
+      "sec1Text": "A klasszikus fizikai Twister játék hihetetlenül szórakoztató, de a vele szállított kartonpörgető arról híres, hogy elhajlik, elszakad vagy teljesen elveszik. Ahelyett, hogy abbahagyná a szórakozást, amikor nem találja a pörgettyűt, elindíthat egy digitális Twister Spinnert közvetlenül a telefonon vagy táblagépén. A digitális változat pontosan ugyanazt a 16 kombinációt kínálja (bal kéz, jobb kéz, bal láb, jobb láb piros, kék, sárga és zöld színben), anélkül, hogy a fizikai tábla elakadna. Teljesen véletlenszerű, ami azt jelenti, hogy a játék teljesen tisztességes marad minden játékos számára, amíg valaki elkerülhetetlenül el nem esik.",
+      "sec2Title": "Új pörgetések a klasszikus parti játékokban",
+      "sec2Text": "A digitális fonó nem csak helyettesítő; valóban fokozhatja az összejövetelt. Amikor mindenki összegabalyodik a szőnyegen, a telefon képernyőjét olvasva vagy okostévére vetítve a hívó könnyen bejelentheti a mozdulatokat. Ráadásul a kiváló minőségű, kriptográfiailag beoltott véletlenszerűsítésünk biztosítja a valódi véletlenszerűséget, és eltávolítja az azzal kapcsolatos érveket, hogy egy nyíl „ragadt-e a vonalon”. A játék gyorsabban folyik, és a játékosok teljes mértékben arra koncentrálhatnak, hogy ne essenek le.",
+      "sec3Title": "Kombináld a partijátékokat a nevek kerekével",
+      "sec3TextStart": "Ha egy nagy partit rendezel nagyobb társasággal, valószínűleg nem férsz el mindenki egyszerre a Twister szőnyegen. A fordulók tisztességes kezelésének nagyszerű módja a mieink használata",
+      "sec3LinkText": "A nevek kereke",
+      "sec3TextMiddle": "eszköz, amellyel véletlenszerűen eldöntheti, hogy ki játsszon a következő körben. Egyszerűen be kell írnia mindenki nevét, és a kereket forgatva kiválaszthatja a következő versenyzőket. A miénk",
+      "sec3LinkText2": "A nevek kereke",
+      "sec3TextEnd": "tartalmaz egy praktikus kiesési funkciót is, amely biztosítja, hogy mindenki kapjon játékmenetet, mielőtt bárki kétszer játszana.",
+      "sec4Title": "Tartson egy kis szünetet, és forgassa meg a Food Wheel-et",
+      "sec4TextStart": "Az egész éjszakai partijátékok komoly étvágyat váltanak ki. Amikor a Twister játék véget ér, és elérkezik az ételrendelés ideje, előfordulhat, hogy senki sem tud megegyezni abban, hogy mit egyen. Hagyja ki a hosszú vitát a",
+      "sec4LinkText": "Élelmiszer kerék",
+      "sec4TextMiddle": ". Csak adja meg a legjobb éttermi lehetőségeket a buli közelében, pörgesse át gyorsan, és a döntés azonnal megszületik. A kényelem kedvéért az önálló",
+      "sec4LinkText2": "Élelmiszer kerék",
+      "sec4TextEnd": "mobilra optimalizálva, így közvetlenül a telefonjáról is megteheti a szállítási rendelés leadása előtt.",
+      "sec5Title": "Azonnal rendezze a vitákat",
+      "sec5TextStart": "A társasjátékok során néha előfordulnak viták. Lehet, hogy valakinek a térde véletlenül hozzáért a szőnyeghez, vagy két játékos egyszerre akarja pontosan ugyanazt a színű kört. Ha baráti vita tör ki, a leggyorsabb megoldás egy érmefeldobás – vagy még jobb, ha digitális",
+      "sec5LinkText": "Igen/Nem Kerék",
+      "sec5TextMiddle": ". Leveszi a felelősséget a házigazdáról, és a végső döntést teljes mértékben a véletlenre bízza. A",
+      "sec5LinkText2": "Igen/Nem Kerék",
+      "sec5TextEnd": "testreszabható úgy is, hogy tartalmazzon egy „Talán” opciót, ha döntetlent akar kikényszeríteni, vagy megkéri a játékosokat, hogy játsszák újra a kört.",
+      "sec6Title": "Mindent testreszabhat a következő játék estéjéhez",
+      "sec6TextStart": "Míg a Twister Spinner tökéletes az adott játékhoz, érdemes lehet saját egyedi ivójátékokat, igazság vagy mersz kihívásokat vagy partiszabályokat létrehozni. Itt van a mag",
+      "sec6LinkText": "Random Wheel Spinner",
+      "sec6TextMiddle": "ragyog. Szó szerint bármit felhelyezhet a kerék szeleteire, megváltoztathatja az összes színt az esemény témájának megfelelően, és még az esélyeket is módosíthatja, ha azt szeretné, hogy néhány kihívás ritkábban jelenjen meg. A fő előnyeit kihasználva",
+      "sec6LinkText2": "fő fonószerszám",
+      "sec6TextEnd": ", akkor egy teljesen egyedi játék esti élményt tervezhet, amelyet vendégei soha nem felejtenek el."
     }
   }
 }

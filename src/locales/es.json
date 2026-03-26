@@ -6,14 +6,16 @@
     "embed": "Empotrar",
     "foodWheel": "Rueda de comida",
     "configureEmbed": "Configurar rueda integrable",
-    "spinTheWheel": "Gira la rueda"
+    "spinTheWheel": "Gira la rueda",
+    "twisterSpinner": "Tornado giratorio"
   },
   "footer": {
     "randoWheel": "Rando Wheel",
     "copyright": "© {year} Rueda giratoria. Reservados todos los derechos.",
     "privacyPolicy": "política de privacidad",
     "termsConditions": "Términos y condiciones",
-    "otherWheels": "Otras ruedas"
+    "otherWheels": "Otras ruedas",
+    "languages": "Idiomas"
   },
   "mainWheel": {
     "winner": "Ganadora: {text} 🎉",
@@ -50,7 +52,9 @@
     "ynwTitle": "Sí / No Rueda",
     "ynwDesc": "Un simple control giratorio de sí o no para manejar opciones binarias rápidas al instante.",
     "stwTitle": "Gira la rueda",
-    "stwDesc": "Un selector aleatorio totalmente personalizable para cualquier situación."
+    "stwDesc": "Un selector aleatorio totalmente personalizable para cualquier situación.",
+    "tsTitle": "Tornado giratorio",
+    "tsDesc": "Un generador de ruedas personalizado para indicar movimientos para tu juego de grupo."
   },
   "home": {
     "mainTitle": "Rueda giratoria aleatoria",
@@ -83,7 +87,8 @@
       "names": "<strong>Selector de nombres/Selector de estudiantes:</strong> comúnmente utilizado por los educadores para seleccionar individuos al azar, a veces llamado \"Rueda de nombres\" o \"Selector de nombres aleatorios\".",
       "yesno": "<strong>Sí/No Ruedas:</strong> Para decisiones binarias simples.",
       "food": "<strong>Rueda de la comida:</strong> ¿No estás seguro de qué comer? Gire la rueda de la comida para tomar decisiones rápidas sobre comidas al azar.",
-      "spin": "<strong>Gira la rueda:</strong> un selector aleatorio totalmente personalizable para cualquier situación."
+      "spin": "<strong>Gira la rueda:</strong> un selector aleatorio totalmente personalizable para cualquier situación.",
+      "twister": "<strong>Twister Spinner:</strong> una manera conveniente de seleccionar aleatoriamente movimientos del juego como 'Right Hand Red'."
     },
     "otherToolsOutro": "Cada versión especializada toma el concepto central de selección aleatoria y lo adapta para satisfacer distintas necesidades, haciéndolos útiles para todo, desde organizar actividades hasta resolver debates con un toque divertido e imparcial."
   },
@@ -117,7 +122,20 @@
       "4": "<strong>Toma de turnos justa:</strong> úsalo en juegos para decidir quién sigue."
     },
     "powerTitle": "El poder de la aleatoriedad",
-    "powerDesc": "Nuestra rueda utiliza un generador de números pseudoaleatorios confiable para garantizar que cada giro sea justo e impredecible. Esto elimina los prejuicios personales de las decisiones simples, lo que lo convierte en una persona que toma decisiones verdaderamente imparciales. A veces, dejar pequeñas decisiones al azar puede liberar energía mental para asuntos más importantes. El 'Quizás' opcional agrega flexibilidad para esos momentos en los que un simple sí o no no es suficiente."
+    "powerDesc": "Nuestra rueda utiliza un generador de números pseudoaleatorios confiable para garantizar que cada giro sea justo e impredecible. Esto elimina los prejuicios personales de las decisiones simples, lo que lo convierte en una persona que toma decisiones verdaderamente imparciales. A veces, dejar pequeñas decisiones al azar puede liberar energía mental para asuntos más importantes. El 'Quizás' opcional agrega flexibilidad para esos momentos en los que un simple sí o no no es suficiente.",
+    "faqTitle": "Rueda Sí o No: Preguntas frecuentes",
+    "faqs": {
+      "1Title": "¿La rueda del Sí o del No es realmente aleatoria?",
+      "1Desc": "¡Sí! Nuestra rueda utiliza algoritmos de aleatorización de alta calidad para garantizar que cada giro sea independiente y justo. Cada parte de la rueda tiene las mismas posibilidades de ganar según la cantidad de conjuntos de entrada que elija.",
+      "2Title": "¿Puedo personalizar la rueda Sí No?",
+      "2Desc": "Absolutamente. Puede elegir entre los modos de dos opciones (Sí/No) y de tres opciones (Sí/No/Quizás). También puedes ajustar el número de 'conjuntos' en la rueda para cambiar su apariencia.",
+      "3Title": "¿Para qué sirve el modo 'Quizás'?",
+      "3Desc": "El modo 'Quizás' añade una tercera posibilidad para aquellas decisiones complicadas que no son estrictamente blancas o negras. Es perfecto para cuando necesitas un resultado de \"empate\" o de \"esperar y ver\".",
+      "4Title": "¿Esta herramienta es de uso gratuito?",
+      "4Desc": "Sí, nuestra Rueda Sí o No es 100% gratuita y no requiere registro ni descargas. ¡Puedes girar tantas veces como quieras!",
+      "5Title": "¿Funciona en dispositivos móviles?",
+      "5Desc": "Sí, la herramienta es totalmente responsiva y está diseñada para funcionar sin problemas en todos los navegadores móviles modernos, incluidos iPhone y Android."
+    }
   },
   "foodPage": {
     "title": "Rueda de comida",
@@ -239,7 +257,17 @@
     "codeDesc": "Copie el siguiente código para insertar esta rueda configurada en su sitio web:",
     "generateBtn": "Generar código para insertar",
     "errConfigure": "Error al generar código. Primero configure la rueda.",
-    "errEmpty": "Agregue al menos un elemento a la rueda antes de generar el código para insertar."
+    "errEmpty": "Agregue al menos un elemento a la rueda antes de generar el código para insertar.",
+    "title": "Cómo incrustar la rueda aleatoria",
+    "heroDesc": "Incruste nuestra rueda aleatoria fácilmente en su sitio web o blog. Siga estos sencillos pasos a continuación para generar el código HTML iframe.",
+    "step1Title": "Paso 1: Ingrese sus entradas",
+    "step1Desc": "Primero, configura los elementos que deseas en tu volante. Agrega nombres, opciones o cualquier otra cosa que quieras girar y personaliza sus colores.",
+    "step2Title": "Paso 2: personaliza la configuración de inserción",
+    "step2Desc": "A continuación, ajuste el tamaño y el título de accesibilidad de su rueda integrada.",
+    "step3Title": "Paso 3: copie su código de inserción",
+    "step3Desc": "Finalmente, genera el código y cópialo en el HTML de tu sitio web.",
+    "copyBtn": "Copiar código",
+    "copied": "¡Copiada!"
   },
   "spinPage": {
     "title": "Gira la rueda",
@@ -302,6 +330,82 @@
       "sec6TextMiddle": "mejor que la mayoría de las aplicaciones es el hecho de que puedes modificar todo al respecto. Si estás organizando un sorteo empresarial serio o transmitiendo en Twitch, necesitas algo más que un control giratorio básico. Por ejemplo, si desea que algunos premios sean más raros que otros, puede simplemente duplicar los premios más pequeños varias veces en la rueda para que sea más probable que los consiga. Esta función de \"ponderación\" le brinda control total sobre las probabilidades. También puedes sumergirte en los colores y hacer coincidir visualmente la rueda con tu marca o tema de fiesta. Con funciones que te permiten realizar un seguimiento de cuántas veces ha ganado una opción, ocultar opciones al instante y modificar el aspecto de la rueda, es una herramienta completamente profesional disfrazada de juego divertido. Pruebe el",
       "sec6LinkText2": "herramienta giratoria principal",
       "sec6TextEnd": "y elimine el estrés de su próxima gran decisión."
+    }
+  },
+  "twisterPage": {
+    "parts": {
+      "rh": "Derecha",
+      "lh": "mano izquierda",
+      "rf": "Pie derecho",
+      "lf": "Pie izquierdo"
+    },
+    "title": "Tornado giratorio",
+    "heroTitle": "Twister Spinner: generador de movimientos aleatorios",
+    "heroDesc": "¿Perdiste tu girador Twister? ¡Usa nuestro <strong>Twister Spinner</strong> gratuito en línea para indicar movimientos para tu juego! Simplemente presione girar y obtenga comandos aleatorios instantáneos como 'Left Hand Blue' o 'Right Foot Red'.",
+    "howToTitle": "Cómo utilizar el girador Twister",
+    "steps": {
+      "1": "<strong>Reúne a tus amigos</strong>: prepara el tapete y haz que todos se coloquen en sus posiciones.",
+      "2": "<strong>Girar la rueda</strong>: haz clic en <em>Girar la rueda</em> o en el botón central de la rueda.",
+      "3": "<strong>Invocar el resultado</strong>: el movimiento ganador (p. ej., \"Rojo a la derecha\") aparece encima de la rueda.",
+      "4": "<strong>Sigue jugando</strong>: ¡continúa girando hasta que solo quede una persona en pie!"
+    },
+    "seoTitle": "¿Qué es un Twister Spinner digital?",
+    "seoDesc": "Un <strong>Digital Twister Spinner</strong> es una rueda interactiva diseñada para reemplazar la ruleta física de cartón en el clásico juego de fiesta. Selecciona aleatoriamente uno de los 16 movimientos posibles que involucran una parte del cuerpo (mano izquierda, mano derecha, pie izquierdo, pie derecho) y un color (rojo, azul, amarillo, verde).",
+    "seoList": {
+      "1": "<strong>Reemplazo de piezas perdidas</strong>: no es necesario detener el juego solo porque perdiste la ruleta original.",
+      "2": "<strong>Listo para la fiesta</strong>: todos pueden ver el giro claramente en un teléfono o transmitirlo a una pantalla de TV.",
+      "3": "<strong>Justo y aleatorio</strong>: la aleatoriedad sembrada criptográficamente evita trampas o giros sesgados."
+    },
+    "whyTitle": "¿Por qué usar nuestra hilandera Twister?",
+    "whyDesc": "Nuestro spinner online ofrece varias ventajas respecto a uno físico:",
+    "features": {
+      "1Title": "Siempre disponible",
+      "1Desc": "No es necesario descargar nada. Accede al spinner desde cualquier teléfono inteligente, tableta o computadora portátil.",
+      "2Title": "Borrar gráficos",
+      "2Desc": "Los colores brillantes y el texto claro facilitan que la persona que llama lea el movimiento a través de la habitación.",
+      "3Title": "Resultados justos",
+      "3Desc": "La aleatoriedad criptográficamente segura significa que en realidad estás obteniendo una tirada imparcial, sin flechas \"atascadas\".",
+      "4Title": "100% gratis",
+      "4Desc": "Nuestra herramienta es siempre gratuita, sin barreras de pago ni registros obligatorios."
+    },
+    "faqTitle": "Preguntas frecuentes",
+    "faqs": {
+      "1Title": "¿Es totalmente gratuita la Twister Spinner?",
+      "1Desc": "¡Sí! Twister Spinner es de uso completamente gratuito, sin tarifas ocultas ni necesidad de creación de cuenta.",
+      "2Title": "¿Funciona el spinner en línea en mi teléfono?",
+      "2Desc": "Absolutamente. Es totalmente responsivo, por lo que puedes usarlo fácilmente en cualquier dispositivo móvil mientras juegas.",
+      "3Title": "¿Son los resultados realmente aleatorios?",
+      "3Desc": "Sí. Cada giro utiliza un algoritmo robusto para garantizar que cada combinación de extremidades y colores tenga las mismas posibilidades de aparecer."
+    },
+    "article": {
+      "sec1Title": "¿Por qué utilizar un juego Twister Spinner digital?",
+      "sec1Text": "El clásico juego físico Twister es increíblemente divertido, pero la ruleta de cartón que viene con él es conocida por doblarse, romperse o perderse por completo. En lugar de detener la diversión cuando no puedes encontrar la ruleta, puedes iniciar un Twister Spinner digital directamente en tu teléfono o tableta. Una versión digital proporciona exactamente las mismas 16 combinaciones (mano izquierda, mano derecha, pie izquierdo, pie derecho en rojo, azul, amarillo y verde) sin la molestia de que una tabla física se atasque. Es completamente aleatorio, lo que significa que el juego sigue siendo completamente justo para todos los jugadores hasta que alguien inevitablemente se cae.",
+      "sec2Title": "Dando un nuevo giro a los juegos de fiesta clásicos",
+      "sec2Text": "Una ruleta digital no es sólo un reemplazo; De hecho, puede mejorar su reunión. Cuando todos están enredados en el tapete, leer la pantalla de un teléfono o transmitirla a un televisor inteligente permite a la persona que llama anunciar fácilmente los movimientos. Además, nuestra aleatorización sembrada criptográficamente de alta calidad garantiza una verdadera aleatoriedad, eliminando cualquier argumento sobre si una flecha estaba \"atascada en la línea\". El juego fluye más rápido y los jugadores pueden concentrarse por completo en no caerse.",
+      "sec3Title": "Combina juegos de fiesta con la rueda de nombres",
+      "sec3TextStart": "Si está organizando una fiesta grande con un grupo grande, probablemente no pueda colocar a todos en el tapete Twister a la vez. Una excelente forma de gestionar los giros de forma justa es utilizar nuestro",
+      "sec3LinkText": "Rueda de nombres",
+      "sec3TextMiddle": "herramienta para decidir aleatoriamente quién juega la siguiente ronda. Simplemente ingresa los nombres de todos y gira la rueda para seleccionar los siguientes concursantes. Nuestro",
+      "sec3LinkText2": "Rueda de nombres",
+      "sec3TextEnd": "También incluye una práctica función de eliminación, que garantiza que todos tengan un turno para jugar antes de que alguien juegue dos veces.",
+      "sec4Title": "Tómate un descanso y haz girar la rueda de la comida",
+      "sec4TextStart": "Jugar juegos de fiesta toda la noche abre un gran apetito. Cuando termina el juego de Twister y llega el momento de pedir comida, es posible que nadie se ponga de acuerdo sobre qué comer. Evite el largo debate utilizando el",
+      "sec4LinkText": "Rueda de comida",
+      "sec4TextMiddle": ". Simplemente ingresa las mejores opciones de restaurantes cerca de tu fiesta, pruébalo rápidamente y la decisión se tomará al instante. Para mayor comodidad, el independiente",
+      "sec4LinkText2": "Rueda de comida",
+      "sec4TextEnd": "está optimizado para dispositivos móviles, por lo que puede hacerlo directamente desde su teléfono antes de realizar el pedido de entrega.",
+      "sec5Title": "Resolver debates al instante",
+      "sec5TextStart": "A veces, durante los juegos de fiesta, surgen disputas. Tal vez la rodilla de alguien tocó accidentalmente la colchoneta, o tal vez dos jugadores quieran exactamente el mismo círculo de color al mismo tiempo. Si estalla una discusión amistosa, la forma más rápida de resolverla es lanzando una moneda al aire o, mejor aún, con un digital.",
+      "sec5LinkText": "Sí/No Rueda",
+      "sec5TextMiddle": ". Le quita la responsabilidad al anfitrión y deja la decisión final enteramente al azar. El",
+      "sec5LinkText2": "Sí/No Rueda",
+      "sec5TextEnd": "También se puede personalizar para incluir una opción \"Quizás\" si desea forzar un empate o pedir a los jugadores que repitan el turno.",
+      "sec6Title": "Personaliza todo para tu próxima noche de juegos",
+      "sec6TextStart": "Si bien el Twister Spinner es perfecto para su juego específico, es posible que desees crear tus propios juegos de beber, desafíos de verdad o desafío o reglas de fiesta únicos. Aquí es donde está el núcleo",
+      "sec6LinkText": "Rueda giratoria aleatoria",
+      "sec6TextMiddle": "brilla. Puedes poner literalmente cualquier cosa en las porciones de la rueda, cambiar todos los colores para que coincidan con el tema de un evento e incluso ajustar las probabilidades si quieres que algunos desafíos aparezcan con menos frecuencia. Aprovechando las principales",
+      "sec6LinkText2": "herramienta giratoria principal",
+      "sec6TextEnd": ", puedes diseñar una experiencia de noche de juegos totalmente personalizada que tus invitados nunca olvidarán."
     }
   }
 }

@@ -184,6 +184,12 @@
         }
     },
     "twisterPage": {
+        "parts": {
+            "rh": "Right Hand",
+            "lh": "Left Hand",
+            "rf": "Right Foot",
+            "lf": "Left Foot"
+        },
         "title": "Twister Spinner",
         "heroTitle": "Twister Spinner — Random Move Generator",
         "heroDesc": "Lost your Twister spinner? Use our free online <strong>Twister Spinner</strong> to call out moves for your game! Just hit spin, and get instant random commands like 'Left Hand Blue' or 'Right Foot Red'.",

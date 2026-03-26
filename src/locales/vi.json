@@ -6,14 +6,16 @@
     "embed": "Nhúng",
     "foodWheel": "Bánh xe thức ăn",
     "configureEmbed": "Định cấu hình bánh xe có thể nhúng",
-    "spinTheWheel": "Quay bánh xe"
+    "spinTheWheel": "Quay bánh xe",
+    "twisterSpinner": "Máy quay xoắn"
   },
   "footer": {
     "randoWheel": "Bánh xe Rando",
     "copyright": "© {year} Máy quay bánh xe. Mọi quyền được bảo lưu.",
     "privacyPolicy": "Chính sách bảo mật",
     "termsConditions": "Điều khoản & Điều kiện",
-    "otherWheels": "Bánh xe khác"
+    "otherWheels": "Bánh xe khác",
+    "languages": "Ngôn ngữ"
   },
   "mainWheel": {
     "winner": "Người chiến thắng: {text} 🎉",
@@ -50,7 +52,9 @@
     "ynwTitle": "Có / Không",
     "ynwDesc": "Một công cụ quay vòng có hoặc không đơn giản để xử lý các lựa chọn nhị phân nhanh chóng ngay lập tức.",
     "stwTitle": "Quay bánh xe",
-    "stwDesc": "Một công cụ chọn ngẫu nhiên hoàn toàn có thể tùy chỉnh cho mọi tình huống."
+    "stwDesc": "Một công cụ chọn ngẫu nhiên hoàn toàn có thể tùy chỉnh cho mọi tình huống.",
+    "tsTitle": "Máy quay xoắn",
+    "tsDesc": "Một trình tạo bánh xe tùy chỉnh để gọi ra các bước di chuyển cho trò chơi nhóm của bạn."
   },
   "home": {
     "mainTitle": "Máy quay bánh xe ngẫu nhiên",
@@ -83,7 +87,8 @@
       "names": "<strong>Bộ chọn tên / Bộ chọn học sinh:</strong> Thường được các nhà giáo dục sử dụng để chọn ngẫu nhiên các cá nhân, đôi khi được gọi là \"Bánh xe tên\" hoặc \"Bộ chọn tên ngẫu nhiên\".",
       "yesno": "<strong>Bánh xe Có/Không:</strong> Dành cho các quyết định nhị phân đơn giản.",
       "food": "<strong>Bánh xe ăn uống:</strong> Bạn không biết nên ăn gì? Xoay bánh xe thức ăn để đưa ra quyết định bữa ăn ngẫu nhiên nhanh chóng.",
-      "spin": "<strong>Quay bánh xe:</strong> Công cụ chọn ngẫu nhiên có thể tùy chỉnh hoàn toàn cho mọi tình huống."
+      "spin": "<strong>Quay bánh xe:</strong> Công cụ chọn ngẫu nhiên có thể tùy chỉnh hoàn toàn cho mọi tình huống.",
+      "twister": "<strong>Con quay xoắn:</strong> Một cách thuận tiện để chọn ngẫu nhiên các nước đi trong trò chơi như 'Tay phải đỏ'."
     },
     "otherToolsOutro": "Mỗi phiên bản chuyên biệt lấy khái niệm cốt lõi về lựa chọn ngẫu nhiên và điều chỉnh nó để đáp ứng các nhu cầu riêng biệt, giúp chúng thuận tiện cho mọi việc, từ tổ chức hoạt động đến giải quyết các cuộc tranh luận một cách vui vẻ, khách quan."
   },
@@ -117,7 +122,20 @@
       "4": "<strong>Tuân theo lượt hợp lý:</strong> Sử dụng nó trong trò chơi để quyết định ai sẽ đi tiếp theo."
     },
     "powerTitle": "Sức mạnh của sự ngẫu nhiên",
-    "powerDesc": "Bánh xe của chúng tôi sử dụng bộ tạo số giả ngẫu nhiên đáng tin cậy để đảm bảo mỗi vòng quay đều công bằng và không thể đoán trước. Điều này loại bỏ sự thiên vị cá nhân khỏi các quyết định đơn giản, khiến nó trở thành người đưa ra quyết định thực sự vô tư. Đôi khi, để những lựa chọn nhỏ cho cơ hội có thể giải phóng năng lượng tinh thần cho những vấn đề quan trọng hơn! Tùy chọn 'Có thể' sẽ tăng thêm tính linh hoạt cho những lúc mà chỉ nói có hoặc không đơn giản là chưa đủ."
+    "powerDesc": "Bánh xe của chúng tôi sử dụng bộ tạo số giả ngẫu nhiên đáng tin cậy để đảm bảo mỗi vòng quay đều công bằng và không thể đoán trước. Điều này loại bỏ sự thiên vị cá nhân khỏi các quyết định đơn giản, khiến nó trở thành người đưa ra quyết định thực sự vô tư. Đôi khi, để những lựa chọn nhỏ cho cơ hội có thể giải phóng năng lượng tinh thần cho những vấn đề quan trọng hơn! Tùy chọn 'Có thể' sẽ tăng thêm tính linh hoạt cho những lúc mà chỉ nói có hoặc không đơn giản là chưa đủ.",
+    "faqTitle": "Có hoặc Không có bánh xe - Câu hỏi thường gặp",
+    "faqs": {
+      "1Title": "Bánh xe Có hay Không có thực sự ngẫu nhiên không?",
+      "1Desc": "Đúng! Bánh xe của chúng tôi sử dụng thuật toán ngẫu nhiên chất lượng cao để đảm bảo rằng mọi vòng quay đều độc lập và công bằng. Mỗi mảnh của bánh xe đều có cơ hội chiến thắng như nhau dựa trên số lượng bộ đầu vào bạn chọn.",
+      "2Title": "Tôi có thể tùy chỉnh bánh xe Có Không không?",
+      "2Desc": "Tuyệt đối. Bạn có thể chọn giữa chế độ hai tùy chọn (Có/Không) và ba tùy chọn (Có/Không/Có thể). Bạn cũng có thể điều chỉnh số lượng “bộ” trên bánh xe để thay đổi hình thức của nó.",
+      "3Title": "Chế độ 'Có thể' để làm gì?",
+      "3Desc": "Chế độ 'Có thể' bổ sung khả năng thứ ba cho những quyết định khó khăn không hoàn toàn là đen trắng. Nó hoàn hảo khi bạn cần kết quả 'rút thăm' hoặc 'chờ xem'.",
+      "4Title": "Công cụ này có miễn phí sử dụng không?",
+      "4Desc": "Có, Bánh xe Có hoặc Không của chúng tôi miễn phí 100% và không yêu cầu đăng ký hoặc tải xuống. Bạn có thể quay bao nhiêu lần tùy thích!",
+      "5Title": "Nó có hoạt động trên thiết bị di động không?",
+      "5Desc": "Có, công cụ này hoàn toàn đáp ứng và được thiết kế để hoạt động trơn tru trên tất cả các trình duyệt di động hiện đại, bao gồm cả iPhone và Android."
+    }
   },
   "foodPage": {
     "title": "Bánh xe thức ăn",
@@ -239,7 +257,17 @@
     "codeDesc": "Sao chép mã bên dưới để nhúng bánh xe được định cấu hình này vào trang web của bạn:",
     "generateBtn": "Tạo mã nhúng",
     "errConfigure": "Lỗi tạo mã. Vui lòng cấu hình bánh xe trước.",
-    "errEmpty": "Vui lòng thêm ít nhất một mục vào bánh xe trước khi tạo mã nhúng."
+    "errEmpty": "Vui lòng thêm ít nhất một mục vào bánh xe trước khi tạo mã nhúng.",
+    "title": "Cách nhúng bánh xe ngẫu nhiên",
+    "heroDesc": "Nhúng bánh xe ngẫu nhiên của chúng tôi một cách dễ dàng vào trang web hoặc blog của bạn. Hãy làm theo các bước đơn giản dưới đây để tạo mã iframe HTML.",
+    "step1Title": "Bước 1: Nhập thông tin đầu vào của bạn",
+    "step1Desc": "Đầu tiên, hãy định cấu hình các mục bạn muốn trên bánh xe của mình. Thêm tên, lựa chọn hoặc bất kỳ thứ gì khác mà bạn muốn quay và tùy chỉnh màu sắc của chúng.",
+    "step2Title": "Bước 2: Tùy chỉnh cài đặt nhúng",
+    "step2Desc": "Tiếp theo, điều chỉnh kích thước và tiêu đề trợ năng cho bánh xe được nhúng của bạn.",
+    "step3Title": "Bước 3: Sao chép mã nhúng của bạn",
+    "step3Desc": "Cuối cùng, tạo mã và sao chép nó vào HTML của trang web của bạn.",
+    "copyBtn": "Sao chép mã",
+    "copied": "Đã sao chép!"
   },
   "spinPage": {
     "title": "Quay bánh xe",
@@ -302,6 +330,82 @@
       "sec6TextMiddle": "tốt hơn hầu hết các ứng dụng là bạn có thể điều chỉnh mọi thứ về nó. Nếu bạn đang tổ chức chương trình tặng quà nghiêm túc cho công ty hoặc phát trực tuyến trên Twitch, bạn cần nhiều thứ hơn là chỉ một công cụ quay vòng cơ bản. Ví dụ: nếu bạn muốn một số giải thưởng hiếm hơn những giải thưởng khác, bạn chỉ cần nhân đôi các giải thưởng nhỏ hơn nhiều lần trên bánh xe để chúng có nhiều khả năng trúng hơn. Tính năng \"trọng số\" này cho phép bạn kiểm soát hoàn toàn tỷ lệ cược. Bạn cũng có thể đi sâu vào màu sắc và kết hợp trực quan bánh xe với thương hiệu hoặc chủ đề bữa tiệc của bạn. Với các tính năng cho phép bạn theo dõi số lần một tùy chọn đã thắng, ẩn các lựa chọn ngay lập tức và điều chỉnh hình thức của bánh xe, đây là một công cụ hoàn toàn chuyên nghiệp được ngụy trang dưới dạng một trò chơi vui nhộn. Hãy thử",
       "sec6LinkText2": "công cụ quay chính",
       "sec6TextEnd": "và giảm bớt căng thẳng cho quyết định quan trọng tiếp theo của bạn."
+    }
+  },
+  "twisterPage": {
+    "parts": {
+      "rh": "Tay phải",
+      "lh": "Tay trái",
+      "rf": "Chân phải",
+      "lf": "Chân trái"
+    },
+    "title": "Máy quay xoắn",
+    "heroTitle": "Twister Spinner - Trình tạo chuyển động ngẫu nhiên",
+    "heroDesc": "Bạn bị mất con quay Twister? Sử dụng <strong>Twister Spinner</strong> trực tuyến miễn phí của chúng tôi để chỉ ra các bước di chuyển cho trò chơi của bạn! Chỉ cần nhấn nút xoay và nhận ngay các lệnh ngẫu nhiên như 'Tay trái xanh' hoặc 'Đỏ chân phải'.",
+    "howToTitle": "Cách sử dụng Twister Spinner",
+    "steps": {
+      "1": "<strong>Tập hợp bạn bè của bạn</strong> — Trải thảm và yêu cầu mọi người vào vị trí.",
+      "2": "<strong>Quay bánh xe</strong> — Nhấp vào <em>Quay bánh xe</em> hoặc nút giữa trên bánh xe.",
+      "3": "<strong>Gọi kết quả</strong> — Nước đi chiến thắng (ví dụ: 'Tay đỏ bên phải') xuất hiện phía trên bánh xe.",
+      "4": "<strong>Tiếp tục chơi</strong> — Tiếp tục quay cho đến khi chỉ còn một người đứng!"
+    },
+    "seoTitle": "Spinner kỹ thuật số Twister là gì?",
+    "seoDesc": "<strong>Con quay xoắn kỹ thuật số</strong> là một bánh xe tương tác được thiết kế để thay thế con quay bằng bìa cứng vật lý trong trò chơi tiệc tùng cổ điển. Nó chọn ngẫu nhiên một trong 16 động tác có thể có liên quan đến một bộ phận cơ thể (Tay trái, Tay phải, Chân trái, Chân phải) và một màu (Đỏ, Xanh lam, Vàng, Xanh lục).",
+    "seoList": {
+      "1": "<strong>Thay thế quân bị mất</strong> — Không cần phải dừng trò chơi chỉ vì bạn làm mất con quay ban đầu.",
+      "2": "<strong>Bữa tiệc đã sẵn sàng</strong> — Mọi người đều có thể xem rõ vòng quay trên điện thoại hoặc truyền tới màn hình TV.",
+      "3": "<strong>Công bằng và ngẫu nhiên</strong> — tính ngẫu nhiên được gieo mầm bằng mật mã sẽ ngăn chặn các vòng quay gian lận hoặc thiên vị."
+    },
+    "whyTitle": "Tại sao nên sử dụng Spinner Twister của chúng tôi?",
+    "whyDesc": "Công cụ quay vòng trực tuyến của chúng tôi cung cấp một số lợi thế so với công cụ quay vật lý:",
+    "features": {
+      "1Title": "Luôn có sẵn",
+      "1Desc": "Không cần phải tải xuống bất cứ điều gì. Truy cập spinner từ bất kỳ điện thoại thông minh, máy tính bảng hoặc máy tính xách tay nào.",
+      "2Title": "Đồ họa rõ ràng",
+      "2Desc": "Màu sắc tươi sáng và văn bản rõ ràng giúp người gọi dễ dàng đọc được chuyển động trong phòng.",
+      "3Title": "Kết quả công bằng",
+      "3Desc": "Tính ngẫu nhiên được bảo mật bằng mật mã có nghĩa là bạn thực sự đang nhận được một lượt quay không thiên vị, không có mũi tên 'bị kẹt'.",
+      "4Title": "Miễn phí 100%",
+      "4Desc": "Công cụ của chúng tôi luôn miễn phí, không có tường phí hoặc yêu cầu đăng ký."
+    },
+    "faqTitle": "Câu hỏi thường gặp",
+    "faqs": {
+      "1Title": "Twister Spinner có hoàn toàn miễn phí sử dụng không?",
+      "1Desc": "Đúng! Twister Spinner hoàn toàn miễn phí sử dụng mà không cần phí ẩn hoặc tạo tài khoản.",
+      "2Title": "Công cụ quay vòng trực tuyến có hoạt động trên điện thoại của tôi không?",
+      "2Desc": "Tuyệt đối. Nó hoàn toàn đáp ứng nên bạn có thể dễ dàng sử dụng nó trên mọi thiết bị di động khi chơi.",
+      "3Title": "Kết quả có thực sự ngẫu nhiên không?",
+      "3Desc": "Đúng. Mỗi vòng quay sử dụng một thuật toán mạnh mẽ để đảm bảo rằng mỗi chi và sự kết hợp màu sắc đều có cơ hội xuất hiện như nhau."
+    },
+    "article": {
+      "sec1Title": "Tại sao nên sử dụng trò chơi Twister Spinner kỹ thuật số?",
+      "sec1Text": "Trò chơi Twister vật lý cổ điển cực kỳ thú vị, nhưng con quay bằng bìa cứng đi kèm với nó nổi tiếng là bị cong, rách hoặc bị mất hoàn toàn. Thay vì dừng cuộc vui khi không tìm thấy con quay, bạn có thể khởi chạy Twister Spinner kỹ thuật số ngay trên điện thoại hoặc máy tính bảng của mình. Phiên bản kỹ thuật số cung cấp chính xác 16 kết hợp (Tay trái, Tay phải, Chân trái, Chân phải với các màu Đỏ, Xanh lam, Vàng và Xanh lục) mà không gặp rắc rối về việc bảng vật lý bị kẹt. Nó hoàn toàn ngẫu nhiên, có nghĩa là trò chơi vẫn hoàn toàn công bằng cho tất cả người chơi cho đến khi ai đó chắc chắn bị ngã.",
+      "sec2Title": "Mang vòng quay mới vào các trò chơi tiệc tùng cổ điển",
+      "sec2Text": "Máy quay kỹ thuật số không chỉ là vật thay thế; nó thực sự có thể nâng cao khả năng thu thập của bạn. Khi mọi người đang vướng trên thảm, việc đọc màn hình điện thoại hoặc truyền tới TV thông minh cho phép người gọi dễ dàng thông báo các nước đi. Ngoài ra, tính năng ngẫu nhiên được mã hóa chất lượng cao của chúng tôi đảm bảo tính ngẫu nhiên thực sự, loại bỏ mọi tranh luận về việc liệu một mũi tên có 'bị kẹt trên đường' hay không. Trò chơi diễn ra nhanh hơn và người chơi có thể tập trung hoàn toàn vào việc không bị ngã.",
+      "sec3Title": "Kết hợp trò chơi tiệc tùng với Vòng quay tên",
+      "sec3TextStart": "Nếu bạn tổ chức một bữa tiệc lớn với một nhóm đông người, có thể bạn không thể đưa tất cả mọi người lên tấm thảm Twister cùng một lúc. Một cách tuyệt vời để quản lý lượt một cách công bằng là sử dụng",
+      "sec3LinkText": "Bánh xe tên",
+      "sec3TextMiddle": "công cụ để quyết định ngẫu nhiên ai sẽ chơi vòng tiếp theo. Bạn chỉ cần nhập tên của mọi người và quay bánh xe để chọn những thí sinh tiếp theo. Của chúng tôi",
+      "sec3LinkText2": "Bánh xe tên",
+      "sec3TextEnd": "cũng bao gồm tính năng loại bỏ tiện dụng, đảm bảo rằng mọi người đều có lượt chơi trước khi có người chơi hai lần.",
+      "sec4Title": "Hãy nghỉ ngơi và quay bánh xe thức ăn",
+      "sec4TextStart": "Chơi các trò chơi tiệc tùng suốt đêm sẽ khiến bạn thèm ăn. Khi trò chơi Twister kết thúc và đến lúc gọi đồ ăn, bạn có thể thấy rằng không ai có thể thống nhất được nên ăn gì. Bỏ qua cuộc tranh luận kéo dài bằng cách sử dụng",
+      "sec4LinkText": "Bánh xe thức ăn",
+      "sec4TextMiddle": ". Chỉ cần nhập các lựa chọn nhà hàng hàng đầu gần bữa tiệc của bạn, xem nhanh và đưa ra quyết định ngay lập tức. Để thuận tiện, độc lập",
+      "sec4LinkText2": "Bánh xe thức ăn",
+      "sec4TextEnd": "được tối ưu hóa cho thiết bị di động nên bạn có thể thực hiện ngay từ điện thoại trước khi đặt hàng giao hàng.",
+      "sec5Title": "Giải quyết tranh luận ngay lập tức",
+      "sec5TextStart": "Đôi khi trong các trò chơi nhóm, tranh chấp xảy ra. Có thể đầu gối của ai đó vô tình chạm vào tấm thảm, hoặc có lẽ hai người chơi muốn cùng một vòng tròn có màu giống hệt nhau. Nếu một cuộc tranh luận thân thiện nổ ra, cách nhanh nhất để giải quyết nó là tung đồng xu—hoặc thậm chí tốt hơn là tung đồng xu kỹ thuật số.",
+      "sec5LinkText": "Có/Không",
+      "sec5TextMiddle": ". Nó loại bỏ trách nhiệm của chủ nhà và để lại quyết định cuối cùng hoàn toàn tùy thuộc vào cơ hội. các",
+      "sec5LinkText2": "Có/Không",
+      "sec5TextEnd": "cũng có thể được tùy chỉnh để bao gồm tùy chọn 'Có thể' nếu bạn muốn buộc hòa hoặc yêu cầu người chơi chơi lại lượt.",
+      "sec6Title": "Tùy chỉnh mọi thứ cho đêm trò chơi tiếp theo của bạn",
+      "sec6TextStart": "Mặc dù Twister Spinner hoàn hảo cho trò chơi cụ thể của nó, nhưng bạn có thể muốn tạo các trò chơi uống rượu độc đáo của riêng mình, các thử thách nói thật hoặc thách thức hoặc các quy tắc của bữa tiệc. Đây là nơi cốt lõi",
+      "sec6LinkText": "Máy quay bánh xe ngẫu nhiên",
+      "sec6TextMiddle": "tỏa sáng. Bạn có thể đặt bất kỳ thứ gì theo nghĩa đen vào các lát bánh xe, thay đổi tất cả màu sắc để phù hợp với chủ đề sự kiện và thậm chí điều chỉnh tỷ lệ cược nếu bạn muốn một số thử thách xuất hiện ít thường xuyên hơn. Bằng cách tận dụng lợi thế chính",
+      "sec6LinkText2": "công cụ quay chính",
+      "sec6TextEnd": ", bạn có thể thiết kế một trải nghiệm đêm trò chơi hoàn toàn tùy chỉnh mà khách của bạn sẽ không bao giờ quên."
     }
   }
 }

@@ -6,14 +6,16 @@
     "embed": "Încorporați",
     "foodWheel": "Roata Alimentelor",
     "configureEmbed": "Configurați roata incorporabilă",
-    "spinTheWheel": "Învârte roata"
+    "spinTheWheel": "Învârte roata",
+    "twisterSpinner": "Twister Spinner"
   },
   "footer": {
     "randoWheel": "Roata Rando",
     "copyright": "© {year} Wheel Spinner. Toate drepturile rezervate.",
     "privacyPolicy": "Politica de confidențialitate",
     "termsConditions": "Termeni și condiții",
-    "otherWheels": "Alte roți"
+    "otherWheels": "Alte roți",
+    "languages": "Limbi"
   },
   "mainWheel": {
     "winner": "Câștigător: {text} 🎉",
@@ -50,7 +52,9 @@
     "ynwTitle": "Da / Nu Roata",
     "ynwDesc": "Un simplu spinner da sau nu pentru a gestiona instantaneu alegerile binare rapide.",
     "stwTitle": "Învârte roata",
-    "stwDesc": "Un selector aleatoriu complet personalizabil pentru orice situație."
+    "stwDesc": "Un selector aleatoriu complet personalizabil pentru orice situație.",
+    "tsTitle": "Twister Spinner",
+    "tsDesc": "Un generator de roți personalizat pentru a trage mișcări pentru jocul tău de petrecere."
   },
   "home": {
     "mainTitle": "Random Wheel Spinner",
@@ -83,7 +87,8 @@
       "names": "<strong>Selectori de nume/Selectori de elevi:</strong> utilizate în mod obișnuit de educatori pentru a selecta aleatoriu persoane, denumite uneori „Roata numelor” sau „Selector aleatoriu de nume”.",
       "yesno": "<strong>Da/Nu Roți:</strong> pentru decizii binare simple.",
       "food": "<strong>Roata alimentelor:</strong> nu sunteți sigur ce să mâncați? Rotiți roata alimentelor pentru a lua decizii rapide ale mesei.",
-      "spin": "<strong>Rotiți roata:</strong> un selector aleatoriu complet personalizabil pentru orice situație."
+      "spin": "<strong>Rotiți roata:</strong> un selector aleatoriu complet personalizabil pentru orice situație.",
+      "twister": "<strong>Twister Spinner:</strong> o modalitate convenabilă de a selecta aleatoriu mișcările jocului, cum ar fi „Right Hand Red”."
     },
     "otherToolsOutro": "Fiecare versiune specializată preia conceptul de bază al selecției aleatorii și îl adaptează pentru a răspunde nevoilor distincte, făcându-le la îndemână pentru orice, de la organizarea activităților până la aranjarea dezbaterilor cu o întorsătură distractivă și imparțială."
   },
@@ -117,7 +122,20 @@
       "4": "<strong>Trebuie corectă:</strong> folosește-l în jocuri pentru a decide cine urmează."
     },
     "powerTitle": "Puterea aleatoriei",
-    "powerDesc": "Roata noastră folosește un generator de numere pseudoaleatoare fiabil pentru a se asigura că fiecare rotire este corectă și imprevizibilă. Acest lucru înlătură părtinirile personale din deciziile simple, făcându-l un factor de decizie cu adevărat imparțial. Uneori, lăsarea micilor alegeri la voia întâmplării poate elibera energie mentală pentru chestiuni mai importante! Opționalul „Poate” adaugă flexibilitate pentru acele momente în care un simplu da sau nu nu este suficient."
+    "powerDesc": "Roata noastră folosește un generator de numere pseudoaleatoare fiabil pentru a se asigura că fiecare rotire este corectă și imprevizibilă. Acest lucru înlătură părtinirile personale din deciziile simple, făcându-l un factor de decizie cu adevărat imparțial. Uneori, lăsarea micilor alegeri la voia întâmplării poate elibera energie mentală pentru chestiuni mai importante! Opționalul „Poate” adaugă flexibilitate pentru acele momente în care un simplu da sau nu nu este suficient.",
+    "faqTitle": "Roată Da sau Nu — Întrebări frecvente",
+    "faqs": {
+      "1Title": "Roata Da sau Nu este cu adevărat aleatorie?",
+      "1Desc": "Da! Roata noastră folosește algoritmi de randomizare de înaltă calitate pentru a se asigura că fiecare rotire este independentă și corectă. Fiecare bucată de roată are șanse egale de câștig în funcție de numărul de seturi de intrare pe care le alegeți.",
+      "2Title": "Pot personaliza roata Da Nu?",
+      "2Desc": "Absolut. Puteți alege între modurile cu două opțiuni (Da/Nu) și trei opțiuni (Da/Nu/Poate). De asemenea, puteți ajusta numărul de „seturi” de pe roată pentru a schimba aspectul.",
+      "3Title": "Pentru ce este modul „Poate”?",
+      "3Desc": "Modul „Poate” adaugă o a treia posibilitate pentru acele decizii dificile care nu sunt strict alb-negru. Este perfect pentru atunci când aveți nevoie de un rezultat de „remiză” sau „așteptați și vedeți”.",
+      "4Title": "Este acest instrument de utilizat gratuit?",
+      "4Desc": "Da, roata noastră Da sau Nu este 100% gratuită și nu necesită înregistrare sau descărcări. Te poți învârti de câte ori vrei!",
+      "5Title": "Funcționează pe dispozitive mobile?",
+      "5Desc": "Da, instrumentul este pe deplin receptiv și proiectat să funcționeze fără probleme pe toate browserele mobile moderne, inclusiv iPhone și Android."
+    }
   },
   "foodPage": {
     "title": "Roata Alimentelor",
@@ -239,7 +257,17 @@
     "codeDesc": "Copiați codul de mai jos pentru a încorpora această roată configurată pe site-ul dvs. web:",
     "generateBtn": "Generați codul de încorporare",
     "errConfigure": "Eroare la generarea codului. Vă rugăm să configurați mai întâi roata.",
-    "errEmpty": "Vă rugăm să adăugați cel puțin un articol la roată înainte de a genera codul de încorporare."
+    "errEmpty": "Vă rugăm să adăugați cel puțin un articol la roată înainte de a genera codul de încorporare.",
+    "title": "Cum să încorporați roata aleatorie",
+    "heroDesc": "Încorporați cu ușurință roata noastră aleatorie pe site-ul sau blogul dvs. Urmați acești pași simpli de mai jos pentru a genera codul HTML iframe.",
+    "step1Title": "Pasul 1: Introduceți intrările dvs",
+    "step1Desc": "Mai întâi, configurați elementele pe care le doriți pe roată. Adăugați nume, opțiuni sau orice altceva pentru care doriți să rotiți și personalizați-le culorile.",
+    "step2Title": "Pasul 2: Personalizați setările de încorporare",
+    "step2Desc": "Apoi, ajustați dimensiunea și titlul de accesibilitate pentru roata dvs. încorporată.",
+    "step3Title": "Pasul 3: Copiați codul de încorporare",
+    "step3Desc": "În cele din urmă, generați codul și copiați-l în HTML-ul site-ului dvs. web.",
+    "copyBtn": "Copiați codul",
+    "copied": "Copiat!"
   },
   "spinPage": {
     "title": "Învârte roata",
@@ -302,6 +330,82 @@
       "sec6TextMiddle": "mai bun decât majoritatea aplicațiilor este faptul că puteți modifica totul despre el. Dacă desfășurați un giveaway serios de companie sau transmiteți în flux pe Twitch, aveți nevoie de mai mult decât un simplu spinner de bază. De exemplu, dacă doriți ca unele premii să fie mai rare decât altele, puteți doar să duplicați premiile mai mici de mai multe ori pe roată, astfel încât să fie mai probabil să fie lovite. Această funcție de „ponderare” vă oferă control total asupra cotelor. De asemenea, puteți să vă scufundați în culori și să potriviți vizual roata cu marca sau tema petrecerii dvs. Cu funcții care vă permit să urmăriți de câte ori a câștigat o opțiune, să ascundeți opțiunile instantaneu și să modificați modul în care arată roata, este un instrument complet profesional deghizat într-un joc distractiv. Încearcă",
       "sec6LinkText2": "instrument principal de filare",
       "sec6TextEnd": "și elimină stresul din următoarea ta mare decizie."
+    }
+  },
+  "twisterPage": {
+    "parts": {
+      "rh": "Mâna dreaptă",
+      "lh": "Mâna stângă",
+      "rf": "Piciorul drept",
+      "lf": "Piciorul Stâng"
+    },
+    "title": "Twister Spinner",
+    "heroTitle": "Twister Spinner — Generator de mișcări aleatorii",
+    "heroDesc": "Ți-ai pierdut spinnerul Twister? Folosește <strong>Twister Spinner</strong> online gratuit pentru a trage mișcări pentru jocul tău! Doar apăsați pe rotire și obțineți instantaneu comenzi aleatorii precum „Mâna stângă albastră” sau „Piciorul drept roșu”.",
+    "howToTitle": "Cum să utilizați Twister Spinner",
+    "steps": {
+      "1": "<strong>Adună-ți prietenii</strong> — Instalează covorașul și pune-i pe toți în poziție.",
+      "2": "<strong>Rotiți roata</strong> — Faceți clic pe <em>Întoarceți roata</em> sau pe butonul central de pe roată.",
+      "3": "<strong>Apelați rezultatul</strong> — Mișcarea câștigătoare (de exemplu, „Mâna dreaptă roșie”) apare deasupra roții.",
+      "4": "<strong>Continuați să jucați</strong> — Continuați să vă învârtiți până când o singură persoană rămâne în picioare!"
+    },
+    "seoTitle": "Ce este un Digital Twister Spinner?",
+    "seoDesc": "Un <strong>Digital Twister Spinner</strong> este o roată interactivă concepută pentru a înlocui rotorul fizic din carton în jocul clasic de petrecere. Selectează aleatoriu una dintre cele 16 mișcări posibile care implică o parte a corpului (mâna stângă, mână dreaptă, picior stâng, picior drept) și o culoare (roșu, albastru, galben, verde).",
+    "seoList": {
+      "1": "<strong>Înlocuirea pieselor pierdute</strong> — Nu este nevoie să opriți jocul doar pentru că ați pierdut rotorul original.",
+      "2": "<strong>Gata pentru petrecere</strong> — Toată lumea poate vedea clar rotația pe telefon sau poate proiecta pe un ecran TV.",
+      "3": "<strong>Echitabil și aleatoriu</strong> — aleatoritatea însămânțată criptografic previne înșelăciunea sau învârtirile părtinitoare."
+    },
+    "whyTitle": "De ce să folosiți Twister Spinner-ul nostru?",
+    "whyDesc": "Spinerul nostru online oferă mai multe avantaje față de unul fizic:",
+    "features": {
+      "1Title": "Întotdeauna Disponibil",
+      "1Desc": "Nu este nevoie să descărcați nimic. Accesați spinnerul de pe orice smartphone, tabletă sau laptop.",
+      "2Title": "Grafică clară",
+      "2Desc": "Culorile strălucitoare și textul clar fac ca apelantul să citească cu ușurință mișcarea prin cameră.",
+      "3Title": "Rezultate corecte",
+      "3Desc": "Aleatoritatea sigură criptografic înseamnă că obțineți de fapt o rulare imparțială, fără săgeți „blocate”.",
+      "4Title": "100% gratuit",
+      "4Desc": "Instrumentul nostru este întotdeauna gratuit, fără plăți sau înscrieri necesare."
+    },
+    "faqTitle": "Întrebări frecvente",
+    "faqs": {
+      "1Title": "Este Twister Spinner complet gratuit de utilizat?",
+      "1Desc": "Da! Twister Spinner este complet gratuit de utilizat, fără taxe ascunse sau crearea unui cont.",
+      "2Title": "Spinerul online funcționează pe telefonul meu?",
+      "2Desc": "Absolut. Este pe deplin receptiv, așa că îl puteți utiliza cu ușurință pe orice dispozitiv mobil în timp ce jucați.",
+      "3Title": "Sunt rezultatele cu adevărat aleatorii?",
+      "3Desc": "Da. Fiecare rotire folosește un algoritm robust pentru a garanta că fiecare membru și combinație de culori au șanse egale de a apărea."
+    },
+    "article": {
+      "sec1Title": "De ce să folosiți un joc Digital Twister Spinner?",
+      "sec1Text": "Jocul fizic clasic Twister este incredibil de distractiv, dar rotorul de carton care vine cu el este renumit pentru că se îndoaie, se rup sau se pierde complet. În loc să opriți distracția atunci când nu găsiți spinnerul, puteți lansa un Twister Spinner digital chiar pe telefon sau tabletă. O versiune digitală oferă exact aceleași 16 combinații (mâna stângă, mână dreaptă, picior stâng, picior drept în roșu, albastru, galben și verde) fără a se bloca o placă fizică. Este complet randomizat, ceea ce înseamnă că jocul rămâne în întregime corect pentru toți jucătorii până când cineva cade inevitabil.",
+      "sec2Title": "Aducerea unui nou învârtire la jocurile clasice de petrecere",
+      "sec2Text": "Un spinner digital nu este doar un înlocuitor; vă poate îmbunătăți de fapt adunarea. Când toată lumea este încurcată pe covoraș, citirea ecranului unui telefon sau proiectarea lui pe un televizor inteligent permite apelantului să anunțe cu ușurință mișcările. În plus, randomizarea noastră de înaltă calitate, însămânțată criptografic, asigură o aleatorie adevărată, eliminând orice argument asupra faptului că o săgeată a fost „blocata pe linie”. Jocul curge mai repede, iar jucătorii se pot concentra în întregime pe a nu cădea.",
+      "sec3Title": "Combină jocurile de petrecere cu Roata numelor",
+      "sec3TextStart": "Dacă găzduiți o petrecere mare cu un grup mare, probabil că nu puteți încăpea toată lumea pe covorașul Twister deodată. O modalitate excelentă de a gestiona virajele în mod corect este folosirea noastră",
+      "sec3LinkText": "Roata Numelor",
+      "sec3TextMiddle": "instrument pentru a decide aleatoriu cine va juca runda următoare. Pur și simplu introduceți numele tuturor și rotiți roata pentru a selecta următorii concurenți. Noastre",
+      "sec3LinkText2": "Roata Numelor",
+      "sec3TextEnd": "include, de asemenea, o funcție de eliminare la îndemână, asigurându-se că toată lumea are rândul de a juca înainte ca cineva să joace de două ori.",
+      "sec4Title": "Ia o pauză și învârte roata alimentelor",
+      "sec4TextStart": "A juca jocuri de petrecere toată noaptea creează un apetit serios. Când jocul Twister se încheie și este timpul să comanzi mâncare, s-ar putea să descoperi că nimeni nu poate fi de acord cu ce să mănânci. Sari peste dezbaterea lungă folosind",
+      "sec4LinkText": "Roata Alimentelor",
+      "sec4TextMiddle": ". Doar introduceți cele mai bune opțiuni de restaurante din apropierea petrecerii dvs., faceți-i o rotire rapidă și decizia este luată instantaneu. Pentru comoditate, autonom",
+      "sec4LinkText2": "Roata Alimentelor",
+      "sec4TextEnd": "este optimizat pentru mobil, așa că o puteți face chiar de pe telefon înainte de a plasa comanda de livrare.",
+      "sec5Title": "Soluționați dezbaterile instantaneu",
+      "sec5TextStart": "Uneori, în timpul jocurilor de petrecere, apar dispute. Poate genunchiul cuiva a atins accidental covorașul sau poate că doi jucători vor exact același cerc de culoare în același timp. Dacă izbucnește o ceartă prietenoasă, cea mai rapidă modalitate de a o rezolva este cu o monedă - sau chiar mai bine, un digital",
+      "sec5LinkText": "Da/Nu Roata",
+      "sec5TextMiddle": ". Îi ia de la gazdă responsabilitatea și lasă hotărârea finală în totalitate la voia întâmplării. The",
+      "sec5LinkText2": "Da/Nu Roata",
+      "sec5TextEnd": "poate fi, de asemenea, personalizat pentru a include o opțiune „Poate” dacă doriți să forțați o remiză sau să cereți jucătorilor să joace din nou rândul.",
+      "sec6Title": "Personalizează totul pentru următoarea ta noapte de joc",
+      "sec6TextStart": "În timp ce Twister Spinner este perfect pentru jocul său specific, s-ar putea să doriți să vă creați propriile jocuri unice de băut, provocări cu adevărat sau îndrăzneală sau reguli de petrecere. Aici este nucleul",
+      "sec6LinkText": "Random Wheel Spinner",
+      "sec6TextMiddle": "strălucește. Puteți pune literalmente orice pe feliile roții, puteți schimba toate culorile pentru a se potrivi cu o temă de eveniment și chiar ajustați șansele dacă doriți ca unele provocări să apară mai rar. Profitând de principal",
+      "sec6LinkText2": "instrument principal de filare",
+      "sec6TextEnd": ", puteți proiecta o experiență de noapte de joc complet personalizată pe care oaspeții tăi nu o vor uita niciodată."
     }
   }
 }

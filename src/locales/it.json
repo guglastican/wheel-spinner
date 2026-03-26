@@ -6,14 +6,16 @@
     "embed": "Incorpora",
     "foodWheel": "Ruota del cibo",
     "configureEmbed": "Configura la ruota incorporabile",
-    "spinTheWheel": "Gira la ruota"
+    "spinTheWheel": "Gira la ruota",
+    "twisterSpinner": "Girandola"
   },
   "footer": {
     "randoWheel": "Ruota Rando",
     "copyright": "© {year} Ruota Spinner. Tutti i diritti riservati.",
     "privacyPolicy": "politica sulla riservatezza",
     "termsConditions": "Termini e condizioni",
-    "otherWheels": "Altre ruote"
+    "otherWheels": "Altre ruote",
+    "languages": "Lingue"
   },
   "mainWheel": {
     "winner": "Vincitore: {text} 🎉",
@@ -50,7 +52,9 @@
     "ynwTitle": "Ruota sì/no",
     "ynwDesc": "Un semplice spinner sì o no per gestire istantaneamente scelte binarie rapide.",
     "stwTitle": "Gira la ruota",
-    "stwDesc": "Un selettore casuale completamente personalizzabile per ogni situazione."
+    "stwDesc": "Un selettore casuale completamente personalizzabile per ogni situazione.",
+    "tsTitle": "Girandola",
+    "tsDesc": "Un generatore di ruote personalizzato per richiamare le mosse del tuo gioco di società."
   },
   "home": {
     "mainTitle": "Girandola casuale",
@@ -83,7 +87,8 @@
       "names": "<strong>Selettori di nomi/Selettori di studenti:</strong> comunemente utilizzato dagli educatori per selezionare casualmente le persone, a volte chiamato \"Ruota dei nomi\" o \"Selettore di nomi casuale\".",
       "yesno": "<strong>Ruote Sì/No:</strong> per semplici decisioni binarie.",
       "food": "<strong>Ruota del cibo:</strong> non sai cosa mangiare? Gira la ruota del cibo per prendere decisioni rapide e casuali sui pasti.",
-      "spin": "<strong>Gira la ruota:</strong> un selettore casuale completamente personalizzabile per ogni situazione."
+      "spin": "<strong>Gira la ruota:</strong> un selettore casuale completamente personalizzabile per ogni situazione.",
+      "twister": "<strong>Twister Spinner:</strong> un modo conveniente per selezionare casualmente mosse di gioco come \"Right Hand Red\"."
     },
     "otherToolsOutro": "Ogni versione specializzata prende il concetto centrale della selezione casuale e lo adatta per soddisfare esigenze specifiche, rendendole utili per qualsiasi cosa, dall'organizzazione delle attività alla risoluzione dei dibattiti con un tocco divertente e imparziale."
   },
@@ -117,7 +122,20 @@
       "4": "<strong>Turni equi:</strong> usalo nei giochi per decidere chi sarà il prossimo."
     },
     "powerTitle": "Il potere della casualità",
-    "powerDesc": "La nostra ruota utilizza un affidabile generatore di numeri pseudo-casuali per garantire che ogni giro sia corretto e imprevedibile. Ciò rimuove i pregiudizi personali dalle decisioni semplici, rendendolo un decisore veramente imparziale. A volte, lasciare le piccole scelte al caso può liberare energia mentale per questioni più importanti! L'opzione \"Forse\" aggiunge flessibilità per quei momenti in cui un semplice sì o no non è sufficiente."
+    "powerDesc": "La nostra ruota utilizza un affidabile generatore di numeri pseudo-casuali per garantire che ogni giro sia corretto e imprevedibile. Ciò rimuove i pregiudizi personali dalle decisioni semplici, rendendolo un decisore veramente imparziale. A volte, lasciare le piccole scelte al caso può liberare energia mentale per questioni più importanti! L'opzione \"Forse\" aggiunge flessibilità per quei momenti in cui un semplice sì o no non è sufficiente.",
+    "faqTitle": "Ruota Sì o No: domande frequenti",
+    "faqs": {
+      "1Title": "La ruota del sì o del no è davvero casuale?",
+      "1Desc": "SÌ! La nostra ruota utilizza algoritmi di randomizzazione di alta qualità per garantire che ogni giro sia indipendente ed equo. Ogni scheggia della ruota ha la stessa possibilità di vincere in base al numero di set di input che scegli.",
+      "2Title": "Posso personalizzare la ruota Sì No?",
+      "2Desc": "Assolutamente. È possibile scegliere tra le modalità a due opzioni (Sì/No) e a tre opzioni (Sì/No/Forse). Puoi anche regolare il numero di \"set\" sul volante per cambiarne l'aspetto.",
+      "3Title": "A cosa serve la modalità \"Forse\"?",
+      "3Desc": "La modalità \"Forse\" aggiunge una terza possibilità per quelle decisioni difficili che non sono strettamente in bianco e nero. È perfetto per quando hai bisogno di un risultato \"pareggio\" o \"aspetta e vedi\".",
+      "4Title": "Questo strumento è gratuito?",
+      "4Desc": "Sì, la nostra ruota Sì o No è ​​gratuita al 100% e non richiede registrazione o download. Puoi girare quante volte vuoi!",
+      "5Title": "Funziona sui dispositivi mobili?",
+      "5Desc": "Sì, lo strumento è completamente reattivo e progettato per funzionare perfettamente su tutti i browser mobili moderni, inclusi iPhone e Android."
+    }
   },
   "foodPage": {
     "title": "Ruota del cibo",
@@ -239,7 +257,17 @@
     "codeDesc": "Copia il codice qui sotto per incorporare questa ruota configurata sul tuo sito web:",
     "generateBtn": "Genera codice di incorporamento",
     "errConfigure": "Errore durante la generazione del codice. Per favore configura prima il volante.",
-    "errEmpty": "Aggiungi almeno un elemento alla ruota prima di generare il codice di incorporamento."
+    "errEmpty": "Aggiungi almeno un elemento alla ruota prima di generare il codice di incorporamento.",
+    "title": "Come incorporare la ruota casuale",
+    "heroDesc": "Incorpora facilmente la nostra ruota casuale nel tuo sito web o blog. Segui questi semplici passaggi di seguito per generare il codice iframe HTML.",
+    "step1Title": "Passaggio 1: inserisci i tuoi input",
+    "step1Desc": "Innanzitutto, configura gli elementi che desideri sul volante. Aggiungi nomi, scelte o qualsiasi altra cosa per cui vorresti girare e personalizza i loro colori.",
+    "step2Title": "Passaggio 2: personalizza le impostazioni di incorporamento",
+    "step2Desc": "Successivamente, regola le dimensioni e il titolo di accessibilità per la tua ruota incorporata.",
+    "step3Title": "Passaggio 3: copia il codice di incorporamento",
+    "step3Desc": "Infine, genera il codice e copialo nell'HTML del tuo sito web.",
+    "copyBtn": "Copia codice",
+    "copied": "Copiato!"
   },
   "spinPage": {
     "title": "Gira la ruota",
@@ -302,6 +330,82 @@
       "sec6TextMiddle": "meglio della maggior parte delle app è il fatto che puoi modificare tutto al riguardo. Se stai organizzando un serio giveaway aziendale o trasmettendo in streaming su Twitch, hai bisogno di qualcosa di più di un semplice spinner di base. Ad esempio, se desideri che alcuni premi siano più rari di altri, puoi semplicemente duplicare i premi più piccoli più volte sulla ruota in modo che abbiano maggiori probabilità di essere vinti. Questa funzione di \"ponderazione\" ti dà il controllo totale sulle quote. Puoi anche tuffarti nei colori e abbinare visivamente la ruota al tuo marchio o al tema della festa. Con funzionalità che ti consentono di tenere traccia di quante volte un'opzione ha vinto, nascondere istantaneamente le scelte e modificare l'aspetto della ruota, è uno strumento completamente professionale mascherato da gioco divertente. Prova il",
       "sec6LinkText2": "strumento di rotazione principale",
       "sec6TextEnd": "e togli lo stress dalla tua prossima grande decisione."
+    }
+  },
+  "twisterPage": {
+    "parts": {
+      "rh": "Destra",
+      "lh": "Mano sinistra",
+      "rf": "Piede destro",
+      "lf": "Piede sinistro"
+    },
+    "title": "Girandola",
+    "heroTitle": "Twister Spinner: generatore di mosse casuali",
+    "heroDesc": "Hai perso il tuo filatore Twister? Utilizza il nostro <strong>Twister Spinner</strong> online gratuito per richiamare le mosse del tuo gioco! Basta premere Gira e ottieni comandi casuali istantanei come \"Mano sinistra blu\" o \"Piede destro rosso\".",
+    "howToTitle": "Come utilizzare il Twister Spinner",
+    "steps": {
+      "1": "<strong>Riunisci i tuoi amici</strong>: prepara il tappetino e chiedi a tutti di mettersi in posizione.",
+      "2": "<strong>Gira la ruota</strong>: fai clic su <em>Gira la ruota</em> o sul pulsante centrale della ruota.",
+      "3": "<strong>Chiama il risultato</strong>: la mossa vincente (ad esempio, \"Rosso mano destra\") appare sopra la ruota.",
+      "4": "<strong>Continua a giocare</strong>: continua a girare finché non rimane in piedi solo una persona!"
+    },
+    "seoTitle": "Cos'è un Twister Spinner digitale?",
+    "seoDesc": "Un <strong>Digital Twister Spinner</strong> è una ruota interattiva progettata per sostituire lo spinner fisico di cartone nel classico gioco di società. Seleziona casualmente una delle 16 mosse possibili che coinvolgono una parte del corpo (mano sinistra, mano destra, piede sinistro, piede destro) e un colore (rosso, blu, giallo, verde).",
+    "seoList": {
+      "1": "<strong>Sostituzione dei pezzi perduti</strong>: non è necessario interrompere il gioco solo perché hai perso lo spinner originale.",
+      "2": "<strong>Pronto per la festa</strong>: tutti possono vedere chiaramente la rotazione su un telefono o trasmettere sullo schermo della TV.",
+      "3": "<strong>Equo e casuale</strong>: la casualità crittograficamente seminata previene imbrogli o giri distorti."
+    },
+    "whyTitle": "Perché utilizzare il nostro Twister Spinner?",
+    "whyDesc": "Il nostro spinner online offre numerosi vantaggi rispetto a quello fisico:",
+    "features": {
+      "1Title": "Sempre disponibile",
+      "1Desc": "Non è necessario scaricare nulla. Accedi allo spinner da qualsiasi smartphone, tablet o laptop.",
+      "2Title": "Grafica chiara",
+      "2Desc": "I colori vivaci e il testo chiaro consentono al chiamante di leggere facilmente i movimenti dall'altra parte della stanza.",
+      "3Title": "Risultati discreti",
+      "3Desc": "La casualità crittograficamente sicura significa che stai effettivamente ottenendo un tiro imparziale, senza frecce \"bloccate\".",
+      "4Title": "100% gratuito",
+      "4Desc": "Il nostro strumento è sempre gratuito, senza paywall o iscrizioni richieste."
+    },
+    "faqTitle": "Domande frequenti",
+    "faqs": {
+      "1Title": "L'uso di Twister Spinner è completamente gratuito?",
+      "1Desc": "SÌ! Il Twister Spinner è completamente gratuito e non richiede costi nascosti o creazione di un account.",
+      "2Title": "Lo spinner online funziona sul mio telefono?",
+      "2Desc": "Assolutamente. È completamente reattivo, quindi puoi usarlo facilmente su qualsiasi dispositivo mobile mentre giochi.",
+      "3Title": "I risultati sono davvero casuali?",
+      "3Desc": "SÌ. Ogni giro utilizza un robusto algoritmo per garantire che ogni combinazione di arti e colori abbia le stesse possibilità di apparire."
+    },
+    "article": {
+      "sec1Title": "Perché utilizzare un gioco Digital Twister Spinner?",
+      "sec1Text": "Il classico gioco fisico Twister è incredibilmente divertente, ma lo spinner di cartone in dotazione è noto per piegarsi, strapparsi o perdersi completamente. Invece di interrompere il divertimento quando non riesci a trovare lo spinner, puoi lanciare un Twister Spinner digitale direttamente sul tuo telefono o tablet. Una versione digitale fornisce le stesse identiche 16 combinazioni (mano sinistra, mano destra, piede sinistro, piede destro in rosso, blu, giallo e verde) senza il fastidio che una tavola fisica rimanga bloccata. È completamente randomizzato, il che significa che il gioco rimane del tutto equo per tutti i giocatori finché qualcuno inevitabilmente non cade.",
+      "sec2Title": "Portare una nuova svolta ai classici giochi di società",
+      "sec2Text": "Uno spinner digitale non è solo un sostituto; può effettivamente migliorare il tuo incontro. Quando tutti sono aggrovigliati sul tappetino, leggere lo schermo del telefono o trasmetterlo su una smart TV consente a chi chiama di annunciare facilmente le mosse. Inoltre, la nostra randomizzazione crittografica di alta qualità garantisce la vera casualità, eliminando qualsiasi argomento sul fatto che una freccia fosse \"bloccata sulla linea\". Il gioco scorre più velocemente e i giocatori possono concentrarsi interamente sul non cadere.",
+      "sec3Title": "Combina i giochi di società con la ruota dei nomi",
+      "sec3TextStart": "Se stai organizzando una festa numerosa con un gruppo numeroso, probabilmente non riuscirai a far sedere tutti sul tappetino Twister contemporaneamente. Un ottimo modo per gestire le svolte in modo equo è utilizzare il nostro",
+      "sec3LinkText": "Ruota dei nomi",
+      "sec3TextMiddle": "strumento per decidere in modo casuale chi giocherà il turno successivo. Basta inserire i nomi di tutti e girare la ruota per selezionare i concorrenti successivi. Nostro",
+      "sec3LinkText2": "Ruota dei nomi",
+      "sec3TextEnd": "include anche una pratica funzione di eliminazione, che garantisce che tutti abbiano un turno per giocare prima che qualcuno giochi due volte.",
+      "sec4Title": "Prenditi una pausa e gira la ruota del cibo",
+      "sec4TextStart": "Giocare ai giochi di società tutta la notte stimola l'appetito. Quando il gioco di Twister finisce ed è il momento di ordinare il cibo, potresti scoprire che nessuno è d'accordo su cosa mangiare. Salta il lungo dibattito utilizzando il file",
+      "sec4LinkText": "Ruota del cibo",
+      "sec4TextMiddle": ". Basta inserire le opzioni dei migliori ristoranti vicino alla tua festa, fare un giro veloce e la decisione verrà presa immediatamente. Per comodità, il file standalone",
+      "sec4LinkText2": "Ruota del cibo",
+      "sec4TextEnd": "è ottimizzato per i dispositivi mobili, quindi puoi farlo direttamente dal tuo telefono prima di effettuare l'ordine di consegna.",
+      "sec5Title": "Risolvi i dibattiti istantaneamente",
+      "sec5TextStart": "A volte durante i giochi di società si verificano delle controversie. Forse il ginocchio di qualcuno ha toccato accidentalmente il tappeto, o forse due giocatori vogliono esattamente lo stesso cerchio colorato nello stesso momento. Se scoppia una discussione amichevole, il modo più veloce per risolverla è lanciare una moneta o, meglio ancora, un lancio digitale",
+      "sec5LinkText": "Ruota Sì/No",
+      "sec5TextMiddle": ". Si toglie la responsabilità all'ospite e si lascia la decisione finale interamente al caso. IL",
+      "sec5LinkText2": "Ruota Sì/No",
+      "sec5TextEnd": "può anche essere personalizzato per includere un'opzione \"Forse\" se vuoi forzare una patta o chiedere ai giocatori di rigiocare il turno.",
+      "sec6Title": "Personalizza tutto per la tua prossima serata di gioco",
+      "sec6TextStart": "Sebbene il Twister Spinner sia perfetto per il suo gioco specifico, potresti voler creare i tuoi giochi di bevute unici, sfide di obbligo o verità o regole del gruppo. Questo è il nocciolo della questione",
+      "sec6LinkText": "Girandola casuale",
+      "sec6TextMiddle": "brilla. Puoi mettere letteralmente qualsiasi cosa sulle fette della ruota, cambiare tutti i colori per adattarli al tema dell'evento e persino regolare le probabilità se vuoi che alcune sfide appaiano meno frequentemente. Approfittando del main",
+      "sec6LinkText2": "strumento di rotazione principale",
+      "sec6TextEnd": ", puoi progettare un'esperienza di serata di gioco completamente personalizzata che i tuoi ospiti non dimenticheranno mai."
     }
   }
 }

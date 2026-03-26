@@ -6,14 +6,16 @@
     "embed": "Vložit",
     "foodWheel": "Food Wheel",
     "configureEmbed": "Konfigurace zabudovatelného kola",
-    "spinTheWheel": "Roztočte kolo"
+    "spinTheWheel": "Roztočte kolo",
+    "twisterSpinner": "Twister Spinner"
   },
   "footer": {
     "randoWheel": "Kolo Rando",
     "copyright": "© {year} Kolečko. Všechna práva vyhrazena.",
     "privacyPolicy": "Zásady ochrany osobních údajů",
     "termsConditions": "Smluvní podmínky",
-    "otherWheels": "Jiná kola"
+    "otherWheels": "Jiná kola",
+    "languages": "Languages"
   },
   "mainWheel": {
     "winner": "Vítěz: {text} 🎉",
@@ -50,7 +52,9 @@
     "ynwTitle": "Ano / Ne kolo",
     "ynwDesc": "Jednoduchý číselník ano nebo ne, který okamžitě zvládne rychlé binární volby.",
     "stwTitle": "Roztočte kolo",
-    "stwDesc": "Plně přizpůsobitelný náhodný výběr pro každou situaci."
+    "stwDesc": "Plně přizpůsobitelný náhodný výběr pro každou situaci.",
+    "tsTitle": "Twister Spinner",
+    "tsDesc": "A custom wheel generator to call out moves for your party game."
   },
   "home": {
     "mainTitle": "Náhodný kolotoč",
@@ -83,7 +87,8 @@
       "names": "<strong>Výběr jmen / Výběr studentů:</strong> Běžně používaný pedagogy k náhodnému výběru jednotlivců, někdy nazývaný „kolo jmen“ nebo „náhodný výběr jmen“.",
       "yesno": "<strong>Ano/ne kolečka:</strong> Pro jednoduchá binární rozhodnutí.",
       "food": "<strong>Food Wheel:</strong> Nejste si jisti, co jíst? Roztočte potravinové kolo pro rychlé náhodné rozhodování o jídle.",
-      "spin": "<strong>Spin the Wheel:</strong> Plně přizpůsobitelný náhodný výběr pro každou situaci."
+      "spin": "<strong>Spin the Wheel:</strong> Plně přizpůsobitelný náhodný výběr pro každou situaci.",
+      "twister": "<strong>Twister Spinner:</strong> A convenient way to randomly select game moves like 'Right Hand Red'."
     },
     "otherToolsOutro": "Každá specializovaná verze přebírá základní koncept náhodného výběru a přizpůsobuje jej tak, aby vyhovovala odlišným potřebám, takže jsou užitečné pro vše od organizování aktivit až po urovnávání debat se zábavným a nestranným nádechem."
   },
@@ -117,7 +122,20 @@
       "4": "<strong>Fair Turn-Taking:</strong> Použijte jej ve hrách, abyste rozhodli, kdo bude další."
     },
     "powerTitle": "Síla náhody",
-    "powerDesc": "Naše kolo používá spolehlivý generátor pseudonáhodných čísel, aby bylo zajištěno, že každé roztočení bude spravedlivé a nepředvídatelné. To odstraňuje osobní zaujatost z jednoduchých rozhodnutí, což z ní činí skutečně nestranné rozhodnutí. Někdy může ponechání malých rozhodnutí náhodě uvolnit mentální energii pro důležitější záležitosti! Volitelné „Možná“ přidává flexibilitu pro situace, kdy jednoduché ano nebo ne nestačí."
+    "powerDesc": "Naše kolo používá spolehlivý generátor pseudonáhodných čísel, aby bylo zajištěno, že každé roztočení bude spravedlivé a nepředvídatelné. To odstraňuje osobní zaujatost z jednoduchých rozhodnutí, což z ní činí skutečně nestranné rozhodnutí. Někdy může ponechání malých rozhodnutí náhodě uvolnit mentální energii pro důležitější záležitosti! Volitelné „Možná“ přidává flexibilitu pro situace, kdy jednoduché ano nebo ne nestačí.",
+    "faqTitle": "Yes or No Wheel — Frequently Asked Questions",
+    "faqs": {
+      "1Title": "Is the Yes or No Wheel truly random?",
+      "1Desc": "Yes! Our wheel uses high-quality randomization algorithms to ensure that every spin is independent and fair. Every sliver of the wheel has an equal chance of winning based on the number of input sets you choose.",
+      "2Title": "Can I customize the Yes No wheel?",
+      "2Desc": "Absolutely. You can choose between two-option (Yes/No) and three-option (Yes/No/Maybe) modes. You can also adjust the number of 'sets' on the wheel to change how it looks.",
+      "3Title": "What is the 'Maybe' mode for?",
+      "3Desc": "The 'Maybe' mode adds a third possibility for those tricky decisions that aren't strictly black and white. It's perfect for when you need a 'draw' or a 'wait and see' result.",
+      "4Title": "Is this tool free to use?",
+      "4Desc": "Yes, our Yes or No Wheel is 100% free and requires no sign-up or downloads. You can spin as many times as you like!",
+      "5Title": "Does it work on mobile devices?",
+      "5Desc": "Yes, the tool is fully responsive and designed to work seamlessly on all modern mobile browsers, including iPhone and Android."
+    }
   },
   "foodPage": {
     "title": "Food Wheel",
@@ -239,7 +257,17 @@
     "codeDesc": "Zkopírujte níže uvedený kód a vložte toto nakonfigurované kolo na svůj web:",
     "generateBtn": "Vygenerovat kód pro vložení",
     "errConfigure": "Chyba při generování kódu. Nejprve nakonfigurujte kolo.",
-    "errEmpty": "Před vygenerováním kódu pro vložení přidejte do kola alespoň jednu položku."
+    "errEmpty": "Před vygenerováním kódu pro vložení přidejte do kola alespoň jednu položku.",
+    "title": "Jak vložit náhodné kolo",
+    "heroDesc": "Jednoduše vložte naše náhodné kolo na svůj web nebo blog. Chcete-li vygenerovat kód HTML iframe, postupujte podle těchto jednoduchých kroků níže.",
+    "step1Title": "Krok 1: Zadejte své vstupy",
+    "step1Desc": "Nejprve nakonfigurujte položky, které chcete mít na svém kole. Přidejte jména, možnosti nebo cokoli jiného, ​​pro co byste chtěli točit, a přizpůsobte jejich barvy.",
+    "step2Title": "Krok 2: Upravte nastavení vkládání",
+    "step2Desc": "Dále upravte velikost a název pro usnadnění pro své vestavěné kolo.",
+    "step3Title": "Krok 3: Zkopírujte si kód pro vložení",
+    "step3Desc": "Nakonec vygenerujte kód a zkopírujte jej do kódu HTML svého webu.",
+    "copyBtn": "Kopírovat kód",
+    "copied": "Zkopírováno!"
   },
   "spinPage": {
     "title": "Roztočte kolo",
@@ -302,6 +330,82 @@
       "sec6TextMiddle": "lepší než u většiny aplikací je fakt, že si na ní můžete všechno vyladit. Pokud provozujete seriózní firemní dárky nebo streamujete na Twitchi, potřebujete víc než jen základní spinner. Pokud například chcete, aby některé ceny byly vzácnější než jiné, můžete menší ceny na kole několikrát duplikovat, takže je pravděpodobnější, že budou zasaženy. Tato funkce \"vážení\" vám dává úplnou kontrolu nad kurzy. Můžete se také ponořit do barev a vizuálně sladit kolo se svou značkou nebo tématem párty. Díky funkcím, které vám umožní sledovat, kolikrát daná možnost vyhrála, okamžitě skrýt volby a vyladit vzhled kola, jde o zcela profesionální nástroj maskovaný jako zábavná hra. Vyzkoušejte",
       "sec6LinkText2": "hlavní spinner nástroj",
       "sec6TextEnd": "a zbavit se stresu ze svého dalšího velkého rozhodnutí."
+    }
+  },
+  "twisterPage": {
+    "parts": {
+      "rh": "Right Hand",
+      "lh": "Left Hand",
+      "rf": "Right Foot",
+      "lf": "Left Foot"
+    },
+    "title": "Twister Spinner",
+    "heroTitle": "Twister Spinner — Random Move Generator",
+    "heroDesc": "Lost your Twister spinner? Use our free online <strong>Twister Spinner</strong> to call out moves for your game! Just hit spin, and get instant random commands like 'Left Hand Blue' or 'Right Foot Red'.",
+    "howToTitle": "How to Use the Twister Spinner",
+    "steps": {
+      "1": "<strong>Gather Your Friends</strong> — Set up the mat and have everyone get into position.",
+      "2": "<strong>Spin the Wheel</strong> — Click <em>Spin the Wheel</em> or the centre button on the wheel.",
+      "3": "<strong>Call the Result</strong> — The winning move (e.g., 'Right Hand Red') appears above the wheel.",
+      "4": "<strong>Keep Playing</strong> — Continue spinning until only one person is left standing!"
+    },
+    "seoTitle": "What Is a Digital Twister Spinner?",
+    "seoDesc": "A <strong>Digital Twister Spinner</strong> is an interactive wheel designed to replace the physical cardboard spinner in the classic party game. It randomly selects one of 16 possible moves involving a body part (Left Hand, Right Hand, Left Foot, Right Foot) and a colour (Red, Blue, Yellow, Green).",
+    "seoList": {
+      "1": "<strong>Lost pieces replacement</strong> — No need to stop the game just because you lost the original spinner.",
+      "2": "<strong>Party ready</strong> — Everyone can see the spin clearly on a phone or cast to a TV screen.",
+      "3": "<strong>Fair and random</strong> — cryptographically seeded randomness prevents cheating or biased spins."
+    },
+    "whyTitle": "Why Use Our Twister Spinner?",
+    "whyDesc": "Our online spinner offers several advantages over a physical one:",
+    "features": {
+      "1Title": "Always Available",
+      "1Desc": "No need to download anything. Access the spinner from any smartphone, tablet, or laptop.",
+      "2Title": "Clear Graphics",
+      "2Desc": "Bright colours and clear text make it easy for the caller to read the move across the room.",
+      "3Title": "Fair Results",
+      "3Desc": "Cryptographically secure randomness means you're actually getting an unbiased roll, with no 'stuck' arrows.",
+      "4Title": "100% Free",
+      "4Desc": "Our tool is always free, with no paywalls or required sign-ups."
+    },
+    "faqTitle": "Frequently Asked Questions",
+    "faqs": {
+      "1Title": "Is the Twister Spinner completely free to use?",
+      "1Desc": "Yes! The Twister Spinner is completely free to use with no hidden fees or account creation required.",
+      "2Title": "Does the online spinner work on my phone?",
+      "2Desc": "Absolutely. It's fully responsive, so you can easily use it on any mobile device while playing.",
+      "3Title": "Are the results truly random?",
+      "3Desc": "Yes. Every spin uses a robust algorithm to guarantee that each limb and colour combination has an equal chance of appearing."
+    },
+    "article": {
+      "sec1Title": "Proč používat hru Digital Twister Spinner?",
+      "sec1Text": "Klasická fyzická hra Twister je neuvěřitelně zábavná, ale kartonový spinner, který je s ní dodáván, je pověstný tím, že se ohne, roztrhne nebo úplně ztratí. Místo toho, abyste přestali bavit, když nemůžete najít spinner, můžete spustit digitální Twister Spinner přímo na svém telefonu nebo tabletu. Digitální verze poskytuje přesně stejných 16 kombinací (levá ruka, pravá ruka, levá noha, pravá noha v červené, modré, žluté a zelené barvě), aniž by se museli zaseknout fyzické desky. Je zcela náhodná, což znamená, že hra zůstává zcela spravedlivá pro všechny hráče, dokud někdo nevyhnutelně nepadne.",
+      "sec2Title": "Přinášíme nové roztočení do klasických párty her",
+      "sec2Text": "Digitální spinner není jen náhrada; může to skutečně zlepšit vaše setkání. Když jsou všichni zamotaní na podložce, čtení obrazovky telefonu nebo její odeslání do chytré televize umožní volajícímu snadno oznámit pohyby. Naše vysoce kvalitní kryptograficky nasazená randomizace navíc zajišťuje skutečnou náhodnost a odstraňuje veškeré argumenty ohledně toho, zda se šipka „zasekla na lince“. Hra plyne rychleji a hráči se mohou plně soustředit na to, aby nespadli.",
+      "sec3Title": "Spojte párty hry s Kolem jmen",
+      "sec3TextStart": "Pokud pořádáte velkou párty s velkou skupinou, pravděpodobně se na podložku Twister nevejdete všichni najednou. Skvělý způsob, jak spravedlivě řídit zatáčky, je používat naše",
+      "sec3LinkText": "Kolo jmen",
+      "sec3TextMiddle": "nástroj k náhodnému rozhodování o tom, kdo bude hrát další kolo. Jednoduše zadáte jména všech a otočením kolečka vyberete další soutěžící. Náš",
+      "sec3LinkText2": "Kolo jmen",
+      "sec3TextEnd": "obsahuje také praktickou funkci eliminace, která zajišťuje, že každý dostane řadu, než kdokoli zahraje dvakrát.",
+      "sec4Title": "Dejte si pauzu a roztočte kolo jídla",
+      "sec4TextStart": "Celou noc hraní společenských her vyvolává vážnou chuť k jídlu. Když hra Twister skončí a je čas objednat si jídlo, možná zjistíte, že se nikdo nemůže dohodnout na tom, co jíst. Přeskočte dlouhou debatu pomocí",
+      "sec4LinkText": "Food Wheel",
+      "sec4TextMiddle": ". Stačí zadat nejlepší restaurace poblíž vaší party, rychle to točit a rozhodnutí je okamžitě učiněno. Pro pohodlí, samostatný",
+      "sec4LinkText2": "Food Wheel",
+      "sec4TextEnd": "je optimalizována pro mobilní zařízení, takže to můžete provést přímo z telefonu před zadáním objednávky doručení.",
+      "sec5Title": "Okamžitě řešit debaty",
+      "sec5TextStart": "Někdy během párty her dochází ke sporům. Možná se něčí koleno náhodně dotklo podložky, nebo možná dva hráči chtějí stejný barevný kruh současně. Pokud dojde k přátelské hádce, nejrychlejší způsob, jak ji vyřešit, je hod mincí – nebo ještě lépe digitální",
+      "sec5LinkText": "Ano/Ne kolo",
+      "sec5TextMiddle": ". Snímá odpovědnost z hostitele a nechává konečné rozhodnutí zcela na náhodě. The",
+      "sec5LinkText2": "Ano/Ne kolo",
+      "sec5TextEnd": "lze také upravit tak, aby zahrnovala možnost „Možná“, pokud si chcete vynutit remízu nebo požádat hráče, aby tah zopakovali.",
+      "sec6Title": "Přizpůsobte si vše pro svůj příští herní večer",
+      "sec6TextStart": "Zatímco Twister Spinner je ideální pro svou specifickou hru, možná budete chtít vytvořit své vlastní jedinečné hry s pitím, výzvy typu pravda nebo odvaha nebo pravidla párty. Tady je jádro",
+      "sec6LinkText": "Náhodný kolotoč",
+      "sec6TextMiddle": "svítí. Na plátky kola můžete umístit doslova cokoliv, změnit všechny barvy tak, aby odpovídaly tématu události, a dokonce upravit pravděpodobnost, pokud chcete, aby se některé výzvy objevovaly méně často. Tím, že využijete hlavní",
+      "sec6LinkText2": "hlavní spinner nástroj",
+      "sec6TextEnd": ", můžete si navrhnout zcela vlastní herní noční zážitek, na který vaši hosté nikdy nezapomenou."
     }
   }
 }

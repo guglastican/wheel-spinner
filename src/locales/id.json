@@ -6,14 +6,16 @@
     "embed": "Menanamkan",
     "foodWheel": "Roda Makanan",
     "configureEmbed": "Konfigurasikan Roda yang Dapat Disematkan",
-    "spinTheWheel": "Putar Roda"
+    "spinTheWheel": "Putar Roda",
+    "twisterSpinner": "Pemintal Putaran"
   },
   "footer": {
     "randoWheel": "Roda Rando",
     "copyright": "© {year} Pemintal Roda. Semua hak dilindungi undang-undang.",
     "privacyPolicy": "Kebijakan Privasi",
     "termsConditions": "Syarat & Ketentuan",
-    "otherWheels": "Roda Lainnya"
+    "otherWheels": "Roda Lainnya",
+    "languages": "Bahasa"
   },
   "mainWheel": {
     "winner": "Pemenang: {text} 🎉",
@@ -50,7 +52,9 @@
     "ynwTitle": "Ya / Tidak Roda",
     "ynwDesc": "Pemintal ya atau tidak yang sederhana untuk menangani pilihan biner cepat secara instan.",
     "stwTitle": "Putar Roda",
-    "stwDesc": "Pemilih acak yang dapat disesuaikan sepenuhnya untuk situasi apa pun."
+    "stwDesc": "Pemilih acak yang dapat disesuaikan sepenuhnya untuk situasi apa pun.",
+    "tsTitle": "Pemintal Putaran",
+    "tsDesc": "Generator roda khusus untuk memanggil gerakan untuk permainan pesta Anda."
   },
   "home": {
     "mainTitle": "Pemintal Roda Acak",
@@ -83,7 +87,8 @@
       "names": "<strong>Pemilih Nama / Pemilih Siswa:</strong> Biasa digunakan oleh pendidik untuk memilih individu secara acak, terkadang disebut \"Roda Nama\" atau \"Pemilih Nama Acak\".",
       "yesno": "<strong>Roda Ya/Tidak:</strong> Untuk keputusan biner sederhana.",
       "food": "<strong>Roda Makanan:</strong> Tidak yakin harus makan apa? Putar roda makanan untuk mengambil keputusan makan secara acak dan cepat.",
-      "spin": "<strong>Putar Roda:</strong> Alat pilih acak yang dapat disesuaikan sepenuhnya untuk situasi apa pun."
+      "spin": "<strong>Putar Roda:</strong> Alat pilih acak yang dapat disesuaikan sepenuhnya untuk situasi apa pun.",
+      "twister": "<strong>Twister Spinner:</strong> Cara mudah untuk memilih gerakan permainan secara acak seperti 'Tangan Kanan Merah'."
     },
     "otherToolsOutro": "Setiap versi khusus mengambil konsep inti dari pemilihan acak dan menyesuaikannya untuk memenuhi kebutuhan yang berbeda, menjadikannya berguna untuk segala hal mulai dari mengatur kegiatan hingga menyelesaikan perdebatan dengan cara yang menyenangkan dan tidak memihak."
   },
@@ -117,7 +122,20 @@
       "4": "<strong>Pengambilan giliran yang Adil:</strong> Gunakan dalam permainan untuk memutuskan siapa yang maju selanjutnya."
     },
     "powerTitle": "Kekuatan Keacakan",
-    "powerDesc": "Roda kami menggunakan generator angka pseudo-acak yang andal untuk memastikan setiap putaran adil dan tidak dapat diprediksi. Hal ini menghilangkan bias pribadi dari keputusan sederhana, menjadikannya pengambil keputusan yang benar-benar tidak memihak. Terkadang, membiarkan pilihan-pilihan kecil secara kebetulan dapat membebaskan energi mental untuk hal-hal yang lebih penting! Pilihan 'Mungkin' menambah fleksibilitas ketika jawaban ya atau tidak saja tidak cukup."
+    "powerDesc": "Roda kami menggunakan generator angka pseudo-acak yang andal untuk memastikan setiap putaran adil dan tidak dapat diprediksi. Hal ini menghilangkan bias pribadi dari keputusan sederhana, menjadikannya pengambil keputusan yang benar-benar tidak memihak. Terkadang, membiarkan pilihan-pilihan kecil secara kebetulan dapat membebaskan energi mental untuk hal-hal yang lebih penting! Pilihan 'Mungkin' menambah fleksibilitas ketika jawaban ya atau tidak saja tidak cukup.",
+    "faqTitle": "Roda Ya atau Tidak — Pertanyaan yang Sering Diajukan",
+    "faqs": {
+      "1Title": "Apakah Roda Ya atau Tidak benar-benar acak?",
+      "1Desc": "Ya! Roda kami menggunakan algoritma pengacakan berkualitas tinggi untuk memastikan bahwa setiap putaran bersifat independen dan adil. Setiap bagian roda memiliki peluang menang yang sama berdasarkan jumlah set masukan yang Anda pilih.",
+      "2Title": "Bisakah saya menyesuaikan roda Ya Tidak?",
+      "2Desc": "Sangat. Anda dapat memilih antara mode dua opsi (Ya/Tidak) dan tiga opsi (Ya/Tidak/Mungkin). Anda juga dapat menyesuaikan jumlah 'set' pada roda untuk mengubah tampilannya.",
+      "3Title": "Untuk apa mode 'Mungkin'?",
+      "3Desc": "Mode 'Mungkin' menambahkan kemungkinan ketiga untuk keputusan rumit yang tidak sepenuhnya hitam dan putih. Ini sempurna ketika Anda memerlukan hasil 'seri' atau 'tunggu dan lihat'.",
+      "4Title": "Apakah alat ini gratis untuk digunakan?",
+      "4Desc": "Ya, Roda Ya atau Tidak kami 100% gratis dan tidak memerlukan pendaftaran atau pengunduhan. Anda dapat memutar sebanyak yang Anda suka!",
+      "5Title": "Apakah ini berfungsi di perangkat seluler?",
+      "5Desc": "Ya, alat ini sepenuhnya responsif dan dirancang untuk bekerja dengan lancar di semua browser seluler modern, termasuk iPhone dan Android."
+    }
   },
   "foodPage": {
     "title": "Roda Makanan",
@@ -239,7 +257,17 @@
     "codeDesc": "Salin kode di bawah ini untuk menyematkan roda yang dikonfigurasi ini di situs web Anda:",
     "generateBtn": "Hasilkan Kode Sematan",
     "errConfigure": "Kesalahan saat membuat kode. Silakan konfigurasikan rodanya terlebih dahulu.",
-    "errEmpty": "Harap tambahkan setidaknya satu item ke roda sebelum membuat kode semat."
+    "errEmpty": "Harap tambahkan setidaknya satu item ke roda sebelum membuat kode semat.",
+    "title": "Cara Menyematkan Roda Acak",
+    "heroDesc": "Sematkan roda acak kami dengan mudah di situs web atau blog Anda. Ikuti langkah-langkah sederhana di bawah ini untuk menghasilkan kode iframe HTML.",
+    "step1Title": "Langkah 1: Masukkan Masukan Anda",
+    "step1Desc": "Pertama, konfigurasikan item yang Anda inginkan di roda Anda. Tambahkan nama, pilihan, atau apa pun yang ingin Anda buat, dan sesuaikan warnanya.",
+    "step2Title": "Langkah 2: Sesuaikan Pengaturan Sematan",
+    "step2Desc": "Selanjutnya, sesuaikan ukuran dan judul aksesibilitas untuk roda tertanam Anda.",
+    "step3Title": "Langkah 3: Salin Kode Sematan Anda",
+    "step3Desc": "Terakhir, buat kode dan salin ke HTML situs web Anda.",
+    "copyBtn": "Salin Kode",
+    "copied": "Disalin!"
   },
   "spinPage": {
     "title": "Putar Roda",
@@ -302,6 +330,82 @@
       "sec6TextMiddle": "lebih baik daripada kebanyakan aplikasi adalah kenyataan bahwa Anda dapat mengubah segala sesuatu tentangnya. Jika Anda menjalankan giveaway perusahaan yang serius atau streaming di Twitch, Anda memerlukan lebih dari sekadar pemintal dasar. Misalnya, jika Anda ingin beberapa hadiah lebih langka dibandingkan yang lain, Anda cukup menduplikasi hadiah yang lebih kecil beberapa kali pada roda sehingga kemungkinan besar akan didapat. Fitur \"pembobotan\" ini memberi Anda kendali penuh atas peluang. Anda juga dapat mendalami warna dan mencocokkan roda secara visual dengan merek atau tema pesta Anda. Dengan fitur yang memungkinkan Anda melacak berapa kali suatu opsi menang, menyembunyikan pilihan secara instan, dan mengubah tampilan roda, ini adalah alat profesional yang menyamar sebagai permainan menyenangkan. Cobalah",
       "sec6LinkText2": "alat pemintal utama",
       "sec6TextEnd": "dan menghilangkan stres dari keputusan besar Anda berikutnya."
+    }
+  },
+  "twisterPage": {
+    "parts": {
+      "rh": "Tangan kanan",
+      "lh": "Tangan kiri",
+      "rf": "Kaki Kanan",
+      "lf": "Kaki Kiri"
+    },
+    "title": "Pemintal Putaran",
+    "heroTitle": "Twister Spinner — Generator Gerakan Acak",
+    "heroDesc": "Kehilangan pemintal Twister Anda? Gunakan <strong>Twister Spinner</strong> online gratis kami untuk menyebutkan gerakan dalam game Anda! Tekan saja putar, dan dapatkan perintah acak instan seperti 'Tangan Kiri Biru' atau 'Kaki Kanan Merah'.",
+    "howToTitle": "Cara Menggunakan Pemintal Twister",
+    "steps": {
+      "1": "<strong>Kumpulkan Teman Anda</strong> — Siapkan matras dan minta semua orang mengambil posisi.",
+      "2": "<strong>Putar Roda</strong> — Klik <em>Putar Roda</em> atau tombol tengah pada roda.",
+      "3": "<strong>Sebutkan Hasilnya</strong> — Langkah yang menang (misalnya, 'Tangan Kanan Merah') muncul di atas kemudi.",
+      "4": "<strong>Terus Main</strong> — Lanjutkan berputar hingga hanya satu orang yang tersisa berdiri!"
+    },
+    "seoTitle": "Apa itu Pemintal Twister Digital?",
+    "seoDesc": "<strong>Digital Twister Spinner</strong> adalah roda interaktif yang dirancang untuk menggantikan pemintal karton fisik dalam permainan pesta klasik. Ini secara acak memilih salah satu dari 16 kemungkinan gerakan yang melibatkan bagian tubuh (Tangan Kiri, Tangan Kanan, Kaki Kiri, Kaki Kanan) dan warna (Merah, Biru, Kuning, Hijau).",
+    "seoList": {
+      "1": "<strong>Penggantian kepingan yang hilang</strong> — Tidak perlu menghentikan permainan hanya karena Anda kehilangan spinner aslinya.",
+      "2": "<strong>Siap berpesta</strong> — Semua orang dapat melihat putaran dengan jelas di ponsel atau ditayangkan di layar TV.",
+      "3": "<strong>Adil dan acak</strong> — keacakan yang diunggulkan secara kriptografis mencegah kecurangan atau putaran yang bias."
+    },
+    "whyTitle": "Mengapa Menggunakan Twister Spinner Kami?",
+    "whyDesc": "Pemintal online kami menawarkan beberapa keunggulan dibandingkan pemintal fisik:",
+    "features": {
+      "1Title": "Selalu Tersedia",
+      "1Desc": "Tidak perlu mengunduh apa pun. Akses pemintal dari ponsel cerdas, tablet, atau laptop apa pun.",
+      "2Title": "Grafik yang Jelas",
+      "2Desc": "Warna-warna cerah dan teks yang jelas memudahkan penelepon membaca gerakan di seberang ruangan.",
+      "3Title": "Hasil yang Wajar",
+      "3Desc": "Keacakan yang aman secara kriptografis berarti Anda benar-benar mendapatkan hasil yang tidak memihak, tanpa panah yang 'macet'.",
+      "4Title": "100% Gratis",
+      "4Desc": "Alat kami selalu gratis, tanpa pembayaran berbayar atau pendaftaran wajib."
+    },
+    "faqTitle": "Pertanyaan yang Sering Diajukan",
+    "faqs": {
+      "1Title": "Apakah Twister Spinner sepenuhnya gratis untuk digunakan?",
+      "1Desc": "Ya! Twister Spinner sepenuhnya gratis untuk digunakan tanpa biaya tersembunyi atau pembuatan akun.",
+      "2Title": "Apakah pemintal online berfungsi di ponsel saya?",
+      "2Desc": "Sangat. Ini sepenuhnya responsif, sehingga Anda dapat dengan mudah menggunakannya di perangkat seluler apa pun saat bermain.",
+      "3Title": "Apakah hasilnya benar-benar acak?",
+      "3Desc": "Ya. Setiap putaran menggunakan algoritma yang kuat untuk menjamin bahwa setiap kombinasi anggota badan dan warna memiliki peluang yang sama untuk muncul."
+    },
+    "article": {
+      "sec1Title": "Mengapa Menggunakan Game Digital Twister Spinner?",
+      "sec1Text": "Permainan fisik klasik Twister sangat menyenangkan, tetapi pemintal karton yang menyertainya terkenal sering bengkok, sobek, atau hilang sama sekali. Daripada menghentikan kesenangan saat Anda tidak dapat menemukan spinnernya, Anda dapat meluncurkan Twister Spinner digital langsung di ponsel atau tablet Anda. Versi digital menyediakan 16 kombinasi yang sama persis (Tangan Kiri, Tangan Kanan, Kaki Kiri, Kaki Kanan dalam Warna Merah, Biru, Kuning, dan Hijau) tanpa perlu repot papan fisik tersangkut. Ini benar-benar acak, yang berarti permainan tetap adil untuk semua pemain sampai seseorang terjatuh.",
+      "sec2Title": "Menghadirkan Putaran Baru ke Game Pesta Klasik",
+      "sec2Text": "Pemintal digital bukan sekadar pengganti; itu benar-benar dapat meningkatkan pertemuan Anda. Saat semua orang sedang sibuk di atas matras, membaca layar ponsel atau mentransmisikannya ke smart TV memungkinkan penelepon mengumumkan gerakannya dengan mudah. Selain itu, pengacakan kami yang diunggulkan secara kriptografis berkualitas tinggi memastikan keacakan yang sebenarnya, menghilangkan argumen apa pun mengenai apakah panah 'terjebak di garis'. Permainan mengalir lebih cepat, dan pemain dapat fokus sepenuhnya agar tidak terjatuh.",
+      "sec3Title": "Gabungkan Permainan Pesta dengan Roda Nama",
+      "sec3TextStart": "Jika Anda mengadakan pesta besar dengan kelompok besar, Anda mungkin tidak dapat menampung semua orang di matras Twister sekaligus. Cara terbaik untuk mengatur belokan secara adil adalah dengan menggunakan kami",
+      "sec3LinkText": "Roda Nama",
+      "sec3TextMiddle": "alat untuk secara acak memutuskan siapa yang akan bermain di babak berikutnya. Anda cukup memasukkan nama semua orang, dan memutar roda untuk memilih kontestan berikutnya. Kita",
+      "sec3LinkText2": "Roda Nama",
+      "sec3TextEnd": "juga menyertakan fitur eliminasi yang berguna, memastikan bahwa setiap orang mendapat giliran bermain sebelum ada yang bermain dua kali.",
+      "sec4Title": "Istirahat dan Putar Roda Makanan",
+      "sec4TextStart": "Bermain permainan pesta sepanjang malam membangkitkan nafsu makan yang serius. Saat permainan Twister selesai dan tiba waktunya memesan makanan, Anda mungkin mendapati bahwa tidak ada seorang pun yang sepakat tentang apa yang harus dimakan. Lewati perdebatan panjang dengan menggunakan",
+      "sec4LinkText": "Roda Makanan",
+      "sec4TextMiddle": ". Cukup masukkan opsi restoran teratas di dekat pesta Anda, putar cepat, dan keputusan langsung diambil. Untuk kenyamanan, mandiri",
+      "sec4LinkText2": "Roda Makanan",
+      "sec4TextEnd": "dioptimalkan untuk seluler, sehingga Anda dapat melakukannya langsung dari ponsel Anda sebelum melakukan pemesanan pengiriman.",
+      "sec5Title": "Selesaikan Perdebatan Secara Instan",
+      "sec5TextStart": "Terkadang perselisihan terjadi saat pertandingan pesta. Mungkin lutut seseorang secara tidak sengaja menyentuh matras, atau mungkin dua pemain menginginkan lingkaran berwarna sama pada saat yang bersamaan. Jika terjadi pertengkaran yang bersahabat, cara tercepat untuk menyelesaikannya adalah dengan lemparan koin—atau lebih baik lagi, dengan lemparan koin digital",
+      "sec5LinkText": "Ya/Tidak Roda",
+      "sec5TextMiddle": ". Hal ini menghilangkan tanggung jawab dari tuan rumah dan menyerahkan keputusan akhir sepenuhnya pada kebetulan. Itu",
+      "sec5LinkText2": "Ya/Tidak Roda",
+      "sec5TextEnd": "juga dapat disesuaikan untuk menyertakan opsi 'Mungkin' jika Anda ingin memaksakan hasil imbang atau meminta pemain memutar ulang giliran tersebut.",
+      "sec6Title": "Sesuaikan Segalanya untuk Malam Permainan Anda Berikutnya",
+      "sec6TextStart": "Meskipun Twister Spinner sempurna untuk permainan spesifiknya, Anda mungkin ingin membuat permainan minum unik, tantangan kebenaran atau tantangan, atau aturan pesta. Di sinilah intinya",
+      "sec6LinkText": "Pemintal Roda Acak",
+      "sec6TextMiddle": "bersinar. Anda dapat memasukkan apa saja ke dalam irisan roda, mengubah semua warna agar sesuai dengan tema acara, dan bahkan menyesuaikan peluang jika Anda ingin beberapa tantangan lebih jarang muncul. Dengan memanfaatkan hal utama",
+      "sec6LinkText2": "alat pemintal utama",
+      "sec6TextEnd": ", Anda dapat merancang pengalaman malam permainan yang sepenuhnya disesuaikan dan tidak akan pernah dilupakan oleh tamu Anda."
     }
   }
 }
