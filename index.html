@@ -1,6 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <script>
+      (function() {
+        var path = window.location.pathname;
+        var lang = path.split('/')[1];
+        var supported = ['es', 'de', 'ja', 'fr', 'pt', 'zh-CN', 'ar', 'it', 'ru', 'hi', 'nl', 'tr', 'ko', 'id', 'vi', 'pl', 'th', 'sv', 'el', 'ro', 'cs', 'hu', 'bn', 'he'];
+        if (supported.indexOf(lang) !== -1) {
+          document.documentElement.lang = lang;
+        } else {
+          document.documentElement.lang = 'en';
+        }
+      })();
+    </script>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
