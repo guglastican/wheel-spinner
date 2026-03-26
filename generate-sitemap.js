@@ -76,6 +76,11 @@ function generateSitemap() {
                 const altPrefix = altIsDefault ? '' : `/${altLocale}`;
                 const altLoc = `${DOMAIN}${altPrefix}${pathSuffix}`;
                 xml += `    <xhtml:link rel="alternate" hreflang="${altLocale}" href="${altLoc}"/>\n`;
+
+                // Add generic 'zh' for 'zh-CN' to satisfy SEO suggestions
+                if (altLocale === 'zh-CN') {
+                    xml += `    <xhtml:link rel="alternate" hreflang="zh" href="${altLoc}"/>\n`;
+                }
             }
 
             // x-default hreflang (always point to English version)

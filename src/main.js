@@ -213,6 +213,15 @@ router.afterEach((to) => {
         const prefix = lang === 'en' ? '' : `/${lang}`;
         link.href = `https://randowheel.com${prefix}${pathSuffix}`;
         document.head.appendChild(link);
+
+        // Add generic 'zh' for 'zh-CN' to satisfy SEO suggestions
+        if (lang === 'zh-CN') {
+          const zhLink = document.createElement('link');
+          zhLink.rel = 'alternate';
+          zhLink.hreflang = 'zh';
+          zhLink.href = link.href;
+          document.head.appendChild(zhLink);
+        }
       });
 
       // 3. Fallback globally
