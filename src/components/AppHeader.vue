@@ -30,11 +30,18 @@
       </div>
     </div>
     
-    <nav class="navigation">
-      <router-link :to="localePath('/')" class="nav-link">{{ $t('header.randomWheel') }}</router-link>
-      <router-link :to="localePath('/wheel-of-names')" class="nav-link">{{ $t('header.wheelOfNames') }}</router-link>
-      <router-link :to="localePath('/yes-no-wheel')" class="nav-link">{{ $t('header.yesNoWheel') }}</router-link>
-      <router-link :to="localePath('/configure-embed')" class="nav-link">{{ $t('header.embed') }}</router-link>
+    <button class="nav-toggle" @click="toggleNav" :aria-expanded="isNavOpen" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navigation" :class="{ 'nav-open': isNavOpen }">
+      <router-link :to="localePath('/')" class="nav-link" @click="isNavOpen = false">{{ $t('header.randomWheel') }}</router-link>
+      <router-link :to="localePath('/wheel-of-names')" class="nav-link" @click="isNavOpen = false">{{ $t('header.wheelOfNames') }}</router-link>
+      <router-link :to="localePath('/yes-no-wheel')" class="nav-link" @click="isNavOpen = false">{{ $t('header.yesNoWheel') }}</router-link>
+      <router-link :to="localePath('/food-wheel')" class="nav-link" @click="isNavOpen = false">{{ $t('header.foodWheel') }}</router-link>
+      <router-link :to="localePath('/spin-the-wheel')" class="nav-link" @click="isNavOpen = false">{{ $t('header.spinTheWheel') || 'Spin the Wheel' }}</router-link>
+      <router-link :to="localePath('/twister-spinner')" class="nav-link" @click="isNavOpen = false">{{ $t('header.twisterSpinner') || 'Twister Spinner' }}</router-link>
+      <router-link :to="localePath('/configure-embed')" class="nav-link" @click="isNavOpen = false">{{ $t('header.embed') }}</router-link>
     </nav>
   </header>
 </template>
@@ -49,6 +56,11 @@ const { locale } = useI18n();
 const router = useRouter();
 const route = useRoute();
 const isDropdownOpen = ref(false);
+const isNavOpen = ref(false);
+
+const toggleNav = () => {
+  isNavOpen.value = !isNavOpen.value;
+};
 
 defineProps({
   title: {
@@ -237,19 +249,46 @@ const vClickOutside = {
 }
 
 /* ── Navigation ── */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #475569;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.nav-toggle:hover span {
+  background: #6c5ce7;
+}
+
 .navigation {
   display: flex;
-  gap: 15px;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
 }
 
 .nav-link {
   text-decoration: none;
   color: #64748b;
   font-weight: 600;
-  padding: 8px 12px;
+  padding: 7px 11px;
   border-radius: 8px;
   transition: all 0.2s;
-  font-size: 15px;
+  font-size: 14px;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -262,26 +301,36 @@ const vClickOutside = {
   background: #f5f3ff;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   .app-header {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 20px;
-    padding: 20px 0;
-  }
-  .header-left {
-    justify-content: space-between;
-  }
-  .navigation {
-    justify-content: center;
     flex-wrap: wrap;
+    gap: 12px;
+    padding: 16px 0;
+  }
+
+  .nav-toggle {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .navigation {
+    display: none;
+    width: 100%;
+    flex-direction: column;
     background: #f8fafc;
     padding: 10px;
     border-radius: 12px;
+    border: 1px solid #e2e8f0;
   }
+
+  .navigation.nav-open {
+    display: flex;
+  }
+
   .nav-link {
     font-size: 14px;
-    padding: 6px 10px;
+    padding: 10px 12px;
+    border-radius: 8px;
   }
 }
 </style>
