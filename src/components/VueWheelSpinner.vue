@@ -58,7 +58,7 @@ const props = defineProps({
   },
   holdMaxDuration: {
     type: Number,
-    default: 15000
+    default: 10000
   },
   cursorAngle: {
     type: Number,
@@ -145,9 +145,15 @@ function getSliceAngles(sliceIndex, currentCanvasAngle) {
 
 }
 
-function getEaseOutQuint(x) {
-  // Lower exponent (3) with higher spin count makes the slow-down much more visible and dramatic
+function getEaseOutCubic(x) {
+  // Standard ease-out used by the classic instant spin
   return 1 - Math.pow(1 - x, 3);
+}
+
+function getEaseOutQuint(x) {
+  // Stronger ease-out for hold-release deceleration: the wheel keeps slowing
+  // down slower and slower toward the end, with a long gentle settle.
+  return 1 - Math.pow(1 - x, 5);
 }
 
 function drawSlice(context, centerX, centerY, radius, startAngle, endAngle, fillColor) {
@@ -271,12 +277,13 @@ function spinWheel(winnerIndex) {
 
 /**
  * Decelerating landing animation from a given start angle to a target angle,
- * easing out (quintic) over `duration` ms and ending on the winner slice.
+ * easing out over `duration` ms and ending on the winner slice.
  * Used both by classic spinWheel and by hold-to-spin release.
  */
-function animateToTarget(startAngle, targetAngle, duration, winnerIndex) {
+function animateToTarget(startAngle, targetAngle, duration, winnerIndex, easeFn) {
 
   const totalRotation = targetAngle - startAngle;
+  const ease = easeFn || getEaseOutCubic;
 
   // Get start time to finish spinning
   const startTime = performance.now();
@@ -288,7 +295,7 @@ function animateToTarget(startAngle, targetAngle, duration, winnerIndex) {
     const elapsedTime = currentTime - startTime;
     const progress = Math.min(elapsedTime / duration, 1);
 
-    let rotationAngle = startAngle + (totalRotation * getEaseOutQuint(progress));
+    let rotationAngle = startAngle + (totalRotation * ease(progress));
     getCanvas().style.transform = `rotate3d(0, 0, 1, ${rotationAngle}deg)`;
 
     // Calculate current slice under cursor for ticking sound
@@ -431,7 +438,8 @@ function releaseHoldSpin(winnerIndex) {
 
   const targetAngle = startAngle + (props.holdDecelSpins * 360) + (getCursorAngle() - winnerEndAngle) + getRandomBetween(1, getAnglePerSlice());
 
-  animateToTarget(startAngle, targetAngle, props.holdDecelDuration, winner);
+  // Quintic ease-out: the wheel slows down slower and slower at the end
+  animateToTarget(startAngle, targetAngle, props.holdDecelDuration, winner, getEaseOutQuint);
 
   return true;
 
