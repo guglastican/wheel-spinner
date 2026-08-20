@@ -108,6 +108,115 @@ function buildLocalizedNoscript(locale, route) {
   </noscript>`;
 }
 
+// ─── JSON-LD structured data (WebSite/Organization/WebApplication/FAQPage) ──
+// Mirrors the schema graph used by top wheel-spinner sites: rich entities give
+// Google a precise understanding of the tool, its features and its FAQ content.
+const PAGE_ALT_NAMES = {
+    '': ['Random Wheel Spinner', 'Wheel Spinner', 'Spin the Wheel', 'Random Wheel', 'Random Picker Wheel'],
+    'wheel-of-names': ['Wheel of Names', 'Random Name Picker', 'Name Wheel', 'Name Picker'],
+    'yes-no-wheel': ['Yes or No Wheel', 'Yes No Wheel', 'Yes No Picker', 'Decision Wheel'],
+    'food-wheel': ['Food Wheel', 'What Should I Eat', 'Food Picker Wheel', 'Random Food Picker'],
+    'spin-the-wheel': ['Spin the Wheel', 'Custom Wheel Spinner', 'Random Picker', 'Picker Wheel'],
+    'twister-spinner': ['Twister Spinner', 'Twister Wheel', 'Twister Game Spinner', 'Twister Move Picker']
+};
+
+const APP_FEATURES = ['Free to use', 'Customizable wheel', 'Weighted options', 'No sign-up required', 'Works on any device'];
+
+const SITE_PUBLISHED = '2025-01-01';
+
+/** Localized FAQ entities for FAQPage schema (pages that ship a `faqs` block). */
+function buildFaqEntities(locale, route) {
+    const sectionByRoute = { 'wheel-of-names': 'namesPage', 'yes-no-wheel': 'yesNoPage', 'food-wheel': 'foodPage', 'twister-spinner': 'twisterPage' };
+    const section = sectionByRoute[route];
+    if (!section) return null;
+    const data = LOCALE_DATA[locale] || LOCALE_DATA['en'] || {};
+    const faqs = (data[section] || {}).faqs;
+    if (!faqs) return null;
+    const items = [];
+    let i = 1;
+    while (faqs[`${i}Title`] != null && faqs[`${i}Desc`] != null) {
+        const q = stripTags(faqs[`${i}Title`]);
+        const a = stripTags(faqs[`${i}Desc`]);
+        if (q && a) items.push({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } });
+        i++;
+    }
+    return items.length ? items : null;
+}
+
+/** Full schema.org @graph for one locale × route page. */
+function buildJsonLd(locale, route) {
+    const meta = getLocalizedMeta(locale, route);
+    const localePrefix = locale === 'en' ? '' : `/${locale}`;
+    const pathSuffix = route ? `/${route}` : '';
+    const url = `${DOMAIN}${localePrefix}${pathSuffix}`;
+    const today = new Date().toISOString().split('T')[0];
+    const orgId = `${DOMAIN}/#organization`;
+    const websiteId = `${DOMAIN}/#website`;
+    const webappId = `${DOMAIN}/#webapp`;
+
+    const graph = [
+        {
+            '@id': `${url}#webpage`,
+            '@type': 'WebPage',
+            name: meta.title,
+            description: meta.description,
+            url,
+            inLanguage: locale,
+            isPartOf: { '@id': websiteId },
+            about: { '@id': webappId },
+            datePublished: SITE_PUBLISHED,
+            dateModified: today
+        },
+        {
+            '@id': webappId,
+            '@type': 'WebApplication',
+            name: meta.title,
+            alternateName: PAGE_ALT_NAMES[route] || [],
+            description: meta.description,
+            url,
+            inLanguage: locale,
+            applicationCategory: 'UtilitiesApplication',
+            operatingSystem: 'Any',
+            browserRequirements: 'Requires JavaScript',
+            datePublished: SITE_PUBLISHED,
+            dateModified: today,
+            isPartOf: { '@id': websiteId },
+            publisher: { '@id': orgId },
+            offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+            featureList: APP_FEATURES
+        },
+        {
+            '@id': orgId,
+            '@type': 'Organization',
+            name: 'Rando Wheel',
+            url: DOMAIN,
+            logo: { '@type': 'ImageObject', url: `${DOMAIN}/logo_random_wheel.svg` },
+            description: 'Rando Wheel provides free online wheel spinners for random selection, decision making, giveaways, classrooms, and party games.'
+        },
+        {
+            '@id': websiteId,
+            '@type': 'WebSite',
+            name: 'Rando Wheel',
+            url: DOMAIN,
+            inLanguage: 'en',
+            publisher: { '@id': orgId }
+        }
+    ];
+
+    const faq = buildFaqEntities(locale, route);
+    if (faq) {
+        graph.push({ '@id': `${url}#faq`, '@type': 'FAQPage', mainEntity: faq });
+    }
+
+    return { '@context': 'https://schema.org', '@graph': graph };
+}
+
+function buildJsonLdTag(locale, route) {
+    // Escape "</script>" inside string values so the JSON never terminates early
+    const json = JSON.stringify(buildJsonLd(locale, route), null, 2).replace(/<\//g, '<\\/');
+    return `  <script type="application/ld+json">\n${json}\n  </script>`;
+}
+
 const DIST_DIR = path.join(__dirname, 'dist');
 const INDEX_HTML_PATH = path.join(DIST_DIR, 'index.html');
 
@@ -199,7 +308,7 @@ rootHtml = rootHtml.replace(/<meta\s+name="description"[^>]*>/i, `  <meta name="
 
 const homeHreflang = buildHreflangTags('');
 const homeCanonical = `  <link rel="canonical" href="${DOMAIN}/" />`;
-rootHtml = rootHtml.replace('</head>', `${homeCanonical}\n${homeHreflang}\n</head>`);
+rootHtml = rootHtml.replace('</head>', `${homeCanonical}\n${homeHreflang}\n${buildJsonLdTag('en', '')}\n</head>`);
 
 // Inject static nav + localized text before closing </body>
 const homeNav = buildStaticNav('', 'en');
@@ -240,7 +349,7 @@ SUPPORTED_LOCALES.forEach(locale => {
         // 3. Inject hreflang + canonical into <head>
         const hreflangTags = buildHreflangTags(pathSuffix);
         const canonicalTag = `  <link rel="canonical" href="${thisPageUrl}" />`;
-        html = html.replace('</head>', `${canonicalTag}\n${hreflangTags}\n</head>`);
+        html = html.replace('</head>', `${canonicalTag}\n${hreflangTags}\n${buildJsonLdTag(locale, route)}\n</head>`);
 
         // 4. Localized <title>, meta description and OG tags — makes the raw
         //    HTML of every locale×route URL unique instead of one English shell
@@ -249,6 +358,7 @@ SUPPORTED_LOCALES.forEach(locale => {
         html = html.replace(/<meta\s+name="description"[^>]*>/i, `  <meta name="description" content="${escapeXml(meta.description)}" />`);
         html = html.replace(/<meta\s+property="og:title"[^>]*>/i, `  <meta property="og:title" content="${escapeXml(meta.h1)}" />`);
         html = html.replace(/<meta\s+property="og:description"[^>]*>/i, `  <meta property="og:description" content="${escapeXml(meta.description)}" />`);
+        html = html.replace(/<meta\s+property="og:url"[^>]*>/i, `  <meta property="og:url" content="${escapeXml(thisPageUrl)}" />`);
 
         // 5. Inject static crawlable nav block before </body>
         //    This gives crawlers real outgoing <a href> links to follow
