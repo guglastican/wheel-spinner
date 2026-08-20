@@ -208,6 +208,21 @@ function buildJsonLd(locale, route) {
         graph.push({ '@id': `${url}#faq`, '@type': 'FAQPage', mainEntity: faq });
     }
 
+    // BreadcrumbList for tool subpages (Home → Page), localized page name
+    if (route) {
+        const keys = PAGE_META_KEYS[route] || PAGE_META_KEYS[''];
+        const data = LOCALE_DATA[locale] || LOCALE_DATA['en'] || {};
+        const pageName = getKey(data, keys.titleKey) || getKey(LOCALE_DATA['en'], keys.titleKey) || ROUTE_LABELS[route];
+        graph.push({
+            '@id': `${url}#breadcrumb`,
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Home', item: `${DOMAIN}${localePrefix || '/'}` },
+                { '@type': 'ListItem', position: 2, name: pageName, item: url }
+            ]
+        });
+    }
+
     return { '@context': 'https://schema.org', '@graph': graph };
 }
 
