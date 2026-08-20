@@ -38,11 +38,11 @@ const props = defineProps({
   },
   extraSpins: {
     type: Number,
-    default: 15
+    default: 10
   },
   spinDuration: {
     type: Number,
-    default: 10000
+    default: 7000
   },
   holdSpeed: {
     type: Number,
@@ -145,32 +145,11 @@ function getSliceAngles(sliceIndex, currentCanvasAngle) {
 
 }
 
-// Spin easing matching gospinwheel's wheel: cubic-bezier(0.12, 0.6, 0.08, 1).
-// Fast launch, then a long suspenseful tail — the wheel keeps slowing down
-// slower and slower right up to the stop (~95% of the rotation happens in the
-// first ~55% of the time, the rest is a creeping settle).
-const SPIN_BEZIER = { x1: 0.12, y1: 0.6, x2: 0.08, y2: 1 };
-
-function bezierSample(t, p1, p2) {
-  const u = 1 - t;
-  return 3 * u * u * t * p1 + 3 * u * t * t * p2 + t * t * t;
-}
-
-function bezierDerivative(t, p1, p2) {
-  const u = 1 - t;
-  return 3 * u * u * p1 + 6 * u * t * (p2 - p1) + 3 * t * t * (1 - p2);
-}
-
-function cubicBezierEase(x) {
-  // Newton–Raphson: find t with x(t) === progress, then return y(t)
-  let t = Math.min(1, Math.max(0, x));
-  for (let i = 0; i < 6; i++) {
-    const xt = bezierSample(t, SPIN_BEZIER.x1, SPIN_BEZIER.x2);
-    const dx = bezierDerivative(t, SPIN_BEZIER.x1, SPIN_BEZIER.x2);
-    if (Math.abs(xt - x) < 1e-4 || Math.abs(dx) < 1e-4) break;
-    t = Math.min(1, Math.max(0, t - (xt - x) / dx));
-  }
-  return bezierSample(t, SPIN_BEZIER.y1, SPIN_BEZIER.y2);
+// Smooth spin easing: sine ease-in-out — the wheel launches gently, builds
+// speed, then decelerates in one continuous smooth motion to a clean stop.
+// No violent launch and no dead crawl at the end (derivative is 0 at both ends).
+function getEaseInOutSine(x) {
+  return -(Math.cos(x * Math.PI) - 1) / 2;
 }
 
 function drawSlice(context, centerX, centerY, radius, startAngle, endAngle, fillColor) {
@@ -300,7 +279,7 @@ function spinWheel(winnerIndex) {
 function animateToTarget(startAngle, targetAngle, duration, winnerIndex, easeFn) {
 
   const totalRotation = targetAngle - startAngle;
-  const ease = easeFn || cubicBezierEase;
+  const ease = easeFn || getEaseInOutSine;
 
   // Get start time to finish spinning
   const startTime = performance.now();
@@ -455,8 +434,8 @@ function releaseHoldSpin(winnerIndex) {
 
   const targetAngle = startAngle + (props.holdDecelSpins * 360) + (getCursorAngle() - winnerEndAngle) + getRandomBetween(1, getAnglePerSlice());
 
-  // gospinwheel-style bezier: fast start, long slow settle at the end
-  animateToTarget(startAngle, targetAngle, props.holdDecelDuration, winner, cubicBezierEase);
+  // Smooth sine ease-in-out: gentle launch, continuous deceleration, clean stop
+  animateToTarget(startAngle, targetAngle, props.holdDecelDuration, winner, getEaseInOutSine);
 
   return true;
 
