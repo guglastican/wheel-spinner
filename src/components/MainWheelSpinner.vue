@@ -2,8 +2,8 @@
   <div class="container">
     <div class="main-content">
       <div class="wheel-container">
-        <h2 v-if="winnerResult" class="winner-text">
-          {{ $t('mainWheel.winner', { text: winnerResult.text }) }}
+        <h2 class="winner-text" :class="{ 'empty': !winnerResult }">
+          {{ winnerResult ? $t('mainWheel.winner', { text: winnerResult.text }) : '' }}
         </h2>
         <div class="wheel-wrapper" :style="wheelWrapperStyle">
           <VueWheelSpinner
@@ -33,12 +33,10 @@
 
             <template #default>
               <button
-                @mousedown.prevent="onHoldStart"
-                @mouseup="onHoldRelease"
-                @mouseleave="onHoldRelease"
-                @touchstart.prevent="onHoldStart"
-                @touchend="onHoldRelease"
-                @touchcancel="onHoldRelease"
+                @pointerdown.prevent="onHoldStart"
+                @pointerup="onHoldRelease"
+                @pointercancel="onHoldRelease"
+                @pointerleave="onHoldRelease"
                 :class="{ 'is-spinning': isSpinning }"
                 class="spin-center-button">
                 {{ $t('mainWheel.spin') }}
@@ -248,7 +246,15 @@ export default {
   },
   methods: {
     // ── Hold-to-spin: wheel turns while held, decelerates on release ──
-    onHoldStart() {
+    onHoldStart(event) {
+      // Capture the pointer so the release (pointerup) is always delivered to
+      // this button — even if the layout shifts while holding — instead of
+      // being lost to a spurious pointerleave.
+      if (event && typeof event.pointerId === 'number' && event.currentTarget && event.currentTarget.setPointerCapture) {
+        try {
+          event.currentTarget.setPointerCapture(event.pointerId);
+        } catch (e) { /* capture not supported / already released — ignore */ }
+      }
       this.$refs.spinner.startHoldSpin();
     },
     onHoldRelease() {
@@ -418,6 +424,23 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.winner-text {
+  min-height: 2em;              /* reserve space — the wheel must never jump */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 10px 0;
+  padding: 0 10px;
+  text-align: center;
+  color: #27ae60;
+  font-size: 1.3em;
+}
+
+/* Keep the element in the layout but invisible while no winner is shown */
+.winner-text.empty {
+  visibility: hidden;
 }
 
 .wheel-wrapper {
