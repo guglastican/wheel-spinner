@@ -42,7 +42,7 @@ const props = defineProps({
   },
   spinDuration: {
     type: Number,
-    default: 14000
+    default: 10000
   },
   holdSpeed: {
     type: Number,
@@ -145,15 +145,32 @@ function getSliceAngles(sliceIndex, currentCanvasAngle) {
 
 }
 
-function getEaseOutCubic(x) {
-  // Standard ease-out used by the classic instant spin
-  return 1 - Math.pow(1 - x, 3);
+// Spin easing matching gospinwheel's wheel: cubic-bezier(0.12, 0.6, 0.08, 1).
+// Fast launch, then a long suspenseful tail — the wheel keeps slowing down
+// slower and slower right up to the stop (~95% of the rotation happens in the
+// first ~55% of the time, the rest is a creeping settle).
+const SPIN_BEZIER = { x1: 0.12, y1: 0.6, x2: 0.08, y2: 1 };
+
+function bezierSample(t, p1, p2) {
+  const u = 1 - t;
+  return 3 * u * u * t * p1 + 3 * u * t * t * p2 + t * t * t;
 }
 
-function getEaseOutQuint(x) {
-  // Stronger ease-out for hold-release deceleration: the wheel keeps slowing
-  // down slower and slower toward the end, with a long gentle settle.
-  return 1 - Math.pow(1 - x, 5);
+function bezierDerivative(t, p1, p2) {
+  const u = 1 - t;
+  return 3 * u * u * p1 + 6 * u * t * (p2 - p1) + 3 * t * t * (1 - p2);
+}
+
+function cubicBezierEase(x) {
+  // Newton–Raphson: find t with x(t) === progress, then return y(t)
+  let t = Math.min(1, Math.max(0, x));
+  for (let i = 0; i < 6; i++) {
+    const xt = bezierSample(t, SPIN_BEZIER.x1, SPIN_BEZIER.x2);
+    const dx = bezierDerivative(t, SPIN_BEZIER.x1, SPIN_BEZIER.x2);
+    if (Math.abs(xt - x) < 1e-4 || Math.abs(dx) < 1e-4) break;
+    t = Math.min(1, Math.max(0, t - (xt - x) / dx));
+  }
+  return bezierSample(t, SPIN_BEZIER.y1, SPIN_BEZIER.y2);
 }
 
 function drawSlice(context, centerX, centerY, radius, startAngle, endAngle, fillColor) {
@@ -283,7 +300,7 @@ function spinWheel(winnerIndex) {
 function animateToTarget(startAngle, targetAngle, duration, winnerIndex, easeFn) {
 
   const totalRotation = targetAngle - startAngle;
-  const ease = easeFn || getEaseOutCubic;
+  const ease = easeFn || cubicBezierEase;
 
   // Get start time to finish spinning
   const startTime = performance.now();
@@ -438,8 +455,8 @@ function releaseHoldSpin(winnerIndex) {
 
   const targetAngle = startAngle + (props.holdDecelSpins * 360) + (getCursorAngle() - winnerEndAngle) + getRandomBetween(1, getAnglePerSlice());
 
-  // Quintic ease-out: the wheel slows down slower and slower at the end
-  animateToTarget(startAngle, targetAngle, props.holdDecelDuration, winner, getEaseOutQuint);
+  // gospinwheel-style bezier: fast start, long slow settle at the end
+  animateToTarget(startAngle, targetAngle, props.holdDecelDuration, winner, cubicBezierEase);
 
   return true;
 
