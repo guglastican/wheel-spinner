@@ -105,7 +105,9 @@ function getRandomBetween(min, max) {
 }
 
 function getNormalizedAngle(angle) {
-  return angle % 360;
+  // Always return a non-negative angle in [0, 360) so downstream modulo math
+  // (slice-under-cursor, target angles) never sees negative values
+  return ((angle % 360) + 360) % 360;
 }
 
 function getSliceAngles(sliceIndex, currentCanvasAngle) {
@@ -113,7 +115,11 @@ function getSliceAngles(sliceIndex, currentCanvasAngle) {
   const slices = getSlices();
   const anglePerSlice = 360 / slices.length;
   const startAngle = getNormalizedAngle(currentCanvasAngle + (anglePerSlice * sliceIndex));
-  const endAngle = getNormalizedAngle(currentCanvasAngle + startAngle + anglePerSlice);
+  // endAngle must be startAngle + slice width. The previous code added
+  // currentCanvasAngle AGAIN on top of startAngle (which already contains it),
+  // shifting the winner's landing zone by the wheel's current rotation — so
+  // every spin after the first landed on the wrong slice.
+  const endAngle = getNormalizedAngle(startAngle + anglePerSlice);
 
   return {
     startAngle,
@@ -245,8 +251,10 @@ function spinWheel(winnerIndex) {
     endAngle: winnerEndAngle
   } = getSliceAngles(winnerIndex, startAngle);
 
-  // Calculate destination angle
-  const targetAngle = startAngle + extraSpinsAngle + (getCursorAngle() - winnerEndAngle) + getRandomBetween(0, getAnglePerSlice());
+  // Calculate destination angle. The random offset must be > 0 so the cursor
+  // lands strictly inside the winner slice (offset 0 puts it exactly on the
+  // slice edge, which reads as the neighboring slice).
+  const targetAngle = startAngle + extraSpinsAngle + (getCursorAngle() - winnerEndAngle) + getRandomBetween(1, getAnglePerSlice());
   const totalRotation = targetAngle - startAngle;
 
   // Get start time to finish spinning

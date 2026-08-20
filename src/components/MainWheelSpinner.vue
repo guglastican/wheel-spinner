@@ -260,14 +260,11 @@ export default {
       // Randomly select a winner from included slices
       const randomIndex = Math.floor(Math.random() * includedSlices.length);
 
-      // Find the corresponding index in the original slices array
-      // This logic might need adjustment if VueWheelSpinner expects index based on filtered list
-      const originalIndex = this.slices.findIndex(slice =>
-        slice === includedSlices[randomIndex]
-      );
-
-      // Pass the index relative to the *currently displayed* slices to VueWheelSpinner
-      this.$refs.spinner.spinWheel(originalIndex); // Assuming VueWheelSpinner handles indices based on its current `slices` prop
+      // VueWheelSpinner re-filters the slices with the same rule
+      // (included !== false), so the winner index must be relative to the
+      // FILTERED list. Passing an index into the full array misaligns
+      // whenever any item is excluded — the wheel would land on the wrong slice.
+      this.$refs.spinner.spinWheel(randomIndex);
     },
     onSpinStart() {
       this.winnerResult = null;
@@ -275,12 +272,14 @@ export default {
     },
     onSpinEnd(winnerIndex) {
       this.isSpinning = false;
-      // Ensure winnerIndex corresponds to the correct item in the *original* slices array
-      this.winnerResult = this.slices[winnerIndex];
-
-      // Increment the win counter for the winning item
-      if (this.slices[winnerIndex]) {
-         this.slices[winnerIndex].winCount = (this.slices[winnerIndex].winCount || 0) + 1;
+      // winnerIndex is relative to the filtered (included) slices list — map
+      // it back through the same filter to reach the winning slice object.
+      const includedSlices = this.slices.filter(slice => slice.included !== false);
+      const winner = includedSlices[winnerIndex];
+      if (winner) {
+        this.winnerResult = winner;
+        // Mutating the shared object updates the item in the full slices array
+        winner.winCount = (winner.winCount || 0) + 1;
       }
     },
     addNewItem() {
