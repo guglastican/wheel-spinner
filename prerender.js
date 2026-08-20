@@ -26,6 +26,88 @@ const ROUTE_LABELS = {
     'twister-spinner': 'Twister Spinner',
 };
 
+// ─── Localized metadata (per-page title / description / H1) ──────────────────
+// Load all locale data so every prerendered URL gets unique, localized
+// <title>, meta description and crawlable text. Without this, all 150 URLs
+// serve the same generic English shell and Google treats them as duplicates
+// ("Discovered – currently not indexed").
+const LOCALE_DATA = {};
+SUPPORTED_LOCALES.forEach(lang => {
+    const p = path.join(__dirname, 'src', 'locales', `${lang}.json`);
+    if (fs.existsSync(p)) {
+        try {
+            LOCALE_DATA[lang] = JSON.parse(fs.readFileSync(p, 'utf8'));
+        } catch (e) {
+            console.warn(`  ⚠ Could not parse ${lang}.json: ${e.message}`);
+        }
+    }
+});
+
+const PAGE_META_KEYS = {
+    '': { titleKey: 'home.mainTitle', descKey: 'home.whatIsDesc', h1Key: 'home.mainTitle' },
+    'wheel-of-names': { titleKey: 'namesPage.title', descKey: 'namesPage.heroDesc', h1Key: 'namesPage.heroTitle' },
+    'yes-no-wheel': { titleKey: 'yesNoPage.title', descKey: 'yesNoPage.heroDesc', h1Key: 'yesNoPage.heroTitle' },
+    'food-wheel': { titleKey: 'foodPage.title', descKey: 'foodPage.heroDesc', h1Key: 'foodPage.heroTitle' },
+    'spin-the-wheel': { titleKey: 'spinPage.title', descKey: 'spinPage.heroDesc', h1Key: 'spinPage.heroTitle' },
+    'twister-spinner': { titleKey: 'twisterPage.title', descKey: 'twisterPage.heroDesc', h1Key: 'twisterPage.heroTitle' }
+};
+
+function getKey(obj, keyPath) {
+    if (!obj || !keyPath) return undefined;
+    return keyPath.split('.').reduce((acc, part) => (acc == null ? undefined : acc[part]), obj);
+}
+
+function stripTags(html) {
+    return String(html == null ? '' : html)
+        .replace(/<[^>]*>/g, ' ')
+        .replace(/&nbsp;/gi, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+function escapeXml(str) {
+    return String(str == null ? '' : str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&apos;');
+}
+
+/**
+ * Build localized title/description/H1 for a locale × route combo.
+ * Falls back to English when a locale lacks a key.
+ */
+function getLocalizedMeta(locale, route) {
+    const keys = PAGE_META_KEYS[route] || PAGE_META_KEYS[''];
+    const data = LOCALE_DATA[locale] || {};
+    const enData = LOCALE_DATA['en'] || {};
+    const brand = getKey(data, 'footer.randoWheel') || getKey(enData, 'footer.randoWheel') || 'Rando Wheel';
+    const title = getKey(data, keys.titleKey) || getKey(enData, keys.titleKey) || 'Random Wheel';
+    const h1 = getKey(data, keys.h1Key) || title;
+    const description = stripTags(getKey(data, keys.descKey)) || stripTags(getKey(enData, keys.descKey)) || '';
+    return { title: `${title} | ${brand}`, description, h1 };
+}
+
+/**
+ * Localized crawlable text block for JS-disabled crawlers, so the raw HTML
+ * of every URL is unique (title + H1 + description in the page's language).
+ */
+function buildLocalizedNoscript(locale, route) {
+    const meta = getLocalizedMeta(locale, route);
+    const localePrefix = locale === 'en' ? '' : `/${locale}`;
+    const pathSuffix = route ? `/${route}` : '';
+    const url = `${DOMAIN}${localePrefix}${pathSuffix}`;
+    return `
+  <noscript>
+    <div style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">
+      <h1>${escapeXml(meta.h1)}</h1>
+      <p>${escapeXml(meta.description)}</p>
+      <p><a href="${escapeXml(url)}">${escapeXml(url)}</a></p>
+    </div>
+  </noscript>`;
+}
+
 const DIST_DIR = path.join(__dirname, 'dist');
 const INDEX_HTML_PATH = path.join(DIST_DIR, 'index.html');
 
@@ -110,13 +192,19 @@ let rootHtml = originalHtml;
 rootHtml = rootHtml.replace(/<link\s+rel="alternate"[^>]*hreflang[^>]*\/?>/gi, '');
 rootHtml = rootHtml.replace(/<link\s+rel="canonical"[^>]*\/?>/gi, '');
 
+// Localized title + meta description for the EN home
+const homeMeta = getLocalizedMeta('en', '');
+rootHtml = rootHtml.replace(/<title>[\s\S]*?<\/title>/i, `  <title>${escapeXml(homeMeta.title)}</title>`);
+rootHtml = rootHtml.replace(/<meta\s+name="description"[^>]*>/i, `  <meta name="description" content="${escapeXml(homeMeta.description)}" />`);
+
 const homeHreflang = buildHreflangTags('');
 const homeCanonical = `  <link rel="canonical" href="${DOMAIN}/" />`;
 rootHtml = rootHtml.replace('</head>', `${homeCanonical}\n${homeHreflang}\n</head>`);
 
-// Inject static nav before closing </body>
+// Inject static nav + localized text before closing </body>
 const homeNav = buildStaticNav('', 'en');
-rootHtml = rootHtml.replace('</body>', `${homeNav}\n</body>`);
+const homeNoscript = buildLocalizedNoscript('en', '');
+rootHtml = rootHtml.replace('</body>', `${homeNav}\n${homeNoscript}\n</body>`);
 
 fs.writeFileSync(INDEX_HTML_PATH, rootHtml);
 console.log('  ✓ Patched dist/index.html (EN home)');
@@ -154,10 +242,19 @@ SUPPORTED_LOCALES.forEach(locale => {
         const canonicalTag = `  <link rel="canonical" href="${thisPageUrl}" />`;
         html = html.replace('</head>', `${canonicalTag}\n${hreflangTags}\n</head>`);
 
-        // 4. Inject static crawlable nav block before </body>
+        // 4. Localized <title>, meta description and OG tags — makes the raw
+        //    HTML of every locale×route URL unique instead of one English shell
+        const meta = getLocalizedMeta(locale, route);
+        html = html.replace(/<title>[\s\S]*?<\/title>/i, `  <title>${escapeXml(meta.title)}</title>`);
+        html = html.replace(/<meta\s+name="description"[^>]*>/i, `  <meta name="description" content="${escapeXml(meta.description)}" />`);
+        html = html.replace(/<meta\s+property="og:title"[^>]*>/i, `  <meta property="og:title" content="${escapeXml(meta.h1)}" />`);
+        html = html.replace(/<meta\s+property="og:description"[^>]*>/i, `  <meta property="og:description" content="${escapeXml(meta.description)}" />`);
+
+        // 5. Inject static crawlable nav block before </body>
         //    This gives crawlers real outgoing <a href> links to follow
         const staticNav = buildStaticNav(route, locale);
-        html = html.replace('</body>', `${staticNav}\n</body>`);
+        const localizedNoscript = buildLocalizedNoscript(locale, route);
+        html = html.replace('</body>', `${staticNav}\n${localizedNoscript}\n</body>`);
 
         // Save
         fs.writeFileSync(path.join(outDirPath, 'index.html'), html);
