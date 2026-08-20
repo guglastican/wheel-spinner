@@ -33,8 +33,13 @@
 
             <template #default>
               <button
-                @click="handleSpinButtonClick"
-                :disabled="isSpinning"
+                @mousedown.prevent="onHoldStart"
+                @mouseup="onHoldRelease"
+                @mouseleave="onHoldRelease"
+                @touchstart.prevent="onHoldStart"
+                @touchend="onHoldRelease"
+                @touchcancel="onHoldRelease"
+                :class="{ 'is-spinning': isSpinning }"
                 class="spin-center-button">
                 {{ $t('mainWheel.spin') }}
               </button>
@@ -242,8 +247,17 @@ export default {
     }
   },
   methods: {
-    handleSpinButtonClick() {
-      this.spinWheel();
+    // ── Hold-to-spin: wheel turns while held, decelerates on release ──
+    onHoldStart() {
+      this.$refs.spinner.startHoldSpin();
+    },
+    onHoldRelease() {
+      // Pick the winner from the included slices and let the wheel decelerate
+      if (!this.isSpinning) return;
+      const includedSlices = this.slices.filter(slice => slice.included !== false);
+      if (includedSlices.length === 0) return;
+      const randomIndex = Math.floor(Math.random() * includedSlices.length);
+      this.$refs.spinner.releaseHoldSpin(randomIndex);
     },
     spinWheel() {
       if (this.isSpinning) return;
@@ -661,6 +675,14 @@ export default {
   background: #bdc3c7;
   cursor: not-allowed;
   opacity: 0.7;
+}
+
+/* While spinning (hold or deceleration) the button stays enabled so mouseup /
+   touchend can fire; dim it to signal the state instead. */
+.spin-center-button.is-spinning {
+  background: linear-gradient(145deg, #8e8e8e, #6c6c6c);
+  cursor: default;
+  opacity: 0.8;
 }
 
 /* Cursor Section Specific Styles */

@@ -16,6 +16,7 @@ import {onBeforeMount, onBeforeUnmount, onMounted, ref, watch} from 'vue';
 const playgroundContainer = ref(null)
 const playgroundCanvas = ref(null);
 const isSpinning = ref(false);
+const isHoldSpinning = ref(false);
 const cursor = ref(null);
 const currentAngle = ref(0);
 const spinningAudio = ref(null);
@@ -42,6 +43,18 @@ const props = defineProps({
   spinDuration: {
     type: Number,
     default: 14000
+  },
+  holdSpeed: {
+    type: Number,
+    default: 420
+  },
+  holdDecelSpins: {
+    type: Number,
+    default: 8
+  },
+  holdDecelDuration: {
+    type: Number,
+    default: 5000
   },
   cursorAngle: {
     type: Number,
@@ -234,15 +247,6 @@ function spinWheel(winnerIndex) {
   // Emit spin start event
   emits('spin-start');
 
-  // Get canvas and container
-  const canvas = playgroundCanvas.value;
-
-  // Get random spins count
-  const extraSpins = props.extraSpins;
-
-  // Get random spins count
-  const extraSpinsAngle = extraSpins * 360;
-
   // Get start angle
   const startAngle = currentAngle.value;
 
@@ -254,7 +258,20 @@ function spinWheel(winnerIndex) {
   // Calculate destination angle. The random offset must be > 0 so the cursor
   // lands strictly inside the winner slice (offset 0 puts it exactly on the
   // slice edge, which reads as the neighboring slice).
-  const targetAngle = startAngle + extraSpinsAngle + (getCursorAngle() - winnerEndAngle) + getRandomBetween(1, getAnglePerSlice());
+  const targetAngle = startAngle + (props.extraSpins * 360) + (getCursorAngle() - winnerEndAngle) + getRandomBetween(1, getAnglePerSlice());
+
+  // Run the decelerating landing animation
+  animateToTarget(startAngle, targetAngle, props.spinDuration, winnerIndex);
+
+}
+
+/**
+ * Decelerating landing animation from a given start angle to a target angle,
+ * easing out (quintic) over `duration` ms and ending on the winner slice.
+ * Used both by classic spinWheel and by hold-to-spin release.
+ */
+function animateToTarget(startAngle, targetAngle, duration, winnerIndex) {
+
   const totalRotation = targetAngle - startAngle;
 
   // Get start time to finish spinning
@@ -265,10 +282,10 @@ function spinWheel(winnerIndex) {
   const animate = (currentTime) => {
 
     const elapsedTime = currentTime - startTime;
-    const progress = Math.min(elapsedTime / props.spinDuration, 1);
+    const progress = Math.min(elapsedTime / duration, 1);
 
     let rotationAngle = startAngle + (totalRotation * getEaseOutQuint(progress));
-    canvas.style.transform = `rotate3d(0, 0, 1, ${rotationAngle}deg)`;
+    getCanvas().style.transform = `rotate3d(0, 0, 1, ${rotationAngle}deg)`;
 
     // Calculate current slice under cursor for ticking sound
     const slices = getSlices();
@@ -292,10 +309,11 @@ function spinWheel(winnerIndex) {
     } else {
 
       rotationAngle = getNormalizedAngle(rotationAngle);
-      canvas.style.transform = `rotate3d(0, 0, 1, ${rotationAngle}deg)`;
+      getCanvas().style.transform = `rotate3d(0, 0, 1, ${rotationAngle}deg)`;
       currentAngle.value = rotationAngle;
 
       isSpinning.value = false;
+      isHoldSpinning.value = false;
 
       if (wonAudio.value) {
         wonAudio.value.play();
@@ -314,6 +332,89 @@ function spinWheel(winnerIndex) {
 
   // Run animation
   requestAnimationFrame(animate);
+
+}
+
+// ─── Hold-to-spin: wheel turns continuously while the button is held ────────
+let holdRafId = null;
+let holdLastTimestamp = null;
+let holdLastSliceIndex = -1;
+
+function startHoldSpin() {
+
+  // If already spinning (hold in progress or decelerating) do nothing
+  if (isSpinning.value) {
+    return false;
+  }
+
+  isSpinning.value = true;
+  isHoldSpinning.value = true;
+
+  // Emit spin start event (clears previous winner, sets UI state)
+  emits('spin-start');
+
+  holdLastTimestamp = null;
+  holdLastSliceIndex = -1;
+
+  const loop = (timestamp) => {
+    if (!isHoldSpinning.value) return;
+
+    if (holdLastTimestamp === null) {
+      holdLastTimestamp = timestamp;
+    }
+    const dtSeconds = Math.min((timestamp - holdLastTimestamp) / 1000, 0.05);
+    holdLastTimestamp = timestamp;
+
+    // Advance rotation at constant hold speed
+    currentAngle.value = getNormalizedAngle(currentAngle.value + (props.holdSpeed * dtSeconds));
+    getCanvas().style.transform = `rotate3d(0, 0, 1, ${currentAngle.value}deg)`;
+
+    // Tick sound when crossing slice boundaries
+    const slices = getSlices();
+    const anglePerSlice = 360 / slices.length;
+    const sliceIndex = Math.floor(getNormalizedAngle(getCursorAngle() - currentAngle.value) / anglePerSlice);
+    if (sliceIndex !== holdLastSliceIndex) {
+      if (spinningAudio.value) {
+        playAudio(spinningAudio.value);
+      }
+      holdLastSliceIndex = sliceIndex;
+    }
+
+    holdRafId = requestAnimationFrame(loop);
+  };
+
+  holdRafId = requestAnimationFrame(loop);
+
+}
+
+function releaseHoldSpin(winnerIndex) {
+
+  // Only acts when a hold-spin is in progress
+  if (!isHoldSpinning.value) {
+    return false;
+  }
+
+  // Stop the continuous hold rotation
+  isHoldSpinning.value = false;
+  if (holdRafId) {
+    cancelAnimationFrame(holdRafId);
+    holdRafId = null;
+  }
+
+  // Winner to land on
+  const winner = winnerIndex == null ? 0 : winnerIndex;
+
+  // Decelerate from wherever the wheel currently is down to the winner slice
+  const startAngle = currentAngle.value;
+  const {
+    endAngle: winnerEndAngle
+  } = getSliceAngles(winner, startAngle);
+
+  const targetAngle = startAngle + (props.holdDecelSpins * 360) + (getCursorAngle() - winnerEndAngle) + getRandomBetween(1, getAnglePerSlice());
+
+  animateToTarget(startAngle, targetAngle, props.holdDecelDuration, winner);
+
+  return true;
 
 }
 
@@ -428,7 +529,9 @@ onMounted(() => {
 
 defineExpose({
   spinWheel,
-  drawWheel
+  drawWheel,
+  startHoldSpin,
+  releaseHoldSpin
 });
 
 </script>
