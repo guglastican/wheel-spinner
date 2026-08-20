@@ -50,11 +50,7 @@ const props = defineProps({
   },
   holdDecelSpins: {
     type: Number,
-    default: 8
-  },
-  holdDecelDuration: {
-    type: Number,
-    default: 5000
+    default: 4
   },
   holdMaxDuration: {
     type: Number,
@@ -347,6 +343,9 @@ let holdRafId = null;
 let holdTimer = null;
 let holdLastTimestamp = null;
 let holdLastSliceIndex = -1;
+let holdStartTimestamp = null;
+let holdCurrentSpeed = 0;
+const HOLD_RAMP_MS = 500;
 
 function startHoldSpin() {
 
@@ -363,6 +362,8 @@ function startHoldSpin() {
 
   holdLastTimestamp = null;
   holdLastSliceIndex = -1;
+  holdStartTimestamp = null;
+  holdCurrentSpeed = 0;
 
   const loop = (timestamp) => {
     if (!isHoldSpinning.value) return;
@@ -370,11 +371,20 @@ function startHoldSpin() {
     if (holdLastTimestamp === null) {
       holdLastTimestamp = timestamp;
     }
+    if (holdStartTimestamp === null) {
+      holdStartTimestamp = timestamp;
+    }
     const dtSeconds = Math.min((timestamp - holdLastTimestamp) / 1000, 0.05);
     holdLastTimestamp = timestamp;
 
-    // Advance rotation at constant hold speed
-    currentAngle.value = getNormalizedAngle(currentAngle.value + (props.holdSpeed * dtSeconds));
+    // Ramp the speed up smoothly from rest (quadratic ease-out) so pressing
+    // the button never jerks the wheel from 0 to full speed in one frame
+    const rampT = Math.min((timestamp - holdStartTimestamp) / HOLD_RAMP_MS, 1);
+    const speed = props.holdSpeed * (1 - Math.pow(1 - rampT, 2));
+    holdCurrentSpeed = speed;
+
+    // Advance rotation at the (ramped) hold speed
+    currentAngle.value = getNormalizedAngle(currentAngle.value + (speed * dtSeconds));
     getCanvas().style.transform = `rotate3d(0, 0, 1, ${currentAngle.value}deg)`;
 
     // Tick sound when crossing slice boundaries
@@ -434,10 +444,85 @@ function releaseHoldSpin(winnerIndex) {
 
   const targetAngle = startAngle + (props.holdDecelSpins * 360) + (getCursorAngle() - winnerEndAngle) + getRandomBetween(1, getAnglePerSlice());
 
-  // Smooth sine ease-in-out: gentle launch, continuous deceleration, clean stop
-  animateToTarget(startAngle, targetAngle, props.holdDecelDuration, winner, getEaseInOutSine);
+  // Velocity-continuous landing: keep the wheel's actual current speed and
+  // decelerate uniformly to a stop exactly on the target (no stop-then-restart)
+  const speed0 = Math.max(holdCurrentSpeed, 0);
+  if (speed0 < 30) {
+    // Released (almost) immediately — the wheel barely moved, so run a normal
+    // smooth spin from rest instead
+    animateToTarget(startAngle, targetAngle, props.spinDuration, winner, getEaseInOutSine);
+  } else {
+    animateDeceleration(startAngle, targetAngle, speed0, winner);
+  }
 
   return true;
+
+}
+
+/**
+ * Physics-based deceleration with velocity continuity: at release the wheel is
+ * moving at `initialSpeed` (deg/s); it decelerates at a constant rate and comes
+ * to rest exactly at `targetAngle`. Uniform deceleration (like friction) makes
+ * the whole slowdown one continuous, smooth motion.
+ */
+function animateDeceleration(startAngle, targetAngle, initialSpeed, winnerIndex) {
+
+  const totalRotation = targetAngle - startAngle;
+
+  // Constant deceleration: θ = ω²/(2α) → α = ω²/(2θ); duration T = ω/α = 2θ/ω
+  const alpha = (initialSpeed * initialSpeed) / (2 * totalRotation);
+  const durationMs = (initialSpeed / alpha) * 1000;
+
+  const startTime = performance.now();
+  let lastSliceIndex = -1;
+
+  const animate = (currentTime) => {
+    const elapsed = currentTime - startTime;
+    const t = Math.min(elapsed / durationMs, 1);
+
+    // angle(t) = start + ω·T·t − ½·α·T²·t²  →  velocity ω(t) = ω − α·t (smooth to 0)
+    const rotationAngle = startAngle + (initialSpeed * (durationMs / 1000) * t) - (0.5 * alpha * (durationMs / 1000) * (durationMs / 1000) * t * t);
+    getCanvas().style.transform = `rotate3d(0, 0, 1, ${rotationAngle}deg)`;
+
+    // Tick sound when crossing slice boundaries
+    const slices = getSlices();
+    const anglePerSlice = 360 / slices.length;
+    const currentSliceIndex = Math.floor(getNormalizedAngle(getCursorAngle() - (rotationAngle % 360)) / anglePerSlice);
+    if (currentSliceIndex !== lastSliceIndex) {
+      if (spinningAudio.value) {
+        playAudio(spinningAudio.value);
+      }
+      lastSliceIndex = currentSliceIndex;
+    }
+
+    if (t < 1) {
+
+      requestAnimationFrame(animate);
+
+    } else {
+
+      const final = getNormalizedAngle(targetAngle);
+      getCanvas().style.transform = `rotate3d(0, 0, 1, ${final}deg)`;
+      currentAngle.value = final;
+
+      isSpinning.value = false;
+      isHoldSpinning.value = false;
+
+      if (wonAudio.value) {
+        wonAudio.value.play();
+      }
+
+      emits('spin-end', winnerIndex);
+
+      if (spinningAudio.value) {
+        stopAudio(spinningAudio.value);
+      }
+
+    }
+
+  };
+
+  requestAnimationFrame(animate);
 
 }
 
