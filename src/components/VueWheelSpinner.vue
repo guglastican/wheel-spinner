@@ -56,6 +56,10 @@ const props = defineProps({
     type: Number,
     default: 5000
   },
+  holdMaxDuration: {
+    type: Number,
+    default: 15000
+  },
   cursorAngle: {
     type: Number,
     default: 270
@@ -337,6 +341,7 @@ function animateToTarget(startAngle, targetAngle, duration, winnerIndex) {
 
 // ─── Hold-to-spin: wheel turns continuously while the button is held ────────
 let holdRafId = null;
+let holdTimer = null;
 let holdLastTimestamp = null;
 let holdLastSliceIndex = -1;
 
@@ -385,6 +390,16 @@ function startHoldSpin() {
 
   holdRafId = requestAnimationFrame(loop);
 
+  // Auto-slowdown: if the button is held for too long, decelerate on its own
+  // so the wheel never spins forever. Winner index is relative to the same
+  // filtered slice list the parent uses, so onSpinEnd maps it correctly.
+  holdTimer = setTimeout(() => {
+    if (isHoldSpinning.value) {
+      const winner = Math.floor(Math.random() * getSlices().length);
+      releaseHoldSpin(winner);
+    }
+  }, props.holdMaxDuration);
+
 }
 
 function releaseHoldSpin(winnerIndex) {
@@ -399,6 +414,10 @@ function releaseHoldSpin(winnerIndex) {
   if (holdRafId) {
     cancelAnimationFrame(holdRafId);
     holdRafId = null;
+  }
+  if (holdTimer) {
+    clearTimeout(holdTimer);
+    holdTimer = null;
   }
 
   // Winner to land on
@@ -511,6 +530,14 @@ onBeforeMount(() => {
 
 onBeforeUnmount(() => {
   window.removeEventListener('resize', handleResize);
+  if (holdTimer) {
+    clearTimeout(holdTimer);
+    holdTimer = null;
+  }
+  if (holdRafId) {
+    cancelAnimationFrame(holdRafId);
+    holdRafId = null;
+  }
 });
 
 onMounted(() => {
