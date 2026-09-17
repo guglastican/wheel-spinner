@@ -18,8 +18,8 @@
             :muted="!soundEnabled"
             :volume="volume"
             :sounds="{
-              spinning: '/sounds/tick.mp3',
-              won: '/sounds/win.mp3'
+              spinning: '/sounds/tick.wav',
+              won: '/sounds/win.wav'
             }"
             @spin-start="onSpinStart"
             @spin-end="onSpinEnd">

@@ -49,6 +49,7 @@ const MIME = {
     '.png': 'image/png',
     '.svg': 'image/svg+xml',
     '.mp3': 'audio/mpeg',
+    '.wav': 'audio/wav',
     '.xml': 'application/xml',
     '.txt': 'text/plain; charset=utf-8'
 };
@@ -127,6 +128,9 @@ function check(label, condition, detail = '') {
     const server = await startServer();
     const chrome = spawn(CHROME, [
         '--headless=new', '--disable-gpu', '--no-sandbox', '--mute-audio', '--hide-scrollbars',
+        // Playback of the sound assets is asserted below; headless has no user
+        // gesture, so allow autoplay for the check.
+        '--autoplay-policy=no-user-gesture-required',
         `--remote-debugging-port=${DEBUG_PORT}`,
         `--user-data-dir=${path.join(process.env.TEMP || '/tmp', 'randowheel-verify-ui')}`,
         '--window-size=1280,900',
@@ -202,6 +206,18 @@ function check(label, condition, detail = '') {
         await sleep(200);
         check('spin speed can be changed', await evaluate(`[...document.querySelectorAll('.segment-btn')].find(b => b.textContent.includes('Fast')).classList.contains('active')`));
 
+        // Record every media play() call so the spin's sounds can be asserted
+        await evaluate(`(() => {
+          window.__plays = [];
+          const original = HTMLMediaElement.prototype.play;
+          HTMLMediaElement.prototype.play = function () {
+            try { window.__plays.push(new URL(this.src, location.origin).pathname); }
+            catch (e) { window.__plays.push('unknown'); }
+            return original.apply(this, arguments);
+          };
+          return true;
+        })()`);
+
         await pressKey('Space', ' ', 32);
         check('Spacebar starts a spin', await waitFor(`document.querySelector('.spin-center-button').classList.contains('is-spinning')`, 4000));
         check('winner popup appears', await waitFor(`!!document.querySelector('.modal-card')`, 15000));
@@ -211,6 +227,10 @@ function check(label, condition, detail = '') {
         check('banner agrees with the popup', (await evaluate(`document.querySelector('.winner-text').textContent`)).includes(winner));
         check('result added to the results panel', await evaluate(`document.querySelectorAll('.history-row').length`) === 1);
         check('popup focuses its primary action', await evaluate(`document.activeElement.classList.contains('modal-btn')`));
+
+        const plays = JSON.parse(await evaluate(`JSON.stringify(window.__plays || [])`));
+        check('ticking sound plays while the wheel spins', plays.includes('/sounds/tick.wav'), `${plays.length} play() call(s)`);
+        check('win sound plays once when the spin ends', plays.filter((src) => src === '/sounds/win.wav').length === 1);
 
         await evaluate(`[...document.querySelectorAll('.modal-btn')].find(b => b.textContent.match(/again|nochmal|nuevo/i)).click()`);
         await sleep(600);
@@ -252,6 +272,32 @@ function check(label, condition, detail = '') {
         await sleep(300);
 
         check('no console errors on desktop', consoleErrors().length === 0, consoleErrors().slice(0, 2).join(' | '));
+
+        // ── Sound assets must be real, decodable audio ────────────────────
+        // Guards the exact failure that shipped once: public/sounds/*.mp3 were
+        // 14-byte files containing "404: Not Found", so nothing ever played.
+        console.log('\nSound assets');
+        const soundReport = JSON.parse(await evaluate(`(async () => {
+          const out = [];
+          for (const url of ['/sounds/tick.wav', '/sounds/win.wav']) {
+            const response = await fetch(url);
+            const buffer = await response.arrayBuffer();
+            let duration = 0;
+            let error = null;
+            try {
+              const ctx = new (window.AudioContext || window.webkitAudioContext)();
+              const decoded = await ctx.decodeAudioData(buffer.slice(0));
+              duration = decoded.duration;
+              ctx.close();
+            } catch (e) { error = String((e && e.message) || e); }
+            out.push({ url, bytes: buffer.byteLength, duration, error });
+          }
+          return JSON.stringify(out);
+        })()`));
+        for (const sound of soundReport) {
+            check(`${sound.url} decodes as audio`, sound.duration > 0.01 && !sound.error,
+                `${sound.bytes} bytes, ${sound.duration.toFixed(2)}s${sound.error ? `, error: ${sound.error}` : ''}`);
+        }
 
         console.log('\n/food-wheel (mobile 390x844)');
         await client.send('Emulation.setDeviceMetricsOverride', { width: 390, height: 844, deviceScaleFactor: 2, mobile: true });
