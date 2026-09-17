@@ -38,7 +38,7 @@ const props = defineProps({
   },
   extraSpins: {
     type: Number,
-    default: 11
+    default: 10
   },
   spinDuration: {
     type: Number,
@@ -151,43 +151,43 @@ function getSliceAngles(sliceIndex, currentCanvasAngle) {
 }
 
 /**
- * Spin profile: a short constant-acceleration launch (the "push"), then a
- * uniform deceleration to a dead stop exactly on the target — the same physics
- * the hold-to-spin release uses, so both ways of spinning feel alike.
+ * Spin profile: a smooth wind-up, then a long friction coast to a dead stop
+ * exactly on the target.
  *
- * Normalised rotation over normalised time:
- *   x <  L :  θ = vmax · x² / (2L)
- *   x >= L :  θ = θ(L) + vmax · (d − d² / (2(1−L))),  d = x − L
+ * Launch (x < L) — the velocity ramps as x², so the acceleration starts at
+ * zero: the wheel eases into motion instead of being kicked. Position is the
+ * integral, θ = vmax·x³/(3L²), which makes the launch velocity reach vmax
+ * exactly where the coast begins (C1 continuous, no jerk in speed).
  *
- * Since θ(L) = vmax·L/2 the total is vmax/2, so vmax = 2: the peak speed is
- * twice the average, reached within the first few percent of the spin, after
- * which the wheel slows down smoothly for the whole remainder.
+ * Coast (x >= L) — velocity follows vmax·(1−u)^p with u = (x−L)/(1−L), which
+ * decelerates progressively and reaches exactly zero at the end. A p of ~1.35
+ * keeps the wheel visibly moving (roughly a sixth of a turn in the final
+ * second) while the last full revolution still takes about a third of the
+ * whole spin — the slow, drawn-out finish a wheel should have.
  *
- * Previously this was a symmetric ease-in-out sine, which meant the wheel was
- * still *accelerating* at the halfway point of every spin and then crawled for
- * the entire second half — it read as a motor ramping, not a wheel.
+ * vmax is fixed by requiring θ(1) = 1:
+ *   θ(1) = vmax·L/3 + vmax·(1−L)/(p+1)  →  vmax = 1 / (L/3 + (1−L)/(p+1))
  *
- * @param {number} launchFraction share of the duration spent accelerating
+ * History: this replaced a symmetric ease-in-out sine (the wheel was still
+ * accelerating halfway through every spin), and then a uniform-deceleration
+ * model, whose finish arrived too flat.
  */
-function getSpinEase(launchFraction) {
-  const L = Math.min(Math.max(launchFraction, 0.001), 0.4);
-  const vmax = 2;
+const SPIN_LAUNCH_SHARE = 0.12;
+const SPIN_TAIL_POWER = 1.25;
+
+function getSpinEase() {
+  const L = SPIN_LAUNCH_SHARE;
+  const p = SPIN_TAIL_POWER;
+  const vmax = 1 / (L / 3 + (1 - L) / (p + 1));
+  const thetaLaunch = (vmax * L) / 3;
+
   return function spinEase(x) {
     if (x <= 0) return 0;
     if (x >= 1) return 1;
-    if (x < L) return (vmax * x * x) / (2 * L);
-    const thetaLaunch = (vmax * L) / 2;
-    const d = x - L;
-    return thetaLaunch + vmax * (d - (d * d) / (2 * (1 - L)));
+    if (x < L) return (vmax * x * x * x) / (3 * L * L);
+    const u = (x - L) / (1 - L);
+    return thetaLaunch + ((vmax * (1 - L)) / (p + 1)) * (1 - Math.pow(1 - u, p + 1));
   };
-}
-
-/**
- * A push lasts about 0.3 s whether the spin lasts 4 s or 10 s, and never eats
- * more than a fifth of the spin.
- */
-function getLaunchFraction(durationMs) {
-  return Math.min(0.2, 320 / Math.max(durationMs, 1));
 }
 
 function drawSlice(context, centerX, centerY, radius, startAngle, endAngle, fillColor) {
@@ -243,13 +243,19 @@ function drawWheel() {
   const containerWidth = container.clientWidth;
   const containerHeight = container.clientWidth;
 
-  canvas.width = containerWidth;
-  canvas.height = containerHeight;
+  // Draw at device resolution so the wheel and its labels stay crisp on HiDPI
+  // screens instead of being upscaled from a CSS-pixel-sized bitmap.
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  canvas.width = Math.round(containerWidth * dpr);
+  canvas.height = Math.round(containerHeight * dpr);
 
-  // Adjust width and height
+  // Setting canvas.width resets the context, so apply the scale afterwards.
+  // All drawing below stays in CSS pixels.
+  context.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+  // Layout size in CSS pixels (the backing store above is scaled by dpr)
   const width = containerWidth;
   const height = containerHeight;
-  context.scale(1, 1);
 
   // Calculate centroids
   const centerX = width / 2;
@@ -317,7 +323,7 @@ function spinWheel(winnerIndex) {
 function animateToTarget(startAngle, targetAngle, duration, winnerIndex, easeFn) {
 
   const totalRotation = targetAngle - startAngle;
-  const ease = easeFn || getSpinEase(getLaunchFraction(duration));
+  const ease = easeFn || getSpinEase();
 
   // Get start time to finish spinning
   const startTime = performance.now();
@@ -738,9 +744,13 @@ defineExpose({
 }
 
 canvas {
-  will-change: transform, width, height;
+  /* Only transform changes per frame; hinting width/height would force a
+     needless re-layout/rasterisation on every resize. */
+  will-change: transform;
   aspect-ratio: 1 / 1;
   max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 </style>

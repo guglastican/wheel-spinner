@@ -348,14 +348,14 @@ export default {
       soundEnabled: true,
       volume: 0.5,
 
-      // Spin behaviour. Each speed is a duration plus the number of turns, so
-      // the wheel always peaks at roughly the same speed (~3.5 turns/s) and the
-      // setting changes how long the suspense lasts, not how violent the push is.
+      // Spin behaviour. Turn counts are chosen so every preset peaks at about
+      // 3.7 turns/s — the speed setting changes how long the slow finish lasts,
+      // not how hard the wheel is pushed.
       spinDuration: 6500,
       spinSpeeds: [
         { value: 4200, turns: 7, label: 'mainWheel.speedFast' },
-        { value: 6500, turns: 11, label: 'mainWheel.speedNormal' },
-        { value: 9500, turns: 16, label: 'mainWheel.speedSlow' }
+        { value: 6500, turns: 10, label: 'mainWheel.speedNormal' },
+        { value: 9500, turns: 14.5, label: 'mainWheel.speedSlow' }
       ],
       showWinnerPopup: true,
       showModal: false,
@@ -376,7 +376,7 @@ export default {
     /** Turns for the selected speed preset (peak speed stays constant). */
     spinTurns() {
       const preset = this.spinSpeeds.find(speed => speed.value === this.spinDuration)
-      return preset ? preset.turns : 11
+      return preset ? preset.turns : 10
     },
     isRtl() {
       try {

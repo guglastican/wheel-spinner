@@ -226,6 +226,14 @@ function rateBetween(frames, fromMs, toMs) {
             await evaluate(`[...document.querySelectorAll('.tab-btn .tab-label')].map(e=>e.textContent.trim()).join('|')`) === 'List|Style|Sound|Spin');
         const wheelSize = await evaluate(`(() => { const c = document.querySelector('canvas'); if (!c) return 0; const r = c.getBoundingClientRect(); return Math.round(Math.min(r.width, r.height)); })()`);
         check('wheel canvas is rendered', wheelSize > 200, `${wheelSize}px`);
+        const canvasQuality = JSON.parse(await evaluate(`(() => {
+          const c = document.querySelector('canvas');
+          const r = c.getBoundingClientRect();
+          return JSON.stringify({ backing: c.width, displayed: Math.round(r.width), dpr: window.devicePixelRatio || 1 });
+        })()`));
+        check('canvas is drawn at device resolution (crisp, not upscaled)',
+            canvasQuality.backing >= canvasQuality.displayed * Math.min(canvasQuality.dpr, 2) - 2,
+            `${canvasQuality.backing}px backing store for ${canvasQuality.displayed}px displayed (dpr ${canvasQuality.dpr})`);
         check('cursor controls are out of the default view', await evaluate(`!document.body.innerText.includes('Cursor Angle')`));
         check('advanced block starts collapsed', await evaluate(`(() => { const d = document.querySelector('.advanced-block'); return !!d && !d.open; })()`));
 
@@ -404,11 +412,28 @@ function rateBetween(frames, fromMs, toMs) {
             .join(' ');
         console.log(`  speed profile (deg/s): ${profile}`);
 
-        check('makes a full multi-turn spin', totalTurns >= 6, `${totalTurns.toFixed(1)} turns in ${(spinDuration / 1000).toFixed(1)}s`);
-        check('starts from rest (no instant jump to full speed)', speedAt(0.1) < peak.v * 0.45,
+        check('makes a full multi-turn spin', totalTurns >= 6, `${totalTurns.toFixed(1)} turns in ${(spinDuration / 1000).toFixed(1)}s`);        check('eases into motion (acceleration starts at zero, no kick)', speedAt(0.1) < peak.v * 0.15,
             `${speedAt(0.1).toFixed(0)} deg/s after 100ms vs peak ${peak.v.toFixed(0)}`);
         check('reaches peak speed early, not at the halfway point', peak.progress < 0.2,
             `peak at ${(peak.progress * 100).toFixed(0)}% of the spin`);
+
+        // Frame pacing: a smooth rotation needs a steady ~60 fps, not just the
+        // right average speed.
+        const gaps = [];
+        for (let i = 1; i < frames.length; i += 1) gaps.push(frames[i].t - frames[i - 1].t);
+        const sortedGaps = [...gaps].sort((a, b) => a - b);
+        const medianGap = sortedGaps[Math.floor(sortedGaps.length / 2)];
+        const p95Gap = sortedGaps[Math.floor(sortedGaps.length * 0.95)];
+        const worstGap = sortedGaps[sortedGaps.length - 1];
+        check('rotation is frame-smooth (no stutter)', p95Gap < 35 && worstGap < 120,
+            `median ${medianGap.toFixed(1)}ms, p95 ${p95Gap.toFixed(1)}ms, worst ${worstGap.toFixed(1)}ms`);
+
+        // The finish is the part people watch: the last full revolution should
+        // take a large slice of the spin, and arrive slowly.
+        const finalTurnStart = frames.find((f) => f.angle >= (totalTurns - 1) * 360);
+        const finalTurnShare = finalTurnStart ? (endTime - finalTurnStart.t) / spinDuration : 1;
+        check('last revolution takes its time (long, visible slowdown)', finalTurnShare >= 0.25,
+            `final turn = ${(finalTurnShare * 100).toFixed(0)}% of the spin`);
         const after = speeds.filter((s) => s.progress > peak.progress + 0.05);
         const rises = after.filter((s, i) => i > 0 && s.v > after[i - 1].v + peak.v * 0.08);
         check('decelerates smoothly after the launch', rises.length === 0, `${rises.length} speed-up(s) after the peak`);
@@ -417,13 +442,16 @@ function rateBetween(frames, fromMs, toMs) {
         check('final second is a visible slow creep, not a crawl or a slam', finalSecondDegrees > 20 && finalSecondDegrees < 200,
             `${finalSecondDegrees.toFixed(0)}° in the last second`);
 
-        // Landing: the slice under the cursor must be the announced winner
+        // Landing: the slice under the cursor must be the announced winner.
+        // Read the settled angle straight from the DOM — the unwrapped trace is
+        // relative to its first sample, so only the element itself is authoritative.
+        const settledAngle = parseFloat(/rotate3d\(0, 0, 1, ([\d.eE+-]+)deg\)/.exec(
+            await evaluate(`document.querySelector('canvas').style.transform`))[1]);
         const anglePerSlice = 360 / items.length;
-        const finalAngle = ((frames[frames.length - 1].angle % 360) + 360) % 360;
         const cursorAngle = 90; // MainWheelSpinner default
-        const underCursor = Math.floor((((cursorAngle - finalAngle) % 360) + 360) % 360 / anglePerSlice);
+        const underCursor = Math.floor((((cursorAngle - settledAngle) % 360) + 360) % 360 / anglePerSlice);
         check('stops exactly on the announced winner', items[underCursor] === winnerText,
-            `cursor points at slice ${underCursor} ("${items[underCursor]}"), popup says "${winnerText}"`);
+            `settled at ${settledAngle.toFixed(1)}° → slice ${underCursor} ("${items[underCursor]}"), popup says "${winnerText}"`);
         check('no console errors during the spin', consoleErrors().length === 0, consoleErrors().slice(0, 2).join(' | '));
 
         // ── Hold-to-spin: release must be velocity-continuous ─────────────
@@ -474,6 +502,14 @@ function rateBetween(frames, fromMs, toMs) {
         check('no horizontal overflow', overflow <= 2, `${overflow}px`);
         check('wheel fits the viewport', await evaluate(`(() => { const c = document.querySelector('canvas'); const r = c.getBoundingClientRect(); return Math.round(Math.min(r.width, r.height)); })()`) > 200);
         check('tabs usable on mobile', await evaluate(`document.querySelectorAll('.tabs .tab-btn').length`) === 4);
+        const mobileCanvas = JSON.parse(await evaluate(`(() => {
+          const c = document.querySelector('canvas');
+          const r = c.getBoundingClientRect();
+          return JSON.stringify({ backing: c.width, displayed: Math.round(r.width), dpr: window.devicePixelRatio || 1 });
+        })()`));
+        check('canvas stays crisp on a 2× display',
+            mobileCanvas.dpr >= 2 && mobileCanvas.backing >= mobileCanvas.displayed * 2 - 2,
+            `${mobileCanvas.backing}px backing store for ${mobileCanvas.displayed}px displayed (dpr ${mobileCanvas.dpr})`);
         await client.send('Emulation.clearDeviceMetricsOverride');
 
         console.log('\n/ar/food-wheel (RTL)');
