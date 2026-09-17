@@ -7,7 +7,7 @@
     "foodWheel": "Roata Alimentelor",
     "configureEmbed": "Configurați roata incorporabilă",
     "spinTheWheel": "Învârte roata",
-    "twisterSpinner": "Twister Spinner"
+    "twisterSpinner": "Spinner Twister"
   },
   "footer": {
     "randoWheel": "Roata Rando",
@@ -45,7 +45,7 @@
     "title": "Explorați mai multe roți de învârtire gratuite",
     "descDefault": "Căutați un alt tip de selectator aleatoriu? Consultați celelalte instrumente pentru roți libere ale noastre:",
     "descFood": "Trebuie să iei alte tipuri de decizii? Încercați celelalte instrumente ale noastre:",
-    "rwTitle": "Random Wheel Spinner",
+    "rwTitle": "Roata aleatorie",
     "rwDesc": "Cea mai personalizată roată pentru practic orice alegere.",
     "wonTitle": "Roata Numelor",
     "wonDesc": "Un partener perfect pentru cadouri, participarea la clasă sau atribuirea de sarcini.",
@@ -53,11 +53,11 @@
     "ynwDesc": "Un simplu spinner da sau nu pentru a gestiona instantaneu alegerile binare rapide.",
     "stwTitle": "Învârte roata",
     "stwDesc": "Un selector aleatoriu complet personalizabil pentru orice situație.",
-    "tsTitle": "Twister Spinner",
+    "tsTitle": "Spinner Twister",
     "tsDesc": "Un generator de roți personalizat pentru a trage mișcări pentru jocul tău de petrecere."
   },
   "home": {
-    "mainTitle": "Random Wheel Spinner",
+    "mainTitle": "Roata aleatorie",
     "whatIsTitle": "Ce este o roată aleatorie?",
     "whatIsDesc": "O roată aleatorie este un instrument interactiv care se rotește pentru a face o selecție aleatorie dintr-un set de opțiuni. Indiferent dacă alegeți nume, culori, numere sau răspunsuri da/nu, un rotitor la întâmplare adaugă distracție și corectitudine în luarea deciziilor. Ideale pentru jocuri, tombole, activități în clasă sau pur și simplu pentru a face alegerile de zi cu zi mai ușoare, roțile aleatorii sunt simple, captivante și utilizate pe scară largă. Încercați o roată de roată aleatorie pentru a adăuga entuziasm la următoarea decizie!",
     "howWorksTitle": "Cum funcționează o roată aleatorie?",
@@ -326,7 +326,7 @@
       "sec5TextEnd": "este mereu gata.",
       "sec6Title": "Personalizați-l exact așa cum doriți",
       "sec6TextStart": "Ce face ca",
-      "sec6LinkText": "Random Wheel Spinner",
+      "sec6LinkText": "Roata aleatorie",
       "sec6TextMiddle": "mai bun decât majoritatea aplicațiilor este faptul că puteți modifica totul despre el. Dacă desfășurați un giveaway serios de companie sau transmiteți în flux pe Twitch, aveți nevoie de mai mult decât un simplu spinner de bază. De exemplu, dacă doriți ca unele premii să fie mai rare decât altele, puteți doar să duplicați premiile mai mici de mai multe ori pe roată, astfel încât să fie mai probabil să fie lovite. Această funcție de „ponderare” vă oferă control total asupra cotelor. De asemenea, puteți să vă scufundați în culori și să potriviți vizual roata cu marca sau tema petrecerii dvs. Cu funcții care vă permit să urmăriți de câte ori a câștigat o opțiune, să ascundeți opțiunile instantaneu și să modificați modul în care arată roata, este un instrument complet profesional deghizat într-un joc distractiv. Încearcă",
       "sec6LinkText2": "instrument principal de filare",
       "sec6TextEnd": "și elimină stresul din următoarea ta mare decizie."
@@ -339,7 +339,7 @@
       "rf": "Piciorul drept",
       "lf": "Piciorul Stâng"
     },
-    "title": "Twister Spinner",
+    "title": "Spinner Twister",
     "heroTitle": "Twister Spinner — Generator de mișcări aleatorii",
     "heroDesc": "Ți-ai pierdut spinnerul Twister? Folosește <strong>Twister Spinner</strong> online gratuit pentru a trage mișcări pentru jocul tău! Doar apăsați pe rotire și obțineți instantaneu comenzi aleatorii precum „Mâna stângă albastră” sau „Piciorul drept roșu”.",
     "howToTitle": "Cum să utilizați Twister Spinner",
@@ -402,7 +402,7 @@
       "sec5TextEnd": "poate fi, de asemenea, personalizat pentru a include o opțiune „Poate” dacă doriți să forțați o remiză sau să cereți jucătorilor să joace din nou rândul.",
       "sec6Title": "Personalizează totul pentru următoarea ta noapte de joc",
       "sec6TextStart": "În timp ce Twister Spinner este perfect pentru jocul său specific, s-ar putea să doriți să vă creați propriile jocuri unice de băut, provocări cu adevărat sau îndrăzneală sau reguli de petrecere. Aici este nucleul",
-      "sec6LinkText": "Random Wheel Spinner",
+      "sec6LinkText": "Roata aleatorie",
       "sec6TextMiddle": "strălucește. Puteți pune literalmente orice pe feliile roții, puteți schimba toate culorile pentru a se potrivi cu o temă de eveniment și chiar ajustați șansele dacă doriți ca unele provocări să apară mai rar. Profitând de principal",
       "sec6LinkText2": "instrument principal de filare",
       "sec6TextEnd": ", puteți proiecta o experiență de noapte de joc complet personalizată pe care oaspeții tăi nu o vor uita niciodată."

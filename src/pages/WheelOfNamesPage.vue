@@ -133,7 +133,6 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
 import MainWheelSpinner from '../components/MainWheelSpinner.vue';
 import AppHeader from '../components/AppHeader.vue';
 import { useI18n } from 'vue-i18n';
@@ -146,41 +145,11 @@ const localePath = (path) => {
   return `/${currentLang}${path}`;
 };
 
-// Update meta tags for SEO when the component mounts
-onMounted(() => {
-  // Title is handled by the router guard in main.js
-  // Add/update structured data for this page
-  const existingScript = document.getElementById('wheel-of-names-schema');
-  if (existingScript) existingScript.remove();
-
-  const script = document.createElement('script');
-  script.id = 'wheel-of-names-schema';
-  script.type = 'application/ld+json';
-  script.textContent = JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Wheel of Names — Free Random Name Picker",
-    "url": "https://randowheel.com/wheel-of-names",
-    "description": "A free, browser-based random name picker. Add names to a spinning wheel and click spin to choose a random winner. Used for classrooms, giveaways, team selections, and more.",
-    "applicationCategory": "UtilityApplication",
-    "operatingSystem": "Any",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "featureList": [
-      "Add unlimited names to the wheel",
-      "Fully random spinning algorithm",
-      "Colour customisation per slice",
-      "Win count tracking",
-      "Exclude winners from future spins",
-      "Shuffle entries",
-      "Works on mobile and desktop"
-    ]
-  });
-  document.head.appendChild(script);
-});
+// Structured data (WebPage / WebApplication / FAQPage / BreadcrumbList) is
+// generated per URL and per language at build time by prerender.js, and
+// refreshed by the router guard in main.js on client-side navigation.
+// Do not inject page-level JSON-LD here: a hardcoded schema would describe the
+// English URL from every localized page.
 </script>
 
 <style scoped>

@@ -3,7 +3,8 @@
     <div class="header-left">
       <div class="logo">
         <img src="/logo_random_wheel.svg" alt="Random Wheel Logo" width="30" height="30">
-        <h1>{{ title }}</h1>
+        <!-- Not an <h1>: each page has exactly one H1 (its own hero heading) -->
+        <div class="logo-title">{{ title }}</div>
       </div>
       
       <!-- Custom Crawlable Language Switcher -->
@@ -153,7 +154,8 @@ const vClickOutside = {
   gap: 10px;
 }
 
-.logo h1 {
+.logo h1,
+.logo .logo-title {
   font-size: 24px;
   margin: 0;
   color: #1a1a2e;

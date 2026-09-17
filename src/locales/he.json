@@ -27,18 +27,18 @@
     "spinTheWheel": "סובב את הגלגל",
     "cursor": "סַמָן",
     "cursorAngle": "זווית הסמן",
-    "cursorDistance": "Cursor Distance",
-    "pleaseInclude": "Please include at least one item in the wheel",
-    "copySuffix": "(copy)"
+    "cursorDistance": "מרחק הסמן",
+    "pleaseInclude": "אנא הוסף לפחות פריט אחד לגלגל",
+    "copySuffix": "(העתקה)"
   },
   "yesNoWheel": {
     "yes": "YES",
     "no": "NO",
-    "maybe": "MAYBE",
-    "mode": "Mode",
-    "binaryMode": "YES or NO",
-    "ternaryMode": "YES NO or MAYBE",
-    "numInputSets": "Number of Input Sets",
+    "maybe": "אולי",
+    "mode": "מצב",
+    "binaryMode": "כן או לא",
+    "ternaryMode": "כן לא או אולי",
+    "numInputSets": "מספר מערכי קלט",
     "resetResults": "אפס תוצאות"
   },
   "exploreMore": {
@@ -212,7 +212,7 @@
       "2Desc": "אין צורך בחשבון. פתח את הדף, הקלד את השמות שלך וסובב. כל התהליך לוקח פחות מ-30 שניות.",
       "3Title": "ניתן להתאמה אישית מלאה",
       "3Desc": "שנה את צבעי הפרוסות, סדר מחדש שמות, שכפל ערכים עבור תוצאות משוקללות או אי הכללה של שמות מסוימים.",
-      "4Title": "Win Tracking",
+      "4Title": "מעקב אחר זכיות",
       "4Desc": "הגלגל עוקב אחר כמה פעמים כל שם נבחר על פני מספר סיבובים.",
       "5Title": "עובד על כל מכשיר",
       "5Desc": "עיצוב מגיב לחלוטין אומר שהגלגל נראה ועובד נהדר בטלפונים, טאבלטים ומחשבים שולחניים כאחד.",

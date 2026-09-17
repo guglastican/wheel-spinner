@@ -196,7 +196,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref, reactive, computed } from 'vue';
+import { ref, reactive, computed } from 'vue';
 import MainWheelSpinner from '../components/MainWheelSpinner.vue';
 import AppHeader from '../components/AppHeader.vue';
 import { useI18n } from 'vue-i18n';
@@ -264,37 +264,11 @@ const twisterSlices = computed(() => [
   { color: '#2ecc40', text: t('twisterPage.parts.lh'), winCount: 0 }
 ]);
 
-// Update meta tags for SEO when the component mounts
-onMounted(() => {
-  // Title is handled by the router guard in main.js
-  const existingScript = document.getElementById('twister-spinner-schema');
-  if (existingScript) existingScript.remove();
-
-  const script = document.createElement('script');
-  script.id = 'twister-spinner-schema';
-  script.type = 'application/ld+json';
-  script.textContent = JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Twister Spinner",
-    "url": "https://randowheel.com/twister-spinner",
-    "description": "Lost your Twister spinner? Use our free online Twister Spinner to call out moves for your game! Just hit spin, and get instant random commands like 'Left Hand Blue' or 'Right Foot Red'.",
-    "applicationCategory": "UtilityApplication",
-    "operatingSystem": "Any",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "featureList": [
-      "Instantly generates Twister moves",
-      "Fair and random spinning algorithm",
-      "Works on mobile and desktop",
-      "No downloads required"
-    ]
-  });
-  document.head.appendChild(script);
-});
+// Structured data (WebPage / WebApplication / FAQPage / BreadcrumbList) is
+// generated per URL and per language at build time by prerender.js, and
+// refreshed by the router guard in main.js on client-side navigation.
+// Do not inject page-level JSON-LD here: a hardcoded schema would describe the
+// English URL from every localized page.
 </script>
 
 <style scoped>

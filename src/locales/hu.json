@@ -7,7 +7,7 @@
     "foodWheel": "Élelmiszer kerék",
     "configureEmbed": "Beágyazható kerék konfigurálása",
     "spinTheWheel": "Forgasd meg a kereket",
-    "twisterSpinner": "Twister Spinner"
+    "twisterSpinner": "Twister pörgető"
   },
   "footer": {
     "randoWheel": "Rando Wheel",
@@ -19,9 +19,9 @@
   },
   "mainWheel": {
     "winner": "Nyertes: {text} 🎉",
-    "spin": "Spin",
+    "spin": "Pörgetés",
     "inputs": "Bemenetek",
-    "reset": "Reset",
+    "reset": "Visszaállítás",
     "shuffle": "Keverés",
     "placeholder": "Írja be ide a szöveget...",
     "spinTheWheel": "Forgasd meg a kereket",
@@ -45,7 +45,7 @@
     "title": "Fedezzen fel további ingyenesen forgó kerekeket",
     "descDefault": "Másfajta véletlenszerű válogatót keres? Tekintse meg további ingyenes kerékszerszámainkat:",
     "descFood": "Más típusú döntéseket kell hoznia? Próbálja ki további eszközeinket:",
-    "rwTitle": "Random Wheel Spinner",
+    "rwTitle": "Véletlenszerű kerék pörgető",
     "rwDesc": "A tökéletes testreszabható kerék gyakorlatilag bármilyen választáshoz.",
     "wonTitle": "A nevek kereke",
     "wonDesc": "Tökéletes társ ajándékozáshoz, osztálytermi részvételhez vagy feladatok kiosztásához.",
@@ -53,11 +53,11 @@
     "ynwDesc": "Egy egyszerű igen vagy nem pörgető a gyors bináris választások azonnali kezelésére.",
     "stwTitle": "Forgasd meg a kereket",
     "stwDesc": "Teljesen testreszabható véletlenszerű válogató bármilyen helyzethez.",
-    "tsTitle": "Twister Spinner",
+    "tsTitle": "Twister pörgető",
     "tsDesc": "Egyedi kerékgenerátor, amely mozdulatokat hív elő társasjátékodhoz."
   },
   "home": {
-    "mainTitle": "Random Wheel Spinner",
+    "mainTitle": "Véletlenszerű kerék pörgető",
     "whatIsTitle": "Mi az a Random Wheel?",
     "whatIsDesc": "A Random Wheel egy interaktív eszköz, amely pörögve véletlenszerűen kiválaszt egy sor választási lehetőséget. Akár neveket, színeket, számokat választ, akár igen/nem válaszokat választ, egy véletlenszerű pörgető szórakoztató és tisztességes döntéshozatalt tesz lehetővé. Ideális játékokhoz, tombolákhoz, osztálytermi tevékenységekhez vagy egyszerűen a mindennapi döntések megkönnyítéséhez, a véletlenszerű kerekek egyszerűek, vonzóak és széles körben használhatók. Próbáljon ki egy véletlenszerű keréktárcsát, hogy izgalmasabbá tegye a következő döntését!",
     "howWorksTitle": "Hogyan működik a véletlenszerű kerék?",
@@ -225,18 +225,18 @@
       "1Desc": "Növelni szeretné egy adott név kiválasztásának esélyét? Egyszerűen adja hozzá ezt a nevet többször a <em>Másolás</em> gombbal. Minden ismétlődő bejegyzés saját szeletet kap, ami gyakorlatilag megduplázza (vagy megháromszorozza) annak a valószínűségét, hogy a személy kiválasztásra kerül.",
       "2Title": "Eliminációs mód",
       "2Desc": "Verseny, vetélkedő vagy tombola? Használja a <em>Kizárás</em> gombot az egyes nyertesek eltávolításához a következő pörgetésekből. Ez biztosítja, hogy minden résztvevő csak egyszer nyerjen.",
-      "3Title": "Shuffle for Fairness",
-      "3Desc": "If you re-use the same list of names regularly, hit the <em>Shuffle</em> button before spinning. Shuffling randomises the starting order of slices.",
-      "4Title": "Save Your Name List",
-      "4Desc": "Need the same names every lesson or meeting? Simply keep the browser tab open — the names stay on the wheel until you reset or close the page."
+      "3Title": "Keverés a tisztességért",
+      "3Desc": "Ha rendszeresen ugyanazt a névlistát használja, pörgetés előtt nyomja meg a <em>Keverés</em> gombot. A keverés véletlenszerűvé teszi a szeletek kiindulási sorrendjét.",
+      "4Title": "Névlista mentése",
+      "4Desc": "Ugyanazok a nevek kellenek minden órán vagy megbeszélésen? Egyszerűen hagyja nyitva a böngészőlapot — a nevek a kereken maradnak, amíg vissza nem állítja vagy be nem zárja az oldalt."
     },
-    "faqTitle": "Frequently Asked Questions",
+    "faqTitle": "Gyakran ismételt kérdések",
     "faqs": {
-      "1Title": "Is the Wheel of Names completely random?",
-      "1Desc": "Yes. Each spin uses JavaScript's Math.random() function, which generates a pseudo-random number to determine the winning slice.",
-      "2Title": "How many names can I add to the wheel?",
-      "2Desc": "There is no hard limit. The wheel automatically resizes each slice to fit all entries. For best readability, we recommend keeping it under 50 names.",
-      "3Title": "Can I save my wheel of names?",
+      "1Title": "Teljesen véletlenszerű a nevek kereke?",
+      "1Desc": "Igen. Minden pörgetés a JavaScript Math.random() függvényét használja, amely álvéletlen számot generál a nyertes szelet kiválasztásához.",
+      "2Title": "Hány nevet adhatok a kerékhez?",
+      "2Desc": "Nincs kemény korlát. A kerék automatikusan átméretezi az egyes szeleteket, hogy minden bejegyzés elférjen. A legjobb olvashatóság érdekében legfeljebb 50 nevet javasolunk.",
+      "3Title": "Elmenthetem a nevek kerekét?",
       "3Desc": "A neveket mindaddig tároljuk, amíg az oldal nyitva van. A nevek hozzáadása után vegye fel az oldalt a könyvjelzők közé – ha újra megnyitja ugyanazt a lapot a legtöbb böngészőben, az visszaállítja az állapotot.",
       "4Title": "Működik a nevek kereke mobilon?",
       "4Desc": "Teljesen. A kerék teljesen érzékeny, és működik iOS-en, Androidon és bármely modern mobilböngészőn.",
@@ -326,7 +326,7 @@
       "sec5TextEnd": "mindig készen áll.",
       "sec6Title": "Szabja személyre pontosan úgy, ahogy szeretné",
       "sec6TextStart": "Mi teszi a",
-      "sec6LinkText": "Random Wheel Spinner",
+      "sec6LinkText": "Véletlenszerű kerék pörgető",
       "sec6TextMiddle": "A legtöbb alkalmazásnál jobb az a tény, hogy mindent módosíthat rajta. Ha komoly céges ajándékot szervezel, vagy streamelsz a Twitchen, akkor többre van szükséged, mint egy egyszerű pörgetőre. Például, ha azt szeretné, hogy egyes nyeremények ritkábbak legyenek, mint mások, egyszerűen megismételheti a kisebb nyereményeket többször is a keréken, így nagyobb valószínűséggel ütik el őket. Ez a „súlyozási” funkció teljes ellenőrzést biztosít az esélyek felett. Elmerülhet a színekben, és vizuálisan illesztheti a kereket márkájához vagy partitémájához. A funkciókkal, amelyek segítségével nyomon követheti, hányszor nyert egy opció, azonnal elrejtheti a választási lehetőségeket, és módosíthatja a kerék megjelenését, ez egy teljesen professzionális eszköz, amelyet szórakoztató játéknak álcáznak. Próbáld ki a",
       "sec6LinkText2": "fő fonószerszám",
       "sec6TextEnd": "és vidd le a stresszt a következő nagy döntésedből."
@@ -339,7 +339,7 @@
       "rf": "Jobb láb",
       "lf": "Bal láb"
     },
-    "title": "Twister Spinner",
+    "title": "Twister pörgető",
     "heroTitle": "Twister Spinner — Véletlenszerű mozgásgenerátor",
     "heroDesc": "Elvesztette a Twister spinnerjét? Használja ingyenes online <strong>Twister Spinnerünket</strong>, hogy mozdulatokat hívjon elő játékához! Csak nyomja meg a pörgetést, és azonnali véletlenszerű parancsokat kap, például „Bal kéz kék” vagy „Jobb láb piros”.",
     "howToTitle": "A Twister Spinner használata",
@@ -402,7 +402,7 @@
       "sec5TextEnd": "testreszabható úgy is, hogy tartalmazzon egy „Talán” opciót, ha döntetlent akar kikényszeríteni, vagy megkéri a játékosokat, hogy játsszák újra a kört.",
       "sec6Title": "Mindent testreszabhat a következő játék estéjéhez",
       "sec6TextStart": "Míg a Twister Spinner tökéletes az adott játékhoz, érdemes lehet saját egyedi ivójátékokat, igazság vagy mersz kihívásokat vagy partiszabályokat létrehozni. Itt van a mag",
-      "sec6LinkText": "Random Wheel Spinner",
+      "sec6LinkText": "Véletlenszerű kerék pörgető",
       "sec6TextMiddle": "ragyog. Szó szerint bármit felhelyezhet a kerék szeleteire, megváltoztathatja az összes színt az esemény témájának megfelelően, és még az esélyeket is módosíthatja, ha azt szeretné, hogy néhány kihívás ritkábban jelenjen meg. A fő előnyeit kihasználva",
       "sec6LinkText2": "fő fonószerszám",
       "sec6TextEnd": ", akkor egy teljesen egyedi játék esti élményt tervezhet, amelyet vendégei soha nem felejtenek el."

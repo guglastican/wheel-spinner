@@ -1,13 +1,13 @@
 {
   "header": {
-    "randomWheel": "Random Wheel",
+    "randomWheel": "Slumphjul",
     "wheelOfNames": "Hjulet av namn",
     "yesNoWheel": "Ja/Nej hjul",
     "embed": "Bädda in",
     "foodWheel": "Mathjul",
     "configureEmbed": "Konfigurera inbäddningsbara hjul",
     "spinTheWheel": "Snurra hjulet",
-    "twisterSpinner": "Twister Spinner"
+    "twisterSpinner": "Twister-snurra"
   },
   "footer": {
     "randoWheel": "Rando hjul",
@@ -45,7 +45,7 @@
     "title": "Utforska fler gratissnurrhjul",
     "descDefault": "Letar du efter en annan sorts slumpvisare? Kolla in våra andra gratis hjulverktyg:",
     "descFood": "Behöver du fatta andra typer av beslut? Prova våra andra verktyg:",
-    "rwTitle": "Random Wheel Spinner",
+    "rwTitle": "Slumphjul",
     "rwDesc": "Det ultimata anpassningsbara hjulet för praktiskt taget alla val.",
     "wonTitle": "Hjulet av namn",
     "wonDesc": "En perfekt följeslagare för giveaways, klassrumsdeltagande eller tilldela uppgifter.",
@@ -53,11 +53,11 @@
     "ynwDesc": "En enkel ja eller nej spinner för att hantera snabba binära val direkt.",
     "stwTitle": "Snurra hjulet",
     "stwDesc": "En helt anpassningsbar slumpmässig väljare för alla situationer.",
-    "tsTitle": "Twister Spinner",
+    "tsTitle": "Twister-snurra",
     "tsDesc": "En anpassad hjulgenerator för att ropa ut rörelser för ditt partyspel."
   },
   "home": {
-    "mainTitle": "Random Wheel Spinner",
+    "mainTitle": "Slumphjul",
     "whatIsTitle": "Vad är ett slumpmässigt hjul?",
     "whatIsDesc": "Ett slumpmässigt hjul är ett interaktivt verktyg som snurrar för att göra ett slumpmässigt urval från en uppsättning val. Oavsett om du väljer namn, färger, siffror eller ja/nej-svar, ger en slumpmässig snurr ett roligt och rättvist beslutsfattande. Idealiska för spel, lotterier, klassrumsaktiviteter eller bara göra vardagliga val enklare, slumpmässiga hjul är enkla, engagerande och ofta använda. Prova en slumpmässig hjulspinnare för att lägga till spänning till ditt nästa beslut!",
     "howWorksTitle": "Hur fungerar ett slumpmässigt hjul?",
@@ -326,7 +326,7 @@
       "sec5TextEnd": "är alltid redo.",
       "sec6Title": "Anpassa det precis som du vill",
       "sec6TextStart": "Vad gör",
-      "sec6LinkText": "Random Wheel Spinner",
+      "sec6LinkText": "Slumphjul",
       "sec6TextMiddle": "bättre än de flesta appar är det faktum att du kan justera allt om det. Om du driver en seriös företagspresent eller streamar på Twitch behöver du mer än bara en grundläggande spinner. Till exempel, om du vill att vissa priser ska vara sällsynta än andra, kan du bara duplicera de mindre priserna flera gånger på hjulet så att de är mer benägna att träffas. Denna \"viktnings\"-funktion ger dig total kontroll över oddsen. Du kan också dyka in i färgerna och visuellt matcha hjulet till ditt varumärke eller festtema. Med funktioner som låter dig spåra hur många gånger ett alternativ har vunnit, dölja val direkt och justera hur hjulet ser ut, är det ett helt professionellt verktyg förklädd till ett roligt spel. Prova på",
       "sec6LinkText2": "huvudspinnverktyget",
       "sec6TextEnd": "och ta bort stressen från ditt nästa stora beslut."
@@ -339,8 +339,8 @@
       "rf": "Höger fot",
       "lf": "Vänster fot"
     },
-    "title": "Twister Spinner",
-    "heroTitle": "Twister Spinner — Random Move Generator",
+    "title": "Twister-snurra",
+    "heroTitle": "Twister-snurra — slumpmässig rörelsegenerator",
     "heroDesc": "Har du tappat bort din Twister-snurra? Använd vår gratis <strong>Twister Spinner</strong> online för att ropa ut drag för ditt spel! Tryck bara på spin och få omedelbara slumpmässiga kommandon som \"Left Hand Blue\" eller \"Right Foot Red\".",
     "howToTitle": "Hur man använder Twister Spinner",
     "steps": {
@@ -402,7 +402,7 @@
       "sec5TextEnd": "kan också anpassas för att inkludera ett \"Kanske\"-alternativ om du vill tvinga fram oavgjort eller be spelare att spela om turen.",
       "sec6Title": "Anpassa allt för din nästa spelkväll",
       "sec6TextStart": "Även om Twister Spinner är perfekt för sitt specifika spel, kanske du vill skapa dina egna unika dryckesspel, truth-or-dare-utmaningar eller festregler. Det är här kärnan",
-      "sec6LinkText": "Random Wheel Spinner",
+      "sec6LinkText": "Slumphjul",
       "sec6TextMiddle": "lyser. Du kan lägga bokstavligen vad som helst på hjulets skivor, ändra alla färger för att matcha ett evenemangstema och till och med justera oddsen om du vill att vissa utmaningar ska dyka upp mindre ofta. Genom att dra nytta av det huvudsakliga",
       "sec6LinkText2": "huvudspinnverktyget",
       "sec6TextEnd": ", kan du designa en helt anpassad spelkvällsupplevelse som dina gäster aldrig kommer att glömma."

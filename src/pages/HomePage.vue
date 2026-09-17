@@ -4,6 +4,11 @@
 
     <main class="main-content">
       <MainWheelSpinner />
+
+      <section class="hero-section">
+        <h1 class="hero-title">{{ $t('home.mainTitle') }}</h1>
+      </section>
+
       <div class="wheel-description">
         <h2>{{ $t('home.whatIsTitle') }}</h2>
         <p v-html="$t('home.whatIsDesc')"></p>
@@ -105,6 +110,21 @@ const localePath = (path) => {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* ── Hero (page H1 — the header logo is not a heading) ── */
+.hero-section {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 40px;
+}
+
+.hero-title {
+  font-size: 2.4rem;
+  color: #6c5ce7;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  animation: fadeIn 0.5s ease-in;
 }
 
 .wheel-description {

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <script>
+      // Set lang/dir before first paint. prerender.js bakes the correct values
+      // into every generated page; this keeps deep client-side entries correct.
       (function() {
         var path = window.location.pathname;
         var lang = path.split('/')[1];
@@ -11,6 +13,7 @@
         } else {
           document.documentElement.lang = 'en';
         }
+        document.documentElement.dir = (lang === 'ar' || lang === 'he') ? 'rtl' : 'ltr';
       })();
     </script>
   <!-- Google Tag Manager -->
@@ -23,6 +26,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Spin the wheel for random decisions! Create custom wheels, use the Yes/No spinner, or generate random choices. Fun, free, and easy decision-making tool."> <!-- Updated Description -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta name="keywords" content="wheel spinner, decision maker, random picker, yes no wheel, maybe wheel">
   <meta name="author" content="Random Wheel">
   <meta property="og:site_name" content="Rando Wheel">
@@ -40,7 +44,7 @@
   <link rel="icon" type="image/svg+xml" href="/logo_random_wheel.svg">
   <title>Wheel Spinner - Random Choice Picker</title>
     
-    <!-- hreflang tags are injected per-page by prerender.js at build time -->
+    <!-- canonical, hreflang, JSON-LD and the crawlable page body are injected per URL by prerender.js at build time -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2684466850314935"
      crossorigin="anonymous"></script>
 </head>

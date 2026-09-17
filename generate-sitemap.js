@@ -1,111 +1,107 @@
+/**
+ * generate-sitemap.js — writes public/sitemap.xml and public/robots.txt.
+ *
+ * Runs before `vite build` so the sitemap is copied into dist/. Content facts
+ * come from seo-config.js, which prerender.js uses too, so the sitemap,
+ * canonical tags and hreflang tags always describe the same set of URLs.
+ *
+ * Improvements over the previous version:
+ *   • only URLs that actually exist with localized content are listed
+ *   • xhtml:link alternates are reciprocal across all listed URLs
+ *   • <lastmod> is the real last content change (git/file date), not "today"
+ *     for all 150 URLs on every build
+ */
+
 const fs = require('fs');
 const path = require('path');
 
-const DOMAIN = 'https://randowheel.com';
-const SUPPORTED_LOCALES = [
-    'en', 'es', 'de', 'ja', 'fr', 'pt', 'zh-CN', 'ar', 'it', 'ru', 'hi', 'nl', 'tr', 'ko', 'id', 'vi', 'pl', 'th', 'sv', 'el', 'ro', 'cs', 'hu', 'bn', 'he'
-];
+const {
+    DOMAIN,
+    BASE_ROUTES,
+    SUPPORTED_LOCALES,
+    translatedLocales,
+    pageUrl,
+    pageLastModified,
+    isTranslated
+} = require('./seo-config.js');
 
-const BASE_ROUTES = [
-    '', // Home
-    'wheel-of-names',
-    'yes-no-wheel',
-    'food-wheel',
-    'spin-the-wheel',
-    'twister-spinner'
-];
-
-const PAGE_TITLE_KEYS = {
-    '': 'home.mainTitle',
-    'wheel-of-names': 'namesPage.title',
-    'yes-no-wheel': 'yesNoPage.title',
-    'food-wheel': 'foodPage.title',
-    'spin-the-wheel': 'spinPage.title',
-    'twister-spinner': 'twisterPage.title'
-};
-
-// Load all locale data once
-const LOCALE_DATA = {};
-SUPPORTED_LOCALES.forEach(lang => {
-    const p = path.join(__dirname, 'src', 'locales', `${lang}.json`);
-    if (fs.existsSync(p)) {
-        LOCALE_DATA[lang] = JSON.parse(fs.readFileSync(p, 'utf8'));
-    }
-});
-
-function hasTranslation(localeData, route) {
-    if (!localeData) return false;
-    const key = PAGE_TITLE_KEYS[route];
-    if (!key) return true;
-    const parts = key.split('.');
-    let current = localeData;
-    for (const part of parts) {
-        if (!current[part]) return false;
-        current = current[part];
-    }
-    return true;
+function escapeXml(value) {
+    return String(value == null ? '' : value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&apos;');
 }
 
 function generateSitemap() {
-    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
+    const lines = [];
+    lines.push('<?xml version="1.0" encoding="UTF-8"?>');
+    lines.push('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">');
 
-    const lastmod = new Date().toISOString().split('T')[0];
+    let urlCount = 0;
+    let alternativeCount = 0;
 
     for (const route of BASE_ROUTES) {
-        for (const locale of SUPPORTED_LOCALES) {
-            // Only add this URL if the page is actually translated in this locale
-            if (!hasTranslation(LOCALE_DATA[locale], route)) continue;
+        const locales = translatedLocales(route);
+        if (!locales.length) continue;
 
-            const isDefault = locale === 'en';
-            const localePrefix = isDefault ? '' : `/${locale}`;
-            const pathSuffix = route ? `/${route}` : '';
-            const loc = `${DOMAIN}${localePrefix}${pathSuffix}`;
+        // Reciprocal alternate set shared by every URL of this route
+        const alternates = [];
+        for (const locale of locales) {
+            alternates.push({ hreflang: locale, href: pageUrl(locale, route) });
+            if (locale === 'zh-CN') alternates.push({ hreflang: 'zh', href: pageUrl(locale, route) });
+        }
+        alternates.push({ hreflang: 'x-default', href: pageUrl('en', route) });
 
-            xml += '  <url>\n';
-            xml += `    <loc>${loc}</loc>\n`;
-            xml += `    <lastmod>${lastmod}</lastmod>\n`;
-            xml += `    <changefreq>monthly</changefreq>\n`;
-            xml += `    <priority>${route === '' ? '1.0' : '0.8'}</priority>\n`;
+        for (const locale of locales) {
+            const loc = pageUrl(locale, route);
+            const lastmod = pageLastModified(locale, route);
 
-            // Add hreflang for ALL locales that have this page translated
-            for (const altLocale of SUPPORTED_LOCALES) {
-                if (!hasTranslation(LOCALE_DATA[altLocale], route)) continue;
-
-                const altIsDefault = altLocale === 'en';
-                const altPrefix = altIsDefault ? '' : `/${altLocale}`;
-                const altLoc = `${DOMAIN}${altPrefix}${pathSuffix}`;
-                xml += `    <xhtml:link rel="alternate" hreflang="${altLocale}" href="${altLoc}"/>\n`;
-
-                // Add generic 'zh' for 'zh-CN' to satisfy SEO suggestions
-                if (altLocale === 'zh-CN') {
-                    xml += `    <xhtml:link rel="alternate" hreflang="zh" href="${altLoc}"/>\n`;
-                }
+            lines.push('  <url>');
+            lines.push(`    <loc>${escapeXml(loc)}</loc>`);
+            if (lastmod) lines.push(`    <lastmod>${lastmod}</lastmod>`);
+            lines.push(`    <priority>${route === '' ? '1.0' : '0.8'}</priority>`);
+            for (const alt of alternates) {
+                lines.push(`    <xhtml:link rel="alternate" hreflang="${escapeXml(alt.hreflang)}" href="${escapeXml(alt.href)}"/>`);
+                alternativeCount += 1;
             }
-
-            // x-default hreflang (always point to English version)
-            const xDefaultLoc = `${DOMAIN}${pathSuffix}`;
-            xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${xDefaultLoc}"/>\n`;
-
-            xml += '  </url>\n';
+            lines.push('  </url>');
+            urlCount += 1;
         }
     }
 
-    xml += '</urlset>';
+    lines.push('</urlset>');
 
     const outputPath = path.join(__dirname, 'public', 'sitemap.xml');
-    fs.writeFileSync(outputPath, xml);
-    console.log(`Sitemap generated successfully at ${outputPath}`);
+    fs.writeFileSync(outputPath, `${lines.join('\n')}\n`);
+    console.log(`Sitemap written: ${urlCount} URLs, ${alternativeCount} hreflang alternates → ${outputPath}`);
+}
+
+function generateRobots() {
+    // Widget/config routes stay crawlable on purpose: they carry a `noindex`
+    // meta tag, and blocking them in robots.txt would hide that directive
+    // (Google cannot read a noindex on a URL it is not allowed to fetch).
+    const robots = [
+        'User-agent: *',
+        'Allow: /',
+        '',
+        `Sitemap: ${DOMAIN}/sitemap.xml`,
+        ''
+    ].join('\n');
+    const outputPath = path.join(__dirname, 'public', 'robots.txt');
+    fs.writeFileSync(outputPath, robots);
+    console.log(`robots.txt written → ${outputPath}`);
 }
 
 generateSitemap();
+generateRobots();
 
-// Also generate robots.txt while we're at it
-const robotsTxt = `User-agent: *
-Allow: /
-
-Sitemap: ${DOMAIN}/sitemap.xml
-`;
-
-fs.writeFileSync(path.join(__dirname, 'public', 'robots.txt'), robotsTxt);
-console.log('robots.txt generated successfully.');
+// Sanity guard: warn (do not fail) when a locale has no content for a route.
+for (const route of BASE_ROUTES) {
+    for (const locale of SUPPORTED_LOCALES) {
+        if (!isTranslated(locale, route)) {
+            console.warn(`  ⚠ ${locale}/${route || '(home)'} has no localized content — excluded from sitemap & hreflang`);
+        }
+    }
+}

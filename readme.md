@@ -233,3 +233,44 @@ Import and register the component in your Vue component:
 
 ## License
 This project is licensed under the MIT License.
+
+---
+
+## Static prerendering & SEO pipeline (randowheel.com)
+
+Every public URL is generated as a complete static HTML file at build time, so
+crawlers that do not execute JavaScript still receive the real localized page
+(title, description, H1, body copy, FAQ, internal links).
+
+### Build
+
+```sh
+npm run build      # generate-sitemap.js → vite build → prerender.js → verify-seo.js
+npm run verify-seo # re-run only the SEO checks against dist/
+```
+
+| File | Responsibility |
+|------|----------------|
+| `seo-config.js` | Single source of truth: locales, routes, URL helpers, hreflang sets, honest `lastmod` dates |
+| `seo-content.js` | Builds the localized crawlable page body from the locale files |
+| `prerender.js` | Writes `dist/<path>/index.html` for 25 locales × 6 content routes (+ noindex widget routes) with canonical, hreflang, JSON-LD and body content |
+| `generate-sitemap.js` | Writes `public/sitemap.xml` (150 URLs, reciprocal `xhtml:link` alternates) and `public/robots.txt` |
+| `verify-seo.js` | Fails the build on: missing/duplicate titles or descriptions, duplicate page text, broken canonical or hreflang reciprocity, copied-and-pasted structured data, hidden-text patterns, sitemap/page drift |
+
+### Conventions to keep
+
+- **One `<h1>` per page.** Site chrome (logo, footer) must not use `<h1>`.
+- **Per-URL structured data** is emitted by `prerender.js` and refreshed by the
+  router guard in `src/main.js`. Never hardcode page-level JSON-LD inside a
+  page component — a fixed `url` would describe the English page from every
+  language version.
+- **Canonical is always self-referencing**, including `noindex` widget routes
+  (`/embed*`, `/configure-embed`), which must never claim the home page.
+- **All localization lives in `src/locales/*.json`.** A string left in English
+  makes that page a duplicate of the English one; `verify-seo.js` catches the
+  cases that matter (titles, descriptions, whole-page text).
+- **No hidden text.** Do not re-introduce off-screen (`left:-9999px`) or
+  `aria-hidden` copy blocks; prerendered content is real, visible markup.
+- `robots.txt` must not disallow the widget routes — they rely on their
+  `noindex` meta tag, which Google can only read if it may fetch the URL.
+

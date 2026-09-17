@@ -22,16 +22,52 @@
       </div>
 
     </div>
+
+    <!--
+      Visible language links. Unlike the header dropdown (which only exists
+      while open), these are always in the DOM as real <a href> elements, so
+      crawlers can follow every language variant of the current page from any
+      page of the site.
+    -->
+    <div class="footer-content footer-languages">
+      <div class="footer-section full-width">
+        <h3 class="footer-title">{{ $t('footer.languages') || 'Languages' }}</h3>
+        <div class="language-links">
+          <router-link
+            v-for="loc in supportedLocales"
+            :key="loc"
+            :to="getLangPath(loc)"
+            class="lang-link"
+            :hreflang="loc"
+            :lang="loc"
+            :aria-current="loc === locale ? 'true' : null"
+          >{{ getLangName(loc) }}</router-link>
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 
 <script setup>
 import { useI18n } from 'vue-i18n';
 import { useRoute } from 'vue-router';
-
+import { SUPPORTED_LOCALES } from '../i18n.js';
 
 const { locale } = useI18n();
 const route = useRoute();
+
+const supportedLocales = SUPPORTED_LOCALES;
+
+const LANG_NAMES = {
+  'en': 'English', 'es': 'Español', 'de': 'Deutsch', 'ja': '日本語', 'fr': 'Français',
+  'pt': 'Português', 'zh-CN': '简体中文', 'ar': 'العربية', 'it': 'Italiano', 'ru': 'Русский',
+  'hi': 'हिन्दी', 'nl': 'Nederlands', 'tr': 'Türkçe', 'ko': '한국어', 'id': 'Bahasa Indonesia',
+  'vi': 'Tiếng Việt', 'pl': 'Polski', 'th': 'ไทย', 'sv': 'Svenska', 'el': 'Ελληνικά',
+  'ro': 'Română', 'cs': 'Čeština', 'hu': 'Magyar', 'bn': 'বাংলা', 'he': 'עברית'
+};
+
+const getLangName = (loc) => LANG_NAMES[loc] || loc.toUpperCase();
+
 const localePath = (path) => {
   const currentLang = locale.value;
   if (currentLang === 'en') return path;
@@ -39,7 +75,16 @@ const localePath = (path) => {
   return `/${currentLang}${path}`;
 };
 
-
+/** Same page in another language — used for crawlable hreflang links. */
+const getLangPath = (targetLoc) => {
+  let currentPath = route.path || '/';
+  const localePrefixRegex = new RegExp(`^/(${supportedLocales.join('|')})(/|$)`);
+  if (localePrefixRegex.test(currentPath)) {
+    currentPath = currentPath.replace(localePrefixRegex, '/');
+  }
+  if (targetLoc === 'en') return currentPath;
+  return `/${targetLoc}${currentPath === '/' ? '' : currentPath}`;
+};
 </script>
 
 <style scoped>
@@ -106,6 +151,12 @@ const localePath = (path) => {
 
 .full-width {
   flex: 1 1 100%;
+}
+
+.footer-languages {
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid #e6e6e6;
 }
 
 .language-links {

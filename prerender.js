@@ -1,116 +1,98 @@
+/**
+ * prerender.js — static site generation for every public URL.
+ *
+ * For each locale × route it writes dist/<path>/index.html containing:
+ *   • localized <title>, meta description, Open Graph / Twitter tags
+ *   • a self-referencing canonical + reciprocal hreflang set
+ *   • a JSON-LD graph (WebPage / WebApplication / FAQPage / BreadcrumbList)
+ *   • real localized page content inside <div id="app">
+ *
+ * The content is the same copy the Vue components render from the locale
+ * files, so a crawler that does not execute JavaScript still sees a complete
+ * page, and a visitor sees that content until the app mounts over it.
+ *
+ * Run after `vite build` (see the "build" script in package.json).
+ */
+
 const fs = require('fs');
 const path = require('path');
 
-const DOMAIN = 'https://randowheel.com';
+const cfg = require('./seo-config.js');
+const content = require('./seo-content.js');
 
-const SUPPORTED_LOCALES = [
-    'en', 'es', 'de', 'ja', 'fr', 'pt', 'zh-CN', 'ar', 'it', 'ru', 'hi', 'nl', 'tr', 'ko', 'id', 'vi', 'pl', 'th', 'sv', 'el', 'ro', 'cs', 'hu', 'bn', 'he'
-];
+const {
+    DOMAIN,
+    SITE_NAME,
+    SITE_PUBLISHED,
+    RTL_LOCALES,
+    SUPPORTED_LOCALES,
+    BASE_ROUTES,
+    NON_CONTENT_ROUTES,
+    ROUTE_SECTIONS,
+    ROUTE_LABELS,
+    PAGE_META_KEYS,
+    WIDGET_META_KEYS,
+    LANG_NAMES,
+    ROBOTS_INDEX,
+    ROBOTS_NOINDEX,
+    t,
+    node,
+    stripTags,
+    buildDescription,
+    localePrefix,
+    routePath,
+    pageUrl,
+    isTranslated,
+    hreflangEntries,
+    pageLastModified
+} = cfg;
 
-const BASE_ROUTES = [
-    '', // Home
-    'wheel-of-names',
-    'yes-no-wheel',
-    'food-wheel',
-    'spin-the-wheel',
-    'twister-spinner'
-];
+const DIST_DIR = path.join(__dirname, 'dist');
+const INDEX_HTML_PATH = path.join(DIST_DIR, 'index.html');
 
-// Human-readable labels for each route (English, crawlers don't need localization)
-const ROUTE_LABELS = {
-    '': 'Home — Random Wheel Spinner',
-    'wheel-of-names': 'Wheel of Names',
-    'yes-no-wheel': 'Yes or No Wheel',
-    'food-wheel': 'Food Wheel',
-    'spin-the-wheel': 'Spin the Wheel',
-    'twister-spinner': 'Twister Spinner',
-};
-
-// ─── Localized metadata (per-page title / description / H1) ──────────────────
-// Load all locale data so every prerendered URL gets unique, localized
-// <title>, meta description and crawlable text. Without this, all 150 URLs
-// serve the same generic English shell and Google treats them as duplicates
-// ("Discovered – currently not indexed").
-const LOCALE_DATA = {};
-SUPPORTED_LOCALES.forEach(lang => {
-    const p = path.join(__dirname, 'src', 'locales', `${lang}.json`);
-    if (fs.existsSync(p)) {
-        try {
-            LOCALE_DATA[lang] = JSON.parse(fs.readFileSync(p, 'utf8'));
-        } catch (e) {
-            console.warn(`  ⚠ Could not parse ${lang}.json: ${e.message}`);
-        }
-    }
-});
-
-const PAGE_META_KEYS = {
-    '': { titleKey: 'home.mainTitle', descKey: 'home.whatIsDesc', h1Key: 'home.mainTitle' },
-    'wheel-of-names': { titleKey: 'namesPage.title', descKey: 'namesPage.heroDesc', h1Key: 'namesPage.heroTitle' },
-    'yes-no-wheel': { titleKey: 'yesNoPage.title', descKey: 'yesNoPage.heroDesc', h1Key: 'yesNoPage.heroTitle' },
-    'food-wheel': { titleKey: 'foodPage.title', descKey: 'foodPage.heroDesc', h1Key: 'foodPage.heroTitle' },
-    'spin-the-wheel': { titleKey: 'spinPage.title', descKey: 'spinPage.heroDesc', h1Key: 'spinPage.heroTitle' },
-    'twister-spinner': { titleKey: 'twisterPage.title', descKey: 'twisterPage.heroDesc', h1Key: 'twisterPage.heroTitle' }
-};
-
-function getKey(obj, keyPath) {
-    if (!obj || !keyPath) return undefined;
-    return keyPath.split('.').reduce((acc, part) => (acc == null ? undefined : acc[part]), obj);
+if (!fs.existsSync(INDEX_HTML_PATH)) {
+    console.error('Build output not found! Run "vite build" first.');
+    process.exit(1);
 }
 
-function stripTags(html) {
-    return String(html == null ? '' : html)
-        .replace(/<[^>]*>/g, ' ')
-        .replace(/&nbsp;/gi, ' ')
-        .replace(/\s+/g, ' ')
-        .trim();
+const baseHtml = fs.readFileSync(INDEX_HTML_PATH, 'utf8');
+
+if (!baseHtml.includes('<div id="app"></div>')) {
+    console.error('Could not find <div id="app"></div> in dist/index.html — aborting.');
+    process.exit(1);
 }
 
-function escapeXml(str) {
-    return String(str == null ? '' : str)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&apos;');
+// ─── Helpers ─────────────────────────────────────────────────────────────────
+
+const escapeHtml = content.esc;
+
+/** Replace the first match of `re`, or append `tag` before </head> when absent. */
+function replaceOrInsert(html, re, tag) {
+    if (re.test(html)) return html.replace(re, tag);
+    return html.replace('</head>', `  ${tag}\n</head>`);
 }
 
-/**
- * Build localized title/description/H1 for a locale × route combo.
- * Falls back to English when a locale lacks a key.
- */
+/** Build the <link rel="alternate"> block for a route. */
+function buildHreflangTags(route) {
+    return hreflangEntries(route)
+        .map((entry) => `  <link rel="alternate" hreflang="${escapeHtml(entry.hreflang)}" href="${escapeHtml(entry.href)}" />`)
+        .join('\n');
+}
+
+// ─── Localized metadata ──────────────────────────────────────────────────────
+
 function getLocalizedMeta(locale, route) {
-    const keys = PAGE_META_KEYS[route] || PAGE_META_KEYS[''];
-    const data = LOCALE_DATA[locale] || {};
-    const enData = LOCALE_DATA['en'] || {};
-    const brand = getKey(data, 'footer.randoWheel') || getKey(enData, 'footer.randoWheel') || 'Rando Wheel';
-    const title = getKey(data, keys.titleKey) || getKey(enData, keys.titleKey) || 'Random Wheel';
-    const h1 = getKey(data, keys.h1Key) || title;
-    const description = stripTags(getKey(data, keys.descKey)) || stripTags(getKey(enData, keys.descKey)) || '';
+    const brand = t(locale, 'footer.randoWheel') || SITE_NAME;
+    const widget = WIDGET_META_KEYS[route];
+    const keys = widget || PAGE_META_KEYS[route] || PAGE_META_KEYS[''];
+    const title = stripTags(t(locale, keys.titleKey)) || ROUTE_LABELS[route] || SITE_NAME;
+    const h1 = widget ? title : (stripTags(t(locale, keys.h1Key)) || title);
+    const description = buildDescription(locale, route);
     return { title: `${title} | ${brand}`, description, h1 };
 }
 
-/**
- * Localized crawlable text block for JS-disabled crawlers, so the raw HTML
- * of every URL is unique (title + H1 + description in the page's language).
- */
-function buildLocalizedNoscript(locale, route) {
-    const meta = getLocalizedMeta(locale, route);
-    const localePrefix = locale === 'en' ? '' : `/${locale}`;
-    const pathSuffix = route ? `/${route}` : '';
-    const url = `${DOMAIN}${localePrefix}${pathSuffix}`;
-    return `
-  <noscript>
-    <div style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">
-      <h1>${escapeXml(meta.h1)}</h1>
-      <p>${escapeXml(meta.description)}</p>
-      <p><a href="${escapeXml(url)}">${escapeXml(url)}</a></p>
-    </div>
-  </noscript>`;
-}
+// ─── Structured data ─────────────────────────────────────────────────────────
 
-// ─── JSON-LD structured data (WebSite/Organization/WebApplication/FAQPage) ──
-// Mirrors the schema graph used by top wheel-spinner sites: rich entities give
-// Google a precise understanding of the tool, its features and its FAQ content.
 const PAGE_ALT_NAMES = {
     '': ['Random Wheel Spinner', 'Wheel Spinner', 'Spin the Wheel', 'Random Wheel', 'Random Picker Wheel'],
     'wheel-of-names': ['Wheel of Names', 'Random Name Picker', 'Name Wheel', 'Name Picker'],
@@ -122,23 +104,21 @@ const PAGE_ALT_NAMES = {
 
 const APP_FEATURES = ['Free to use', 'Customizable wheel', 'Weighted options', 'No sign-up required', 'Works on any device'];
 
-const SITE_PUBLISHED = '2025-01-01';
-
 /** Localized FAQ entities for FAQPage schema (pages that ship a `faqs` block). */
 function buildFaqEntities(locale, route) {
-    const sectionByRoute = { 'wheel-of-names': 'namesPage', 'yes-no-wheel': 'yesNoPage', 'food-wheel': 'foodPage', 'twister-spinner': 'twisterPage' };
-    const section = sectionByRoute[route];
+    const section = ROUTE_SECTIONS[route];
     if (!section) return null;
-    const data = LOCALE_DATA[locale] || LOCALE_DATA['en'] || {};
-    const faqs = (data[section] || {}).faqs;
-    if (!faqs) return null;
+    const faqs = node(locale, `${section}.faqs`);
+    if (!faqs || typeof faqs !== 'object') return null;
     const items = [];
     let i = 1;
     while (faqs[`${i}Title`] != null && faqs[`${i}Desc`] != null) {
-        const q = stripTags(faqs[`${i}Title`]);
-        const a = stripTags(faqs[`${i}Desc`]);
-        if (q && a) items.push({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } });
-        i++;
+        const question = stripTags(faqs[`${i}Title`]);
+        const answer = stripTags(faqs[`${i}Desc`]);
+        if (question && answer) {
+            items.push({ '@type': 'Question', name: question, acceptedAnswer: { '@type': 'Answer', text: answer } });
+        }
+        i += 1;
     }
     return items.length ? items : null;
 }
@@ -146,13 +126,11 @@ function buildFaqEntities(locale, route) {
 /** Full schema.org @graph for one locale × route page. */
 function buildJsonLd(locale, route) {
     const meta = getLocalizedMeta(locale, route);
-    const localePrefix = locale === 'en' ? '' : `/${locale}`;
-    const pathSuffix = route ? `/${route}` : '';
-    const url = `${DOMAIN}${localePrefix}${pathSuffix}`;
-    const today = new Date().toISOString().split('T')[0];
+    const url = pageUrl(locale, route);
+    const lastmod = pageLastModified(locale, route) || SITE_PUBLISHED;
     const orgId = `${DOMAIN}/#organization`;
     const websiteId = `${DOMAIN}/#website`;
-    const webappId = `${DOMAIN}/#webapp`;
+    const webappId = `${url}#webapp`;
 
     const graph = [
         {
@@ -165,12 +143,13 @@ function buildJsonLd(locale, route) {
             isPartOf: { '@id': websiteId },
             about: { '@id': webappId },
             datePublished: SITE_PUBLISHED,
-            dateModified: today
+            dateModified: lastmod,
+            primaryImageOfPage: { '@type': 'ImageObject', url: `${DOMAIN}/preview.png` }
         },
         {
             '@id': webappId,
             '@type': 'WebApplication',
-            name: meta.title,
+            name: meta.h1,
             alternateName: PAGE_ALT_NAMES[route] || [],
             description: meta.description,
             url,
@@ -179,7 +158,7 @@ function buildJsonLd(locale, route) {
             operatingSystem: 'Any',
             browserRequirements: 'Requires JavaScript',
             datePublished: SITE_PUBLISHED,
-            dateModified: today,
+            dateModified: lastmod,
             isPartOf: { '@id': websiteId },
             publisher: { '@id': orgId },
             offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
@@ -188,7 +167,7 @@ function buildJsonLd(locale, route) {
         {
             '@id': orgId,
             '@type': 'Organization',
-            name: 'Rando Wheel',
+            name: SITE_NAME,
             url: DOMAIN,
             logo: { '@type': 'ImageObject', url: `${DOMAIN}/logo_random_wheel.svg` },
             description: 'Rando Wheel provides free online wheel spinners for random selection, decision making, giveaways, classrooms, and party games.'
@@ -196,28 +175,31 @@ function buildJsonLd(locale, route) {
         {
             '@id': websiteId,
             '@type': 'WebSite',
-            name: 'Rando Wheel',
+            name: SITE_NAME,
             url: DOMAIN,
-            inLanguage: 'en',
             publisher: { '@id': orgId }
         }
     ];
 
     const faq = buildFaqEntities(locale, route);
     if (faq) {
-        graph.push({ '@id': `${url}#faq`, '@type': 'FAQPage', mainEntity: faq });
+        graph.push({
+            '@id': `${url}#faq`,
+            '@type': 'FAQPage',
+            inLanguage: locale,
+            isPartOf: { '@id': websiteId },
+            mainEntity: faq
+        });
     }
 
-    // BreadcrumbList for tool subpages (Home → Page), localized page name
     if (route) {
         const keys = PAGE_META_KEYS[route] || PAGE_META_KEYS[''];
-        const data = LOCALE_DATA[locale] || LOCALE_DATA['en'] || {};
-        const pageName = getKey(data, keys.titleKey) || getKey(LOCALE_DATA['en'], keys.titleKey) || ROUTE_LABELS[route];
+        const pageName = stripTags(t(locale, keys.titleKey)) || ROUTE_LABELS[route];
         graph.push({
             '@id': `${url}#breadcrumb`,
             '@type': 'BreadcrumbList',
             itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: `${DOMAIN}${localePrefix || '/'}` },
+                { '@type': 'ListItem', position: 1, name: stripTags(t(locale, 'header.randomWheel')) || 'Home', item: `${DOMAIN}${localePrefix(locale) || '/'}` },
                 { '@type': 'ListItem', position: 2, name: pageName, item: url }
             ]
         });
@@ -227,173 +209,125 @@ function buildJsonLd(locale, route) {
 }
 
 function buildJsonLdTag(locale, route) {
-    // Escape "</script>" inside string values so the JSON never terminates early
     const json = JSON.stringify(buildJsonLd(locale, route), null, 2).replace(/<\//g, '<\\/');
     return `  <script type="application/ld+json">\n${json}\n  </script>`;
 }
 
-const DIST_DIR = path.join(__dirname, 'dist');
-const INDEX_HTML_PATH = path.join(DIST_DIR, 'index.html');
-
-if (!fs.existsSync(INDEX_HTML_PATH)) {
-    console.error('Build output not found! Run "vite build" first.');
-    process.exit(1);
-}
-
-const originalHtml = fs.readFileSync(INDEX_HTML_PATH, 'utf8');
-
-// ─── Helpers ─────────────────────────────────────────────────────────────────
+// ─── Page assembly ───────────────────────────────────────────────────────────
 
 /**
- * Build all hreflang <link> tags for a given route path suffix.
- * Every language variant points to that page in its own language.
- * x-default always points to the English (root) version.
- */
-function buildHreflangTags(pathSuffix) {
-    const lines = [];
-    SUPPORTED_LOCALES.forEach(lang => {
-        const prefix = lang === 'en' ? '' : `/${lang}`;
-        const href = `${DOMAIN}${prefix}${pathSuffix}`;
-        lines.push(`  <link rel="alternate" hreflang="${lang}" href="${href}" />`);
-        if (lang === 'zh-CN') {
-            lines.push(`  <link rel="alternate" hreflang="zh" href="${href}" />`);
-        }
-    });
-    lines.push(`  <link rel="alternate" hreflang="x-default" href="${DOMAIN}${pathSuffix}" />`);
-    return lines.join('\n');
-}
-
-/**
- * Build a static crawlable navigation block with outgoing <a> links.
- * This is injected into every prerendered page so Googlebot sees proper
- * outgoing internal links even without executing JavaScript.
+ * Builds one complete HTML document.
  *
- * @param {string} currentRoute  - The route slug for this page (e.g. 'yes-no-wheel')
- * @param {string} locale        - The locale code (e.g. 'es', 'en')
+ * @param {object} options
+ * @param {string} options.locale
+ * @param {string} options.route          '' for home
+ * @param {boolean} options.indexable     false → noindex, no hreflang, no JSON-LD
+ * @param {string} options.bodyHtml       markup placed inside <div id="app">
  */
-function buildStaticNav(currentRoute, locale) {
-    const localePrefix = locale === 'en' ? '' : `/${locale}`;
+function buildPage({ locale, route, indexable, bodyHtml }) {
+    const meta = getLocalizedMeta(locale, route);
+    const url = pageUrl(locale, route);
+    const dir = RTL_LOCALES.includes(locale) ? 'rtl' : 'ltr';
+    let html = baseHtml;
 
-    // Build nav links — skip current page to keep it clean, but always include all pages
-    const navLinks = BASE_ROUTES.map(route => {
-        const href = `${DOMAIN}${localePrefix}${route ? `/${route}` : ''}`;
+    // <html lang dir>
+    html = html.replace(/<html(?:[^>]*)?>/i, `<html lang="${escapeHtml(locale)}" dir="${dir}">`);
+
+    // Title + description
+    html = replaceOrInsert(html, /<title>[\s\S]*?<\/title>/i, `  <title>${escapeHtml(meta.title)}</title>`);
+    html = replaceOrInsert(
+        html,
+        /<meta\s+name="description"[^>]*>/i,
+        `  <meta name="description" content="${escapeHtml(meta.description)}" />`
+    );
+    html = replaceOrInsert(
+        html,
+        /<meta\s+name="robots"[^>]*>/i,
+        `  <meta name="robots" content="${indexable ? ROBOTS_INDEX : ROBOTS_NOINDEX}" />`
+    );
+
+    // Open Graph / Twitter — localized so shared links match the page language
+    html = replaceOrInsert(html, /<meta\s+property="og:url"[^>]*>/i, `  <meta property="og:url" content="${escapeHtml(url)}" />`);
+    html = replaceOrInsert(html, /<meta\s+property="og:title"[^>]*>/i, `  <meta property="og:title" content="${escapeHtml(meta.h1)}" />`);
+    html = replaceOrInsert(html, /<meta\s+property="og:description"[^>]*>/i, `  <meta property="og:description" content="${escapeHtml(meta.description)}" />`);
+    html = replaceOrInsert(html, /<meta\s+name="twitter:title"[^>]*>/i, `  <meta name="twitter:title" content="${escapeHtml(meta.h1)}" />`);
+    html = replaceOrInsert(html, /<meta\s+name="twitter:description"[^>]*>/i, `  <meta name="twitter:description" content="${escapeHtml(meta.description)}" />`);
+
+    // Canonical + hreflang (self-referencing). Non-indexable routes get a
+    // self-canonical and no alternates so they cannot leak the home canonical.
+    const headExtras = [`  <link rel="canonical" href="${escapeHtml(url)}" />`];
+    if (indexable) headExtras.push(buildHreflangTags(route));
+    headExtras.push(`  <style id="rw-prerender-css">\n${content.buildPrerenderCss()}\n  </style>`);
+    if (indexable) headExtras.push(buildJsonLdTag(locale, route));
+    html = html.replace('</head>', `${headExtras.filter(Boolean).join('\n')}\n</head>`);
+
+    // Crawlable page body
+    html = html.replace('<div id="app"></div>', `<div id="app">\n${bodyHtml}\n</div>`);
+
+    return html;
+}
+
+/** Small noindex body for widget/config routes so they are never "empty". */
+function buildNonContentBody(locale) {
+    const links = BASE_ROUTES.map((route) => {
         const label = ROUTE_LABELS[route];
-        const isCurrent = route === currentRoute;
-        return `      <a href="${href}"${isCurrent ? ' aria-current="page"' : ''}>${label}</a>`;
+        return `        <li><a class="rw-pr-link" href="${escapeHtml(pageUrl(locale, route))}">${escapeHtml(label)}</a></li>`;
     }).join('\n');
-
-    // Also add cross-language links for this page so Google sees the language graph
-    const pathSuffix = currentRoute ? `/${currentRoute}` : '';
-    const langLinks = SUPPORTED_LOCALES.map(lang => {
-        const prefix = lang === 'en' ? '' : `/${lang}`;
-        const href = `${DOMAIN}${prefix}${pathSuffix}`;
-        return `      <a href="${href}" hreflang="${lang}">${lang.toUpperCase()}</a>`;
-    }).join('\n');
-
-    return `
-  <!-- Static crawler navigation — hidden visually, essential for SEO link graph -->
-  <noscript>
-    <nav aria-label="Site navigation" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">
-      <h2>Pages</h2>
-${navLinks}
-      <h2>Languages</h2>
-${langLinks}
-    </nav>
-  </noscript>
-  <div id="seo-nav" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
-    <nav>
-${navLinks}
-    </nav>
+    return `  <div class="rw-pr">
+    <main class="rw-pr-main">
+      <h1 class="rw-pr-h1">${escapeHtml(t(locale, 'header.embed') || 'Embed')} — ${escapeHtml(SITE_NAME)}</h1>
+      <p class="rw-pr-lead">${escapeHtml(t(locale, 'embed.settingsTitle') || 'Embeddable wheel configuration page.')}</p>
+      <section class="rw-pr-sec">
+        <h2 class="rw-pr-h2">${escapeHtml(t(locale, 'exploreMore.title') || 'Explore More Free Spinning Wheels')}</h2>
+        <ul class="rw-pr-cards">
+${links}
+        </ul>
+      </section>
+    </main>
   </div>`;
 }
 
-// ─── Processing ───────────────────────────────────────────────────────────────
+// ─── Generation ──────────────────────────────────────────────────────────────
 
-console.log('Starting Post-Build Prerendering...');
+console.log('Starting static prerender...');
 
-// ─── 1. Patch root dist/index.html (English home) ───────────────────────────
-let rootHtml = originalHtml;
-rootHtml = rootHtml.replace(/<link\s+rel="alternate"[^>]*hreflang[^>]*\/?>/gi, '');
-rootHtml = rootHtml.replace(/<link\s+rel="canonical"[^>]*\/?>/gi, '');
+let written = 0;
+function writePage(relDir, html) {
+    const outDir = path.join(DIST_DIR, relDir);
+    fs.mkdirSync(outDir, { recursive: true });
+    fs.writeFileSync(path.join(outDir, 'index.html'), html);
+    written += 1;
+}
 
-// Localized title + meta description for the EN home
-const homeMeta = getLocalizedMeta('en', '');
-rootHtml = rootHtml.replace(/<title>[\s\S]*?<\/title>/i, `  <title>${escapeXml(homeMeta.title)}</title>`);
-rootHtml = rootHtml.replace(/<meta\s+name="description"[^>]*>/i, `  <meta name="description" content="${escapeXml(homeMeta.description)}" />`);
+// 1. Content pages: every translated locale × route, plus the EN home at "/".
+for (const route of BASE_ROUTES) {
+    for (const locale of SUPPORTED_LOCALES) {
+        if (!isTranslated(locale, route)) continue;
+        const bodyHtml = content.buildContentHtml(locale, route);
+        const html = buildPage({ locale, route, indexable: true, bodyHtml });
+        writePage(routePath(locale, route), html);
+    }
+}
+console.log(`  ✓ ${written} indexable page(s) (locale × route)`);
 
-const homeHreflang = buildHreflangTags('');
-const homeCanonical = `  <link rel="canonical" href="${DOMAIN}/" />`;
-rootHtml = rootHtml.replace('</head>', `${homeCanonical}\n${homeHreflang}\n${buildJsonLdTag('en', '')}\n</head>`);
+// 2. Non-content routes (embeddable widgets + config): noindex, self-canonical.
+const nonContentBefore = written;
+for (const route of NON_CONTENT_ROUTES) {
+    for (const locale of SUPPORTED_LOCALES) {
+        const bodyHtml = buildNonContentBody(locale);
+        const html = buildPage({ locale, route, indexable: false, bodyHtml });
+        writePage(routePath(locale, route), html);
+    }
+}
+console.log(`  ✓ ${written - nonContentBefore} noindex widget page(s)`);
 
-// Inject static nav + localized text before closing </body>
-const homeNav = buildStaticNav('', 'en');
-const homeNoscript = buildLocalizedNoscript('en', '');
-rootHtml = rootHtml.replace('</body>', `${homeNav}\n${homeNoscript}\n</body>`);
+// 3. Note: every SPA route in src/main.js is covered by the two loops above,
+//    so the blanket "rewrite everything to /index.html" rule in vercel.json is
+//    no longer needed (it made unknown URLs return a 200 soft-404 copy of the
+//    home page, which Google reports as "Duplicate / Soft 404").
 
-fs.writeFileSync(INDEX_HTML_PATH, rootHtml);
-console.log('  ✓ Patched dist/index.html (EN home)');
-
-// ─── 2. Generate each locale × route combination ────────────────────────────
-SUPPORTED_LOCALES.forEach(locale => {
-    const isDefault = locale === 'en';
-
-    BASE_ROUTES.forEach(route => {
-        // English home handled above
-        if (isDefault && route === '') return;
-
-        const langPrefix = isDefault ? '' : locale;
-        const outDirPath = path.join(DIST_DIR, langPrefix, route);
-        const pathSuffix = route ? `/${route}` : '';
-        const localeUrlPrefix = isDefault ? '' : `/${locale}`;
-        const thisPageUrl = `${DOMAIN}${localeUrlPrefix}${pathSuffix}`;
-
-        // Ensure output directory exists
-        if (!fs.existsSync(outDirPath)) {
-            fs.mkdirSync(outDirPath, { recursive: true });
-        }
-
-        let html = originalHtml;
-
-        // 1. Strip stale hreflang/canonical tags from base HTML
-        html = html.replace(/<link\s+rel="alternate"[^>]*hreflang[^>]*\/?>/gi, '');
-        html = html.replace(/<link\s+rel="canonical"[^>]*\/?>/gi, '');
-
-        // 2. Set correct <html lang="...">
-        html = html.replace(/<html(?:[^>]*)?>/i, `<html lang="${locale}">`);
-
-        // 3. Inject hreflang + canonical into <head>
-        const hreflangTags = buildHreflangTags(pathSuffix);
-        const canonicalTag = `  <link rel="canonical" href="${thisPageUrl}" />`;
-        html = html.replace('</head>', `${canonicalTag}\n${hreflangTags}\n${buildJsonLdTag(locale, route)}\n</head>`);
-
-        // 4. Localized <title>, meta description and OG tags — makes the raw
-        //    HTML of every locale×route URL unique instead of one English shell
-        const meta = getLocalizedMeta(locale, route);
-        html = html.replace(/<title>[\s\S]*?<\/title>/i, `  <title>${escapeXml(meta.title)}</title>`);
-        html = html.replace(/<meta\s+name="description"[^>]*>/i, `  <meta name="description" content="${escapeXml(meta.description)}" />`);
-        html = html.replace(/<meta\s+property="og:title"[^>]*>/i, `  <meta property="og:title" content="${escapeXml(meta.h1)}" />`);
-        html = html.replace(/<meta\s+property="og:description"[^>]*>/i, `  <meta property="og:description" content="${escapeXml(meta.description)}" />`);
-        html = html.replace(/<meta\s+property="og:url"[^>]*>/i, `  <meta property="og:url" content="${escapeXml(thisPageUrl)}" />`);
-
-        // 5. Inject static crawlable nav block before </body>
-        //    This gives crawlers real outgoing <a href> links to follow
-        const staticNav = buildStaticNav(route, locale);
-        const localizedNoscript = buildLocalizedNoscript(locale, route);
-        html = html.replace('</body>', `${staticNav}\n${localizedNoscript}\n</body>`);
-
-        // Save
-        fs.writeFileSync(path.join(outDirPath, 'index.html'), html);
-    });
-});
-
-// ─── Summary ─────────────────────────────────────────────────────────────────
-const totalFiles = SUPPORTED_LOCALES.reduce((acc, locale) => {
-    return acc + BASE_ROUTES.filter(r => !(locale === 'en' && r === '')).length;
-}, 0) + 1; // +1 for root index.html
-
-console.log(`\nPrerendering complete!`);
-console.log(`✓ ${totalFiles} HTML files generated with:`);
-console.log(`  - Correct <html lang="..."> attribute`);
-console.log(`  - Per-page <link rel="canonical"> tag`);
-console.log(`  - Full hreflang tag set (${SUPPORTED_LOCALES.length} languages + zh alias + x-default)`);
-console.log(`  - Static crawlable navigation with all outgoing internal links`);
+console.log(`\nPrerender complete: ${written} HTML file(s).`);
+console.log('  - unique localized <title>, description, H1 and body copy per URL');
+console.log(`  - canonical + ${hreflangEntries('').length}-entry hreflang set (reciprocal, translated locales only)`);
+console.log('  - JSON-LD graph (WebPage, WebApplication, FAQPage, BreadcrumbList)');
+console.log('  - no hidden-text blocks: content is real, visible markup');

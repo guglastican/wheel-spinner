@@ -111,7 +111,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
+import { ref } from 'vue';
 import MainWheelSpinner from '../components/MainWheelSpinner.vue';
 import AppHeader from '../components/AppHeader.vue';
 import { useI18n } from 'vue-i18n';
@@ -135,37 +135,11 @@ const foodOptions = ref([
   {color: '#ee5253', text: 'Chinese 🥡', winCount: 0}
 ]);
 
-// Update meta tags for SEO when the component mounts
-onMounted(() => {
-  // Title is handled by the router guard in main.js
-  const existingScript = document.getElementById('food-wheel-schema');
-  if (existingScript) existingScript.remove();
-
-  const script = document.createElement('script');
-  script.id = 'food-wheel-schema';
-  script.type = 'application/ld+json';
-  script.textContent = JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Food Wheel — Random Food and Restaurant Picker",
-    "url": "https://randowheel.com/food-wheel",
-    "description": "Can't decide what to eat? Spin the Food Wheel to pick a random food, restaurant, or cuisine. A purely random decider for your meals.",
-    "applicationCategory": "UtilityApplication",
-    "operatingSystem": "Any",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "featureList": [
-      "Add foods and restaurants to the wheel",
-      "End the 'what's for dinner' debate",
-      "Colour customisation per slice",
-      "Works on mobile and desktop"
-    ]
-  });
-  document.head.appendChild(script);
-});
+// Structured data (WebPage / WebApplication / FAQPage / BreadcrumbList) is
+// generated per URL and per language at build time by prerender.js, and
+// refreshed by the router guard in main.js on client-side navigation.
+// Do not inject page-level JSON-LD here: a hardcoded schema would describe the
+// English URL from every localized page.
 </script>
 
 <style scoped>

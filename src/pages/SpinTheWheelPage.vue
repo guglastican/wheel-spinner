@@ -144,7 +144,6 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
 import MainWheelSpinner from '../components/MainWheelSpinner.vue';
 import AppHeader from '../components/AppHeader.vue';
 import { useI18n } from 'vue-i18n';
@@ -157,38 +156,11 @@ const localePath = (path) => {
   return `/${currentLang}${path}`;
 };
 
-// Update meta tags for SEO when the component mounts
-onMounted(() => {
-  // Title is handled by the router guard in main.js
-  const existingScript = document.getElementById('spin-wheel-schema');
-  if (existingScript) existingScript.remove();
-
-  const script = document.createElement('script');
-  script.id = 'spin-wheel-schema';
-  script.type = 'application/ld+json';
-  script.textContent = JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Spin the Wheel — Custom Random Picker",
-    "url": "https://randowheel.com/spin-the-wheel",
-    "description": "Create your own custom Spin the Wheel to make decisions, play games, or pick a random winner. Enter your choices, spin the wheel, and let the fun begin!",
-    "applicationCategory": "UtilityApplication",
-    "operatingSystem": "Any",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "featureList": [
-      "Add unlimited custom options",
-      "Customise slice colours",
-      "Fully random spinning algorithm",
-      "Track results",
-      "Works on mobile and desktop"
-    ]
-  });
-  document.head.appendChild(script);
-});
+// Structured data (WebPage / WebApplication / FAQPage / BreadcrumbList) is
+// generated per URL and per language at build time by prerender.js, and
+// refreshed by the router guard in main.js on client-side navigation.
+// Do not inject page-level JSON-LD here: a hardcoded schema would describe the
+// English URL from every localized page.
 </script>
 
 <style scoped>

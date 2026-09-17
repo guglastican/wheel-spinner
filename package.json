@@ -6,7 +6,9 @@
   "homepage": "https://github.com/ilyasozkurt/vue-wheel-spinner",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node prerender.js"
+    "sitemap": "node generate-sitemap.js",
+    "build": "node generate-sitemap.js && vite build && node prerender.js && node verify-seo.js",
+    "verify-seo": "node verify-seo.js"
   },
   "author": {
     "name": "İlyas Özkurt",
