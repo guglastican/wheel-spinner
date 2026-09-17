@@ -124,6 +124,54 @@ function check(label, condition, detail = '') {
     console.log(`  [${condition ? 'PASS' : 'FAIL'}] ${label}${detail ? ` — ${detail}` : ''}`);
 }
 
+/**
+ * Turns sampled canvas angles into one monotonic rotation curve.
+ * A spin sets the transform to a raw, ever-growing angle and then normalises it
+ * to 0..360 when it stops (a jump of thousands of degrees) — that jump must not
+ * be mistaken for motion. Wraps *during* the hold spin are small (< 360) and
+ * are genuine forward movement.
+ */
+function unwrapAngles(trace) {
+    const frames = [];
+    let cumulative = 0;
+    for (let i = 0; i < trace.length; i += 1) {
+        if (i > 0) {
+            const raw = trace[i][1] - trace[i - 1][1];
+            let delta = ((raw % 360) + 360) % 360;
+            if (raw < -360) delta = 0; // normalisation jump at the end of a spin
+            cumulative += delta;
+        }
+        frames.push({ t: trace[i][0] - trace[0][0], angle: cumulative });
+    }
+    return frames;
+}
+
+/** Speed (deg/s) measured over a sliding window, tolerant of dropped frames. */
+function speedSeries(frames, windowMs = 100) {
+    const series = [];
+    const duration = frames[frames.length - 1].t - frames[0].t;
+    for (let i = 1; i < frames.length; i += 1) {
+        let j = i - 1;
+        while (j > 0 && frames[i].t - frames[j].t < windowMs) j -= 1;
+        const dt = (frames[i].t - frames[j].t) / 1000;
+        if (dt < windowMs * 0.8 / 1000) continue;
+        series.push({
+            t: frames[i].t / 1000,
+            v: (frames[i].angle - frames[j].angle) / dt,
+            progress: duration > 0 ? frames[i].t / duration : 0
+        });
+    }
+    return series;
+}
+
+/** Average speed between two points in time (ms). */
+function rateBetween(frames, fromMs, toMs) {
+    const from = frames.find((f) => f.t >= fromMs);
+    const to = [...frames].reverse().find((f) => f.t <= toMs);
+    if (!from || !to || to.t <= from.t) return 0;
+    return ((to.angle - from.angle) / (to.t - from.t)) * 1000;
+}
+
 (async () => {
     const server = await startServer();
     const chrome = spawn(CHROME, [
@@ -298,6 +346,124 @@ function check(label, condition, detail = '') {
             check(`${sound.url} decodes as audio`, sound.duration > 0.01 && !sound.error,
                 `${sound.bytes} bytes, ${sound.duration.toFixed(2)}s${sound.error ? `, error: ${sound.error}` : ''}`);
         }
+
+        // ── Spin physics: quick launch, then a friction coast to a dead stop ──
+        // Samples the canvas rotation every frame and rebuilds the speed curve,
+        // because "the wheel does not feel natural" is a velocity-profile bug.
+        console.log('\nSpin physics (Fast preset)');
+        client.events.length = 0;
+        await client.send('Page.navigate', { url: `${BASE}/food-wheel` });
+        await sleep(3000);
+        const items = await evaluate(`[...document.querySelectorAll('.item-row .item-text')].map(e => e.textContent.trim())`);
+        await tab('Spin');
+        await sleep(300);
+        await evaluate(`[...document.querySelectorAll('.segment-btn')].find(b => b.textContent.includes('Fast')).click()`);
+        await sleep(200);
+        await evaluate(`(() => {
+          window.__trace = [];
+          window.__tracing = true;
+          const canvas = document.querySelector('canvas');
+          const sample = () => {
+            const match = /rotate3d\\(0, 0, 1, ([\\d.eE+-]+)deg\\)/.exec(canvas.style.transform || '');
+            if (match) window.__trace.push([performance.now(), parseFloat(match[1])]);
+            if (window.__tracing) requestAnimationFrame(sample);
+          };
+          requestAnimationFrame(sample);
+          return true;
+        })()`);
+        await evaluate(`document.querySelector('.spin-main-btn').click()`);
+        const spinFinished = await waitFor(`!!document.querySelector('.modal-card')`, 20000);
+        const winnerText = await evaluate(`document.querySelector('.modal-winner') ? document.querySelector('.modal-winner').textContent.trim() : ''`);
+        const trace = JSON.parse(await evaluate(`(() => { window.__tracing = false; return JSON.stringify(window.__trace || []); })()`));
+        check('spin completed', spinFinished && trace.length > 20, `${trace.length} frames sampled`);
+
+        // Unwrap the rotation (it wraps to 0..360 when the spin ends) so the
+        // samples form one monotonic curve.
+        const frames = unwrapAngles(trace);
+        const startTime = frames[0].t;
+        const endTime = frames[frames.length - 1].t;
+        const spinDuration = endTime - startTime;
+
+        // Frame-to-frame deltas are noisy (a late frame advances twice the
+        // angle), so measure speed over a ~100 ms sliding window.
+        const speeds = speedSeries(frames);
+        const peak = speeds.reduce((best, s) => (s.v > best.v ? s : best), speeds[0]);
+        const speedAt = (seconds) => {
+            const sample = speeds.find((s) => s.t >= seconds);
+            return sample ? sample.v : 0;
+        };
+        const totalTurns = frames[frames.length - 1].angle / 360;
+        const finalSecondDegrees = (() => {
+            const from = frames.find((f) => f.t >= endTime - 1000) || frames[0];
+            return frames[frames.length - 1].angle - from.angle;
+        })();
+
+        const profile = [0.1, 0.25, 0.5, 1, 2, 3, 4, 5, 6, 7, 8, spinDuration / 1000 - 0.15]
+            .filter((seconds) => seconds > 0 && seconds < spinDuration / 1000)
+            .map((seconds) => `${seconds.toFixed(2)}s:${speedAt(seconds).toFixed(0)}`)
+            .join(' ');
+        console.log(`  speed profile (deg/s): ${profile}`);
+
+        check('makes a full multi-turn spin', totalTurns >= 6, `${totalTurns.toFixed(1)} turns in ${(spinDuration / 1000).toFixed(1)}s`);
+        check('starts from rest (no instant jump to full speed)', speedAt(0.1) < peak.v * 0.45,
+            `${speedAt(0.1).toFixed(0)} deg/s after 100ms vs peak ${peak.v.toFixed(0)}`);
+        check('reaches peak speed early, not at the halfway point', peak.progress < 0.2,
+            `peak at ${(peak.progress * 100).toFixed(0)}% of the spin`);
+        const after = speeds.filter((s) => s.progress > peak.progress + 0.05);
+        const rises = after.filter((s, i) => i > 0 && s.v > after[i - 1].v + peak.v * 0.08);
+        check('decelerates smoothly after the launch', rises.length === 0, `${rises.length} speed-up(s) after the peak`);
+        check('comes to rest instead of stopping dead', speedAt(spinDuration / 1000 - 0.15) < peak.v * 0.12,
+            `${speedAt(spinDuration / 1000 - 0.15).toFixed(0)} deg/s just before the stop`);
+        check('final second is a visible slow creep, not a crawl or a slam', finalSecondDegrees > 20 && finalSecondDegrees < 200,
+            `${finalSecondDegrees.toFixed(0)}° in the last second`);
+
+        // Landing: the slice under the cursor must be the announced winner
+        const anglePerSlice = 360 / items.length;
+        const finalAngle = ((frames[frames.length - 1].angle % 360) + 360) % 360;
+        const cursorAngle = 90; // MainWheelSpinner default
+        const underCursor = Math.floor((((cursorAngle - finalAngle) % 360) + 360) % 360 / anglePerSlice);
+        check('stops exactly on the announced winner', items[underCursor] === winnerText,
+            `cursor points at slice ${underCursor} ("${items[underCursor]}"), popup says "${winnerText}"`);
+        check('no console errors during the spin', consoleErrors().length === 0, consoleErrors().slice(0, 2).join(' | '));
+
+        // ── Hold-to-spin: release must be velocity-continuous ─────────────
+        console.log('\nHold-to-spin');
+        client.events.length = 0;
+        await client.send('Page.navigate', { url: `${BASE}/food-wheel` });
+        await sleep(3000);
+        await evaluate(`(() => {
+          window.__trace = [];
+          window.__tracing = true;
+          const canvas = document.querySelector('canvas');
+          const sample = () => {
+            const match = /rotate3d\\(0, 0, 1, ([\\d.eE+-]+)deg\\)/.exec(canvas.style.transform || '');
+            if (match) window.__trace.push([performance.now(), parseFloat(match[1])]);
+            if (window.__tracing) requestAnimationFrame(sample);
+          };
+          requestAnimationFrame(sample);
+          return true;
+        })()`);
+        const buttonBox = await evaluate(`(() => { const r = document.querySelector('.spin-center-button').getBoundingClientRect(); return JSON.stringify({ x: Math.round(r.left + r.width / 2), y: Math.round(r.top + r.height / 2) }); })()`);
+        const point = JSON.parse(buttonBox);
+        await client.send('Input.dispatchMouseEvent', { type: 'mousePressed', x: point.x, y: point.y, button: 'left', clickCount: 1 });
+        await sleep(1400);
+        const heldAngle = await evaluate(`(() => { const t = window.__trace; return t.length > 5 ? t[t.length - 1][1] : 0; })()`);
+        await client.send('Input.dispatchMouseEvent', { type: 'mouseReleased', x: point.x, y: point.y, button: 'left', clickCount: 1 });
+        const holdFinished = await waitFor(`!!document.querySelector('.modal-card')`, 20000);
+        const holdTrace = JSON.parse(await evaluate(`(() => { window.__tracing = false; return JSON.stringify(window.__trace || []); })()`));
+
+        const holdFrames = unwrapAngles(holdTrace);
+        const heldRate = rateBetween(holdFrames, 700, 1300);
+        const justAfterRelease = rateBetween(holdFrames, 1500, 1800);
+        const lateRate = rateBetween(holdFrames, holdFrames[holdFrames.length - 1].t - 400, holdFrames[holdFrames.length - 1].t);
+
+        check('wheel turns while the centre button is held', heldAngle > 0 && heldRate > 300,
+            `${heldRate.toFixed(0)} deg/s during the hold`);
+        check('release keeps the wheel moving (no stop-then-restart)', justAfterRelease > heldRate * 0.5 && justAfterRelease <= heldRate * 1.5,
+            `${heldRate.toFixed(0)} deg/s held → ${justAfterRelease.toFixed(0)} deg/s after release`);
+        check('hold release decelerates to a stop', lateRate < heldRate * 0.15, `${lateRate.toFixed(0)} deg/s at the end`);
+        check('hold-to-spin lands on a winner', holdFinished, await evaluate(`document.querySelector('.modal-winner') ? document.querySelector('.modal-winner').textContent.trim() : 'no popup'`));
+        check('no console errors during hold-to-spin', consoleErrors().length === 0, consoleErrors().slice(0, 2).join(' | '));
 
         console.log('\n/food-wheel (mobile 390x844)');
         await client.send('Emulation.setDeviceMetricsOverride', { width: 390, height: 844, deviceScaleFactor: 2, mobile: true });

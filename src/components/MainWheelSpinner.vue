@@ -12,6 +12,7 @@
             :slices="slices"
             :winner-index="defaultWinner"
             :spin-duration="spinDuration"
+            :extra-spins="spinTurns"
             :cursor-position="cursorPosition"
             :cursor-angle="cursorAngle"
             :cursor-distance="cursorDistance"
@@ -347,12 +348,14 @@ export default {
       soundEnabled: true,
       volume: 0.5,
 
-      // Spin behaviour
-      spinDuration: 7000,
+      // Spin behaviour. Each speed is a duration plus the number of turns, so
+      // the wheel always peaks at roughly the same speed (~3.5 turns/s) and the
+      // setting changes how long the suspense lasts, not how violent the push is.
+      spinDuration: 6500,
       spinSpeeds: [
-        { value: 4000, label: 'mainWheel.speedFast' },
-        { value: 7000, label: 'mainWheel.speedNormal' },
-        { value: 11000, label: 'mainWheel.speedSlow' }
+        { value: 4200, turns: 7, label: 'mainWheel.speedFast' },
+        { value: 6500, turns: 11, label: 'mainWheel.speedNormal' },
+        { value: 9500, turns: 16, label: 'mainWheel.speedSlow' }
       ],
       showWinnerPopup: true,
       showModal: false,
@@ -369,6 +372,11 @@ export default {
   computed: {
     recentHistory() {
       return this.history.slice(0, 8)
+    },
+    /** Turns for the selected speed preset (peak speed stays constant). */
+    spinTurns() {
+      const preset = this.spinSpeeds.find(speed => speed.value === this.spinDuration)
+      return preset ? preset.turns : 11
     },
     isRtl() {
       try {
@@ -394,7 +402,11 @@ export default {
         const prefs = JSON.parse(raw)
         if (typeof prefs.soundEnabled === 'boolean') this.soundEnabled = prefs.soundEnabled
         if (typeof prefs.volume === 'number') this.volume = prefs.volume
-        if (typeof prefs.spinDuration === 'number') this.spinDuration = prefs.spinDuration
+        // Snap to a known speed preset — older builds stored 4000/7000/11000
+        if (typeof prefs.spinDuration === 'number') {
+          const preset = this.spinSpeeds.find(speed => speed.value === prefs.spinDuration)
+          this.spinDuration = preset ? preset.value : 6500
+        }
         if (typeof prefs.showWinnerPopup === 'boolean') this.showWinnerPopup = prefs.showWinnerPopup
       } catch (e) { /* private mode / disabled storage — use defaults */ }
     },

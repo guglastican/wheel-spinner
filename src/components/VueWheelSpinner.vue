@@ -38,11 +38,11 @@ const props = defineProps({
   },
   extraSpins: {
     type: Number,
-    default: 10
+    default: 11
   },
   spinDuration: {
     type: Number,
-    default: 7000
+    default: 6500
   },
   holdSpeed: {
     type: Number,
@@ -150,11 +150,44 @@ function getSliceAngles(sliceIndex, currentCanvasAngle) {
 
 }
 
-// Smooth spin easing: sine ease-in-out — the wheel launches gently, builds
-// speed, then decelerates in one continuous smooth motion to a clean stop.
-// No violent launch and no dead crawl at the end (derivative is 0 at both ends).
-function getEaseInOutSine(x) {
-  return -(Math.cos(x * Math.PI) - 1) / 2;
+/**
+ * Spin profile: a short constant-acceleration launch (the "push"), then a
+ * uniform deceleration to a dead stop exactly on the target — the same physics
+ * the hold-to-spin release uses, so both ways of spinning feel alike.
+ *
+ * Normalised rotation over normalised time:
+ *   x <  L :  θ = vmax · x² / (2L)
+ *   x >= L :  θ = θ(L) + vmax · (d − d² / (2(1−L))),  d = x − L
+ *
+ * Since θ(L) = vmax·L/2 the total is vmax/2, so vmax = 2: the peak speed is
+ * twice the average, reached within the first few percent of the spin, after
+ * which the wheel slows down smoothly for the whole remainder.
+ *
+ * Previously this was a symmetric ease-in-out sine, which meant the wheel was
+ * still *accelerating* at the halfway point of every spin and then crawled for
+ * the entire second half — it read as a motor ramping, not a wheel.
+ *
+ * @param {number} launchFraction share of the duration spent accelerating
+ */
+function getSpinEase(launchFraction) {
+  const L = Math.min(Math.max(launchFraction, 0.001), 0.4);
+  const vmax = 2;
+  return function spinEase(x) {
+    if (x <= 0) return 0;
+    if (x >= 1) return 1;
+    if (x < L) return (vmax * x * x) / (2 * L);
+    const thetaLaunch = (vmax * L) / 2;
+    const d = x - L;
+    return thetaLaunch + vmax * (d - (d * d) / (2 * (1 - L)));
+  };
+}
+
+/**
+ * A push lasts about 0.3 s whether the spin lasts 4 s or 10 s, and never eats
+ * more than a fifth of the spin.
+ */
+function getLaunchFraction(durationMs) {
+  return Math.min(0.2, 320 / Math.max(durationMs, 1));
 }
 
 function drawSlice(context, centerX, centerY, radius, startAngle, endAngle, fillColor) {
@@ -284,7 +317,7 @@ function spinWheel(winnerIndex) {
 function animateToTarget(startAngle, targetAngle, duration, winnerIndex, easeFn) {
 
   const totalRotation = targetAngle - startAngle;
-  const ease = easeFn || getEaseInOutSine;
+  const ease = easeFn || getSpinEase(getLaunchFraction(duration));
 
   // Get start time to finish spinning
   const startTime = performance.now();
@@ -456,8 +489,8 @@ function releaseHoldSpin(winnerIndex) {
   const speed0 = Math.max(holdCurrentSpeed, 0);
   if (speed0 < 30) {
     // Released (almost) immediately — the wheel barely moved, so run a normal
-    // smooth spin from rest instead
-    animateToTarget(startAngle, targetAngle, props.spinDuration, winner, getEaseInOutSine);
+    // launch-and-coast spin from rest instead
+    animateToTarget(startAngle, targetAngle, props.spinDuration, winner);
   } else {
     animateDeceleration(startAngle, targetAngle, speed0, winner);
   }
