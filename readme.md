@@ -274,3 +274,39 @@ npm run verify-seo # re-run only the SEO checks against dist/
 - `robots.txt` must not disallow the widget routes — they rely on their
   `noindex` meta tag, which Google can only read if it may fetch the URL.
 
+---
+
+## Wheel UI (`src/components/MainWheelSpinner.vue`)
+
+The tool panel is organised in four tabs — **List · Style · Sound · Spin** —
+so the wheel stage stays the focus and the technical cursor controls live in a
+collapsed *Advanced options* block inside **Style**.
+
+| Area | What it does |
+|------|--------------|
+| List | Add / recolour / reorder / duplicate / exclude / remove slices, shuffle, reset |
+| Style | Five slice colour palettes (Vibrant, Pastel, Ocean, Sunset, Mono) + Advanced (cursor angle & distance) |
+| Sound | Tick/win effects on or off, volume slider |
+| Spin | Spin speed (fast / normal / slow), winner popup on or off, spin button |
+| Results | Recent winners with per-slice win counters and a clear button |
+| Winner popup | Confetti, "Spin again", "Remove winner", Escape to close, focus moved into the dialog |
+
+Details worth keeping:
+
+- **Spacebar spins.** `MainWheelSpinner.onKeydown` ignores the key while focus is
+  in an input, textarea, select or contenteditable element, so typing is safe.
+  With the popup open, Space triggers "Spin again".
+- **Sound at runtime.** `VueWheelSpinner` takes `muted` / `volume` props; the win
+  sound also goes through `playAudio()` so both apply to it.
+- **UI preferences** (sound, volume, spin speed, winner popup) persist in
+  `localStorage` under `randowheel:ui-prefs`.
+- **All new strings are translated** in every locale file; add new keys to
+  `en.json` *and* the other 24 files — `verify-seo.js` reports nothing here, but
+  the UI falls back to English silently otherwise.
+- Verify the interaction after UI changes:
+
+  ```sh
+  npm run build && npm run verify-ui     # needs Chrome; not part of `npm run build`
+  ```
+
+

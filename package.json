@@ -8,7 +8,8 @@
     "dev": "vite",
     "sitemap": "node generate-sitemap.js",
     "build": "node generate-sitemap.js && vite build && node prerender.js && node verify-seo.js",
-    "verify-seo": "node verify-seo.js"
+    "verify-seo": "node verify-seo.js",
+    "verify-ui": "node verify-ui.js"
   },
   "author": {
     "name": "İlyas Özkurt",

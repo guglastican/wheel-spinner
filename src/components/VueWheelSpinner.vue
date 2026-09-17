@@ -77,6 +77,15 @@ const props = defineProps({
       }
     }
   },
+  // Sound can be toggled and re-levelled at runtime from the Sound tab.
+  muted: {
+    type: Boolean,
+    default: false
+  },
+  volume: {
+    type: Number,
+    default: 0.5
+  },
 });
 
 function degreesToRadians(degrees) {
@@ -318,9 +327,7 @@ function animateToTarget(startAngle, targetAngle, duration, winnerIndex, easeFn)
       isSpinning.value = false;
       isHoldSpinning.value = false;
 
-      if (wonAudio.value) {
-        wonAudio.value.play();
-      }
+      playAudio(wonAudio.value);
 
       emits('spin-end', winnerIndex);
 
@@ -508,9 +515,7 @@ function animateDeceleration(startAngle, targetAngle, initialSpeed, winnerIndex)
       isSpinning.value = false;
       isHoldSpinning.value = false;
 
-      if (wonAudio.value) {
-        wonAudio.value.play();
-      }
+      playAudio(wonAudio.value);
 
       emits('spin-end', winnerIndex);
 
@@ -527,9 +532,9 @@ function animateDeceleration(startAngle, targetAngle, initialSpeed, winnerIndex)
 }
 
 function playAudio(audio) {
-  if (audio) {
+  if (audio && !props.muted) {
     audio.currentTime = 0;
-    audio.volume = 0.5;
+    audio.volume = Math.min(1, Math.max(0, Number(props.volume) || 0));
     audio.play().catch(e => console.warn('Audio play blocked:', e));
   }
 }
@@ -611,6 +616,13 @@ watch(() => props.cursorPosition, () => {
 
 watch(() => props.cursorDistance, () => {
   positionCursor();
+});
+
+// Muting mid-spin should silence the ticking sound immediately.
+watch(() => props.muted, (muted) => {
+  if (muted && spinningAudio.value) {
+    stopAudio(spinningAudio.value);
+  }
 });
 
 onBeforeMount(() => {
