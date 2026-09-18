@@ -275,7 +275,7 @@
         @click.self="closeModal">
         <div class="modal-card">
           <div class="confetti" aria-hidden="true">
-            <span v-for="n in 18" :key="n" :style="confettiStyle(n)"></span>
+            <span v-for="n in 12" :key="n" :style="confettiStyle(n)"></span>
           </div>
           <div class="modal-emoji" aria-hidden="true">🎉</div>
           <p id="rw-winner-name" class="modal-winner" :style="{ color: winnerResult.color }">{{ winnerResult.text }}</p>
@@ -359,6 +359,7 @@ export default {
       ],
       showWinnerPopup: true,
       showModal: false,
+      popupTimer: null,
 
       // Results history (most recent first)
       history: [],
@@ -392,8 +393,16 @@ export default {
   },
   beforeUnmount() {
     window.removeEventListener('keydown', this.onKeydown)
+    this.clearPopupTimer()
   },
   methods: {
+    /** Cancel a queued winner popup (new spin, unmount, manual close). */
+    clearPopupTimer() {
+      if (this.popupTimer) {
+        clearTimeout(this.popupTimer)
+        this.popupTimer = null
+      }
+    },
     // ── Preferences (localStorage, best-effort) ────────────────────────
     loadPrefs() {
       try {
@@ -487,6 +496,7 @@ export default {
     },
 
     onSpinStart() {
+      this.clearPopupTimer()
       this.winnerResult = null
       this.showModal = false
       this.isSpinning = true
@@ -501,20 +511,33 @@ export default {
       winner.winCount = (winner.winCount || 0) + 1
       this.history.unshift({ text: winner.text, color: winner.color })
       if (this.history.length > 50) this.history.length = 50
-      if (this.showWinnerPopup) this.showModal = true
+      if (this.showWinnerPopup) {
+        // Mount the popup a moment after the wheel has settled: building the
+        // overlay, confetti and results list in the same frame as the final
+        // wheel frame makes the stop look like a stutter on slower phones.
+        if (this.popupTimer) clearTimeout(this.popupTimer)
+        this.popupTimer = setTimeout(() => {
+          this.popupTimer = null
+          // A new spin may have started in the meantime
+          if (!this.isSpinning && this.winnerResult === winner) this.showModal = true
+        }, 140)
+      }
     },
 
     // ── Winner popup actions ──────────────────────────────────────────
     closeModal() {
+      this.clearPopupTimer()
       this.showModal = false
     },
     spinAgain() {
+      this.clearPopupTimer()
       this.showModal = false
       this.$nextTick(() => this.spinWheel())
     },
     removeWinner() {
       if (!this.winnerResult) return
       const index = this.slices.indexOf(this.winnerResult)
+      this.clearPopupTimer()
       this.showModal = false
       if (index !== -1) this.removeSlice(index)
       this.winnerResult = null
@@ -1283,8 +1306,9 @@ export default {
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(20, 18, 40, 0.55);
-  backdrop-filter: blur(3px);
+  /* No backdrop-filter: a full-screen blur lands exactly when the wheel stops
+     and is expensive enough on phones to stall the final frames. */
+  background: rgba(20, 18, 40, 0.72);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -124,8 +124,21 @@ function check(label, condition, detail = '') {
     console.log(`  [${condition ? 'PASS' : 'FAIL'}] ${label}${detail ? ` — ${detail}` : ''}`);
 }
 
-/**
- * Turns sampled canvas angles into one monotonic rotation curve.
+/** Samples the canvas rotation every frame while a spin runs. */
+const SPIN_SAMPLER = String.raw`(() => {
+  window.__t = [];
+  window.__on = true;
+  const canvas = document.querySelectorAll('canvas')[0];
+  const sample = () => {
+    const match = /rotate3d\(0, 0, 1, ([\d.eE+-]+)deg\)/.exec(canvas.style.transform || '');
+    if (match) window.__t.push([performance.now(), parseFloat(match[1])]);
+    if (window.__on) requestAnimationFrame(sample);
+  };
+  requestAnimationFrame(sample);
+  return true;
+})()`;
+
+/** Turns sampled canvas angles into one monotonic rotation curve.
  * A spin sets the transform to a raw, ever-growing angle and then normalises it
  * to 0..360 when it stops (a jump of thousands of degrees) — that jump must not
  * be mistaken for motion. Wraps *during* the hold spin are small (< 360) and
@@ -190,6 +203,13 @@ function rateBetween(frames, fromMs, toMs) {
         client = await connect(await getTargetUrl());
         await client.send('Page.enable');
         await client.send('Runtime.enable');
+        await client.send('Performance.enable');
+        // Third-party tags (ads, tag manager) are blocked so the timings below
+        // measure the wheel's own code, not an ad auction.
+        await client.send('Network.enable');
+        await client.send('Network.setBlockedURLs', {
+            urls: ['*googletagmanager*', '*googlesyndication*', '*doubleclick*', '*google-analytics*', '*adtrafficquality*', '*gstatic*']
+        });
 
         const evaluate = async (expression) => {
             const res = await client.send('Runtime.evaluate', { expression, returnByValue: true, awaitPromise: true });
@@ -218,8 +238,14 @@ function rateBetween(frames, fromMs, toMs) {
 
         console.log('/food-wheel (desktop 1280x900)');
         client.events.length = 0;
+        // Start from a clean client state: UI preferences (sound, volume, spin
+        // speed, popup) persist in localStorage, so a previous run — or the
+        // mobile section below — would otherwise change the defaults.
         await client.send('Page.navigate', { url: `${BASE}/food-wheel` });
-        await sleep(3500);
+        await sleep(2500);
+        await evaluate(`(() => { try { window.localStorage.clear(); } catch (e) { /* storage disabled */ } return true; })()`);
+        await client.send('Page.navigate', { url: `${BASE}/food-wheel` });
+        await sleep(3000);
 
         check('four tabs render', await evaluate(`document.querySelectorAll('.tabs .tab-btn').length`) === 4);
         check('tab labels come from i18n',
@@ -262,14 +288,24 @@ function rateBetween(frames, fromMs, toMs) {
         await sleep(200);
         check('spin speed can be changed', await evaluate(`[...document.querySelectorAll('.segment-btn')].find(b => b.textContent.includes('Fast')).classList.contains('active')`));
 
-        // Record every media play() call so the spin's sounds can be asserted
+        // Record every sound trigger so the spin's audio can be asserted.
+        // Ticks go through Web Audio (one-shot buffer sources); the element path
+        // is only a fallback, so both are instrumented.
         await evaluate(`(() => {
           window.__plays = [];
-          const original = HTMLMediaElement.prototype.play;
+          const originalPlay = HTMLMediaElement.prototype.play;
           HTMLMediaElement.prototype.play = function () {
-            try { window.__plays.push(new URL(this.src, location.origin).pathname); }
-            catch (e) { window.__plays.push('unknown'); }
-            return original.apply(this, arguments);
+            try { window.__plays.push('element:' + new URL(this.src, location.origin).pathname); }
+            catch (e) { window.__plays.push('element:unknown'); }
+            return originalPlay.apply(this, arguments);
+          };
+          const originalStart = AudioBufferSourceNode.prototype.start;
+          AudioBufferSourceNode.prototype.start = function () {
+            try {
+              const duration = this.buffer ? this.buffer.duration : 0;
+              window.__plays.push(duration < 0.2 ? 'buffer:tick' : 'buffer:won');
+            } catch (e) { window.__plays.push('buffer:unknown'); }
+            return originalStart.apply(this, arguments);
           };
           return true;
         })()`);
@@ -285,8 +321,10 @@ function rateBetween(frames, fromMs, toMs) {
         check('popup focuses its primary action', await evaluate(`document.activeElement.classList.contains('modal-btn')`));
 
         const plays = JSON.parse(await evaluate(`JSON.stringify(window.__plays || [])`));
-        check('ticking sound plays while the wheel spins', plays.includes('/sounds/tick.wav'), `${plays.length} play() call(s)`);
-        check('win sound plays once when the spin ends', plays.filter((src) => src === '/sounds/win.wav').length === 1);
+        const tickPlays = plays.filter((p) => p === 'buffer:tick' || p.endsWith('/sounds/tick.wav')).length;
+        const wonPlays = plays.filter((p) => p === 'buffer:won' || p.endsWith('/sounds/win.wav')).length;
+        check('ticking sound plays while the wheel spins', tickPlays > 0, `${tickPlays} tick(s) of ${plays.length} trigger(s)`);
+        check('win sound plays once when the spin ends', wonPlays === 1, `${wonPlays} win sound(s)`);
 
         await evaluate(`[...document.querySelectorAll('.modal-btn')].find(b => b.textContent.match(/again|nochmal|nuevo/i)).click()`);
         await sleep(600);
@@ -510,6 +548,66 @@ function rateBetween(frames, fromMs, toMs) {
         check('canvas stays crisp on a 2× display',
             mobileCanvas.dpr >= 2 && mobileCanvas.backing >= mobileCanvas.displayed * 2 - 2,
             `${mobileCanvas.backing}px backing store for ${mobileCanvas.displayed}px displayed (dpr ${mobileCanvas.dpr})`);
+        await client.send('Emulation.clearDeviceMetricsOverride');
+
+        // ── Mobile performance: the wheel must not starve its own animation ──
+        // Regression guard for shipping element-based tick audio, which cost
+        // ~2.6s of main-thread time per spin on a throttled phone profile and
+        // made the wheel stutter and overrun its duration.
+        console.log('\nMobile performance (390x844 @3x, CPU throttled 4x)');
+        await client.send('Emulation.setDeviceMetricsOverride', { width: 390, height: 844, deviceScaleFactor: 3, mobile: true });
+        await client.send('Emulation.setCPUThrottlingRate', { rate: 4 });
+
+        const perfMetrics = async () => {
+            const res = await client.send('Performance.getMetrics');
+            const map = {};
+            for (const m of res.metrics) map[m.name] = m.value;
+            return map;
+        };
+        const measureSpin = async ({ muted }) => {
+            await client.send('Page.navigate', { url: `${BASE}/food-wheel` });
+            await sleep(3000);
+            if (muted) {
+                await tab('Sound');
+                await sleep(250);
+                await evaluate(`(() => { const c = document.querySelector('.switch-row input'); if (c.checked) c.click(); return true; })()`);
+                await sleep(250);
+            }
+            await tab('Spin');
+            await sleep(250);
+            await evaluate(`[...document.querySelectorAll('.segment-btn')].find(b => b.textContent.includes('Fast')).click()`);
+            await sleep(150);
+            await evaluate(SPIN_SAMPLER);
+            const before = await perfMetrics();
+            await evaluate(`document.querySelector('.spin-main-btn').click()`);
+            await waitFor(`!document.querySelector('.spin-center-button').classList.contains('is-spinning')`, 30000);
+            const after = await perfMetrics();
+            const trace = JSON.parse(await evaluate(`(() => { window.__on = false; return JSON.stringify(window.__t || []); })()`));
+            return { script: (after.ScriptDuration - before.ScriptDuration) * 1000, frames: unwrapAngles(trace) };
+        };
+
+        const withSound = await measureSpin({ muted: false });
+        const withoutSound = await measureSpin({ muted: true });
+        const expectedFrames = 4200 / 16.7;
+        const mobileGaps = [];
+        for (let i = 1; i < withSound.frames.length; i += 1) {
+            mobileGaps.push(withSound.frames[i].t - withSound.frames[i - 1].t);
+        }
+        const sortedMobileGaps = [...mobileGaps].sort((a, b) => a - b);
+        const mobileMedian = sortedMobileGaps[Math.floor(sortedMobileGaps.length / 2)];
+        const mobileWorst = sortedMobileGaps[sortedMobileGaps.length - 1];
+
+        check('wheel keeps its own animation fed on mobile', withSound.frames.length >= expectedFrames * 0.6,
+            `${withSound.frames.length} frames of ~${Math.round(expectedFrames)} expected`);
+        check('sound does not stall the animation thread', withSound.script - withoutSound.script < 300,
+            `${withSound.script.toFixed(0)}ms of script with sound vs ${withoutSound.script.toFixed(0)}ms muted`);
+        check('frame pacing stays smooth on mobile', mobileMedian < 25 && mobileWorst < 300,
+            `median ${mobileMedian.toFixed(1)}ms, worst ${mobileWorst.toFixed(1)}ms`);
+
+        // Leave no muting behind for the next run
+        await evaluate(`(() => { try { window.localStorage.clear(); } catch (e) { /* storage disabled */ } return true; })()`);
+
+        await client.send('Emulation.setCPUThrottlingRate', { rate: 1 });
         await client.send('Emulation.clearDeviceMetricsOverride');
 
         console.log('\n/ar/food-wheel (RTL)');
