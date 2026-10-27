@@ -7,6 +7,8 @@
         <div class="footer-links">
           <a href="/privacy-policy.html" target="_blank">{{ $t('footer.privacyPolicy') }}</a>
           <a href="/terms-and-conditions.html" target="_blank">{{ $t('footer.termsConditions') }}</a>
+          <!-- Static HTML index: one click from here to every page in every language -->
+          <a href="/all-pages">{{ $t('footer.allPages') || 'All pages' }}</a>
         </div>
       </div>
 

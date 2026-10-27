@@ -4800,4 +4800,9 @@
     <xhtml:link rel="alternate" hreflang="he" href="https://randowheel.com/he/twister-spinner"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://randowheel.com/twister-spinner"/>
   </url>
+  <url>
+    <loc>https://randowheel.com/all-pages</loc>
+    <lastmod>2026-09-17</lastmod>
+    <priority>0.9</priority>
+  </url>
 </urlset>

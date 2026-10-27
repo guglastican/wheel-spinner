@@ -109,6 +109,16 @@ const ROBOTS_INDEX = 'index, follow, max-image-preview:large, max-snippet:-1';
 /** Meta robots value used for widget/config routes. */
 const ROBOTS_NOINDEX = 'noindex, follow';
 
+/**
+ * Crawlable HTML index of every indexable URL. A link on a page Google already
+ * crawls counts for far more than a sitemap entry for a URL it never fetched —
+ * which is exactly the "Discovered – currently not indexed / Last crawled: N/A"
+ * state of the localized pages.
+ */
+const HTML_SITEMAP_ROUTE = 'all-pages';
+const HTML_SITEMAP_PATH = `/${HTML_SITEMAP_ROUTE}`;
+const HTML_SITEMAP_URL = `${DOMAIN}${HTML_SITEMAP_PATH}`;
+
 // ─── Locale data ─────────────────────────────────────────────────────────────
 
 const localeCache = {};
@@ -292,6 +302,9 @@ module.exports = {
     LANG_NAMES,
     ROBOTS_INDEX,
     ROBOTS_NOINDEX,
+    HTML_SITEMAP_ROUTE,
+    HTML_SITEMAP_PATH,
+    HTML_SITEMAP_URL,
     getLocaleData,
     getKey,
     t,

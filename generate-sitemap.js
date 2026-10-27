@@ -19,6 +19,7 @@ const {
     DOMAIN,
     BASE_ROUTES,
     SUPPORTED_LOCALES,
+    HTML_SITEMAP_URL,
     translatedLocales,
     pageUrl,
     pageLastModified,
@@ -70,6 +71,20 @@ function generateSitemap() {
             urlCount += 1;
         }
     }
+
+    // The HTML index of every page goes in first so it is crawled early: it is
+    // the page that hands Googlebot a link to every other URL.
+    const indexLastmod = SUPPORTED_LOCALES
+        .map((locale) => pageLastModified(locale, ''))
+        .filter(Boolean)
+        .sort()
+        .pop();
+    lines.push('  <url>');
+    lines.push(`    <loc>${escapeXml(HTML_SITEMAP_URL)}</loc>`);
+    if (indexLastmod) lines.push(`    <lastmod>${indexLastmod}</lastmod>`);
+    lines.push('    <priority>0.9</priority>');
+    lines.push('  </url>');
+    urlCount += 1;
 
     lines.push('</urlset>');
 

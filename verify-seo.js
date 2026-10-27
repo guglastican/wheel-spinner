@@ -16,6 +16,8 @@ const {
     BASE_ROUTES,
     NON_CONTENT_ROUTES,
     LANG_NAMES,
+    HTML_SITEMAP_ROUTE,
+    HTML_SITEMAP_URL,
     isTranslated,
     translatedLocales,
     routePath,
@@ -248,9 +250,10 @@ if (!fs.existsSync(SITEMAP_PATH)) {
         if (!sitemapSet.has(url)) fail(`sitemap is missing ${url}`);
     }
     for (const url of sitemapSet) {
-        if (!expectedUrls.has(url)) fail(`sitemap lists ${url}, which is not an indexable page`);
+        if (url !== HTML_SITEMAP_URL && !expectedUrls.has(url)) fail(`sitemap lists ${url}, which is not an indexable page`);
         if (!url.startsWith(DOMAIN)) fail(`sitemap entry is not on ${DOMAIN}: ${url}`);
     }
+    if (!sitemapSet.has(HTML_SITEMAP_URL)) fail(`sitemap is missing the HTML index ${HTML_SITEMAP_URL}`);
 
     // lastmod sanity: must never be in the future, must be a real content date
     const today = new Date().toISOString().slice(0, 10);
@@ -287,7 +290,37 @@ if (fs.existsSync(SITEMAP_PATH)) {
     ok('widget/config routes are excluded from the sitemap');
 }
 
-// ─── 6. Human-facing translation coverage note ──────────────────────────────
+// ─── 6. The HTML index must link every indexable URL ───────────────────────
+
+const indexHtml = readPage(HTML_SITEMAP_ROUTE);
+if (!indexHtml) {
+    fail(`${HTML_SITEMAP_ROUTE}/index.html is missing — Googlebot needs a linked index of every page`);
+} else {
+    const canonical = (indexHtml.match(/<link\s+rel="canonical"\s+href="([^"]+)"/i) || [, ''])[1];
+    if (canonical !== HTML_SITEMAP_URL) fail(`${HTML_SITEMAP_ROUTE}: canonical is ${canonical}, expected ${HTML_SITEMAP_URL}`);
+    const robots = (indexHtml.match(/<meta\s+name="robots"\s+content="([^"]*)"/i) || [, ''])[1];
+    if (!robots.startsWith('index')) fail(`${HTML_SITEMAP_ROUTE}: must be indexable, got "${robots}"`);
+    if (/<script type="module"/i.test(indexHtml)) {
+        fail(`${HTML_SITEMAP_ROUTE}: the app bundle would mount over the index and wipe it — no module script allowed`);
+    }
+
+    const linked = new Set(
+        matchAll(indexHtml, /<a\s+[^>]*href="([^"]+)"/g)
+            .map((m) => m[1])
+            .filter((href) => href.startsWith(DOMAIN))
+    );
+    const missingLinks = [];
+    const indexableUrls = expectedPages.filter((page) => page.indexable).map((page) => pageUrl(page.locale, page.route));
+    for (const url of indexableUrls) {
+        if (!linked.has(url)) missingLinks.push(url);
+    }
+    if (missingLinks.length) {
+        fail(`${HTML_SITEMAP_ROUTE} does not link ${missingLinks.length} indexable URL(s), e.g. ${missingLinks.slice(0, 3).join(', ')}`);
+    }
+    ok(`HTML index links all ${indexableUrls.length} indexable URLs`);
+}
+
+// ─── 7. Human-facing translation coverage note ──────────────────────────────
 
 const missingLangNames = SUPPORTED_LOCALES.filter((locale) => !LANG_NAMES[locale]);
 if (missingLangNames.length) fail(`missing language label(s): ${missingLangNames.join(', ')}`);

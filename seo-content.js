@@ -11,8 +11,12 @@ const {
     DOMAIN,
     SUPPORTED_LOCALES,
     LANG_NAMES,
+    BASE_ROUTES,
     ROUTE_SECTIONS,
+    ROUTE_LABELS,
     PAGE_META_KEYS,
+    HTML_SITEMAP_PATH,
+    HTML_SITEMAP_URL,
     getKey,
     t,
     node,
@@ -270,12 +274,54 @@ function renderLanguages(locale, route) {
         const label = LANG_NAMES[loc] || loc.toUpperCase();
         return `        <li><a class="rw-pr-lang" href="${esc(pageUrl(loc, route))}" hreflang="${esc(loc)}" lang="${esc(loc)}">${esc(label)}</a></li>`;
     }).join('\n');
+    const allPages = t(locale, 'footer.allPages') || 'All pages';
     return `    <section class="rw-pr-sec rw-pr-langs">
       <h2 class="rw-pr-h2">${rich(heading)}</h2>
       <ul class="rw-pr-langlist">
 ${items}
       </ul>
+      <p class="rw-pr-p"><a class="rw-pr-link" href="${HTML_SITEMAP_URL}">${rich(allPages)}</a></p>
     </section>`;
+}
+
+/**
+ * Human- and crawler-readable index of every indexable URL (the "all pages"
+ * HTML sitemap).
+ *
+ * Google is far more willing to crawl a URL it can reach through an ordinary
+ * link on a page it already crawls than one it only knows from a sitemap file —
+ * "Discovered – currently not indexed" with no last-crawl date is exactly that
+ * situation. This page puts every language variant one hop away from every
+ * other page.
+ */
+function buildAllPagesHtml() {
+    const sections = BASE_ROUTES.map((route) => {
+        const locales = translatedLocales(route);
+        if (!locales.length) return '';
+        const routeLabel = ROUTE_LABELS[route] || 'Home';
+        const items = locales.map((loc) => {
+            const titleKey = (PAGE_META_KEYS[route] || PAGE_META_KEYS['']).titleKey;
+            const title = stripTags(t(loc, titleKey)) || routeLabel;
+            const langName = LANG_NAMES[loc] || loc.toUpperCase();
+            return `        <li><a class="rw-pr-link" href="${esc(pageUrl(loc, route))}" hreflang="${esc(loc)}" lang="${esc(loc)}">${esc(title)}</a> <span class="rw-pr-muted">(${esc(langName)})</span></li>`;
+        }).join('\n');
+        return `    <section class="rw-pr-sec">
+      <h2 class="rw-pr-h2">${esc(routeLabel)} — ${locales.length} ${locales.length === 1 ? 'language' : 'languages'}</h2>
+      <ul class="rw-pr-list">
+${items}
+      </ul>
+    </section>`;
+    }).filter(Boolean).join('\n');
+
+    const total = BASE_ROUTES.reduce((sum, route) => sum + translatedLocales(route).length, 0);
+
+    return `  <div class="rw-pr">
+    <main class="rw-pr-main">
+      <h1 class="rw-pr-h1">All Rando Wheel pages</h1>
+      <p class="rw-pr-lead">Every wheel tool in every language — ${total} pages in total. Start from the <a class="rw-pr-link" href="${DOMAIN}/">home page</a>, or jump straight to any wheel below.</p>
+${sections}
+    </main>
+  </div>`;
 }
 
 /**
@@ -341,6 +387,7 @@ function buildPrerenderCss() {
     .rw-pr-langlist { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 18px; }
     .rw-pr-lang { color: #555; text-decoration: none; }
     .rw-pr-lang:hover { color: #6c5ce7; text-decoration: underline; }
+    .rw-pr-muted { color: #6b6b85; font-size: 0.88em; }
     @media (prefers-color-scheme: dark) {
       .rw-pr { background: #16181d; color: #dfe3ea; }
       .rw-pr-h1, .rw-pr-h2, .rw-pr-h3 { color: #f3f5f9; }
@@ -360,6 +407,7 @@ module.exports = {
     renderRelatedTools,
     renderLanguages,
     buildContentHtml,
+    buildAllPagesHtml,
     buildPrerenderCss,
     CONTENT_PLANS,
     TOOL_CARDS

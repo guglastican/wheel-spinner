@@ -35,6 +35,8 @@ const {
     LANG_NAMES,
     ROBOTS_INDEX,
     ROBOTS_NOINDEX,
+    HTML_SITEMAP_ROUTE,
+    HTML_SITEMAP_URL,
     t,
     node,
     stripTags,
@@ -320,6 +322,64 @@ for (const route of NON_CONTENT_ROUTES) {
     }
 }
 console.log(`  ✓ ${written - nonContentBefore} noindex widget page(s)`);
+
+// 3. Crawlable HTML index of every page (the "all pages" sitemap).
+//    A URL that is only known from sitemap.xml can sit at "Discovered -
+//    currently not indexed / Last crawled: N/A" indefinitely; the same URL
+//    linked from a page Google already crawls gets fetched. Every page links
+//    here, and this page links every page.
+{
+    const url = HTML_SITEMAP_URL;
+    const schema = {
+        '@context': 'https://schema.org',
+        '@graph': [
+            {
+                '@id': `${url}#webpage`,
+                '@type': 'CollectionPage',
+                name: 'All Rando Wheel pages',
+                url,
+                inLanguage: 'en',
+                isPartOf: { '@id': `${DOMAIN}/#website` }
+            },
+            {
+                '@id': `${url}#breadcrumb`,
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                    { '@type': 'ListItem', position: 1, name: 'Home', item: `${DOMAIN}/` },
+                    { '@type': 'ListItem', position: 2, name: 'All pages', item: url }
+                ]
+            }
+        ]
+    };
+
+    let html = baseHtml;
+    html = html.replace(/<html(?:[^>]*)?>/i, '<html lang="en" dir="ltr">');
+    html = replaceOrInsert(html, /<title>[\s\S]*?<\/title>/i, '  <title>All Rando Wheel pages | Rando Wheel</title>');
+    html = replaceOrInsert(html, /<meta\s+name="description"[^>]*>/i,
+        '  <meta name="description" content="Index of every Rando Wheel page: the random wheel, wheel of names, yes/no wheel, food wheel, spin the wheel and twister spinner, in all 25 languages." />');
+    html = replaceOrInsert(html, /<meta\s+name="robots"[^>]*>/i, `  <meta name="robots" content="${ROBOTS_INDEX}" />`);
+    html = replaceOrInsert(html, /<meta\s+property="og:url"[^>]*>/i, `  <meta property="og:url" content="${url}" />`);
+    html = replaceOrInsert(html, /<meta\s+property="og:title"[^>]*>/i, '  <meta property="og:title" content="All Rando Wheel pages" />');
+    html = replaceOrInsert(html, /<meta\s+property="og:description"[^>]*>/i,
+        '  <meta property="og:description" content="Every wheel tool in every language, in one index." />');
+    html = replaceOrInsert(html, /<meta\s+name="twitter:title"[^>]*>/i, '  <meta name="twitter:title" content="All Rando Wheel pages" />');
+    html = replaceOrInsert(html, /<meta\s+name="twitter:description"[^>]*>/i,
+        '  <meta name="twitter:description" content="Every wheel tool in every language, in one index." />');
+
+    const headExtras = [
+        `  <link rel="canonical" href="${url}" />`,
+        `  <style id="rw-prerender-css">\n${content.buildPrerenderCss()}\n  </style>`,
+        `  <script type="application/ld+json">\n${JSON.stringify(schema, null, 2).replace(/<\//g, '<\\/')}\n  </script>`
+    ];
+    html = html.replace('</head>', `${headExtras.join('\n')}\n</head>`);
+    html = html.replace('<div id="app"></div>', `<div id="app">\n${content.buildAllPagesHtml()}\n</div>`);
+    // This page is static by design: without the app bundle Vue would mount an
+    // empty router view and wipe the index it exists to expose.
+    html = html.replace(/\s*<script type="module"[^>]*><\/script>/i, '');
+
+    writePage(HTML_SITEMAP_ROUTE, html);
+    console.log('  ✓ 1 HTML index page (/all-pages) linking every indexable URL');
+}
 
 // 3. Note: every SPA route in src/main.js is covered by the two loops above,
 //    so the blanket "rewrite everything to /index.html" rule in vercel.json is
